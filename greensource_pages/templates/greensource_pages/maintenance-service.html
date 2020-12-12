@@ -1,0 +1,117 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} Retrofit | Maintenance of solar systems{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding text-center">
+        <div class="col-12 animated fadeIn">
+            <h1>RETROFIT - MAINTENANCE</h1>
+            <h2> Quick services in real time</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'services' %}">Services</a>
+        </li>
+        <li class="breadcrumb-item active">Retrofit-Maintenance</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="light row padding">
+        <ul class="list-group col-lg-4">
+            <li class="list-group-item">
+                <a href="{% url 'services' %}">
+                    <i class="fas fa-caret-right"></i> All Services</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'solar_design' %}">
+                    <i class="fas fa-caret-right"></i> Design / Installation</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'electrical_design' %}">
+                    <i class="fas fa-caret-right"></i> Street lighting</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'energy_management' %}">
+                    <i class="fas fa-caret-right"></i> Energy Storage Solutions</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'project_management' %}">
+                    <i class="fas fa-caret-right"></i> Energy Management</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'hvac' %}">
+                    <i class="fas fa-caret-right"></i> System Upgrade</a>
+            </li>
+            <li class="list-group-item  list-group-item-success">
+                <a href="{% url 'maintenance_service' %}">
+                    <i class="fas fa-caret-right"></i> Retrofit / Maintenance</a>
+            </li>
+        </ul>
+        <div class="cut col-lg-8">
+            <img src="{% static 'images/maintenance.jpeg' %}" />
+        </div>
+    </div>
+</div>
+<div class="container padding">
+    <div class="row details">
+        <div>
+            <p>We carry out Retrofitting and maintenance services for Solar Energy Systems and Electrical Systems (after sales
+                support and services). We have a team of experienced technicians who are ready to assist you with your maintenance
+                needs. We troubleshoot your energy systems for potential defect and ensure your systems are back to its best
+                in performance. We do Troubleshooting, Cleaning of Solar Panels, Replacing faulty electrical devices and
+                Scheduling periodic maintenance. We also do maintenance service for third party systems installations. Our
+                goal is to ensure your systems are performing optimally and efficiently.
+            </p>
+        </div>
+    </div>
+    <div class="system-main row padding">
+        <div class="col-lg-5 system">
+            <h4>maintenance</h4>
+            <p>our scope of work includes</p>
+            <ol>
+                <li>Module Cleaning</li>
+                <li>Inverter servicing</li>
+                <li>component Replacement</li>
+                <li>Wear and tears Repairs</li>
+                <li>Solar system maintenance</li>
+                <li>Monitoring and Calibration</li>
+            </ol>
+        </div>
+        <div class="system col-lg-5">
+            <h4>Retrofitting</h4>
+            <p>our scope of work includes</p>
+            <ol>
+                <li>Repair</li>
+                <li>Upgrade</li>
+                <li>Maintenance</li>
+                <li>Consultation</li>
+                <li>Modification</li>
+                <li>Re-Installation</li>
+                <li>Customer Support</li>
+                <li>Electrical system troubleshooting</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<section id="call-to-action">
+    <div class="container-fluid padding wow fadeIn">
+        <div class="row">
+                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
+                <h3 class="col-lg-3 col-md-4 col-xs-12">
+                <a href="{% url 'contact_us' %}">get in touch
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                </h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

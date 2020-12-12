@@ -1,0 +1,211 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %} 
+menu-active 
+{% endblock %} 
+{% load static %} 
+{% block title %}{{block.super }} Design & installation of solar panels{% endblock %} 
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding text-center">
+        <div class="col-12 animated fadeIn">
+            <h1>SOLAR DESIGN</h1>
+            <h2>We put the sunshine into the best use</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'services' %}">Services</a>
+        </li>
+        <li class="breadcrumb-item active">Solar-Design</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="light row padding">
+        <ul class="list-group col-lg-4">
+            <li class="list-group-item">
+                <a href="{% url 'services' %}">
+                    <i class="fas fa-caret-right"></i> All Services</a>
+            </li>
+            <li class="list-group-item list-group-item-success">
+                <a href="{% url 'solar_design' %}">
+                    <i class="fas fa-caret-right"></i> Design /  Installation</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'electrical_design' %}">
+                    <i class="fas fa-caret-right"></i> Street Lighting</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'energy_management' %}">
+                    <i class="fas fa-caret-right"></i> Energy storage solutions</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'project_management' %}">
+                    <i class="fas fa-caret-right"></i> Energy Management</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'hvac' %}">
+                    <i class="fas fa-caret-right"></i> System Upgrade</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'maintenance_service' %}">
+                    <i class="fas fa-caret-right"></i>Retofit / Maintenance</a>
+            </li>
+        </ul>
+        <div class="col-lg-8">
+            <img src="{% static 'images/design-installation.jpeg' %}" alt="rooftop mounted solar panels" />
+        </div>
+    </div>
+</div>
+<div class="container padding">
+    <div class="row details">
+        <div>
+            <p>
+                We offer design and installation solar panels for residential, commercial, farms and market solar energy systems. Our installation
+                ranges from mini system to large commercial scale projects with a small shop, home builder and business owner in mind. This
+                enables us to meet customers requirements and create the perfect solution that suits best. We provide both technical services
+                and professional customer care including installing solar panels using best technology available, with all our installed solar panel
+                systems being maintained accordingly as planned. We are focused on reducing carbon emission to the bearest minimum ensuring everyone enjoys
+                the benefit of our green energy solutions through the use of solar panels. Upon installation, our solar energy system will reduce your electricity and fossil fuel cost by upto 50%, this will
+                help improve economic productivity allowing you not only avoid pollution, but also help save money. We believe our clients
+                can make an impact in improving thier community eco-systems with renewable energy technologies. Our team are ready if you
+                need help planning out a solar panel installation project.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container padding">
+    <div class="solar">
+            <p>
+                    <strong>Our solar panels and solar energy system can be used for different applications including:- </strong>
+                </p>
+        <div class="col-lg-5 col-md-6 col-xs-12 single-about-style-two clearfix">
+            <div class="image-block">
+                <img src="{% static 'images/blue-gray.jpg' %}" alt="Residential solar system installation" />
+                <div class="overlay">
+                    <div class="box">
+                        <div class="content">
+                            <div class="dotted"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block">
+                <h3>Homes</h3>
+                <p>A home should be a place of comfort, So we have custom fit designs to suit everyone </p>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-xs-12 single-about-style-two clearfix">
+            <div class="image-block">
+                <img src="{% static 'images/black-metal.jpg' %}" alt="Off-grid solar system installation" />
+                <div class="overlay">
+                    <div class="box">
+                        <div class="content">
+                            <div class="dotted"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block">
+                <h3>Office</h3>
+                <p>Our solar energy systems Save cost and increasing profits which is very critical for business growth. 
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-xs-12 single-about-style-two clearfix">
+            <div class="image-block">
+                <img src="{% static 'images/corn-plant.jpg' %}" alt="agro-solar system installation" />
+                <div class="overlay">
+                    <div class="box">
+                        <div class="content">
+                            <div class="dotted"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block">
+                <h3>Farms</h3>
+                <p>We have designs for farm use including irrigation, fishery, production and farmhouse.</p>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-xs-12 single-about-style-two clearfix">
+            <div class="image-block">
+                <img src="{% static 'images/bookcase.jpg' %}" alt="commercial solar system installation" />
+                <div class="overlay">
+                    <div class="box">
+                        <div class="content">
+                            <div class="dotted"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block">
+                <h3>Institution</h3>
+                <p>Designed for schools, health care facilities, training centers, religous centers.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row base">
+        <div class="order-list col-lg-5 col-md-6 col-xs-12">
+            <h4>Our solar energy system services includes:</h4>
+            <ol>
+                <li>Operations</li>
+                <li>Day use System</li>
+                <li>Off Grid System</li>
+                <li>Grid Tied System</li>
+                <li>Technical support</li>
+            </ol>
+        </div>
+        <div class="order-list col-lg-5 col-md-6 col-xs-12">
+            <img src="{% static 'images/simulation.gif' %}" alt="simulation of a solar system in work mode" />
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="solar-description padding">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h4>01</h4>
+                <h5>Power is Generated</h5>
+                <p>Modules absorbs radiant energy from daylight and is converted to Direct current (DC) which is then flows
+                    to the charge controller.</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h4>02</h4>
+                <h5>Energy is transferred</h5>
+                <p>Direct current (DC) flows from the charge controller to the Battery Bank where the direct current is stored
+                    in form of electrical energy</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h4>03</h4>
+                <h5>Energy is converted</h5>
+                <p>The Inverter draws the direc current (DC) and converts it to Alternating current which is what household
+                    appliances use.</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <h4>04</h4>
+                <h5>Energy is ready to use</h5>
+                <p>Your home is ready to use the energy generated supplied from the building's distribution board</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="call-to-action">
+    <div class="container-fluid padding wow fadeIn">
+        <div class="row">
+                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
+                <h3 class="col-lg-3 col-md-4 col-xs-12">
+                <a href="{% url 'contact_us' %}">get in touch
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                </h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

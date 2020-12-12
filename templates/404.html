@@ -1,0 +1,112 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="author" content="Olumide Joseph" />
+    <meta name="resource-type" content="document" />
+    <meta name="audience" content="all" />
+    <meta name="distribution" content="global" />
+    <meta name="robots" content="all" />
+    <meta name="description" content="Professional Renewable energy and Management services Mowe-Ofada Ogun State" />
+    <meta name="keywords" content="Professional Solar design,Professional solar installation, solar component sales, solar maintenance services, inspection, energy analysis, battery backup installation, customer support, consultancy, solar systems troubleshooting"
+    />
+    <title>404</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}" %} type="text/css" />
+    <link rel="stylesheet" href="{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/regular.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" />
+    <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'simplelightbox-master/dist/simplelightbox.min.css' %}" rel='stylesheet' type='text/css' />
+    <link href="{% static 'src/tox-progress.css' %}" rel="stylesheet" />
+    <link href="{% static 'animate.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'demo.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'owl-carousel/owl.carousel.css' %}" rel="stylesheet" />
+    <link href="{% static 'owl-carousel/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="review container-fluid padding">
+        <div class="row text-center">
+            <div class="time col-xs-12 col-lg-3 col-md-6">
+                <p>
+                    <i class="far fa-clock"></i>Mon - Fri 9.00am - 6.00pm</p>
+            </div>
+            <div class="time col-xs-12 col-lg-2 col-md-6">
+                <p>
+                    <i class="fas fa-phone-alt"></i>+234 (8029442697)</p>
+            </div>
+            <div class="col-xs-12 col-lg-3 col-md-6">
+                <ol class="links">
+                    <li>
+                        <a href="https://www.linkedin.com/company/greensource-engineering-consult" id="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/greensourceconsult/" id="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/greensource_eng" id="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/GreensourceC" id="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+            <div class="book col-xs-12 col-lg-4 col-md-6 text-center">
+                <p>
+                    <i class="far fa-envelope"></i>
+                    <script>
+                        document.write("hello@");
+                        document.write("greensourceco");
+                        document.write("nsult.c");
+                        document.write("om");
+                    </script>
+                </p>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container">
+            <div id="logo" class="pull-left">
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'images/greensourcelogo3.png' %}" alt="company logo" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid padding">
+        <div class="error row padding">
+            <div class="col-lg-12 text-center">
+                <h4>404</h4>
+                <p>Looks Like Something Went Wrong</p>
+                <p class="page">The page you are looking for was moved, removed, renamed or might never exist.</p>
+                <a href="{% url 'index' %}" role="button">GO BACK HOME</a>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery-migrate.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

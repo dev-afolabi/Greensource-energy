@@ -1,0 +1,136 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} Energy Management{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>ENERGY MANAGEMENT</h1>
+            <h2>Take control of your energy bills.</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'services' %}">Services</a>
+        </li>
+        <li class="breadcrumb-item active">Energy Management</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="light row padding">
+        <ul class="list-group col-lg-4">
+            <li class="list-group-item">
+                <a href="{% url 'services' %}">
+                    <i class="fas fa-caret-right"></i> All Services</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'solar_design' %}">
+                    <i class="fas fa-caret-right"></i> Design / Installation</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'electrical_design' %}">
+                    <i class="fas fa-caret-right"></i> Street lighting</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'energy_management' %}">
+                    <i class="fas fa-caret-right"></i> Energy Storage Solutions</a>
+            </li>
+            <li class="list-group-item  list-group-item-success">
+                <a href="{% url 'project_management' %}">
+                    <i class="fas fa-caret-right"></i> Energy Management</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'hvac' %}">
+                    <i class="fas fa-caret-right"></i> System Upgrade</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'maintenance_service' %}">
+                    <i class="fas fa-caret-right"></i> Retrofit / Maintenance</a>
+            </li>
+        </ul>
+        <div class="cut col-lg-8">
+            <img src="{% static 'images/cxc.jpeg' %}" />
+        </div>
+    </div>
+</div>
+<div class="container padding">
+    <div class="row details">
+        <div>
+            <p> Energy management strategies and systems will help your business reduce its energy consumption and its GHG emissions.
+                The first step towards the development of a comprehensive energy management plan is an energy audit. It provides
+                a clear understanding on energy consumption patterns within your buildings and/or manufacturing processes
+                and highlights technically viable energy saving opportunities. We encourage and support optimizing and improving
+                energy usage using energy monitoring systems that are efficient and cost-effective. We provide clear insight
+                on energy saving potentials to clients who want to reduce their energy consumption and their carbon footprint.
+                Energy audit is the the first step to know how much energy is being used in your Home, Facility and to evaluate,
+                measures to ensure efficient energy use. We also help clients monitor and effectively save significant amount
+                of money on bills with time using energy conservation, energy efficient lighting, and energy efficient appliances
+                amongst others. Our management services will provide continuous improvement on energy efficiency and cost
+                savings for residential, commercial, and industrial applications.</p>
+        </div>
+        <div class="sub-section row">
+            <div class="body col-xs-12 col-md-6 col-lg-4">
+                <div>
+                    <i class="fas fa-walking"></i>
+                </div>
+                <h4>ENERGY AUDIT</h4>
+                <p class="sub">Identifies deficient equipment issues, areas needing further evaluation, energy saving opportunities and
+                    saving potentials</p>
+            </div>
+            <div class="body col-xs-12 col-md-6 col-lg-4">
+                <div>
+                    <i class="fas fa-chart-area"></i>
+                </div>
+                <h4>LOAD ANALYSIS</h4>
+                <p class="sub">Audit is carried out using economic calculations using some devices like meters to identify your actual energy
+                    consumption and losses.</p>
+            </div>
+            <div class="body col-xs-12 col-md-6 col-lg-4">
+                <div>
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h4>ENERGY SAVINGS</h4>
+                <p class="sub">Identifies detailed account of energy use, qualitative study, detailed investments, operations and maintenance
+                    cost and analysis of investment.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container padding">
+    <div class="row base">
+        <div class="order-list col-lg-5 col-md-6 col-xs-12">
+            <h4>Our audit/management service includes:</h4>
+            <ol>
+                <li>Load Sheddding</li>
+                <li>Energy Conservation</li>
+                <li>Energy Efficient lighting</li>
+                <li>Analysis of electrical consumption</li>
+                <li>Installation of energy management device</li>
+            </ol>
+        </div>
+        <div class="order-list col-lg-5 col-md-6 col-xs-12">
+            <img src="{% static 'images/meter.jpeg' %}" />
+        </div>
+    </div>
+</div>
+<section id="call-to-action">
+    <div class="container-fluid padding wow fadeIn">
+        <div class="row">
+                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
+                <h3 class="col-lg-3 col-md-4 col-xs-12">
+                <a href="{% url 'contact_us' %}">get in touch
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                </h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

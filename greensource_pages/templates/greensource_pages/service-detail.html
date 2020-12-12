@@ -1,0 +1,102 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} Service Details{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>SERVICE DETAILS</h1>
+            <h2>We are Customer service Oriented</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+        <li class="breadcrumb-item active">Service-Details</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="light row padding">
+        {% include 'service_detail.html' %}
+        <div class="services-details col-lg-8">
+            <img src="{% static 'images/client-service.jpeg' %}" />
+            <h4>Green, Sustainable, Fits the bill !</h4>
+            <p class="policy">
+                We are committed to providing clean and reliable energy with our custom made unique design for our individual customers, harnessing the abundant power of the SUN.
+                Through our end-to-end customer relation and strategic partnership, our goal is to provide innovative, seamless, reliable and sustainable solar energy. We 
+                design the custom fit system for you offering value for your investment and long term savings.
+            <p>
+        </div>
+    </div>
+    <section>
+        <div class="row padding">
+                <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                        <div class="tox-progress" data-size="150" data-thickness="10" data-color="#006400" data-background="#f1f1f1" data-progress="60"
+                            data-speed="15000">
+                            <div class="tox-progress-content" data-vcenter="true">
+                                60%
+                            </div>     
+                        </div>
+                        <h5>Energy saving</h5>
+                        <p>On installation you get to save money through controlled energy monitoring and consumption.</p>
+                    </div>
+                    <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                            <div class="tox-progress" data-size="150" data-thickness="10" data-color="#006400" data-background="#f1f1f1" data-progress="75"
+                                data-speed="15000">
+                                <div class="tox-progress-content" data-vcenter="true">
+                                    75%
+                                </div>     
+                            </div>
+                            <h5>unique designs</h5>
+                            <p>Our unique set of custom designs are tailored to meet your energy needs irrespective of energy consumption.</p>
+                        </div>
+            <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                <div class="tox-progress" data-size="150" data-thickness="10" data-color="#006400" data-background="#f1f1f1" data-progress="80"
+                    data-speed="15000">
+                    <div class="tox-progress-content" data-vcenter="true">
+                        80%
+                    </div>
+                </div>
+                <h5>Long term savings</h5>
+                <p>With the initial cost of acquiring a solar system, you will recover the money invested within 5yrs</p>
+            </div>
+            <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                <div class="tox-progress" data-size="150" data-thickness="10" data-color="#006400" data-background="#f1f1f1" data-progress="85"
+                    data-speed="15000">
+                    <div class="tox-progress-content" data-vcenter="true">
+                        85%
+                    </div>
+                </div>
+                    <h5>client satisfaction</h5>
+                    <p>With great partnership & effective communication, Our goal is to deliver quality service every step of the way.</p>
+            </div>
+            <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                    <div class="tox-progress" data-size="150" data-thickness="10" data-color="#006400" data-background="#f1f1f1" data-progress="90"
+                        data-speed="15000">
+                        <div class="tox-progress-content" data-vcenter="true">
+                            90%
+                        </div>     
+                    </div>
+                    <h5>Sustainable/Durable</h5>
+                    <p>Low maintenance, reliability and sustainability are the hallmark of our cutting edge solar energy system. </p>
+                </div>
+            <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                <div class="tox-progress" data-size="150" data-thickness="10" data-color="#006400" data-background="#f1f1f1" data-progress="100"
+                    data-speed="15000">
+                    <div class="tox-progress-content" data-vcenter="true">
+                        100%
+                    </div>     
+                </div>
+                <h5>Clean energy</h5>
+                <p>Solar energy technologies produces clean energy with zero carbon emission improving living standard.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}

@@ -1,0 +1,136 @@
+{% extends 'base_layout.html' %}
+{% block nav-news %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} solar energy system blog post{% endblock %}
+{% block content %}
+
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>BLOG POST</h1>
+            <h2>solar energy system articles</h2>
+        </div>
+    </div>
+</div>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'article_list' %}">News</a></li>
+        <li class="breadcrumb-item active">Blog-Post</li>
+    </ol>
+</nav>
+
+<section>
+    <div class="container-fluid padding">
+        <div class="blog row">
+            <div class="card col-xs-12 col-md-11 col-lg-7">
+                <img src="{{ post.thumb.url }}" class="card-img-top" alt="blog image" />
+                <p class="title">{{ post.date.day }}<br />{{ post.date|date:"M" }}</p>
+                <div class="card-body">
+                    <small class="text-muted"><i class="fas fa-user"></i> Admin  &nbsp; &nbsp;<i class="far fa-heart"></i> 2&nbsp; &nbsp;<i class="far fa-comments"></i> 15</small>
+                    <h5 class="card-title">{{post.short_description}}</h5>
+                    <p class="card-text">
+                        {{ post.body }}
+                    </p>
+                </div>
+                <div class="link">
+                    <p>
+                        share <i class="fas fa-share-alt"></i>&nbsp; &nbsp;
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook active"></i></a>
+                        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </p>
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-6"></div>
+                </div>
+            </div>
+            {% include 'sidebar.html' %}
+        </div>
+    </div>
+</section>
+<div class="container padding">
+        <h6 class="post-header">comments</h6>
+        <div class="post row">
+            <div class="col-lg-8 col-md-12 col-xs-12">
+                <div class="card card-white post">
+                    <div class="post-heading">
+                        <div class="float-left image">
+                            <img src="{% static 'images/b02.jpg' %}" class="img-circle avatar" alt="img" />
+                        </div>
+                        <div class="float-left meta">
+                            <div class="title h5">
+                                <a href="#"><strong>Ryan Wood</strong></a> 
+                                <span>made a post</span>
+                            </div>
+                            <h6 class="text-muted time">15 April 2020</h6>
+                        </div>
+                    </div>
+                    <div class="post-description">
+                        <p>Bootey is a gallery of free spinner resouces templates and utilities of bootstrap css html django codes for development purposes.</p>
+                    </div>
+                </div>
+           
+                <div class="card card-white post">
+                    <div class="post-heading">
+                        <div class="float-left image">
+                            <img src="{% static 'images/b02.jpg' %}" class="img-circle avatar" alt="img" />
+                        </div>
+                        <div class="float-left meta">
+                            <div class="title h5">
+                                <a href="#"><strong>john doe</strong></a>
+                                <span>made a post</span>
+                            </div>
+                            <h6 class="text-muted time">15 April 2020</h6>
+                        </div>
+                    </div>
+                    <div class="post-description">
+                        <p>Bootey is a gallery of free spinner resouces templates and utilities of bootstrap css html django codes for development purposes.</p>
+                    </div>
+                </div>
+                
+                 <div class="card card-white post">
+                    <div class="post-heading">
+                        <div class="float-left image">
+                            <img src="{% static 'images/b02.jpg' %}" class="img-circle avatar" alt="img" />
+                        </div>
+                        <div class="float-left meta">
+                            <div class="title h5">
+                                <a href="#"><strong>travis declan</strong></a>
+                                <span>made a post</span>
+                            </div>
+                            <h6 class="text-muted time">27 April 2020</h6>
+                        </div>
+                    </div>
+                    <div class="post-description">
+                        <p>Bootey is a gallery of free spinner resouces templates and utilities of bootstrap css html django codes for development purposes.</p>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        
+        
+<div class="container padding">
+<h6 class="comment-header">leave a comment</h6>
+<div class="comment row padding">
+   <div class="form-row col-lg-8 col-md-12 col-xs-12">
+                <div class="col">
+                    <input type="text" class="form-control"  placeholder="Name">
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control"  placeholder="Email">
+                </div>
+                <label for="Message"></label>
+                    <textarea type="text" rows="8" class="form-control" placeholder="Message" required></textarea>
+                    <button type="submit" class="form-control">Send Message</button>
+            </div>
+</div>
+</div>
+{% endblock %}

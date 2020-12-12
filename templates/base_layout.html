@@ -1,0 +1,371 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179025578-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179025578-1');
+</script>
+<meta charset="utf-8" />
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+    }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="audience" content="all" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="description" content="An end-to-end, innovative green energy installation company and solar professionals, providing cutting edge renewable energy solution services in solar panels design, solar street light, harnessing sun power, energy storage, operations and maintenances solar energy system"/>
+    <meta name="keywords" content="solar company, solar services, affordable solar, sunpower, photovoltaics, solar panel, renewable energy, solar energy system, solar panel installation, solar design"/>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="greensourcenergy.com" />
+    <meta name="twitter:creator" content="@GreensourceE" />
+    <meta name="twitter:title" content="Developing clean and safe energy solution" />
+    <meta name="twitter:description" content=" We are an end-to-end, customer oriented, innovative green energy and management company providing cutting edge renewable
+    energy solutions for residential, large and small businesses..." />
+    <meta name="twitter:image:src" content="greensourcenergy.com/static/images/homepage2.jpg" />
+    <meta property="og:title" content="Greensource Energy - Developing clean and safe energy solution" />
+    <meta property="og:url" content="https://greensourcenergy.com" />
+    <meta property="og:site_name" content="Greensource Energy" />
+    <meta property="og:image" content="http://greensourcenergy.com/static/images/homepage2.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="We are an end-to-end, customer oriented, innovative green energy and management company providing cutting edge renewable
+    energy solutions for residential, large and small businesses..." />
+    <title>{% block title %}Greensource Energy -{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}" %} type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script>
+        var test = document.createElement("div")
+        test.className = "hidden d-none"
+        document.head.appendChild(test)
+        var cssLoaded = window.getComputedStyle(test).display === "none"
+        document.head.removeChild(test)
+        if (!cssLoaded) {
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = "{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}";
+            document.head.appendChild(link);
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/regular.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" />
+    <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'src/simple-lightbox.min.css' %}" rel='stylesheet' />
+    <link href="{% static 'src/tox-progress.css' %}" rel="stylesheet" />
+    <link href="{% static 'animate.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'demo.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'owl-carousel/owl.carousel.css' %}" rel="stylesheet" />
+    <link href="{% static 'owl-carousel/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'src/videopopup.css' %}" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet" />
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '680910845861426');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=680910845861426&ev=PageView&noscript=1"
+    /></noscript>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "GREENSOURCE ENERGY",
+          "url": "greensourcenergy.com",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "greensourcenergy.com/about{search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script>
+    <script type="text/javascript">
+        (function () {
+        var options = {
+        whatsapp: "+2348029442697",
+        call_to_action: "Live Chat", 
+        position: "left", 
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>    
+</head>
+<body>
+    <div class="review container-fluid padding">
+        <div class="row text-center">
+            <div class="time col-xs-12 col-lg-3 col-md-6">
+                <p>
+                    <i class="far fa-clock"></i>Mon - Fri 9.00am - 6.00pm</p>
+            </div>
+            <div class="time col-xs-12 col-lg-2 col-md-6">
+                <p>
+                    <i class="fas fa-phone-alt"></i>+234 (8029442697)</p>
+            </div>
+            <div class="col-xs-12 col-lg-3 col-md-6">
+                <ol class="links">
+                    <li>
+                        <a href="https://www.linkedin.com/company/greensource-energy" id="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/greensourcenergy/" id="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/greensourcenergy" id="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/greenn_energy" id="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+            <div class="book col-xs-12 col-lg-4 col-md-6 text-center">
+                <p>
+                    <i class="far fa-envelope"></i>
+                    <a href="javascript:location='mailto:\u0068\u0065\u006c\u006c\u006f\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d';void 0">
+                        <script type="text/javascript">document.write('\u0068\u0065\u006c\u006c\u006f\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d')</script>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container">
+            <div id="logo" class="pull-left">
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'images/greensourcelogo3.png' %}" alt="company logo" />
+                </a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="{% block nav-home %}{% endblock %}">
+                        <a href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="{% block nav-about %}{% endblock %}">
+                        <a href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="{% block nav-service %}{% endblock %}  menu-has-children">
+                        <a href="#services">Services</a>
+                        <ul>
+                            <li>
+                                <a href="{% url 'services' %}">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'service_detail' %}">Services Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="{% block nav-design-plans %}{% endblock %}">
+                        <a href="{% url 'design_plans' %}">Pricing</a>
+                    </li>
+                    <li class="{% block nav-projects %}{% endblock %}">
+                        <a href="{% url 'projects' %}">projects</a>
+                    </li>
+                    <li class="{% block nav-news %}{% endblock %}">
+                        <a href="{% url 'article_list' %}">news</a>
+                    </li>
+                    <li class="{% block nav-contact %}{% endblock %}">
+                        <a href="{% url 'contact_us' %}">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}    
+    <section>
+        <div class="container-fluid padding">
+            <div class="footer row text-justify text-white padding">
+                <div class="col-xs-12 col-lg-4 col-md-6">
+                    <img src="{% static 'images/greensource3.png' %}" alt="company logo" />
+                    <p class="note">
+                        We are an end-to-end, customer oriented, innovative green energy company providing cutting edge renewable energy solutions
+                        for residential, commercial large and small businesses. Our goal is to design and install best fit systems
+                        while offering value for money.
+                    </p>
+                    <div class="map padding">
+                        <h6 class="display-5">/ LOCATE US</h6>
+                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.741452898637!2d3.433366268485239!3d6.84608399012105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc7b12aa0619b%3A0x668d6d2407416eeb!2sGREENSOURCE+ENGINEERING+CONSULT!5e0!3m2!1sen!2sng!4v1554279134001!5m2!1sen!2sng">Go To Map
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="services col-xs-12 col-lg-2 col-md-6">
+                    <h6 class="display-5">Services</h6>
+                
+                    <ul>
+                        <li>
+                            <a href="{% url 'solar_design' %}">Installation</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'project_management' %}">Energy Mgt</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'maintenance_service' %}">Maintenance</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'hvac' %}">System Upgrade</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'energy_management' %}">Storage Solution</a>
+                        </li>
+                         <li>
+                            <a href="{% url 'electrical_design' %}">Street Lighting</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'index' %}">Training</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="services col-xs-12 col-lg-2 col-md-6">
+                    <h6 class="display-5">Links</h6>
+                    
+                    <ul>
+                        <li>
+                            <a href="{% url 'company-profile' %}">Company Profile</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'terms-of-use' %}">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'our-team' %}">Our Team</a>
+                        </li>
+                         <li>
+                            <a href="{% url 'gallery' %}">Gallery</a>
+                        </li>
+                        <li>
+                             <a href="{% url 'faq' %}">FAQ</a>
+                         </li>
+                        <li>
+                            <a href="{% url 'privacy' %}">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'mission' %}">Mission/Vision</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="services col-xs-12 col-lg-4 col-md-6">
+                    <h6 class="display-5">Connect Us</h6>
+                
+                    <div class="footer-address">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>1, Heritage street by anobi Noah, arogun Mowe-Ofada Ogun.</p>
+                        <i class="far fa-envelope"></i>
+                        <p>
+                            <a href="javascript:location='mailto:\u0068\u0065\u006c\u006c\u006f\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d';void 0">
+                                <script type="text/javascript">document.write('\u0068\u0065\u006c\u006c\u006f\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d')</script>
+                            </a>
+                        </p>
+                        <i class="fas fa-phone"></i>
+                        <p>(234)8029442697</p>
+                        <i class="far fa-registered"></i>
+                    </div>
+                    <div class="social">
+                        <h6 class="display-5">/ FOLLOW US ON</h6>
+                        <a href="https://www.linkedin.com/company/greensource-energy">
+                            <i class="fab fa-linkedin-in active"></i>
+                        </a>
+                        <a role="button" href="https://www.facebook.com/greensourcenergy/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a role="button" href="https://www.instagram.com/greensourcenergy">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a role="button" href="https://www.twitter.com/greenn_energy">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footnote col-12">
+                    <p class="copyright">Copyright &copy; 2020 All Rights Reserved |
+                        <span class="green">Greensource Energy</span>  </p>
+                </div>
+                <a href="#" class="back-to-top">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/jquery-3.3.1.min.js"><\/script>')</script></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/popper.min.js"><\/script>')</script></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="/static/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"><\/script>')}</script>
+    <script src="{% static 'js/jquery-migrate.min.js' %}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+    <script src="{% static 'src/tox-progress.min.js' %}"></script>
+    <script src="{% static 'src/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'src/waypoints.min.js' %}"></script>
+    <script src="{% static 'src/wow.min.js' %}"></script>
+    <script src="{% static 'src/multislider.min.js' %}"></script>
+    <script src="{% static 'owl-carousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'src/hoverIntent.js' %}"></script>
+    <script src="{% static 'src/superfish.min.js' %}"></script>
+    <script src="{% static 'src/simple-lightbox.min.js' %}"></script>
+    <script src="{% static 'src/videopopup.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#3c404d",
+                    "text": "#d6d6d6"
+                },
+                "button": {
+                    "background": "transparent",
+                    "text": "#89af3b",
+                    "border": "#89af3b"
+                }
+            },
+            "content": {
+                "href": "{% url 'privacy' %}"
+            },
+
+            "position": "bottom-left"
+        });
+    </script>
+</body>
+</html>
+

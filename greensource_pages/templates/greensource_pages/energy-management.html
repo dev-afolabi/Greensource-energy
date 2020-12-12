@@ -1,0 +1,141 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} Solar Energy Storage/Backup{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding text-center">
+        <div class="col-12 animated fadeIn">
+            <h1>ENERGY STORAGE SOLUTION</h1>
+            <h2>Meet your energy demands</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'services' %}">Services</a>
+        </li>
+        <li class="breadcrumb-item active">Storage Solution</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="light row padding">
+        <ul class="list-group col-lg-4">
+            <li class="list-group-item">
+                <a href="{% url 'services' %}">
+                    <i class="fas fa-caret-right"></i> All Services</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'solar_design' %}">
+                    <i class="fas fa-caret-right"></i> Design / Installation</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'electrical_design' %}">
+                    <i class="fas fa-caret-right"></i> Street lighting</a>
+            </li>
+            <li class="list-group-item  list-group-item-success">
+                <a href="{% url 'energy_management' %}">
+                    <i class="fas fa-caret-right"></i> Energy Storage Solutions</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'project_management' %}">
+                    <i class="fas fa-caret-right"></i> Energy Management</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'hvac' %}">
+                    <i class="fas fa-caret-right"></i> System Upgrade</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'maintenance_service' %}">
+                    <i class="fas fa-caret-right"></i> Retrofit / Maintenance</a>
+            </li>
+        </ul>
+        <div class="cut col-lg-8">
+            <img src="{% static 'images/battery.jpg' %}" />
+        </div>
+    </div>
+</div>
+<div class="container padding">
+    <div class="row details">
+        <div>
+            <p>
+                We design and install energy storage for solar energy systems which is a critical to deliver uninterrupted power supply
+                during peak load periods. We believe energy storage is critical and major backbone of renewable energy systems especially
+                in our region where elecrticity supply is unstable and unreliable. We have extensive experience working with energy storage
+                managing renewable energy systems. We provide expert advise on storage systems use for residential and commercial projects.
+                The best resource available are deployed to get the best possible solution that suite our individual customers needs and
+                budget. This ensures they run on solar energy system and not depend on it whenever it is needed and no direct sunlight will
+                reach your system. Our expertise in energy storage solutions ensures you get trusted and reliable storage solution for your
+                solar energy system. With our storage solutions your battery runs for the number of hours / days it was designed for, giving
+                you the full advantage and benefit of your system. There is a massive market for solar energy storage and it will grow in
+                popularity especially for electricity demand, hence our team is committed and driven to deliver a reliable, secure product
+                for our customers.
+                <strong>Our aim is always for our customer's financial satisfaction, while ensuring we can achieve thier long-term energy goals.</strong>
+            </p>
+        </div>
+        <div class="sub-section row">
+            <div class="body col-xs-12 col-md-6 col-lg-4">
+                <div>
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <h4>STORAGE EQUALIZATION</h4>
+                <p class="sub">It is common for the output voltage of one or more battery to lag behind sometimes. Our expertise in storage
+                    solution will help remedy this situation and ensure your power bank delivers at its optimum best.
+                </p>
+            </div>
+            <div class="body col-xs-12 col-md-6 col-lg-4">
+                <div>
+                    <i class="fas fa-charging-station"></i>
+                </div>
+                <h4>BOOST CHARGING</h4>
+                <p class="sub">Our team of storage solution specialists work to ensure batteries that are loosing its default voltage and efficiency are
+                    are restored using accelerated charge.
+                </p>
+            </div>
+            <div class="body col-xs-12 col-md-6 col-lg-4">
+                <div>
+                    <i class="fas fa-signal"></i>
+                </div>
+                <h4>STORAGE ANALYSIS</h4>
+                <p class="sub">Storage analysis diagonise energy storage banks so you determine the performance, health and usuage of your energy stoarge 
+                    system and know its useful life.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row base">
+        <div class="order-list col-lg-5  col-md-6 col-xs-12">
+            <h4>Our energy storage solutions includes:</h4>
+            <ol>
+                <li>Storage Analysis</li>
+                <li>Battery Replacement</li>
+                <li>Battery Equalization</li>
+                <li>Storage Troubleshooting</li>
+                <li>Installation of ultra capacitors</li>
+            </ol>
+        </div>
+        <div class="order-list col-lg-5 col-md-6 col-xs-12">
+            <img src="{% static 'images/storage.jpg' %}" />
+        </div>
+    </div>
+</div>
+<section id="call-to-action">
+    <div class="container-fluid padding wow fadeIn">
+        <div class="row">
+                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
+                <h3 class="col-lg-3 col-md-4 col-xs-12">
+                <a href="{% url 'contact_us' %}">get in touch
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                </h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

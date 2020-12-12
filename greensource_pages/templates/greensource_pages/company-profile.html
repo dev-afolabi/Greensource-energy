@@ -1,0 +1,163 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+{% block title %}{{ block.super }} Comapany Profile{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>COMPANY PROFILE</h1>
+            <h2>Overview of what we represent</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <i class="fas fa-home"></i>
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Company Profile</li>
+    </ol>
+</nav>
+<div class="container padding">
+    <div class="row company-profile">
+        <div class="col">
+            <div>
+                <h4>BUSINESS, ADMINISTRATIVE & CONTACT INFORMATION</h4>
+                <ul>
+                    <li>Business name: GreenSource Energy Consult</li>
+                    <li>Business type: Sole proprietorship</li>
+                    <li>Company registration number: RC: 2826313</li>
+                    <li>(+234)8029442697</li>
+                    <li>Website: greensourceconsult.com</li>
+                    <li>Physical address: Heritage Street of anobi Noah omu-arogun mowe-ofada, Ogun State Nigeria.</li>
+                </ul>
+            </div>
+            <div>
+                <h5>INTRODUCTION</h5>
+                <h6>Company History</h6>
+                <p>Greensource Energy is an end-to-end, customer oriented, innovative green energy and management company providing
+                    cutting edge renewable energy solutions for residential, large and small businesses. Our aim is to design
+                    and install the best systems we can while offering value for money. Started in the year 2015 as an interest
+                    but established and Registered on the 14th of march 2019 as a professional renewable and alternative
+                    energy company.</p>
+            </div>
+            <div>
+                <h6>What the company does</h6>
+                <p>GreenSource Energy specializes in renewable energy involving solar energy system design and installation,
+                    electrical design and installation, HVAC design and installation, Energy audit/management, Project Management,
+                    and System maintenance.</p>
+            </div>
+            <div>
+                <h5>STRATEGY</h5>
+                <h6>Vision statement</h6>
+                <p>Our vision is to build a sustainable energy future, providing solutions to manage energy, environmental sustainability
+                    and economic development.</p>
+            </div>
+            <div>
+                <h6>Mission statement</h6>
+                <p> Our mission is to to promote, research and invest in clean and renewable energy technologies, energy conservation,
+                    energy efficiency and sustainable energy enterprise that benefits everyone.</p>
+            </div>
+            <div>
+                <h6>Core Values</h6>
+                <ul>
+                    <li>Customer centric</li>
+                    <li>Reliability</li>
+                    <li>Integrity</li>
+                    <li>Accountability</li>
+                    <li>Teamwork</li>
+                    <li>Education</li>
+                </ul>
+            </div>
+            <div>
+                <h6>Business goals & objectives</h6>
+                <p>To ensure best management practice using innovative and technological operations, maintain regulatory safety
+                    standards involving clients and staff through orientation and training programs in the built Environment
+                    and Energy field.
+                </p>
+            </div>
+            <div>
+                <h6>Business strategy</h6>
+                <p>The general strategy of the company is through diversification, vertical integration, horizontal integration,
+                    organic growth, growth by acquisition, etc.</p>
+            </div>
+
+            <div>
+                <h6>Economic intent</h6>
+                <p>Our goal is creating value for clients through investment in efficient energy use, maintenance and management
+                    using human centered design to foster business growth and success. </p>
+            </div>
+            <div>
+                <h5>BUSINESS CONCEPT</h5>
+                <h6>Payment options</h6>
+                <p>Our business concept includes: - Full payment, Part payment options up to 60% and subsequent payment of balance.</p>
+            </div>
+
+            <div>
+                <h6>Services</h6>
+                <p>Our service includes but not limited to solar system Design and Installation, Street lighting, Maintenance
+                    services, Energy Storage Solutions, Energy Audit/Management, Solar Systems Upgrade. etc.
+                </p>
+            </div>
+            <div>
+                <h6>Badges & Certifications</h6>
+                <p>UK HSE 123
+                    <br/>Project Management Essientials
+                    <br />Photovoltaic Systems Certificate
+                    <br />Proficiency in Strategic Management
+                    <br />Environmental Impact Assesment (Department of Petroleum Resources)
+                    <br />NABCEP (Heatspring), Resiential installation, Storage Systems, PV NEC CODE.
+                </p>
+            </div>
+            <div>
+                <h6>Service pledge</h6>
+                <p>To enhance clean, reliable, effective, efficient and sustainable energy use.</p>
+            </div>
+            <div>
+                <h6>Business model</h6>
+                <p>GreenSource Energy Consult operates a centralized (office bound and services delivery) business model, this
+                    is to implement unified policies and practices within the organization, and also maintain focus on its
+                    mission and vision.</p>
+            </div>
+            <div>
+                <h6>Value chain</h6>
+                <p>GreenSource Energy Consult belongs to the downstream sector of the renewable energy industry in which we
+                    will be operating in consulting, installation and maintenance of facilities clients/customers.</p>
+            </div>
+            <div>
+                <h5>MANAGEMENT</h5>
+                <h6>Management Structure</h6>
+                <img src="{% static 'images/organogram1.png' %}" />
+            </div>
+            <div>
+                <h6>Management</h6>
+                <p>Our management policies includes:-
+                    <br /> Planning: - Mapping out steps to achieve our goals.
+                    <br /> Organizing: - Organize team to work based on mapped out plans.
+                    <br /> Staffing: - Recruiting staff and training in line with set out goals.
+                    <br /> Leading: - Communicating, motivating, guiding to solve challenges faced.
+                    <br /> Controlling: - Check results and make corrective actions where needs be.
+                </p>
+            </div>
+            <div>
+                <h6>Professionals & Advisors</h6>
+                <p>Engineer Francis Oludemi: - Solar Energy Engineer / Consultant
+                    <br />George Oluwaseun: – Environmental and Energy Manager</p>
+                </p>
+            </div>
+            <div>
+                <h6>Company/CAC documents </h6>
+                <p>Certificate of Registration
+                    <br /> Registration documents.
+                </p>
+            </div>
+            <div>
+                <p>Thank you for taking the time to go through this business profile. If there are any questions or comments,
+                    please feel free to contact us.</p>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

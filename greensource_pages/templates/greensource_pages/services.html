@@ -1,0 +1,174 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} End-to-end Solar system Services{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>WHAT WE OFFER</h1>
+            <h2>A vast range of services for your convinience</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Services</li>
+    </ol>
+</nav>
+<section class="sec-pad-with-content-margin-30 gray-bg service-page-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-service-style-one wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" data-wow-offset="10">
+                    <div class="top-box">
+                        <div class="inner-content">
+                            <i class="fas fa-solar-panel"></i>
+                            <h3>
+                                <a href="{% url 'solar_design' %}">design / installation</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <img src="{% static 'images/design-installation.jpeg' %}" alt="rooftop solar" />
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="dotted"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-service-style-one wow fadeIn" data-wow-duration="6s" data-wow-delay="0.2s" data-wow-offset="10">
+                    <div class="top-box">
+                        <div class="inner-content">
+                            <i class="far fa-lightbulb"></i>
+                            <h3>
+                                <a href="{% url 'electrical_design' %}">street lighting</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <img src="{% static 'images/street-light.jpeg' %}" alt="solar street-light" />
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="dotted"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-service-style-one wow fadeIn" data-wow-duration="9s" data-wow-delay="0.2s" data-wow-offset="10">
+                    <div class="top-box">
+                        <div class="inner-content">
+                            <i class="fas fa-car-battery"></i>
+                            <h3>
+                                <a href="{% url 'energy_management' %}">storage solution</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <img src="{% static 'images/battery.jpg' %}" alt="2v solar battery bank" />
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="dotted"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-service-style-one wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" data-wow-offset="10">
+                    <div class="top-box">
+                        <div class="inner-content">
+                            <i class="fas fa-power-off"></i>
+                            <h3>
+                                <a href="{% url 'project_management' %}">energy management</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <img src="{% static 'images/energy.jpg' %}" alt="energy saving bulb" />
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="dotted"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-service-style-one wow fadeIn" data-wow-duration="6s" data-wow-delay="0.2s" data-wow-offset="10">
+                    <div class="top-box">
+                        <div class="inner-content">
+                            <i class="fas fa-hdd"></i>
+                            <h3>
+                                <a href="{% url 'hvac' %}">system upgrade</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <img src="{% static 'images/inverter.jpg' %}" alt="solar inverter" />
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="dotted"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-service-style-one wow fadeIn" data-wow-duration="9s" data-wow-delay="0.2s" data-wow-offset="10">
+                    <div class="top-box">
+                        <div class="inner-content">
+                            <i class="fas fa-toolbox"></i>
+                            <h3>
+                                <a href="{% url 'maintenance_service' %}">maintenance</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <img src="{% static 'images/modules.jpeg' %}" alt="solar panel maintenance" />
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="dotted"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="call-to-action">
+    <div class="container-fluid padding wow fadeIn">
+        <div class="row">
+                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
+                <h3 class="col-lg-3 col-md-4 col-xs-12">
+                <a href="{% url 'contact_us' %}">get in touch
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                </h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

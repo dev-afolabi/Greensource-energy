@@ -1,0 +1,73 @@
+{% extends 'base_layout.html' %}
+{% load crispy_forms_tags %}
+{% block nav-contact %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} Contact Us{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding text-center">
+        <div class="col-12 animated fadeIn">
+            <h1>GET IN TOUCH</h1>
+            <h2>Feel free to reach us through any of our platforms below</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item active">Contact Us</li>
+    </ol>
+</nav>
+<div class="container padding">
+    <div class="address row padding text-center">
+        <div class="add col-xs-12 col-md-12 col-lg-6">
+            <h4>You have any Question? Feel free to Contact us</h4>
+            <p><i class="fas fa-map-marker-alt"></i>1, Heritage street by anobi noah mowe-ofada Ogun state.</p>
+            <p>
+                <i class="far fa-envelope"></i>
+                <a href="javascript:location='mailto:\u0068\u0065\u006c\u006c\u006f\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d';void 0">
+                        <script type="text/javascript">document.write('\u0068\u0065\u006c\u006c\u006f\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d')</script>
+                    </a>
+            </p>
+            <p><i class="fas fa-phone"></i>+(234) 8029442697</p>
+        </div>
+                <div class="map col-lg-6 col-xs-12 col-md-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.741452898637!2d3.433366268485239!3d6.84608399012105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc7b12aa0619b%3A0x668d6d2407416eeb!2sGREENSOURCE+ENGINEERING+CONSULT!5e0!3m2!1sen!2sng!4v1554279134001!5m2!1sen!2sng" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div> 
+    </div>
+</div>
+<div class="container padding">
+    <div class="content text-center">
+        <div id="contact-form" class="col-xs-12 col-md-12 col-lg-9">
+                <form action="contact-us" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.first_name|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.last_name|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                                {{ form.from_email|as_crispy_field }}
+                            </div>
+                        <div class="form-group col-md-6 mb-0">
+                                {{ form.phone|as_crispy_field }}
+                            </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.city|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.state|as_crispy_field }}
+                        </div>
+                        {{ form.message }}
+                        </div>
+                    <button type="submit" name="submit" class="btn">send Message</button>
+                </form>
+                <p>*please note that we do not rent or sell your information to any third parties! Refer to our <a href="{% url 'privacy' %}"><strong>Privacy Policy</strong></a> for more details*</p>
+            </div>
+    </div>  
+</div>
+{% endblock %}

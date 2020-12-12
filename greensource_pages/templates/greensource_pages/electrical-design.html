@@ -1,0 +1,151 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} Solar street light solution{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding text-center">
+        <div class="col-12 animated fadeIn">
+            <h1>SOLAR STREET LIGHTING</h1>
+            <h2>Smart lighting solutions</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+        <li class="breadcrumb-item active">Street Lighting</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="light row padding">
+        <ul class="list-group col-lg-4">
+            <li class="list-group-item">
+                <a href="{% url 'services' %}">
+                    <i class="fas fa-caret-right"></i> All Services</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'solar_design' %}">
+                    <i class="fas fa-caret-right"></i> Design / Installation</a>
+            </li>
+            <li class="list-group-item list-group-item-success">
+                <a href="{% url 'electrical_design' %}">
+                    <i class="fas fa-caret-right"></i> Street lighting</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'energy_management' %}">
+                    <i class="fas fa-caret-right"></i> Energy Storage Solutions</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'project_management' %}">
+                    <i class="fas fa-caret-right"></i> Energy Management</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'hvac' %}">
+                    <i class="fas fa-caret-right"></i> System Upgrade</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'maintenance_service' %}">
+                    <i class="fas fa-caret-right"></i> Retrofit / Maintenance</a>
+            </li>
+        </ul>
+        <div class="col-lg-8">
+            <img src="{% static 'images/street-light.jpeg' %}" alt="solar street light" />
+        </div>
+    </div>
+</div>
+<div class="container padding">
+        <div class="row details">
+            <div>
+                <p>
+                    We design, install solar street lights for residential, offices, communities and markets places to serve our customers and
+                    increase our green energy production reducing carbon footprint in the process. Our design and specification are choosen from our customer's need along with customized
+                    lighting system to meet thier specific goals. <br />
+                    Our solar street lights are made of high quality PVC/PVC Composite materials that provide superior durability throughout
+                    the lifespan of the these reflective devices. They are sturdy, reliable and designed to give max illumination
+                    at night without any power loss or need when the sun goes down. Our street lights offer improved environmental aestetics and performance. our goal is
+                    to light up your space when needed and at the highest quality with our led installations that offer low voltage power
+                    creating beautiful lighting without pollution. We provide an amazing price guarantee with a one year warranty on all our project installations unless defects
+                    occur while under normal use conditions. Our team is ready when you need us and are available during our work hours. We offer:
+                </p>
+                <ul>
+                    <li>Design and Installation</li>
+                    <li>Technical support</li>
+                    <li>Maintenance</li>
+                </ul>
+                <p>
+                </p>
+            </div>
+        </div>
+</div>
+<div class="container padding">
+        <div class="solar">
+            <div class="col-lg-5 col-md-6 col-xs-12 single-about-style-two clearfix">
+                <div class="image-block">
+                    <img src="{% static 'images/blue-gray.jpg' %}" alt="Awesome Image" />
+                    <div class="overlay">
+                        <div class="box">
+                            <div class="content">
+                                <div class="dotted"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-block">
+                    <h3>Residential</h3>
+                    <p>Custom fit designs for homes, communities, estates, recreation centers.</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-xs-12 single-about-style-two clearfix">
+                <div class="image-block">
+                    <img src="{% static 'images/modern-building.jpeg' %}" alt="Awesome Image" />
+                    <div class="overlay">
+                        <div class="box">
+                            <div class="content">
+                                <div class="dotted"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-block">
+                    <h3>Commercial</h3>
+                    <p>Designed for schools, health care facilities, religious centers and farms.</p>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="container-fluid padding">
+        <div class="row base">
+            <div class="order-list col-lg-5 col-md-6 col-xs-12">
+                <h4>Our Street lighting service includes:</h4>
+                <ol>
+                    <li>Design</li>
+                    <li>Installation</li>
+                    <li>Troubleshooting</li>
+                    <li>Maintenance service</li>
+                    <li>Component Replacement</li>
+                    <li>Lighting systems upgrade</li>
+                    <li>Retrofiting existing installations</li>
+                </ol>
+            </div>
+            <div class="order-list col-lg-5 col-md-6 col-xs-12">
+                <img src="{% static 'images/lamp.jpeg' %}" />
+            </div>
+        </div>
+</div>
+<section id="call-to-action">
+    <div class="container-fluid padding wow fadeIn">
+        <div class="row">
+                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
+                <h3 class="col-lg-3 col-md-4 col-xs-12">
+                <a href="{% url 'contact_us' %}">get in touch
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                </h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'base_layout.html' %}
+{% block nav-projects %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} Featured solar projects{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>RECENT PROJECTS</h1>
+            <h2>Some of our featured projects</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Projects</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="row project padding">
+        {% for project in projects %}
+        <div id="accordion">
+            <div class="card">
+                <img src="{{ project.image.url }}" alt="img" />
+                <img src="{{ project.second_image.url }}" class="img-top" alt="img" />
+                <div class="card-header" id="heading{{ project.heading_id }}">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{ project.heading_id }}" aria-expanded="false"
+                            aria-controls="collapse{{ project.heading_id }}">
+                            {{ project.title }}
+                            <i class="fas fa-arrow-alt-circle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse{{ project.heading_id }}" class="collapse show" aria-labelledby="heading{{ project.heading_id }}" data-parent="#accordion">
+                    <div class="card-body">
+                        {{ project.description }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<section id="call-to-action">
+    <div class="container-fluid padding wow fadeIn">
+        <div class="row">
+                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
+                <h3 class="col-lg-3 col-md-4 col-xs-12">
+                <a href="{% url 'contact_us' %}">get in touch
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                </h3>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid padding">
+        <div class="row-counters row padding">
+            <div class="counter-heading col-12">
+                <h5>Our Business Success</h5>
+                <p>You always get the best guidance</p>
+                <hr />
+            </div>
+            <div class="counter col-xs-12 col-md-6 col-lg-3">
+                <div>
+                    <i class="far fa-smile"></i>
+                </div>
+                <span data-toggle="counter-up">35</span>
+                <span class="sign">+</span>
+                <p>Happy Clients</p>
+            </div>
+            <div class="counter col-xs-12 col-md-6 col-lg-3">
+                <div>
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <span data-toggle="counter-up">28</span>
+                <span class="sign">+</span>
+                <p>Completed Projects</p>
+            </div>
+            <div class="counter col-xs-12 col-md-6 col-lg-3">
+                <div>
+                    <i class="far fa-clock"></i>
+                </div>
+                <span data-toggle="counter-up">1,460</span>
+                <span class="sign">+</span>
+                <p>Hours Of Support</p>
+            </div>
+            <div class="counter col-xs-12 col-md-6 col-lg-3">
+                <div>
+                    <i class="fas fa-users"></i>
+                </div>
+                <span data-toggle="counter-up">5</span>
+                <span class="sign">+</span>
+                <p>Team Members</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

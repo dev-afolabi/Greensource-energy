@@ -1,0 +1,32 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+{% block title %}{{ block.super }} Gallery{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>OUR GALLERY</h1>
+            <h2>Surf through our work / activities</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+    </ol>
+</nav>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="container padding">
+    <div class="gallery">
+        {% for image in images %}
+        <a href="{{ image.thumb.url }}"><img src="{{ image.thumb.url }}"  alt="awesome image"></a>
+        {% endfor %}
+        <div class="clear"></div>
+    </div>
+</div>
+{% endblock %}

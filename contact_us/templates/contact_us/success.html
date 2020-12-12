@@ -1,0 +1,41 @@
+{% extends 'base_layout.html' %}
+{% block nav-contact %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} Thank You{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>THANK YOU</h1>
+            <h2>We appreciate your time dearly</h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'contact_us' %}">Contact Us</a></li>
+        <li class="breadcrumb-item active">Thank you</li>
+    </ol>
+</nav>
+<div class="container padding">
+    <div class="thank-you row padding text-center">
+        <div class="col-xs-12 col-md-12 col-lg-6">
+            <h4>Thank you for taking the time to conatct us, We very much appreciate the time you spent. We will get back to you soon as
+            possible.</h4>
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-6">
+            <img src="{% static 'images/thankyou.jpeg' %}" alt="image" />
+        </div>
+    </div>
+</div>
+<div class="container padding">
+    <div class="thank-you-home row padding">
+        <div class="col-lg-12">
+            <a href="{% url 'index' %}" role="button">GO BACK HOME</a>   
+        </div>
+    </div>
+</div>
+{% endblock %}
