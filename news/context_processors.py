@@ -6,7 +6,7 @@ def posts_requests(request):
     category = Category.objects.all()
     page_kwarg = 'page'
     paginate_by = 6
-    posts =Post.objects.all().order_by('-date')
+    posts = Post.objects.all().order_by('-date')
     top_post = posts[:4]
     paginator = Paginator(posts, paginate_by)
     page_number = request.GET.get(page_kwarg)

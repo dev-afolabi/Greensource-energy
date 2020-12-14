@@ -10,25 +10,30 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
-# import django_heroku
 import os
-# import psycopg2
-# import dj_database_url
+import psycopg2
+import dj_database_url
+from decouple import config,Csv
+import dotenv
+from os.path import join, dirname
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dotenv_path = join(dirname(__file__),'../.env')
+load_dotenv(dotenv_path)
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'r_$68qt-_hkd(ufy+x^7k#exi@qqfs%t66^=(hppa11v5*s&_p'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'www.greensourcenergy.com', 'greensourceconsult.herokuapp.com']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Application definition
@@ -44,7 +49,6 @@ INSTALLED_APPS = [
     'news',
     'contact_us',
     'crispy_forms',
-    'storages',
 ]
 
 MIDDLEWARE = [
@@ -85,16 +89,21 @@ WSGI_APPLICATION = 'greensourceconsult.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD':os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT')
     }
 }
+db_from_env = dj_database_url.config(conn_max_age=500)
 
-# DATABASE_URL = os.environ['DATABASE_URL']
 
-# conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
-# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASES['default'].update(db_from_env)
+
+DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/auth-password-validators
@@ -149,20 +158,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-EMAIL_HOST_USER = 'greensourcekonsult@gmail.com'
-EMAIL_HOST_PASSWORD = 'avtbqzathihrizwo'
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-
-# AWS_ACCESS_KEY_ID="AKIAV7FXMLNKRDXYGBVX"
-# AWS_SECRET_ACCESS_KEY="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"
-# AWS_STORAGE_BUCKET_NAME="olumide-greensource"
-
-# AWS_S3_REGION_NAME = 'us-east-2'
-
-# AWS_S3_SIGNATURE_VERSION = 's3v4'
-
-# AWS_S3_FILE_OVERWRITE = False
-# AWS_DEFAULT_ACL = None
-
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' 
+ 
