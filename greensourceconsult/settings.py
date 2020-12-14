@@ -33,7 +33,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1' , '.greensourcenergy.com', 'ec2-18-224-234-12.us-east-2.compute.amazonaws.com', '18.224.234.12']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
