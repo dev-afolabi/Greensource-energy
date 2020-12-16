@@ -100,13 +100,13 @@ html body{
 # NAV MENU STYLING
 --------------------------------------------------------------*/
 .nav-menu a {
-  padding: 10px 5px 10px 5px;
+  padding: 10px 4px 10px 4px;
   text-decoration: none;
   display: inline-block;
   color: #cdcdcd;
   font-weight: 550;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 15px;
   outline: none;
   width: 100%;
 }
@@ -253,6 +253,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	padding: 5px 5px;
 	z-index:-1;
 	height: 50px;
+	text-align: center;
 }
 .time{
 	justify-content:center;
@@ -476,18 +477,17 @@ nav .breadcrumb li a:hover{
 	margin-left: auto;
 	margin-right: auto;
 }
-
 /*--------------------------------------------------------------
 # SECTION HEADINGS
 --------------------------------------------------------------*/
 .service h5{
 	margin-top: 150px; 
 	font-family: 'Play', sans-serif;
-	font-size: 30px;
-	font-weight: 600;
+	font-size: 20px;
+	font-weight: 550;
 	color:#555;
-	letter-spacing: 2px;
 	text-align: center;
+	text-transform: uppercase;
 }
 .service hr{
 	margin-top: 5px;
@@ -500,6 +500,7 @@ nav .breadcrumb li a:hover{
 	margin-top: 0px;
 	font-size: 18px;
 	text-align: center;
+	letter-spacing: 2px;
 }
 /*--------------------------------------------------------------
 # SERVICES LIST
@@ -693,7 +694,7 @@ nav .breadcrumb li a:hover{
 	padding: 5px 25px;
 	margin-bottom: 50px;
 	text-align: justify;
-	line-height: 30px;
+	line-height: 40px;
 }
 .abt{
 	margin-bottom: 50px;
@@ -704,7 +705,7 @@ nav .breadcrumb li a:hover{
 	color: #fff;
 	font-size: 16px;
 	background: #006420;
-	padding: 20px 25px;
+	padding: 15px 25px;
 	border-radius: 5px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -725,16 +726,11 @@ nav .breadcrumb li a:hover{
 	margin-left:auto;
 	margin-right:auto;
 }
-.people-one img{
-	margin-top: 40px;
-	margin-bottom: 20px;
-	width: 75%;
-	height: 380px;
+.people-one{
 	display: block;
 	margin-left:auto;
 	margin-right:auto;
-	border-top-left-radius: 10%;
-	border-bottom-right-radius: 10%;
+	margin-top: 20px;
 }
 .define img{
 	margin-top:100px;
@@ -867,6 +863,48 @@ nav .breadcrumb li a:hover{
 }
 .card-cover .card:hover .face.face2 h2{
 	font-size: 1em;
+}
+.choose1{
+	background: #6a9e97;
+	padding: 30px 25px;
+	margin-top: 50px;
+	left: 10%;
+	width: 40%;
+	height: 160px;
+	position: absolute;
+	border-radius: 5px;
+}
+.choose2{
+	margin-top: 170px;
+	background: #879db3;
+	padding: 30px 15px;
+	left: -10%;
+	width: 40%;
+	height: 150px;
+	position: relative;
+	border-radius: 5px;
+	float: right;
+	clear:both;
+}
+.choose1 h6{
+	margin-top: 50px;
+	display: block;
+	font-size: 18px;
+	font-weight: 550;
+	letter-spacing: .5px;
+	float: right;
+	clear: both;
+	position: relative;
+}
+.choose2 h6{
+	margin-top: 40px;
+	display: block;
+	font-size: 18px;
+	font-weight: 550;
+	letter-spacing: .5px;
+	float: right;
+	clear: both;
+	position: relative;
 }
 /*--------------------------------------------------------------
 # OUR BENEFITS
@@ -1058,7 +1096,7 @@ nav .breadcrumb li a:hover{
 .choose-body{
 	margin: 0px 20px;
 	display: block;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 .choose-body h6{
 	font-size: 17px;
@@ -1079,32 +1117,44 @@ nav .breadcrumb li a:hover{
 	background: #fff;
 	border-radius: 100%;
 	padding: 5px 5px;
-	margin-right:10px;
+	margin-right: 10px;
 }
 .video img{
-	width: 100%;
-	height: 85%;
+	width: 90%;
+	height: 75%;
 	margin-top: 50px;
 	display: block;
 	margin-left: auto;
-	margin-right: auto
-}
-#trigger{ 
-	top: 45%;
-	left: 38.5%;
-	display: flex;
-	margin-left: auto;
 	margin-right: auto;
-	width: 100px;
-	height: 100px;
+}
+.video #trigger{ 
 	border-radius: 50%;
+	width: 100px;;
+	height: 100px;
+	line-height: 100px;
 	background: #2dc997;
 	font-size: 25px;
-	line-height: 100px;
 	color: #002c42;
 	position: absolute;
-	align-items: center;
+	margin-left: 40%;
+	margin-top: -200px;
+}
+.video #trigger i{
+	margin-left: 15px;
+	margin-top: 25px;
+	position: absolute;
+}
+.video #trigger:before{
 	justify-content: center;
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	border: 20px solid rgba(105, 105, 105, 0.5);
+	transition: all .4s ease;
 }
 @keyframes zoominoutsinglefeatured{
 	0% {
@@ -1117,21 +1167,10 @@ nav .breadcrumb li a:hover{
 		transform: scale(1,1);	
 	}
 }
-#trigger:before{
-	content: '';
-	position: absolute;
-	top: -20px;
-	left: -20px;
-	right: -20px;
-	bottom: -20px;
-	border-radius: 50%;
-	border: 20px solid rgba(0, 0, 0, 0.4);
-	transition: all .4s ease;
-} 
-#trigger:hover{
+.video #trigger:hover:before{
 	transition: 0.3s;
 	animation: zoominoutsinglefeatured 1s infinite;
-}
+} 
 /*--------------------------------------------------------------
 # TEAM SECTION
 --------------------------------------------------------------*/
@@ -1212,7 +1251,7 @@ nav .breadcrumb li a:hover{
 	font-size: 15px;
 	margin-top: 5px;
 	margin-left: 15px;
-	color: #cdcdcd;
+	color: #fff;
 }
 /*--------------------------------------------------------------
 # TEAM SECTION TWO
@@ -1294,7 +1333,7 @@ nav .breadcrumb li a:hover{
 	font-size: 15px;
 	margin-top: 5px;
 	margin-left: 15px;
-	color: #cdcdcd;
+	color: #fff;
 }
 /*--------------------------------------------------------------
 # ROW COUNTER
@@ -1380,34 +1419,32 @@ nav .breadcrumb li a:hover{
 	width: 100%;
 }
 .note{
-	margin-top:20px;
-	margin-left:10px;
-	font-size:15px;
-	width:90%;
-	line-height:25px;
-	color:#d3d3d3;
+	margin-top: 20px;
+	margin-left: 10px;
+	font-size: 15px;
+	width: 90%;
+	line-height: 25px;
+	color: #d3d3d3;
 }
 .services{
-	margin-top:50px;
+	margin-top: 50px;
 }
 .services h6{
 	font-family: 'Play', sans-serif;
-	font-size:18px;
-	font-weight:normal;
-	line-height:5px;
-	color:#fafafa;
-	margin:0px 20px;	
+	font-size: 18px;
+	font-weight: 550;
+	line-height: 5px;
+	color:#fafafa;	
+	margin: 20px 20px;
 }
-.services hr{
-	margin-top:30px;
-	margin-bottom:5px;
-	margin-left:0px;
-	border-top:2px solid;
-	width:90%;
+.services ul{
+	margin-top: 30px;
+	margin-left: 0px;
 }
 .services li{
-	line-height:35px;
+	line-height: 42px;
 	list-style-type: none;
+	margin-left: -10px;
 }
 .services li a{
 	text-decoration: none;
@@ -1417,18 +1454,18 @@ nav .breadcrumb li a:hover{
 }
 .services li a:hover{
 	color: #2dc977;
-	transition:.3s;
+	transition: .3s;
 }
 .footer-address{
-	margin-top: 15px;
+	margin-top: 35px;
 	width: 100%;
 }
 .footer-address i{
 	margin-top: 4px;
 	margin-right: 10px;
-	font-size:18px;
+	font-size: 18px;
 	color:#2dc977;
-	float:left;
+	float: left;
 }
 .footer-address a{
 	width: 100%;
@@ -1440,18 +1477,18 @@ nav .breadcrumb li a:hover{
 	text-decoration: none;
 }
 .services p{
-	font-size:15px;
-	padding:0px 25px;
-	margin-left:10px;
-	color:#d3d3d3;
-	width:95%;
+	font-size: 15px;
+	padding: 0px 25px;
+	margin-left: 10px;
+	color: #d3d3d3;
+	width: 95%;
 }
 .social h6{
 	color: #2dc977;
-	margin:30px 20px;
+	margin: 30px 20px;
 	font-weight: 500;
-	font-size:20px;
-	font-family:cambria;
+	font-size: 20px;
+	font-family: cambria;
 }
 .social{
 	margin-top:30px;
@@ -1459,11 +1496,11 @@ nav .breadcrumb li a:hover{
 }
 .social a{
 	color:#666;
-	font-size:15px;
-	margin:25px 4px;
-	background:#f1f1f1;
-	border-radius:100%;
-	padding:12px 15px;
+	font-size: 15px;
+	margin: 25px 4px;
+	background: #f1f1f1;
+	border-radius: 100%;
+	padding: 12px 15px;
 } 
 .social a:hover{
 	background:#006420;
@@ -1491,13 +1528,15 @@ nav .breadcrumb li a:hover{
 	transition: .3s;
 }
 .copyright{
-	font-size:14px;
-	margin-top:15px;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 15px;
+	text-align: center;
 } 
 .green{
-	color:#2dc977;
-	font-size:15px;
-	font-weight:bold;
+	color: #2dc977;
+	font-size: 15px;
+	font-weight: 550;
 }
 .footnote{
 	background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), #001f3f;
@@ -1516,10 +1555,205 @@ nav .breadcrumb li a:hover{
 	color:#cdcdcd;
 }
 /*--------------------------------------------------------------
+# PRICING
+--------------------------------------------------------------*/
+.pricing-table{
+	max-width: 1200px;
+	margin-top: 70px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.col{
+	flex: 25%;
+	padding: 20px;
+	width: 320px;
+	box-sizing: border-box;
+	
+}
+.table{
+	background: rgba(31, 31, 37, 1.5);
+	padding: 40px 5px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 2px 2px 2px #002c42;	
+}
+.table:hover{
+	transform:scale(1.05);
+	text-decoration: none;
+	box-shadow:2px 2px 12px rgba(47, 47, 47, 0.40);
+	transition:all ease 0.3s;
+}	
+.table h2{
+	text-transform: uppercase;
+	font-family: 'Play', sans-serif;
+	font-size: 18px;
+	font-weight: 550;
+	color: #2dc977;
+}
+.table ul{
+	margin: 0;
+	padding: 0;
+}
+.table ul h4{
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: 550;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	color: #318aa5;
+	font-family: 'Play', sans-serif;
+}
+.table ul li{
+	list-style: none;
+	font-size: 15px;
+	text-align: justify center;
+	color:#cdcdcd;
+}
+.prices{
+	color: #cdcdcd;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.prices span{
+	color: #cdcdcd;
+	display: block;
+	font-size: 15px;
+	margin-top: 20px;
+	text-transform: capitalize;
+}
+.table button{
+	margin-top: 20px;
+	color: #fff;
+	width: 70%;
+	border: 1px solid #cdcdcd;
+	border-radius: 10%;
+	padding: 8px 15px;
+}
+.table button:hover{
+	margin-top: 20px;
+	color: #fff;
+	width: 70%;
+	border: 1px solid #cdcdcd;
+	border-radius: 10%;
+	padding: 8px 15px;
+	background: #002c42;
+	transition: 0.3s;
+}
+.info{
+	margin-top: 50px;
+}
+.info p{
+	font-size: 16px;
+	text-align: center;
+}
+.swiper-slide{
+	width:250px !important;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.slider-box{
+	margin-top:20px;
+	margin-bottom: 100px;
+	height:350px;
+	width:250px;
+	position:relative;
+	background-color:#FFFFFF;
+	border-radius:5px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	border:1px solid rgba(187,187,187,0.40);
+}
+.slider-box a{
+	text-decoration:none;
+	text-align:center;
+}
+.img-box{
+	height:170px;
+}
+.img-box img{
+	height:auto;
+	max-width:100%;
+	max-height:100%;
+}
+.time{
+	position:absolute;
+	top:0px;
+	right:20px;
+	color: #6b90b4;
+}
+.detail{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	box-sizing:border-box;
+	font-size:13px;
+	line-height:35px;
+}
+.price{
+	color:#FFFFFF;
+	background-color:#007654;
+	line-height:20px;
+}
+.cart{
+	position:absolute;
+	bottom:0px;
+	height:45px;
+	background-color:#007654;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.cart a{
+	color:#fff;
+}
+.cart a:hover{
+	color:#fff;
+	text-decoration: none;
+}
+.slider-box:hover{
+	box-shadow:2px 2px 12px rgba(47,47,47,0.40);
+}
+.slider-box:hover .img-box img{
+	transform:scale(1.07);
+	transition:all ease 0.3s;
+}
+.cart:hover{
+	transform:scale(1.1);
+	background-color:#001f3f;
+	text-decoration: none;
+	color: #fff;
+	box-shadow:2px 2px 12px rgba(47,47,47,0.40);
+	transition:all ease 0.1s;
+}					
+.heading{
+	display:flex;
+	justify-content:center;
+}
+.heading h1{
+	background-color:#001f3f;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow:2px 2px 12px rgba(69,66,66,0.3);
+	padding:10px 10px;
+	color:#fff;
+	margin-top:50px;
+	font-size:20px;
+	font-weight: bold;
+}
+/*--------------------------------------------------------------
 # FREQUENTLY ASKED QUESTIONS
 --------------------------------------------------------------*/
 #accordion{
-	margin-top:100px;
+	margin-top: 100px;
 }
 .FAQS h3{
 	font-family: 'play', sans-serif;
@@ -2240,7 +2474,7 @@ nav .breadcrumb li a:hover{
 	background-position: center center;
 	background-size: cover;
 	width: auto;
-	height: 100vh;
+	height: 92.5vh;
 }
 .error h4{
 	font-size: 100px;
@@ -2273,7 +2507,64 @@ nav .breadcrumb li a:hover{
 	transition:.3s;
 	transition-delay: .3s;
 }
-
+/*--------------------------------------------------------------
+# TRAINING
+--------------------------------------------------------------*/
+.training{
+	background-image: url("images/vv.jpg");
+	background-position: center center;
+	background-size: cover;
+	width: auto;
+	height: 92.5vh;
+	color: #cdcdcd;
+	text-align: center;
+}
+.training h1{
+	margin-top: 170px;
+	text-transform: uppercase;
+	font-size: 40px;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+}
+.training h2{
+	margin: 20px 0;
+	font-size: 20px;
+	font-weight: 500;
+	font-style: italic;
+}
+.count{
+	margin: 40px 0;
+}
+.countd{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border:2px solid;
+	margin: 20px 30px;
+	font-size: 12px;
+	border-radius: 15%;
+	overflow: hidden;
+	background: rgba(31, 31, 37, 0.9);
+}
+.countd span{
+	display: block;
+	font-size: 26px;
+	margin-top: 14px;
+}
+.training a{
+	font-size:18px;
+	padding:15px 15px;
+	background:#006420;
+	color:#cdcdcd;
+	border-radius: 5px;
+}
+.training a:hover{
+	background:#001f3f;
+	color:#cdcdcd;
+	text-decoration:none;
+	transition:.3s;
+	transition-delay: .3s;
+}
 /*--------------------------------------------------------------
 # NEWS BLOG
 --------------------------------------------------------------*/
@@ -2290,22 +2581,20 @@ nav .breadcrumb li a:hover{
 }
 .articles .news p{
 	font-size: 15px;
-	background:#006420;
-	color:#fff;
-	position: relative;
-	text-align: center;
-	border-radius: 5px;
-	margin-top: -25px;
-	margin-bottom: -20px;
-	margin-left: 30px;
-	width: 20%;
-	text-transform: uppercase;
+	margin-top: 20px;
+	color:#006420;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.articles .card-body{
+	margin-top: -30px;
 }
 .articles .card-body small{
-	margin-left: 0px;
+	margin-left: -20px;
 	font-size: 15px;
 }
 .articles .card-body a h5{
+	margin-left: -20px;
 	font-size: 15px;
 	color:#000;
 	line-height: 20px;
@@ -2319,14 +2608,32 @@ nav .breadcrumb li a:hover{
 	margin: 50px 0px;
 	justify-content: center;
 }
-.blog .cad{
+.blog .news .cad{
 	margin-top: 25px;
 	margin-left: 50px;
 	margin-bottom: 50px;
 	height: 370px;
 	width: 370px;
 	border-radius: 0px;
+}
+.blog .news .cad img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	height: 220px;
 } 
+.blog .news .cad p{
+	font-size: 15px;
+	margin-top: 20px;
+	color:#006420;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.blog .news .card-body{
+	margin-top: -25px;
+	margin-left: -20px;
+}
 .blog .card{
 	display: block;
 	margin-right: auto;
@@ -2381,22 +2688,6 @@ nav .breadcrumb li a:hover{
 }
 .blog .cad img{
 	height:200px;
-}
-.blog .cad p{
-	text-align:center;
-	font-size:15px;
-	width:17%;
-	background:#006420;
-	color:#fff;
-	padding:5px 0px;
-	border-radius:5px;
-	line-height:20px;
-	margin-top:-25px;
-	margin-left:20px;
-	position:relative;
-}
-.blog .card-body{
-	margin-top:-15px;
 }
 .card-body h5{
 	margin-top:10px;
@@ -2500,26 +2791,6 @@ nav .pagination a:hover{
 }
 .form-row input{
 	width:100%;
-}
-.comment .form-row textarea{
-	width:100%;
-	height: 180px;
-}
-.comment button {
-	width:200px;
-	height:60px;
-	margin:10px 25px;
-	padding:20px 20px;
-	background:#006420;
-	color:#fafafa;
-	font-size:16px;
-	font-weight:550px;
-	text-transform:uppercase;
-}
-.comment button:hover{
-	background:#cdcdcd;
-	color:#006420;
-	transition:.3s;
 }
 .comment-header{
 	margin-top:80px;
@@ -2776,7 +3047,7 @@ nav .pagination a:hover{
 		margin-top: 20px;
 	}
 	.carousel-caption .btn{
-		width:120px;
+		width: 150px;
 		font-size: 15px;
 	}
 	.card-cover .item .card{
@@ -2987,6 +3258,10 @@ nav .pagination a:hover{
 	.address .add h4{
 		font-size: 30px;
 	}
+	.services ul{
+		margin-top: 30px;
+		margin-left: 20px;
+	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		991px
@@ -3073,6 +3348,7 @@ nav .pagination a:hover{
 		width:100%;
 		justify-content: center;
 	}
+	
 	.people .inner-box{
 		margin-left: 130px;
 	}
@@ -3305,13 +3581,14 @@ nav .pagination a:hover{
 	.FAQS .card button{
 		font-size:20px;
 	}
-	.blog .cad{
+	.blog .news .cad{
 		justify-content: center;
+		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 20px 50px;
+		width: 45%;
 	}
-	.blog .cad img{
+	.blog .news .cad img{
 		height:220px;
 		width: 80%;
 	}
@@ -3431,6 +3708,16 @@ nav .pagination a:hover{
 	}
 	.solar p{
 		font-size: 15px;
+	}
+	.choose1{
+		left: 0;
+		width: 50%;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: 0;
+		width: 50%;
+		margin-top: 200px;
 	}
 }
 
@@ -3619,32 +3906,40 @@ nav .pagination a:hover{
 		display: block;
 		width: 100%;
 	}
+	.articles .news{
+		display: inline-block;
+		width: 47%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.articles .news img{
-		width: 60%;
+		width: 100%;
 	}
 	.articles .news p{
 		font-size: 17px;
-		width: 10%;
-		margin-left: 150px;
+		width: 100%;
+		margin-left: 0px;
 	} 
 	.articles .card-body small{
 		font-size: 15px;
-		margin-left: 130px;
+		margin-left: -20px;
 	}
 	.articles .card-body a h5{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 70%;
+		margin-left: -20px;
+		width: 100%;
 	}
-	.blog .cad{
+	.blog .news .cad{
 		justify-content: center;
+		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 20px 50px;
+		width: 50%;
 	}
-	.blog .cad img{
-		height:220px;
+	.blog .news .cad small{
+		margin-left: 0px;
+	}
+	.blog .news .cad img{
+		height: 220px;
 		width: 90%;
 	}
 	.blog .media img{
@@ -3838,6 +4133,26 @@ nav .pagination a:hover{
 	.solar p{
 		font-size: 15px;
 	}
+	.people-one{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.choose1{
+		left: 15%;
+		width: 35%;
+		height: 150px;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: -15%;
+		width: 35%;
+		height: 150px;
+		margin-top: 200px;
+	}
+	.video #trigger i{
+		margin-left: 27px;
+	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		576px
@@ -4008,15 +4323,36 @@ nav .pagination a:hover{
 	}
 	.articles .news p{
 		font-size: 17px;
-		width: 10%;
-		margin-left: 100px;
+		width: 100%;
+		margin-left: 80px;
 	} 
 	.articles .card-body small{
 		font-size: 15px;
-		margin-left: 80px;
+		margin-left: 55px;
 	}
-	.blog .cad img{
-		height:220px;
+	.articles .card-body a h5{
+		margin-left: 55px;
+	}
+	.blog .news .cad{
+		justify-content: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+	}
+	.blog .news .cad small{
+		margin-left: 0px;
+	}
+	.blog .news .cad img{
+		height: 220px;
+		width: 90%;
+	}
+	.blog .news .cad a h5{
+		width: 110%;
+		font-size: 15px;
+	}
+	.blog .news .cad img{
+		height: 220px;
 		width: 100%;
 	}
 	.pagination{
@@ -4182,6 +4518,23 @@ nav .pagination a:hover{
 	}
 	.system ol li{
 		font-size: 15px;
+	}
+	.people-one{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.choose1{
+		left: 15%;
+		width: 40%;
+		height: 150px;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: -15%;
+		width: 40%;
+		height: 150px;
+		margin-top: 200px;
 	}
 }
 
@@ -4369,18 +4722,19 @@ nav .pagination a:hover{
 		display: block;
 	}
 	.articles .news img{
-		width: 70%;
+		width: 75%;
 	}
 	.articles .news p{
 		font-size: 17px;
-		width: 14%;
-		
+		width: 100%;
+		margin-left: 45px;
 	} 
 	.articles .card-body small{
 		font-size: 15px;
-		margin-left: 60px;
+		margin-left: 25px;
 	}
 	.articles .card-body a h5{
+		margin-left: 25px;
 		width: 85%;
 	}
 	.blog .cad img{
@@ -4584,6 +4938,23 @@ nav .pagination a:hover{
 	.solar p{
 		font-size: 15px;
 	}
+	.people-one{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.choose1{
+		left: 5%;
+		width: 50%;
+		height: 150px;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: -5%;
+		width: 50%;
+		height: 150px;
+		margin-top: 200px;
+	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		375px
@@ -4779,12 +5150,12 @@ nav .pagination a:hover{
 	}
 	.articles .news p{
 		font-size: 17px;
-		width: 16%;
-		margin-left: 40px;
+		width: 100%;
+		margin-left: 20px;
 	} 
 	.articles .card-body small{
 		font-size: 15px;
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 	.articles .card-body a h5{
 		width: 100%;
@@ -4794,9 +5165,18 @@ nav .pagination a:hover{
 		width: 95%;
 		height: 30%;
 	}
-	.blog .cad img{
-		height: 220px;
-		width: 100%;
+	.blog .news{
+		margin-left: -50px;
+	}
+	.blog news .cad small{
+		width: 110%;
+	}
+	.blog .news .cad img{
+		height: 180px;
+		width: 120%;
+	}
+	.blog .news .cad a h5{
+		width: 149%;
 	}
 	.pagination{
 		display: block;
@@ -5076,6 +5456,23 @@ nav .pagination a:hover{
 	}
 	.card-cover .card{
 		width: 95%;
+	}
+	.people-one{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.choose1{
+		left: 0;
+		width: 60%;
+		height: 150px;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: 0;
+		width: 60%;
+		height: 150px;
+		margin-top: 200px;
 	}
 }
 /*--------------------------------------------------------------
@@ -5450,7 +5847,7 @@ nav .pagination a:hover{
 	}
 	.post .post-description p{
 		font-size: 14px;
-		margin-left: 20px;
+		margin-left: 0px;
 		margin-top: -20px;
 	}
 	.articles .news img{
@@ -5458,14 +5855,16 @@ nav .pagination a:hover{
 	}
 	.articles .news p{
 		font-size: 15px;
-		width: 15%;
-		margin-left: 40px;
+		width: 100%;
+		margin-left: 15px;
 	} 
 	.articles .card-body small{
-		font-size: 15px
+		font-size: 15px;
+		margin-left: -5px;
 	}
 	.articles .card-body a h5{
 		width: 100%;
+		margin-left: -5px;
 	}
 	.blog .card-body h5{
 		width: 110%;
@@ -5476,9 +5875,18 @@ nav .pagination a:hover{
 		font-size: 15px;
 		width: 22%;
 	}
-	.blog .cad img{
-		height: 220px;
-		width: 100%;
+	.blog .news{
+		margin-left: -50px;
+	}
+	.blog news .cad small{
+		width: 110%;
+	}
+	.blog .news .cad img{
+		height: 180px;
+		width: 120%;
+	}
+	.blog .news .cad a h5{
+		width: 149%;
 	}
 	.blog .card img{
 		height: 200px;
@@ -5575,6 +5983,23 @@ nav .pagination a:hover{
 	}
 	.solar-description h5{
 		font-size: 18px;
+	}
+	.people-one{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.choose1{
+		left: 0;
+		width: 60%;
+		height: 150px;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: 0;
+		width: 60%;
+		height: 150px;
+		margin-top: 200px;
 	}
 }
 

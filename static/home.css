@@ -100,13 +100,13 @@ html body{
 # NAV MENU STYLING
 --------------------------------------------------------------*/
 .nav-menu a {
-  padding: 10px 5px 10px 5px;
+  padding: 10px 4px 10px 4px;
   text-decoration: none;
   display: inline-block;
   color: #cdcdcd;
   font-weight: 550;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 15px;
   outline: none;
   width: 100%;
 }
@@ -253,6 +253,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	padding: 5px 5px;
 	z-index:-1;
 	height: 50px;
+	text-align: center;
 }
 .time{
 	justify-content:center;
@@ -476,18 +477,17 @@ nav .breadcrumb li a:hover{
 	margin-left: auto;
 	margin-right: auto;
 }
-
 /*--------------------------------------------------------------
 # SECTION HEADINGS
 --------------------------------------------------------------*/
 .service h5{
 	margin-top: 150px; 
 	font-family: 'Play', sans-serif;
-	font-size: 30px;
-	font-weight: 600;
+	font-size: 20px;
+	font-weight: 550;
 	color:#555;
-	letter-spacing: 2px;
 	text-align: center;
+	text-transform: uppercase;
 }
 .service hr{
 	margin-top: 5px;
@@ -500,6 +500,7 @@ nav .breadcrumb li a:hover{
 	margin-top: 0px;
 	font-size: 18px;
 	text-align: center;
+	letter-spacing: 2px;
 }
 /*--------------------------------------------------------------
 # SERVICES LIST
@@ -693,7 +694,7 @@ nav .breadcrumb li a:hover{
 	padding: 5px 25px;
 	margin-bottom: 50px;
 	text-align: justify;
-	line-height: 30px;
+	line-height: 40px;
 }
 .abt{
 	margin-bottom: 50px;
@@ -704,7 +705,7 @@ nav .breadcrumb li a:hover{
 	color: #fff;
 	font-size: 16px;
 	background: #006420;
-	padding: 20px 25px;
+	padding: 15px 25px;
 	border-radius: 5px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -725,17 +726,12 @@ nav .breadcrumb li a:hover{
 	margin-left:auto;
 	margin-right:auto;
 }
-/* .people-one img{
-	margin-top: 40px;
-	margin-bottom: 20px;
-	width: 75%;
-	height: 380px;
+.people-one{
 	display: block;
 	margin-left:auto;
 	margin-right:auto;
-	border-top-left-radius: 10%;
-	border-bottom-right-radius: 10%;
-} */
+	margin-top: 20px;
+}
 .define img{
 	margin-top:100px;
 	margin-bottom: 20px;
@@ -872,24 +868,26 @@ nav .breadcrumb li a:hover{
 	background: #6a9e97;
 	padding: 30px 25px;
 	margin-top: 50px;
-	width: 50%;
-	height: 200px;
+	left: 10%;
+	width: 40%;
+	height: 160px;
 	position: absolute;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 .choose2{
-	margin-top: 250px;
+	margin-top: 170px;
 	background: #879db3;
-	padding: 30px 25px;
-	width: 50%;
-	height: 200px;
+	padding: 30px 15px;
+	left: -10%;
+	width: 40%;
+	height: 150px;
 	position: relative;
-	border-radius: 10px;
+	border-radius: 5px;
 	float: right;
 	clear:both;
 }
 .choose1 h6{
-	margin-top: 60px;
+	margin-top: 50px;
 	display: block;
 	font-size: 18px;
 	font-weight: 550;
@@ -899,7 +897,7 @@ nav .breadcrumb li a:hover{
 	position: relative;
 }
 .choose2 h6{
-	margin-top: 60px;
+	margin-top: 40px;
 	display: block;
 	font-size: 18px;
 	font-weight: 550;
@@ -1098,7 +1096,7 @@ nav .breadcrumb li a:hover{
 .choose-body{
 	margin: 0px 20px;
 	display: block;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 .choose-body h6{
 	font-size: 17px;
@@ -1119,32 +1117,44 @@ nav .breadcrumb li a:hover{
 	background: #fff;
 	border-radius: 100%;
 	padding: 5px 5px;
-	margin-right:10px;
+	margin-right: 10px;
 }
 .video img{
-	width: 100%;
-	height: 85%;
+	width: 90%;
+	height: 75%;
 	margin-top: 50px;
 	display: block;
 	margin-left: auto;
-	margin-right: auto
-}
-#trigger{ 
-	top: 45%;
-	left: 38.5%;
-	display: flex;
-	margin-left: auto;
 	margin-right: auto;
-	width: 100px;
-	height: 100px;
+}
+.video #trigger{ 
 	border-radius: 50%;
+	width: 100px;;
+	height: 100px;
+	line-height: 100px;
 	background: #2dc997;
 	font-size: 25px;
-	line-height: 100px;
 	color: #002c42;
 	position: absolute;
-	align-items: center;
+	margin-left: 40%;
+	margin-top: -200px;
+}
+.video #trigger i{
+	margin-left: 15px;
+	margin-top: 25px;
+	position: absolute;
+}
+.video #trigger:before{
 	justify-content: center;
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	border: 20px solid rgba(105, 105, 105, 0.5);
+	transition: all .4s ease;
 }
 @keyframes zoominoutsinglefeatured{
 	0% {
@@ -1157,21 +1167,10 @@ nav .breadcrumb li a:hover{
 		transform: scale(1,1);	
 	}
 }
-#trigger:before{
-	content: '';
-	position: absolute;
-	top: -20px;
-	left: -20px;
-	right: -20px;
-	bottom: -20px;
-	border-radius: 50%;
-	border: 20px solid rgba(0, 0, 0, 0.4);
-	transition: all .4s ease;
-} 
-#trigger:hover{
+.video #trigger:hover:before{
 	transition: 0.3s;
 	animation: zoominoutsinglefeatured 1s infinite;
-}
+} 
 /*--------------------------------------------------------------
 # TEAM SECTION
 --------------------------------------------------------------*/
@@ -1252,7 +1251,7 @@ nav .breadcrumb li a:hover{
 	font-size: 15px;
 	margin-top: 5px;
 	margin-left: 15px;
-	color: #cdcdcd;
+	color: #fff;
 }
 /*--------------------------------------------------------------
 # TEAM SECTION TWO
@@ -1334,7 +1333,7 @@ nav .breadcrumb li a:hover{
 	font-size: 15px;
 	margin-top: 5px;
 	margin-left: 15px;
-	color: #cdcdcd;
+	color: #fff;
 }
 /*--------------------------------------------------------------
 # ROW COUNTER
@@ -1436,7 +1435,7 @@ nav .breadcrumb li a:hover{
 	font-weight: 550;
 	line-height: 5px;
 	color:#fafafa;	
-	margin: 0px 20px;
+	margin: 20px 20px;
 }
 .services ul{
 	margin-top: 30px;
@@ -1529,6 +1528,7 @@ nav .breadcrumb li a:hover{
 	transition: .3s;
 }
 .copyright{
+	color: #fff;
 	font-size: 14px;
 	margin-top: 15px;
 	text-align: center;
@@ -1559,7 +1559,7 @@ nav .breadcrumb li a:hover{
 --------------------------------------------------------------*/
 .pricing-table{
 	max-width: 1200px;
-	margin-top: 100px;
+	margin-top: 70px;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
@@ -1583,16 +1583,16 @@ nav .breadcrumb li a:hover{
 }
 .table:hover{
 	transform:scale(1.05);
-	background:#001f3f;
 	text-decoration: none;
 	box-shadow:2px 2px 12px rgba(47, 47, 47, 0.40);
 	transition:all ease 0.3s;
 }	
 .table h2{
 	text-transform: uppercase;
+	font-family: 'Play', sans-serif;
 	font-size: 18px;
 	font-weight: 550;
-	color: #006420;
+	color: #2dc977;
 }
 .table ul{
 	margin: 0;
@@ -1605,6 +1605,7 @@ nav .breadcrumb li a:hover{
 	margin-bottom: 0px;
 	margin-top: 10px;
 	color: #318aa5;
+	font-family: 'Play', sans-serif;
 }
 .table ul li{
 	list-style: none;
@@ -1624,20 +1625,23 @@ nav .breadcrumb li a:hover{
 	margin-top: 20px;
 	text-transform: capitalize;
 }
-.table a{
-	text-decoration: none;
-	color: #002c42;
-	border: 2px solid #002c42;
-	display: block;
-	padding: 10px 0;
-	border-radius: 40px;
-	text-transform: uppercase;
-	font-size: 14px;
-	transition: 0.5s linear;
-}
-.table a:hover{
-	background: #002c42;
+.table button{
+	margin-top: 20px;
 	color: #fff;
+	width: 70%;
+	border: 1px solid #cdcdcd;
+	border-radius: 10%;
+	padding: 8px 15px;
+}
+.table button:hover{
+	margin-top: 20px;
+	color: #fff;
+	width: 70%;
+	border: 1px solid #cdcdcd;
+	border-radius: 10%;
+	padding: 8px 15px;
+	background: #002c42;
+	transition: 0.3s;
 }
 .info{
 	margin-top: 50px;
@@ -1819,6 +1823,70 @@ nav .breadcrumb li a:hover{
 .address .map iframe{
 	margin-top: 0px;
 	width: 100%;
+}
+.form-row .form-control{
+	height:55px;
+	margin-top: 40px;
+	border-radius: 0px;
+	border: 1px solid grey;
+	font-size: 15px;
+}
+#contact-form{
+	margin-top: 100px;
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#contact-form input{
+	width: 100%;
+	border-radius: 0px;
+	border: 1px solid grey;
+	box-shadow: none;
+	font-size: 15px;
+	height: 55px;
+	margin-top: 40px;
+}
+#contact-form textarea{
+	margin-top: 40px;
+	border: 1px solid grey;
+	border-radius: 0px;
+	box-shadow: none;
+	font-size: 15px;
+	width: 100%;
+	height: auto;
+}
+#contact-form button{
+	width: 200px; 
+	height: 60px; 
+	margin: 15px 0px; 
+	padding: 10px 10px;
+	background:#006420;
+	color: #cdcdcd; 
+	font-size: 15px; 
+	font-weight: 550;
+	text-transform: uppercase;
+}
+#contact-form button:hover{
+	background: #001f3f; 
+	color: #cdcdcd; 
+	transition: .3s;
+}
+#contact-form p{
+	font-size: 15px;
+	margin-top: 30px;
+	width: 100%;
+}
+#contact-form p strong{
+	text-decoration: underline;
+}
+#inputState{
+	margin-top: 40px;
+	width: 100%;
+	height: 55px;
+	border-radius: 0px;
+	border: 1px solid #666;
+	font-size: 15px;
 }
 .thank-you{
 	margin-top: 50px;
@@ -2406,7 +2474,7 @@ nav .breadcrumb li a:hover{
 	background-position: center center;
 	background-size: cover;
 	width: auto;
-	height: 100vh;
+	height: 92.5vh;
 }
 .error h4{
 	font-size: 100px;
@@ -2439,7 +2507,64 @@ nav .breadcrumb li a:hover{
 	transition:.3s;
 	transition-delay: .3s;
 }
-
+/*--------------------------------------------------------------
+# TRAINING
+--------------------------------------------------------------*/
+.training{
+	background-image: url("images/vv.jpg");
+	background-position: center center;
+	background-size: cover;
+	width: auto;
+	height: 92.5vh;
+	color: #cdcdcd;
+	text-align: center;
+}
+.training h1{
+	margin-top: 170px;
+	text-transform: uppercase;
+	font-size: 40px;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+}
+.training h2{
+	margin: 20px 0;
+	font-size: 20px;
+	font-weight: 500;
+	font-style: italic;
+}
+.count{
+	margin: 40px 0;
+}
+.countd{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border:2px solid;
+	margin: 20px 30px;
+	font-size: 12px;
+	border-radius: 15%;
+	overflow: hidden;
+	background: rgba(31, 31, 37, 0.9);
+}
+.countd span{
+	display: block;
+	font-size: 26px;
+	margin-top: 14px;
+}
+.training a{
+	font-size:18px;
+	padding:15px 15px;
+	background:#006420;
+	color:#cdcdcd;
+	border-radius: 5px;
+}
+.training a:hover{
+	background:#001f3f;
+	color:#cdcdcd;
+	text-decoration:none;
+	transition:.3s;
+	transition-delay: .3s;
+}
 /*--------------------------------------------------------------
 # NEWS BLOG
 --------------------------------------------------------------*/
@@ -2456,22 +2581,20 @@ nav .breadcrumb li a:hover{
 }
 .articles .news p{
 	font-size: 15px;
-	background:#006420;
-	color:#fff;
-	position: relative;
-	text-align: center;
-	border-radius: 5px;
-	margin-top: -25px;
-	margin-bottom: -20px;
-	margin-left: 30px;
-	width: 20%;
-	text-transform: uppercase;
+	margin-top: 20px;
+	color:#006420;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.articles .card-body{
+	margin-top: -30px;
 }
 .articles .card-body small{
-	margin-left: 0px;
+	margin-left: -20px;
 	font-size: 15px;
 }
 .articles .card-body a h5{
+	margin-left: -20px;
 	font-size: 15px;
 	color:#000;
 	line-height: 20px;
@@ -2485,14 +2608,32 @@ nav .breadcrumb li a:hover{
 	margin: 50px 0px;
 	justify-content: center;
 }
-.blog .cad{
+.blog .news .cad{
 	margin-top: 25px;
 	margin-left: 50px;
 	margin-bottom: 50px;
 	height: 370px;
 	width: 370px;
 	border-radius: 0px;
+}
+.blog .news .cad img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	height: 220px;
 } 
+.blog .news .cad p{
+	font-size: 15px;
+	margin-top: 20px;
+	color:#006420;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.blog .news .card-body{
+	margin-top: -25px;
+	margin-left: -20px;
+}
 .blog .card{
 	display: block;
 	margin-right: auto;
@@ -2547,22 +2688,6 @@ nav .breadcrumb li a:hover{
 }
 .blog .cad img{
 	height:200px;
-}
-.blog .cad p{
-	text-align:center;
-	font-size:15px;
-	width:17%;
-	background:#006420;
-	color:#fff;
-	padding:5px 0px;
-	border-radius:5px;
-	line-height:20px;
-	margin-top:-25px;
-	margin-left:20px;
-	position:relative;
-}
-.blog .card-body{
-	margin-top:-15px;
 }
 .card-body h5{
 	margin-top:10px;
@@ -2660,6 +2785,13 @@ nav .pagination a:hover{
 	color: #fff;
 	background: #006420;
 }
+.comment .form-row{
+	justify-content:justify;
+	width:100%;
+}
+.form-row input{
+	width:100%;
+}
 .comment-header{
 	margin-top:80px;
 	font-weight:bold;
@@ -2693,6 +2825,7 @@ nav .pagination a:hover{
 	background:#006420;
 	color:#fff; 
 }
+
 /*--------------------------------------------------------------
 # COMMENT SECTION
 ---------------------------------------------------------------*/
@@ -2709,9 +2842,6 @@ nav .pagination a:hover{
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-}
-.card-white .post{
-	padding: 20px 20px;
 }
 .card-white .h5{
 	font-family:15px;
@@ -2917,7 +3047,7 @@ nav .pagination a:hover{
 		margin-top: 20px;
 	}
 	.carousel-caption .btn{
-		width:120px;
+		width: 150px;
 		font-size: 15px;
 	}
 	.card-cover .item .card{
@@ -3218,6 +3348,7 @@ nav .pagination a:hover{
 		width:100%;
 		justify-content: center;
 	}
+	
 	.people .inner-box{
 		margin-left: 130px;
 	}
@@ -3450,13 +3581,14 @@ nav .pagination a:hover{
 	.FAQS .card button{
 		font-size:20px;
 	}
-	.blog .cad{
+	.blog .news .cad{
 		justify-content: center;
+		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 20px 50px;
+		width: 45%;
 	}
-	.blog .cad img{
+	.blog .news .cad img{
 		height:220px;
 		width: 80%;
 	}
@@ -3576,6 +3708,16 @@ nav .pagination a:hover{
 	}
 	.solar p{
 		font-size: 15px;
+	}
+	.choose1{
+		left: 0;
+		width: 50%;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: 0;
+		width: 50%;
+		margin-top: 200px;
 	}
 }
 
@@ -3764,32 +3906,40 @@ nav .pagination a:hover{
 		display: block;
 		width: 100%;
 	}
+	.articles .news{
+		display: inline-block;
+		width: 47%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.articles .news img{
-		width: 60%;
+		width: 100%;
 	}
 	.articles .news p{
 		font-size: 17px;
-		width: 10%;
-		margin-left: 150px;
+		width: 100%;
+		margin-left: 0px;
 	} 
 	.articles .card-body small{
 		font-size: 15px;
-		margin-left: 130px;
+		margin-left: -20px;
 	}
 	.articles .card-body a h5{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 70%;
+		margin-left: -20px;
+		width: 100%;
 	}
-	.blog .cad{
+	.blog .news .cad{
 		justify-content: center;
+		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 20px 50px;
+		width: 50%;
 	}
-	.blog .cad img{
-		height:220px;
+	.blog .news .cad small{
+		margin-left: 0px;
+	}
+	.blog .news .cad img{
+		height: 220px;
 		width: 90%;
 	}
 	.blog .media img{
@@ -3983,6 +4133,26 @@ nav .pagination a:hover{
 	.solar p{
 		font-size: 15px;
 	}
+	.people-one{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.choose1{
+		left: 15%;
+		width: 35%;
+		height: 150px;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: -15%;
+		width: 35%;
+		height: 150px;
+		margin-top: 200px;
+	}
+	.video #trigger i{
+		margin-left: 27px;
+	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		576px
@@ -4153,15 +4323,36 @@ nav .pagination a:hover{
 	}
 	.articles .news p{
 		font-size: 17px;
-		width: 10%;
-		margin-left: 100px;
+		width: 100%;
+		margin-left: 80px;
 	} 
 	.articles .card-body small{
 		font-size: 15px;
-		margin-left: 80px;
+		margin-left: 55px;
 	}
-	.blog .cad img{
-		height:220px;
+	.articles .card-body a h5{
+		margin-left: 55px;
+	}
+	.blog .news .cad{
+		justify-content: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+	}
+	.blog .news .cad small{
+		margin-left: 0px;
+	}
+	.blog .news .cad img{
+		height: 220px;
+		width: 90%;
+	}
+	.blog .news .cad a h5{
+		width: 110%;
+		font-size: 15px;
+	}
+	.blog .news .cad img{
+		height: 220px;
 		width: 100%;
 	}
 	.pagination{
@@ -4327,6 +4518,23 @@ nav .pagination a:hover{
 	}
 	.system ol li{
 		font-size: 15px;
+	}
+	.people-one{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.choose1{
+		left: 15%;
+		width: 40%;
+		height: 150px;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: -15%;
+		width: 40%;
+		height: 150px;
+		margin-top: 200px;
 	}
 }
 
@@ -4514,18 +4722,19 @@ nav .pagination a:hover{
 		display: block;
 	}
 	.articles .news img{
-		width: 70%;
+		width: 75%;
 	}
 	.articles .news p{
 		font-size: 17px;
-		width: 14%;
-		
+		width: 100%;
+		margin-left: 45px;
 	} 
 	.articles .card-body small{
 		font-size: 15px;
-		margin-left: 60px;
+		margin-left: 25px;
 	}
 	.articles .card-body a h5{
+		margin-left: 25px;
 		width: 85%;
 	}
 	.blog .cad img{
@@ -4729,6 +4938,23 @@ nav .pagination a:hover{
 	.solar p{
 		font-size: 15px;
 	}
+	.people-one{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.choose1{
+		left: 5%;
+		width: 50%;
+		height: 150px;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: -5%;
+		width: 50%;
+		height: 150px;
+		margin-top: 200px;
+	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		375px
@@ -4924,12 +5150,12 @@ nav .pagination a:hover{
 	}
 	.articles .news p{
 		font-size: 17px;
-		width: 16%;
-		margin-left: 40px;
+		width: 100%;
+		margin-left: 20px;
 	} 
 	.articles .card-body small{
 		font-size: 15px;
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 	.articles .card-body a h5{
 		width: 100%;
@@ -4939,9 +5165,18 @@ nav .pagination a:hover{
 		width: 95%;
 		height: 30%;
 	}
-	.blog .cad img{
-		height: 220px;
-		width: 100%;
+	.blog .news{
+		margin-left: -50px;
+	}
+	.blog news .cad small{
+		width: 110%;
+	}
+	.blog .news .cad img{
+		height: 180px;
+		width: 120%;
+	}
+	.blog .news .cad a h5{
+		width: 149%;
 	}
 	.pagination{
 		display: block;
@@ -5221,6 +5456,23 @@ nav .pagination a:hover{
 	}
 	.card-cover .card{
 		width: 95%;
+	}
+	.people-one{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.choose1{
+		left: 0;
+		width: 60%;
+		height: 150px;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: 0;
+		width: 60%;
+		height: 150px;
+		margin-top: 200px;
 	}
 }
 /*--------------------------------------------------------------
@@ -5595,7 +5847,7 @@ nav .pagination a:hover{
 	}
 	.post .post-description p{
 		font-size: 14px;
-		margin-left: 20px;
+		margin-left: 0px;
 		margin-top: -20px;
 	}
 	.articles .news img{
@@ -5603,14 +5855,16 @@ nav .pagination a:hover{
 	}
 	.articles .news p{
 		font-size: 15px;
-		width: 15%;
-		margin-left: 40px;
+		width: 100%;
+		margin-left: 15px;
 	} 
 	.articles .card-body small{
-		font-size: 15px
+		font-size: 15px;
+		margin-left: -5px;
 	}
 	.articles .card-body a h5{
 		width: 100%;
+		margin-left: -5px;
 	}
 	.blog .card-body h5{
 		width: 110%;
@@ -5621,9 +5875,18 @@ nav .pagination a:hover{
 		font-size: 15px;
 		width: 22%;
 	}
-	.blog .cad img{
-		height: 220px;
-		width: 100%;
+	.blog .news{
+		margin-left: -50px;
+	}
+	.blog news .cad small{
+		width: 110%;
+	}
+	.blog .news .cad img{
+		height: 180px;
+		width: 120%;
+	}
+	.blog .news .cad a h5{
+		width: 149%;
 	}
 	.blog .card img{
 		height: 200px;
@@ -5720,6 +5983,23 @@ nav .pagination a:hover{
 	}
 	.solar-description h5{
 		font-size: 18px;
+	}
+	.people-one{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.choose1{
+		left: 0;
+		width: 60%;
+		height: 150px;
+		margin-top: 50px;
+	}
+	.choose2{
+		left: 0;
+		width: 60%;
+		height: 150px;
+		margin-top: 200px;
 	}
 }
 

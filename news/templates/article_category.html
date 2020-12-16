@@ -30,7 +30,7 @@ menu-active
                 {% for post in cat_posts %}
                 <div class="cad col-lg-5 col-md-6">
                     <img src="{{post.thumb.url}}" class="card-img-top" alt="blog image" />
-                    <p>{{ post.date.day }}<br />{{ post.date|date:"M" }}</p>
+                    <p> | &nbsp; {{ post.date|date:"F d" }} &nbsp;.</p>
                     <div class="card-body">
                         <small class="text-muted"><i class="fas fa-user"></i> Admin  &nbsp; &nbsp;<i class="far fa-heart"></i> 23&nbsp; &nbsp;<i class="far fa-comments"></i> 3</small>
                         <a href="{{post.slug}}"><h5 class="card-title">{{post.slug}}</h5></a>

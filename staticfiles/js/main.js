@@ -37,7 +37,7 @@ $(document).ready(function () {
         delay: 10,
         time: 2500
     });
-
+   
     $(function() {
         $('#vidBox').VideoPopUp({
 
@@ -49,7 +49,6 @@ $(document).ready(function () {
 
         });
     });
-
     var lightbox = new SimpleLightbox('.gallery a', {});
     new WOW().init();
     $('.carousel').carousel({
@@ -213,7 +212,6 @@ $(document).ready(function () {
         $('html ,body').animate({ scrollTop: 0 }, 1500);
     });
     $('.collapse').collapse();
-
 });
 $(document).ready(function () {
     ToxProgress.create();
@@ -223,5 +221,29 @@ window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
     header.classList.toggle("header-fixed", window.scrollY > 0);
 });
+
+var count = new Date("jun 1,2021 00:00:00").getTime();
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var d = count - now;
+
+    var days = Math.floor(d/(1000*60*60*24));
+    var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+    var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+    var seconds = Math.floor((d%(1000*60))/1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+        if(d <= 0){
+            clearInterval(x);
+        }
+    
+},1000);
+
+
+
   
 

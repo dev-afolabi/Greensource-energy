@@ -64,6 +64,9 @@ def faq(request):
 def our_team(request):
     return render(request,"greensource_pages/our-team.html")
 
+def training(request):
+    return render(request,"greensource_pages/training.html")
+
 
 
 

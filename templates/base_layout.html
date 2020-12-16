@@ -126,7 +126,7 @@
 </head>
 <body>
     <div class="review container-fluid padding">
-        <div class="row text-center">
+        <div class="row">
             <div class="time col-xs-12 col-lg-3 col-md-6">
                 <p>
                     <i class="far fa-clock"></i>Mon - Fri 9.00am - 6.00pm</p>
@@ -159,7 +159,7 @@
                     </li>
                 </ol>
             </div>
-            <div class="book col-xs-12 col-lg-4 col-md-6 text-center">
+            <div class="book col-xs-12 col-lg-4 col-md-6">
                 <p>
                     <i class="far fa-envelope"></i>
                     <a href="javascript:location='mailto:\u0068\u0065\u006c\u006c\u006f\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d';void 0">
@@ -196,7 +196,7 @@
                         </ul>
                     </li>
                     <li class="{% block nav-design-plans %}{% endblock %}">
-                        <a href="{% url 'design_plans' %}">Pricing</a>
+                        <a href="{% url 'design_plans' %}">Products</a>
                     </li>
                     <li class="{% block nav-projects %}{% endblock %}">
                         <a href="{% url 'projects' %}">projects</a>
@@ -215,7 +215,7 @@
     {% endblock %}    
     <section>
         <div class="container-fluid padding">
-            <div class="footer row text-justify text-white padding">
+            <div class="footer row padding">
                 <div class="col-xs-12 col-lg-4 col-md-6">
                     <img src="{% static 'images/greensource3.png' %}" alt="company logo" />
                     <p class="note">
@@ -224,14 +224,14 @@
                         while offering value for money.
                     </p>
                     <div class="map padding">
-                        <h6 class="display-5">/ LOCATE US</h6>
+                        <h6>/ LOCATE US</h6>
                         <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.741452898637!2d3.433366268485239!3d6.84608399012105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc7b12aa0619b%3A0x668d6d2407416eeb!2sGREENSOURCE+ENGINEERING+CONSULT!5e0!3m2!1sen!2sng!4v1554279134001!5m2!1sen!2sng">Go To Map
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
                 <div class="services col-xs-12 col-lg-2 col-md-6">
-                    <h6 class="display-5">Services</h6>
+                    <h6>Services</h6>
                 
                     <ul>
                         <li>
@@ -253,12 +253,12 @@
                             <a href="{% url 'electrical_design' %}">Street Lighting</a>
                         </li>
                         <li>
-                            <a href="{% url 'index' %}">Training</a>
+                            <a href="{% url 'training' %}">Training</a>
                         </li>
                     </ul>
                 </div>
                 <div class="services col-xs-12 col-lg-2 col-md-6">
-                    <h6 class="display-5">Links</h6>
+                    <h6>Links</h6>
                     
                     <ul>
                         <li>
@@ -280,13 +280,13 @@
                             <a href="{% url 'privacy' %}">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="{% url 'mission' %}">Mission/Vision</a>
+                            <a href="{% url 'mission' %}">Values/Vision</a>
                         </li>
                         
                     </ul>
                 </div>
                 <div class="services col-xs-12 col-lg-4 col-md-6">
-                    <h6 class="display-5">Connect Us</h6>
+                    <h6>Connect Us</h6>
                 
                     <div class="footer-address">
                         <i class="fas fa-map-marked-alt"></i>
@@ -299,10 +299,9 @@
                         </p>
                         <i class="fas fa-phone"></i>
                         <p>(234)8029442697</p>
-                        <i class="far fa-registered"></i>
                     </div>
                     <div class="social">
-                        <h6 class="display-5">/ FOLLOW US ON</h6>
+                        <h6>/ FOLLOW US ON</h6>
                         <a href="https://www.linkedin.com/company/greensource-energy">
                             <i class="fab fa-linkedin-in active"></i>
                         </a>
