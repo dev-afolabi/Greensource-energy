@@ -5,6 +5,10 @@ html body{
 	background-position:center;
 	background-size:cover;
 	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+}
+noscript img{
+	display: none;
 }
 #header{
   padding: 20px 0;
@@ -216,7 +220,7 @@ html body{
   color: #fff;
 }
 #mobile-nav ul .menu-has-children i {
-  color: #2dc997;
+  color: #2dc977;
 }
 #mobile-nav ul .menu-item-active {
   color: #2dc977;
@@ -288,7 +292,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	transition-delay:0.1s;
 }
 .links li a:hover{
-	color:#2dc997;
+	color:#2dc977;
 }
 .book {
 	margin-top:10px;
@@ -302,7 +306,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .book a:hover{
 	text-decoration: none;
-	color: #2dc997;
+	color: #2dc977;
 }
 .book i{
 	font-size:20px;
@@ -320,10 +324,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 	background-size:cover;
 	max-height: 700px;
 	width:100%;
-}
-.carousel a {
-	margin-top: -100px;
-	font-size: 50px;
 }
 .carousel-inner .carousel-caption{
 	text-align: left;
@@ -390,6 +390,74 @@ body.mobile-nav-active #mobile-nav-toggle {
 .header h2{
 	color:#cdcdcd;
 	font-size:20px;
+}
+/*--------------------------------------------------------------
+# SHOPPING BASKET
+--------------------------------------------------------------*/
+.shoppingCart{
+	position: fixed;
+	left: 96%;
+	z-index: 9999;
+	cursor: pointer;
+	margin-top: 10px;
+}
+.shoppingCart i{
+	color: #cdcdcd;
+	font-size: 25px;
+}
+.shoppingCart p{
+	position: absolute;
+	top: -5px;
+	right: -13px;
+	font-size: 0.69rem;
+	background: #b11c1c;
+	padding: 1.5px 6.5px;
+	border-radius: 50%;
+	color: #cdcdcd;
+}
+.cartBox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 99999;
+	transition: 0.3s linear;
+	transform: scale(0);
+}
+.cartBox.active{
+	transform: scale(1);
+}
+.cartBox .cart{
+	position: relative;
+	height: 90%;
+	width: 100%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cartBox .cart i{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #f00;
+	padding: 10px 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.cartBox .cart i:hover{
+	background: #ff00a5;
+}
+.cartBox .cart h1{
+	position: relative;
+	margin-top: 2%;
+	font-size: 2.8rem;
+	color: #017bf5;
 }
 /*--------------------------------------------------------------
 # BACK TO TOP
@@ -484,7 +552,7 @@ nav .breadcrumb li a:hover{
 	margin-top: 150px; 
 	font-family: 'Play', sans-serif;
 	font-size: 22px;
-	font-weight: 560;
+	font-weight: 550;
 	color:#111;
 	text-align: center;
 	text-transform: uppercase;
@@ -705,8 +773,7 @@ nav .breadcrumb li a:hover{
 	color: #fff;
 	font-size: 16px;
 	background: #006420;
-	padding: 15px 25px;
-	border-radius: 5px;
+	padding: 20px 30px;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 550;
@@ -887,23 +954,21 @@ nav .breadcrumb li a:hover{
 	clear:both;
 }
 .choose1 h6{
-	margin-top: 50px;
+	margin-top: 40px;
 	display: block;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 550;
 	letter-spacing: .5px;
-	float: right;
-	clear: both;
+	text-align: right;
 	position: relative;
 }
 .choose2 h6{
 	margin-top: 40px;
 	display: block;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 550;
 	letter-spacing: .5px;
-	float: right;
-	clear: both;
+	text-align: right;
 	position: relative;
 }
 /*--------------------------------------------------------------
@@ -930,6 +995,7 @@ nav .breadcrumb li a:hover{
 	font-size:18px;
 	font-weight:600;
 	color:#222;
+	text-align: right;
 	margin-top: 80px;
 	margin-left: 60px;
 	margin-right: auto;	
@@ -941,63 +1007,64 @@ nav .breadcrumb li a:hover{
 --------------------------------------------------------------*/
 .work-mode{
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/work-mode.jpg') center center no-repeat fixed;
-	background-position:center;
-	background-size:cover;
+	background-position: center;
+	background-size: cover;
 	background-repeat: none;
-	margin-top:50px;
+	margin-top: 50px;
 }
 .working{
-	padding:45px 50px;
+	padding: 45px 50px;
 	border: 1px solid #fff;	
 }
 .working h5{
-	font-size:45px;
+	font-size: 45px;
 	font-family: 'Big Shoulders Text', cursive;
 	color: #fff;
 	margin-top:30px;
 	text-align: right;
 }
 .working h6{
-	font-weight:bold;
+	font-weight: bold;
 	font-family: 'Play', sans-serif;
 	font-size: 22px;
 	margin-top: 20px;
 	color: #028502;
+	text-align: left;
 }
 .working p{
 	color:#cdcdcd;
-	font-size:16px;
-	padding:15px 5px;
-	margin-top:-10px;
-	text-align:justify;
+	font-size: 16px;
+	padding: 15px 5px;
+	margin-top: -10px;
+	text-align: justify;
 }
 .subscript{
 	text-transform: uppercase;
 	font-family: 'Play', sans-serif;
 	font-size: 20px;
 	color:#5f8fbe;
-	font-weight :500;
+	font-weight:500;
 }
 .working i{
-	position:absolute;
+	position: absolute;
 	color:#318aa5;
-	font-size:30px;
-	margin-top:-25px;
+	font-size: 30px;
+	margin-top: -25px;
 }
 /*--------------------------------------------------------------
 # CALL TO ACTION SECTION
 --------------------------------------------------------------*/
 #call-to-action {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/call-to-action.jpg) center center no-repeat fixed;
-  background-position:center center;
+  background-position: center center;
   background-size: cover;
-  margin:100px 0px;
+  margin: 100px 0px;
   padding: 80px 0px;
 }
 #call-to-action .cta-text {
   color: #cdcdcd;
   font-size: 21px;
-  font-weight:550;
+  font-weight: 550;
   margin-top: 30px;
 }
 #call-to-action h3{
@@ -1029,9 +1096,9 @@ nav .breadcrumb li a:hover{
 # PROJECTS
 --------------------------------------------------------------*/
 .project{
-	margin-top:0px;
-	margin-bottom:30px;
-	justify-content:center;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	justify-content: center;
 }
 .project img{
 	width: 400px;
@@ -1077,7 +1144,7 @@ nav .breadcrumb li a:hover{
 	height: 40px;
 }
 .project button i{
-	margin-left:20px;
+	margin-left: 20px;
 }
 .project button:hover{
 	color: #006420;
@@ -1178,8 +1245,7 @@ nav .breadcrumb li a:hover{
 	justify-content: center;
 	align-items: center;
 	display: block;
-	left: 20px;
-	margin-right: auto;
+	left: 15px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	width: 100%;
@@ -1193,24 +1259,24 @@ nav .breadcrumb li a:hover{
 	display: flex;
 	align-items: flex-end;
 	transition: .6s;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 	margin: 20px 5px;
 }
 .single-team:hover{
-	transform:translateY(15px);
+	transform: translateY(15px);
 }
 .single-team:hover:before{
-	opacity:1;
+	opacity: 1;
 }
 .single-team:hover .team-text{
-	opacity:1;
-	transform:translateY(0);
+	opacity: 1;
+	transform: translateY(15px);
 }
 .single-team:before{
-	content:'';
-	position:absolute;
-	top:0;
-	left:0;
+	content: '';
+	position :absolute;
+	top: 0;
+	left: 0;
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -1224,11 +1290,11 @@ nav .breadcrumb li a:hover{
 	height: 100%;
 	top: 0;
 	left: 0;
-	position:absolute;
+	position: absolute;
 }
 .single-team .team-text{
 	position: relative;
-	z-index: 3;
+	z-index: 5;
 	color:#fff;
 	opacity: 0;
 	transform: translateY(60px);
@@ -1426,6 +1492,7 @@ nav .breadcrumb li a:hover{
 	width: 90%;
 	line-height: 25px;
 	color: #d3d3d3;
+	text-align: justify;
 }
 .services{
 	margin-top: 50px;
@@ -1437,6 +1504,7 @@ nav .breadcrumb li a:hover{
 	line-height: 5px;
 	color:#fafafa;	
 	margin: 20px 20px;
+	text-transform: uppercase;
 }
 .services ul{
 	margin-top: 30px;
@@ -1451,7 +1519,6 @@ nav .breadcrumb li a:hover{
 	text-decoration: none;
 	color: #d3d3d3;
 	font-size: 15px;
-	
 }
 .services li a:hover{
 	color: #2dc977;
@@ -1485,15 +1552,16 @@ nav .breadcrumb li a:hover{
 	width: 95%;
 }
 .social h6{
-	color: #2dc977;
-	margin: 30px 20px;
+	color: #879db3;
+	margin-top: 70px;
+	margin-bottom: 40px;
 	font-weight: 500;
 	font-size: 20px;
-	font-family: cambria;
+	font-weight: bold;
 }
 .social{
 	margin-top:30px;
-	width:250px;
+	width:300px;
 }
 .social a{
 	color:#666;
@@ -1509,22 +1577,21 @@ nav .breadcrumb li a:hover{
 	transition:.3s;
 }
 .map h6{
-	margin:20px 20px;
-	font-size:20px;
-	font-weight:500;
-	color:#2dc977;
-	font-family:cambria;
+	font-size: 20px;
+	font-weight: 600;
+	color: #879db3;
+	margin: 60px 20px 20px 20px;
 }
 .map a{
-	margin-top:0px;
-	font-size:18px;
-	color: #2dc977;
-	margin:20px 20px;
-	letter-spacing: 2px;
+	margin-top: 0px;
+	font-size: 18px;
+	color: #b43d3d;
+	margin: 20px 20px;
+	text-transform: uppercase;
 	font-family: 'Play', sans-serif;
 }
 .map a:hover{
-	color: #a2b3c4;
+	color: #006420;
 	text-decoration: none;
 	transition: .3s;
 }
@@ -1573,7 +1640,6 @@ nav .breadcrumb li a:hover{
 	padding: 20px;
 	width: 320px;
 	box-sizing: border-box;
-	
 }
 .table{
 	background: rgba(31, 31, 37, 1.5);
@@ -1651,74 +1717,93 @@ nav .breadcrumb li a:hover{
 	font-size: 16px;
 	text-align: center;
 }
+/*--------------------------------------------------------------
+# SHOPPING/CART
+--------------------------------------------------------------*/
 .swiper-slide{
-	width:250px !important;
-	display:block;
+	top: 140px;
+	width: 250px;
+	margin-bottom: 100px;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 .slider-box{
-	margin-top:20px;
-	margin-bottom: 100px;
-	height:350px;
-	width:250px;
-	position:relative;
+	margin:0px auto 50px auto;
+	height: 325px;
+	width: 250px;
+	position :relative;
 	background-color:#FFFFFF;
-	border-radius:5px;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
-	text-align:center;
-	border:1px solid rgba(187,187,187,0.40);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 1px solid rgba(187,187,187,0.40);			
 }
 .slider-box a{
-	text-decoration:none;
-	text-align:center;
+	text-decoration: none;
+	text-align: center;
+}
+.slider-box a:hover{
+	text-decoration: none;
+	color: #001f3f;
+	transition: .3s;
 }
 .img-box{
-	height:170px;
+	height: 160px;
 }
 .img-box img{
-	height:auto;
-	max-width:100%;
-	max-height:100%;
+	height: auto;
+	max-width: 95%;
+	max-height: 95%;
 }
 .time{
 	position:absolute;
 	top:0px;
 	right:20px;
-	color: #6b90b4;
+	color:#002d97;
 }
-.detail{
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	box-sizing:border-box;
-	font-size:13px;
-	line-height:35px;
+.shop-item-title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	font-size: 13px;
+	line-height: 35px;								
 }
-.price{
-	color:#FFFFFF;
-	background-color:#007654;
+.shop-item-price{
+	color:#2dc977;
+	font-weight: bold;
 	line-height:20px;
+	font-size: 16px;
+	margin-bottom: 20px;
 }
 .cart{
-	position:absolute;
-	bottom:0px;
-	height:45px;
-	background-color:#007654;
-	width:100%;
-	display:flex;
-	justify-content:center;
-	align-items:center;
+	position: absolute;
+	bottom: 0px;
+	height: 45px;
+	background-color:#002b3f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .cart a{
 	color:#fff;
+	cursor: pointer;
 }
 .cart a:hover{
 	color:#fff;
-	text-decoration: none;
+	text-decoration:none;
+}
+.cart:hover{
+	transform:scale(1.1);
+	background-color:#002c42;
+	box-shadow:2px 2px 12px rgba(47,47,47,0.40);
+	transition:all ease 0.1s;
+	color:#fff;
 }
 .slider-box:hover{
 	box-shadow:2px 2px 12px rgba(47,47,47,0.40);
@@ -1726,30 +1811,111 @@ nav .breadcrumb li a:hover{
 .slider-box:hover .img-box img{
 	transform:scale(1.07);
 	transition:all ease 0.3s;
+}	
+/*--------------------------------------------------------------
+# PRODUCT DETAILS
+--------------------------------------------------------------*/			
+.product{
+	margin-top: 80px;
+	justify-content: center;
+	align-items: center;
 }
-.cart:hover{
+.product h6{
+	font-size: 20px;
+	padding: 0px 50px;
+	text-transform: uppercase;
+	font-family: 'Play', sans-serif;
+}
+.product .list-group{
+	width: 100%;
+	padding: 30px 10px;
+}
+
+.product ul{
+	margin-top: 0px;
+}
+.product ul li {
+	font-size:16px;
+	list-style-type:square;
+	color:#222;
+	line-height:45px;
+	text-align:justify;
+	margin-left:20px;
+}
+.product .list-group-item{
+	height: 80px;
+}
+.product .list-group .list-group-item i{
+	margin-right: 10px;
+}
+.product .list-group a{
+	color:#666;
+	padding: 2px 0px;
+}
+.product .list-group a:hover{
+	color:#66cdaa;
+	text-decoration:none;
+}
+.product-design{
+	margin-top: 100px;
+	padding: 50px 20px;
+}
+.product-design .product-img{
+	height: 120%;
+	width: 100%;
+}
+.product-details h2{
+	font-size: 28px;
+	color: #b43d3d;
+	text-transform: uppercase;
+	font-family: 'play', sans-serif; 
+}
+.product-details h4{
+	font-size: 20px;
+	color: #2dc977;
+	margin-top: 30px;
+	font-weight: bold;
+}
+.product-details p{
+	font-size: 15px;
+	color: #222;
+	margin-top: 15px;
+	line-height: 25px;
+	width: 100%;
+	text-align: justify;
+}
+.product-details ul li{
+	font-size: 15px;
+	color: #222;
+	margin-top: 15px;
+	line-height: 25px;
+}
+.cart-click .btn{
+	background:#006420;
+	color: #fff;
+	width: 40%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius: 0px;
+	padding: 15px 10px;
+	margin-top: 50px;
+	margin-left: 20px;
+	font-size: 15px;
+}
+.cart-click .btn:hover{
 	transform:scale(1.1);
 	background-color:#001f3f;
 	text-decoration: none;
 	color: #fff;
 	box-shadow:2px 2px 12px rgba(47,47,47,0.40);
 	transition:all ease 0.1s;
-}					
-.heading{
-	display:flex;
-	justify-content:center;
-}
-.heading h1{
-	background-color:#001f3f;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	text-shadow:2px 2px 12px rgba(69,66,66,0.3);
-	padding:10px 10px;
-	color:#fff;
-	margin-top:50px;
-	font-size:20px;
-	font-weight: bold;
-}
+}	
+/*--------------------------------------------------------------
+# CART PAGE
+--------------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------
 # FREQUENTLY ASKED QUESTIONS
 --------------------------------------------------------------*/
@@ -1880,6 +2046,7 @@ nav .breadcrumb li a:hover{
 }
 #contact-form p strong{
 	text-decoration: underline;
+	color: #b11c1c;
 }
 #inputState{
 	margin-top: 40px;
@@ -1965,9 +2132,10 @@ nav .breadcrumb li a:hover{
 }
 .light .list-group a{
 	color:#666;
+	font-weight: 549;
 }
 .light .list-group a:hover{
-	color:#66cdaa;
+	color:#006420;
 	text-decoration:none;
 }
 .light .services-details h4{
@@ -2038,11 +2206,12 @@ nav .breadcrumb li a:hover{
 	line-height: 35px;
 } 
 .order-list img{
-	width: 100%;
-	height: 380px;
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
+	width: 90%;
+	height: 280px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
 }
 .base{
 	display: block;
@@ -2051,9 +2220,9 @@ nav .breadcrumb li a:hover{
 .system-main{
 	margin-top: 50px;
 }
-.system{
+.system-main .system{
+	padding: 5px;
 	background: #c4c8ca;
-	padding: 20px 20px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
@@ -2061,7 +2230,7 @@ nav .breadcrumb li a:hover{
 	width: 100%;
 	display: block;
 }
-.system h4{
+.system-main .system h4{
 	margin-top: 50px;
 	margin-left: 20px;
 	font-size: 20px;
@@ -2070,7 +2239,7 @@ nav .breadcrumb li a:hover{
 	text-transform: uppercase;
 	width: 100%;
 }
-.system p{
+.system-main .system p{
 	margin-top: 20px;
 	margin-left: 20px;
 	font-size: 15px;
@@ -2079,26 +2248,8 @@ nav .breadcrumb li a:hover{
 	list-style-type: square;
 	font-size: 15px;
 	line-height: 30px;
-	margin-left: 20px;
-} 
-.solar-description{
-	margin-top: 50px;
-}
-.solar-description h4{
-	font-size: 25px;
-	text-align: center;
-	font-weight: 550;
-}
-.solar-description h5{
-	font-size: 17px;
-	text-align: center;
-	font-weight: 550;
-}
-.solar-description p{
-	font-size: 15px;
 	width: 100%;
-	text-align: justify;
-}
+} 
 /*--------------------------------------------------------------
 # SOLAR/ELECTRICAL SERVICES
 --------------------------------------------------------------*/
@@ -2285,11 +2436,12 @@ nav .breadcrumb li a:hover{
 	font-family: 'play', sans-serif;
 }
 .testimony .title-block .sec-title a{
-	font-size: 18px;
+	font-size: 15px;
+	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
 	background: #006420;
-	padding: 25px 30px;
+	padding: 30px 30px;
 	color: #fff;
 }
 .testimony .title-block .sec-title a:hover{
@@ -2341,8 +2493,7 @@ nav .breadcrumb li a:hover{
 .single-testimonial-style-three span {
   display: block;
   color: #b1bec5;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
   line-height: 1em;
 }
 .single-testimonial-style-three .client-block {
@@ -2527,12 +2678,14 @@ nav .breadcrumb li a:hover{
 	font-size: 40px;
 	letter-spacing: 0.5px;
 	font-weight: bold;
+	color: #cdcdcd;
 }
 .training h2{
 	margin: 20px 0;
 	font-size: 20px;
 	font-weight: 500;
 	font-style: italic;
+	color: #b11c1c;
 }
 .count{
 	margin: 40px 0;
@@ -2541,7 +2694,7 @@ nav .breadcrumb li a:hover{
 	display: inline-block;
 	width: 80px;
 	height: 80px;
-	border:2px solid;
+	border: 2px solid;
 	margin: 20px 30px;
 	font-size: 12px;
 	border-radius: 15%;
@@ -2575,35 +2728,43 @@ nav .breadcrumb li a:hover{
 	justify-content:center;
 }
 .articles .news img{
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	height: 180px;
+	width: 95%;
+	height: 220px;
 }
 .articles .news p{
 	font-size: 15px;
 	margin-top: 20px;
-	color:#006420;
+	color: #b11c1c;
 	font-weight: bold;
+	width: 100%;
 	text-transform: capitalize;
 }
 .articles .card-body{
 	margin-top: -30px;
+	width: 100%;
 }
 .articles .card-body small{
 	margin-left: -20px;
 	font-size: 15px;
+	display: flex;
 }
-.articles .card-body a h5{
+.articles .card-body small i{
+	margin-top: 5px;
+	margin-right: 7px;
+}
+.articles .card-body h5{
+	margin-top: 10px;
 	margin-left: -20px;
 	font-size: 15px;
-	color:#000;
-	line-height: 20px;
-	width: 105%;
+	width: 120%;
+	font-weight: bold;
+	text-transform: uppercase;
 }
-.articles .card-body a h5:hover{
+.articles .card-body a{
 	color: #006420;
+}
+.articles .card-body a:hover{
+	color: #002c4c;
 	text-decoration: none;
 }
 .blog{
@@ -2612,29 +2773,46 @@ nav .breadcrumb li a:hover{
 }
 .blog .news .cad{
 	margin-top: 25px;
-	margin-left: 50px;
 	margin-bottom: 50px;
-	height: 370px;
-	width: 370px;
-	border-radius: 0px;
 }
 .blog .news .cad img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 95%;
+	width: 100%;
 	height: 220px;
 } 
 .blog .news .cad p{
 	font-size: 15px;
 	margin-top: 20px;
-	color:#006420;
+	color: #b11c1c;
 	font-weight: bold;
 	text-transform: capitalize;
 }
-.blog .news .card-body{
-	margin-top: -25px;
-	margin-left: -20px;
+.blog .news .cad .card-body small{
+	font-size: 15px;
+	display: flex;
+	margin-top: -30px;
+	margin-left: -25px;
+}
+.blog .news .cad .card-body small i{
+	margin-top: 5px;
+	margin-right: 7px;
+}
+.blog .news .cad .card-body h5{
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	width: 120%;
+	margin-left: -25px;
+}
+.blog .news .cad .card-body a{
+	color: #006420;
+}
+.blog .news .cad .card-body a:hover{
+	color:#002c4c;
+	text-decoration: none;
 }
 .blog .card{
 	display: block;
@@ -2642,34 +2820,49 @@ nav .breadcrumb li a:hover{
 	margin-left: auto;
 	margin-top: 75px;
 	margin-bottom: 50px;
-	width: 370px;
-	height: auto;
-	border-radius :0px;
-	border: 1px solid #cdcdcd;
-} 
-.blog .card .title{
-	text-align:center;
-	font-size:15px;
-	width:10%;
-	background:#006420;
-	color:#fff;
-	padding:5px 0px;
-	border-radius:5px;
-	line-height:20px;
-	margin-top:-25px;
-	margin-left:20px;
-	position:relative;
-}
-.blog .card-text{
-	font-size:16px;
-	text-align:justify;
-	line-height:30px;
+	border: .5px solid #cdcdcd;
 }
 .blog .card img{
+	width: 100%;
 	height:400px;
 }
+.blog .card p{
+	margin-left: 20px;
+	font-size: 15px;
+	margin-top: 20px;
+	color: #b11c1c;
+	font-weight: bold;
+	width: 100%;
+	text-transform: capitalize;
+} 
+.blog .card .card-body small{
+	margin-left: 0px;
+	margin-top: -20px;
+	font-size: 15px;
+	display: flex;
+}
+.blog .card .card-body small i{
+	margin-top: 5px;
+	margin-right: 10px;
+}
+.blog .card .card-body h5{
+	margin-top: 10px;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #006420;
+}
+.blog .card .card-body p{
+	font-size: 15px;
+	text-align: justify;
+	line-height: 30px;
+	color: #444;
+	font-weight: normal;
+	margin-left: 0px;
+}
 .blog .link{
-	margin:20px 0px;
+	margin: 20px 0px;
 }
 .blog .link p{
 	font-size:18px;
@@ -2688,22 +2881,6 @@ nav .breadcrumb li a:hover{
 	background:#006420;
 	color:#fff;
 }
-.blog .cad img{
-	height:200px;
-}
-.card-body h5{
-	margin-top:10px;
-	text-transform:uppercase;
-	font-size:17px;
-	font-weight:600;
-}
-.card-body a{
-	color:#444;
-}
-.card-body a:hover{
-	color:#006420;
-	text-decoration:none;
-}
 .blog h6{
 	font-size:18px;
 	margin-top:75px;
@@ -2712,7 +2889,7 @@ nav .breadcrumb li a:hover{
 .blog .side-bar{
 	margin-top:50px;
 	justify-content:center;
-	float:right;
+	float: right;
 }
 
 .blog .side-bar h5 {
@@ -2732,29 +2909,34 @@ nav .breadcrumb li a:hover{
 	color:#66cdaa;
 }
 .blog .list-unstyled{
-	margin-top:40px;
+	margin-top: 40px;
 }
 .blog .media{
-	margin:20px 0px;
-	line-height:23px;
+	margin: 20px 0px;
+	line-height: 23px;
 }
 .blog .media img{
-	width:70px;
-	height:70px;
+	width: 70px;
+	height: 65px;
 }
-.blog .media-body a{
-	font-size:14px;
-	color:#444;
+.blog .media-body p{
+	font-size: 15px;	
 }
-.blog .media-body a:hover{
-	color:#66cdaa;
+.blog .media-body p a{
+	color: #006420;
+}
+.blog .media-body p span{
+	font-size: 14px;
+	color: #b11c1c;
+}
+.blog .media-body p a:hover{
 	text-decoration:none;
+	color: #002c4c;
 }
 .side-bar .single-sidebar{
 	background:#fafafa;
-	padding:10px 10px;
+	padding: 10px 10px;
 }
-
 .side-bar .single-sidebar .socia i{
 	background: #666;
 	color: #cdcdcd;
@@ -2874,42 +3056,42 @@ nav .pagination a:hover{
 	margin-bottom:0;
 }
 .post .post-heading .meta .title a{
-	color: #2dc997;
+	color: #006420;
 }
 .post .post-heading .meta .title a:hover{
-	color:#5f8fbe;
+	color: #5f8fbe;
 }
 .post .post-heading .meta .time{
-	margin-top:0px;
-	color:#999;
+	margin-top: 0px;
+	color: #444;
 }
 .post .post-image .image{
-	width:100%;
-	height:auto;
+	width: 100%;
+	height: auto;
 }
 .post .post-description{
-	padding:15px;
+	padding: 15px;
 }
 .post .post-description p{
-	font-size:14px;
-	margin-left:90px;
-	margin-top:-20px;
+	font-size: 14px;
+	margin-left: 90px;
+	margin-top: -20px;
 }
 .post .post-description .stats{
-	margin-top:20px;
+	margin-top: 20px;
 }
 .post .post-description .stats .stat-item{
-	display:inline-block;
-	margin-right:15px;
+	display: inline-block;
+	margin-right: 15px;
 }
 .post .post-description .stats .stat-item .icon{
-	margin-right:8px;
+	margin-right: 8px;
 }
 /*--------------------------------------------------------------
 # PAGINATION
 --------------------------------------------------------------*/
 .pagination{
-	margin:50px 20px;
+	margin: 50px 20px;
 	justify-content:center;
 }
 .page-item.active-page .page-link {
@@ -2931,6 +3113,12 @@ nav .pagination a:hover{
 	text-align:justify;
 	line-height:30px;
 }
+.privacy p a{
+	font-size:16px;
+	color: #b11c1c;
+	font-weight: bold;
+	font-style: italic;
+}
 .privacy ul{
 	font-size:16px;
 	text-align:justify;
@@ -2946,19 +3134,20 @@ nav .pagination a:hover{
 # TERMS OF USE
 --------------------------------------------------------------*/
 .TERMS{
-	margin:100px 0px;
-	padding:0px 50px;	
+	margin: 100px 0px;
+	padding: 0px 10px;	
 }
 .TERMS p{
-	font-size:17px;
-	text-align:justify;
-	line-height:30px;
+	font-size: 17px;
+	text-align: justify;
+	line-height: 30px;
+	max-width: 1200px;
 }
 .TERMS ul{
-	font-size:17px;
-	text-align:justify;
-	line-height:40px;
-	margin-top:30px;
+	font-size: 17px;
+	text-align: justify;
+	line-height: 30px;
+	margin-top: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -3024,7 +3213,7 @@ nav .pagination a:hover{
 		font-size: 16px;
 	}
 	.service h5{
-		font-size:25px;
+		font-size:22px;
 	}
 	.service p{
 		margin-top:0px;
@@ -3052,8 +3241,8 @@ nav .pagination a:hover{
 		width: 150px;
 		font-size: 15px;
 	}
-	.card-cover .item .card{
-		width: 95%
+	.card-cover .card{
+		width: 95%;
 	}
 	.working p{
 		font-size: 15px;
@@ -3071,8 +3260,8 @@ nav .pagination a:hover{
 	.counter span{
 		font-size: 25px;
 	}
-	.counter-heading h3{
-		font-size:25px;
+	.counter-heading h5{
+		font-size: 18px;
 	}
 	.counter-heading p{
 		font-size: 16px;
@@ -3080,11 +3269,25 @@ nav .pagination a:hover{
 	.note{
 		font-size:15px;
 	}
-	.services li a{
-		font-size:15px;
+	.services ul li a{
+		font-size: 15px;
 	}
 	.services p{
-		font-size:15px;
+		font-size: 15px;
+	}
+	.about-us .people img{
+		width: 100%;
+		height: 370px;	
+		padding: 0;
+	}
+	.about-us .about{
+		width: 95%;
+		padding: 0;
+		font-size: 16px;
+		line-height: 30px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.people p{
 		width: 34%; 
@@ -3179,9 +3382,23 @@ nav .pagination a:hover{
 		width: 23.5%;
 		margin: 20px 5px;
 	}
+	.articles .news img{
+		width: 100%;
+	}
+	.articles .news p{
+		font-size: 17px;
+		width: 100%;
+	} 
+	.articles .card-body small{
+		font-size: 15px;
+	}
+	.articles .card-body a h5{
+		width: 120%;
+	}
 	.benefits-body img{
 		margin-left: -140px;
 	}
+
 	.light .services-details h4{
 		font-size: 28px;
 		width: 100%;
@@ -3194,15 +3411,6 @@ nav .pagination a:hover{
 		width: 100%;
 		font-size: 15px;
 		padding: 0px 10px;
-	}
-	.solar-description h4{
-		font-size: 22px;
-	}
-	.solar-description h5{
-		font-size: 18px;
-	}
-	.solar-description p{
-		font-size: 15px;
 	}
 	.order-list{
 		margin-top: 50px;
@@ -3264,6 +3472,15 @@ nav .pagination a:hover{
 		margin-top: 30px;
 		margin-left: 20px;
 	}
+	.shoppingCart{
+		margin-top: 5px;
+	}
+	.pricing-table .table{
+		width: 100%;	
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		991px
@@ -3295,15 +3512,15 @@ nav .pagination a:hover{
 	.header h2{
 		font-size: 16px;
 	}
-	.service h3{
+	.service h5{
 		font-size:22px;
 	}
 	.service p{
 		margin-top:0px;
 		font-size: 16px;
 	}
-	.counter-heading h3{
-		font-size:22px;
+	.counter-heading h5{
+		font-size: 18px;
 	}
 	.counter-heading p{
 		font-size: 16px;
@@ -3350,12 +3567,41 @@ nav .pagination a:hover{
 		width:100%;
 		justify-content: center;
 	}
-	
+	.about-us .people img{
+		width: 100%;
+		height: auto;	
+		padding: 0;
+	}
+	.about-us .about{
+		width: 95%;
+		padding: 0;
+		font-size: 15px;
+		line-height: 30px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about-us .about-two{
+		width: 70%;
+		padding: 0;
+		font-size: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+		line-height: 40px;
+	}
+	.about-us a{
+		width: 100%;
+		margin-left: 90px;
+		margin-right: auto;
+		font-size: 15px;
+	}
 	.people .inner-box{
-		margin-left: 130px;
+		margin-left: 10px;
+		padding: 20px 15px;
 	}
 	.people .inner-box span{
-	  	font-size: 32px;
+	  	font-size: 25px;
 	}
 	.people .inner-box h3{
 		font-size: 15.5px;
@@ -3393,7 +3639,7 @@ nav .pagination a:hover{
 		width: 100%;
 	}
 	.working h5{
-		font-size: 28px;
+		font-size: 25px;
 	}
 	.light h4{
 		width: 95%;
@@ -3467,8 +3713,8 @@ nav .pagination a:hover{
 		line-height: 30px;
 	} 
 	.order-list img{
-		width: 90%;
-		height: 300px;
+		width: 85%;
+		height: 310px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -3536,18 +3782,14 @@ nav .pagination a:hover{
 	}
 	.team-area{
 		width: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 5%;
-		padding-right: 5%;
 	}
 	.single-team{
-		width: 100%;
+		width: 95%;
+		height: 60vh;
+		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		display: block;
-		height: 400px;
+
 	}
 	.team-area-one{
 		width:100%;
@@ -3583,17 +3825,41 @@ nav .pagination a:hover{
 	.FAQS .card button{
 		font-size:20px;
 	}
+	.FAQS .card .card-body{
+		font-size: 15px;
+		text-align: justify;
+	}
+	.list-unstyled{
+		width: 100%;
+	}
+	.list-unstyled .media img{
+		width: 30%;
+		height: 15vh;
+	}
+	.list-unstyled .media .media-body p a{
+		width: 150%;
+		font-size: 14px;
+	}
+	.list-unstyled .media .media-body p span{	
+		font-size: 15px;
+	}
+	.blog .news{
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.blog .news .cad{
-		justify-content: center;
+		width: 33%;
+		padding: 5px;
 		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 45%;
 	}
 	.blog .news .cad img{
-		height:220px;
-		width: 80%;
-	}
+		width: 100%;
+		height: 220px;
+	} 
 	.blog .media img{
 		width:120px;
 		height:90px;
@@ -3712,14 +3978,56 @@ nav .pagination a:hover{
 		font-size: 15px;
 	}
 	.choose1{
-		left: 0;
-		width: 50%;
+		left: -5%;
+		width: 60%;
 		margin-top: 50px;
 	}
 	.choose2{
-		left: 0;
+		left: 3%;
+		width: 60%;
+		margin-top: 210px;
+	}
+	.shoppingCart{
+		margin-top: 45px;
+		margin-left: -12px;
+	}
+	.product .list-group-item{	
 		width: 50%;
-		margin-top: 200px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.product-details h4{
+		width: 100%;
+	}
+	.product-details p{
+		width: 95%;
+		text-align: justify;
+	}
+	.product-details ul li{
+		width: 100%;
+	}
+	.slider-box{
+		display: flex;
+		margin-left: 10%;
+		margin-right: auto;
+	}
+	.product-details h2{
+		width: 100%;
+		font-size: 24px;
+	}
+	.product-design .shop-item-image{
+		height: 100%;
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.pricing-table .table{
+		width: 90%;	
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -3741,7 +4049,8 @@ nav .pagination a:hover{
 		font-size: 15px;
 	}
 	#header #logo img {
-		max-height: 50px;
+		width: 75%;
+		max-height: 45px;
 		margin-left: 10px;
 	}
    #nav-menu-container {
@@ -3756,15 +4065,15 @@ nav .pagination a:hover{
 	.header h2{
 		font-size: 16px;
 	}
-	.service h3{
-		font-size:25px;
+	.service h5{
+		font-size: 20px;
 	}
 	.service p{
 		margin-top:0px;
 		font-size: 16px;
 	}
-	.counter-heading h3{
-		font-size:25px;
+	.counter-heading h5{
+		font-size: 18px;
 	}
 	.counter-heading p{
 		font-size: 16px;
@@ -3809,6 +4118,9 @@ nav .pagination a:hover{
 		width:100%;
 		justify-content: center;
 	}
+	.card-cover .card{
+		width: 70%;
+	}
 	.work-mode .working{
 		width: 50%;
 	}
@@ -3816,29 +4128,44 @@ nav .pagination a:hover{
 		font-size: 15px;
 	}
 	.working h5{
-		font-size: 16px;
+		font-size: 20px;
 	}
-	.about{
-		width: 100%;
+	.about-us .about{
+		width: 80%;
+		padding: 10px;
 		font-size: 15px;
+		line-height: 30px;
+		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.about-us .people img{
+		width: 70%;
+	}
+	.about-us .about-two{
+		width: 70%;
+		padding: 0;
+		font-size: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+		line-height: 35px;
+	}
 	.about-us a{
 		width: 100%;
-		padding: 12px 12px;
-		margin-left: 30px;
+		margin-left: 90px;
 		margin-right: auto;
 		font-size: 15px;
 	}
 	.people .inner-box{
 		margin-left: 80px;
+		padding: 15px 10px;
 	}
 	.people .inner-box span{
-	  font-size: 35px;
+	  font-size: 27px;
 	}
 	.people .inner-box h3{
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.benefits-body{
 		padding: 20px 15px;
@@ -3853,18 +4180,10 @@ nav .pagination a:hover{
 	}
 	.team-area{
 		width:100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 7%;
-		padding-right: 7%;
 	}
 	.single-team{
-		width: 47%;
-		left: 15px;
-		margin-right: auto;
-		display: block;
-		height: 365px;
+		width: 100%;
+		height: 60vh;
 	}
 	.team-area-one{
 		width:100%;
@@ -3877,7 +4196,7 @@ nav .pagination a:hover{
 		left: 15px;
 		margin-right: auto;
 		display: inline-block;
-		height: 365px;
+		height: 330px;
 	}
 	#call-to-action .cta-text{
 		text-align: center;
@@ -3910,7 +4229,7 @@ nav .pagination a:hover{
 	}
 	.articles .news{
 		display: inline-block;
-		width: 47%;
+		width: 49%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -3922,27 +4241,32 @@ nav .pagination a:hover{
 		width: 100%;
 		margin-left: 0px;
 	} 
-	.articles .card-body small{
+	.articles .card-body small i{
+		margin-left: 0px;
 		font-size: 15px;
-		margin-left: -20px;
 	}
 	.articles .card-body a h5{
-		margin-left: -20px;
 		width: 100%;
+	}
+	.blog .news{
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.blog .news .cad{
 		justify-content: center;
 		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 50%;
+		width: 49%;
 	}
 	.blog .news .cad small{
 		margin-left: 0px;
 	}
 	.blog .news .cad img{
 		height: 220px;
-		width: 90%;
+		width: 100%;
 	}
 	.blog .media img{
 		width:120px;
@@ -3979,6 +4303,26 @@ nav .pagination a:hover{
 		justify-content:center;
 		width:70%;
 	}
+	.list-unstyled{
+		width: 100%;
+	}
+	.list-unstyled .media img{
+		width: 30%;
+		height: 17vh;
+	}
+	.list-unstyled .media .media-body p a{
+		width: 150%;
+		font-size: 15px;
+	}
+	.list-unstyled .media .media-body p span{	
+		font-size: 15px;
+	}
+	.system-main .system{
+		width: 105%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.watts img{
 		width: 70%;
 		height: 300px;
@@ -3986,6 +4330,12 @@ nav .pagination a:hover{
 	.watts p{
 		padding-top: 50px;
 		font-size: 25px;
+	} 
+	.product .list-group-item{
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.light .services-details img{
 		width:100%;
@@ -4001,6 +4351,12 @@ nav .pagination a:hover{
 	}
 	.details p{
 		width: 100%;
+	}
+	.sub-section .body{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 	.order-list ol{
 		width: 80%;
@@ -4141,25 +4497,62 @@ nav .pagination a:hover{
 		margin-right: auto;
 	}
 	.choose1{
-		left: 15%;
-		width: 35%;
+		left: 10%;
+		width: 45%;
 		height: 150px;
 		margin-top: 50px;
 	}
 	.choose2{
-		left: -15%;
-		width: 35%;
+		left: -10%;
+		width: 45%;
 		height: 150px;
 		margin-top: 200px;
 	}
 	.video #trigger i{
 		margin-left: 27px;
 	}
+	.shoppingCart{
+		margin-top: 5px;
+		margin-left: -80px;
+	}
+	.slider-box{
+		display: flex;
+		margin-left: 10%;
+		margin-right: auto;
+	}
+	.product-details h2{
+		width: 100%;
+		font-size: 24px;
+		margin-top: 50px;
+	}
+	.product-design .shop-item-image{
+		height: 60%;
+		width: 60%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.pricing-table .table{
+		width: 100%;	
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.FAQS h3{
+		font-size: 30px;
+	}
+	.FAQS .card button{
+		font-size: 17px;
+	}
+	.FAQS .card .card-body{
+		font-size: 15px;
+		text-align: justify;
+	}
 }
 /*--------------------------------------------------------------
-# MEDIA SCREENS / BREAK POINTS		576px
+# MEDIA SCREENS / BREAK POINTS		575px
 --------------------------------------------------------------*/
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
 	.time p{
 		font-size: 15px;
 	}
@@ -4176,15 +4569,15 @@ nav .pagination a:hover{
 	.header h2{
 		font-size: 15px;
 	}
-	.service h3{
-		font-size:22px;
+	.service h5{
+		font-size:20px;
 	}
 	.service p{
 		margin-top:0px;
 		font-size: 15px;
 	}
-	.counter-heading h3{
-		font-size:22px;
+	.counter-heading h5{
+		font-size: 18px;
 	}
 	.counter-heading p{
 		font-size: 16px;
@@ -4223,36 +4616,37 @@ nav .pagination a:hover{
 		width: 49%;
 		margin-left: auto;
 		margin-right:auto;
+		font-size: 15px;
 	}
-	.about{
-		width: 100%;
+	.about-us .about{
+		width: 90%;
+		padding: 10px;
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.about-us .about-two{
+		width: 90%;
+		padding: 0;
 		font-size: 15px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 0px;
+		line-height: 35px;
 	}
 	.about-us a{
 		width: 100%;
-		padding: 12px 10px;
 		margin-left: 30px;
 		margin-right: auto;
 	}
 	.people .inner-box{
-		margin-left: 20px;
+		margin-left: 40px;
+		padding: 20px 15px;
 	}
 	.people .inner-box span{
-		font-size: 30px;
+		font-size: 25px;
 	}
 	.people .inner-box h3{
 		font-size: 15px;
-	}
-	.choose1{
-		width: 60%;
-		height:270px;
-	}
-	.choose2{
-		width:60%;
-		height: 270px;
-		margin-top: 290px;
 	}
 	.benefits-body{
 		padding: 20px 5px;
@@ -4272,24 +4666,27 @@ nav .pagination a:hover{
 	}
 	.working p{
 		font-size: 15px;
-		width: 60%;
+		width: 70%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	.working h5{
 		font-size: 20px;
-		margin-right: 115px;
+		margin-right: 100px;
 	}
 	.working h6{
 		font-size: 20px;
-		margin-left: 115px;
+		margin-left: 100px;
 	}
 	#call-to-action h3 a{
 		width: 50%;
 	}
 	.row-counters .counter{
-		width: 100%;
+		width: 50%;
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
 	} 
 	.team-area{
 		width:100%;
@@ -4298,11 +4695,8 @@ nav .pagination a:hover{
 		margin-right: auto;
 	}
 	.single-team{
-		width: 70%;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		height: 380px;
+		width: 75%;
+		height: 70vh;
 	}
 	.team-area-one{
 		width:100%;
@@ -4317,26 +4711,52 @@ nav .pagination a:hover{
 		display: inline-block;
 		height: 380px;
 	}
+	.sub-section .body{
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	.details p{
+		width: 95%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.order-list ol li{
 		font-size: 16px;
 	}
+	.articles .news{
+		display: block;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.articles .news img{
-		width: 70%;
+		width: 100%;
+		height: 30vh;
 	}
 	.articles .news p{
 		font-size: 17px;
 		width: 100%;
-		margin-left: 80px;
 	} 
 	.articles .card-body small{
 		font-size: 15px;
-		margin-left: 55px;
 	}
 	.articles .card-body a h5{
-		margin-left: 55px;
+		width: 120%;
+		font-size: 13px;
+		margin-top: 10px;
+	}
+	.blog .news{
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.blog .news .cad{
 		justify-content: center;
+		align-items: center;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -4347,7 +4767,10 @@ nav .pagination a:hover{
 	}
 	.blog .news .cad img{
 		height: 220px;
-		width: 90%;
+		width: 100%;
+	}
+	.blog .news .cad small{
+		margin-left: 0px;
 	}
 	.blog .news .cad a h5{
 		width: 110%;
@@ -4366,7 +4789,7 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-		width: 80%;
+		width: 70%;
 	}
 	.single-service-style-one .image-block > img {
 		width: 100%;
@@ -4376,7 +4799,7 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-		width: 80%;
+		width: 70%;
 	}
 	.light .list-group{
 		width:80%;
@@ -4479,6 +4902,20 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.list-unstyled{
+		width: 100%;
+	}
+	.list-unstyled .media img{
+		width: 35%;
+		height: 15vh;
+	}
+	.list-unstyled .media .media-body p a{
+		width: 150%;
+		font-size: 15px;
+	}
+	.list-unstyled .media .media-body p span{	
+		font-size: 15px;
+	}
 	.blog .card .title{
 		font-size: 15px;
 		padding: 10px 5px;
@@ -4527,19 +4964,57 @@ nav .pagination a:hover{
 		margin-right: auto;
 	}
 	.choose1{
-		left: 15%;
-		width: 40%;
+		left: 10%;
+		width: 47%;
 		height: 150px;
 		margin-top: 50px;
 	}
 	.choose2{
-		left: -15%;
-		width: 40%;
+		left: -10%;
+		width: 47%;
 		height: 150px;
 		margin-top: 200px;
 	}
+	.slider-box{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.product-details h2{
+		width: 100%;
+		font-size: 22px;
+	}
+	.product-design .shop-item-image{
+		height: 100%;
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.pricing-table .table{
+		width: 70%;	
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.FAQS h3{
+		font-size: 30px;
+	}
+	.FAQS .card button{
+		font-size: 17px;
+	}
+	.FAQS .card .card-body{
+		font-size: 15px;
+		text-align: justify;
+	}
+	.training h1{
+		margin-top: 90px;
+		font-size: 25px;
+	}
+	.training h2{
+		font-size: 20px;
+	}
 }
-
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		480px
 --------------------------------------------------------------*/
@@ -4591,11 +5066,8 @@ nav .pagination a:hover{
 	}
 	.colum .colum-body{
 		display: block;
-		margin-left: auto;
-		margin-right:auto;
 		margin-top: 5px;
 		margin-bottom: 5px;
-		width: 80%;
 	}
 	.colum-body p{
 		width: 100%;
@@ -4605,23 +5077,38 @@ nav .pagination a:hover{
 		width: 100%;
 		font-size: 15px;
 	}
-	.about{
+	.service h5{
+		font-size: 18px;
+	}
+	.about-us .about{
 		width: 100%;
+		padding: 10px;
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.about-us .about-two{
+		width: 90%;
+		padding: 0;
 		font-size: 15px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 0px;
+		line-height: 32px;
 	}
 	.about-us a{
 		width: 100%;
-		padding: 12px 10px;
 		margin-left: 30px;
 		margin-right: auto;
 	}
+	.people .inner-box{
+		margin-left: 40px;
+		padding: 15px 10px;
+	}
 	.people .inner-box span{
-	  font-size: 27px;
+	  font-size: 18px;
 	}
 	.people .inner-box h3{
-		font-size: 15px;
+		font-size: 12px;
 	}
 	#bridgeSlide {
 		display: block;
@@ -4629,12 +5116,11 @@ nav .pagination a:hover{
 		margin-right: auto;
 	}
 	.benefits-body{
-		padding: 20px 5px;
-		width: 70%;
-		margin: 20px 5px;
-	}
-	.benefits-body img{
-		margin-left: -140px;
+		width: 60%;
+		padding: 10px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;	
 	}
 	.order-list ol li{
 		font-size: 15px;
@@ -4671,16 +5157,10 @@ nav .pagination a:hover{
 	}
 	.team-area{
 		width: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	.single-team{
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		height: 365px;
+		width: 85%;
+		height: 60vh;
 	}
 	.team-area-one{
 		width: 100%;
@@ -4716,6 +5196,12 @@ nav .pagination a:hover{
 		margin-right: auto;
 		display: block;
 	}
+	.sub-section .body{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
 	.sub-section .body .sub{
 		width: 95%;
 		font-size: 15px;
@@ -4723,23 +5209,44 @@ nav .pagination a:hover{
 		margin-right: auto;
 		display: block;
 	}
+	.articles .news{
+		display: block;
+		width: 100%;
+		margin-left: 10%;
+		margin-right: auto;
+	}
 	.articles .news img{
-		width: 75%;
+		width: 70%;
+		height: 37vh;
 	}
 	.articles .news p{
 		font-size: 17px;
 		width: 100%;
-		margin-left: 45px;
 	} 
 	.articles .card-body small{
-		font-size: 15px;
-		margin-left: 25px;
+		font-size: 15px;	
 	}
 	.articles .card-body a h5{
-		margin-left: 25px;
-		width: 85%;
+		width: 100%;
 	}
-	.blog .cad img{
+	.blog .news{
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.blog .news .cad{
+		justify-content: center;
+		align-items: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+	}
+	.blog .news .cad small{
+		margin-left: 0px;
+	}
+	.blog .news .cad img{
 		height: 220px;
 		width: 100%;
 	}
@@ -4750,6 +5257,20 @@ nav .pagination a:hover{
 	}
 	.pagination .page-item{
 		margin-top: -1150px;
+	}
+	.address p{
+		font-size: 15px;
+	}
+	.address a{
+		font-size: 15px;		
+	}
+	.address h4{
+		font-size: 20px;
+		width: 82%;
+	}
+	.address i{
+		font-size: 20px;
+		
 	}
 	.address .map iframe{
 		width: 90%;
@@ -4804,11 +5325,6 @@ nav .pagination a:hover{
 	}
 	.testimony .title-block .sec-title h2{
 		font-size: 22px;
-	}
-	.testimony .title-block .sec-title a{
-		width: 100%; 
-		font-size: 14px;
-		padding: 15px 10px;
 	}
    .testimony .title-block .sec-title p{
 		width: 100%;
@@ -4873,13 +5389,22 @@ nav .pagination a:hover{
 		width: 100%;
 		height: 300px;
 	}
+	.details p{
+		width: 95%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.order-list img{
 		width: 100%;
 		height: 300px;
 		margin-top: -30px;
 	}
 	.system-main .system{
-		width: 95%;
+		width: 83%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.system p{
 		width: 100%;
@@ -4913,12 +5438,14 @@ nav .pagination a:hover{
 		width: 100%;
 	}
 	.list-unstyled .media img{
-		width: 50%;
+		width: 40%;
+		height: 15vh;
 	}
-	.list-unstyled .media .media-body p{
+	.list-unstyled .media .media-body p a{
 		width: 150%;
+		font-size: 14px;
 	}
-	.list-unstyled .media .media-body a{	
+	.list-unstyled .media .media-body p span{	
 		font-size: 15px;
 	}
 	.blog .card img{
@@ -4946,22 +5473,77 @@ nav .pagination a:hover{
 		margin-right: auto;
 	}
 	.choose1{
-		left: 5%;
+		left: 15px;
 		width: 50%;
 		height: 150px;
 		margin-top: 50px;
 	}
 	.choose2{
-		left: -5%;
+		left: 0;
 		width: 50%;
 		height: 150px;
 		margin-top: 200px;
+	}
+	.cart-info p{
+		display: none;
+	}
+	.slider-box{
+		display: flex;
+		margin-left: 17%;
+		margin-right: auto;
+	}
+	.product-details h2{
+		width: 100%;
+		font-size: 22px;
+	}
+	.product-design .shop-item-image{
+		height: 100%;
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.pricing-table .table{
+		width: 80%;	
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.FAQS h3{
+		font-size: 18px;
+	}
+	.FAQS .card button{
+		font-size: 16px;
+	}
+	.FAQS .card .card-body{
+		font-size: 15px;
+		text-align: justify;
+	}
+	.TERMS p{
+		width: 100%;
+		padding: 2px;
+		font-size: 15px;
+	}
+	.TERMS ul{
+		margin-left: -20px;
+		font-size: 15px;
+	}
+	.training h1{
+		margin-top: 90px;
+		font-size: 20px;
+	}
+	.training h2{
+		font-size: 20px;
 	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		375px
 --------------------------------------------------------------*/
 @media only screen and (max-width: 375px) {
+	#header #logo img {
+		max-width: 210px;
+		height: 40px;
+	  }
 	.links{
 		text-align:center;
 		width: 100%;
@@ -5004,6 +5586,13 @@ nav .pagination a:hover{
 		margin-left: -12px;
 		margin-right: -12px;
 	}
+	.header{
+		height: 280px;
+		width: auto;
+	}
+	.header h1{
+		margin-top: 120px;
+	}
 	.colum{
 		margin-top: -440px;
 	}
@@ -5013,51 +5602,57 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right:auto;
 	}
-	.about{
-		width: 100%;
-		padding: 0;
-		font-size: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 50px;
-	}
 	.people img{
 		width: 100%;
 		height: 90%;
 		margin-top: 20px;
 	}
+	.about-us .about{
+		width: 100%;
+		padding: 10px;
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.about-us .about-two{
+		width: 90%;
+		padding: 0;
+		font-size: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+		line-height: 30px;
+	}
 	.about-us a{
 		width: 100%;
-		padding: 12px 10px;
-		margin-left: 5px;
+		margin-left: 10px;
 		margin-right: auto;
 		font-size: 14px;
 	}
 	.people .inner-box{
-		margin-left: 20px
+		margin-left: 40px;
+		padding: 15px 10px;
 	}
 	.people .inner-box span{
-		font-size: 25px;
+		font-size: 16px;
 	}
 	.people .inner-box h3{
-		font-size: 14px;
+		font-size: 11px;
 	}
-	.benefits-body{
-		padding: 20px 5px;
-		width: 100%;
-		margin: 20px 5px;
-	}
-	.benefits-body img{
-		margin-left: -140px;
-	}
-	.service h3{
-		font-size:22px;
+	.service h5{
+		font-size: 18px;
 	}
 	.service p{
 		margin-top:0px;
 		font-size: 16px;
 	}
-	.single-service-style-one {
+	.benefits-body{
+		width: 70%;
+		padding: 10px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	.single-service-style-one{
 		margin-left: 0px;
 		margin-right: auto;
 		display: block;
@@ -5092,18 +5687,14 @@ nav .pagination a:hover{
 		width: 100%;
 	}
 	.team-area{
-		width:100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		width: 100%;
 	}
 	.single-team{
-		width: 95%;
-		justify-content: center;
-		align-items: center;
+		width: 100%;
+		height: 50vh;
+		display: block;
 		margin-left: auto;
-		margin-right: auto;
-		height: 360px;
+		margin-right: auto;	
 	}
 	.team-area-one{
 		width:100%;
@@ -5135,6 +5726,15 @@ nav .pagination a:hover{
 		margin-right: auto;
 		display: block;
 	}
+	.sub-section .body{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	.details p{
+		width: 95%;
+	}
 	.details ul li{
 		font-size: 15px;
 	}
@@ -5147,17 +5747,22 @@ nav .pagination a:hover{
 		width: 100%;
 		margin-left: -30px;
 	}
+	.articles .news{
+		display: block;
+		width: 100%;
+		margin-left: 10%;
+		margin-right: auto;
+	}
 	.articles .news img{
 		width: 90%;
+		height: 37vh;
 	}
 	.articles .news p{
 		font-size: 17px;
 		width: 100%;
-		margin-left: 20px;
 	} 
 	.articles .card-body small{
-		font-size: 15px;
-		margin-left: 0px;
+		font-size: 15px;	
 	}
 	.articles .card-body a h5{
 		width: 100%;
@@ -5168,17 +5773,25 @@ nav .pagination a:hover{
 		height: 30%;
 	}
 	.blog .news{
-		margin-left: -50px;
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.blog news .cad small{
-		width: 110%;
+	.blog .news .cad{
+		justify-content: center;
+		align-items: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 85%;
+	}
+	.blog .news .cad small{
+		margin-left: 0px;
 	}
 	.blog .news .cad img{
-		height: 180px;
-		width: 120%;
-	}
-	.blog .news .cad a h5{
-		width: 149%;
+		height: 220px;
+		width: 100%;
 	}
 	.pagination{
 		display: block;
@@ -5285,11 +5898,12 @@ nav .pagination a:hover{
 	}
 	.TERMS p{
 		width: 100%;
-		padding: 2px 2px;
-		margin: 2px 2px;
+		padding: 2px;
+		font-size: 15px;
 	}
 	.TERMS ul{
 		margin-left: -20px;
+		font-size: 15px;
 	}
 	.single-service-style-two .image-block {
         display: table-cell;
@@ -5302,14 +5916,11 @@ nav .pagination a:hover{
 		margin-right: auto;
 		width: 100%;
 	}
-	.benefits-body{
-		width: 100%;
+	.system-main .system{
+		width: 93%;
 		display: block;
 		margin-left: auto;
-		margin-right: auto;	
-	}
-	.system-main .system{
-		width: 100%;
+		margin-right: auto;
 	}
 	.system p{
 		width: 100%;
@@ -5326,13 +5937,15 @@ nav .pagination a:hover{
 	.address p{
 		font-size: 15px;
 	}
+	.address a{
+		font-size: 15px;		
+	}
 	.address h4{
 		font-size: 20px;
-		width: 82%
+		width: 82%;
 	}
 	.address i{
 		font-size: 20px;
-		
 	}
 	#contact-form input{
 		width: 100%;
@@ -5383,35 +5996,37 @@ nav .pagination a:hover{
 		width: 100%;
 	}
 	.list-unstyled .media img{
-		width: 50%;
+		width: 45%;
+		height: 15vh;
 	}
-	.list-unstyled .media .media-body p{
+	.list-unstyled .media .media-body p a{
 		width: 150%;
+		font-size: 14px;
 	}
-	.list-unstyled .media .media-body a{	
-		font-size: 15px;
+	.list-unstyled .media .media-body p span{	
+		font-size: 14px;
 	}
 	.blog .card img{
 		height:200px;
 		width:100%;
 	}
 	.card{
-		margin:10px;
-		width:100%;
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
+		margin: 10px;
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.post .post-heading{
-		height:95px;
-		padding:20px 5px;
+		height: 95px;
+		padding: 20px 5px;
 	}
 	.post .post-heading .avatar{
 		width: 40px;
 		height:40px;
-		display:block;
+		display: block;
 		margin-right: 10px;
-		border-radius:100%;
+		border-radius: 100%;
 	}
 	.post .post-description{
 		padding: 15px;
@@ -5423,7 +6038,7 @@ nav .pagination a:hover{
 	}
 	.side-bar .single-sidebar .socia{
 		margin: 30px 0;
-		width:100%;
+		width: 100%;
 		display: flex;
 		margin-left: -60px;
 	}
@@ -5465,44 +6080,85 @@ nav .pagination a:hover{
 		margin-right: auto;
 	}
 	.choose1{
-		left: 0;
-		width: 60%;
+		left: 15px;
+		width: 55%;
 		height: 150px;
 		margin-top: 50px;
 	}
 	.choose2{
 		left: 0;
-		width: 60%;
+		width: 55%;
 		height: 150px;
 		margin-top: 200px;
+	}
+	.slider-box{
+		display: flex;
+		margin-left: 17%;
+		margin-right: auto;
+	}
+	.product-details h2{
+		width: 100%;
+		font-size: 20px;
+	}
+	.product-design .shop-item-image{
+		height: 100%;
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.pricing-table .table{
+		width: 90%;	
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.FAQS h3{
+		font-size: 16px;
+	}
+	.FAQS .card button{
+		font-size: 15px;
+	}
+	.FAQS .card .card-body{
+		font-size: 14px;
+		text-align: justify;
+	}
+	.training h1{
+		margin-top: 90px;
+		font-size: 20px;
+	}
+	.training h2{
+		font-size: 20px;
 	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		320px
 --------------------------------------------------------------*/
 @media only screen and (max-width: 320px) {
-	#logo img{
-		width: 80%;
-		height: 50px;
-	}
+	#header #logo img {
+		max-width: 200px;
+		height: 40px;
+	  }
 	nav .breadcrumb{
 		margin-left:10px;	
 	}
 	.breadcrumb li a{
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.links{
 		text-align:center;
 		width:100%;
 		margin-left:-15px;
+		font-size: 14px;
 	}
 	.time{
 		margin-top: -5px;
 		text-align:center;
+		font-size: 14px;
 	}
 	.book p{
 		margin-top: -15px;
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.carousel-item img{
 		height: 320px;
@@ -5533,72 +6189,83 @@ nav .pagination a:hover{
 		margin-left: -12px;
 		margin-right: -12px;
 	}
-	.header h1{
-		font-size: 20px;
+	.header{
+		height: 250px;
+		width: auto;
 	}
-	.about-two{
+	.header h1{
+		margin-top: 110px;
+		font-size: 17px;
+	}
+	.about-us .about{
 		width: 100%;
 		padding: 0;
-		font-size: 14px;
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.about-us .about-two{
+		width: 100%;
+		padding: 0;
+		font-size: 15px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 0px;
+		line-height: 25px;
 	}
 	.about-us a{
 		width: 100%;
-		padding: 12px 10px;
 		margin-left: 20px;
 		margin-right: auto;
 	}
-	.people-one img{
+	.people-one{
 		width: 100%;
-		height: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	} 
 	.people img{
 		width: 100%;
-		height: 90%;
+		height: 100%;
 		margin-top: 20px;
 	}
 	.people .inner-box{
-		margin-left: 20px
+		margin-top: -50px;
+		margin-left: 40px;
+		padding: 15px 10px;
 	}
 	.people .inner-box span{
-		font-size: 25px;
+		font-size: 16px;
 	}
 	.people .inner-box h3{
-		font-size: 14px;
+		font-size: 11px;
 	}
 	.choose-body h4{
 		font-size: 15px;
 	}
 	.choose-body p{
 		font-size: 14px;
+		text-align: justify;
+		width: 98%;
 	}
-	.choose1{
-		height: 200px;
-	}
-	.choose1 h6{
-		font-size: 18px;
-	}
-	.choose2{
-		height: 200px;
+	.choose-body{
+		margin-left: -5px;
 	}
 	#trigger{ 
-		width: 80px;
-		height: 80px;
+		width: 40px;
+		height: 40px;
 		font-size: 20px;
-		line-height: 80px;
+		line-height: 10px;
 	}
 	.benefits-body{
-		padding: 20px 5px;
-		width: 100%;
-		margin: 20px 5px;
-	}
-	.benefits-body img{
-		margin-left: -140px;
+		width: 80%;
+		padding: 10px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;	
 	}
 	.service h5{
-		font-size: 24px;
+		font-size: 18px;
+		width: 100%;
 	}
 	.service p{
 		margin-top: 0px;
@@ -5639,7 +6306,7 @@ nav .pagination a:hover{
 		width: 100%;
 	}
 	.counter-heading h5{
-		font-size: 24px;
+		font-size: 18px;
 		width: 100%;
 	}
 	.counter-heading p{
@@ -5647,17 +6314,13 @@ nav .pagination a:hover{
 	}
 	.team-area{
 		width: 100%;
+	}
+	.single-team{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	.single-team{
-		justify-content: center;
-		align-items: center;
-		margin-left: auto;
-		margin-right: auto;
-		width: 90%;
-		height: 330px;
+		width: 100%;
+		height: 50vh;
 	}
 	.team-area-one{
 		width: 100%;
@@ -5670,7 +6333,7 @@ nav .pagination a:hover{
 		left: 15px;
 		margin-right: auto;
 		display: inline-block;
-		height: 330px;
+		height: 300px;
 	}
 	#call-to-action h3 a{
 		display: block;
@@ -5691,6 +6354,12 @@ nav .pagination a:hover{
 	}
 	.details ul li{
 		font-size: 14px;
+	}
+	.sub-section .body{
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 	.order-list img{
 		width: 100%;
@@ -5761,6 +6430,20 @@ nav .pagination a:hover{
 		padding: 0px 20px;
 		margin-top: 100px;
 	}
+	.address p{
+		font-size: 15px;
+	}
+	.address a{
+		font-size: 15px;		
+	}
+	.address h4{
+		font-size: 20px;
+		width: 82%;
+	}
+	.address i{
+		font-size: 20px;
+		
+	}
 	.address .map iframe{
 		height: 300px;
 		width: 100%;
@@ -5792,11 +6475,12 @@ nav .pagination a:hover{
 	}
 	.TERMS p{
 		width: 100%;
-		padding: 2px 2px;
-		margin: 2px 2px;
+		padding: 2px;
+		font-size: 15px;
 	}
 	.TERMS ul{
 		margin-left: -20px;
+		font-size: 15px;
 	}
 	.single-service-style-two .image-block {
         display: table-cell;
@@ -5807,12 +6491,6 @@ nav .pagination a:hover{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	.benefits-body{
-		width: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;	
 	}
 	.system p{
 		width: 100%;
@@ -5852,21 +6530,25 @@ nav .pagination a:hover{
 		margin-left: 0px;
 		margin-top: -20px;
 	}
+	.articles .news{
+		display: block;
+		width: 100%;
+		margin-left: 5%;
+		margin-right: auto;
+	}
 	.articles .news img{
-		width: 90%;
+		width: 95%;
+		height: 37vh;
 	}
 	.articles .news p{
-		font-size: 15px;
+		font-size: 17px;
 		width: 100%;
-		margin-left: 15px;
 	} 
 	.articles .card-body small{
-		font-size: 15px;
-		margin-left: -5px;
+		font-size: 15px;	
 	}
 	.articles .card-body a h5{
-		width: 100%;
-		margin-left: -5px;
+		width: 110%;
 	}
 	.blog .card-body h5{
 		width: 110%;
@@ -5878,17 +6560,25 @@ nav .pagination a:hover{
 		width: 22%;
 	}
 	.blog .news{
-		margin-left: -50px;
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.blog news .cad small{
-		width: 110%;
+	.blog .news .cad{
+		justify-content: center;
+		align-items: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	.blog .news .cad small{
+		margin-left: 0px;
 	}
 	.blog .news .cad img{
-		height: 180px;
-		width: 120%;
-	}
-	.blog .news .cad a h5{
-		width: 149%;
+		height: 220px;
+		width: 100%;
 	}
 	.blog .card img{
 		height: 200px;
@@ -5912,7 +6602,7 @@ nav .pagination a:hover{
 		margin-top: 10px;
 		padding: 0px 0px;
 		margin-left: -20px;
-		width: 100%;
+		width: 120%;
 		display: inline-table;
 	}
 	.side-bar .list-group{
@@ -5926,7 +6616,7 @@ nav .pagination a:hover{
 		margin: 30px 0;
 		width: 80%;
 		display: flex;
-		margin-left: -65px;
+		margin-left: -75px;
 		margin-right: auto;
 		font-size: 22px;
 	}
@@ -5934,13 +6624,15 @@ nav .pagination a:hover{
 		width: 100%;
 	}
 	.list-unstyled .media img{
-		width: 50%;
+		width: 40%;
+		height: 13vh;
 	}
-	.list-unstyled .media .media-body p{
+	.list-unstyled .media .media-body p a{
 		width: 150%;
+		font-size: 14px;
 	}
-	.list-unstyled .media .media-body a{	
-		font-size: 15px;
+	.list-unstyled .media .media-body p span{	
+		font-size: 14px;
 	}
 	.comment .form-row{
 		width:100%;
@@ -5992,7 +6684,7 @@ nav .pagination a:hover{
 		margin-right: auto;
 	}
 	.choose1{
-		left: 0;
+		left: 15px;
 		width: 60%;
 		height: 150px;
 		margin-top: 50px;
@@ -6002,6 +6694,58 @@ nav .pagination a:hover{
 		width: 60%;
 		height: 150px;
 		margin-top: 200px;
+	}
+	.slider-box{
+		display: flex;
+		margin-left: 11%;
+		margin-right: auto;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.product-design .shop-item-image{
+		height: 100%;
+		width: 105%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.product-details h2{
+		width: 100%;
+		font-size: 18px;
+	}
+	.product-details h4{
+		width: 100%;
+	}
+	.product-details p{
+		width: 100%;
+		text-align: justify;
+	}
+	.product-details ul li{
+		width: 100%;
+	}
+	.pricing-table .table{
+		width: 100%;	
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.FAQS h3{
+		font-size: 18px;
+	}
+	.FAQS .card button{
+		font-size: 15px;
+	}
+	.FAQS .card .card-body{
+		font-size: 14px;
+		text-align: justify;
+	}
+	.training h1{
+		margin-top: 90px;
+		font-size: 20px;
+	}
+	.training h2{
+		font-size: 20px;
 	}
 }
 
