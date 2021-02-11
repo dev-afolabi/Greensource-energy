@@ -13,7 +13,9 @@ urlpatterns = [
     url(r'^services/details/retrofit-maintenance$', views.maintenance_service, name='maintenance_service'),
     url(r'^services/details/system-upgrade$', views.hvac, name='hvac'),
     url(r'^projects$', views.projects, name='projects'),
-    url(r'^products$', views.design_plans, name= 'design_plans'),
+    url(r'^shop$', views.design_plans, name= 'design_plans'),
+    url(r'^shop/shop-details$', views.product_details, name= 'product_details'),
+    url(r'^shop/cart$', views.cart, name= 'cart'),
     url(r'^gallery$', views.image, name= 'gallery'),
     url(r'^testimonial$', views.testimonial, name= 'testimonial'),
     url(r'^terms-of-use$', views.terms_of_use, name= 'terms-of-use'),
@@ -23,4 +25,5 @@ urlpatterns = [
     url(r'^company-profile$', views.Company, name= 'company-profile'),
     url(r'^Our-Team$', views.our_team, name= 'our-team'),
     url(r'^training$', views.training, name= 'training'),   
+    
 ]

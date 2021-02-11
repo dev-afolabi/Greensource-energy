@@ -33,7 +33,7 @@ menu-active
                     <p> | &nbsp; {{ post.date|date:"F d" }} &nbsp;.</p>
                     <div class="card-body">
                         <small class="text-muted"><i class="fas fa-user"></i> Admin  &nbsp; &nbsp;<i class="far fa-heart"></i> 23&nbsp; &nbsp;<i class="far fa-comments"></i> 3</small>
-                        <a href="{{post.slug}}"><h5 class="card-title">{{post.slug}}</h5></a>
+                        <a href="{{ post.get_absolute_url }}"><h5 class="card-title">{{ post.title }}</h5></a>
                     </div>
                 </div>
                 {% endfor %}

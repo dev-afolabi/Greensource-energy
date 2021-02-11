@@ -127,12 +127,12 @@ $(document).ready(function () {
                 items: 1
             },
             577: {
-                items: 1
+                items: 2
             },
             768: {
                 items: 2
             },
-            991: {
+            992: {
                 items: 3
             },
             1200: {
@@ -243,7 +243,20 @@ var x = setInterval(function() {
     
 },1000);
 
-
-
-  
+function incrementValue(){
+    var value = parseInt(document.getElementById('text').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value<10){
+        value++;
+            document.getElementById('text').value = value; 
+    }
+}
+function decrementValue(){
+    var value = parseInt(document.getElementById('text').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value>1){
+        value--;
+            document.getElementById('text').value = value; 
+    }
+}
 

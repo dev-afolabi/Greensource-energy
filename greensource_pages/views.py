@@ -67,6 +67,12 @@ def our_team(request):
 def training(request):
     return render(request,"greensource_pages/training.html")
 
+def product_details(request):
+    return render(request,"greensource_pages/product-details.html")
+
+def cart(request):
+    return render(request,"greensource_pages/cart.html")
+
 
 
 

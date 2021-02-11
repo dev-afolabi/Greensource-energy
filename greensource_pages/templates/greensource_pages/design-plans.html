@@ -3,12 +3,12 @@
 menu-active
 {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} products{% endblock %}
+{% block title %}{{ block.super }} shop{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>Solar Sytem Components</h1>
+            <h1>Shop</h1>
             <h2>Get good deals on our solar system components</h2>
         </div>
     </div>
@@ -21,29 +21,128 @@ menu-active
         <li class="breadcrumb-item">
             <a href="#">Pages</a>
         </li>
-        <li class="breadcrumb-item active" aria-current="page">Products</li>
+        <li class="breadcrumb-item active" aria-current="page">Shop</li>
     </ol>
 </nav>
-<div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-12 heading">
-            <h1>solar modules</h1>
-        </div>
-       
-        <div class="swiper-slide">
-            <div class="slider-box">
-                <p class="time">New</p>
-                <div class="img-box">
-                    <img src="{% static 'images/epever-70.jpeg' %}" alt="img" />
+
+<body>
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="product  col-lg-4">
+                <h6>categories</h6>
+                <ul class="list-group">
+                    <li class="list-group-item  list-group-item-success">
+                        <a href="{% url 'services' %}">
+                            <i class="fas fa-caret-right"></i> All</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="{% url 'services' %}">
+                            <i class="fas fa-caret-right"></i> Solar Panels</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="{% url 'solar_design' %}">
+                            <i class="fas fa-caret-right"></i> Charge Controllers</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="{% url 'electrical_design' %}">
+                            <i class="fas fa-caret-right"></i> Inverters</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="{% url 'energy_management' %}">
+                            <i class="fas fa-caret-right"></i> Batteries</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper-slide row col-lg-8">
+                <div class="slider-box">
+                    <div class="img-box">
+                        <a href="{% url 'product_details' %}">
+                            <img class="shop-item-image" src="{% static 'images/outback-80.jpeg' %}" alt="150w solar panel" />
+                        </a>
+                    </div>
+                    <span class="shop-item-title">80amps MPPT charge controllers</span>
+                    <div class="shop-items-details">
+                        <span class="shop-item-price">#25000</span>
+                    </div>
+                    <div class="cart">
+                        <a href="" class="btn shop-item-button" type="button">Add To Cart</a>
+                    </div>
                 </div>
 
-                <p class="detail">150w monocrystalline module</p>
-                <div class="cart">
-                    <a href="#">N25, 000</a>
+                <div class="slider-box">
+                    <div class="img-box">
+                        <a href="{% url 'product_details' %}">
+                            <img class="shop-item-image" src="{% static 'images/index-200.jpeg' %}" alt="150w solar panel" />
+                        </a>
+                    </div>
+                    <span class="shop-item-title">12v 200ah Index battery</span>
+                    <div class="shop-items-details">
+                        <span class="shop-item-price">#396000</span>
+                    </div>
+                    <div class="cart">
+                        <a href="" class="btn shop-item-button" type="button">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="slider-box">
+                    <div class="img-box">
+                        <a href="{% url 'product_details' %}">
+                            <img class="shop-item-image" src="{% static 'images/hp-3.5.jpg' %}" alt="150w solar panel" />
+                        </a>
+                    </div>
+                    <span class="shop-item-title">4.37kva HP Inverter</span>
+                    <div class="shop-items-details">
+                        <span class="shop-item-price">#396000</span>
+                    </div>
+                    <div class="cart">
+                        <a href="" class="btn shop-item-button" type="button">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="slider-box">
+                    <div class="img-box">
+                        <a href="{% url 'product_details' %}">
+                            <img class="shop-item-image" src="{% static 'images/narada-1500.jpeg' %}" alt="150w solar panel" />
+                        </a>
+                    </div>
+                    <span class="shop-item-title">243 inverters power</span>
+                    <div class="shop-items-details">
+                        <span class="shop-item-price">#36000</span>
+                    </div>
+                    <div class="cart">
+                        <a href="" class="btn shop-item-button" type="button">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="slider-box">
+                    <div class="img-box">
+                        <a href="{% url 'product_details' %}">
+                            <img class="shop-item-image" src="{% static 'images/narada-1500.jpeg' %}" alt="150w solar panel" />
+                        </a>
+                    </div>
+                    <span class="shop-item-title">243 inverters power</span>
+                    <div class="shop-items-details">
+                        <span class="shop-item-price">#36000</span>
+                    </div>
+                    <div class="cart">
+                        <a href="" class="btn shop-item-button" type="button">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="slider-box">
+                    <div class="img-box">
+                        <a href="{% url 'product_details' %}">
+                            <img class="shop-item-image" src="{% static 'images/narada-1500.jpeg' %}" alt="150w solar panel" />
+                        </a>
+                    </div>
+                    <span class="shop-item-title">243 inverters power</span>
+                    <div class="shop-items-details">
+                        <span class="shop-item-price">#36000</span>
+                    </div>
+                    <div class="cart">
+                        <a href="" class="btn shop-item-button" type="button">Add To Cart</a>
+                    </div>
                 </div>
             </div>
-        </div>           
-</div>
-</div>
-</div>
+        </div>
+    </div>
+</body>
 {% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base_layout.html' %}
+{% block nav-design-plans %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}{{ block.super }} cart{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>cart</h1>
+            <h2></h2>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#">shop</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">cart</li>
+    </ol>
+</nav>
+<body>
+<div class="container padding">
+    <div class="cart-row cart-heading">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+    </div>
+    <div class="cart-items">
+        
+    </div>
+    <div class="cart-total">
+            <strong class="cart-total-title">TOTAL</strong>
+            <span class="cart-total-price">#0</span>
+        </div>
+    <div class="checkout">
+    <button class="btn btn-primary btn-purchase" type="button">clear cart</button>    
+    </div>
+</div>
+</body>
+
+{% endblock %}
