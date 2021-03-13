@@ -5,11 +5,12 @@ menu-active
 {% load static %}
 {% block title %}{{ block.super }} Service Details{% endblock %}
 {% block content %}
+
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
             <h1>SERVICE DETAILS</h1>
-            <h2>We are Customer service Oriented</h2>
+            <h2></h2>
         </div>
     </div>
 </div>
@@ -22,9 +23,20 @@ menu-active
 </nav>
 <div class="container-fluid padding">
     <div class="light row padding">
-        {% include 'service_detail.html' %}
+        <ul class="list-group col-lg-4">
+            <li class="list-group-item list-group-item-success"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Off-Grid Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
+            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Energy Storage Solution</a></li>
+            <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Energy Management</a></li>
+            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> System Upgrade</a></li>
+            <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Maintenance</a></li>
+        </ul>
         <div class="services-details col-lg-8">
-            <img src="{% static 'images/client-service.jpeg' %}" />
+            <img src="{% static 'images/foot.jpg' %}" />
             <h4>Green, Sustainable, Fits the bill !</h4>
             <p class="policy">
                 We are committed to providing clean and reliable energy with our custom made unique design for our individual customers, harnessing the abundant power of the SUN.

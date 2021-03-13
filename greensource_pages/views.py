@@ -20,6 +20,15 @@ def electrical_design(request):
 def solar_design(request):
     return render(request,"greensource_pages/solar-design.html")
 
+def off_grid_solar(request):
+    return render(request,"greensource_pages/off-grid-solar.html")  
+
+def commercial_solar(request):
+    return render(request,"greensource_pages/commercial-solar.html")  
+
+def solar_water_pump(request):
+    return render(request,"greensource_pages/solar-water-pump.html")
+
 def energy_management(request):
     return render(request,"greensource_pages/energy-management.html")
 
@@ -72,6 +81,9 @@ def product_details(request):
 
 def cart(request):
     return render(request,"greensource_pages/cart.html")
+
+def pricing(request):
+    return render(request,"greensource_pages/pricing.html")
 
 
 

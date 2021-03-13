@@ -132,7 +132,7 @@
             </div>
             <div class="time col-xs-12 col-lg-2 col-md-6">
                 <p>
-                    <i class="fas fa-phone-alt"></i>+234 (8029442697)</p>
+                    <i class="fas fa-phone-alt"></i>(234)802 944 2697</p>
             </div>
             <div class="col-xs-12 col-lg-3 col-md-6">
                 <ol class="links">
@@ -197,9 +197,9 @@
                     <li class="{% block nav-projects %}{% endblock %}">
                         <a href="{% url 'projects' %}">projects</a>
                     </li>
-                    <li class="{% block nav-design-plans %}{% endblock %}">
+                    <!-- <li class="{% block nav-design-plans %}{% endblock %}">
                         <a href="{% url 'design_plans' %}">Shop</a>
-                    </li>
+                    </li> -->
                     <li class="{% block nav-news %}{% endblock %}">
                         <a href="{% url 'article_list' %}">news</a>
                     </li>
@@ -268,22 +268,22 @@
                             <a href="{% url 'company-profile' %}">Company Profile</a>
                         </li>
                         <li>
-                            <a href="{% url 'terms-of-use' %}">Terms of use</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'our-team' %}">Our Team</a>
-                        </li>
-                         <li>
-                            <a href="{% url 'gallery' %}">Gallery</a>
-                        </li>
-                        <li>
-                             <a href="{% url 'faq' %}">FAQ</a>
-                         </li>
-                        <li>
                             <a href="{% url 'privacy' %}">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="{% url 'mission' %}">Values/Vision</a>
+                            <a href="{% url 'terms-of-use' %}">Terms of use</a>
+                        </li>
+                         <li>
+                            <a href="{% url 'our-team' %}">Our Team</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gallery' %}">Gallery</a>
+                         </li>
+                        <li>
+                            <a href="{% url 'pricing' %}">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'faq' %}">FAQs</a>
                         </li>
                         
                     </ul>
@@ -301,7 +301,7 @@
                             </a>
                         </p>
                         <i class="fas fa-phone"></i>
-                        <p>(234)8029442697</p>
+                        <p>(234)802 944 2697 <br /> (234)807 606 8609</p>
                     </div>
                     <div class="social">
                         <h6>/ FOLLOW US ON</h6>
@@ -341,33 +341,13 @@
     <script src="{% static 'src/jquery.counterup.min.js' %}"></script>
     <script src="{% static 'src/waypoints.min.js' %}"></script>
     <script src="{% static 'src/wow.min.js' %}"></script>
-    <script src="{% static 'src/multislider.min.js' %}"></script>
     <script src="{% static 'owl-carousel/owl.carousel.js' %}"></script>
     <script src="{% static 'src/hoverIntent.js' %}"></script>
     <script src="{% static 'src/superfish.min.js' %}"></script>
     <script src="{% static 'src/simple-lightbox.min.js' %}"></script>
     <script src="{% static 'src/videopopup.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
-        window.cookieconsent.initialise({
-            "palette": {
-                "popup": {
-                    "background": "#3c404d",
-                    "text": "#d6d6d6"
-                },
-                "button": {
-                    "background": "transparent",
-                    "text": "#89af3b",
-                    "border": "#89af3b"
-                }
-            },
-            "content": {
-                "href": "{% url 'privacy' %}"
-            },
-
-            "position": "bottom-left"
-        });
-    </script>
+    <script type=”text/javascript” src=”//cdn.jsdelivr.net/afterglow/latest/afterglow.min.js”></script>
 </body>
 </html>
 

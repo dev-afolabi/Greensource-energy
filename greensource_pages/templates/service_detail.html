@@ -1,10 +1,13 @@
 {% load static %}
 <ul class="list-group col-lg-4">
-    <li class="list-group-item list-group-item-success"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
-    <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Design / Installation</a></li>
-    <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Street Lighting</a></li>
+    <li class="list-group-item {% block all %}{% endblock %}"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
+    <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
+    <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
+    <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Off-Grid Solar</a></li>
+    <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
+    <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
     <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Energy Storage Solution</a></li>
     <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Energy Management</a></li>
     <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> System Upgrade</a></li>
-    <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Retrofit / Maintenance</a></li>
+    <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Maintenance</a></li>
 </ul>

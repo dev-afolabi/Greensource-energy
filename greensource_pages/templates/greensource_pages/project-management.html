@@ -27,37 +27,19 @@ menu-active
 <div class="container-fluid padding">
     <div class="light row padding">
         <ul class="list-group col-lg-4">
-            <li class="list-group-item">
-                <a href="{% url 'services' %}">
-                    <i class="fas fa-caret-right"></i> All Services</a>
-            </li>
-            <li class="list-group-item">
-                <a href="{% url 'solar_design' %}">
-                    <i class="fas fa-caret-right"></i> Design / Installation</a>
-            </li>
-            <li class="list-group-item">
-                <a href="{% url 'electrical_design' %}">
-                    <i class="fas fa-caret-right"></i> Street lighting</a>
-            </li>
-            <li class="list-group-item">
-                <a href="{% url 'energy_management' %}">
-                    <i class="fas fa-caret-right"></i> Energy Storage Solutions</a>
-            </li>
-            <li class="list-group-item  list-group-item-success">
-                <a href="{% url 'project_management' %}">
-                    <i class="fas fa-caret-right"></i> Energy Management</a>
-            </li>
-            <li class="list-group-item">
-                <a href="{% url 'hvac' %}">
-                    <i class="fas fa-caret-right"></i> System Upgrade</a>
-            </li>
-            <li class="list-group-item">
-                <a href="{% url 'maintenance_service' %}">
-                    <i class="fas fa-caret-right"></i> Retrofit / Maintenance</a>
-            </li>
+            <li class="list-group-item"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Off-Grid Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
+            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Energy Storage Solution</a></li>
+            <li class="list-group-item list-group-item-success"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Energy Management</a></li>
+            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> System Upgrade</a></li>
+            <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Maintenance</a></li>
         </ul>
         <div class="cut col-lg-8">
-            <img src="{% static 'images/background9.jpg' %}" />
+            <img src="{% static 'images/energy-mgt.jpg' %}" />
         </div>
     </div>
 </div>
@@ -76,7 +58,7 @@ menu-active
                 amongst others. Our management services will provide continuous improvement on energy efficiency and cost
                 savings for residential, commercial, and industrial applications.</p>
         </div>
-        <div class="sub-section row">
+        <!-- <div class="sub-section row">
             <div class="body col-xs-12 col-md-6 col-sm-6 col-lg-4">
                 <div>
                     <i class="fas fa-walking"></i>
@@ -101,7 +83,7 @@ menu-active
                 <p class="sub">Identifies detailed account of energy use, qualitative study, detailed investments, operations and maintenance
                     cost and analysis of investment.</p>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 <div class="container padding">
@@ -117,7 +99,7 @@ menu-active
             </ol>
         </div>
         <div class="order-list col-lg-5 col-md-6 col-xs-12">
-            <img src="{% static 'images/meter.jpg' %}" />
+            <img src="{% static 'images/vvv.jpg' %}" />
         </div>
     </div>
 </div>

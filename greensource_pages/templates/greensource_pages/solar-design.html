@@ -8,8 +8,8 @@ menu-active
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>SOLAR DESIGN</h1>
-            <h2>We harness the sun to work for you</h2>
+            <h1>RESIDENTIAL SOLAR</h1>
+            <h2></h2>
         </div>
     </div>
 </div>
@@ -21,43 +21,25 @@ menu-active
         <li class="breadcrumb-item">
             <a href="{% url 'services' %}">Services</a>
         </li>
-        <li class="breadcrumb-item active">Solar-Design</li>
+        <li class="breadcrumb-item active">Residential-solar</li>
     </ol>
 </nav>
 <div class="container-fluid padding">
     <div class="light row padding">
         <ul class="list-group col-lg-4">
-            <li class="list-group-item">
-                <a href="{% url 'services' %}">
-                    <i class="fas fa-caret-right"></i> All Services</a>
-            </li>
-            <li class="list-group-item list-group-item-success">
-                <a href="{% url 'solar_design' %}">
-                    <i class="fas fa-caret-right"></i> Design /  Installation</a>
-            </li>
-            <li class="list-group-item">
-                <a href="{% url 'electrical_design' %}">
-                    <i class="fas fa-caret-right"></i> Street Lighting</a>
-            </li>
-            <li class="list-group-item">
-                <a href="{% url 'energy_management' %}">
-                    <i class="fas fa-caret-right"></i> Energy storage solutions</a>
-            </li>
-            <li class="list-group-item">
-                <a href="{% url 'project_management' %}">
-                    <i class="fas fa-caret-right"></i> Energy Management</a>
-            </li>
-            <li class="list-group-item">
-                <a href="{% url 'hvac' %}">
-                    <i class="fas fa-caret-right"></i> System Upgrade</a>
-            </li>
-            <li class="list-group-item">
-                <a href="{% url 'maintenance_service' %}">
-                    <i class="fas fa-caret-right"></i>Retofit / Maintenance</a>
-            </li>
+            <li class="list-group-item"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
+            <li class="list-group-item list-group-item-success"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Off-Grid Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
+            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Energy Storage Solution</a></li>
+            <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Energy Management</a></li>
+            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> System Upgrade</a></li>
+            <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Maintenance</a></li>
         </ul>
         <div class="col-lg-8">
-            <img src="{% static 'images/design-installation.jpeg' %}" alt="rooftop mounted solar panels" />
+            <img src="{% static 'images/residential-solar.jpeg' %}" alt="rooftop mounted solar panels" />
         </div>
     </div>
 </div>
@@ -78,7 +60,7 @@ menu-active
         </div>
     </div>
 </div>
-<div class="container padding">
+<!-- <div class="container padding">
     <div class="solar">
             <p>
                     <strong>Our solar panels and solar energy system can be used for different applications including:- </strong>
@@ -134,7 +116,7 @@ menu-active
         </div>
         <div class="col-lg-5 col-md-6 col-xs-12 single-about-style-two clearfix">
             <div class="image-block">
-                <img src="{% static 'images/bookcase.jpg' %}" alt="commercial solar system installation" />
+                <img src="{% static 'images/Institution.jpg' %}" alt="commercial solar system installation" />
                 <div class="overlay">
                     <div class="box">
                         <div class="content">
@@ -149,378 +131,22 @@ menu-active
             </div>
         </div>
     </div>
-</div>
-<section>
-<div class="container-fluid padding">
-    <div class="service col-12">
-        <h5>Select a design that best suit your needs</h5>
-            <p>Pricing Plans</p>
-                <hr />
-    </div>
-</div>
-    <div class="container-fluid padding">
-        <div class="pricing-table">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="table">
-                <h2>mini-kit</h2>
-                <div class="prices">
-                    N176, 000
-                    <span>
-                        <strong>200w</strong> Module
-                        <br />
-                        <strong>1kva</strong> Inverter
-                        <br />
-                        <strong>60ah</strong> Battery
-                        <br />
-                        <strong>30amp</strong> Controller</span>
-                </div>
-                <ul>
-                    <h4>load capacity</h4>
-                    <li>
-                        <strong>1</strong> Mini TV</li>
-                    <li>
-                        <strong>1</strong> Fan</li>
-                    <li>
-                        <strong>4</strong> Lighting points</li>
-                    <li>
-                        <strong>1</strong> Decoder</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>mini-kit 2</h2>
-                    <div class="prices">
-                        N242, 000
-                        <span>
-                            <strong>300w</strong> Module
-                            <br />
-                            <strong>1kva</strong> Inverter
-                            <br />
-                            <strong>100ah</strong> Battery
-                            <br />
-                            <strong>30amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>1</strong> TV</li>
-                        <li>
-                            <strong>1</strong> Fan</li>
-                        <li>
-                            <strong>4</strong> Lighting points</li>
-                        <li>
-                            <strong>1</strong> Decoder</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>regular</h2>
-                    <div class="prices">
-                        N368,500
-                        <span>
-                            <strong>600w</strong> Module
-                            <br />
-                            <strong>1.5kva</strong> Inverter
-                            <br />
-                            <strong>200ah</strong> Battery
-                            <br />
-                            <strong>50amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>1</strong> TV</li>
-                        <li>
-                            <strong>2</strong> Fans</li>
-                        <li>
-                            <strong>8</strong> Lighting points</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>regular 2</h2>
-                    <div class="prices">
-                        N480, 500
-                        <span>
-                            <strong>750w</strong> Module
-                            <br />
-                            <strong>1.5kva</strong> Inverter
-                            <br />
-                            <strong>200ah</strong> battery
-                            <br />
-                            <strong>50amp</strong> controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>1</strong> TV</li>
-                        <li>
-                            <strong>4</strong> Fans</li>
-                        <li>
-                            <strong>10</strong> Lighting points</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>standard</h2>
-                    <div class="prices">
-                        N676, 500
-                        <span>
-                            <strong>900w</strong> Module
-                            <br />
-                            <strong>2kva</strong> Inverter
-                            <br />
-                            <strong>300ah</strong> Battery
-                            <br />
-                            <strong>50amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>2</strong> TV</li>
-                        <li>
-                            <strong>5</strong> Fans</li>
-                        <li>
-                            <strong>14</strong> Lighting points</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>standard 2</h2>
-                    <div class="prices">
-                        N735, 300
-                        <span>
-                            <strong>1.2kw</strong> Module
-                            <br />
-                            <strong>2.5kva</strong> Inverter
-                            <br />
-                            <strong>400ah</strong> Battery
-                            <br />
-                            <strong>60amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>2</strong> TV &nbsp;
-                            <strong>5</strong> Fans</li>
+</div> -->
 
-                        <li>
-                            <strong>1</strong> Fridge/Freezer</li>
-                        <li>
-                            <strong>16</strong> Lighting points</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>compact</h2>
-                    <div class="prices">
-                        N785, 450
-                        <span>
-                            <strong>1.2kw</strong> Module
-                            <br />
-                            <strong>3kva</strong> Inverter
-                            <br />
-                            <strong>400ah</strong> Battery
-                            <br />
-                            <strong>60amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>2</strong> TV &nbsp;
-                            <strong>6</strong> Fans</li>
-
-                        <li>
-                            <strong>1</strong> Fridge/Freezer</li>
-                        <li>
-                            <strong>16</strong> Lighting points</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>compact 2</h2>
-                    <div class="prices">
-                        N975, 000
-                        <span>
-                            <strong>1.5kw</strong> Module
-                            <br />
-                            <strong>3kva</strong> Inverter
-                            <br />
-                            <strong>400ah</strong> Battery
-                            <br />
-                            <strong>80amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>2</strong> TV &nbsp;
-                            <strong>5</strong> Fans</li>
-
-                        <li>
-                            <strong>1</strong> Fridge/Laptop</li>
-                        <li>
-                            <strong>16</strong> Lighting points</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>advance</h2>
-                    <div class="prices">
-                        N1, 430, 250
-                        <span>
-                            <strong>1.5kw</strong> Module
-                            <br />
-                            <strong>3.5kw</strong> Inverter
-                            <br />
-                            <strong>400ah</strong> Battery
-                            <br />
-                            <strong>80amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>2</strong> TV &nbsp;
-                            <strong>4</strong> Fans</li>
-
-                        <li>
-                            <strong>1</strong> Freezer &nbsp;
-                            <strong>2</strong> Laptops</li>
-                        <li>
-                            <strong>14</strong> Lighting points</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>advance 2</h2>
-                    <div class="prices">
-                        N1, 785, 500
-                        <span>
-                            <strong>3kw</strong> Module
-                            <br />
-                            <strong>3.5kw</strong> Inverter
-                            <br />
-                            <strong>600ah</strong> Battery
-                            <br />
-                            <strong>100amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>3</strong> TV &nbsp;
-                            <strong>6</strong> Fans</li>
-
-                        <li>
-                            <strong>1</strong> Freezer &nbsp;
-                            <strong>1</strong> Washing machine</li>
-                        <li>
-                            <strong>16</strong> Lighting points</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>premium</h2>
-                    <div class="prices">
-                        N2, 850, 300
-                        <span>
-                            <strong>5kw</strong> Module
-                            <br />
-                            <strong>3.5kw</strong> Inveter
-                            <br />
-                            <strong>1000ah</strong> Battery
-                            <br />
-                            <strong>100amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>3</strong> TV &nbsp;
-                            <strong>8</strong> Fans</li>
-
-                        <li>
-                            <strong>1</strong> Freezer &nbsp;
-                            <strong>1</strong> washing machine</li>
-                        <li>
-                            <strong>20</strong> Lighting points &nbsp;
-                            <strong>1</strong> AC(1HP)</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h2>premium 2</h2>
-                    <div class="prices">
-                        N3, 800, 000
-                        <span>
-                            <strong>7kw</strong> Module
-                            <br />
-                            <strong>5kw</strong> Inverter
-                            <br />
-                            <strong>1200ah</strong> Battery
-                            <br />
-                            <strong>120amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <h4>load capacity</h4>
-                        <li>
-                            <strong>4</strong> TV &nbsp;
-                            <strong>8</strong> Fans</li>
-
-                        <li>
-                            <strong>1</strong> Freezer &nbsp;
-                            <strong>1</strong> Washing machine</li>
-                        <li>
-                            <strong>35</strong> Lighting points &nbsp;
-                            <strong>2</strong> AC(1HP)</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</section>
 <div class="container-fluid padding">
     <div class="row base">
         <div class="order-list col-lg-5 col-md-5 col-xs-12">
-            <h4>Our solar energy system services includes:</h4>
+            <h4>Our residential solar energy system services includes:</h4>
             <ol>
+                <li>Design</li>
+                <li>Installation</li>
                 <li>Operations</li>
-                <li>Day use System</li>
-                <li>Off Grid System</li>
                 <li>Grid Tied System</li>
                 <li>Technical support</li>
             </ol>
         </div>
         <div class="order-list col-lg-5 col-md-7 col-xs-12">
-            <img src="{% static 'images/simulation.gif' %}" alt="simulation of a solar system in work mode" />
+            <img src="{% static 'images/blue-gray.jpg' %}" alt="residential building" />
         </div>
     </div>
 </div>
