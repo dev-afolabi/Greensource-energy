@@ -1186,58 +1186,7 @@ nav .breadcrumb li a:hover{
 	padding: 5px 5px;
 	margin-right: 10px;
 }
-/* .video img{
-	width: 90%;
-	height: 75%;
-	margin-top: 50px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.video #trigger{ 
-	border-radius: 50%;
-	width: 100px;;
-	height: 100px;
-	line-height: 100px;
-	background: #2dc997;
-	font-size: 25px;
-	color: #002c42;
-	position: absolute;
-	margin-left: 40%;
-	margin-top: -200px;
-}
-.video #trigger i{
-	margin-left: 15px;
-	margin-top: 25px;
-	position: absolute;
-}
-.video #trigger:before{
-	justify-content: center;
-	content: '';
-	position: absolute;
-	top: -20px;
-	left: -20px;
-	right: -20px;
-	bottom: -20px;
-	border-radius: 50%;
-	border: 20px solid rgba(105, 105, 105, 0.5);
-	transition: all .4s ease;
-}
-@keyframes zoominoutsinglefeatured{
-	0% {
-		transform: scale(1,1);
-	}
-	50% {
-		transform: scale(1.2,1.2);
-	}
-	100% {
-		transform: scale(1,1);	
-	}
-}
-.video #trigger:hover:before{
-	transition: 0.3s;
-	animation: zoominoutsinglefeatured 1s infinite;
-}  */
+
 .video video controls{
 	width: 620px;
 	height: 350px;
@@ -2292,25 +2241,6 @@ nav .breadcrumb li a:hover{
 .details ul li{
 	line-height: 35px;
 	list-style-type: square;
-}
-.sub-section .body{
-	margin-top: 50px;
-	text-align: center;
-}
-.sub-section .body i{
-	font-size: 40px;
-	color: #006420;
-}
-.sub-section .body h4{
-	margin-top: 10px;
-	font-size: 18px;
-	color: #111;
-	font-weight: 600;
-}
-.sub-section .body .sub{
-	width: 100%;
-	font-size: 15px;
-	line-height: 20px;
 }
 .order-list{
 	margin-top: 100px;
@@ -3463,42 +3393,7 @@ nav .pagination a:hover{
 		display: block;
 		width: 100%;
 	}
-	.solar p{
-		font-size: 15px;
-	}
-	.solar .single-about-style-two {
-		text-align: center;
-        padding: 40px;
-	}
-    .solar .single-about-style-two .image-block {
-		float: none;
-		display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-    }
-    .solar .single-about-style-two .text-block {
-        float: none;
-        width: 100%;
-        padding: 0;
-    }
-    .solar .single-about-style-two {
-        border-radius: 0px;
-    }
-    .solar .single-about-style-two .text-block h3 {
-		margin-bottom: 10px;
-		font-size: 17px;
-	}
-	.solar .single-about-style-two .text-block p {	
-		width: 100%;
-		font-size: 15px;
-	}
-    .solar .single-service-style-two .image-block {
-        display: none;
-    }
-    .solar .single-service-style-two .text-block {
-        padding-bottom: 90px;
-	}
+	
 	.benefits-body{
 		padding: 20px 5px;
 		width: 23.5%;
@@ -4071,18 +3966,6 @@ nav .pagination a:hover{
 	.project .card:hover .img-top{
 		display: inline; 
 	}
-	.solar-description h4{
-		font-size: 20px;
-	}
-	.solar-description h5{
-		font-size: 16px;
-	}
-	.solar-description p{
-		font-size: 15px;
-	}
-	.solar p{
-		font-size: 15px;
-	}
 	.choose1{
 		left: -5%;
 		width: 60%;
@@ -4448,12 +4331,6 @@ nav .pagination a:hover{
 	.details p{
 		width: 100%;
 	}
-	.sub-section .body{
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
 	.order-list ol{
 		width: 80%;
 		display: block;
@@ -4578,15 +4455,6 @@ nav .pagination a:hover{
 	.project .card:hover .img-top{
 		display: inline; 
 	}
-	.solar-description p{
-		width: 70%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.solar p{
-		font-size: 15px;
-	}
 	.people-one{
 		display: block;
 		margin-left: auto;
@@ -4604,9 +4472,7 @@ nav .pagination a:hover{
 		height: 150px;
 		margin-top: 200px;
 	}
-	.video #trigger i{
-		margin-left: 27px;
-	}
+
 	.shoppingCart{
 		margin-top: 5px;
 		margin-left: -80px;
@@ -4793,12 +4659,6 @@ nav .pagination a:hover{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	.sub-section .body{
-		width: 70%;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
 	}
 	.details p{
 		width: 95%;
@@ -5021,13 +4881,6 @@ nav .pagination a:hover{
 		width: 100%;
 		display: flex;
 		margin-left: -30px;
-	}
-	.sub-section .body .sub{
-		width: 80%;
-		font-size: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
 	}
 	.system-main .system{
 		width: 70%;
@@ -5265,19 +5118,6 @@ nav .pagination a:hover{
 	.light .list-group li{
 		width: 100%;
 		padding: 30px 5px;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-	.sub-section .body{
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-	.sub-section .body .sub{
-		width: 95%;
-		font-size: 15px;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
@@ -5531,15 +5371,6 @@ nav .pagination a:hover{
 		display: flex;
 		margin-left: -60px;
 	}
-	.solar-description p{
-		width: 90%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.solar p{
-		font-size: 15px;
-	}
 	.people-one{
 		display: block;
 		margin-left: auto;
@@ -5782,12 +5613,6 @@ nav .pagination a:hover{
 	.light .list-group li{
 		width:100%;
 		padding:30px 5px;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-	.sub-section .body{
-		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
@@ -6402,12 +6227,6 @@ nav .pagination a:hover{
 	.details ul li{
 		font-size: 14px;
 	}
-	.sub-section .body{
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
 	.order-list img{
 		width: 100%;
 		height: 250px;
@@ -6717,13 +6536,6 @@ nav .pagination a:hover{
 	}
 	.project .card:hover .img-top{
 		display: inline; 
-	}
-	.solar-description p{
-		font-size: 14px;
-		width: 100%;
-	}
-	.solar-description h5{
-		font-size: 18px;
 	}
 	.people-one{
 		display: block;

@@ -105,17 +105,6 @@ $(document).ready(function () {
         time: 2500
     });
    
-    $(function() {
-        $('#vidBox').VideoPopUp({
-
-            opener:"trigger",
-
-            idvideo:"example",
-
-            pausevideo:true
-
-        });
-    });
     var lightbox = new SimpleLightbox('.gallery a', {});
     new WOW().init();
     $('.carousel').carousel({

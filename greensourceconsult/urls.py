@@ -10,7 +10,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('greensource-webconsult/', admin.site.urls),
     url(r'^', include(pages_url)),
     url(r'^news/', include(news_url)),
     url(r'^', include(contact_url)),
@@ -18,3 +18,7 @@ urlpatterns = [
 
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+admin.site.site_header = 'Greensource Energy Administration'
+admin.site.site_title = 'Greensource Energy Consult'
+admin.site.index_title = 'Greensource Energy Administration'
