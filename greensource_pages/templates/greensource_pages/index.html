@@ -14,7 +14,7 @@ menu-active
                 <h2 class="animated fadeInUp">We want to see people, businesses and communities benefit from the use of green energy.</h2>
                 <div class="button animated fadeInDown">
                     <a class="btn active" href="{% url 'services' %}" role="button">Discover More</a>
-                    <a class="btn" href="{% url 'contact_us' %}" role="button">Contact us</a> 
+                    <a class="btn" href="{% url 'contact_us' %}" role="button">Contact Us</a> 
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@ menu-active
                 <h2 class="animated fadeInUp">We are committed to help build a global, more sustainable energy future</h2>
                 <div class="button animated fadeInDown">
                     <a class="btn active" href="{% url 'services' %}" role="button">Discover More</a>
-                    <a class="btn" href="{% url 'contact_us' %}" role="button">Contact us</a>
+                    <a class="btn" href="{% url 'contact_us' %}" role="button">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@ menu-active
                 <h2 class="animated fadeInUp">We belive in an are dedicated to providing you with the quality of services you are looking for.</h2>
                 <div class="button animated fadeInDown">
                     <a class="btn active" href="{% url 'services' %}" role="button">Discover More</a>
-                    <a class="btn" href="{% url 'contact_us' %}" role="button">Contact us</a>
+                    <a class="btn" href="{% url 'contact_us' %}" role="button">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -160,7 +160,7 @@ menu-active
         </div>
     </div>  
 </section>
-
+<!-- 
 <div class="container-fluid padding">
                 <div class="service col-12">
                     <h5>customer oriented energy specialists</h5>
@@ -181,11 +181,11 @@ menu-active
             <div class="video col-lg-6 col-md-12 col-xs-12">
                 <video controls
                     src="{% static 'videos/greensource.mp4' %}" type="video/mp4"
-                    poster="{% static 'images/header-img.jpg' %}" alt="video advert image">
+                    poster="{% static 'images/header-img.jpg' %}" alt="video advert image" width= "620">
                 </video>
             </div>
         </div>
-</div>
+</div> -->
 <section>
     <div class="container-fluid padding">
         <div class="service col-12">
@@ -795,7 +795,7 @@ menu-active
                                 <br /> Hands, Check What
                                 <br /> our Customers are
                                 <br /> Talking About</p>
-                            <a href="{% url 'testimonial' %}">view all testimonials</a>
+                            <a href="{% url 'testimonial' %}">view all testimonial</a>
                         </div>
                     </div>
                 </div>
@@ -856,7 +856,7 @@ menu-active
         <div class="row">
                 <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
                 <h3 class="col-lg-3 col-md-4 col-xs-12">
-                <a href="{% url 'contact_us' %}">get in touch
+                <a href="{% url 'contact_us' %}">Get in Touch
                     <i class="fas fa-arrow-right"></i>
                 </a>
                 </h3>
@@ -918,10 +918,6 @@ menu-active
             <img src="{{ post.thumb.url }}" class="card-img-top" alt="awesome image">
             <p>| &nbsp; {{ post.date|date:"F d" }} &nbsp;.</p>
             <div class="card-body"> 
-                <small>
-                    <i class="fas fa-user"></i> admin &nbsp; &nbsp;
-                    <i class="far fa-heart"></i> 23 &nbsp; &nbsp;
-                    <i class="far fa-comments"></i> 3</small>
                 <a href="{{ post.get_absolute_url }}">
                     <h5>{{ post.title }}</h5>
                 </a>
@@ -934,34 +930,19 @@ menu-active
         <div class="container">
             <div class="brand-carousel-one owl-theme owl-carousel">
                 <div class="item">
-                        <img src="{% static 'images/brand-1-2.jpg' %}" alt="brand partners logo" />
-                </div>
-                <div class="item">
-                        <img src="{% static 'images/brand-1-3.jpg' %}" alt="brand partners logo" />
-                </div>
-                <div class="item">
-                        <img src="{% static 'images/brand-1-4.jpg' %}" alt="brand partners logo" />
-                </div>
-                <div class="item">
-                        <img src="{% static 'images/brand-1-5.jpg' %}" alt="brand partners logo" />
-                </div>
-                <div class="item">
-                        <img src="{% static 'images/brand-1-4.jpg' %}" alt="brand partners logo" />
-                </div>
-                <div class="item">
-                        <img src="{% static 'images/brand-1-3.jpg' %}" alt="brand partners logo" />
+                        <img src="{% static 'images/brand-1-1.jpg' %}" alt="brand partners logo" />
                 </div>
                 <div class="item">
                         <img src="{% static 'images/brand-1-2.jpg' %}" alt="brand partners logo" />
                 </div>
                 <div class="item">
-                        <img src="{% static 'images/brand-1-3.jpg' %}" alt="brand partners logo" />
+                        <img src="{% static 'images/brand-1-3.png' %}" alt="brand partners logo" />
                 </div>
                 <div class="item">
                         <img src="{% static 'images/brand-1-4.jpg' %}" alt="brand partners logo" />
                 </div>
                 <div class="item">
-                        <img src="{% static 'images/brand-1-5.jpg' %}" alt="brand partners logo" />
+                        <img src="{% static 'images/brand-1-5.jpeg' %}" alt="brand partners logo" />
                 </div>
             </div>
         </div>
