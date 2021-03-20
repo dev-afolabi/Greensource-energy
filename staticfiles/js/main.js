@@ -300,10 +300,7 @@ $(document).ready(function () {
     });
     $('.collapse').collapse();
 });
-$(document).ready(function () {
-    ToxProgress.create();
-    ToxProgress.animate();
-});
+
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
     header.classList.toggle("header-fixed", window.scrollY > 0);
@@ -325,43 +322,3 @@ function decrementValue(){
             document.getElementById('text').value = value; 
     }
 }
-
-const count = new Date('jun 1,2021 00:00:00').getTime()
-var x = setInterval(() => {
-  const now = new Date().getTime()
-  const d = count - now
-
-  const days = Math.floor(d / (1000 * 60 * 60 * 24))
-  const hours = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-  const minutes = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60))
-  const seconds = Math.floor((d % (1000 * 60)) / 1000)
-
-  document.getElementById('days').innerHTML = days
-  document.getElementById('hours').innerHTML = hours
-  document.getElementById('minutes').innerHTML = minutes
-  document.getElementById('seconds').innerHTML = seconds
-
-  if (d <= 0) {
-    clearInterval(x)
-  }
-}, 1000)
-
-window.cookieconsent.initialise({
-    "palette": {
-        "popup": {
-            "background": "#3c404d",
-            "text": "#d6d6d6"
-        },
-        "button": {
-            "background": "transparent",
-            "text": "#89af3b",
-            "border": "#89af3b"
-        }
-    },
-    "content": {
-        "href": "{% url 'privacy' %}"
-    },
-
-    "position": "bottom-left"
-});
-
