@@ -322,3 +322,4 @@ function decrementValue(){
             document.getElementById('text').value = value; 
     }
 }
+

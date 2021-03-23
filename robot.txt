@@ -1,8 +1,8 @@
-User-agent: *
+User-agent: * 
 Disallow: /cgi-bin/
-Disallow: /success.html
-Disallow: /cart.html
-Disallow: /training.html
+Disallow: /success.html/
+Disallow: /cart.html/
 Disallow: /css/
 Disallow: /js/
 Disallow: /api/
+Sitemap: https://www.greensourcenergy.com/sitemap.xml

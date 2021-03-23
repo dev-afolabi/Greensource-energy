@@ -468,18 +468,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 	position: fixed;
 	font-size: 17px;
 	margin-top: 0px;
-	background:#006420;
+	background:#002c42;
 	color:#fafafa;
 	padding: 5px 10px;
-	bottom: 50px;
-	right: 40px;
+	bottom: 100px;
+	right: 30px;
 	cursor: pointer;
 	display: none;
 }
 .back-to-top:hover{
 	color:#fafafa;
-	background:#2c3e40;
-	transition:.4s;
+	background: #2c3e40;
+	transition: .4s;
 }
 /*--------------------------------------------------------------
 # BREADCRUMB
@@ -1725,7 +1725,7 @@ nav .breadcrumb li a:hover{
 	box-shadow:2px 2px 12px rgba(47, 47, 47, 0.40);
 	transition:all ease 0.3s;
 }	
-.table h2{
+.table h6{
 	text-transform: uppercase;
 	font-family: 'Play', sans-serif;
 	font-size: 18px;
@@ -1736,7 +1736,7 @@ nav .breadcrumb li a:hover{
 	margin: 0;
 	padding: 0;
 }
-.table ul h4{
+.table ul p{
 	text-transform: uppercase;
 	font-size: 17px;
 	font-weight: 550;
