@@ -2689,82 +2689,27 @@ nav .breadcrumb li a:hover{
 	margin-top: 30px;
 	font-size: 17px;
 	color:#cdcdcd;
+	text-align: center;
 }
 .error .page{
 	font-size:17px;
 	color:#cdcdcd;
+	text-align: center;
 	margin-top:-10px;
 	margin-bottom:50px;
 }
 .error a{
-	font-size:18px;
-	padding:15px 15px;
-	background:#006420;
+	font-size: 18px;
+	padding: 15px 15px;
+	border: 2px solid #006420;
+	border-radius: 100px;
+	font-size: 20px;
+	padding: 15px 15px;
 	color:#cdcdcd;
-	border-radius: 5px;
+	background: none;
+	text-align: center;
 }
 .error a:hover{
-	background:#001f3f;
-	color:#cdcdcd;
-	text-decoration:none;
-	transition:.3s;
-	transition-delay: .3s;
-}
-/*--------------------------------------------------------------
-# TRAINING
---------------------------------------------------------------*/
-.training{
-	background-image: url("images/training.jpg");
-	background-position: center center;
-	background-size: cover;
-	width: auto;
-	height: 900px;
-	color: #cdcdcd;
-	text-align: center;
-	margin-bottom: -95px;
-}
-.training h1{
-	margin-top: 170px;
-	text-transform: uppercase;
-	font-size: 40px;
-	letter-spacing: 0.5px;
-	font-weight: bold;
-	color: #cdcdcd;
-}
-.training h2{
-	margin: 20px 0;
-	font-size: 20px;
-	font-weight: 500;
-	font-style: italic;
-	color: #b43d3d;
-}
-.count{
-	margin: 40px 0;
-}
-.countd{
-	display: inline-block;
-	width: 80px;
-	height: 80px;
-	border: 2px solid;
-	margin: 20px 30px;
-	font-size: 12px;
-	border-radius: 15%;
-	overflow: hidden;
-	background: rgba(31, 31, 37, 0.9);
-}
-.countd span{
-	display: block;
-	font-size: 26px;
-	margin-top: 14px;
-}
-.training a{
-	font-size:18px;
-	padding:15px 15px;
-	background:#006420;
-	color:#cdcdcd;
-	border-radius: 5px;
-}
-.training a:hover{
 	background:#001f3f;
 	color:#cdcdcd;
 	text-decoration:none;
@@ -3085,7 +3030,6 @@ nav .pagination a:hover{
 	background:#006420;
 	color:#fff; 
 }
-
 /*--------------------------------------------------------------
 # COMMENT SECTION
 ---------------------------------------------------------------*/
@@ -3176,7 +3120,6 @@ nav .pagination a:hover{
 	background: #006420 !important;
 	background: #006420 !important;
   }
-
 /*--------------------------------------------------------------
 # PRIVACY POLICY
 --------------------------------------------------------------*/

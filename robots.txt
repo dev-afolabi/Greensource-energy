@@ -1,0 +1,7 @@
+User-agent: * 
+Disallow: /staticfiles/
+Disallow: /success/
+Disallow: /api/
+Disallow: /cart/
+Disallow: /company-profile/
+Sitemap: https://www.greensourcenergy.com/sitemap.xml

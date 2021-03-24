@@ -10,7 +10,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('greensource-webconsult/', admin.site.urls),
+    path('greensource-webenergy/', admin.site.urls),
     url(r'^', include(pages_url)),
     url(r'^news/', include(news_url)),
     url(r'^', include(contact_url)),
