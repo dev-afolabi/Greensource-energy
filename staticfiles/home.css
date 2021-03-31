@@ -83,8 +83,8 @@ noscript img{
 .sf-arrows .sf-with-ul:after {
   content: '\f107';
   position: absolute;
-  right: 12px;
-  font-size:20px;
+  right: 18px;
+  font-size: 20px;
   margin-top:-3px;
   font-family: FontAwesome;
   font-style: normal;
@@ -104,7 +104,7 @@ noscript img{
 # NAV MENU STYLING
 --------------------------------------------------------------*/
 .nav-menu a {
-  padding: 10px 4px 10px 4px;
+  padding: 10px 5px 10px 5px;
   text-decoration: none;
   display: inline-block;
   color: #cdcdcd;
@@ -113,6 +113,8 @@ noscript img{
   font-size: 15px;
   outline: none;
   width: 100%;
+  margin-left: -10px;
+  margin-right: 5px;
 }
 .nav-menu > li {
   margin-left: 10px;
@@ -133,6 +135,7 @@ noscript img{
 }
 .nav-menu ul li:first-child {
   border-top: 0;
+  margin-left: 5px;
 }
 .nav-menu ul li a {
   padding: 10px;
@@ -141,6 +144,7 @@ noscript img{
   display: block;
   font-size: 15px;
   text-transform: none;
+  margin-left: 0px;
 }
 .nav-menu ul li a:hover {
   background: #007654;
@@ -375,7 +379,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	font-size: 14px;
 }
 .header{
-	background-image: url('images/header-img.jpg');
+	background-image: url('images/header-img.webp');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -471,7 +475,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	background:#002c42;
 	color:#fafafa;
 	padding: 5px 10px;
-	bottom: 100px;
+	bottom: 50px;
 	right: 30px;
 	cursor: pointer;
 	display: none;
@@ -551,13 +555,13 @@ nav .breadcrumb li a:hover{
 # SECTION HEADINGS
 --------------------------------------------------------------*/
 .service h5{
-	margin-top: 150px; 
+	margin-top: 0px;
 	font-family: 'Play', sans-serif;
-	font-size: 25px;
+	font-size: 17px;
 	font-weight: 600;
 	color: #111;
 	text-align: center;
-	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 .service hr{
 	margin-top: 5px;
@@ -567,10 +571,12 @@ nav .breadcrumb li a:hover{
 	width: 5%;
 }
 .service p{
-	margin-top: 0px;
-	font-size: 18px;
+	
+	font-size: 22px;
 	text-align: center;
-	letter-spacing: 2px;
+	
+	text-transform: uppercase;	
+	margin-top: 150px; 
 }
 /*--------------------------------------------------------------
 # SERVICES LIST
@@ -894,19 +900,19 @@ nav .breadcrumb li a:hover{
 	transition: 0.5s;
 }
 .card-cover .card:nth-child(1) .face.face2{
-	background-image: url("images/bbb.jpg");
+	background-image: url("images/bbb.webp");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .card-cover .card:nth-child(2) .face.face2{
-	background-image: url("images/bbb.jpg");
+	background-image: url("images/bbb.webp");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .card-cover .card:nth-child(3) .face.face2{
-	background-image: url("images/bbb.jpg");
+	background-image: url("images/bbb.webp");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1011,7 +1017,7 @@ nav .breadcrumb li a:hover{
 # HOW WE WORK
 --------------------------------------------------------------*/
 .work-mode{
-	background: url('images/work-mode.jpg') center center no-repeat fixed;
+	background: url('images/work-mode.webp') center center no-repeat fixed;
 	background-position: center;
 	background-size: cover;
 	background-repeat: none;
@@ -1022,16 +1028,16 @@ nav .breadcrumb li a:hover{
 	border: 1px solid #fff;	
 }
 .working h5{
-	font-size: 45px;
+	font-size: 35px;
 	font-family: 'Big Shoulders Text', cursive;
 	color: #fff;
-	margin-top:30px;
+	margin-top: 30px;
 	text-align: right;
 }
 .working h6{
 	font-weight: bold;
 	font-family: 'Play', sans-serif;
-	font-size: 22px;
+	font-size: 18px;
 	margin-top: 20px;
 	color: #2dc997;
 	text-align: left;
@@ -1060,7 +1066,7 @@ nav .breadcrumb li a:hover{
 # CALL TO ACTION SECTION
 --------------------------------------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/call-to-action.jpg) center center no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/call-to-action.webp) center center no-repeat fixed;
   background-position: center center;
   background-size: cover;
   margin: 100px 0px;
@@ -1473,7 +1479,7 @@ nav .breadcrumb li a:hover{
 .row-counters{	
 	margin-top: 200px;
 	margin-bottom: 50px;
-	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/facts-img.jpg) center center no-repeat fixed;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/facts-img.webp) center center no-repeat fixed;
 	box-shadow: 1px 1px 1px transparent;
 	background-size: cover;
 	background-position: center;
@@ -1487,13 +1493,14 @@ nav .breadcrumb li a:hover{
 	text-align: center;
 }
 .counter-heading h5{
-	margin-top :70px; 
+	margin-top: 0px;
 	font-family: 'Play', sans-serif;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 600;
 	color: #fff;
 	text-align: center;
-	text-transform: uppercase;
+	letter-spacing: 2px;
+	
 }
 .counter-heading hr{
 	margin-top:5px;
@@ -1503,11 +1510,11 @@ nav .breadcrumb li a:hover{
 	width:5%;
 }
 .counter-heading p{
-	margin-top: 0px;
-	font-size: 18px;
+	margin-top :70px;
+	font-size: 22px;
 	color: #fff;
 	text-align: center;
-	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 .counter span{
 	color:#cdcdcd;
@@ -1538,7 +1545,7 @@ nav .breadcrumb li a:hover{
 .footer{
 	margin-top: 100px;
 	padding-top: 10px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("images/foot.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("images/foot.webp");
 	background-position: center center;
 	background-size: cover;
 	box-shadow: 1px 1px 1px transparent;
@@ -2059,7 +2066,7 @@ nav .breadcrumb li a:hover{
 	margin-right: 20px;
 	line-height: 35px;
 }
-.address .map iframe{
+.address .map embed{
 	margin-top: 0px;
 	width: 100%;
 }
@@ -2436,35 +2443,7 @@ nav .breadcrumb li a:hover{
 	transition: all 900ms ease;
 	transition-delay: .5s;
 }
-/*--------------------------------------------------------------
-# RADIAL PROGRESS BAR
---------------------------------------------------------------*/
-.radial{
-	justify-content: center;
-	margin-top: 100px;
-}
-.tox-progress{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.radial h5{
-	margin-top: 20px;
-	font-size: 20px;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 600;
-}
-.radial p{
-	font-size: 15px;
-	text-align: center;
-	width:90%;
-}
-.tox-progress-content{
-	justify-content: center;
-	font-size: 35px;
-	font-weight: bold;
-}	
+
 /*--------------------------------------------------------------
 # CLIENTS LOGO
 --------------------------------------------------------------*/
@@ -2510,7 +2489,7 @@ nav .breadcrumb li a:hover{
 }
 .testimonials-style-three-carousel-wrapper{
 	padding: 70px 80px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('images/testimonial.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('images/testimonial.webp');
 	background-size: cover;
 }
 .single-testimonial-style-three h3, .single-testimonial-style-three p {
@@ -2634,11 +2613,14 @@ nav .breadcrumb li a:hover{
   height:100%;
 }
 .single-testimonial-style-one .text-block {
-  background: #c4c8ca;
+  background: none;
   padding: 0 5px;
   padding-top: 70px;
   padding-bottom: 60px;
   width: 100%;
+  height: 100%;
+  border: 2px solid #414141;
+  border-radius: 15px;
 }
 .single-testimonial-style-one .text-block h3,
 .single-testimonial-style-one .text-block p {
@@ -2665,49 +2647,45 @@ nav .breadcrumb li a:hover{
   color: #000;
   margin: 20px 0px 25px 0px;
   text-align: justify;
-  padding: 0 20px;
+  padding: 0 20px; 
 }
 
 /*--------------------------------------------------------------
 # 403 404 500 ERROR PAGES
 --------------------------------------------------------------*/
 .error{
-	background-image: url("images/bbb.jpg");
+	background-image: url("images/bbb.webp");
 	background-position: center center;
 	background-size: cover;
 	width: auto;
 	height: 92.5vh;
+	text-align: center;
 }
 .error h4{
 	font-size: 100px;
 	font-family: 'Big Shoulders Text', cursive;
 	margin-top: 200px;
 	color:#fafafa;
-	text-align: center;
 }
 .error p{
 	margin-top: 30px;
 	font-size: 17px;
 	color:#cdcdcd;
-	text-align: center;
 }
 .error .page{
 	font-size:17px;
 	color:#cdcdcd;
-	text-align: center;
 	margin-top:-10px;
 	margin-bottom:50px;
 }
 .error a{
-	font-size: 18px;
-	padding: 15px 15px;
+	font-size: 16px;
+	font-weight: 600;
 	border: 2px solid #006420;
 	border-radius: 100px;
-	font-size: 20px;
-	padding: 15px 15px;
-	color:#cdcdcd;
+	padding: 15px 20px;
+	color:#fff;
 	background: none;
-	text-align: center;
 }
 .error a:hover{
 	background:#001f3f;
@@ -3232,11 +3210,11 @@ nav .pagination a:hover{
 		font-size: 16px;
 	}
 	.service h5{
-		font-size:22px;
+		font-size: 16px;
 	}
 	.service p{
-		margin-top:0px;
-		font-size: 16px;
+		margin-top: 70px;
+		font-size: 20px;
 	}
 	.carousel a{
 		margin-top: -150px;
@@ -3440,16 +3418,6 @@ nav .pagination a:hover{
 		widows: 120%;
 		margin-left: -35px;
 	}
-	.radial h5{
-		font-size: 17px;
-	}
-	.radial p{
-		font-size: 15px;
-		width:90%;
-	}
-	.tox-progress-content{
-		font-size: 30px;
-	}
 	.address .add h4{
 		font-size: 30px;
 	}
@@ -3498,11 +3466,11 @@ nav .pagination a:hover{
 		font-size: 16px;
 	}
 	.service h5{
-		font-size:22px;
+		font-size: 16px;
 	}
 	.service p{
-		margin-top:0px;
-		font-size: 16px;
+		margin-top: 70px;
+		font-size: 20px;
 	}
 	.counter-heading h5{
 		font-size: 18px;
@@ -4023,11 +3991,11 @@ nav .pagination a:hover{
 		font-size: 16px;
 	}
 	.service h5{
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.service p{
-		margin-top:0px;
-		font-size: 16px;
+		margin-top: 70px;
+		font-size: 20px;
 	}
 	.counter-heading h5{
 		font-size: 18px;
@@ -4076,7 +4044,9 @@ nav .pagination a:hover{
 		justify-content: center;
 	}
 	.card-cover .card{
-		width: 70%;
+		width: 97%;
+		margin-left: auto;
+		margin-right:auto;
 	}
 	.work-mode .working{
 		width: 50%;
@@ -4154,9 +4124,6 @@ nav .pagination a:hover{
 	#call-to-action h3 a{
 		width: 40%;
 		text-align: center;
-	}
-	.radial{
-		margin-top: 150px;
 	}
 	.single-service-style-one .image-block{
 		margin-left: auto;
@@ -4348,7 +4315,7 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.address .map iframe{
+	.address .map embed{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -4485,11 +4452,11 @@ nav .pagination a:hover{
 		font-size: 15px;
 	}
 	.service h5{
-		font-size:20px;
+		font-size: 15px;
 	}
 	.service p{
-		margin-top:0px;
-		font-size: 15px;
+		margin-top: 70px;
+		font-size: 18px;
 	}
 	.counter-heading h5{
 		font-size: 18px;
@@ -4724,18 +4691,10 @@ nav .pagination a:hover{
 		width: 100%;
 		font-size: 15px;
 	}
-	.radial h5{
-		font-size: 16px;
-	}
-	.radial p{
-		font-size: 15px;
-		width:70%;
+	.card-cover .card{
+		width: 70%;
 		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-	.tox-progress-content{
-		font-size: 27px;
+		margin-right:auto;
 	}
 	.testimonials-style-three-carousel-wrapper{
 		width: 95%;
@@ -4792,7 +4751,7 @@ nav .pagination a:hover{
 		padding: 0px 20px;
 		margin-top: 100px;
 	}
-	.address .map iframe{
+	.address .map embed{
 		width:80%;
 		display: block;
 		margin-left: auto;
@@ -4967,6 +4926,10 @@ nav .pagination a:hover{
 		font-size: 15px;
 	}
 	.service h5{
+		font-size: 15px;
+	}
+	.service p{
+		margin-top: 70px;
 		font-size: 18px;
 	}
 	.about-us .about{
@@ -5138,7 +5101,7 @@ nav .pagination a:hover{
 		font-size: 20px;
 		
 	}
-	.address .map iframe{
+	.address .map embed{
 		width: 90%;
 		height: 300px;
 		display: block;
@@ -5487,11 +5450,11 @@ nav .pagination a:hover{
 		font-size: 11px;
 	}
 	.service h5{
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.service p{
-		margin-top:0px;
-		font-size: 16px;
+		margin-top: 70px;
+		font-size: 17px;
 	}
 	.benefits-body{
 		width: 70%;
@@ -5788,7 +5751,7 @@ nav .pagination a:hover{
 	.single-service-style-one .image-block > img {
 		height: 270px;
 	}
-	.address .map iframe{
+	.address .map embed{
 		height: 300px;
 		width: 100%;
 		display: block;
@@ -5888,11 +5851,10 @@ nav .pagination a:hover{
 	.project .card:hover .img-top{
 		display: inline; 
 	}
-	.card-cover{
-		width: 100%;
-	}
 	.card-cover .card{
-		width: 95%;
+		width: 90%;
+		margin-left: auto;
+		margin-right:auto;
 	}
 	.people-one{
 		display: block;
@@ -5942,13 +5904,6 @@ nav .pagination a:hover{
 	.FAQS .card .card-body{
 		font-size: 14px;
 		text-align: justify;
-	}
-	.training h1{
-		margin-top: 90px;
-		font-size: 20px;
-	}
-	.training h2{
-		font-size: 20px;
 	}
 }
 /*--------------------------------------------------------------
@@ -6084,12 +6039,11 @@ nav .pagination a:hover{
 		margin-right: auto;	
 	}
 	.service h5{
-		font-size: 18px;
-		width: 100%;
+		font-size: 15px;
 	}
 	.service p{
-		margin-top: 0px;
-		font-size: 15px;
+		margin-top: 70px;
+		font-size: 17px;
 	}
 	.single-service-style-one {
 		margin-left: -20px;
@@ -6245,7 +6199,7 @@ nav .pagination a:hover{
 		font-size: 20px;
 		
 	}
-	.address .map iframe{
+	.address .map embed{
 		height: 300px;
 		width: 100%;
 		display: block;

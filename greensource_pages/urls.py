@@ -28,6 +28,5 @@ urlpatterns = [
     url(r'^company-profile$', views.Company, name= 'company-profile'),
     url(r'^Our-Team$', views.our_team, name= 'our-team'),
     url(r'^training$', views.training, name= 'training'),
-    url(r'^pricing$', views.pricing, name= 'pricing'),   
-    
+    url(r'^pricing$', views.pricing, name= 'pricing'),    
 ]

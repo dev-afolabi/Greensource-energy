@@ -1,11 +1,14 @@
 {% extends 'base_layout.html' %}
+{% block nav-pricing %}
+menu-active
+{% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} Solar energy pricing{% endblock %}
+{% block title %}{{ block.super }} Solar panel pricing{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>SOLAR ENERGY PRICING</h1>
+            <h1>SOLAR INSTALLATION PRICING</h1>
         </div>
     </div>
 </div>
@@ -281,7 +284,7 @@
                 <div class="table">
                     <h6>advance +</h6>
                     <div class="prices">
-                        N2, 980, 500
+                        N3, 480, 500
                         <span>
                             <strong>5kw</strong> Module
                             <br />
@@ -312,7 +315,7 @@
                 <div class="table">
                     <h6>premium</h6>
                     <div class="prices">
-                        N3, 480, 500
+                        N3, 950, 000
                         <span>
                             <strong>6kw</strong> Module
                             <br />
@@ -343,7 +346,7 @@
                 <div class="table">
                     <h6>premium +</h6>
                     <div class="prices">
-                        N4, 000, 000
+                        N4, 550, 000
                         <span>
                             <strong>8kw</strong> Module
                             <br />
@@ -381,7 +384,7 @@
         <div class="row">
                 <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
                 <h3 class="col-lg-3 col-md-4 col-xs-12">
-                <a href="{% url 'contact_us' %}">get in touch
+                <a href="{% url 'contact_us' %}">Get in Touch
                     <i class="fas fa-arrow-right"></i>
                 </a>
                 </h3>

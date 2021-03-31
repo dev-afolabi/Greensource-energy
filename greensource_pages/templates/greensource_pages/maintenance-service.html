@@ -3,7 +3,7 @@
 menu-active
 {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} Retrofit | Maintenance of solar systems{% endblock %}
+{% block title %}{{ block.super }} Maintenance of solar systems{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
@@ -32,28 +32,28 @@ menu-active
             <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Off-Grid Solar</a></li>
             <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
             <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
-            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Energy Storage Solution</a></li>
-            <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Energy Management</a></li>
-            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> System Upgrade</a></li>
-            <li class="list-group-item list-group-item-success"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Maintenance</a></li>
+            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Solar Storage</a></li>
+            <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Solar Energy Mgt</a></li>
+            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> Solar Upgrade</a></li>
+            <li class="list-group-item list-group-item-success"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Solar Maintenance</a></li>
         </ul>
         <div class="cut col-lg-8">
-            <img src="{% static 'images/maintenance.jpg' %}" />
+            <img src="{% static 'images/maintenance.webp' %}" />
         </div>
     </div>
 </div>
 <div class="container padding">
     <div class="row details">
         <div>
-            <p>We carry out Maintenance services for all Solar services we offer (after sales support and services). We have a team of experienced
-                solar energy specialist ready to assist with all maintenance needs. Carrying out maintenance operations is necessary
-                for a reliable and sustainable energy production and ensure optimum performance of your system. We schedule different
-                maintenance plan for our customer which includes: Preventive maintenance and corrective maintenance. Preventive maintenance
-                is done for systems still in operations and do not intend to eperience a breakdown before it is fixed. Corrective maintenance
-                is done when a system runs to failure before it is corrcted. Maintenance is necesary for all our installations to ensure
-                longeivity of the system, ensure the systems are efficient and functioning optimally. Our maintenance activities includes
-                cleaning of solar panels, replacing bad cables, cleaning batteries and replacing battery fluid for tubular batteries,
-                air pressure cleaning of electrical components, ensuring all cable are well fasted to thier terminal.
+            <p>All of the solar services we provide require maintenance (after sales support and services). We have a team of qualified
+                solar energy technicians on hand to deal with any maintenance problems. Maintenance is needed for dependable and long-term
+                energy output, as well as to ensure your system's optimal efficiency. Preventive and corrective maintenance are two forms
+                of maintenance that we plan for our customers. Preventive maintenance is performed on systems that are still in use and
+                are not expected to fail until being repaired. When a device reaches the point of failure before being repaired, it is
+                subjected to corrective maintenance. All of our installations need maintenance to ensure that they last as long as possible
+                and that they are running at peak performance. Cleaning solar panels, removing bad wires, cleaning batteries and replacing
+                battery fluid for tubular batteries, air pressure cleaning of electrical components, and ensuring all cables are firmly
+                fastened to their terminals are only a few of the maintenance tasks we conduct.
             </p>
         </div>
     </div>

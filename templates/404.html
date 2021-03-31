@@ -14,27 +14,14 @@
     />
     <title>404</title>
     <link rel="stylesheet" href="{% static 'home.css' %}" %} type="text/css" />
-    <link rel="stylesheet" href="{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}" type="text/css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/regular.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" />
-    <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
-    <link href="{% static 'simplelightbox-master/dist/simplelightbox.min.css' %}" rel='stylesheet' type='text/css' />
-    <link href="{% static 'src/tox-progress.css' %}" rel="stylesheet" />
-    <link href="{% static 'animate.css' %}" rel="stylesheet" type="text/css" />
-    <link href="{% static 'demo.css' %}" rel="stylesheet" type="text/css" />
-    <link href="{% static 'owl-carousel/owl.carousel.css' %}" rel="stylesheet" />
-    <link href="{% static 'owl-carousel/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}" />
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}" />
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet" />
+    <link  rel="stylesheet" href='https://fonts.googleapis.com/css?family=Poppins|Play|Big+Shoulders+Text' />
+    <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css" />
 </head>
 <body>
     <div class="review container-fluid padding">
@@ -83,7 +70,7 @@
         <div class="container">
             <div id="logo" class="pull-left">
                 <a href="{% url 'index' %}">
-                    <img src="{% static 'images/greensourcelogo3.png' %}" alt="company logo" />
+                    <img src="{% static 'images/greensourcelogo3.webp' %}" alt="company logo" />
                 </a>
             </div>
         </div>
@@ -94,14 +81,31 @@
                 <h4>404</h4>
                 <p>Looks Like Something Went Wrong</p>
                 <p class="page">The page you are looking for was moved, removed, renamed or might never exist.</p>
-                <a href="{% url 'index' %}" role="button">GO BACK HOME</a>
+                <a href="{% url 'index' %}">Go Back Home</a>
             </div>
         </div>
     </div>
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/jquery-3.6.0.min.js"><\/script>')</script></script>
+    <script async src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/popper.min.js"><\/script>')</script></script>
+    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="/static/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"><\/script>')}</script>
     <script src="{% static 'js/jquery-migrate.min.js' %}"></script>
-    <script src="{% static 'js/popper.min.js' %}"></script>
-    <script src="{% static 'bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+    <script>
+        var test = document.createElement("div")
+        test.className = "hidden d-none"
+        document.head.appendChild(test)
+        var cssLoaded = window.getComputedStyle(test).display === "none"
+        document.head.removeChild(test)
+        if (!cssLoaded) {
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = "{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}";
+            document.head.appendChild(link);
+        }
+    </script>
 </body>
 </html>

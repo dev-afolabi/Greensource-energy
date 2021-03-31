@@ -8,23 +8,24 @@
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="revisit-after" content="2 days" />
-    <meta name="description" content="An end-to-end, innovative solar energy installation company, providing cutting edge renewable energy solution services"/>
-    <meta name="keywords" content="solar system, solar panel, solar energy, solar, solar inverter, solar panel price in nigeria, solar battery, solar street light, 
-    solar power system, solar inverter installation, solar lighting system, renewable energy, solar companies in lagos/ogun, solar business in nigeria, solar quotes, green energy, energy sources, alternative energy"/>
+    <meta name="description" content="A full-service, customer-focused,
+    innovative solar energy and management firm that offers cutting-edge renewable energy solutions"/>
+    <meta name="keywords" content="solar system, solar panel, solar panel installation, solar energy, solar, solar inverter, solar panel price in nigeria, solar battery, solar street light, 
+    solar power system, solar inverter installation, solar lighting system, renewable energy, solar companies in ogun, solar companies in lagos, solar business in nigeria, solar quotes, green energy, energy sources, alternative energy"/>
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="greensourcenergy.com" />
     <meta name="twitter:creator" content="@greenn_energy" />
-    <meta name="twitter:title" content="Developing clean and safe energy solution" />
-    <meta name="twitter:description" content=" We are an end-to-end, customer oriented, innovative green energy and management company providing cutting edge renewable
-    energy solutions for residential, large and small businesses..." />
-    <meta name="twitter:image:src" content="greensourcenergy.com/static/images/homepage2.jpg" />
-    <meta property="og:title" content="Greensource Energy - Developing clean and safe energy solution" />
+    <meta name="twitter:title" content="Developing clean and safe renewable energy solution" />
+    <meta name="twitter:description" content="A full-service, customer-focused,
+    innovative solar energy and management firm that offers cutting-edge renewable energy solutions" />
+    <meta name="twitter:image:src" content="greensourcenergy.com/static/images/homepage2.webp" />
+    <meta property="og:title" content="Greensource Energy - Developing clean and safe renewable energy solution" />
     <meta property="og:url" content="https://greensourcenergy.com" />
     <meta property="og:site_name" content="Greensource Energy" />
-    <meta property="og:image" content="https://greensourcenergy.com/static/images/homepage2.jpg" />
+    <meta property="og:image" content="https://greensourcenergy.com/static/images/greensourceelogo4.webp" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="We are an end-to-end, customer oriented, innovative green energy and management company providing cutting edge renewable
-    energy solutions for residential, large and small businesses..." />
+    <meta property="og:description" content="A full-service, customer-focused,
+    innovative solar energy and management firm that offers cutting-edge renewable energy solutions" />
     <title>{% block title %}Greensource Energy -{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'home.css' %}" %} type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />     
@@ -38,12 +39,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}" />
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}" />
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <link  rel="stylesheet" href='https://fonts.googleapis.com/css?family=Poppins|Play|Big+Shoulders+Text' />
     <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css" />
     <link rel="canonical" href="https://greensourcenergy.com/news/">
-    <link rel="canonical" href="https://greensourcenergy.com/news/category/">
-    <link rel="canonical" href="https://greensourcenergy.com/news/category/detail/">
+    <link rel="canonical" href="https://greensourcenergy.com/news/category/x/">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
@@ -93,7 +92,7 @@
         <div class="container">
             <div id="logo" class="pull-left">
                 <a href="{% url 'index' %}">
-                    <img src="{% static 'images/greensourcelogo3.png' %}" alt="company logo" />
+                    <img src="{% static 'images/greensourcelogo3.webp' %}" alt="company logo" />
                 </a>
             </div>
             <nav id="nav-menu-container">
@@ -114,6 +113,9 @@
                                 <a href="{% url 'service_detail' %}">Services Details</a>
                             </li>
                         </ul>
+                    </li>
+                    <li class="{%block nav-pricing %}{% endblock %}">
+                        <a href="{% url 'pricing' %}">Pricing</a>
                     </li>
                     <li class="{% block nav-projects %}{% endblock %}">
                         <a href="{% url 'projects' %}">projects</a>
@@ -141,11 +143,11 @@
         <div class="container-fluid padding">
             <div class="footer row padding">
                 <div class="col-xs-12 col-lg-4 col-md-6">
-                    <img src="{% static 'images/greensource3.png' %}" alt="company logo" />
+                    <img src="{% static 'images/greensource3.webp' %}" alt="company logo" />
                     <p class="note">
-                        We are an end-to-end, customer oriented, innovative green energy company providing cutting edge renewable energy solutions
-                        for residential, commercial large and small businesses. Our goal is to design and install best fit systems
-                        while offering value for money.
+                        Greensource Energy is a new renewable energy and management business specializing in energy conservation, solar energy storage,
+                        solar panel installation, solar energy services, and sustainability solutions. We offer cutting-edge renewable energy solutions for homes, large and
+                        small businesses.
                     </p>
                     <div class="map padding">
                         <h6>/ LOCATE US</h6>
@@ -168,13 +170,13 @@
                             <a href="{% url 'maintenance_service' %}">Maintenance</a>
                         </li>
                         <li>
-                            <a href="{% url 'hvac' %}">System Upgrade</a>
+                            <a href="{% url 'hvac' %}">Solar Upgrade</a>
                         </li>
                         <li>
-                            <a href="{% url 'energy_management' %}">Storage Solution</a>
+                            <a href="{% url 'energy_management' %}">Solar Storage </a>
                         </li>
                          <li>
-                            <a href="{% url 'electrical_design' %}">Street Lighting</a>
+                            <a href="{% url 'electrical_design' %}">Solar lighting</a>
                         </li>
                         <li>
                             <a href="{% url 'solar_water_pump' %}">Solar Pump</a>
@@ -264,7 +266,6 @@
     <script src="{% static 'src/superfish.min.js' %}"></script>
     <script src="{% static 'src/simple-lightbox.min.js' %}"></script>
     <script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script>
-    <script>window.addEventListener("load", function () { window.wpcc.init({ "border": "normal", "corners": "small", "colors": { "popup": { "background": "#222222", "text": "#ffffff", "border": "#192712" }, "button": { "background": "#b5e1a0", "text": "#000000" } }, "position": "bottom-left", "content": { "href": "https://www.greensourcenergy.com/privacy-Policy/" } }) });</script>
     <script>
         var test = document.createElement("div")
         test.className = "hidden d-none"
@@ -279,20 +280,23 @@
             document.head.appendChild(link);
         }
     </script>
+    <script>window.addEventListener("load", function () { window.wpcc.init({ "border": "normal", "corners": "small", "colors": { "popup": { "background": "#222222", "text": "#ffffff", "border": "#192712" }, "button": { "background": "#b5e1a0", "text": "#000000" } }, "position": "bottom-right", "content": { "href": "https://www.greensourcenergy.com/privacy-Policy/" } }) });</script>
     <script>
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '680910845861426');
-            fbq('track', 'PageView');
+        fbq('init', '680910845861426');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=680910845861426&ev=PageView&noscript=1"/></noscript>
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179025578-1"></script> -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -306,8 +310,7 @@
             "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Greensource Energy Consult",
-              "image": "https://greensourcenergy.com/static/images/image/about-us.jpg",
-              "@id": "",
+              "image": "https://greensourcenergy.com/static/images/greensourcelogo4.webp",
               "url": "https://www.greensourcenergy.com",
               "telephone": "(234)802 9442 697",
               "address": {
@@ -315,7 +318,6 @@
                 "streetAddress": "1 heritage street btanobi noah, arogun",
                 "addressLocality": "mowe-ofada",
                 "addressRegion":"OG"
-                "postalCode": "110115",
                 "addressCountry": "NG"  
             }  
         }
