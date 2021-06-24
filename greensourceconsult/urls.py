@@ -8,11 +8,14 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
 from django.conf import settings
 
+
+
 urlpatterns = [
     path('greensource-webenergy/', admin.site.urls),
     url(r'^', include(pages_url)),
     url(r'^news/', include(news_url)),
     url(r'^', include(contact_url)),
+   
 ]
 
 urlpatterns += staticfiles_urlpatterns()

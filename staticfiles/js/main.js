@@ -265,14 +265,17 @@ $(document).ready(function () {
             autoplayTimeout: 5000,
             autoplayHoverPause: true,
             responsive: {
-                0: {
-                    items: 1
+                320: {
+                    items: 2
+                },
+                375: {
+                    items: 3
                 },
                 480: {
                     items: 3
                 },
                 600: {
-                    items: 3
+                    items: 4
                 },
                 991: {
                     items: 4
