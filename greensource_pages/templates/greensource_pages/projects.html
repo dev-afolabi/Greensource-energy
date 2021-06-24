@@ -8,7 +8,7 @@ menu-active
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>GREENSOURCE PROJECTS</h1>
+            <h1>SOLAR ENERGY PROJECTS</h1>
         </div>
     </div>
 </div>
@@ -20,7 +20,7 @@ menu-active
         <li class="breadcrumb-item active">Projects</li>
     </ol>
 </nav>
-<div class="container-fluid padding">
+<!-- <div class="container-fluid padding">
     <div class="row project padding">
         {% for project in projects %}
         <div id="accordion">
@@ -45,11 +45,121 @@ menu-active
         </div>
         {% endfor %}
     </div>
+</div> -->
+<div class="container-fluid padding">
+    <div class="row project padding">
+    
+        <div id="accordion">
+            <div class="card">
+                <img src="{% static 'images/5b.jpg' %}" alt="img" />
+                <img src="{% static 'images/5a.jpg' %}" class="img-top" alt="img" />
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                                1.08KWP SOLAR  SYSTEM
+                            <i class="fas fa-arrow-alt-circle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                       This system powers a  1 bedroomflat @ Abeokuta Ogun carrying 1Tv, all ligthing points and fan and and inverter fridge
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="accordion">
+            <div class="card">
+                <img src="{% static 'images/4a.jpg' %}" alt="img" />
+                <img src="{% static 'images/4b.jpg' %}" class="img-top" alt="img" />
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            7KWP SOLAR INSTALLATION
+                            <i class="fas fa-arrow-alt-circle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                   This systems powers a 4 bedroom duplex @ Magodo Phase 1 Lagos carrying 3 1hp Ac, 3TVs, A Refrigerator, A washing machine, lighting and fans  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="accordion">
+            <div class="card">
+                <img src="{% static 'images/3a.jpg' %}" alt="img" />
+                <img src="{% static 'images/3b.jpg' %}" class="img-top" alt="img" />
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            3KWP SOLAR SYSTEM
+                            <i class="fas fa-arrow-alt-circle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        It powers a 4 bedroom duplex @ Agungi lekki epe express way carrying 2 Tvs, all lighting points, 4 fans and A Refrigerator.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="accordion">
+            <div class="card">
+                <img src="{% static 'images/2a.jpg' %}" alt="img" />
+                <img src="{% static 'images/2b.png' %}" class="img-top" alt="img" />
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            SOLAR BOLE HOLE
+                            <i class="fas fa-arrow-alt-circle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        A  1.5HP solar borehole system for farm irrigation at Ishiun Ogun State.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="accordion">
+            <div class="card">
+                <img src="{% static 'images/1a.jpg' %}" alt="img" />
+                <img src="{% static 'images/1b.jpg' %}" class="img-top" alt="img" />
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive">
+                            SOLAR PANEL MAINTENANCE
+                            <i class="fas fa-arrow-alt-circle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        Washing and cleaning of solar panels to ensure optimal operations and useful life.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </div>
 <section id="call-to-action">
     <div class="container-fluid padding wow fadeIn">
         <div class="row">
-                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
+                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
                 <h3 class="col-lg-3 col-md-4 col-xs-12">
                 <a href="{% url 'contact_us' %}">Get in Touch
                     <i class="fas fa-arrow-right"></i>
@@ -62,7 +172,7 @@ menu-active
     <div class="container-fluid padding">
         <div class="row-counters row padding">
             <div class="counter-heading col-12">
-                <p>You always get the best guidance</p>
+                <p>our business success track record</p>
                 <h5>Our Business Numbers</h5>
                 <hr />
             </div>
@@ -70,7 +180,7 @@ menu-active
                 <div>
                     <i class="far fa-smile"></i>
                 </div>
-                <span data-toggle="counter-up">35</span>
+                <span data-toggle="counter-up">18</span>
                 <span class="sign">+</span>
                 <p>Happy Clients</p>
             </div>
@@ -88,7 +198,7 @@ menu-active
                 </div>
                 <span data-toggle="counter-up">1,460</span>
                 <span class="sign">+</span>
-                <p>Hours Of Support</p>
+                <p>Hours of Support</p>
             </div>
             <div class="counter col-xs-12 col-md-6 col-lg-3">
                 <div>

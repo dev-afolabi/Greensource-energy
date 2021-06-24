@@ -3,12 +3,12 @@
 menu-active
 {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} Off-grid solar solution{% endblock %}
+{% block title %}{{ block.super }} Inverter Installation{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>OFF-GRID SOLAR INSTALLATION</h1>
+            <h1>INVERTER INSTALLATION</h1>
         </div>
     </div>
 </div>
@@ -16,7 +16,7 @@ menu-active
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
         <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
-        <li class="breadcrumb-item active">Off-grid-solar</li>
+        <li class="breadcrumb-item active">Inveter Installation</li>
     </ol>
 </nav>
 <div class="container-fluid padding">
@@ -25,7 +25,7 @@ menu-active
             <li class="list-group-item"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
             <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
             <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
-            <li class="list-group-item list-group-item-success"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Off-Grid Solar</a></li>
+            <li class="list-group-item list-group-item-success"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Inverter Installation</a></li>
             <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
             <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
             <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Solar Storage</a></li>
@@ -34,7 +34,7 @@ menu-active
             <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Solar Maintenance</a></li>
         </ul>
         <div class="col-lg-8">
-            <img src="{% static 'images/offgrid solar.webp' %}" alt="off-grid solar panels" />
+            <img src="{% static 'images/Inverter.webp' %}" alt="inverter image" />
         </div>
     </div>
 </div>
@@ -61,12 +61,12 @@ menu-active
 <div class="container-fluid padding">
         <div class="row base">
             <div class="order-list col-lg-5 col-md-6 col-xs-12">
-                <h4>Our off-grid includes:</h4>
+                <h4>Our Inveter service includes:</h4>
                 <ol>
                         <li>Operations</li>
-                        <li>Day use System</li>
-                        <li>Off Grid System</li>
-                        <li>Grid Tied System</li>
+                        <li>Maintenance</li>
+                        <li>Installation</li>
+                        <li>Troubleshooting</li>
                         <li>Technical support</li>
                 </ol>
             </div>
@@ -78,7 +78,7 @@ menu-active
 <section id="call-to-action">
     <div class="container-fluid padding wow fadeIn">
         <div class="row">
-                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want to start a custom fit Project for your home/business? &nbsp Talk to an Authorized Solar Professional.</p>
+                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
                 <h3 class="col-lg-3 col-md-4 col-xs-12">
                 <a href="{% url 'contact_us' %}">Get in Touch
                     <i class="fas fa-arrow-right"></i>
