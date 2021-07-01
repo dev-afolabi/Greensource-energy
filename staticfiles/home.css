@@ -475,8 +475,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 	background:#002c42;
 	color:#fafafa;
 	padding: 5px 10px;
-	bottom: 50px;
-	right: 30px;
+	bottom: 5px;
+	right: 15px;
 	cursor: pointer;
 	display: none;
 }
