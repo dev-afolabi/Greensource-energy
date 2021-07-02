@@ -1110,7 +1110,7 @@ nav .breadcrumb li a:hover{
 }
 .project img{
 	width: 400px;
-	height: 400px;
+	height: 430px;
 	position: relative;
 	display: inline-block;
 	-webkit-transition: opacity .5s ease-in-out;
@@ -1123,7 +1123,7 @@ nav .breadcrumb li a:hover{
 }
 .project .card .img-top{
 	width: 400px;
-	height: 400px;
+	height: 430px;
 	display: block;
 	position: absolute;
 	top: 0;
@@ -1139,7 +1139,7 @@ nav .breadcrumb li a:hover{
 }
 .project #accordion{
 	width: 400px;
-	height: 370px;
+	height: 400px;
 	margin: 95px 10px;
 	justify-content: center;
 }
@@ -3411,6 +3411,22 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.project #accordion{
+		width: 370px;
+		margin: 120px 30px;
+		justify-content: center;
+	}
+	.project #accordion .card{
+		width: 100%;
+	}
+	.project .card img{
+		width: 100%;
+		height: 400px;
+	}
+	.project .card .img-top{
+		width: 100%;
+		height: 400px;
+	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		991px
@@ -3570,6 +3586,22 @@ nav .pagination a:hover{
 	}
 	.working h5{
 		font-size: 25px;
+	}
+	.project #accordion{
+		width: 350px;
+		margin: 120px 10px;
+		justify-content: center;
+	}
+	.project #accordion .card{
+		width: 100%;
+	}
+	.project .card img{
+		width: 100%;
+		height: 400px;
+	}
+	.project .card .img-top{
+		width: 100%;
+		height: 400px;
 	}
 	.light h4{
 		width: 95%;
@@ -3852,35 +3884,6 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 		width: 49%;
-	}
-	.project img{
-		width: 100%;
-		height: 280px;
-	}
-	.project #accordion{
-		width: 345px;
-		height: 300px;
-		margin: 95px 5px;
-		justify-content: center;	
-	}
-	.project #accordion .card{
-		width: 100%;
-		font-size: 15px;
-	}
-	.project #accordion .card-body{
-		font-size: 15px;
-	}
-	.project .card .img-top{
-		width: 345px;
-		height: 280px;
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 99;
-	}
-	.project .card:hover .img-top{
-		display: inline; 
 	}
 	.choose1{
 		left: -5%;
@@ -4327,32 +4330,14 @@ nav .pagination a:hover{
 		margin-right: auto;
 		width: 75%;
 	}
-	.project img{
-		width: 365px;
-		height: 280px;
-	}
 	.project #accordion{
-		width: 100%;
-		height: 300px;
+		margin: 120px 10px;
 	}
-	.project #accordion .card{
-		width: 367px;
-		font-size: 15px;
-	}
-	.project #accordion .card-body{
-		font-size: 15px;
+	.project .card img{
+		height: 400px;
 	}
 	.project .card .img-top{
-		width: 100%;
-		height: 280px;
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 99;
-	}
-	.project .card:hover .img-top{
-		display: inline; 
+		height: 400px;
 	}
 	.people-one{
 		display: block;
@@ -4548,6 +4533,15 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	} 
+	.project #accordion{
+		margin: 120px 0px;
+	}
+	.project .card img{
+		height: 400px;
+	}
+	.project .card .img-top{
+		height: 400px;
+	}
 	.team-area{
 		width: 100%;
 	}
@@ -5001,6 +4995,15 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
+	}
+	.project #accordion{
+		margin: 120px 0px;
+	}
+	.project .card img{
+		height: 400px;
+	}
+	.project .card .img-top{
+		height: 400px;
 	}
 	.articles .news{
 		display: block;
@@ -5796,31 +5799,14 @@ nav .pagination a:hover{
 		display: flex;
 		margin-left: -60px;
 	}
-	.project img{
-		width: 100%;
-		height: 270px;
-	}
 	.project #accordion{
-		width: 100%;
-		height: 290px;
-		margin: 95px 5px;
-		justify-content: center;
+		margin: 100px 0px;
 	}
-	.project #accordion .card{
-		width: 100%;
-		font-size: 15px;
+	.project .card img{
+		height: 380px;
 	}
 	.project .card .img-top{
-		width: 100%;
-		height: 270px;
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 99;
-	}
-	.project .card:hover .img-top{
-		display: inline; 
+		height: 380px;
 	}
 	.card-cover .card{
 		width: 90%;
@@ -6352,34 +6338,14 @@ nav .pagination a:hover{
 	.list-unstyled .media .media-body p span{	
 		font-size: 14px;
 	}
-	.project img{
-		width: 100%;
-		height: 270px;
-	}
 	.project #accordion{
-		width: 100%;
-		height: 290px;
-		margin: 95px 5px;
-		justify-content: center;
+		margin: 100px 0px;
 	}
-	.project #accordion .card{
-		width: 100%;
-		font-size: 15px;
-	}
-	.project #accordion .card button{
-		font-size: 16px;
+	.project .card img{
+		height: 380px;
 	}
 	.project .card .img-top{
-		width: 100%;
-		height: 270px;
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 99;
-	}
-	.project .card:hover .img-top{
-		display: inline; 
+		height: 380px;
 	}
 	.people-one{
 		display: block;
