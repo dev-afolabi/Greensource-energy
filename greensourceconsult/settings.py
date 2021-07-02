@@ -51,8 +51,6 @@ INSTALLED_APPS = [
     'crispy_forms',
 ]
 
-SITE_ID = 1
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -164,4 +162,16 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
- 
+
+AWS_ACCESS_KEY_ID="AKIAV7FXMLNKRDXYGBVX"
+AWS_SECRET_ACCESS_KEY="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"
+AWS_STORAGE_BUCKET_NAME="olumide-greensource"
+
+AWS_S3_REGION_NAME = 'us-east-2'
+
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
