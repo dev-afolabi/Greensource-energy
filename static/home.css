@@ -344,6 +344,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 	color: #02d977;
 }
 .carousel-caption h2{
+	margin-top: -420px;
+	font-size: 38px;
+	font-weight: 600;
+	color:#fff;
+	width: 100%;
+	animation-delay: 1s;
+}
+.carousel-caption h2 span{
+	color: #02d977;
+}
+.carousel-caption h3{
 	margin-top:20px;
 	font-size:16px;
 	color: #cdcdcd;
@@ -3175,6 +3186,7 @@ nav .pagination a:hover{
 	}
 	.time p{
 		font-size: 15px;
+		
 	}
 	.links li a{
 		font-size: 15px;
@@ -3200,7 +3212,7 @@ nav .pagination a:hover{
 	}
 	.carousel a{
 		margin-top: -150px;
-		font-size: 20px;
+		font-size: 25px;
 	}
 	.carousel-item img{
 		height: 700px;
@@ -3212,8 +3224,13 @@ nav .pagination a:hover{
 		width:100%;
 	}
 	.carousel-caption h2{
+		margin-top:-440px;
+		font-size: 28px;
+		width:100%;
+	}
+	.carousel-caption h3{
 		font-size: 15px;
-		width: 50%;
+		width: 70%;
 		text-align: left;
 		margin-top: 20px;
 	}
@@ -3480,6 +3497,7 @@ nav .pagination a:hover{
 	}
 	.carousel a{
 		margin-top: -230px;
+		font-size: 25px;
 	}
 	.carousel-caption h1{
 		margin-top: -260px;
@@ -3487,6 +3505,11 @@ nav .pagination a:hover{
 		width: 110%;
 	}
 	.carousel-caption h2{
+		margin-top: -260px;
+		font-size: 22px;
+		width: 110%;
+	}
+	.carousel-caption h3{
 		font-size: 15px;
 		width: 70%;
 		text-align: left;
@@ -3999,6 +4022,11 @@ nav .pagination a:hover{
 		width:115%;
 	}
 	.carousel-caption h2{
+		margin-top: -270px;
+		font-size: 22px;
+		width:115%;
+	}
+	.carousel-caption h3{
 		font-size: 16px;
 		width: 80%;
 		text-align: left;
@@ -4442,6 +4470,11 @@ nav .pagination a:hover{
 		width: 110%;
 	}
 	.carousel-caption h2{
+		margin-top: -200px;
+		font-size: 18.5px;
+		width: 110%;
+	}
+	.carousel-caption h3{
 		font-size: 15px;
 		width: 100%;
 		text-align: left;
@@ -4453,7 +4486,7 @@ nav .pagination a:hover{
 	}
 	.carousel a{
 		margin-top: -300px;
-		font-size: 3em;
+		font-size: 25px;
 	}
 	.colum{
 		margin-top: -350px;
@@ -4859,6 +4892,12 @@ nav .pagination a:hover{
 		margin-left: -10px;
 	}
 	.carousel-caption h2{
+		margin-top: -180px;
+		font-size: 16.5px;
+		width: 124%;
+		margin-left: -10px;
+	}
+	.carousel-caption h3{
 		font-size: 15px;
 		width: 115%;
 		text-align: left;
@@ -4877,6 +4916,7 @@ nav .pagination a:hover{
 		margin-top: -380px;
 		margin-left: -15px;
 		margin-right: -15px;
+		font-size: 20px;
 	}
 	.colum{
 		margin-top: -400px;
@@ -5353,6 +5393,12 @@ nav .pagination a:hover{
 		margin-left: -25px;
 	}
 	.carousel-caption h2{
+		margin-top: -170px;
+		font-size: 14px;
+		width: 125%;
+		margin-left: -25px;
+	}
+	.carousel-caption h3{
 		width: 120%;
 		font-size: 14px;
 		margin-left: -25px;
@@ -5370,6 +5416,7 @@ nav .pagination a:hover{
 		margin-top: -450px;
 		margin-left: -12px;
 		margin-right: -12px;
+		font-size: 20px;
 	}
 	.header{
 		height: 280px;
@@ -5902,6 +5949,12 @@ nav .pagination a:hover{
 		margin-left: -25px;
 	}
 	.carousel-caption h2{
+		margin-top: -170px;
+		font-size: 14px;
+		width: 125%;
+		margin-left: -25px;
+	}
+	.carousel-caption h3{
 		width: 120%;
 		font-size: 13px;
 		margin-left: -25px;
@@ -5919,6 +5972,7 @@ nav .pagination a:hover{
 		margin-top: -450px;
 		margin-left: -12px;
 		margin-right: -12px;
+		font-size: 20px;
 	}
 	.header{
 		height: 250px;

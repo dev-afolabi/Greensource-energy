@@ -56,21 +56,22 @@
   .owl-carousel .owl-nav .owl-next,
   .owl-carousel .owl-dot {
     cursor: pointer;
-    font-size: 50px;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; }
+    user-select: none; 
+  }
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel button.owl-dot {
     background: none;
     color: inherit;
     border: none;
-    padding: 0 !important;
-    font-size: 150px;
-    font: inherit; }
+    padding: 5px 0px !important;
+    font-size: 60px;
+    margin-top: -35px;
+  }
   .owl-carousel.owl-loaded {
     display: block; }
   .owl-carousel.owl-loading {
