@@ -8,25 +8,22 @@
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="revisit-after" content="2 days" />
-    <meta name="description" content="A full-service, customer-focused,
-    innovative solar energy and management firm that offers cutting-edge renewable energy solutions"/>
+    <meta name="description" content="Alternative source of power for homes and businesses? Greensource Energy focuses on design and installation solar energy systems harnessing the power of the sun. Contact us now!"/>
     <meta name="keywords" content="solar system, solar panel, solar panel installation, solar energy, solar, solar inverter, solar panel price in nigeria, solar battery, solar street light, 
     solar power system, solar inverter installation, solar lighting system, renewable energy, solar companies in ogun, solar companies in lagos, solar business in nigeria, solar quotes, green energy, energy sources, alternative energy"/>
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="greensourcenergy.com" />
     <meta name="twitter:creator" content="@greenn_energy" />
-    <meta name="twitter:title" content="Developing clean and safe renewable energy solution" />
-    <meta name="twitter:description" content="A full-service, customer-focused,
-    innovative solar energy and management firm that offers cutting-edge renewable energy solutions" />
+    <meta name="twitter:title" content="Solar Energy for Homes and Businesses" />
+    <meta name="twitter:description" content="Alternative source of power for homes and businesses? Greensource Energy focuses on design and installation solar energy systems harnessing the power of the sun. Contact us now!" />
     <meta name="twitter:image:src" content="greensourcenergy.com/static/images/homepage2.webp" />
-    <meta property="og:title" content="Greensource Energy - Developing clean and safe renewable energy solution" />
+    <meta property="og:title" content="Solar Energy for Homes and Businesses - Greensource Energy" />
     <meta property="og:url" content="https://greensourcenergy.com" />
     <meta property="og:site_name" content="Greensource Energy" />
     <meta property="og:image" content="https://greensourcenergy.com/static/images/greensourceelogo4.webp" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="A full-service, customer-focused,
-    innovative solar energy and management firm that offers cutting-edge renewable energy solutions" />
-    <title>{% block title %}Greensource Energy -{% endblock %}</title>
+    <meta property="og:description" content="Alternative source of power for homes and businesses? Greensource Energy focuses on design and installation solar energy systems harnessing the power of the sun. Contact us now!"/>
+    <title>{% block title %}- Greensource Energy {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'home.css' %}" %} type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -54,7 +51,7 @@
             </div>
             <div class="time col-xs-12 col-lg-3 col-md-6">
                 <p>
-                    <i class="fas fa-phone-alt"></i>(234)8029442697, (234)8076068609</p>
+                    <i class="fas fa-phone-alt"></i>(234)8029442697</p>
             </div>
             <div class="col-xs-12 col-lg-3 col-md-6">
                 <ol class="links">
@@ -89,54 +86,57 @@
         </div>
     </div>
     <header id="header">
-        <div class="container">
-            <div id="logo" class="pull-left">
-                <a href="{% url 'index' %}">
-                    <img src="{% static 'images/greensourcelogo3.webp' %}" alt="company logo" />
-                </a>
-            </div>
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="{% block nav-home %}{% endblock %}">
-                        <a href="{% url 'index' %}">Home</a>
-                    </li>
-                    <li class="{% block nav-about %}{% endblock %}">
-                        <a href="{% url 'about' %}">About</a>
-                    </li>
-                    <li class="{% block nav-service %}{% endblock %}  menu-has-children">
-                        <a href="#services">Services</a>
-                        <ul>
-                            <li>
-                                <a href="{% url 'services' %}">Our Services</a>
-                            </li>
-                            <li>
-                                <a href="{% url 'service_detail' %}">Services Details</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="{%block nav-pricing %}{% endblock %}">
-                        <a href="{% url 'pricing' %}">Pricing</a>
-                    </li>
-                    <li class="{% block nav-projects %}{% endblock %}">
-                        <a href="{% url 'projects' %}">projects</a>
-                    </li>
-                    <!-- <li class="{% block nav-design-plans %}{% endblock %}">
-                        <a href="{% url 'design_plans' %}">Shop</a>
-                    </li> -->
-                    <li class="{% block nav-news %}{% endblock %}">
-                        <a href="{% url 'article_list' %}">news</a>
-                    </li>
-                    <li class="{% block nav-contact %}{% endblock %}">
-                        <a href="{% url 'contact_us' %}">Contact us</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="shoppingCart">
-                <p>0</p>
-                    <i class="fas fa-shopping-cart"></i>
+            <div class="container">
+                <div id="logo" class="pull-left">
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'images/greensourcelogo3.webp' %}" alt="company logo" />
+                    </a>
                 </div>
-        </div>
-    </header>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="{% block nav-home %}{% endblock %}">
+                            <a href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li class="{% block nav-about %}{% endblock %} menu-has-children">
+                            <a href="#">About</a>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'about' %}">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'our_team' %}">Our Team</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'gallery' %}">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'faq' %}">FAQs</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="{% block nav-service %}{% endblock %}  menu-has-children">
+                            <a href="#services">Services</a>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'services' %}">Our Services</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'service_detail' %}">Services Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="{% block nav-projects %}{% endblock %}">
+                            <a href="{% url 'projects' %}">projects</a>
+                        </li>
+                        <li class="{% block nav-news %}{% endblock %}">
+                            <a href="{% url 'article_list' %}">news</a>
+                        </li>
+                        <li class="{% block nav-contact %}{% endblock %}">
+                            <a href="{% url 'contact_us' %}">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+        </header> 
     {% block content %}
     {% endblock %}    
     <section>
@@ -185,26 +185,25 @@
                 </div>
                 <div class="services col-xs-12 col-lg-2 col-md-6">
                     <h6>Links</h6>
-                    
                     <ul>
                         <li>
-                            <a href="{% url 'company-profile' %}">Company Profile</a>
+                            <a href="{% url 'testimonial' %}">Testimonial</a>
                         </li>
                         <li>
                             <a href="{% url 'privacy' %}">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="{% url 'terms-of-use' %}">Terms of use</a>
+                            <a href="{% url 'terms_of_use' %}">Terms of use</a>
+                        </li>
+                        <li>
+                                <a href="{% url 'pricing' %}">Pricing</a>
                         </li>
                          <li>
-                            <a href="{% url 'our-team' %}">Our Team</a>
+                            <a href="{% url 'our_team' %}">Our Team</a>
                         </li>
                         <li>
                             <a href="{% url 'gallery' %}">Gallery</a>
                          </li>
-                        <li>
-                            <a href="{% url 'pricing' %}">Pricing</a>
-                        </li>
                         <li>
                             <a href="{% url 'faq' %}">FAQs</a>
                         </li>
@@ -216,14 +215,14 @@
                 
                     <div class="footer-address">
                         <i class="fas fa-map-marked-alt"></i>
-                        <p><strong>Ogun Office</strong> - 1, Heritage street by anobi Noah, arogun Mowe-Ofada Ogun.</p>
-                        <p><strong>Lagos Office</strong> - coming soon</p>
+                        <p>1, Heritage street by anobi Noah, arogun Mowe-Ofada Ogun.</p>
+                       
                         <i class="far fa-envelope"></i>
                         <p>
                             <a href='ma&#105;lto&#58;hel%6C%&#54;F&#64;gr&#37;6&#53;e%&#54;&#69;&#115;%6F&#117;r%&#54;3e&#37;&#54;&#69;ergy&#46;co%6D'>hell&#111;&#64;&#103;reens&#111;ur&#99;energy&#46;com</a>
                         </p>
                         <i class="fas fa-phone"></i>
-                        <p>(234)802-9442-697 <br /> (234)807-6068-609</p>
+                        <p>(234)802-9442-697 (whatsapp) <br /> (234)807-6068-609</p>
                     </div>
                     <div class="social">
                         <h6>/ FOLLOW US ON</h6>
@@ -246,13 +245,12 @@
                         <span class="green">Greensource Energy</span>  </p>
                 </div>
                 <a href="#" class="back-to-top">
-                    <i class="fa fa-chevron-up"></i>
+                    <i class="fa fa-arrow-up"></i>
                 </a>
             </div>
-        </div>
     </section>
-    <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/static/js/jquery-3.6.0.min.js"><\/script>')</script></script>
+    <script async src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/jquery-3.3.1.min.js"><\/script>')</script></script>
     <script async src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script>window.jQuery || document.write('<script src="/static/js/popper.min.js"><\/script>')</script></script>
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -266,7 +264,8 @@
     <script src="{% static 'src/hoverIntent.min.js' %}"></script>
     <script src="{% static 'src/superfish.min.js' %}"></script>
     <script src="{% static 'src/simple-lightbox.min.js' %}"></script>
-    <script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script>
+    <script src="{% static 'src/multislider.min.js' %}"></script>
+    <script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script>    
     <script>
         var test = document.createElement("div")
         test.className = "hidden d-none"

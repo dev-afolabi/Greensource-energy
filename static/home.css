@@ -1,123 +1,121 @@
 html body{
 	padding:0px;
 	margin:0px;
-	background:rgb(235, 235, 235, 0.4);
-	background-position:center;
-	background-size:cover;
+	background:rgb(235, 235, 235, 0.8);
+	background-position: center;
+	background-size: cover;
 	font-family: 'Poppins', sans-serif;
 	font-size: 15px;
 }
-noscript img{
-	display: none;
-}
 #header{
-  padding: 20px 0;
-  height: 92px;
-  position: fixed;
-  left: 0;
-  top: 10;
-  right: 0;
-  transition: all 0.5s;
-  z-index: 997;
+	padding: 20px 0;
+	height: 92px;
+	position: fixed;
+	left: 0;
+	top: 10;
+	right: 0;
+	transition: all 0.5s;
+	z-index: 997;  
+  
 }
 #header #logo{
-  float: left;
+  	float: left;
 }
-#header #logo img {
-  margin: 0;
-  padding: 0;
-  max-width: 240px;
-  height: 50px;
+#header #logo img{
+	margin: 0px;
+	padding: 0;
+	max-width: 240px;
+	height: 50px;
 }
 #header.header-fixed{
-  top: 0;
-  background: rgba(31, 31, 37, 0.9);
-  padding: 20px 0;
-  height: 100px;
-  -webkit-transition: all 0.5s ease-in-out 0.2s;
-  transition: all 0.5s ease-in-out 0.2s;
-  transition-delay:all 0.5s ease-in-out 0.2s;
+	top: 0;
+	background: rgba(31, 31, 37, 0.9);
+	padding: 20px 0;
+	height: 100px;
+	-webkit-transition: all 0.5s ease-in-out 0.2s;
+	transition: all 0.5s ease-in-out 0.2s;
+	transition-delay:all 0.5s ease-in-out 0.2s;
 }
 /*--------------------------------------------------------------
 # NAV MENU ESSENTIALS
 --------------------------------------------------------------*/
 .nav-menu, .nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 .nav-menu ul {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  z-index: 99;
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
 }
 .nav-menu li {
-  position: relative;
-  white-space: nowrap;
+	position: relative;
+	white-space: nowrap;
 }
 .nav-menu li i {
 	color:#cdcdcd;
 }
 .nav-menu > li{
-  float: left;
+  	float: left;
 }
 .nav-menu li:hover > ul,
 .nav-menu li.sfHover > ul {
-  display: block;
+  	display: block;
 }
 .nav-menu ul ul {
-  top: 0;
-  left: 100%;
+	top: 0;
+	left: 100%;
 }
 .nav-menu ul li {
-  min-width: 180px;
+  	min-width: 180px;
 }
 /*--------------------------------------------------------------
 # NAV MENU ARROWS
 --------------------------------------------------------------*/
 .sf-arrows .sf-with-ul {
-  padding-right: 30px;
+  	padding-right: 30px;
 }
 .sf-arrows .sf-with-ul:after {
-  content: '\f107';
-  position: absolute;
-  right: 18px;
-  font-size: 20px;
-  margin-top:-3px;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
+	content: '\f107';
+	position: absolute;
+	right: 18px;
+	font-size: 20px;
+	margin-top:-3px;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
 }
 .sf-arrows ul .sf-with-ul:after {
-  content: "\f105";
+  	content: "\f105";
 }
 /*--------------------------------------------------------------
 # NAV MENU CONTAINER
 --------------------------------------------------------------*/
 #nav-menu-container {
-  float: right;
-  margin: 0;
-}
+	float: right;
+	margin: 0px;
+} 
 /*--------------------------------------------------------------
 # NAV MENU STYLING
 --------------------------------------------------------------*/
 .nav-menu a {
-  padding: 10px 5px 10px 5px;
-  text-decoration: none;
-  display: inline-block;
-  color: #cdcdcd;
-  font-weight: 550;
-  text-transform: capitalize;
-  font-size: 15px;
-  outline: none;
-  width: 100%;
-  margin-left: -10px;
-  margin-right: 5px;
+	padding: 10px 5px 10px 5px;
+	text-decoration: none;
+	display: inline-block;
+	color: #cdcdcd;
+	font-weight: 550;
+	text-transform: capitalize;
+	font-size: 15px;
+	outline: none;
+	width: 100%;
+	margin-left: -10px;
+	margin-right: 5px;
 }
 .nav-menu > li {
-  margin-left: 10px;
+  	margin-left: 10px;
 }
 .nav-menu .menu-active a {
 	color:#2dc977;
@@ -127,129 +125,129 @@ noscript img{
 	text-decoration:none;
 }
 .nav-menu ul {
-  margin: 4px 0 0 0;
-  border: 1px solid #e7e7e7;
+	margin: 4px 0 0 0;
+	border: 1px solid #e7e7e7;
 }
 .nav-menu ul li {
-  background: #fff;
+  	background: #fff;
 }
 .nav-menu ul li:first-child {
-  border-top: 0;
-  margin-left: 5px;
+	border-top: 0;
+	margin-left: 0px;
 }
 .nav-menu ul li a {
-  padding: 10px;
-  color: #333;
-  transition: 0.3s;
-  display: block;
-  font-size: 15px;
-  text-transform: none;
-  margin-left: 0px;
+	padding: 7px;
+	color: #333;
+	transition: 0.3s;
+	display: block;
+	font-size: 15px;
+	text-transform: none;
+	margin-left: 0px;
 }
 .nav-menu ul li a:hover {
-  background: #007654;
-  color: #fff;
+	background: #006420;
+	color: #fff;
 }
 .nav-menu ul ul {
-  margin: 0;
+  	margin: 0;
 }
 /*--------------------------------------------------------------
 # MOBILE NAV TOGGLE
 --------------------------------------------------------------*/
 #mobile-nav-toggle {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999;
-  margin: 20px 20px 0 0;
-  border: 0;
-  background: none;
-  font-size: 20px;
-  display: none;
-  transition: all 0.4s;
-  outline: none;
-  cursor: pointer;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 999;
+	margin: 20px 20px 0 0;
+	border: 0;
+	background: none;
+	font-size: 20px;
+	display: none;
+	transition: all 0.4s;
+	outline: none;
+	cursor: pointer;
 }
 #mobile-nav-toggle i {
-  color: #fff;
-}
+  	color: #fff;
+} 
 /*--------------------------------------------------------------
 # MOBILE NAV STYLING
 --------------------------------------------------------------*/
 #mobile-nav {
-  position: fixed;
-  top: 0;
-  padding-top: 18px;
-  bottom: 0;
-  z-index: 998;
-  background: rgba(52, 59, 64, 0.9);
-  left: -260px;
-  width: 260px;
-  overflow-y: auto;
-  transition: 0.4s;
+	position: fixed;
+	top: 0;
+	padding-top: 18px;
+	bottom: 0;
+	z-index: 998;
+	background: rgba(52, 59, 64, 0.9);
+	left: -260px;
+	width: 260px;
+	overflow-y: auto;
+	transition: 0.4s;
 }
 #mobile-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 #mobile-nav ul li {
-  position: relative;
+ 	 position: relative;
 }
 #mobile-nav ul li a {
-  color: #cdcdcd;
-  font-size: 18px;
-  overflow: hidden;
-  padding: 10px 22px 10px 15px;
-  position: relative;
-  text-decoration: none;
-  text-transform:capitalize;
-  width: 100%;
-  display: block;
-  outline: none;
-  font-weight:540;
+	color: #cdcdcd;
+	font-size: 18px;
+	overflow: hidden;
+	padding: 10px 22px 10px 15px;
+	position: relative;
+	text-decoration: none;
+	text-transform:capitalize;
+	width: 100%;
+	display: block;
+	outline: none;
+	font-weight: 540;
 }
 #mobile-nav ul li a:hover {
-  color: #2dc977;
+  	color: #2dc977;
 }
 #mobile-nav ul li li {
-   padding-left: 30px;
+   	padding-left: 30px;
 }
 #mobile-nav ul .menu-has-children i {
-  position: absolute;
-  right: 0;
-  z-index: 99;
-  padding: 15px;
-  cursor: pointer;
-  color: #fff;
+	position: absolute;
+	right: 0;
+	z-index: 99;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
 }
 #mobile-nav ul .menu-has-children i {
-  color: #2dc977;
+  	color: #2dc977;
 }
 #mobile-nav ul .menu-item-active {
-  color: #2dc977;
+  	color: #2dc977;
 }
 #mobile-body-overly {
-  width: 0;
-  height: 100%;
-  z-index: 997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(52, 59, 64, 0.9);
-  display: none;
-}
+	width: 0;
+	height: 100%;
+	z-index: 997;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: rgba(52, 59, 64, 0.9);
+	display: none;
+} 
 /*--------------------------------------------------------------
 # MOBILE NAV BODY CLASSES
 --------------------------------------------------------------*/
 body.mobile-nav-active {
-  overflow: hidden;
+  	overflow: hidden;
 }
 body.mobile-nav-active #mobile-nav {
-  left: 0;
+  	left: 0;
 }
 body.mobile-nav-active #mobile-nav-toggle {
-  color: #fff;
+  	color: #fff;
 }
 /*--------------------------------------------------------------
 # NAVIGATION
@@ -257,10 +255,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 .review{
 	background:#002b3f;
 	box-shadow:1px 1px 1px transparent;
-	margin-top:0px;
+	margin-bottom: 0px;
 	padding: 5px 5px;
 	z-index:-1;
-	height: 50px;
 	text-align: center;
 }
 .time{
@@ -271,41 +268,37 @@ body.mobile-nav-active #mobile-nav-toggle {
 	color:#fafafa;
 	font-size:15px;
 	padding-top:5px;
-	margin-left:2px;
 }
 .time i{
-	font-size:20px;
-	margin-right:10px;
-	color:#2dc977;
+	font-size: 20px;
+	padding-right: 10px;
+	color: #2dc977;
 }
 .links li{
-	padding-top:10px;
-	list-style:none;
-	margin-right:0px;
-	display:inline-block;
+	padding-top: 10px;
+	list-style: none;
+	display: inline-block;
 }
 .links li a{
 	color:#fff;
-	font-size:17px;
-	line-height:7px; 
-	text-decoration:none;
-	border-radius:50%;
-	padding:5px 8px;
-	z-index:-1;
-	transition:0.3s;	
-	transition-delay:0.1s;
+	font-size: 17px;
+	line-height: 7px; 
+	text-decoration: none;
+	border-radius: 50%;
+	padding: 10px 8px;
+	z-index: -1;
+	transition: 0.3s;	
+	transition-delay: 0.1s;
 }
 .links li a:hover{
 	color:#2dc977;
 }
 .book {
-	margin-top:10px;
-	justify-content:left;
+	padding-top: 10px;
 }
 .book a{
 	color:#cdcdcd;
-	font-size:15px;
-	margin-right:0px;
+	font-size: 15px;
 	text-decoration: none;
 }
 .book a:hover{
@@ -314,26 +307,29 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .book i{
 	font-size:20px;
-	margin-right:10px;
+	margin-right:5px;
 	color:#2dc977;
 }
 .carousel-inner{
-	height:750px;
-	width:100%;
+	width: 100%;
 	margin-bottom: 0px;
 } 
 .carousel-item img{
-	background-position:center center;
-	background-attachment:fixed;
-	background-size:cover;
-	max-height: 700px;
-	width:100%;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+.carousel-indicators{
+	margin-top: 0px;
 }
 .carousel-inner .carousel-caption{
 	text-align: left;
+	top: 35%;	
 }
-.carousel-caption h1{
-	margin-top: -420px;
+.carousel-inner .carousel-caption h1{
 	font-size: 38px;
 	font-weight: 600;
 	color:#fff;
@@ -344,7 +340,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 	color: #02d977;
 }
 .carousel-caption h2{
-	margin-top: -420px;
 	font-size: 38px;
 	font-weight: 600;
 	color:#fff;
@@ -355,19 +350,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 	color: #02d977;
 }
 .carousel-caption h3{
-	margin-top:20px;
-	font-size:16px;
+	margin-top: 20px;
+	font-size: 18px;
 	color: #cdcdcd;
 	font-weight: 500;
-	width: 50%;
+	width: 60%;
 	animation-delay: 1.5s;
 }
 .carousel-caption .btn{
 	background: transparent;
 	color:#fafafa;
-	font-size: 15px;	
+	font-size: 16px;	
 	margin-top: 20px;
-	width: 160px;
+	width: 165px;
 	margin-left: 5px;
 	padding: 15px 15px;
 	border: 2px solid #7f8284;
@@ -381,100 +376,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 .carousel-caption .button .active{
 	background:#006420;
 } 
+.carousel a{
+	margin-top: 0px;
+}
 /*--------------------------------------------------------------
 # HEADER
 --------------------------------------------------------------*/
-.header h1{
-	margin-top: 150px;
-	text-transform: uppercase;
-	font-size: 14px;
+.header p{
+	margin-top: 120px;
+	font-size: 25px;
+	color: #fff;
+	font-weight: 600;
+	text-align: center
 }
 .header{
 	background-image: url('images/header-img.webp');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height: 350px;
+	height: 200px;
 	width: auto;
-	text-align: center;
 	animation-delay: 1s;
-}
-.header h1{
-	font-weight: 600;
-	color:#fff;
-	font-size: 30px;
-}
-.header h2{
-	color:#cdcdcd;
-	font-size:20px;
-}
-/*--------------------------------------------------------------
-# SHOPPING BASKET
---------------------------------------------------------------*/
-.shoppingCart{
-	position: fixed;
-	left: 96%;
-	z-index: 9999;
-	cursor: pointer;
-	margin-top: 10px;
-}
-.shoppingCart i{
-	color: #cdcdcd;
-	font-size: 25px;
-}
-.shoppingCart p{
-	position: absolute;
-	top: -13px;
-	right: -15px;
-	font-size: 0.9rem;
-	background: #b11c1c;
-	padding: 2.5px 8.5px;
-	border-radius: 50%;
-	color: #cdcdcd;
-}
-.cartBox{
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba(0, 0, 0, 0.8);
-	z-index: 99999;
-	transition: 0.3s linear;
-	transform: scale(0);
-}
-.cartBox.active{
-	transform: scale(1);
-}
-.cartBox .cart{
-	position: relative;
-	height: 90%;
-	width: 100%;
-	background: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.cartBox .cart i{
-	position: absolute;
-	right: 0;
-	top: 0;
-	background: #f00;
-	padding: 10px 15px;
-	color: #fff;
-	cursor: pointer;
-}
-.cartBox .cart i:hover{
-	background: #ff00a5;
-}
-.cartBox .cart h1{
-	position: relative;
-	margin-top: 2%;
-	font-size: 2.8rem;
-	color: #017bf5;
 }
 /*--------------------------------------------------------------
 # BACK TO TOP
@@ -483,9 +405,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 	position: fixed;
 	font-size: 17px;
 	margin-top: 0px;
-	background:#002c42;
-	color:#fafafa;
-	padding: 5px 10px;
+	background: transparent;
+	border-radius: 100%;
+	border: 1px solid #006420;
+	color: #006420;
+	padding: 10px 15px;
 	bottom: 5px;
 	right: 15px;
 	cursor: pointer;
@@ -493,7 +417,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .back-to-top:hover{
 	color:#fafafa;
-	background: #2c3e40;
+	background: #006420;
 	transition: .4s;
 }
 /*--------------------------------------------------------------
@@ -509,26 +433,27 @@ nav .breadcrumb{
 }
 nav .breadcrumb i{
 	font-size: 17px;
-	color: #666;
+	color: #666	;
 	margin-top: 0px;
 	padding-right: 10px;
 }
 nav .breadcrumb li{
 	font-size: 17px;
 	font-weight: bold;
+	cursor: pointer;	
 }
 nav .breadcrumb li a{
-	color:#2dc997;
+	color:#006420;
 }
 nav .breadcrumb li a:hover{
-	color:#2dc997;
+	color:#001f3f;
 	text-decoration:none;
 }
 /*--------------------------------------------------------------
 # WHY CHOOSE US
 --------------------------------------------------------------*/
 .colum{
-	margin-top: -50px;
+	margin-top: 0px;
 	padding: 20px 0px;
 	display: inline-block;
 	background: #fff;
@@ -566,13 +491,13 @@ nav .breadcrumb li a:hover{
 # SECTION HEADINGS
 --------------------------------------------------------------*/
 .service h5{
-	margin-top: 0px;
+	margin-top: 150px;
 	font-family: 'Play', sans-serif;
 	font-size: 17px;
 	font-weight: 600;
-	color: #111;
+	color: #006420;
 	text-align: center;
-	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 .service hr{
 	margin-top: 5px;
@@ -582,279 +507,252 @@ nav .breadcrumb li a:hover{
 	width: 5%;
 }
 .service p{
-	
 	font-size: 22px;
 	text-align: center;
-	
-	text-transform: uppercase;	
-	margin-top: 150px; 
+	text-transform: capitalize;	
+	margin-top: 0px; 
 }
 /*--------------------------------------------------------------
-# SERVICES LIST
+# SECTION HEADINGS TWO
 --------------------------------------------------------------*/
-.service-page-one{
-	margin-top: 70px;
-}
-.single-service-style-one .top-box {
-	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
-	background: #c4c8ca;
-	padding: 25px 0;
-	margin-bottom: 30px;
-	margin-top: 50px;
-	position: relative;
-	text-align: center;
-	border-bottom-left-radius: 25%;
-	border-top-right-radius: 25%;
-}
-.single-service-style-one .top-box:before {
-	content: '';
-	width: 100%;
-	height: 100%;
-	background: #007654;
-	position: absolute;
-	top: 0;
-	left: 0;
-	-webkit-transform: scale(1, 0);
-			transform: scale(1, 0);
-	-webkit-transform-origin: bottom center;
-			transform-origin: bottom center;
-	transition: -webkit-transform .4s ease;
-	transition: transform .4s ease;
-	transition: transform .4s ease, -webkit-transform .4s ease;
-	border-bottom-left-radius: 25%;
-	border-top-right-radius: 25%;
-}
-.single-service-style-one .top-box .inner-content {
-	position: relative;
-}
-.single-service-style-one .top-box i {
-	display: block;
-	font-size: 40px;
-	color: #002c42;
-	transition: all .4s ease;
-	text-align: center;
-}
-.single-service-style-one .top-box h3 {
-	margin: 0;
+.service-two h5{
+	margin-top: 100px;
+	font-family: 'Play', sans-serif;
+	font-size: 17px;
 	font-weight: 600;
-	font-size: 20px;
-	margin-top: 10px;
+	color: #006420;
 	text-transform: uppercase;
 }
-.single-service-style-one .top-box h3 a {
-	transition: all .4s ease;
-	color: #002c42;
+.service-two h5 i{
+	padding-left: 10px;
+	font-size: 20px;
+	margin-right: 15px;
 }
-.single-service-style-one .image-block {
+.service-two p{
+	font-size: 22px;
+	text-transform: capitalize;	
+	margin-top: 0px;
+	padding-left: 10px;
+	color: #1b1b1b; 
+}
+/*--------------------------------------------------------------
+# HOMPAGE SERVICES / SERVICES
+--------------------------------------------------------------*/
+.service-page-three{
+	margin: 30px;
+}
+.single-service-style-three {
 	position: relative;
-	overflow: hidden;
-	border-top-left-radius: 10%;
-	border-bottom-right-radius: 10%;
 }
-.single-service-style-one .image-block:before {
+.single-service-style-three:before {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	content: "";
-	background: rgba(0, 29, 43, 0.7);
-	-webkit-transform: scaleX(0);
-			transform: scaleX(0);
-	z-index: 1;
-	transition: .5s ease;
-}
-.single-service-style-one .image-block > img {
-	width: 100%;
-	height: 300px;
-}
-.single-service-style-one .image-block .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: all 900ms ease;
-	transition-delay: .1s;
-	-webkit-transform: scale(0);
-			transform: scale(0);
-	z-index: 2;
-}
-.single-service-style-one .image-block .overlay .box {
-	display: table;
-	height: 100%;
-	width: 100%;
-}
-.single-service-style-one .image-block .overlay .box .content {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-}
-.single-service-style-one .image-block .overlay .box .content .dotted {
-	position: relative;
 	display: inline-block;
-	width: 5px;
-	height: 5px;
-	background: #fff;
-	border-radius: 50%;
-}
-.single-service-style-one .image-block .overlay .box .content .dotted:before {
-	position: absolute;
-	top: 0px;
-	left: -15px;
-	width: 5px;
-	height: 5px;
-	background: #fff;
-	border-radius: 50%;
+	left: 0;
+	bottom: 0px;
+	height: 2px;
+	width: 100%;
+	background-color: #006420;
 	content: "";
+	transition: -webkit-transform 0.4s ease;
+	transition: transform 0.4s ease;
+	transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1);
+	-webkit-transform-origin: right center;
+	transform-origin: right center;
+	z-index: 10;
 }
-.single-service-style-one .image-block .overlay .box .content .dotted:after {
-	position: absolute;
-	top: 0px;
-	right: -15px;
-	width: 5px;
-	height: 5px;
+.single-service-style-three .text-block {
 	background: #fff;
+	padding: 0 30px;
+	text-align: center;
+	padding-top: 60px;
+	position: relative;
+	padding-bottom: 60px;
+}
+.single-service-style-three .text-block .icon-block {
+	width: 120px;
+	height: 120px;
+	background: #f3f3f3;
+	display: inline-block;
 	border-radius: 50%;
-	content: "";
+	transition: all .4s ease;
 }
-.single-service-style-one:hover .top-box:before {
-	-webkit-transform-origin: top center;
-			transform-origin: top center;
-	-webkit-transform: scale(1, 1);
-			transform: scale(1, 1);
+.single-service-style-three .text-block .icon-block i {
+	font-size: 46px;
+    display: block;
+    line-height: 85px;
+	color: #002c42;
+	margin-top: 15px;
 }
-.single-service-style-one:hover .top-box i {
-	color: #fff;
+.single-service-style-three .text-block h3 {
+	margin: 0;
+	font-size: 24px;
+	margin-top: 30px;
 }
-.single-service-style-one:hover .top-box h3 a {
-	color: #fff;
+.single-service-style-three .text-block h3 a {
+	color: #001f3f;
+	transition: all .4s ease;
 }
-.single-service-style-one:hover .top-box h3 a:hover {
+.single-service-style-three .text-block h3 a:hover {
+	color: #006420;
+	text-decoration: none;
+}
+.single-service-style-three .text-block p {
+	margin: 0;
+	color: #7f8284;
+	margin-top: 25px;
+	width: 72%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.single-service-style-three .text-block .read-more {
+	color: #006420;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+	font-weight: 600;
+	margin-top: 30px;
+	transition: all .4s ease;
+}
+.single-service-style-three .text-block .read-more:hover {
 	color: #002c42;
 	text-decoration: none;
 }
-.single-service-style-one:hover .image-block:before {
-	-webkit-transform: scaleY(1);
-			transform: scaleY(1);
-	transition: .5s ease;
+.single-service-style-three:hover .icon-block {
+	background: #006420;
+	color: #002c42;
 }
-.single-service-style-one:hover .image-block .overlay {
-	-webkit-transform: scale(1);
-			transform: scale(1);
-	transition: all 900ms ease;
-	transition-delay: .5s;
+.single-service-style-three:hover .text-block .icon-block i{
+	color: #fff;
 }
-.service-style-one-carousel .owl-nav {
-	margin: 0;
+.single-service-style-three:hover:before {
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+}  
+.service-page-three .single-service-style-three {
+	margin-bottom: 30px;
+}  
+/*--------------------------------------------------------------
+# ABOUT US HOMEPAGE
+--------------------------------------------------------------*/
+.about img{
+	margin-top: 50px;
+	width: 100%;
+	height: 390px;
+	margin-left:auto;
+	margin-right:auto;
 }
-.service-style-one-carousel .owl-dots {
-	margin-top: 25px;
+.abt-info .active{
+	margin-top: 50px;
+	font-size: 16px;
+	padding: 5px 25px;
+	margin-bottom: 30px;
+	text-align: justify;
+	line-height: 28px;
 }
-.service-style-one-carousel .owl-dots .owl-dot span {
-	margin: 0;
-	width: 7px;
-	height: 7px;
-	background: #7f8284;
-	opacity: .5;
-	border-radius: 50%;
-	margin: 0 2.5px;
+.abt-info a{
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	border: 2px solid #006420;
+	border-radius: 100px;
+	padding: 10px 30px;
+	color: #006420;
+	width: 100%;
+	margin-left: 30px;
+	background: transparent;
 }
-.service-style-one-carousel .owl-dots .owl-dot.active span {
-	background: #002c42;
-	opacity: 1;
+.abt-info a:hover{
+	background: #006420;
+	color: #fff;
+	transition: .5s;
+	transition-delay: .1s;
+}
+.xtravite{
+	margin-top: 50px;
+}
+.xvite{
+	display: block;
+	margin-top: 0px;
+}
+.xvite p{
+	font-size: 17px;
+	color: #555;
+	margin-left: 35px;
+	font-weight: bold;
+}
+.xvite i{
+	display: flex;
+	float: left;
+	clear: both;
+	font-size: 15px;
+	color: #006420;
+	background: #fff;
+	border-radius: 100%;
+	padding: 5px 5px;
+	margin-right: 10px;
 }
 /*--------------------------------------------------------------
 # ABOUT US
 --------------------------------------------------------------*/
-.about-us .about{
+.page-header{
+	margin-top: 100px;
+	text-align: left;
+}
+.page-header h1{
+	font-size: 30px;
+	width: 90%;
+	font-weight: 600;
+	padding: 5px 15px;
+	margin-left: 10px;
+	font-family: 'Big Shoulders Text', cursive;
+}
+.about-us{
 	margin-top: 50px;
+}
+.about-us img{
+	width: auto;
+	height: 385px;
+	padding: 15px 15px;
+	float: right;
+	clear: both;
+}
+.about-us p{
 	font-size: 16px;
-	padding: 5px 25px;
-	margin-bottom: 50px;
+	padding: 5px 45px;
 	text-align: justify;
-	line-height: 28px;
-}
-.about-us .about-two{
-	margin-top: 50px;
-	font-size: 16px;
-	padding: 5px 25px;
-	margin-bottom: 50px;
-	text-align: justify;
-	line-height: 40px;
-}
-.abt{
-	margin-bottom: 50px;
-}
-.about-us a{
-	margin-left: 25px;
-	margin-top: 500px;
-	color: #fff;
-	font-size: 16px;
-	background: #006420;
-	padding: 20px 30px;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-weight: 550;
-	border-style: solid;
-	border-radius: 50px;
-	transition: .3s;
-}
-.about-us a:hover{
-	background: #001f3f;
-	transition: .3s;
-	color: #fff;
-	transition-delay: .1s;
-	text-decoration: none;
-}
-.people img{
-	margin-top: 50px;
-	margin-bottom: 20px;
+	line-height: 32px;
 	width: 100%;
-	height: 400px;
-	margin-left:auto;
-	margin-right:auto;
 }
-.people-one{
+.about-us .inner-box{
 	display: block;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top: 20px;
-}
-.define img{
-	margin-top:100px;
-	margin-bottom: 20px;
-	width: 80%;
-	height: 400px;
-	margin-left:auto;
-	margin-right:auto;
-}
-.people .inner-box{
-	display: block;
-	position: absolute;
 	background: #000;
 	border-bottom-left-radius: 15%;
 	border-top-right-radius: 15%;
 	border-color: #02dc97;
 	padding: 30px 25px;
-	margin-top: -100px;
-	margin-left: 70px;
+	margin-top: -160px;
 	text-align: center;
+	float: right;
+	clear: both;
 }
-.people .inner-box span{
-  color: #cedae2;
-  font-weight: 600;
-  font-size: 35px;
-  text-transform: uppercase;
-  line-height: 1em;
+.about-us .inner-box span{
+	color: #cedae2;
+	font-weight: 600;
+	font-size: 35px;
+	text-transform: uppercase;
+	line-height: 1em;
 }
-.people .inner-box h3{
+.about-us .inner-box h3{
 	margin: 0;
-  	color: #05ad7e;
-  	font-weight: 600;
+	color: #05ad7e;
+	font-weight: 600;
 	font-size: 16px;
 	letter-spacing: .5px;
-  	line-height: 1.5em;
+	line-height: 1.5em;
 }
 .card-cover{
 	display: grid;
@@ -1014,14 +912,12 @@ nav .breadcrumb li a:hover{
 	box-shadow: 3px 5px 5px;
 }
 .benefits-body h4{
-	font-size:18px;
+	font-size: 15px;
 	font-weight:600;
-	color:#222;
-	text-align: right;
 	margin-top: 80px;
-	margin-left: 60px;
+	margin-left: 0px;
 	margin-right: auto;	
-	width: 150px;
+	width: 220px;
 	color:#006420;
 }
 /*--------------------------------------------------------------
@@ -1113,65 +1009,128 @@ nav .breadcrumb li a:hover{
 }
 /*--------------------------------------------------------------
 # PROJECTS
---------------------------------------------------------------*/
-.project{
-	margin-top: 0px;
-	padding-bottom: 70px;
-	justify-content: center;
+--------------------------------------------------------------*/  
+.projects{
+	margin-top: 100px;
 }
-.project img{
-	width: 400px;
-	height: 430px;
+.portfolio .image-block {
 	position: relative;
-	display: inline-block;
-	-webkit-transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-o-transition: opacity .5s ease-in-out;
-	transition: opacity .5s ease-in-out;
+	overflow: hidden;
 }
-.project img:hover{
-	opacity: 0;
-}
-.project .card .img-top{
-	width: 400px;
-	height: 430px;
-	display: block;
+.portfolio .image-block:before {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 99;	
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: rgba(0, 29, 43, 0.7);
+	-webkit-transform: scaleX(0);
+			transform: scaleX(0);
+	z-index: 1;
+	transition: .5s ease;
 }
-.project #accordion .card-body{
-	font-size: 15px;
+.portfolio .image-block > img {
+	width: 100%;
+	height: 300px;
 }
-.project .card:hover .img-top{
-	opacity: 0;
-	display: inline; 
+.portfolio .image-block .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 900ms ease;
+	transition-delay: .1s;
+	-webkit-transform: scale(0);
+			transform: scale(0);
+	z-index: 2;
 }
-.project #accordion{
-	width: 400px;
-	height: 400px;
-	margin: 95px 10px;
-	justify-content: center;
+.portfolio:hover .image-block:before {
+	-webkit-transform: scaleY(1);
+			transform: scaleY(1);
+	transition: .5s ease;
 }
-.project button{
-	color:#777;
-	font-size: 15px;
-	font-weight:  600;
-	font-family: 'play', sans-serif;
-	text-decoration: none;
-	height: 40px;
+.portfolio:hover .image-block .overlay {
+	-webkit-transform: scale(1);
+			transform: scale(1);
+	transition: all 900ms ease;
+	transition-delay: .5s;
 }
-.project button i{
+.portfolio:hover .image-block .overlay .caption {
+	color: #fff;
+	font-size: 18px;
+	padding: 5px;
+	font-weight: 550;
+	text-transform: capitalize;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	background: rgba(31, 31, 37, 0.9);
+}
+/*--------------------------------------------------------------
+# PROJECT DETAILS
+--------------------------------------------------------------*/
+.project-details{
+	margin-top: 50px;
+	padding: 10px 20px;
+}
+.folio img{
+	width: 100%;
+	height: auto;
+	padding: 0 20px;
+}
+.client-details{
+	margin-top: 50px;
+	margin-bottom: 0px;
+	background: #fff center center no-repeat fixed;
+	box-shadow: 1px 1px 1px transparent;
+	background-size: cover;
+	background-position: center;
+	padding: 20px 20px;
+}
+.project-info p{
+	padding: 10px 5px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
 	margin-left: 20px;
-}
-.project button:hover{
 	color: #006420;
-	text-decoration:none;
+	font-family: 'Big Shoulders Text', cursive;
 }
-.project #accordion .card{
-	width: 402px;
-	font-size: 15px;
+.project-info p span{
+	font-size: 17px;
+	font-weight: normal;
+	color: #1b1b1b;
+	font-family: 'Poppins', sans-serif;
+}
+.tech-details{
+	margin-top: 50px;
+}
+.tech-details p{
+	line-height: 45px;
+	font-size: 15.5px;
+	text-align: justify;
+	padding: 20px 20px;
+}  
+.pro-details{
+	margin-top: 0px;
+}
+.brand-carousel-one{
+	width: 100%;
+	margin-top: 0px;
+}
+.brand-carousel-one .item{
+	display: inline-block;
+	width: 100%;
+	padding: 20px 5px;
+	overflow: hidden;
+	white-space: normal;
+}
+.brand-carousel-one .item img{
+	width: 100%;
+	height: 170px;
 }
 /*--------------------------------------------------------------
 # VIDEO
@@ -1229,15 +1188,16 @@ nav .breadcrumb li a:hover{
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 	margin: 20px 5px;
 }
-.single-team:hover{
+.single-team:hover {
 	transform: translateY(15px);
 }
-.single-team:hover:before{
+.single-team:hover:before {
 	opacity: 1;
 }
 .single-team:hover .team-text{
 	opacity: 1;
 	transform: translateY(15px);
+	text-decoration: none;
 }
 .single-team:before{
 	content: '';
@@ -1259,7 +1219,7 @@ nav .breadcrumb li a:hover{
 	left: 0;
 	position: absolute;
 }
-.single-team .team-text{
+.single-team .team-text {
 	position: relative;
 	z-index: 5;
 	color:#fff;
@@ -1267,22 +1227,16 @@ nav .breadcrumb li a:hover{
 	transform: translateY(60px);
 	transition: .5s;
 }
-.team-text{
-	margin: 0px;
-	font-size: 15px;
-	letter-spacing: 2px;
-}
-.team-text h5{
-	text-transform: uppercase;
+.single-team .team-text h5{
+	text-transform: capitalize;
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 24px;
 	color:#2dc977;
 	margin-left: 13px;
 }
-.team-text p{
-	letter-spacing: 1px;
-	font-size: 15px;
-	margin-top: 5px;
+.single-team .team-text p{
+	font-size: 17px;
+	margin-top: 0px;
 	margin-left: 15px;
 	color: #fff;
 }
@@ -1482,7 +1436,6 @@ nav .breadcrumb li a:hover{
     grid-row: 3/4;
     animation: fade 0.3s;
 }
-
 /*--------------------------------------------------------------
 # ROW COUNTER
 --------------------------------------------------------------*/
@@ -1503,28 +1456,27 @@ nav .breadcrumb li a:hover{
 	text-align: center;
 }
 .counter-heading h5{
-	margin-top: 0px;
+	margin-top: 70px;
 	font-family: 'Play', sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	color: #fff;
 	text-align: center;
-	letter-spacing: 2px;
-	
+	text-transform: uppercase;
 }
 .counter-heading hr{
 	margin-top:5px;
 	margin-bottom:15px;
 	border-top:4px solid #006420; 
-	border-radius:15px;
+	border-radius: 15px;
 	width:5%;
 }
 .counter-heading p{
-	margin-top :70px;
+	margin-top :0px;
 	font-size: 22px;
 	color: #fff;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 .counter span{
 	color:#cdcdcd;
@@ -1587,7 +1539,7 @@ nav .breadcrumb li a:hover{
 	line-height: 5px;
 	color:#fafafa;	
 	margin: 20px 20px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 .services ul{
 	margin-top: 30px;
@@ -1706,11 +1658,45 @@ nav .breadcrumb li a:hover{
 	color:#cdcdcd;
 }
 /*--------------------------------------------------------------
-# PRICING
+# HOMEPAGE PRICING / PRICING PAGE
 --------------------------------------------------------------*/
+.pricing{
+	padding: 0 40px;
+	margin-top: 50px;
+}
+.pricing p{
+	font-size: 16px;
+	font-weight: 550;
+	padding-left: 50px;
+}
+.pricing a{
+	margin: 15px 0px; 
+	padding: 10px 30px;
+	border: 2px solid #001f3f;
+	border-radius: 10px;
+	color: #001f3f; 
+	font-size: 15px; 
+	font-weight: 550;
+}
+.pricing a:hover{
+	text-decoration: none;
+	background: #001f3f;
+	color: #fff;
+	transition: all ease 0.3s;
+}
+.pricing-header{
+	margin-top: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Play', sans-serif;
+	font-size: 30px;
+}
 .pricing-table{
 	max-width: 1200px;
-	margin-top: 70px;
+	margin-top: 50px;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
@@ -1723,31 +1709,28 @@ nav .breadcrumb li a:hover{
 	margin-top: 30px;
 	font-weight: 550;
 }
-.col{
-	flex: 25%;
-	padding: 20px;
-	width: 320px;
-	box-sizing: border-box;
-}
+
 .table{
-	background: rgba(31, 31, 37, 1.5);
+	background: none;
 	padding: 40px 5px;
 	position: relative;
 	overflow: hidden;
-	box-shadow: 2px 2px 2px #002c42;	
+	box-shadow: 2px 2px 2px #006420;	
+	border: 1.5px solid #001f3f;
+	border-radius: 5px;
 }
 .table:hover{
 	transform:scale(1.05);
 	text-decoration: none;
-	box-shadow:2px 2px 12px rgba(47, 47, 47, 0.40);
-	transition:all ease 0.3s;
+	box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.5);
+	transition: all ease 0.3s;
 }	
 .table h6{
 	text-transform: uppercase;
 	font-family: 'Play', sans-serif;
 	font-size: 18px;
 	font-weight: 550;
-	color: #2dc977;
+	color: #006420;
 }
 .table ul{
 	margin: 0;
@@ -1759,252 +1742,29 @@ nav .breadcrumb li a:hover{
 	font-weight: 550;
 	margin-bottom: 0px;
 	margin-top: 10px;
-	color: #318aa5;
+	color: #006420;
 	font-family: 'Play', sans-serif;
 }
 .table ul li{
 	list-style: none;
 	font-size: 15px;
 	text-align: justify center;
-	color:#cdcdcd;
+	color:#1b1b1b;
 }
 .prices{
-	color: #cdcdcd;
+	color: #001f3f;
 	font-size: 24px;
 	margin-bottom: 20px;
+	font-weight: 600;
 }
 .prices span{
-	color: #cdcdcd;
+	color: #1b1b1b;
 	display: block;
 	font-size: 15px;
 	margin-top: 20px;
+	font-weight: normal;
 	text-transform: capitalize;
 }
-.table button{
-	margin-top: 20px;
-	color: #fff;
-	width: 70%;
-	border: 1px solid #cdcdcd;
-	border-radius: 10%;
-	padding: 8px 15px;
-}
-.table button:hover{
-	margin-top: 20px;
-	color: #fff;
-	width: 70%;
-	border: 1px solid #cdcdcd;
-	border-radius: 10%;
-	padding: 8px 15px;
-	background: #002c42;
-	transition: 0.3s;
-}
-.info{
-	margin-top: 50px;
-}
-.info p{
-	font-size: 16px;
-	text-align: center;
-}
-/*--------------------------------------------------------------
-# SHOPPING/CART
---------------------------------------------------------------*/
-.swiper-slide{
-	top: 140px;
-	width: 250px;
-	margin-bottom: 100px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.slider-box{
-	margin:0px auto 50px auto;
-	height: 325px;
-	width: 250px;
-	position :relative;
-	background-color:#FFFFFF;
-	border-radius: 5px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	border: 1px solid rgba(187,187,187,0.40);			
-}
-.slider-box a{
-	text-decoration: none;
-	text-align: center;
-}
-.slider-box a:hover{
-	text-decoration: none;
-	color: #001f3f;
-	transition: .3s;
-}
-.img-box{
-	height: 160px;
-}
-.img-box img{
-	height: auto;
-	max-width: 95%;
-	max-height: 95%;
-}
-.time{
-	position:absolute;
-	top:0px;
-	right:20px;
-	color:#002d97;
-}
-.shop-item-title{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	box-sizing: border-box;
-	font-size: 13px;
-	line-height: 35px;								
-}
-.shop-item-price{
-	color:#2dc977;
-	font-weight: bold;
-	line-height:20px;
-	font-size: 16px;
-	margin-bottom: 20px;
-}
-.cart{
-	position: absolute;
-	bottom: 0px;
-	height: 45px;
-	background-color:#002b3f;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.cart a{
-	color:#fff;
-	cursor: pointer;
-}
-.cart a:hover{
-	color:#fff;
-	text-decoration:none;
-}
-.cart:hover{
-	transform:scale(1.1);
-	background-color:#002c42;
-	box-shadow:2px 2px 12px rgba(47,47,47,0.40);
-	transition:all ease 0.1s;
-	color:#fff;
-}
-.slider-box:hover{
-	box-shadow:2px 2px 12px rgba(47,47,47,0.40);
-}
-.slider-box:hover .img-box img{
-	transform:scale(1.07);
-	transition:all ease 0.3s;
-}	
-/*--------------------------------------------------------------
-# PRODUCT DETAILS
---------------------------------------------------------------*/			
-.product{
-	margin-top: 40px;
-	justify-content: center;
-	align-items: center;
-}
-.product h6{
-	margin-top: 40px;
-	font-size: 20px;
-	padding: 0px 50px;
-	text-transform: uppercase;
-	font-family: 'Play', sans-serif;
-}
-.product .list-group{
-	width: 100%;
-	padding: 30px 10px;
-}
-
-.product ul{
-	margin-top: 0px;
-}
-.product ul li {
-	font-size:16px;
-	list-style-type:square;
-	color:#222;
-	line-height:45px;
-	text-align:justify;
-	margin-left:20px;
-}
-.product .list-group-item{
-	height: 80px;
-}
-.product .list-group .list-group-item i{
-	margin-right: 10px;
-}
-.product .list-group a{
-	color:#666;
-	padding: 2px 0px;
-}
-.product .list-group a:hover{
-	color:#66cdaa;
-	text-decoration:none;
-}
-.product-design{
-	margin-top: 100px;
-	padding: 50px 20px;
-}
-.product-design .product-img{
-	height: 120%;
-	width: 100%;
-}
-.product-details h2{
-	font-size: 28px;
-	color: #b43d3d;
-	text-transform: uppercase;
-	font-family: 'play', sans-serif; 
-}
-.product-details h4{
-	font-size: 20px;
-	color: #2dc977;
-	margin-top: 30px;
-	font-weight: bold;
-}
-.product-details p{
-	font-size: 15px;
-	color: #222;
-	margin-top: 15px;
-	line-height: 25px;
-	width: 100%;
-	text-align: justify;
-}
-.product-details ul li{
-	font-size: 15px;
-	color: #222;
-	margin-top: 15px;
-	line-height: 25px;
-}
-.cart-click .btn{
-	background:#006420;
-	color: #fff;
-	width: 40%;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	border-radius: 0px;
-	padding: 15px 10px;
-	margin-top: 50px;
-	margin-left: 20px;
-	font-size: 15px;
-}
-.cart-click .btn:hover{
-	transform:scale(1.1);
-	background-color:#001f3f;
-	text-decoration: none;
-	color: #fff;
-	box-shadow:2px 2px 12px rgba(47,47,47,0.40);
-	transition:all ease 0.1s;
-}	
-/*--------------------------------------------------------------
-# CART PAGE
---------------------------------------------------------------*/
-
-
 /*--------------------------------------------------------------
 # FREQUENTLY ASKED QUESTIONS
 --------------------------------------------------------------*/
@@ -2041,43 +1801,54 @@ nav .breadcrumb li a:hover{
 --------------------------------------------------------------*/
 .address{ 
 	margin-top:100px; 
-} 
-.address p{
-	font-size: 18px;
-	color:#000;
-	text-align: justify;
-	width: 100%;
-	padding: 12px 5px;
+	text-align: center;
 }
-.address a{
-	font-size: 18px;
-	color: #000;
-	text-align: justify;
-	width: 100%;
-	padding: 12px 5px;
-	text-decoration: none;
-}
-.address a:hover{
-	text-decoration: none;
-	color: #2dc997;
-}
-.address h4{
+.add h6{
 	font-family: 'play', sans-serif;
-	font-size: 40px;
-	width: 82%;
-	text-align: left;
+	margin-top: 15px;
+	font-size: 16px;
+	font-weight: 600;
+} 
+.add p{
+	font-size: 15px;
+	color:#000;
+	width: 100%;
+	padding: 2.5px 5px;
 }
-.address i{
+.add a{
+	font-size: 15px;
+	color: #000;
+	width: 100%;
+	padding: 2.5px 5px;
+	text-decoration: none;
+}
+.add a:hover{
+	text-decoration: none;
+	color: #fff;
+	background: #001f3f;
+}
+.add i{
 	font-size: 25px;
-	color: #006420;
-	float: left;
-	margin-top: 0px;
-	margin-bottom: 20px;
-	margin-right: 20px;
-	line-height: 35px;
+	color: #001f3f;
+	margin-top: 50px;
+	background: transparent;
+	border: 1px solid #001f3f;
+	padding: 10px 13px;
+	border-radius: 5px;
 }
-.address .map embed{
+.content{
 	margin-top: 0px;
+}
+.contact h4{
+	font-family: 'play', sans-serif;
+	margin-bottom: 0px; 
+	margin-top: 150px;
+	font-size: 35px;
+	width: 90%;
+}
+.content .map embed{
+	margin-top: 30px;
+	padding: 10px 0;
 	width: 100%;
 }
 .form-row .form-control{
@@ -2088,11 +1859,8 @@ nav .breadcrumb li a:hover{
 	font-size: 15px;
 }
 #contact-form{
-	margin-top: 100px;
+	margin-top: 0px;
 	width: 100%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 #contact-form input{
 	width: 100%;
@@ -2118,32 +1886,25 @@ nav .breadcrumb li a:hover{
 	margin: 15px 0px; 
 	padding: 10px 10px;
 	border: 2px solid #006420;
-	border-radius: 100px;
+	border-radius: 10px;
 	color: #006420; 
 	font-size: 15px; 
-	font-weight: 550; 
+	font-weight: 550;
 }
 #contact-form button:hover{
 	background: #001f3f; 
 	color: #cdcdcd; 
 	transition: .3s;
 }
-#contact-form p{
+.content p{
 	font-size: 15px;
 	margin-top: 30px;
 	width: 100%;
+	text-align: center;
 }
-#contact-form p strong{
+.content p strong{
 	text-decoration: underline;
 	color: #b11c1c;
-}
-#inputState{
-	margin-top: 40px;
-	width: 100%;
-	height: 55px;
-	border-radius: 0px;
-	border: 1px solid #666;
-	font-size: 15px;
 }
 .thank-you{
 	margin-top: 50px;
@@ -2300,151 +2061,19 @@ nav .breadcrumb li a:hover{
 	width: 100%;
 } 
 /*--------------------------------------------------------------
-# SOLAR/ELECTRICAL SERVICES
---------------------------------------------------------------*/
-.solar{
-	margin-top: 20px;
-}
-.single-about-style-two {
-	padding-left: 40px;
-	background: #fff;
-	border-top-right-radius: 103px;
-	border-bottom-right-radius: 103px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	display: inline-block;
-	margin: 20px 30px;
-  }
-  .single-about-style-two + .single-about-style-two {
-	margin-top: 10px;
-  }
-  .single-about-style-two .image-block {
-	margin-top: 7.5px;
-	float: right;
-	width: 150px;
-	overflow: hidden;
-	border-radius: 50%;
-  }
-  .single-about-style-two .image-block > img {
-	width: 100%;
-	height: 150px;
-  }
-  .single-about-style-two .text-block {
-	padding: 30px 0;
-	width: calc(100% - 255px);
-	float: left;
-}
-.single-about-style-two .text-block h3 {
-	margin: 0;
-	font-size: 20px;
-	font-weight: 600;
-	margin-bottom: 15px;
-}
-.single-about-style-two .text-block h3 a {
-	color: #002c42;
-	transition: all .4s ease;
-}
-.single-about-style-two .text-block h3 a:hover {
-	color: #006420;
-}
-.single-about-style-two .text-block p {
-	margin: 0;
-	font-size: 15px;
-	width: 130%;
-	text-align: justify;
-}
-.single-about-style-two .image-block {
-	position: relative;
-	overflow: hidden;
-}
-.single-about-style-two .image-block:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	content: "";
-	border-radius: 50%;
-	background: rgba(0, 29, 43, 0.7);
-	-webkit-transform: scale(0);
-			transform: scale(0);
-	z-index: 1;
-	transition: .5s ease;
-}
-.single-about-style-two .image-block > img {
-	width: 100%;
-}
-.single-about-style-two .image-block .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: all 900ms ease;
-	transition-delay: .1s;
-	-webkit-transform: scale(0);
-			transform: scale(0);
-	z-index: 2;
-  }
-  .single-about-style-two .image-block .overlay .box {
-	display: table;
-	height: 100%;
-	width: 100%;
-  }
-  .single-about-style-two .image-block .overlay .box .content {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-  }
-  .single-about-style-two .image-block .overlay .box .content .dotted {
-	position: relative;
-	display: inline-block;
-	width: 5px;
-	height: 5px;
-	background: #fff;
-	border-radius: 50%;
-}
-.single-about-style-two .image-block .overlay .box .content .dotted:before {
-	position: absolute;
-	top: 0px;
-	left: -15px;
-	width: 5px;
-	height: 5px;
-	background: #fff;
-	border-radius: 50%;
-	content: "";
-}
-.single-about-style-two .image-block .overlay .box .content .dotted:after {
-	position: absolute;
-	top: 0px;
-	right: -15px;
-	width: 5px;
-	height: 5px;
-	background: #fff;
-	border-radius: 50%;
-	content: "";
-}
-.single-about-style-two:hover .image-block:before {
-	-webkit-transform: scale(1);
-			transform: scale(1);
-	transition: .5s ease;
-  }
-.single-about-style-two:hover .image-block .overlay {
-	-webkit-transform: scale(1);
-			transform: scale(1);
-	transition: all 900ms ease;
-	transition-delay: .5s;
-}
-
-/*--------------------------------------------------------------
 # CLIENTS LOGO
 --------------------------------------------------------------*/
 .brand-carousel-one {
-	padding: 0;
+	margin-top: 100px;
+	padding: 5px;
+}
+.brand-carousel-one img{
+	width: 100%;
+	height: auto;
+	padding: 0px 20px;
 }
 .brand-carousel-one .owl-nav {
-	margin: 0;
+	padding: 10px;
 }
 /*--------------------------------------------------------------
 # HOMPAGE TESTIMONIAL
@@ -2516,6 +2145,7 @@ nav .breadcrumb li a:hover{
   display: block;
   color: #b1bec5;
   font-size: 15px;
+  font-weight: 500;
   line-height: 1em;
 }
 .single-testimonial-style-three .client-block {
@@ -2529,12 +2159,13 @@ nav .breadcrumb li a:hover{
 }
 .single-testimonial-style-three .client-block .image-block {
   overflow: hidden;
-  width: 80px;
+  width: 90px;
   border-radius: 50%;
 }
 .single-testimonial-style-three .client-block .image-block > img {
+  margin: 0;
   width: 100%;
-  height: 80px; 
+  height: auto;
 }
 .single-testimonial-style-three .client-block .text-block {
   padding-left: 20px;
@@ -2564,85 +2195,82 @@ nav .breadcrumb li a:hover{
 /*--------------------------------------------------------------
 # TESTIMONIAL SECTION
 --------------------------------------------------------------*/
+.testimonials{
+	margin-top: 100px;
+}
 .single-testimonial-style-one {
-  position: relative;
-  text-align: center;
-  margin-top: 150px;
+	position: relative;
+	text-align: center;
+	margin-top: 50px;
 }
 .single-testimonial-style-one .image-block {
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
 }
 .single-testimonial-style-one .image-block i {
-  width: 40px;
-  height: 40px;
-  background: #006420;
-  padding-top:10px;
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  top: 30%;
-  right: 0;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+	width: 40px;
+	height: 40px;
+	background: #006420;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-size: 11px;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	top: 35%;
+	right: 37%;
+	-webkit-transform: translate(50%, -50%);
+			transform: translate(50%, -50%);
 }
 .single-testimonial-style-one .image-block .inner-block {
-  overflow: hidden;
-  width: 95px;
-  border-radius: 100%;
-  margin-left: auto;
-  margin-right: auto;
+	overflow: hidden;
+	width: 90px;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .single-testimonial-style-one .image-block .inner-block > img {
-  width: 100%;
-  height:100%;
+	margin: 0;
+	width: 100%;
+	height: auto;
 }
 .single-testimonial-style-one .text-block {
-  background: none;
-  padding: 0 5px;
-  padding-top: 70px;
-  padding-bottom: 60px;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #414141;
-  border-radius: 15px;
+	background: #fff;
+	padding: 0 50px;
+	padding-top: 70px;
+	padding-bottom: 60px;
 }
-.single-testimonial-style-one .text-block h3,
+.single-testimonial-style-one .text-block h6,
 .single-testimonial-style-one .text-block p {
   margin: 0;
 }
-.single-testimonial-style-one .text-block h3 {
-  color: #002c42;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1em;
-  margin-bottom: 10px;
+.single-testimonial-style-one .text-block h6 {
+	color: #002c42;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1em;
+	margin-bottom: 10px;
 }
 .single-testimonial-style-one .text-block span {
-  font-size: 14px;
-  font-weight: 550;
-  display: block;
-  line-height: 1em;
-  color:#006420;
+	font-size: 16px;
+	font-weight: 500;
+	display: block;
+	line-height: 1em;
+	color:#006420;
 }
 .single-testimonial-style-one .text-block p {
-  font-size: 16px;
-  width: 100%;
-  line-height: 35px;
-  color: #000;
-  margin: 20px 0px 25px 0px;
-  text-align: justify;
-  padding: 0 20px; 
+	font-size: 17px;
+	line-height: 36px;
+	color: #7f8284;
+	font-weight: 500;
+	margin: 36px 0 0;
 }
-
 /*--------------------------------------------------------------
 # 403 404 500 ERROR PAGES
 --------------------------------------------------------------*/
@@ -3141,43 +2769,6 @@ nav .pagination a:hover{
 }
 
 /*--------------------------------------------------------------
-# COMPANY PROFILE
---------------------------------------------------------------*/
-.company-profile h4{ 
-	margin-top: 100px;
-	font-weight: bold;
-	font-size: 25px;
-}
-.company-profile h5{ 
-	margin-top: 50px;
-	font-weight: bold;
-	font-size: 25px;
-}
-.company-profile h6{
-	margin-top: 30px;
-	font-weight: 700px;
-	font-size: 25px;
-	font-family: 'Big Shoulders Text', cursive;
-}
-.company-profile p{
-	text-align: justify;
-	font-size: 16px;
-	line-height: 28px;
-}
-.company-profile ul{
-	margin-top: 20px;
-}
-.company-profile li{ 
-	font-size: 16px;
-	line-height: 28px;
-	list-style-type: square;
-}
-.company-profile img{
-	width: 85%;
-	height: 400px;
-	margin: 30px  0px;
-}
-/*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		1199px
 --------------------------------------------------------------*/
 @media only screen and (max-width: 1199px) {
@@ -3207,36 +2798,7 @@ nav .pagination a:hover{
 		font-size: 16px;
 	}
 	.service p{
-		margin-top: 70px;
 		font-size: 20px;
-	}
-	.carousel a{
-		margin-top: -150px;
-		font-size: 25px;
-	}
-	.carousel-item img{
-		height: 700px;
-		width: 100%;
-	}
-	.carousel-caption h1{
-		margin-top:-440px;
-		font-size: 28px;
-		width:100%;
-	}
-	.carousel-caption h2{
-		margin-top:-440px;
-		font-size: 28px;
-		width:100%;
-	}
-	.carousel-caption h3{
-		font-size: 15px;
-		width: 70%;
-		text-align: left;
-		margin-top: 20px;
-	}
-	.carousel-caption .btn{
-		width: 150px;
-		font-size: 15px;
 	}
 	.card-cover .card{
 		width: 95%;
@@ -3258,10 +2820,10 @@ nav .pagination a:hover{
 		font-size: 25px;
 	}
 	.counter-heading h5{
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.counter-heading p{
-		font-size: 16px;
+		font-size: 17px;
 	}
 	.note{
 		font-size:15px;
@@ -3271,39 +2833,6 @@ nav .pagination a:hover{
 	}
 	.services p{
 		font-size: 15px;
-	}
-	.about-us .people img{
-		width: 100%;
-		height: 370px;	
-		padding: 0;
-	}
-	.about-us .about{
-		width: 95%;
-		padding: 0;
-		font-size: 16px;
-		line-height: 30px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.people p{
-		width: 34%; 
-		height: 150px;
-	}
-	.people span{
-		font-size: 27px;
-		color:#fff;
-		font-weight: 550;
-		margin-top: -150px;
-		margin-left: 5px;
-		font-family: 'Big Shoulders Text', cursive;
-	}
-	.people .watts-body{
-		font-size: 15px;
-		font-weight:550;
-		color: #fff;
-		margin-left: 5px;
-		font-family: 'Poppins', sans-serif;
 	}
 	.testimonials-style-three-carousel-wrapper{
 		width: 100%;
@@ -3324,21 +2853,8 @@ nav .pagination a:hover{
 	}
 	.single-testimonial-style-three .client-block .image-block > img {
 		width: 100%;
-		height: 80px;
+		height: auto;
 	}
-	.single-service-style-one .image-block{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 100%;
-	}
-	.single-service-style-one .top-box{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 100%;
-	}
-	
 	.benefits-body{
 		padding: 20px 5px;
 		width: 23.5%;
@@ -3419,30 +2935,11 @@ nav .pagination a:hover{
 		margin-top: 30px;
 		margin-left: 20px;
 	}
-	.shoppingCart{
-		margin-top: 5px;
-	}
-	.pricing-table .table{
-		width: 100%;	
+	.priciing-table .table{
+		width: 100%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	.project #accordion{
-		width: 370px;
-		margin: 120px 30px;
-		justify-content: center;
-	}
-	.project #accordion .card{
-		width: 100%;
-	}
-	.project .card img{
-		width: 100%;
-		height: 400px;
-	}
-	.project .card .img-top{
-		width: 100%;
-		height: 400px;
 	}
 }
 /*--------------------------------------------------------------
@@ -3458,7 +2955,7 @@ nav .pagination a:hover{
 	.links li a{
 		font-size: 15px;
 	}
-	.book p{
+	.book a{
 		font-size: 15px;
 	}
 	#header #logo img {
@@ -3466,8 +2963,27 @@ nav .pagination a:hover{
 	}
 	.nav-menu a{
 		margin-top: 0px;
-		margin-bottom: -5px;
+		margin-bottom: -45px;
 		padding-top: 0px; 
+	}
+	.carousel-inner .carousel-caption h1{
+		font-size: 24px;
+		width: 110%;
+	}
+	.carousel-caption h2{
+		font-size: 24px;
+		width: 100%;
+	}
+	.carousel-caption h3{
+		font-size: 16px;
+		width: 100%;
+		text-align: left;
+		margin-top: 20px;
+	}
+	.carousel-caption .btn{
+		width: 150px;
+		font-size: 15px;
+		padding: 10px 10px;
 	}
 	.header h1{
 		font-size: 22px;
@@ -3479,48 +2995,13 @@ nav .pagination a:hover{
 		font-size: 16px;
 	}
 	.service p{
-		margin-top: 70px;
 		font-size: 20px;
 	}
 	.counter-heading h5{
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.counter-heading p{
-		font-size: 16px;
-	}
-	.carousel-item img{
-		background-position:center center;
-		background-attachment:fixed;
-		background-size:cover;
-		height: 500px;
-		width:100%;
-	}
-	.carousel a{
-		margin-top: -230px;
-		font-size: 25px;
-	}
-	.carousel-caption h1{
-		margin-top: -260px;
-		font-size: 22px;
-		width: 110%;
-	}
-	.carousel-caption h2{
-		margin-top: -260px;
-		font-size: 22px;
-		width: 110%;
-	}
-	.carousel-caption h3{
-		font-size: 15px;
-		width: 70%;
-		text-align: left;
-		margin-top: 20px;
-	}
-	.carousel-caption .btn{
-		width: 150px;
-		font-size: 15px;
-	}
-	.colum{
-		margin-top: -250px;
+		font-size: 17px;
 	}
 	.colum-body{
 		display: inline-block;
@@ -3536,44 +3017,53 @@ nav .pagination a:hover{
 		width:100%;
 		justify-content: center;
 	}
-	.about-us .people img{
+	.about img{
 		width: 100%;
-		height: auto;	
+		height: 90%;
 		padding: 0;
 	}
-	.about-us .about{
-		width: 95%;
-		padding: 0;
-		font-size: 15px;
-		line-height: 30px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.about-us .about-two{
-		width: 70%;
-		padding: 0;
+	.about .active{
+		width: 100%;
 		font-size: 15px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 0px;
-		line-height: 40px;
+		margin-top: 35px;
+		line-height: 25px;
+		padding: 0;
 	}
-	.about-us a{
+	.about a{
 		width: 100%;
-		margin-left: 90px;
+		margin-left: 20px;
 		margin-right: auto;
+	}
+	.about-us p{
+		width: 100%;
+		padding: 5px;
 		font-size: 15px;
+		line-height: 25px;
 	}
-	.people .inner-box{
-		margin-left: 80px;
-		padding: 25px 20px;
+	.about-us img{
+		width: 55%;
+		height: 100%;
+		padding: 10px;
 	}
-	.people .inner-box span{
-	  	font-size: 25px;
+	.about-us .inner-box{
+		margin-top: -125px;
+		padding: 25px 15px;
 	}
-	.people .inner-box h3{
-		font-size: 15.5px;
+	.about-us .inner-box span{
+		font-size: 16px;
+	}
+	.about-us .inner-box h3{
+		font-size: 14px;
+	}
+	.xvite p{
+		font-size: 13px;
+		margin-left: 0px;
+	}
+	.xvite i{
+		font-size: 15px;
+		margin-left: 0px;
 	}
 	.benefits-body{
 		padding: 20px 5px;
@@ -3583,25 +3073,24 @@ nav .pagination a:hover{
 	.benefits-body img{
 		margin-left: -140px;
 	}
-	.address .map{
+	.contact h4{
+		margin-left: 30px;
+	}
+	.content #contact-form{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.address .add h4{
-		font-size: 30px;
+	.content .map{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.single-service-style-one .image-block{
+	.address .add{
+		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-		width: 100%;
-	}
-	.single-service-style-one .top-box{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 100%;
 	}
 	.working p{
 		font-size: 15px;
@@ -3609,22 +3098,6 @@ nav .pagination a:hover{
 	}
 	.working h5{
 		font-size: 25px;
-	}
-	.project #accordion{
-		width: 350px;
-		margin: 120px 10px;
-		justify-content: center;
-	}
-	.project #accordion .card{
-		width: 100%;
-	}
-	.project .card img{
-		width: 100%;
-		height: 400px;
-	}
-	.project .card .img-top{
-		width: 100%;
-		height: 400px;
 	}
 	.light h4{
 		width: 95%;
@@ -3760,7 +3233,11 @@ nav .pagination a:hover{
 	}
 	.single-testimonial-style-three .client-block .image-block > img {
 		width: 100%;
-		height: 80px;
+		height: auto;
+	}
+	.single-testimonial-style-one .image-block i {
+		top: 30%;
+		right: 37%;
 	}
 	.row-counters .counter{
 		width: 100%;
@@ -3774,19 +3251,6 @@ nav .pagination a:hover{
 		margin-right: auto;
 		display: inline-block;
 		height: 400px;
-	}
-	.about{
-		font-size: 15px;
-	}
-	.about a{
-		font-size: 15px;
-	}
-	.people img{
-		width: 80%;
-		height: auto;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	.FAQS h3{
 		font-size:30px;
@@ -3889,24 +3353,9 @@ nav .pagination a:hover{
 		padding: 0px 20px;
 		margin-top: 100px;
 	}
-	.company-profile img{
-		width: 100%;
-		height: auto;
-	}
 	.privacy p{
 		font-size:16px;
 		width: 100%;
-	}
-	.single-service-style-two .image-block {
-        display: table-cell;
-	}
-	.solar .single-about-style-two {
-		text-align: center;
-		padding: 20px 40px;
-		display: inline-block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 49%;
 	}
 	.choose1{
 		left: -5%;
@@ -3918,77 +3367,53 @@ nav .pagination a:hover{
 		width: 60%;
 		margin-top: 210px;
 	}
-	.shoppingCart{
-		margin-top: 45px;
-		margin-left: -12px;
-	}
-	.product .list-group-item{	
-		width: 50%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.product-details h4{
-		width: 100%;
-	}
-	.product-details p{
-		width: 95%;
-		text-align: justify;
-	}
-	.product-details ul li{
-		width: 100%;
-	}
-	.slider-box{
-		display: flex;
-		margin-left: 10%;
-		margin-right: auto;
-	}
-	.product-details h2{
-		width: 100%;
-		font-size: 24px;
-	}
-	.product-design .shop-item-image{
-		height: 100%;
-		width: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.pricing-table .table{
-		width: 90%;	
+		width: 100%;	
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
 }
-
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		767px
 --------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {
 	.review{
-		height: 200px;
-	}
-	.time p{
-		font-size: 15px;
-	}
-	.links li a{
-		font-size: 15px;
-	}
-	.book p{
-		margin-top: -15px;
-		font-size: 15px;
+		display: none;
 	}
 	#header #logo img {
-		width: 75%;
-		max-height: 45px;
-		margin-left: 10px;
+		width: 100%;
+		max-height: 55px;
+		margin-left: 5px;
 	}
    #nav-menu-container {
 		display: none;
 	}
 	#mobile-nav-toggle {
 		display: block;
+	}
+	.carousel-item img{
+		width: 100%;
+		height: 95vh;
+	}
+	.carousel-inner .carousel-caption h1{
+		margin-top: 10px;
+		font-size: 22px;
+		width: 100%;
+	}
+	.carousel-caption h2{
+		margin-top: 10px;
+		font-size: 22px;
+		width: 100%;
+	}
+	.carousel-caption h3{
+		font-size: 16px;
+		width: 100%;
+	}
+	.carousel-caption .btn{
+		width: 125px;
+		font-size: 15px;
+		padding: 10px 7px;
 	}
 	.header h1{
 		font-size: 25px;
@@ -4000,41 +3425,13 @@ nav .pagination a:hover{
 		font-size: 16px;
 	}
 	.service p{
-		margin-top: 70px;
 		font-size: 20px;
 	}
 	.counter-heading h5{
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.counter-heading p{
-		font-size: 16px;
-	}
-	.carousel-item img{
-		background-position:center center;
-		background-attachment:fixed;
-		background-size:cover;
-		height: 500px;
-		width:100%;
-	}
-	.carousel-caption h1{
-		margin-top: -270px;
-		font-size: 22px;
-		width:115%;
-	}
-	.carousel-caption h2{
-		margin-top: -270px;
-		font-size: 22px;
-		width:115%;
-	}
-	.carousel-caption h3{
-		font-size: 16px;
-		width: 80%;
-		text-align: left;
-		margin-top: 20px;
-	}
-	.carousel-caption .btn{
-		width:150px;
-		font-size: 15px;
+		font-size: 17px;
 	}
 	.head h3{
 		margin-top: 20px;
@@ -4054,6 +3451,18 @@ nav .pagination a:hover{
 		width:100%;
 		justify-content: center;
 	}
+	.client-details{
+		padding: 0;
+	}
+	.project-info p{
+		margin: 10px 5px;
+		padding: 5px 0px;
+		font-size: 17px;
+		width: 100%;
+	}
+	.project-info p span{
+		font-size: 15px;
+	}
 	.card-cover .card{
 		width: 97%;
 		margin-left: auto;
@@ -4068,42 +3477,52 @@ nav .pagination a:hover{
 	.working h5{
 		font-size: 20px;
 	}
-	.about-us .about{
-		width: 90%;
-		padding: 10px;
+	.about img{
+		width: 100%;
+		height: auto;
+	}
+	.about .active{
+		width: 100%;
 		font-size: 15px;
-		line-height: 30px;
-		display: block;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	.about-us .people img{
-		width: 100%;
-	}
-	.about-us .about-two{
-		width: 70%;
+		margin-top: 10px;
+		line-height: 25px;
 		padding: 0;
-		font-size: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 0px;
-		line-height: 35px;
 	}
-	.about-us a{
+	.about a{
 		width: 100%;
-		margin-left: 90px;
+		margin-left: 20px;
 		margin-right: auto;
+	}
+	.about-us p{
+		width: 100%;
+		padding: 5px;
 		font-size: 15px;
+		line-height: 25px;
 	}
-	.people .inner-box{
-		margin-left: 80px;
-		padding: 20px 15px;
+	.about-us img{
+		width: 55%;
+		height: 100%;
+		padding: 10px;
 	}
-	.people .inner-box span{
-	  font-size: 27px;
+	.about-us .inner-box{
+		margin-top: -125px;
+		padding: 25px 15px;
 	}
-	.people .inner-box h3{
+	.about-us .inner-box span{
+		font-size: 16px;
+	}
+	.about-us .inner-box h3{
+		font-size: 11px;
+	}
+	.xvite p{
+		font-size: 13px;
+		margin-left: 0px;
+	}
+	.xvite i{
 		font-size: 15px;
+		margin-left: 0px;
 	}
 	.benefits-body{
 		padding: 20px 15px;
@@ -4135,22 +3554,6 @@ nav .pagination a:hover{
 	#call-to-action h3 a{
 		width: 40%;
 		text-align: center;
-	}
-	.single-service-style-one .image-block{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 100%;
-	}
-	.single-service-style-one .image-block > img {
-		width: 100%;
-		height: 250px;
-	}
-	.single-service-style-one .top-box{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 100%;
 	}
 	.articles .news{
 		display: inline-block;
@@ -4256,12 +3659,6 @@ nav .pagination a:hover{
 		padding-top: 50px;
 		font-size: 25px;
 	} 
-	.product .list-group-item{
-		width: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.light .services-details img{
 		width:100%;
 		height: auto;
@@ -4314,13 +3711,17 @@ nav .pagination a:hover{
 	}
 	.single-testimonial-style-three .client-block .image-block > img {
 		width: 100%;
-		height: 80px;
+		height: auto;
 	}
-	.single-testimonial-style-one {
-		width: 70%;
+	.single-testimonial-style-one .text-block{
+		width: 100%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.single-testimonial-style-one .image-block i {
+		top: 30%;
+		right: 41%;
 	}
 	.address .map embed{
 		display: block;
@@ -4340,37 +3741,11 @@ nav .pagination a:hover{
 		padding: 0px 20px;
 		margin-top: 100px;
 	}
-	.company-profile img{
-		width: 100%;
-		height: auto;
-	}
-	.single-service-style-two .image-block {
-		display: table-cell;
-	}
-	.single-service-style-two .image-block > img {
-		height: 350px;
-	}
-	.solar .single-about-style-two {
-		text-align: center;
-		padding: 20px 40px;
-		display: block;
+	.single-service-style-three{
 		margin-left: auto;
 		margin-right: auto;
-		width: 75%;
-	}
-	.project #accordion{
-		margin: 120px 10px;
-	}
-	.project .card img{
-		height: 400px;
-	}
-	.project .card .img-top{
-		height: 400px;
-	}
-	.people-one{
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		width: 80%;
 	}
 	.choose1{
 		left: 10%;
@@ -4384,34 +3759,11 @@ nav .pagination a:hover{
 		height: 150px;
 		margin-top: 200px;
 	}
-
-	.shoppingCart{
-		margin-top: 5px;
-		margin-left: -80px;
-	}
-	.slider-box{
-		display: flex;
-		margin-left: 10%;
-		margin-right: auto;
-	}
-	.product-details h2{
-		width: 100%;
-		font-size: 24px;
-		margin-top: 50px;
-	}
-	.product-design .shop-item-image{
-		height: 60%;
-		width: 60%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.pricing-table .table{
 		width: 100%;	
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		justify-content: center;
 	}
 	.FAQS h3{
 		font-size: 30px;
@@ -4428,15 +3780,28 @@ nav .pagination a:hover{
 # MEDIA SCREENS / BREAK POINTS		575px
 --------------------------------------------------------------*/
 @media only screen and (max-width: 575px) {
-	.time p{
-		font-size: 15px;
+	.carousel-item img{
+		width: 100%;
+		height: 90vh;
 	}
-	.links li a{
-		font-size: 15px;
+	.carousel-inner .carousel-caption h1{
+		margin-top: 10px;
+		font-size: 18px;
+		width: 100%;
 	}
-	.book p{
-		margin-top: -15px;
+	.carousel-caption h2{
+		margin-top: 10px;
+		font-size: 18px;
+		width: 100%;
+	}
+	.carousel-caption h3{
 		font-size: 15px;
+		width: 100%;
+	}
+	.carousel-caption .btn{
+		width: 120px;
+		font-size: 13px;
+		padding: 10px 6px;
 	}
 	.header h1{
 		font-size: 22px;
@@ -4444,52 +3809,22 @@ nav .pagination a:hover{
 	.header h2{
 		font-size: 15px;
 	}
+	.service p{
+		margin-top: 0px;
+		font-size: 18px;
+	}
 	.service h5{
+		margin-top: 70px;
 		font-size: 15px;
 	}
-	.service p{
-		margin-top: 70px;
-		font-size: 18px;
-	}
 	.counter-heading h5{
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.counter-heading p{
 		font-size: 16px;
 	}
-	.carousel-item img{
-		background-position:center center;
-		background-attachment:fixed;
-		background-size:cover;
-		height:400px;
-		width:100%;
-	}
-	.carousel-caption h1{
-		margin-top: -200px;
-		font-size: 18.5px;
-		width: 110%;
-	}
-	.carousel-caption h2{
-		margin-top: -200px;
-		font-size: 18.5px;
-		width: 110%;
-	}
-	.carousel-caption h3{
-		font-size: 15px;
-		width: 100%;
-		text-align: left;
-		margin-top: 15px;
-	}
-	.carousel-caption .btn{
-		width: 150px;
-		font-size: 15px;
-	}
-	.carousel a{
-		margin-top: -300px;
-		font-size: 25px;
-	}
 	.colum{
-		margin-top: -350px;
+		margin-top: 0px;
 	}
 	.colum .colum-body{
 		display: inline-block;
@@ -4498,35 +3833,70 @@ nav .pagination a:hover{
 		margin-right:auto;
 		font-size: 15px;
 	}
-	.about-us .about{
-		width: 90%;
-		padding: 10px;
-		font-size: 15px;
-		line-height: 25px;
-	}
-	.about-us .about-two{
-		width: 90%;
+	.page-header h1{
 		padding: 0;
+		width: 100%;
+		font-size: 18px;
+	}
+	.about img{
+		width: 90%;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about .active{
+		width: 90%;
+		padding: 5px;
 		font-size: 15px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 0px;
-		line-height: 35px;
+		line-height: 25px;
 	}
-	.about-us a{
+	.about a{
 		width: 100%;
-		margin-left: 30px;
+		margin-left: 20px;
 		margin-right: auto;
 	}
-	.people .inner-box{
-		margin-left: 40px;
-		padding: 20px 15px;
-	}
-	.people .inner-box span{
-		font-size: 25px;
-	}
-	.people .inner-box h3{
+	.about-us p{
+		width: 100%;
+		padding: 5px;
 		font-size: 15px;
+		line-height: 25px;
+	}
+	.about-us img{
+		width: 100%;
+		height: 100%;
+		margin-top: 20px;
+	}
+	.about-us .inner-box{
+		margin-top: -120px;
+		padding: 25px 15px;
+	}
+	.about-us .inner-box span{
+		font-size: 16px;
+	}
+	.about-us .inner-box h3{
+		font-size: 14px;
+	}
+	.xvite p{
+		font-size: 13px;
+		margin-left: 0px;
+	}
+	.xvite i{
+		font-size: 15px;
+		margin-left: 0px;
+	}
+	.project-details{
+		padding: 0;
+	}
+	.folio img{
+		padding: 0;
+	}
+	.tech-details p{
+		padding: 0;
+		line-height: 35px;
 	}
 	.benefits-body{
 		padding: 20px 5px;
@@ -4566,14 +3936,11 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	} 
-	.project #accordion{
-		margin: 120px 0px;
-	}
-	.project .card img{
-		height: 400px;
-	}
-	.project .card .img-top{
-		height: 400px;
+	.portfolio .image-block{
+		width: 70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.team-area{
 		width: 100%;
@@ -4653,21 +4020,11 @@ nav .pagination a:hover{
 		margin-left: 80px;
 		margin-right: auto;
 	}
-	.single-service-style-one .image-block{
+	.single-service-style-three{
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-		width: 70%;
-	}
-	.single-service-style-one .image-block > img {
-		width: 100%;
-		height: 350px;
-	}
-	.single-service-style-one .top-box{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 70%;
+		width: 80%;
 	}
 	.light .list-group{
 		width: 80%;
@@ -4715,30 +4072,14 @@ nav .pagination a:hover{
 	}
 	.single-testimonial-style-three .client-block .image-block > img {
 		width: 100%;
-		height: 80px;
+		height: auto;
 	}
-	.single-testimonial-style-one {
+	.single-testimonial-style-one .text-block{
 		width: 70%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.company-profile h4{ 
-		font-size: 20px;
-	}
-	.company-profile h5{ 
-		font-size: 20px;
-	}
-	.company-profile h6{ 
-		font-size: 20px;
-	}
-	.solar .single-about-style-two {
-		text-align: center;
-		padding: 40px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	  }
 	  .thank-you h4{
 		margin-top: 50px;
 		justify-content: center;
@@ -4806,11 +4147,6 @@ nav .pagination a:hover{
 	.system ol li{
 		font-size: 15px;
 	}
-	.people-one{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.choose1{
 		left: 10%;
 		width: 47%;
@@ -4823,21 +4159,8 @@ nav .pagination a:hover{
 		height: 150px;
 		margin-top: 200px;
 	}
-	.slider-box{
-		display: flex;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.product-details h2{
-		width: 100%;
-		font-size: 22px;
-	}
-	.product-design .shop-item-image{
-		height: 100%;
-		width: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+	.pricing p{
+		padding: 0;
 	}
 	.pricing-table .table{
 		width: 70%;	
@@ -4855,54 +4178,33 @@ nav .pagination a:hover{
 		font-size: 15px;
 		text-align: justify;
 	}
-	.training h1{
-		margin-top: 90px;
-		font-size: 25px;
-	}
-	.training h2{
-		font-size: 20px;
-	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		480px
 --------------------------------------------------------------*/
 @media only screen and (max-width: 480px) {
-	.links{
-		text-align:center;
-		width: 100%;
-		margin-left:-15px;
-	}
-	.time{
-		text-align:center;
-	}
-	.book p{
-		margin-top: -15px;
+	#header #logo img {
+		width: 85%;
+		max-height: 45px;
+		left: 10px;
 	}
 	.carousel-item img{
-		background-position:center center;
-		background-attachment:fixed;
-		background-size:cover;
-		height:350px;
-		width:100%;
+		width: 100%;
+		height: 80vh;
 	}
-	.carousel-caption h1{
-		margin-top: -180px;
-		font-size: 16.5px;
-		width: 124%;
-		margin-left: -10px;
+	.carousel-inner .carousel-caption h1{
+		font-size: 16px;
+		width: 110%;
+		margin-top: -80px;
 	}
 	.carousel-caption h2{
-		margin-top: -180px;
-		font-size: 16.5px;
-		width: 124%;
-		margin-left: -10px;
+		margin-top: -80px;
+		font-size: 16px;
+		width: 110%;
 	}
 	.carousel-caption h3{
-		font-size: 15px;
-		width: 115%;
-		text-align: left;
-		margin-top: 5px;
-		margin-left: -10px;
+		font-size: 14px;
+		width: 100%;
 	}
 	.carousel-caption .btn{
 		width: 122px;
@@ -4911,15 +4213,6 @@ nav .pagination a:hover{
 		display: inline-block;
 		margin-left: auto;
 		margin-right:auto;
-	}
-	.carousel a{
-		margin-top: -380px;
-		margin-left: -15px;
-		margin-right: -15px;
-		font-size: 20px;
-	}
-	.colum{
-		margin-top: -400px;
 	}
 	.colum .colum-body{
 		display: block;
@@ -4934,42 +4227,60 @@ nav .pagination a:hover{
 		width: 100%;
 		font-size: 15px;
 	}
-	.service h5{
-		font-size: 15px;
-	}
 	.service p{
+		font-size: 17px;
+		margin-top: 0px;
+	}
+	.service h5{
 		margin-top: 70px;
-		font-size: 18px;
-	}
-	.about-us .about{
-		width: 100%;
-		padding: 10px;
 		font-size: 15px;
-		line-height: 25px;
 	}
-	.about-us .about-two{
-		width: 90%;
-		padding: 0;
+	.about img{
+		width: 100%;
+		height: auto;
+	}
+	.about .active{
+		width: 100%;
+		padding: 5px;
 		font-size: 15px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 0px;
-		line-height: 32px;
+		line-height: 25px;
 	}
-	.about-us a{
+	.about a{
 		width: 100%;
-		margin-left: 30px;
+		margin-left: 20px;
 		margin-right: auto;
 	}
-	.people .inner-box{
-		margin-left: 40px;
-		padding: 25px 15px;
+	.about-us p{
+		width: 100%;
+		padding: 5px;
+		font-size: 15px;
+		line-height: 25px;
 	}
-	.people .inner-box span{
-	  font-size: 18px;
+	.about-us img{
+		width: 100%;
+		height: 100%;
+		margin-top: 20px;
 	}
-	.people .inner-box h3{
-		font-size: 12px;
+	.about-us .inner-box{
+		margin-top: -85px;
+		padding: 15px 15px;
+	}
+	.about-us .inner-box span{
+		font-size: 16px;
+	}
+	.about-us .inner-box h3{
+		font-size: 10px;
+	}
+	.xvite p{
+		font-size: 13px;
+		margin-left: 0px;
+	}
+	.xvite i{
+		font-size: 15px;
+		margin-left: 0px;
 	}
 	#bridgeSlide {
 		display: block;
@@ -5036,14 +4347,11 @@ nav .pagination a:hover{
 		margin-right: auto;
 		display: block;
 	}
-	.project #accordion{
-		margin: 120px 0px;
-	}
-	.project .card img{
-		height: 400px;
-	}
-	.project .card .img-top{
-		height: 400px;
+	.portfolio .image-block{
+		width: 90%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.articles .news{
 		display: block;
@@ -5106,7 +4414,6 @@ nav .pagination a:hover{
 	}
 	.address i{
 		font-size: 20px;
-		
 	}
 	.address .map embed{
 		width: 90%;
@@ -5121,27 +4428,11 @@ nav .pagination a:hover{
 	.single-testimonial-style-one .text-block p{
 		width: 100%;
 	}
-	.single-testimonial-style-one {
-		width: 90%;
+	.single-testimonial-style-one .text-block{
+		width: 100%;
 		display: block;
-		margin-top: 120px;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	.single-service-style-one .image-block{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 85%;
-	}
-	.single-service-style-one .top-box{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 85%;
-	}
-	.single-service-style-one .image-block > img {
-		height: 300px;
 	}
 	.testimonials-style-three-carousel-wrapper{
 		width: 100%;
@@ -5165,7 +4456,7 @@ nav .pagination a:hover{
 	}
 	.single-testimonial-style-three .client-block .image-block > img {
 		width: 100%;
-		height: 80px;	
+		height: auto;
 	}
 	.single-testimonial-style-three .client-block .text-block {
 		padding: 10px;
@@ -5175,12 +4466,6 @@ nav .pagination a:hover{
 	}
 	.single-testimonial-style-three .text-block span{
 		font-size: 14px;
-	}
-	.single-testimonial-style-one {
-		width: 85%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	.thank-you h4{
 		margin-top: 50px;
@@ -5194,30 +4479,11 @@ nav .pagination a:hover{
 		padding: 0px 20px;
 		margin-top: 100px;
 	}
-	.company-profile img{
-		width: 100%;
-		height: auto; 
-	}
-	.company-profile h4{ 
-		font-size: 20px;
-	}
-	.company-profile h5{ 
-		font-size: 20px;
-	}
-	.company-profile h6{ 
-		font-size: 20px;
-	}
-	.single-service-style-two .image-block {
-        display: table-cell;
-	}
-	.solar .single-about-style-two {
-		text-align: center;
-		padding: 40px;
-		display: block;
+	.single-service-style-three{
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 14px;
-		width: 95%;
+		display: block;
+		width: 100%;
 	}
 	.watts img{
 		width: 100%;
@@ -5312,21 +4578,8 @@ nav .pagination a:hover{
 	.cart-info p{
 		display: none;
 	}
-	.slider-box{
-		display: flex;
-		margin-left: 17%;
-		margin-right: auto;
-	}
-	.product-details h2{
-		width: 100%;
-		font-size: 22px;
-	}
-	.product-design .shop-item-image{
-		height: 100%;
-		width: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+	.pricing p{
+		padding: 0;
 	}
 	.pricing-table .table{
 		width: 80%;	
@@ -5353,80 +4606,50 @@ nav .pagination a:hover{
 		margin-left: -20px;
 		font-size: 15px;
 	}
-	.training h1{
-		margin-top: 90px;
-		font-size: 20px;
-	}
-	.training h2{
-		font-size: 20px;
-	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		375px
 --------------------------------------------------------------*/
 @media only screen and (max-width: 375px) {
 	#header #logo img {
-		max-width: 210px;
-		height: 40px;
-	  }
-	.links{
-		text-align:center;
-		width: 100%;
-		margin-left: -15px;
-	}
-	.time{
-		margin-top: -5px;
-		text-align:center;
-	}
-	.book p{
-		margin-top: -15px;
-		font-size: 15px;
+		width: 75%;
+		max-height: 45px;
+		left: 10px;
 	}
 	.carousel-item img{
-		height: 320px;
 		width: 100%;
+		height: 70vh;
 	}
-	.carousel-caption h1{
-		margin-top: -170px;
-		font-size: 14px;
-		width: 125%;
-		margin-left: -25px;
+	.carousel-inner .carousel-caption h1{
+		font-size: 15px;
+		width: 110%;
 	}
 	.carousel-caption h2{
-		margin-top: -170px;
-		font-size: 14px;
-		width: 125%;
-		margin-left: -25px;
+		font-size: 15px;
+		width: 115%;
 	}
 	.carousel-caption h3{
-		width: 120%;
-		font-size: 14px;
-		margin-left: -25px;
+		width: 100%;
+		font-size: 12px;
+		margin-top: 15px;
 	}
 	.carousel-caption .btn{
-		font-size: 10px;	
-		margin-top: 15px;
+		font-size: 12px;
 		width: 110px;
 		padding: 7px 0px;
 		display: inline-block;
 		margin-left: auto;
 		margin-right:auto;
 	}
-	.carousel a{
-		margin-top: -450px;
-		margin-left: -12px;
-		margin-right: -12px;
-		font-size: 20px;
-	}
 	.header{
-		height: 280px;
+		height: auto;
 		width: auto;
 	}
-	.header h1{
+	.header p{
 		margin-top: 120px;
 	}
 	.colum{
-		margin-top: -440px;
+		margin-top: 0px;
 	}
 	.colum .colum-body{
 		display: block;
@@ -5434,48 +4657,61 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right:auto;
 	}
-	.people img{
+	.about img{
 		width: 100%;
-		height: 90%;
-		margin-top: 20px;
+		height: auto;
 	}
-	.about-us .about{
+	.about .active{
 		width: 100%;
-		padding: 10px;
-		font-size: 15px;
-		line-height: 25px;
-	}
-	.about-us .about-two{
-		width: 90%;
-		padding: 0;
+		padding: 5px;
 		font-size: 15px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 0px;
-		line-height: 30px;
+		line-height: 25px;
 	}
-	.about-us a{
+	.about a{
 		width: 100%;
-		margin-left: 10px;
+		margin-left: 20px;
 		margin-right: auto;
-		font-size: 14px;
 	}
-	.people .inner-box{
-		margin-left: 40px;
-		padding: 25px 15px;
+	.about-us p{
+		width: 100%;
+		padding: 5px;
+		font-size: 15px;
+		line-height: 25px;
 	}
-	.people .inner-box span{
+	.about-us img{
+		width: 100%;
+		height: 100%;
+		margin-top: 20px;
+		padding: 0;
+	}
+	.about-us .inner-box{
+		margin-top: -85px;
+		padding: 15px 15px;
+	}
+	.about-us .inner-box span{
 		font-size: 16px;
 	}
-	.people .inner-box h3{
-		font-size: 11px;
+	.about-us .inner-box h3{
+		font-size: 10px;
 	}
-	.service h5{
+	.xvite p{
+		font-size: 13px;
+		margin-left: 0px;
+	}
+	.xvite i{
 		font-size: 15px;
+		margin-left: 0px;
 	}
 	.service p{
+		font-size: 16px;
+		margin-top: 0px;
+	}
+	.service h5{
 		margin-top: 70px;
-		font-size: 17px;
+		font-size: 15px;
 	}
 	.benefits-body{
 		width: 70%;
@@ -5484,25 +4720,11 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;	
 	}
-	.single-service-style-one{
-		margin-left: 0px;
-		margin-right: auto;
-		display: block;
-		width: 100%;
-	}
-	.single-service-style-one .image-block{
+	.single-service-style-three{
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
 		width: 100%;
-	}
-	.single-service-style-one .image-block > img {
-		height: 250px;
-	}
-	#bridgeSlide {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	.light h4{
 		margin-top: -500px;
@@ -5650,7 +4872,7 @@ nav .pagination a:hover{
 	}
 	.single-testimonial-style-three .client-block .image-block > img {
 		width: 100%;
-		height: 80px;
+		height: auto;
 	}
 	.testimonials-style-three-carousel-wrapper{
 		width: 100%;
@@ -5668,23 +4890,15 @@ nav .pagination a:hover{
 		font-size: 14px;
 		padding: 15px 10px;
 	}
-	.single-testimonial-style-one {
+	.single-testimonial-style-one .text-block{
 		width: 100%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.company-profile h4{ 
-		font-size: 16px;
-	}
-	.company-profile h5{ 
-		font-size: 16px;
-	}
-	.company-profile h6{ 
-		font-size: 16px;
-	}
-	.company-profile p{ 
-		font-size: 15px;
+	.single-testimonial-style-one .image-block i {
+		top: 30%;
+		right: 37%;
 	}
 	.privacy p{
 		width: 100%;
@@ -5708,17 +4922,6 @@ nav .pagination a:hover{
 	.TERMS ul{
 		margin-left: -20px;
 		font-size: 15px;
-	}
-	.single-service-style-two .image-block {
-        display: table-cell;
-	}
-	.solar .single-about-style-two {
-		text-align: center;
-		padding: 40px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
 	}
 	.system-main .system{
 		width: 93%;
@@ -5756,21 +4959,6 @@ nav .pagination a:hover{
 	}
 	#contact-form textarea{
 		width: 100%;
-	}
-	.single-service-style-one .image-block{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 95%;
-	}
-	.single-service-style-one .top-box{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		width: 95%;
-	}
-	.single-service-style-one .image-block > img {
-		height: 270px;
 	}
 	.address .map embed{
 		height: 300px;
@@ -5846,21 +5034,8 @@ nav .pagination a:hover{
 		display: flex;
 		margin-left: -60px;
 	}
-	.project #accordion{
-		margin: 100px 0px;
-	}
-	.project .card img{
-		height: 380px;
-	}
-	.project .card .img-top{
-		height: 380px;
-	}
-	.card-cover .card{
-		width: 90%;
-		margin-left: auto;
-		margin-right:auto;
-	}
-	.people-one{
+	.portfolio .image-block{
+		width: 100%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -5877,27 +5052,14 @@ nav .pagination a:hover{
 		height: 150px;
 		margin-top: 200px;
 	}
-	.slider-box{
-		display: flex;
-		margin-left: 17%;
-		margin-right: auto;
-	}
-	.product-details h2{
-		width: 100%;
-		font-size: 20px;
-	}
-	.product-design .shop-item-image{
-		height: 100%;
-		width: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.pricing-table .table{
 		width: 90%;	
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.pricing p{
+		padding: 0;
 	}
 	.FAQS h3{
 		font-size: 16px;
@@ -5914,114 +5076,98 @@ nav .pagination a:hover{
 # MEDIA SCREENS / BREAK POINTS		320px
 --------------------------------------------------------------*/
 @media only screen and (max-width: 320px) {
-	#header #logo img {
-		max-width: 200px;
-		height: 40px;
+	.navbar .logo img {
+		max-width: 150px;
+		height: 30px;
 	  }
 	nav .breadcrumb{
-		margin-left:10px;	
+		margin-left: 10px;	
 	}
 	.breadcrumb li a{
 		font-size: 14px;
 	}
-	.links{
-		text-align: center;
-		width: 100%;
-		font-size: 14px;
-	}
-	.time{
-		margin-top: -5px;
-		text-align: center;
-		font-size: 14px;
-	}
-	.book p{
-		margin-top: -15px;
-		font-size: 14px;
-	}
 	.carousel-item img{
-		height: 320px;
-		width:100%;
+		height: 70vh;
+		width: 100%;
 	}
-	.carousel-caption h1{
-		margin-top: -170px;
+	.carousel-inner .carousel-caption h1{
 		font-size: 14px;
-		width: 125%;
-		margin-left: -25px;
+		width: 100%
 	}
 	.carousel-caption h2{
-		margin-top: -170px;
 		font-size: 14px;
-		width: 125%;
-		margin-left: -25px;
+		width: 115%;
 	}
 	.carousel-caption h3{
-		width: 120%;
+		width: 100%;
 		font-size: 13px;
-		margin-left: -25px;
+		margin-top: 20px;
 	}
 	.carousel-caption .btn{
 		font-size: 10px;	
-		margin-top: 10px;
 		width: 109px;
 		padding: 7px 0px;
 		display: inline-block;
 		margin-left: auto;
 		margin-right:auto;
 	}
-	.carousel a{
-		margin-top: -450px;
-		margin-left: -12px;
-		margin-right: -12px;
-		font-size: 20px;
+	.colum{
+		margin-top: 0px;
 	}
 	.header{
-		height: 250px;
+		height: auto;
 		width: auto;
 	}
-	.header h1{
+	.header p{
 		margin-top: 110px;
 		font-size: 17px;
 	}
-	.about-us .about{
+	.about img{
 		width: 100%;
-		padding: 0;
-		font-size: 15px;
-		line-height: 25px;
+		height: auto;
 	}
-	.about-us .about-two{
+	.about .active{
 		width: 100%;
-		padding: 0;
+		padding: 5px;
 		font-size: 15px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 0px;
 		line-height: 25px;
 	}
-	.about-us a{
+	.about a{
 		width: 100%;
 		margin-left: 20px;
 		margin-right: auto;
 	}
-	.people-one{
+	.about-us p{
 		width: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	} 
-	.people img{
+		padding: 5px;
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.about-us img{
 		width: 100%;
 		height: 100%;
 		margin-top: 20px;
 	}
-	.people .inner-box{
-		margin-left: 40px;
-		padding: 25px 15px;
+	.about-us .inner-box{
+		margin-top: -90px;
+		padding: 15px 15px;
 	}
-	.people .inner-box span{
+	.about-us .inner-box span{
 		font-size: 16px;
 	}
-	.people .inner-box h3{
-		font-size: 11px;
+	.about-us .inner-box h3{
+		font-size: 10px;
+	}
+	.xvite p{
+		font-size: 13px;
+		margin-left: 0px;
+	}
+	.xvite i{
+		font-size: 15px;
+		margin-left: 0px;
 	}
 	.choose-body h4{
 		font-size: 15px;
@@ -6041,32 +5187,19 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;	
 	}
+	.service p{
+		font-size: 16px;
+		margin-top: 0px;
+	}
 	.service h5{
+		margin-top: 70px;
 		font-size: 15px;
 	}
-	.service p{
-		margin-top: 70px;
-		font-size: 17px;
-	}
-	.single-service-style-one {
-		margin-left: -20px;
-		margin-right: auto;
-		display: block;
-		width: 100%;
-	}
-	.single-service-style-one .image-block{
+	.single-service-style-three{
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
 		width: 100%;
-	}
-	.single-service-style-one .image-block > img {
-		height: 250px;
-	}
-	#bridgeSlide {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	.light h4{
 		margin-top: -520px;
@@ -6083,7 +5216,7 @@ nav .pagination a:hover{
 		width: 100%;
 	}
 	.counter-heading h5{
-		font-size: 18px;
+		font-size: 15px;
 		width: 100%;
 	}
 	.counter-heading p{
@@ -6136,14 +5269,6 @@ nav .pagination a:hover{
 	.light p{
 		margin-bottom:10%;
 	}
-	.single-service-style-one .image-block{
-		margin-left: 25px;
-		width: 97%;
-	}
-	.single-service-style-one .top-box{
-		margin-left: 25px;
-		width: 97%;
-	}
 	.testimonials-style-three-carousel-wrapper{
 		width: 100%;
 		padding: 20px 20px;
@@ -6168,9 +5293,9 @@ nav .pagination a:hover{
 	}
 	.single-testimonial-style-three .client-block .image-block > img {
 		width: 100%;
-		height: 80px;
+		height: auto;
 	}
-	.single-testimonial-style-one {
+	.single-testimonial-style-one .text-block{
 		width: 100%;
 		display: block;
 		margin-left: auto;
@@ -6188,35 +5313,12 @@ nav .pagination a:hover{
 		padding: 0px 20px;
 		margin-top: 100px;
 	}
-	.address p{
-		font-size: 15px;
-	}
-	.address a{
-		font-size: 15px;		
-	}
-	.address h4{
-		font-size: 20px;
-		width: 82%;
-	}
-	.address i{
-		font-size: 20px;
-		
-	}
-	.address .map embed{
-		height: 300px;
+	.content .map embed{
 		width: 100%;
+		height: 300px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	.company-profile h4{ 
-		font-size: 20px;
-	}
-	.company-profile h5{ 
-		font-size: 20px;
-	}
-	.company-profile h6{ 
-		font-size: 20px;
 	}
 	.privacy p{
 		width: 100%;
@@ -6239,16 +5341,6 @@ nav .pagination a:hover{
 	.TERMS ul{
 		margin-left: -20px;
 		font-size: 15px;
-	}
-	.single-service-style-two .image-block {
-        display: table-cell;
-	}
-	.solar .single-about-style-two {
-		text-align: center;
-		padding: 40px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	.system p{
 		width: 100%;
@@ -6392,16 +5484,8 @@ nav .pagination a:hover{
 	.list-unstyled .media .media-body p span{	
 		font-size: 14px;
 	}
-	.project #accordion{
-		margin: 100px 0px;
-	}
-	.project .card img{
-		height: 380px;
-	}
-	.project .card .img-top{
-		height: 380px;
-	}
-	.people-one{
+	.portfolio .image-block{
+		width: 100%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -6418,40 +5502,14 @@ nav .pagination a:hover{
 		height: 150px;
 		margin-top: 200px;
 	}
-	.slider-box{
-		display: flex;
-		margin-left: 11%;
-		margin-right: auto;
-		text-align: center;
-		justify-content: center;
-		align-items: center;
-	}
-	.product-design .shop-item-image{
-		height: 100%;
-		width: 105%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.product-details h2{
-		width: 100%;
-		font-size: 18px;
-	}
-	.product-details h4{
-		width: 100%;
-	}
-	.product-details p{
-		width: 100%;
-		text-align: justify;
-	}
-	.product-details ul li{
-		width: 100%;
-	}
 	.pricing-table .table{
 		width: 100%;	
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.pricing p{
+		padding: 0;
 	}
 	.FAQS h3{
 		font-size: 18px;
@@ -6462,13 +5520,6 @@ nav .pagination a:hover{
 	.FAQS .card .card-body{
 		font-size: 14px;
 		text-align: justify;
-	}
-	.training h1{
-		margin-top: 90px;
-		font-size: 20px;
-	}
-	.training h2{
-		font-size: 20px;
 	}
 }
 @media(max-width:1200px){

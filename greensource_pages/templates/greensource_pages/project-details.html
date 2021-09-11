@@ -1,0 +1,106 @@
+{% extends 'base_layout.html' %}
+{% block nav-projects %}
+menu-active
+{% endblock %}
+{% load static %}
+{% block title %}Solar Project Description {{ block.super }}{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <p>Projects Details</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'projects' %}">Projects</a>
+        </li>
+        <li class="breadcrumb-item active">Project-Details</li>
+    </ol>
+</nav>
+<div class=" container-fluid padding page-header">
+    <h1>Powering A Sustainable Future One Project At A Time</h1>
+</div>
+<div class="container-fluid padding">
+    <div class="row project-details padding">
+        <div class="folio col-12">
+            <img src="{{ projects.image.url }}" alt="img" />
+        </div>
+    </div>
+
+    <div class="client-details row padding">
+        <div class="project-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Client: <span> {{ projects.name }}</span></p>
+        </div>
+        <div class="project-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Project: <span> {{projects.title }}</span></p>
+        </div>
+        <div class="project-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Location: <span> {{ projects.content }}</span></p>
+        </div>
+        <div class="project-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Tags: <span> {{ projects.tags }}</span></p>
+        </div>
+    </div>
+
+    <div class="container-fluid padding">
+        <div class="brand-carousel-wrapper padding">
+            <div class="pro-details row">
+                <div class="brand-carousel-one owl-theme owl-carousel">
+                    <div class="item">
+                        <a href="{{ projects.image1.url }}">
+                            <img src="{{ projects.image1.url }}" alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="{{ projects.image2.url }}">
+                            <img src="{{ projects.image2.url }}}" alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="{{ project.image3.url }}">
+                            <img src="{{ project.image3.url }}" alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="{{ project.image4.url }}">
+                            <img src="{{ project.image4.url }}" alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="{{ project.image5.url }}">
+                            <img src="{{ project.image5.url }}" alt="img" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="tech-details col-12">
+    <p>
+        {{ project.body }}
+    </p>
+    </div>
+</div>
+</div>
+
+
+<section id="call-to-action">
+    <div class="container-fluid padding wow fadeIn">
+        <div class="row">
+                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
+                <h3 class="col-lg-3 col-md-4 col-xs-12">
+                <a href="{% url 'contact_us' %}">Get in Touch
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                </h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

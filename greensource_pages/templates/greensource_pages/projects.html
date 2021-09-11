@@ -3,12 +3,12 @@
 menu-active
 {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} greensource solar projects{% endblock %}
+{% block title %}All Solar Projects {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>SOLAR ENERGY PROJECTS</h1>
+            <p>Recent Projects</p>
         </div>
     </div>
 </div>
@@ -20,140 +20,29 @@ menu-active
         <li class="breadcrumb-item active">Projects</li>
     </ol>
 </nav>
-<!-- <div class="container-fluid padding">
-    <div class="row project padding">
+<div class=" container-fluid padding page-header">
+    <h1>We believe in acting responsibly & sustainably in our operations</h1>
+</div>
+<div class="container-fluid padding">
+    <div class="row projects">
+        {% if projects %}
         {% for project in projects %}
-        <div id="accordion">
-            <div class="card">
-                <img src="{{ project.image.url }}" alt="img" />
-                <img src="{{ project.second_image.url }}" class="img-top" alt="img" />
-                <div class="card-header" id="heading{{ project.heading_id }}">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{ project.heading_id }}" aria-expanded="false"
-                            aria-controls="collapse{{ project.heading_id }}">
-                            {{ project.title }}
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </button>
-                    </h5>
+        <div class="portfolio col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="{{ project.get_absolute_url }}">
+                <div class="image-block">
+                    <img src="{{ project.image.url }}" alt="alt img" />
+                    <div class="overlay">
+                        <div class="caption">{{ project.title }}</div>
+                    
                 </div>
-                <div id="collapse{{ project.heading_id }}" class="collapse show" aria-labelledby="heading{{ project.heading_id }}" data-parent="#accordion">
-                    <div class="card-body">
-                        {{ project.description }}
-                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         {% endfor %}
-    </div>
-</div> -->
-<div class="container-fluid padding">
-    <div class="row project padding">
-    
-        <div id="accordion">
-            <div class="card">
-                <img src="{% static 'images/5b.jpg' %}" alt="img" />
-                <img src="{% static 'images/5a.jpg' %}" class="img-top" alt="img" />
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
-                                1.08KWP SOLAR  SYSTEM
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                       This system powers a  1 bedroomflat @ Abeokuta Ogun carrying 1Tv, all ligthing points and fan and and inverter fridge
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div id="accordion">
-            <div class="card">
-                <img src="{% static 'images/4a.jpg' %}" alt="img" />
-                <img src="{% static 'images/4b.jpg' %}" class="img-top" alt="img" />
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                            aria-controls="collapseTwo">
-                            7KWP SOLAR INSTALLATION
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                   This systems powers a 4 bedroom duplex @ Magodo Phase 1 Lagos carrying 3 1hp Ac, 3TVs, A Refrigerator, A washing machine, lighting and fans  
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="accordion">
-            <div class="card">
-                <img src="{% static 'images/3a.jpg' %}" alt="img" />
-                <img src="{% static 'images/3b.jpg' %}" class="img-top" alt="img" />
-                <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                            aria-controls="collapseThree">
-                            3KWP SOLAR SYSTEM
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        It powers a 4 bedroom duplex @ Agungi lekki epe express way carrying 2 Tvs, all lighting points, 4 fans and A Refrigerator.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="accordion">
-            <div class="card">
-                <img src="{% static 'images/2a.jpg' %}" alt="img" />
-                <img src="{% static 'images/2b.png' %}" class="img-top" alt="img" />
-                <div class="card-header" id="headingFour">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                            aria-controls="collapseFour">
-                            SOLAR BOLE HOLE
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                    <div class="card-body">
-                        A  1.5HP solar borehole system for farm irrigation at Ishiun Ogun State.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="accordion">
-            <div class="card">
-                <img src="{% static 'images/1a.jpg' %}" alt="img" />
-                <img src="{% static 'images/1b.jpg' %}" class="img-top" alt="img" />
-                <div class="card-header" id="headingFive">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-                            aria-controls="collapseFive">
-                            SOLAR PANEL MAINTENANCE
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                    <div class="card-body">
-                        Washing and cleaning of solar panels to ensure optimal operations and useful life.
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+        {% else %}
+        <p>There are no recent project</p>
+        {%  endif %}
     </div>
 </div>
 <section id="call-to-action">
@@ -172,9 +61,9 @@ menu-active
     <div class="container-fluid padding">
         <div class="row-counters row padding">
             <div class="counter-heading col-12">
-                <p>our business success track record</p>
-                <h5>Our Business Numbers</h5>
+                <h5>Our Numbers</h5>
                 <hr />
+                <p>our business success track record</p>
             </div>
             <div class="counter col-xs-12 col-md-6 col-lg-3">
                 <div>

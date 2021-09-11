@@ -1,11 +1,12 @@
 {% extends 'base_layout.html' %}
+{% block nav-about %} menu-active {% endblock %} 
 {% load static %}
-{% block title %}{{ block.super }} Greensource professionals{% endblock %}
+{% block title %}Our Team {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>SOLAR ENERGY TEAM</h1>
+            <p>Our Team</p>
         </div>
     </div>
 </div>
@@ -15,7 +16,7 @@
             <a href="{% url 'index' %}">Home</a>
         </li>
         <li class="breadcrumb-item">
-            <a href="#">Pages</a>
+            <a href="{% url 'about' %}">About</a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">Our-Team</li>
     </ol>
@@ -44,7 +45,7 @@
         
         <div class="member-box member-3">
             <div class="member-img">
-                <img src="{% static 'images/tola.webp' %}" alt="Male Business lead">
+                <img src="{% static 'images/tola-alex.webp' %}" alt="Male Business lead">
             </div>
             <div class="member-name">
                 <h3>TOLA ADEYEMI</h3>
@@ -141,7 +142,7 @@
         <div class="detail-box-3">
             <div class="member-detail-box">
                 <div class="detail-box-img">
-                    <img src="{% static 'images/tola.webp' %}">
+                    <img src="{% static 'images/tola-alex.webp' %}">
                 </div>
                 <div class="detail-box-text">
                     <a href="javascript:void(0);" class="cancel">
@@ -251,9 +252,4 @@
         </div>
     </div>
 </section>
-
-
-
-
-
 {% endblock %}

@@ -96,6 +96,8 @@ $(document).ready(function () {
     } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
         $("#mobile-nav, #mobile-nav-toggle").hide();
     }
+
+
     $('.nav-menu').superfish({
         animation: { opacity: 'show' },
         speed: 400
@@ -105,17 +107,20 @@ $(document).ready(function () {
         time: 2500
     });
    
+    var lightbox = new SimpleLightbox('.pro-details a', {});
+
     var lightbox = new SimpleLightbox('.gallery a', {});
     new WOW().init();
+
     $('.carousel').carousel({
         interval: 15000,
     });
     $('#bridgeSlide').owlCarousel({
         loop: true,
-        margin: 10,
-        nav: true,
+        margin: 30,
+        nav: false,
         width: 1200,
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 700,
         responsive: {
             320: {
@@ -143,10 +148,10 @@ $(document).ready(function () {
     });
     $('#pricing').owlCarousel({
         loop: true,
-        margin: 10,
-        nav: true,
+        margin: 20,
+        nav: false,
         width: 1200,
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 700,
         responsive: {
             320: {
@@ -158,14 +163,14 @@ $(document).ready(function () {
             480: {
                 items: 1
             },
-            577: {
-                items: 1
+            576: {
+                items: 2
             },
-            767: {
-                items: 3
+            768: {
+                items: 2
             },
             992: {
-                items: 4
+                items: 3
             },
             1200: {
                 items: 4
@@ -175,7 +180,7 @@ $(document).ready(function () {
     $('#mission').owlCarousel({
         loop: true,
         margin: 10,
-        nav: true,
+        nav: false,
         width: 1200,
         responsive: {
             320: {
@@ -227,15 +232,15 @@ $(document).ready(function () {
             }
         }
     });
-    $('#test').owlCarousel({
+    $('#testimonial').owlCarousel({
         loop: true,
         margin: 0,
         nav: false,
-        dots: true,
+        dots: false,
         autoWidth: false,
         autoplay: true,
-        smartSpeed: 700,
-        autoplayTimeout: 5000,
+        smartSpeed: 1000,
+        autoplayTimeout: 9000,
         autoplayHoverPause: true,
         responsive: {
             320: {
@@ -258,7 +263,7 @@ $(document).ready(function () {
                 '<i class="fa fa-long-arrow-left"></i>',
                 '<i class="fa fa-long-arrow-right"></i>'
             ],
-            dots: false,
+            dots: true,
             autoWidth: false,
             autoplay: true,
             smartSpeed: 700,
@@ -266,25 +271,25 @@ $(document).ready(function () {
             autoplayHoverPause: true,
             responsive: {
                 320: {
-                    items: 2
+                    items: 1
                 },
                 375: {
-                    items: 3
+                    items: 1
                 },
                 480: {
-                    items: 3
+                    items: 1
                 },
                 600: {
-                    items: 4
+                    items: 2
                 },
                 991: {
-                    items: 4
+                    items: 3
                 },
                 1000: {
-                    items: 5
+                    items: 4
                 },
                 1200: {
-                    items: 5
+                    items: 4
                 }
             }
         });
@@ -302,6 +307,8 @@ $(document).ready(function () {
         $('html ,body').animate({ scrollTop: 0 }, 1500);
     });
     $('.collapse').collapse();
+
+
 });
 
 window.addEventListener("scroll", function(){
@@ -309,20 +316,5 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("header-fixed", window.scrollY > 0);
 });
 
-function incrementValue(){
-    var value = parseInt(document.getElementById('text').value, 10);
-    value = isNaN(value) ? 0 : value;
-    if(value<10){
-        value++;
-            document.getElementById('text').value = value; 
-    }
-}
-function decrementValue(){
-    var value = parseInt(document.getElementById('text').value, 10);
-    value = isNaN(value) ? 0 : value;
-    if(value>1){
-        value--;
-            document.getElementById('text').value = value; 
-    }
-}
+
 

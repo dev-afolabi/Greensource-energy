@@ -3,52 +3,60 @@
 menu-active
 {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} Affordable solar energy for everyone{% endblock %}
+{% block title %}Solar Energy for Homes and Businesses {{ block.super }}{% endblock %}
 {% block content %}
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="carouselExampleFade" data-slide-to="0" class="active"></li>
+        <li data-target="carouselExampleFade" data-slide-to="1"></li>
+        <li data-target="carouselExampleFade" data-slide-to="2"></li>
+    </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{% static 'images/homepage1.webp' %}" alt="array of roof mounted solar panels">
+            <img src="{% static 'images/homepage2.webp' %}" alt="array of roof mounted solar panels">
             <div class="carousel-caption">
-                <h1 class="animated zoomIn">INNOVATIVE <span>SOLAR</span> SOLUTION</h1>
-                <h3 class="animated fadeInUp">We want to see everyone benefit from the use of green energy.</h3>
+                <h1 class="animated zoomIn">INNOVATIVE
+                    <span>SOLAR</span> SOLUTION</h1>
+                <h3 class="animated fadeInUp">Driving the Transition to Sustainable Energy Solutions</h3>
                 <div class="button animated fadeInDown">
-                    <a class="btn active" href="{% url 'services' %}" role="button">Discover More</a>
-                    <a class="btn" href="{% url 'contact_us' %}" role="button">Contact Us</a> 
+                    <a class="btn active" href="{% url 'services' %}" role="button">Our Services</a>
+                    <a class="btn" href="{% url 'about' %}" role="button">More About Us!</a>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{% static 'images/homepage2.webp' %}" alt="array of ground mounted solar panels ">
+            <img src="{% static 'images/homepage1.webp' %}" alt="array of ground mounted solar panels ">
             <div class="carousel-caption">
-                <h2 class="animated zoomIn">CLEAN. <span>SAFE.</span> RENEWABLE.</h2>
-                <h3 class="animated fadeInUp">An energy independent future is achieveable for everybody.</h3>
+                <h2 class="animated zoomIn">CLEAN.
+                    <span>SAFE.</span> RENEWABLE.</h2>
+                <h3 class="animated fadeInUp">We're committed to Building a Better Energy Future for all</h3>
                 <div class="button animated fadeInDown">
-                    <a class="btn active" href="{% url 'services' %}" role="button">Discover More</a>
-                    <a class="btn" href="{% url 'contact_us' %}" role="button">Contact Us</a>
+                    <a class="btn active" href="{% url 'services' %}" role="button">Our Services</a>
+                    <a class="btn" href="{% url 'about' %}" role="button">More About Us!</a>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <img src="{% static 'images/homepage3.webp' %}" alt="office space powered by a solar system">
             <div class="carousel-caption">
-                <h2 class="animated zoomIn">SIMPLE. <span>RELIABLE.</span> FITS THE BILL.</h2>
-                <h3 class="animated fadeInUp">We are committed to providing premium services at optimum cost.</h3>
+                <h2 class="animated zoomIn">RELIABLE.
+                    <span>GREEN.</span> FITS THE BILL.</h2>
+                <h3 class="animated fadeInUp">We want to see Everyone Benefit from the use of Green Energy.</h3>
                 <div class="button animated fadeInDown">
-                    <a class="btn active" href="{% url 'services' %}" role="button">Discover More</a>
-                    <a class="btn" href="{% url 'contact_us' %}" role="button">Contact Us</a>
+                    <a class="btn active" href="{% url 'services' %}" role="button">Our Services</a>
+                    <a class="btn" href="{% url 'about' %}" role="button">More About Us!</a>
                 </div>
             </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-    </a>
+    </a> -->
 </div>
 <div class="container">
     <div class="row colum padding">
@@ -85,9 +93,9 @@ menu-active
 <section>
     <div class="container-fluid padding">
         <div class="service col-12">
-            <p>Improved wellbeing through energy availability</p>
-            <h5>Why choose Greensource</h5>
+            <h5>Why choose Us</h5>
             <hr />
+            <p>a strong team with a strong background</p>
         </div>
     </div>
     <div class="container padding">
@@ -121,249 +129,82 @@ menu-active
                     <h6>Smart Work Delivery</h6>
                     <p>We use human centered design using regulatory best practice to improve services.</p>
                 </div>
-            </div>   
+            </div>
             <div class="people-one col-lg-6 col-md-6 col-xs-12">
                 <div class="choose1">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -45 479.954 479" width="60px">
-                            <g>
-                                <path d="m244.75 144.949219c1.808594.003906 3.542969-.695313 4.847656-1.945313l52.269532-50.140625 54.1875 42.683594c2.527343 1.992187 6.089843 2.003906 8.628906.027344l76.457031-59.417969-2.734375 35.566406c-.296875 3.851563 2.589844 7.21875 6.441406 7.515625.183594.011719.367188.019531.546875.019531 3.65625-.003906 6.691407-2.820312 6.96875-6.464843l3.953125-51.394531c.144532-1.855469-.460937-3.695313-1.675781-5.105469-1.214844-1.410157-2.945313-2.28125-4.800781-2.414063l-55.351563-3.953125c-3.855469-.273437-7.207031 2.628907-7.480469 6.484375-.277343 3.855469 2.625 7.207032 6.480469 7.480469l37.195313 2.65625-70.269532 54.613281-54.667968-43.0625c-2.742188-2.160156-6.65625-1.96875-9.175782.449219l-56.671874 54.351563c-2.058594 1.980468-2.710938 5.011718-1.644532 7.664062s3.636719 4.390625 6.492188 4.386719zm0 0"
-                                    data-original="#000000" class="active-path" />
-                                <path d="m123.691406 206.980469c46.132813 0 83.53125-37.394531 83.53125-83.527344s-37.398437-83.53125-83.53125-83.53125c-46.132812 0-83.53125 37.398437-83.53125 83.53125.054688 46.109375 37.421875 83.476563 83.53125 83.527344zm0-77.089844c-15.34375.003906-28.359375-11.273437-30.542968-26.460937-2.183594-15.191407 7.128906-29.675782 21.851562-33.996094v-8.671875c0-3.867188 3.132812-7 7-7s7 3.132812 7 7v7.882812c14.757812 2.597657 25.527344 15.40625 25.546875 30.390625 0 3.867188-3.132813 7-7 7-3.863281 0-7-3.132812-7-7 0-9.308594-7.542969-16.855468-16.855469-16.855468-9.308594-.003907-16.855468 7.542968-16.855468 16.855468 0 9.308594 7.546874 16.855469 16.855468 16.855469 15.8125 0 29.066406 11.957031 30.691406 27.683594 1.625 15.730469-8.902343 30.140625-24.382812 33.375v7.8125c0 3.867187-3.132812 7-7 7s-7-3.132813-7-7v-8.132813c-13.625-3.527344-23.144531-15.8125-23.164062-29.882812 0-3.867188 3.136718-7 7-7 3.867187 0 7 3.132812 7 7 0 9.308594 7.546874 16.855468 16.855468 16.855468 9.3125 0 16.859375-7.546874 16.859375-16.855468-.003906-9.308594-7.550781-16.855469-16.859375-16.855469zm0 0"
-                                    data-original="#000000" class="active-path" />
-                                <path d="m472.953125 374.761719h-52.953125v-198h-64v198h-79v-160h-63v160h-80v-88h-63v88h-57v-367.285157c0-3.867187-3.132812-7-7-7s-7 3.132813-7 7v374.570313c.0234375 1.832031.78125 3.578125 2.109375 4.84375 1.324219 1.261719 3.105469 1.9375 4.9375 1.871094h465.90625c3.867187 0 7-3.132813 7-7 0-3.867188-3.132813-7-7-7zm0 0"
-                                    data-original="#000000" class="active-path" />
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -45 479.954 479" width="60px">
+                        <g>
+                            <path d="m244.75 144.949219c1.808594.003906 3.542969-.695313 4.847656-1.945313l52.269532-50.140625 54.1875 42.683594c2.527343 1.992187 6.089843 2.003906 8.628906.027344l76.457031-59.417969-2.734375 35.566406c-.296875 3.851563 2.589844 7.21875 6.441406 7.515625.183594.011719.367188.019531.546875.019531 3.65625-.003906 6.691407-2.820312 6.96875-6.464843l3.953125-51.394531c.144532-1.855469-.460937-3.695313-1.675781-5.105469-1.214844-1.410157-2.945313-2.28125-4.800781-2.414063l-55.351563-3.953125c-3.855469-.273437-7.207031 2.628907-7.480469 6.484375-.277343 3.855469 2.625 7.207032 6.480469 7.480469l37.195313 2.65625-70.269532 54.613281-54.667968-43.0625c-2.742188-2.160156-6.65625-1.96875-9.175782.449219l-56.671874 54.351563c-2.058594 1.980468-2.710938 5.011718-1.644532 7.664062s3.636719 4.390625 6.492188 4.386719zm0 0"
+                                data-original="#000000" class="active-path" />
+                            <path d="m123.691406 206.980469c46.132813 0 83.53125-37.394531 83.53125-83.527344s-37.398437-83.53125-83.53125-83.53125c-46.132812 0-83.53125 37.398437-83.53125 83.53125.054688 46.109375 37.421875 83.476563 83.53125 83.527344zm0-77.089844c-15.34375.003906-28.359375-11.273437-30.542968-26.460937-2.183594-15.191407 7.128906-29.675782 21.851562-33.996094v-8.671875c0-3.867188 3.132812-7 7-7s7 3.132812 7 7v7.882812c14.757812 2.597657 25.527344 15.40625 25.546875 30.390625 0 3.867188-3.132813 7-7 7-3.863281 0-7-3.132812-7-7 0-9.308594-7.542969-16.855468-16.855469-16.855468-9.308594-.003907-16.855468 7.542968-16.855468 16.855468 0 9.308594 7.546874 16.855469 16.855468 16.855469 15.8125 0 29.066406 11.957031 30.691406 27.683594 1.625 15.730469-8.902343 30.140625-24.382812 33.375v7.8125c0 3.867187-3.132812 7-7 7s-7-3.132813-7-7v-8.132813c-13.625-3.527344-23.144531-15.8125-23.164062-29.882812 0-3.867188 3.136718-7 7-7 3.867187 0 7 3.132812 7 7 0 9.308594 7.546874 16.855468 16.855468 16.855468 9.3125 0 16.859375-7.546874 16.859375-16.855468-.003906-9.308594-7.550781-16.855469-16.859375-16.855469zm0 0"
+                                data-original="#000000" class="active-path" />
+                            <path d="m472.953125 374.761719h-52.953125v-198h-64v198h-79v-160h-63v160h-80v-88h-63v88h-57v-367.285157c0-3.867187-3.132812-7-7-7s-7 3.132813-7 7v374.570313c.0234375 1.832031.78125 3.578125 2.109375 4.84375 1.324219 1.261719 3.105469 1.9375 4.9375 1.871094h465.90625c3.867187 0 7-3.132813 7-7 0-3.867188-3.132813-7-7-7zm0 0"
+                                data-original="#000000" class="active-path" />
+                        </g>
+                    </svg>
+                    <h6>Money Saving</h6>
+                </div>
+                <div class="choose2">
+                    <svg id="Capa_1" enable-background="new 0 0 512.06 512.06" height="50px" viewBox="0 0 512.06 512.06" width="70px" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="m512.06 437.53-46.91 74.5h-465.15v-149h465.15z" fill="#ff6826" />
+                            <path d="m512.06 437.53-46.91 74.5h-465.15v-74.5z" fill="#e50057" />
+                            <path d="m409.23 256.03-46.91 74.5h-362.32v-149h362.32z" fill="#fed843" />
+                            <path d="m409.23 256.03-46.91 74.5h-362.32v-74.5z" fill="#fabe2c" />
+                            <path d="m304.73 74.53-46.91 74.5h-257.82v-149h257.82z" fill="#91e6a9" />
+                            <path d="m304.73 74.53-46.91 74.5h-257.82v-74.5z" fill="#26bfa6" />
+                            <g fill="#47568c">
+                                <path d="m179 59.53h47.33v30h-47.33z" />
+                                <path d="m287 241.03h47.33v30h-47.33z" />
+                                <path d="m385.83 422.53h47.34v30h-47.34z" />
                             </g>
-                        </svg>
-                        <h6>Money Saving</h6>
-                    </div>
-                    <div class="choose2">
-                            <svg id="Capa_1" enable-background="new 0 0 512.06 512.06" height="50px" viewBox="0 0 512.06 512.06" width="70px" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path d="m512.06 437.53-46.91 74.5h-465.15v-149h465.15z" fill="#ff6826" />
-                                    <path d="m512.06 437.53-46.91 74.5h-465.15v-74.5z" fill="#e50057" />
-                                    <path d="m409.23 256.03-46.91 74.5h-362.32v-149h362.32z" fill="#fed843" />
-                                    <path d="m409.23 256.03-46.91 74.5h-362.32v-74.5z" fill="#fabe2c" />
-                                    <path d="m304.73 74.53-46.91 74.5h-257.82v-149h257.82z" fill="#91e6a9" />
-                                    <path d="m304.73 74.53-46.91 74.5h-257.82v-74.5z" fill="#26bfa6" />
-                                    <g fill="#47568c">
-                                        <path d="m179 59.53h47.33v30h-47.33z" />
-                                        <path d="m287 241.03h47.33v30h-47.33z" />
-                                        <path d="m385.83 422.53h47.34v30h-47.34z" />
-                                    </g>
-                                    <path d="m179 74.53h47.33v15h-47.33z" fill="#29376d" />
-                                    <path d="m287 256.03h47.33v15h-47.33z" fill="#29376d" />
-                                    <path d="m385.83 437.53h47.34v15h-47.34z" fill="#29376d" />
-                                </g>
-                            </svg>
-                        <h6>Energy Saving</h6>
-                    </div>                
+                            <path d="m179 74.53h47.33v15h-47.33z" fill="#29376d" />
+                            <path d="m287 256.03h47.33v15h-47.33z" fill="#29376d" />
+                            <path d="m385.83 437.53h47.34v15h-47.34z" fill="#29376d" />
+                        </g>
+                    </svg>
+                    <h6>Energy Saving</h6>
+                </div>
+            </div>
         </div>
-    </div>  
 </section>
+
 <section>
     <div class="container-fluid padding">
         <div class="service col-12">
-            <p>options for your convinience</p>
-            <h5>Greensource Services</h5>
+            <h5>Who We are</h5>
             <hr />
+            <p>What we are about and stand for</p>
         </div>
     </div>
     <div class="container padding">
-        <div class="row owl-carousel owl-theme" id="bridgeSlide">
-            <div class="item">
-                <div class="single-service-style-one">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-home"></i>
-                            <h3>
-                                <a href="{% url 'solar_design' %}">residential solar</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/residential-solar.webp' %}" alt="installed rooftop monocrystalline panels" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="about row padding">
+            <div class="wow fadeIn col-lg-6 col-md-6 col-xs-12" data-wow-duration="4s" data-wow-delay="0.3s" data-wow-offset="10">
+                <img src="{% static 'images/abt.webp' %}" class="img-fluid" alt="rooftop installation" />
             </div>
-            <div class="item">
-                <div class="single-service-style-one">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-industry"></i>
-                            <h3>
-                                <a href="{% url 'solar_design' %}">commercial solar</a>
-                            </h3>
+            <div class="abt-info col-lg-6 col-md-6 col-xs-12">
+                <p class="active">
+                    At Greensource Energy Consult, our goal is to offer quality solar products and standard delivery services, keeping an eye
+                    on the latest trends in the industry, putting our customer’s wishes first. This is made possible by our
+                    team of young and motivated engineers. We believe in great bargains and excellent service, which is why
+                    we commit ourselves to giving you the best of both...
+                </p>
+                <a href="{% url 'about' %}">Read More</a>
+                <div class="xtravite">
+                    <div class="xvite">
+                        <div>
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div>
+                            <p>Reliability, Performance, Efficiency!</p>
                         </div>
                     </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/commercial-solar.webp' %}" alt="installed rooftop monocrystalline panels" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
+                    <div class="xvite">
+                        <div>
+                            <i class="fas fa-check"></i>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-service-style-one">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-hdd"></i>
-                            <h3>
-                                <a href="{% url 'solar_design' %}">Inverter Installation</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/inverter.webp' %}" alt="installed rooftop monocrystalline panels" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-service-style-one">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="far fa-lightbulb"></i>
-                            <h3>
-                                <a href="{% url 'electrical_design' %}">solar lighting</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/solar-light.webp' %}" alt="installed all in one solar street light" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-service-style-one">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-solar-panel"></i>
-                            <h3>
-                                <a href="{% url 'solar_design' %}">solar Water Pump</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/solar-pump.webp' %}" alt="installed rooftop monocrystalline panels" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-service-style-one">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-car-battery"></i>
-                            <h3>
-                                <a href="{% url 'energy_management' %}">solar storage</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/battery.webp' %}" alt="stack of installed 2v solar batteries" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-service-style-one">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-power-off"></i>
-                            <h3>
-                                <a href="{% url 'project_management' %}">solar energy mgt</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/energy-mgt.webp' %}" alt="energy saving bulb" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-service-style-one">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-bolt"></i>
-                            <h3>
-                                <a href="{% url 'hvac' %}">Electrical Installation</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/ceiling-lamp.webp' %}" alt="stack of different inverter capacity" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-service-style-one">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-tools"></i>
-                            <h3>
-                                <a href="{% url 'maintenance_service' %}">upgrade / maintenance</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/maintenance.webp' %}" alt="man carrying out maintenance on solar panels" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
+                        <div>
+                            <p>Green, Sustainable, Fits the bill!</p>
                         </div>
                     </div>
                 </div>
@@ -374,465 +215,340 @@ menu-active
 
 <section>
     <div class="container-fluid padding">
-            <div class="service col-12">
-                    <p>Select a design that suits your needs</p>
-                    <h5>Solar Pricing Plans</h5>
-                    <hr />
-                </div>
-        <div class="pricing-table owl-carousel owl-theme" id="pricing">
-            
+        <div class="service col-12">
+            <h5>Our Services</h5>
+            <hr />
+            <p>Our Range of Solar Services</p>
+        </div>
+    </div>
+    <div class="container padding">
+        <div class="owl-carousel owl-theme service-style-one" id="bridgeSlide">
             <div class="item">
-                <div class="table">
-                    <h6>mini-kit</h6>
-                    <div class="prices">
-                        N176, 000
-                        <span>
-                            <strong>200w</strong> Module
-                            <br />
-                            <strong>1kva</strong> Inverter
-                            <br />
-                            <strong>60ah</strong> Battery
-                            <br />
-                            <strong>30amp</strong> Controller</span>
+                <div class="single-service-style-three">
+                    <div class="text-block">
+                        <div class="icon-block">
+                                <i class="fas fa-home"></i>
+                        </div>
+                        <h3>
+                            <a href="{% url 'solar_design' %}">Residential Solar</a>
+                        </h3>
+                        <p>Solar panels for home solar energy systems are designed, installed, and maintained by...</p>
+                        <a href="{% url 'solar_design' %}" class="read-more">Read More</a>
                     </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>1</strong> Mini TV</li>
-                        <li>
-                            <strong>1</strong> Fan &nbsp;Laptop</li>
-                        <li>
-                            <strong>All</strong> Light points</li>
-                        <li>
-                            <strong></strong> Decoder</li>
-                    </ul>
                 </div>
-            </div>
-            
-            
-            <div class="item">
-                <div class="table">
-                    <h6>mini-kit +</h6>
-                    <div class="prices">
-                        N242, 000
-                        <span>
-                            <strong>300w</strong> Module
-                            <br />
-                            <strong>1kva</strong> Inverter
-                            <br />
-                            <strong>100ah</strong> Battery
-                            <br />
-                            <strong>30amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>1</strong> TV</li>
-                        <li>
-                            <strong>1</strong> Fan &nbsp;Laptop</li>
-                        <li>
-                            <strong>All</strong> Light points</li>
-                        <li>
-                            <strong></strong> Decoder</li>
-                    </ul>
-                </div>
-            </div>
-           
-            <div class="item">
-                <div class="table">
-                    <h6>regular</h6>
-                    <div class="prices">
-                        N368,500
-                        <span>
-                            <strong>600w</strong> Module
-                            <br />
-                            <strong>1.5kva</strong> Inverter
-                            <br />
-                            <strong>200ah</strong> Battery
-                            <br />
-                            <strong>50amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>1</strong> TV</li>
-                        <li>
-                            <strong></strong> Fans &nbsp;Laptops</li>
-                        <li>
-                            <strong>All</strong> Light points</li>
-                        <li>
-                            <strong></strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-           
-            
-            <div class="item">
-                <div class="table">
-                    <h6>regular +</h6>
-                    <div class="prices">
-                        N480, 500
-                        <span>
-                            <strong>750w</strong> Module
-                            <br />
-                            <strong>2.5kva</strong> Inverter
-                            <br />
-                            <strong>200ah</strong> battery
-                            <br />
-                            <strong>50amp</strong> controller</span>
-                    </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>1</strong> TV</li>
-                        <li>
-                            <strong></strong> Fans &nbsp;Laptops</li>
-                        <li>
-                            <strong>All</strong> Light points</li>
-                        <li>
-                            <strong></strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-           
-            <div class="item">
-                <div class="table">
-                    <h6>standard</h6>
-                    <div class="prices">
-                        N646, 500
-                        <span>
-                            <strong>900w</strong> Module
-                            <br />
-                            <strong>2kva</strong> Inverter
-                            <br />
-                            <strong>300ah</strong> Battery
-                            <br />
-                            <strong>50amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>2</strong> TV</li>
-                        <li>
-                            <strong></strong> Fans &nbsp; Laptops</li>
-                        <li>
-                            <strong>All</strong> Light points</li>
-                        <li>
-                            <strong></strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
-          
-            <div class="item">
-                <div class="table">
-                    <h6>standard +</h6>
-                    <div class="prices">
-                        N735, 300
-                        <span>
-                            <strong>1.2kw</strong> Module
-                            <br />
-                            <strong>2.5kva</strong> Inverter
-                            <br />
-                            <strong>400ah</strong> Battery
-                            <br />
-                            <strong>60amp</strong> Controller</span>
-                    </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>2</strong> TV &nbsp;
-                            <strong></strong> Fans &nbsp; Laptops</li>
-                        <li>
-                            <strong>1</strong> Fridge/Freezer</li>
-                        <li>
-                            <strong>All</strong> Light points</li>
-                        <li>
-                            <strong></strong> Decoder/Home theater</li>
-                    </ul>
-                </div>
-            </div>
 
+            </div>
             <div class="item">
-                <div class="table">
-                    <h6>compact</h6>
-                    <div class="prices">
-                        N975, 450
-                        <span>
-                            <strong>1.5kw</strong> Module
-                            <br />
-                            <strong>3kva</strong> Inverter
-                            <br />
-                            <strong>400ah</strong> Battery
-                            <br />
-                            <strong>80amp</strong> Controller</span>
+                <div class="single-service-style-three">
+                    <div class="text-block">
+                        <div class="icon-block">
+                                <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>
+                            <a href="{% url 'commercial_solar' %}">Commercial Solar</a>
+                        </h3>
+                        <p>We design, install, and operate solar panels for commercial applications ranging from ...</p>
+                        <a href="{% url 'commercial_solar' %}" class="read-more">Read More</a>
                     </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>2</strong> TV &nbsp;
-                            <strong></strong> Fans &nbsp;Laptops</li>
-                        <li>
-                            <strong>1</strong> Fridge/Freezer</li>
-                        <li>
-                            <strong>All</strong> Light points</li>
-                        <li>
-                            <strong></strong> Decoder/Home theater</li>
                 </div>
             </div>
-
             <div class="item">
-                <div class="table">
-                    <h6>compact +</h6>
-                    <div class="prices">
-                        N1, 335, 000
-                        <span>
-                            <strong>2kw</strong> Module
-                            <br />
-                            <strong>3kva</strong> Inverter
-                            <br />
-                            <strong>600ah</strong> Battery
-                            <br />
-                            <strong>80amp</strong> Controller</span>
+                <div class="single-service-style-three">
+                    <div class="text-block">
+                        <div class="icon-block">
+                                <i class="fas fa-hdd"></i>
+                        </div>
+                        <h3>
+                            <a href="{% url 'off_grid_solar' %}">Inverter Installation</a>
+                        </h3>
+                        <p>We render inverter installation services for clients who like this option in a unique ...</p>
+                        <a href="{% url 'off_grid_solar' %}" class="read-more">Read More</a>
                     </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>3</strong> TV &nbsp;
-                            <strong></strong> Fans &nbsp; Laptops</li>
-                        <li>
-                            <strong>1</strong> Freezer &nbsp;
-                            <strong></strong> Washing machine</li>
-                        <li>
-                            <strong>All</strong> Light points &nbsp;
-                            <strong></strong> Laptops</li></li>
-                        <li>
-                            <strong></strong> Decoder/Home theater</li>
-                    </ul>
                 </div>
             </div>
-
             <div class="item">
-                <div class="table">
-                    <h6>advance</h6>
-                    <div class="prices">
-                        N2, 000, 000
-                        <span>
-                            <strong>3kw</strong> Module
-                            <br />
-                            <strong>3.5kw</strong> Inverter
-                            <br />
-                            <strong>800ah</strong> Battery
-                            <br />
-                            <strong>100amp</strong> Controller</span>
+                <div class="single-service-style-three">
+                    <div class="text-block">
+                        <div class="icon-block">
+                                <i class="far fa-lightbulb"></i>
+                        </div>
+                        <h3>
+                            <a href="{% url 'electrical_design' %}">Solar Lighting</a>
+                        </h3>
+                        <p>We design and install solar lights for houses, offices, neighborhoods, and market ...</p>
+                        <a href="{% url 'electrical_design' %}" class="read-more">Read More</a>
                     </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>3</strong> TV &nbsp;
-                            <strong></strong> Fans</li>
-
-                        <li>
-                            <strong>1</strong> Freezer &nbsp;
-                            <strong></strong> Washing machine</li>
-                        <li>
-                            <strong>All</strong> Light points &nbsp;
-                            <strong></strong> Laptops</li>
-                        <li>
-                            <strong></strong> Decoder/Home theater</li>
-                    </ul>
                 </div>
             </div>
-
             <div class="item">
-                <div class="table">
-                    <h6>advance +</h6>
-                    <div class="prices">
-                        N3, 480, 500
-                        <span>
-                            <strong>5kw</strong> Module
-                            <br />
-                            <strong>5kw</strong> Inverter
-                            <br />
-                            <strong>800ah</strong> Battery
-                            <br />
-                            <strong>120amp</strong> Controller</span>
+                <div class="single-service-style-three">
+                    <div class="text-block">
+                        <div class="icon-block">
+                                <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h3>
+                            <a href="{% url 'solar_water_pump' %}">Solar Pump</a>
+                        </h3>
+                        <p>Since it lowers the cost of burning fossil fuels and provides energy efficiency ...</p>
+                        <a href="{% url 'solar_water_pump' %}" class="read-more">Read More</a>
                     </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>3</strong> TV &nbsp;
-                            <strong></strong> Fans &nbsp; Laptops</li>
-
-                        <li>
-                            <strong>1</strong> Freezer &nbsp;
-                            <strong></strong> Washing machine</li>
-                        <li>
-                            <strong>All</strong> Light points &nbsp;
-                            <strong>1</strong> AC(1HP)</li>
-                        <li>
-                            <strong></strong> Decoder/Home theater</li>
-                    </ul>
                 </div>
             </div>
-
             <div class="item">
-                <div class="table">
-                    <h6>premium</h6>
-                    <div class="prices">
-                        N3, 950, 000
-                        <span>
-                            <strong>6kw</strong> Module
-                            <br />
-                            <strong>5kw</strong> Inveter
-                            <br />
-                            <strong>1000ah</strong> Battery
-                            <br />
-                            <strong>140amp</strong> Controller</span>
+                <div class="single-service-style-three">
+                    <div class="text-block">
+                        <div class="icon-block">
+                                <i class="fas fa-car-battery"></i>
+                        </div>
+                        <h3>
+                            <a href="{% url 'energy_management' %}">Solar Storage</a>
+                        </h3>
+                        <p>We build energy storage for solar energy systems, which is important for ensuring ...</p>
+                        <a href="{% url 'energy_management' %}" class="read-more">Read More</a>
                     </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>3</strong> TV &nbsp;
-                            <strong></strong> Fans &nbsp; Laptops</li>
-
-                        <li>
-                            <strong>1</strong> Freezer &nbsp;
-                            <strong></strong> Washing machine</li>
-                        <li>
-                            <strong>All</strong> Light points &nbsp;
-                            <strong>2</strong> AC(1HP)</li>
-                        <li>
-                            <strong></strong> Decoder/Home theater</li>
-                    </ul>
                 </div>
             </div>
-
             <div class="item">
-                <div class="table">
-                    <h6>premium +</h6>
-                    <div class="prices">
-                        N4, 550, 000
-                        <span>
-                            <strong>8kw</strong> Module
-                            <br />
-                            <strong>5kw</strong> Inverter
-                            <br />
-                            <strong>1200ah</strong> Battery
-                            <br />
-                            <strong>160amp</strong> Controller</span>
+                <div class="single-service-style-three">
+                    <div class="text-block">
+                        <div class="icon-block">
+                                <i class="fas fa-charging-station"></i>
+                        </div>
+                        <h3>
+                            <a href="{% url 'project_management' %}">Energy Management</a>
+                        </h3>
+                        <p>Your home/business energy usage and GHG emissions can be minimized with the ...</p>
+                        <a href="{% url 'project_management' %}" class="read-more">Read More</a>
                     </div>
-                    <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>3</strong> TV &nbsp;
-                            <strong></strong> Fans &nbsp; Laptops</li>
-
-                        <li>
-                            <strong>1</strong> Freezer &nbsp;
-                            <strong></strong> Washing machine</li>
-                        <li>
-                            <strong>All</strong> Light points &nbsp;
-                            <strong>3</strong> AC(1HP)</li>
-                        <li>
-                            <strong>1</strong> Decoder/Home theater</li>
-                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-service-style-three">
+                    <div class="text-block">
+                        <div class="icon-block">
+                                <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>
+                            <a href="{% url 'hvac' %}">Electrical installation</a>
+                        </h3>
+                        <p>You need people you can rely on when it comes to electrical installations ...</p>
+                        <a href="{% url 'hvac' %}" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-service-style-three">
+                    <div class="text-block">
+                        <div class="icon-block">
+                                <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>
+                            <a href="{% url 'maintenance_service' %}">Maintenance Retrofit</a>
+                        </h3>
+                        <p>We're committed to increasing the production of renewable energy and ensuring ...</p>
+                        <a href="{% url 'maintenance_service' %}" class="read-more">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-
 <section>
-    <div class="container padding">
-        <div class="service col-12">
-            <p>What our clients are saying</p>
-            <h5>Testimonials</h5>
-            <hr />
+    <div class="container-fluid padding">
+        <div class="service-two col-12">
+            <h5><i class="fas fa-long-arrow-alt-right"></i>Our Pricing</h5>
+            <p>Select a design that suits your needs</p>
         </div>
-        <div class="container padding">
-            <div class="row testimony">
-                <div class="col-lg-6 d-flex">
-                    <div class="title-block my-auto">
-                        <div class="sec-title">
-                            <p>You are in Very Good
-                                <br /> Hands, Check What
-                                <br /> our Customers are
-                                <br /> Talking About</p>
-                            <a href="{% url 'testimonial' %}">view all testimonial</a>
+        <div class="pricing row  col-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <p>Our designs and prices are best suited to give our customers great value </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <a href="{% url 'pricing' %}">View All</a>
+            </div>
+        </div>
+
+        <div class="pricing-table">
+            <div class="row owl-carousel owl-theme" id="pricing">
+                <div class="item">
+                    <div class="table">
+                        <h6>mini 1</h6>
+                        <div class="prices">
+                            N262, 000
+                            <span>
+                                <strong>360w</strong> Module
+                                <br />
+                                <strong>1kw</strong> Inverter
+                                <br />
+                                <strong>100ah</strong> Battery
+                                <br />
+                                <strong>30amp</strong> Controller</span>
                         </div>
+                        <ul>
+                            <p>load capacity</p>
+                            <li>
+                                <strong>1</strong> Mini TV</li>
+                            <li>
+                                <strong>1</strong> Fan &nbsp;Laptop</li>
+                            <li>
+                                <strong>All</strong> Light points</li>
+                            <li>
+                                <strong></strong> Decoder</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="testimonials-style-three-carousel-wrapper">
-                        <div class="testimonials-style-three-carousel owl-theme owl-carousel" id="test">
-                            <div class="single-testimonial-style-three">
-                                <i class="fas fa-quote-right"></i>
-                                <p>Excellent service, competitive pricing and great customer support. It’s throughly refreshing
-                                    to get such efficient solar system.</p>
-                                <div class="client-block">
-                                    <div class="image-block">
-                                        <img src="{% static 'images/b02.webp' %}" alt="female customer testimonial" />
-                                    </div>
-                                    <div class="text-block">
-                                        <h6>Goodness Damilare</h6>
-                                        <span>Enterpreneur</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-style-three">
-                                <i class="fas fa-quote-right"></i>
-                                <p>My expectation of your service, particularly the installation was indeed exceeded. Thanks
-                                    for the great job and professional advice.</p>
-                                <div class="client-block">
-                                    <div class="image-block">
-                                        <img src="{% static 'images/boye.webp' %}" alt="male customer testimonial" />
-                                    </div>
-                                    <div class="text-block">
-                                        <h6>Adeboye Pama</h6>
-                                        <span>CEO pama-natra</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-style-three">
-                                <i class="fas fa-quote-right"></i>
-                                <p>The installation process went well. The Installers were efficient on the job and was carried
-                                    along at each stage and process of the work.</p>
-                                <div class="client-block">
-                                    <div class="image-block">
-                                        <img src="{% static 'images/b02.webp' %}" alt="male customer testimonial" />
-                                    </div>
-                                    <div class="text-block">
-                                        <h6>Segun Taiwo</h6>
-                                        <span>Graphics designer</span>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="item">
+                    <div class="table">
+                        <h6>mini 2</h6>
+                        <div class="prices">
+                            N342, 000
+                            <span>
+                                <strong>540w</strong> Module
+                                <br />
+                                <strong>1kw</strong> Inverter
+                                <br />
+                                <strong>150ah</strong> Battery
+                                <br />
+                                <strong>40amp</strong> Controller</span>
                         </div>
+                        <ul>
+                            <p>load capacity</p>
+                            <li>
+                                <strong>1</strong> Mini TV</li>
+                            <li>
+                                <strong>1</strong> Fan &nbsp;Laptop</li>
+                            <li>
+                                <strong>All</strong> Light points</li>
+                            <li>
+                                <strong></strong> Decoder</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="table">
+                        <h6>mini 3</h6>
+                        <div class="prices">
+                            N460,000
+                            <span>
+                                <strong>900w</strong> Module
+                                <br />
+                                <strong>2kw</strong> Inverter
+                                <br />
+                                <strong>200ah</strong> Battery
+                                <br />
+                                <strong>50amp</strong> Controller</span>
+                        </div>
+                        <ul>
+                            <p>load capacity</p>
+                            <li>
+                                <strong>1</strong> TV</li>
+                            <li>
+                                <strong></strong> Fans &nbsp;Laptops</li>
+                            <li>
+                                <strong>All</strong> Light points</li>
+                            <li>
+                                <strong></strong> Decoder/Home theater</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="table">
+                        <h6>mini 4</h6>
+                        <div class="prices">
+                            N595, 000
+                            <span>
+                                <strong>1.08kw</strong> Module
+                                <br />
+                                <strong>2kw</strong> Inverter
+                                <br />
+                                <strong>300ah</strong> battery
+                                <br />
+                                <strong>50amp</strong> controller</span>
+                        </div>
+                        <ul>
+                            <p>load capacity</p>
+                            <li>
+                                <strong>1</strong> TV</li>
+                            <li>
+                                <strong></strong> Fans &nbsp;Laptops</li>
+                            <li>
+                                <strong>All</strong> Light points</li>
+                            <li>
+                                <strong></strong> Decoder/Home theater</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<section>
+<div class="container padding">
+    <div class="service col-12">
+        <h5>Testimonials</h5>
+        <hr />
+        <p>What our clients are saying</p>
+    </div>
+    <div class="container padding">
+        <div class="row testimony">
+            <div class="col-lg-6 d-flex">
+                <div class="title-block my-auto">
+                    <div class="sec-title">
+                        <p>You are in Very Good
+                            <br /> Hands, Check What
+                            <br /> our Customers are
+                            <br /> Talking About
+                        </p>
+                        <a href="{% url 'testimonial' %}">view all testimonial</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="testimonials-style-three-carousel-wrapper">
+                    <div class="testimonials-style-three-carousel owl-theme owl-carousel" id="testimonial">
+                        {% if index %} {% for testimonial in index %}
+                        <div class="single-testimonial-style-three">
+                            <i class="fas fa-quote-right"></i>
+                            <p>{{ testimonial.body }}</p>
+                            <div class="client-block">
+                                <div class="image-block">
+                                    <img src="{{ testimonial.image.url }}" alt="Awesome Image" />
+                                </div>
+                                <div class="text-block">
+                                    <h6>{{ testimonial.name }}</h6>
+                                    <span>{{ testimonial.title }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %} {% else %}
+                        <p>There are no recent testimonial</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 <section id="call-to-action">
     <div class="container-fluid padding wow fadeIn">
         <div class="row">
-                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
-                <h3 class="col-lg-3 col-md-4 col-xs-12">
+            <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
+            <h3 class="col-lg-3 col-md-4 col-xs-12">
                 <a href="{% url 'contact_us' %}">Get in Touch
                     <i class="fas fa-arrow-right"></i>
                 </a>
-                </h3>
+            </h3>
         </div>
     </div>
 </section>
 <div class="container-fluid padding">
     <div class="row-counters row padding">
         <div class="counter-heading col-12">
-            <p>our business success track record</p>
-            <h5>Our Business Numbers</h5>
+            <h5>Our Numbers</h5>
             <hr />
+            <p>our business success track record</p>
         </div>
         <div class="counter col-xs-12 col-md-6 col-lg-3">
             <div>
@@ -871,9 +587,9 @@ menu-active
 <div class="container-fluid padding">
     <div class="row padding">
         <div class="service col-12">
-            <p>Stay up to date with greensource energy</p>
-            <h5>Solar News</h5>
+            <h5>Our Blog</h5>
             <hr />
+            <p>Stay up to date with the latest news</p>
         </div>
     </div>
     <div class="articles row padding">
@@ -881,7 +597,7 @@ menu-active
         <div class="news col-xs-12 col-md-4 col-lg-3">
             <img src="{{ post.thumb.url }}" class="card-img-top" alt="awesome image">
             <p>| &nbsp; {{ post.date|date:"F d" }} &nbsp;.</p>
-            <div class="card-body"> 
+            <div class="card-body">
                 <a href="{{ post.get_absolute_url }}">
                     <h5>{{ post.title }}</h5>
                 </a>
