@@ -1,7 +1,5 @@
 {% extends 'base_layout.html' %}
-{% block nav-service %}
-menu-active
-{% endblock %}
+{% block nav-service %} active {% endblock %}
 {% load static %}
 {% block title %}Electrical Installation Services {{ block.super }}{% endblock %}
 {% block content %}
@@ -74,16 +72,4 @@ menu-active
         </div>
     </div>
 </div>
-<section id="call-to-action">
-    <div class="container-fluid padding wow fadeIn">
-        <div class="row">
-                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Want an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
-                <h3 class="col-lg-3 col-md-4 col-xs-12">
-                <a href="{% url 'contact_us' %}">Get in Touch
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                </h3>
-        </div>
-    </div>
-</section>
 {% endblock %}

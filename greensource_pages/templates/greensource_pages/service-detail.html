@@ -1,7 +1,5 @@
 {% extends 'base_layout.html' %}
-{% block nav-service %}
-menu-active
-{% endblock %}
+{% block nav-service %} active {% endblock %}
 {% load static %}
 {% block title %}Solar Energy Services Details {{ block.super }}{% endblock %}
 {% block content %}
@@ -69,5 +67,4 @@ menu-active
         </div>
     </section>
 </div>
-
 {% endblock %}

@@ -1,9 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Galllery, Images, Testimonial
+from .models import Images, Testimonial, Solar
 
 # Create your views here.
 def index(request):
-    index = Testimonial.objects.all().order_by('-date')
+    index = Testimonial.objects.all()
     return render(request,"greensource_pages/index.html", {'index': index})
 
 def about(request):
@@ -43,11 +43,11 @@ def project_management(request):
     return render(request,"greensource_pages/project-management.html")
 
 def image(request):
-    images = Images.objects.all().order_by('-date')
+    images = Images.objects.all()
     return render(request,"greensource_pages/gallery.html", {'images': images})
 
 def testimonial(request):
-    testimonial = Testimonial.objects.all().order_by('-date')
+    testimonial = Testimonial.objects.all()
     return render(request,"greensource_pages/testimonial.html", {'testimonial': testimonial})
 
 def terms_of_use(request):
@@ -66,11 +66,11 @@ def pricing(request):
     return render(request,"greensource_pages/pricing.html")
 
 def projects(request):
-    projects = Galllery.objects.all().order_by('-date')
-    return render(request,"greensource_pages/projects.html", {'projects': projects})
+    solar = Solar.objects.all()
+    return render(request,"greensource_pages/projects.html", {'obj': solar})
 
-
-
-
+def project_details(request,slug):
+    solar = get_object_or_404(Solar,slug=slug)
+    return render(request,'greensource_pages/project-details.html', {'obj':solar})
 
 

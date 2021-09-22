@@ -1,9 +1,7 @@
 {% extends 'base_layout.html' %}
 {% load static %}
-{% block nav-news %}
-menu-active
-{% endblock %}
-{% block title %}{{ block.super }} Articles{% endblock %}
+{% block nav-news %} active {% endblock %}
+{% block title %}Articles {{ block.super }}{% endblock %}
 {% block content %}
 
 <div class="container-fluid padding">

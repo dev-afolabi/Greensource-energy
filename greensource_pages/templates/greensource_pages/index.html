@@ -1,7 +1,5 @@
 {% extends 'base_layout.html' %}
-{% block nav-home %}
-menu-active
-{% endblock %}
+{% block nav-home %} active {% endblock %}
 {% load static %}
 {% block title %}Solar Energy for Homes and Businesses {{ block.super }}{% endblock %}
 {% block content %}
@@ -49,44 +47,40 @@ menu-active
             </div>
         </div>
     </div>
-    <!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a> -->
 </div>
 <div class="container">
     <div class="row colum padding">
         <div class="colum-body col-xs-12 col-md-6 col-lg-3">
             <div>
-                <i class="fas fa-certificate"></i>
+                <img src="{% static 'images/solar-panel.png' %}" alt="img" />
             </div>
-            <h6>Experience level</h6>
-            <p>5+ years of experience.</p>
+            <span data-toggle="counter-up">100</span>
+            <span class="sign">+</span>
+            <h6>Panels Installed</h6>
         </div>
         <div class="colum-body col-xs-12 col-md-6 col-lg-3">
             <div>
-                <i class="fas fa-project-diagram"></i>
+                <img src="{% static 'images/project.png' %}" alt="img" />
             </div>
-            <h6>Unique service</h6>
-            <p>Custom design for all clients.</p>
+            <span data-toggle="counter-up">35</span>
+            <span class="sign">+</span>
+            <h6>Projects Done</h6>
         </div>
         <div class="colum-body col-xs-12 col-md-6 col-lg-3">
             <div>
-                <i class="fas fa-tags"></i>
+                <img src="{% static 'images/solar (3).png' %}" alt="img" />
             </div>
-            <h6>Gold standard</h6>
-            <p>Best practices service.</p>
+            <span data-toggle="counter-up">50</span>
+            <span class="sign">+</span>
+            <h6>KWs Generated</h6>
         </div>
         <div class="colum-body col-xs-12 col-md-6 col-lg-3">
             <div>
-                <i class="fas fa-headset"></i>
+                <img src="{% static 'images/customer (1).png' %}" alt="img" />
             </div>
-            <h6>24/7 support (234)</h6>
-            <p>802-9442-697, 807-6068-609.</p>
+            <span data-toggle="counter-up">28</span>
+            <span class="sign">+</span>
+            <h6>Customer Base</h6>
         </div>
     </div>
 </div>
@@ -132,43 +126,21 @@ menu-active
             </div>
             <div class="people-one col-lg-6 col-md-6 col-xs-12">
                 <div class="choose1">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -45 479.954 479" width="60px">
-                        <g>
-                            <path d="m244.75 144.949219c1.808594.003906 3.542969-.695313 4.847656-1.945313l52.269532-50.140625 54.1875 42.683594c2.527343 1.992187 6.089843 2.003906 8.628906.027344l76.457031-59.417969-2.734375 35.566406c-.296875 3.851563 2.589844 7.21875 6.441406 7.515625.183594.011719.367188.019531.546875.019531 3.65625-.003906 6.691407-2.820312 6.96875-6.464843l3.953125-51.394531c.144532-1.855469-.460937-3.695313-1.675781-5.105469-1.214844-1.410157-2.945313-2.28125-4.800781-2.414063l-55.351563-3.953125c-3.855469-.273437-7.207031 2.628907-7.480469 6.484375-.277343 3.855469 2.625 7.207032 6.480469 7.480469l37.195313 2.65625-70.269532 54.613281-54.667968-43.0625c-2.742188-2.160156-6.65625-1.96875-9.175782.449219l-56.671874 54.351563c-2.058594 1.980468-2.710938 5.011718-1.644532 7.664062s3.636719 4.390625 6.492188 4.386719zm0 0"
-                                data-original="#000000" class="active-path" />
-                            <path d="m123.691406 206.980469c46.132813 0 83.53125-37.394531 83.53125-83.527344s-37.398437-83.53125-83.53125-83.53125c-46.132812 0-83.53125 37.398437-83.53125 83.53125.054688 46.109375 37.421875 83.476563 83.53125 83.527344zm0-77.089844c-15.34375.003906-28.359375-11.273437-30.542968-26.460937-2.183594-15.191407 7.128906-29.675782 21.851562-33.996094v-8.671875c0-3.867188 3.132812-7 7-7s7 3.132812 7 7v7.882812c14.757812 2.597657 25.527344 15.40625 25.546875 30.390625 0 3.867188-3.132813 7-7 7-3.863281 0-7-3.132812-7-7 0-9.308594-7.542969-16.855468-16.855469-16.855468-9.308594-.003907-16.855468 7.542968-16.855468 16.855468 0 9.308594 7.546874 16.855469 16.855468 16.855469 15.8125 0 29.066406 11.957031 30.691406 27.683594 1.625 15.730469-8.902343 30.140625-24.382812 33.375v7.8125c0 3.867187-3.132812 7-7 7s-7-3.132813-7-7v-8.132813c-13.625-3.527344-23.144531-15.8125-23.164062-29.882812 0-3.867188 3.136718-7 7-7 3.867187 0 7 3.132812 7 7 0 9.308594 7.546874 16.855468 16.855468 16.855468 9.3125 0 16.859375-7.546874 16.859375-16.855468-.003906-9.308594-7.550781-16.855469-16.859375-16.855469zm0 0"
-                                data-original="#000000" class="active-path" />
-                            <path d="m472.953125 374.761719h-52.953125v-198h-64v198h-79v-160h-63v160h-80v-88h-63v88h-57v-367.285157c0-3.867187-3.132812-7-7-7s-7 3.132813-7 7v374.570313c.0234375 1.832031.78125 3.578125 2.109375 4.84375 1.324219 1.261719 3.105469 1.9375 4.9375 1.871094h465.90625c3.867187 0 7-3.132813 7-7 0-3.867188-3.132813-7-7-7zm0 0"
-                                data-original="#000000" class="active-path" />
-                        </g>
-                    </svg>
-                    <h6>Money Saving</h6>
+                    <img src="{% static 'images/bio-energy.png' %}" alt="img" />
+                    <h6>Green</h6>
                 </div>
                 <div class="choose2">
-                    <svg id="Capa_1" enable-background="new 0 0 512.06 512.06" height="50px" viewBox="0 0 512.06 512.06" width="70px" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <path d="m512.06 437.53-46.91 74.5h-465.15v-149h465.15z" fill="#ff6826" />
-                            <path d="m512.06 437.53-46.91 74.5h-465.15v-74.5z" fill="#e50057" />
-                            <path d="m409.23 256.03-46.91 74.5h-362.32v-149h362.32z" fill="#fed843" />
-                            <path d="m409.23 256.03-46.91 74.5h-362.32v-74.5z" fill="#fabe2c" />
-                            <path d="m304.73 74.53-46.91 74.5h-257.82v-149h257.82z" fill="#91e6a9" />
-                            <path d="m304.73 74.53-46.91 74.5h-257.82v-74.5z" fill="#26bfa6" />
-                            <g fill="#47568c">
-                                <path d="m179 59.53h47.33v30h-47.33z" />
-                                <path d="m287 241.03h47.33v30h-47.33z" />
-                                <path d="m385.83 422.53h47.34v30h-47.34z" />
-                            </g>
-                            <path d="m179 74.53h47.33v15h-47.33z" fill="#29376d" />
-                            <path d="m287 256.03h47.33v15h-47.33z" fill="#29376d" />
-                            <path d="m385.83 437.53h47.34v15h-47.34z" fill="#29376d" />
-                        </g>
-                    </svg>
-                    <h6>Energy Saving</h6>
+                    <img src="{% static 'images/planet-earth.png' %}" alt="img" />
+                    <h6>Sustainable</h6>
+                </div>
+                <div class="choose3">
+                    <img src="{% static 'images/profits.png' %}" alt="img" />
+                    <h6>Fits the Bill !</h6>
                 </div>
             </div>
         </div>
+    </div>
 </section>
-
 <section>
     <div class="container-fluid padding">
         <div class="service col-12">
@@ -212,7 +184,6 @@ menu-active
         </div>
     </div>
 </section>
-
 <section>
     <div class="container-fluid padding">
         <div class="service col-12">
@@ -226,7 +197,7 @@ menu-active
             <div class="item">
                 <div class="single-service-style-three">
                     <div class="text-block">
-                        <div class="icon-block">
+                        <div class="block">
                                 <i class="fas fa-home"></i>
                         </div>
                         <h3>
@@ -241,7 +212,7 @@ menu-active
             <div class="item">
                 <div class="single-service-style-three">
                     <div class="text-block">
-                        <div class="icon-block">
+                        <div class="block">
                                 <i class="fas fa-industry"></i>
                         </div>
                         <h3>
@@ -255,7 +226,7 @@ menu-active
             <div class="item">
                 <div class="single-service-style-three">
                     <div class="text-block">
-                        <div class="icon-block">
+                        <div class="block">
                                 <i class="fas fa-hdd"></i>
                         </div>
                         <h3>
@@ -269,7 +240,7 @@ menu-active
             <div class="item">
                 <div class="single-service-style-three">
                     <div class="text-block">
-                        <div class="icon-block">
+                        <div class="block">
                                 <i class="far fa-lightbulb"></i>
                         </div>
                         <h3>
@@ -283,7 +254,7 @@ menu-active
             <div class="item">
                 <div class="single-service-style-three">
                     <div class="text-block">
-                        <div class="icon-block">
+                        <div class="block">
                                 <i class="fas fa-solar-panel"></i>
                         </div>
                         <h3>
@@ -297,7 +268,7 @@ menu-active
             <div class="item">
                 <div class="single-service-style-three">
                     <div class="text-block">
-                        <div class="icon-block">
+                        <div class="block">
                                 <i class="fas fa-car-battery"></i>
                         </div>
                         <h3>
@@ -311,7 +282,7 @@ menu-active
             <div class="item">
                 <div class="single-service-style-three">
                     <div class="text-block">
-                        <div class="icon-block">
+                        <div class="block">
                                 <i class="fas fa-charging-station"></i>
                         </div>
                         <h3>
@@ -325,7 +296,7 @@ menu-active
             <div class="item">
                 <div class="single-service-style-three">
                     <div class="text-block">
-                        <div class="icon-block">
+                        <div class="block">
                                 <i class="fas fa-bolt"></i>
                         </div>
                         <h3>
@@ -339,7 +310,7 @@ menu-active
             <div class="item">
                 <div class="single-service-style-three">
                     <div class="text-block">
-                        <div class="icon-block">
+                        <div class="block">
                                 <i class="fas fa-tools"></i>
                         </div>
                         <h3>
@@ -355,7 +326,7 @@ menu-active
 </section>
 
 <section>
-    <div class="container-fluid padding">
+    <div class="container padding">
         <div class="service-two col-12">
             <h5><i class="fas fa-long-arrow-alt-right"></i>Our Pricing</h5>
             <p>Select a design that suits your needs</p>
@@ -368,7 +339,8 @@ menu-active
                 <a href="{% url 'pricing' %}">View All</a>
             </div>
         </div>
-
+    </div>
+    <div class="container-fluid padding">
         <div class="pricing-table">
             <div class="row owl-carousel owl-theme" id="pricing">
                 <div class="item">
@@ -531,59 +503,6 @@ menu-active
     </div>
 </div>
 </section>
-<section id="call-to-action">
-    <div class="container-fluid padding wow fadeIn">
-        <div class="row">
-            <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
-            <h3 class="col-lg-3 col-md-4 col-xs-12">
-                <a href="{% url 'contact_us' %}">Get in Touch
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </h3>
-        </div>
-    </div>
-</section>
-<div class="container-fluid padding">
-    <div class="row-counters row padding">
-        <div class="counter-heading col-12">
-            <h5>Our Numbers</h5>
-            <hr />
-            <p>our business success track record</p>
-        </div>
-        <div class="counter col-xs-12 col-md-6 col-lg-3">
-            <div>
-                <i class="far fa-smile"></i>
-            </div>
-            <span data-toggle="counter-up">18</span>
-            <span class="sign">+</span>
-            <p>Happy Clients</p>
-        </div>
-        <div class="counter col-xs-12 col-md-6 col-lg-3">
-            <div>
-                <i class="fas fa-project-diagram"></i>
-            </div>
-            <span data-toggle="counter-up">28</span>
-            <span class="sign">+</span>
-            <p>Projects Done</p>
-        </div>
-        <div class="counter col-xs-12 col-md-6 col-lg-3">
-            <div>
-                <i class="far fa-clock"></i>
-            </div>
-            <span data-toggle="counter-up">1,460</span>
-            <span class="sign">+</span>
-            <p>Hours Of Support</p>
-        </div>
-        <div class="counter col-xs-12 col-md-6 col-lg-3">
-            <div>
-                <i class="fas fa-users"></i>
-            </div>
-            <span data-toggle="counter-up">5</span>
-            <span class="sign">+</span>
-            <p>Team Members</p>
-        </div>
-    </div>
-</div>
 <div class="container-fluid padding">
     <div class="row padding">
         <div class="service col-12">
@@ -605,27 +524,5 @@ menu-active
         </div>
         {% endfor %}
     </div>
-</div>
-<!-- <div class="brand-carousel-wrapper">
-        <div class="container">
-            <div class="brand-carousel-one owl-theme owl-carousel">
-                <div class="item">
-                        <img src="{% static 'images/brand-1-1.webp' %}" alt="brand partners logo" />
-                </div>
-                <div class="item">
-                        <img src="{% static 'images/brand-1-2.webp' %}" alt="brand partners logo" />
-                </div>
-                <div class="item">
-                        <img src="{% static 'images/brand-1-3.webp' %}" alt="brand partners logo" />
-                </div>
-                <div class="item">
-                        <img src="{% static 'images/brand-1-4.webp' %}" alt="brand partners logo" />
-                </div>
-                <div class="item">
-                        <img src="{% static 'images/brand-1-5.webp' %}" alt="brand partners logo" />
-                </div>
-            </div>
-        </div>
-</div> -->
-    
+</div>    
 {% endblock %}

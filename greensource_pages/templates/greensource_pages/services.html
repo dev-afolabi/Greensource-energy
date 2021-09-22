@@ -1,7 +1,5 @@
 {% extends 'base_layout.html' %}
-{% block nav-service %}
-menu-active
-{% endblock %}
+{% block nav-service %} active {% endblock %}
 {% load static %}
 {% block title %}Solar Energy Services {{ block.super }}{% endblock %}
 {% block content %}
@@ -31,8 +29,8 @@ menu-active
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="single-service-style-three">
                         <div class="text-block">
-                            <div class="icon-block">
-                                    <i class="fas fa-home"></i>
+                            <div class="block">
+                                <i class="fas fa-home"></i>
                             </div>
                             <h3><a href="{% url 'solar_design' %}">Residential Solar</a></h3>
                             <p>Solar panels for home solar energy systems are designed, installed, and maintained by...</p>
@@ -43,8 +41,8 @@ menu-active
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="single-service-style-three">
                         <div class="text-block">
-                            <div class="icon-block">
-                                    <i class="fas fa-industry"></i>
+                            <div class="block">
+                                <i class="fas fa-industry"></i>
                             </div>
                             <h3><a href="{% url 'commercial_solar' %}">Commercial Solar</a></h3>
                             <p>We design, install, and operate solar panels for commercial applications ranging from ...</p>
@@ -55,7 +53,7 @@ menu-active
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="single-service-style-three">
                         <div class="text-block">
-                            <div class="icon-block">
+                            <div class="block">
                                     <i class="fas fa-hdd"></i>
                             </div>
                             <h3><a href="{% url 'off_grid_solar' %}">Inverter Installation</a></h3>
@@ -67,7 +65,7 @@ menu-active
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="single-service-style-three">
                         <div class="text-block">
-                            <div class="icon-block">
+                            <div class="block">
                                     <i class="far fa-lightbulb"></i>
                             </div>
                             <h3><a href="{% url 'electrical_design' %}">Solar Lighting</a></h3>
@@ -79,7 +77,7 @@ menu-active
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="single-service-style-three">
                         <div class="text-block">
-                            <div class="icon-block">
+                            <div class="block">
                                     <i class="fas fa-solar-panel"></i>
                             </div>
                             <h3><a href="{% url 'solar_water_pump' %}">Solar Pump</a></h3>
@@ -91,7 +89,7 @@ menu-active
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="single-service-style-three">
                         <div class="text-block">
-                            <div class="icon-block">
+                            <div class="block">
                                     <i class="fas fa-car-battery"></i>
                             </div>
                             <h3><a href="{% url 'energy_management' %}">Solar Storage</a></h3>
@@ -103,7 +101,7 @@ menu-active
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                         <div class="single-service-style-three">
                             <div class="text-block">
-                                <div class="icon-block">
+                                <div class="block">
                                         <i class="fas fa-charging-station"></i>
                                 </div>
                                 <h3><a href="{% url 'project_management' %}">Energy Management</a></h3>
@@ -115,11 +113,11 @@ menu-active
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                         <div class="single-service-style-three">
                             <div class="text-block">
-                                <div class="icon-block">
+                                <div class="block">
                                         <i class="fas fa-bolt"></i>
                                 </div>
                                 <h3><a href="{% url 'hvac' %}">Electrical installation</a></h3>
-                                <p>You need people you can rely on when it comes to electrical installations ...</p>
+                                <p>You need people you can rely on when it comes to electrical installations. We have ...</p>
                                 <a href="{% url 'hvac' %}" class="read-more">Read More</a>
                             </div>
                         </div>
@@ -127,7 +125,7 @@ menu-active
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                         <div class="single-service-style-three">
                             <div class="text-block">
-                                <div class="icon-block">
+                                <div class="block">
                                         <i class="fas fa-tools"></i>
                                 </div>
                                 <h3><a href="{% url 'maintenance_service' %}">Maintenance Retrofit</a></h3>
@@ -139,17 +137,4 @@ menu-active
             </div>
         </div>
     </section>
-
-<section id="call-to-action">
-    <div class="container-fluid padding wow fadeIn">
-        <div class="row">
-                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
-                <h3 class="col-lg-3 col-md-4 col-xs-12">
-                <a href="{% url 'contact_us' %}">Get in Touch
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                </h3>
-        </div>
-    </div>
-</section>
 {% endblock %}

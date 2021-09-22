@@ -1,9 +1,7 @@
 {% extends 'base_layout.html' %}
-{% block nav-pricing %}
-menu-active
-{% endblock %}
+{% block nav-service %} active {% endblock %}
 {% load static %}
-{% block title %}Pricing And Service {{ block.super }}{% endblock %}
+{% block title %}Pricing And Services {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
@@ -18,7 +16,7 @@ menu-active
             <a href="{% url 'index' %}">Home</a>
         </li>
         <li class="breadcrumb-item">
-            <a href="#">Pages</a>
+            <a href="{% url 'services' %}">Services</a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">Pricing</li>
     </ol>
@@ -380,18 +378,6 @@ menu-active
             <p>NB: On request, we will carryout load analysis on your facility to create custom-fit design, if the above designs does not meet your energy demands. <br />
                 All designs above are created from popular load analysis request from customers over-time</p>
     
-        </div>
-    </div>
-</section>
-<section id="call-to-action">
-    <div class="container-fluid padding wow fadeIn">
-        <div class="row">
-                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
-                <h3 class="col-lg-3 col-md-4 col-xs-12">
-                <a href="{% url 'contact_us' %}">Get in Touch
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                </h3>
         </div>
     </div>
 </section>

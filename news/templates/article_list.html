@@ -1,9 +1,7 @@
 {% extends 'base_layout.html' %}
-{% block nav-news %}
-menu-active
-{% endblock %}
+{% block nav-news %} active {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} Greensource energy solar news{% endblock %}
+{% block title %}Solar Blog {{ block.super }}{% endblock %}
 {% block content %}
 
 <div class="container-fluid padding">

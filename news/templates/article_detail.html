@@ -1,16 +1,14 @@
 {% extends 'base_layout.html' %}
 {% load crispy_forms_tags %}
-{% block nav-news %}
-menu-active
-{% endblock %}
+{% block nav-news %} active {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} solar energy system blog post{% endblock %}
+{% block title %}Blog Details {{ block.super }}{% endblock %}
 {% block content %}
 
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <p>Blog</p>
+            <p>Blog Details</p>
         </div>
     </div>
 </div>
@@ -19,7 +17,7 @@ menu-active
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
         <li class="breadcrumb-item"><a href="{% url 'article_list' %}">News</a></li>
-        <li class="breadcrumb-item active">Blog-Post</li>
+        <li class="breadcrumb-item active">Blog-Details</li>
     </ol>
 </nav>
 <section>

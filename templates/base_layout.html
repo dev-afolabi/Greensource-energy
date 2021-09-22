@@ -24,11 +24,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Alternative source of power for homes and businesses? Greensource Energy focuses on design and installation solar energy systems harnessing the power of the sun. Contact us now!"/>
     <title>{% block title %}- Greensource Energy {% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'home.css' %}" %} type="text/css" />
+    <link rel="stylesheet" href="{% static 'home.css' %}" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" />
     <link href="{% static 'src/simple-lightbox.min.css' %}" rel='stylesheet' />
+    <link href="{% static 'icomoon/style.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static 'animate.min.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static 'demo.min.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static 'owl-carousel/owl.carousel.css' %}" rel="stylesheet" />
@@ -43,212 +44,236 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
-    <div class="review container-fluid padding">
-        <div class="row">
-            <div class="time col-xs-12 col-lg-3 col-md-6">
-                <p>
-                    <i class="far fa-clock"></i>Mon - Fri 9.00am - 5.00pm</p>
-            </div>
-            <div class="time col-xs-12 col-lg-3 col-md-6">
-                <p>
-                    <i class="fas fa-phone-alt"></i>(234)8029442697</p>
-            </div>
-            <div class="col-xs-12 col-lg-3 col-md-6">
-                <ol class="links">
-                    <li>
-                        <a href="https://www.linkedin.com/company/greensource-energy" id="linkedin">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/greensourcenergy/" id="facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/greensourcenergy" id="instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/greenn_energy" id="twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                </ol>
-            </div>
-            <div class="book col-xs-12 col-lg-3 col-md-6">
-                <p>
-                    <i class="far fa-envelope"></i>
-                    <a href='ma&#105;lto&#58;hel%6C%&#54;F&#64;gr&#37;6&#53;e%&#54;&#69;&#115;%6F&#117;r%&#54;3e&#37;&#54;&#69;ergy&#46;co%6D'>hell&#111;&#64;&#103;reens&#111;ur&#99;energy&#46;com</a>
-                </p>
-            </div>
+<div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
         </div>
     </div>
-    <header id="header">
-            <div class="container">
-                <div id="logo" class="pull-left">
-                    <a href="{% url 'index' %}">
-                        <img src="{% static 'images/greensourcelogo3.webp' %}" alt="company logo" />
-                    </a>
-                </div>
-                <nav id="nav-menu-container">
-                    <ul class="nav-menu">
-                        <li class="{% block nav-home %}{% endblock %}">
-                            <a href="{% url 'index' %}">Home</a>
-                        </li>
-                        <li class="{% block nav-about %}{% endblock %} menu-has-children">
-                            <a href="#">About</a>
-                            <ul>
-                                <li>
-                                    <a href="{% url 'about' %}">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="{% url 'our_team' %}">Our Team</a>
-                                </li>
-                                <li>
-                                    <a href="{% url 'gallery' %}">Gallery</a>
-                                </li>
-                                <li>
-                                    <a href="{% url 'faq' %}">FAQs</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="{% block nav-service %}{% endblock %}  menu-has-children">
-                            <a href="#services">Services</a>
-                            <ul>
-                                <li>
-                                    <a href="{% url 'services' %}">Our Services</a>
-                                </li>
-                                <li>
-                                    <a href="{% url 'service_detail' %}">Services Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="{% block nav-projects %}{% endblock %}">
-                            <a href="{% url 'projects' %}">projects</a>
-                        </li>
-                        <li class="{% block nav-news %}{% endblock %}">
-                            <a href="{% url 'article_list' %}">news</a>
-                        </li>
-                        <li class="{% block nav-contact %}{% endblock %}">
-                            <a href="{% url 'contact_us' %}">Contact us</a>
-                        </li>
-                    </ul>
-                </nav>
-        </header> 
-    {% block content %}
-    {% endblock %}    
-    <section>
-        <div class="container-fluid padding">
-            <div class="footer row padding">
-                <div class="col-xs-12 col-lg-4 col-md-6">
-                    <img src="{% static 'images/greensource3.webp' %}" alt="company logo" />
-                    <p class="note">
-                        Greensource Energy is a new renewable energy and management business specializing in energy conservation, solar energy storage,
-                        solar panel installation, solar energy services, and sustainability solutions. We offer cutting-edge renewable energy solutions for homes, large and
-                        small businesses.
-                    </p>
-                    <div class="map padding">
-                        <h6>/ LOCATE US</h6>
-                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.741452898637!2d3.433366268485239!3d6.84608399012105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc7b12aa0619b%3A0x668d6d2407416eeb!2sGREENSOURCE+ENGINEERING+CONSULT!5e0!3m2!1sen!2sng!4v1554279134001!5m2!1sen!2sng">Map
-                            <i class="fas fa-arrow-right"></i>
+    <div class="site-mobile-menu-body"></div>
+</div>
+<div class="site-navbar-wrap">
+    <div class="site-navbar-top">
+        <div class="container-fluid py-3">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="d-flex mr-auto">
+                        <a href='ma&#105;lto&#58;hel%6C%&#54;F&#64;gr&#37;6&#53;e%&#54;&#69;&#115;%6F&#117;r%&#54;3e&#37;&#54;&#69;ergy&#46;co%6D'
+                            class="d-flex align-items-center mr-4">
+                            <span class="icon-envelope mr-2"></span>
+                            <span class="d-none d-md-inline-block">hell&#111;&#64;&#103;reens&#111;ur&#99;energy&#46;com</span>
+                        </a>
+                        <a href="#" class="d-flex align-items-center mr-auto">
+                            <span class="icon-phone mr-2"></span>
+                            <span class="d-none d-md-inline-block">+234 802 9442 697</span>
                         </a>
                     </div>
                 </div>
-                <div class="services col-xs-12 col-lg-2 col-md-6">
-                    <h6>Services</h6>
-                
-                    <ul>
+                <div class="col-6 text-right">
+                    <div class="mr-auto">
+                        <a href="https://www.twitter.com/greenn_energy" class="p-2 pl-0">
+                            <span class="icon-twitter"></span>
+                        </a>
+                        <a href="https://www.facebook.com/greensourcenergy/" class="p-2 pl-0">
+                            <span class="icon-facebook"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/company/greensource-energy" class="p-2 pl-0">
+                            <span class="icon-linkedin"></span>
+                        </a>
+                        <a href="https://www.instagram.com/greensourcenergy" class="p-2 pl-0">
+                            <span class="icon-instagram"></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <div class="site-logo">
+                        <a href="{% url 'index' %}">
+                            <img src="{% static 'images/greensourcelogo3.webp' %}" alt="company logo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <nav class="site-navigation text-right" role="navigation">
+                        <div class="container">
+                            <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
+                                <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+                                    <span class="icon-menu h3"></span>
+                                </a>
+                            </div>
+                            <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                                <li class="{% block nav-home %}{% endblock %}">
+                                    <a href="{% url 'index' %}">Home</a>
+                                </li>
+                                <li class="{% block nav-about %}{% endblock %} has-children">
+                                    <a href="#">About</a>
+                                    <ul class="dropdown arrow-top">
+                                        <li>
+                                            <a href="{% url 'about' %}">Company Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'our_team' %}">Our Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'gallery' %}">Gallery</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="{% block nav-service %}{% endblock %} has-children">
+                                    <a href="#services">Services</a>
+                                    <ul class="dropdown arrow-top">
+                                        <li>
+                                            <a href="{% url 'services' %}">Our Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'service_detail' %}">Services Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'pricing' %}">Pricing & Packages</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="{% block nav-projects %}{% endblock %}">
+                                    <a href="{% url 'projects' %}">Projects</a>
+                                </li>
+                                <li class="{% block nav-news %}{% endblock %}">
+                                    <a href="{% url 'article_list' %}">News</a>
+                                </li>
+                                <li class="{% block nav-contact %}{% endblock %}">
+                                    <a href="{% url 'contact_us' %}">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% block content %}
+{% endblock %}    
+<footer class="footer-20192">
+    <div class="site-section">
+        <div class="container">
+            <div class="cta d-block d-md-flex align-items-center px-5">
+                <div>
+                    <h2 class="mb-0">Ready for a next project?</h2>
+                    <h3 class="text-dark">Let's get started!</h3>
+                </div>
+                <div class="ml-auto">
+                    <a href="{% url 'contact_us' %}" class="btn btn-dark rounded-0 py-3 px-5">Contact us</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <a href="{% url 'index' %}" class="footer-logo">
+                        <img src="{% static 'images/greensource2.png' %}" alt="company logo" />
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <h3>Services</h3>
+                    <ul class="list-unstyled links">
                         <li>
                             <a href="{% url 'solar_design' %}">Installation</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'project_management' %}">Energy Mgt</a>
                         </li>
                         <li>
                             <a href="{% url 'maintenance_service' %}">Maintenance</a>
                         </li>
                         <li>
-                            <a href="{% url 'hvac' %}">Solar Upgrade</a>
+                            <a href="{% url 'solar_water_pump' %}">Solar pump</a>
                         </li>
                         <li>
-                            <a href="{% url 'energy_management' %}">Solar Storage </a>
-                        </li>
-                         <li>
-                            <a href="{% url 'electrical_design' %}">Solar lighting</a>
+                            <a href="{% url 'energy_management' %}">Solar storage </a>
                         </li>
                         <li>
-                            <a href="{% url 'solar_water_pump' %}">Solar Pump</a>
+                            <a href="{% url 'electrical_design' %}">Electricals</a>
                         </li>
                     </ul>
                 </div>
-                <div class="services col-xs-12 col-lg-2 col-md-6">
-                    <h6>Links</h6>
-                    <ul>
+                <div class="col-sm">
+                    <h3>Company</h3>
+                    <ul class="list-unstyled links">
+                        <li>
+                            <a href="{% url 'about' %}">About us</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'our_team' %}">Our team</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gallery' %}">Gallery</a>
+                        </li>
                         <li>
                             <a href="{% url 'testimonial' %}">Testimonial</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h3>Information</h3>
+                    <ul class="list-unstyled links">
+                        <li>
+                            <a href="{% url 'faq' %}">FAQs</a>
                         </li>
                         <li>
                             <a href="{% url 'privacy' %}">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="{% url 'terms_of_use' %}">Terms of use</a>
+                            <a href="{% url 'terms_of_use' %}">Terms &amp; Conditions</a>
                         </li>
-                        <li>
-                                <a href="{% url 'pricing' %}">Pricing</a>
-                        </li>
-                         <li>
-                            <a href="{% url 'our_team' %}">Our Team</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'gallery' %}">Gallery</a>
-                         </li>
-                        <li>
-                            <a href="{% url 'faq' %}">FAQs</a>
-                        </li>
-                        
                     </ul>
                 </div>
-                <div class="services col-xs-12 col-lg-4 col-md-6">
-                    <h6>Connect Us</h6>
-                
-                    <div class="footer-address">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <p>1, Heritage street by anobi Noah, arogun Mowe-Ofada Ogun.</p>
-                       
-                        <i class="far fa-envelope"></i>
-                        <p>
+                <div class="col-md-4">
+                    <h3>Connect us</h3>
+                    <ul class="list-unstyled links">
+                        <li>
+                            <p>1, Heritage street by anobi Noah, arogun Mowe-Ofada Ogun.</p>
+                        </li>
+                        <li>
                             <a href='ma&#105;lto&#58;hel%6C%&#54;F&#64;gr&#37;6&#53;e%&#54;&#69;&#115;%6F&#117;r%&#54;3e&#37;&#54;&#69;ergy&#46;co%6D'>hell&#111;&#64;&#103;reens&#111;ur&#99;energy&#46;com</a>
-                        </p>
-                        <i class="fas fa-phone"></i>
-                        <p>(234)802-9442-697 (whatsapp) <br /> (234)807-6068-609</p>
-                    </div>
-                    <div class="social">
-                        <h6>/ FOLLOW US ON</h6>
-                        <a href="https://www.linkedin.com/company/greensource-energy">
-                            <i class="fab fa-linkedin-in active"></i>
-                        </a>
-                        <a role="button" href="https://www.facebook.com/greensourcenergy/">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a role="button" href="https://www.instagram.com/greensourcenergy">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a role="button" href="https://www.twitter.com/greenn_energy">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
+                        </li>
+                        <li>
+                            <p>0802-9442-697&nbsp;0807-6068-609</p>
+                        </li>
+                    </ul>
+                    <h3>Follow us</h3>
+                    <ul class="list-unstyled social">
+                        <li>
+                            <a href="https://www.twitter.com/greenn_energy">
+                                <span class="icon-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/greensourcenergy/">
+                                <span class="icon-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/greensource-energy">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/greensourcenergy">
+                                <span class="icon-instagram"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="footnote col-12">
-                    <p class="copyright">Copyright &copy; 2020 All Rights Reserved |
-                        <span class="green">Greensource Energy</span>  </p>
-                </div>
-                <a href="#" class="back-to-top">
-                    <i class="fa fa-arrow-up"></i>
-                </a>
             </div>
-    </section>
+        </div>
+    </div>
+    <a href="#" class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+    <p class="copyright">
+        <small>&copy; Copyright &copy; 2021 All Rights Reserved | Greensource Energy</small>
+    </p>
+</footer>
     <script async src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>window.jQuery || document.write('<script src="/static/js/jquery-3.3.1.min.js"><\/script>')</script></script>
     <script async src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -265,6 +290,7 @@
     <script src="{% static 'src/superfish.min.js' %}"></script>
     <script src="{% static 'src/simple-lightbox.min.js' %}"></script>
     <script src="{% static 'src/multislider.min.js' %}"></script>
+    <script src="{% static 'src/jquery.sticky.js' %}"></script>
     <script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script>    
     <script>
         var test = document.createElement("div")
@@ -357,8 +383,8 @@
         };
         var x = document.getElementsByTagName('script')[0];
         x.parentNode.insertBefore(s, x);
-    </script>            
-    <script>
+    </script> 
+    <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];

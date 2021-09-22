@@ -1,5 +1,4 @@
 {% extends 'base_layout.html' %}
-{% block nav-about %} menu-active {% endblock %}
 {% load static %}
 {% block title %}Frequently Asked Questions {{ block.super }}{% endblock %}
 {% block content %}
@@ -14,9 +13,6 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
             <a href="{% url 'index' %}">Home</a>
-        </li>
-        <li class="breadcrumb-item">
-            <a href="{% url 'faq' %}">About</a>
         </li>
         <li class="breadcrumb-item active">FAQ</li>
     </ol>
