@@ -1,14 +1,12 @@
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
-
-class Galllery(models.Model):
-    title = models.CharField(max_length=50)
-    heading_id = models.CharField(max_length=20, blank=True)
-    description = models.CharField(max_length=200)
+    
+class Images(models.Model):
+    title = models.CharField(max_length=100)
     date = models.DateField(auto_now_add=True)
-    image = models.ImageField(blank=True)
-    second_image = models.ImageField(blank=True)
+    thumb = models.ImageField(blank=True)
     
     class Meta:
         ordering = ['-date']
@@ -18,10 +16,12 @@ class Galllery(models.Model):
         return self.title
 
 
-class Images(models.Model):
+class Testimonial(models.Model):
+    name = models.CharField(max_length = 200)
     title = models.CharField(max_length=100)
+    image = models.ImageField(blank=True)
     date = models.DateField(auto_now_add=True)
-    thumb = models.ImageField(blank=True)
+    body = models.TextField()
 
     class Meta:
         ordering = ['-date']
@@ -31,4 +31,28 @@ class Images(models.Model):
         return self.title
 
 
+class Solar(models.Model):
+    title = models.CharField(max_length=100)
+    slug = models.SlugField(unique=True)
+    image = models.ImageField(blank=True)
+    date = models.DateField(auto_now_add=True)
+    name = models.CharField(max_length=100)
+    content = models.CharField(max_length=200)
+    tags =  models.CharField(max_length=100)
+    image1 = models.ImageField(blank=True)
+    image2 = models.ImageField(blank=True)
+    image3 = models.ImageField(blank=True)
+    image4 = models.ImageField(blank=True)
+    image5 = models.ImageField(blank=True)
+    body = models.TextField()
 
+
+    class Meta:
+        ordering = ['-date']
+        get_latest_by = 'date'
+
+    def __str__(self):
+        return self.title
+        
+    def get_absolute_url(self):
+        return reverse('project_details',kwargs={'slug':self.slug})

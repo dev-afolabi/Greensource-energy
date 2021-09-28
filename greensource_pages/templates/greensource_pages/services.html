@@ -1,14 +1,12 @@
 {% extends 'base_layout.html' %}
-{% block nav-service %}
-menu-active
-{% endblock %}
+{% block nav-service %} active {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} End-to-end Solar system Services{% endblock %}
+{% block title %}Solar Energy Services {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>OUR SOLAR SERVICES</h1>
+            <p>What We Offer</p>
         </div>
     </div>
 </div>
@@ -20,221 +18,123 @@ menu-active
         <li class="breadcrumb-item active">Services</li>
     </ol>
 </nav>
-<section class="sec-pad-with-content-margin-30 gray-bg service-page-one">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="single-service-style-one wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" data-wow-offset="10">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-home"></i>
-                            <h3>
-                                <a href="{% url 'solar_design' %}">residential solar</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/residential-solar.webp' %}" alt="rooftop solar" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="single-service-style-one wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" data-wow-offset="10">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-industry"></i>
-                            <h3>
-                                <a href="{% url 'commercial_solar' %}">commercial solar</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/commercial-solar.webp' %}" alt="rooftop solar" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="single-service-style-one wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" data-wow-offset="10">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-hdd"></i>
-                            <h3>
-                                <a href="{% url 'off_grid_solar' %}">Inverter installation</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/inverter.webp' %}" alt="inverter image" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="single-service-style-one wow fadeIn" data-wow-duration="6s" data-wow-delay="0.2s" data-wow-offset="10">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="far fa-lightbulb"></i>
-                            <h3>
-                                <a href="{% url 'electrical_design' %}">solar lighting</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/solar-light.webp' %}" alt="solar street-light" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="single-service-style-one wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" data-wow-offset="10">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-solar-panel"></i>
-                            <h3>
-                                <a href="{% url 'solar_water_pump' %}">Solar water pump</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/solar-pump.webp' %}" alt="solar water pump" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class=" container-fluid padding page-header">
+        <h1>We Offer Options For Design And Installation Of Solar Energy Systems</h1>
+    </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-service-style-one wow fadeIn" data-wow-duration="9s" data-wow-delay="0.2s" data-wow-offset="10">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-car-battery"></i>
-                            <h3>
-                                <a href="{% url 'energy_management' %}">solar storage</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/battery.webp' %}" alt="2v solar battery bank" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
+
+<section>
+        <div class="container padding">
+            <div class="row service-page-three">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-service-style-three">
+                        <div class="text-block">
+                            <div class="block">
+                                <i class="fas fa-home"></i>
                             </div>
+                            <h3><a href="{% url 'solar_design' %}">Residential Solar</a></h3>
+                            <p>Solar panels for home solar energy systems are designed, installed, and maintained by...</p>
+                            <a href="{% url 'solar_design' %}" class="read-more">Read More</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-service-style-one wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" data-wow-offset="10">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-power-off"></i>
-                            <h3>
-                                <a href="{% url 'project_management' %}">solar energy mgt</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/energy-mgt.webp' %}" alt="energy saving bulb" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-service-style-three">
+                        <div class="text-block">
+                            <div class="block">
+                                <i class="fas fa-industry"></i>
                             </div>
+                            <h3><a href="{% url 'commercial_solar' %}">Commercial Solar</a></h3>
+                            <p>We design, install, and operate solar panels for commercial applications ranging from ...</p>
+                            <a href="{% url 'commercial_solar' %}" class="read-more">Read More</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-service-style-one wow fadeIn" data-wow-duration="6s" data-wow-delay="0.2s" data-wow-offset="10">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-bolt"></i>
-                            <h3>
-                                <a href="{% url 'hvac' %}">Electrical Installation</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/ceiling-lamp.webp' %}" alt="solar inverter" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
-                                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-service-style-three">
+                        <div class="text-block">
+                            <div class="block">
+                                    <i class="fas fa-hdd"></i>
                             </div>
+                            <h3><a href="{% url 'off_grid_solar' %}">Inverter Installation</a></h3>
+                            <p>We render inverter installation services for clients who like this option in a unique way ...</p>
+                            <a href="{% url 'off_grid_solar' %}" class="read-more">Read More</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-service-style-one wow fadeIn" data-wow-duration="9s" data-wow-delay="0.2s" data-wow-offset="10">
-                    <div class="top-box">
-                        <div class="inner-content">
-                            <i class="fas fa-tools"></i>
-                            <h3>
-                                <a href="{% url 'maintenance_service' %}">Upgrade / Maintenance</a>
-                            </h3>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-service-style-three">
+                        <div class="text-block">
+                            <div class="block">
+                                    <i class="far fa-lightbulb"></i>
+                            </div>
+                            <h3><a href="{% url 'electrical_design' %}">Solar Lighting</a></h3>
+                            <p>We design and install solar lights for houses, offices, neighborhoods, and market ...</p>
+                            <a href="{% url 'electrical_design' %}" class="read-more">Read More</a>
                         </div>
                     </div>
-                    <div class="image-block">
-                        <img src="{% static 'images/maintenance.webp' %}" alt="solar panel maintenance" />
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="dotted"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-service-style-three">
+                        <div class="text-block">
+                            <div class="block">
+                                    <i class="fas fa-solar-panel"></i>
+                            </div>
+                            <h3><a href="{% url 'solar_water_pump' %}">Solar Pump</a></h3>
+                            <p>Since it lowers the cost of burning fossil fuels and provides energy efficiency ...</p>
+                            <a href="{% url 'solar_water_pump' %}" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-service-style-three">
+                        <div class="text-block">
+                            <div class="block">
+                                    <i class="fas fa-car-battery"></i>
+                            </div>
+                            <h3><a href="{% url 'energy_management' %}">Solar Storage</a></h3>
+                            <p>We build energy storage for solar energy systems, which is important for ensuring ...</p>
+                            <a href="{% url 'energy_management' %}" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="single-service-style-three">
+                            <div class="text-block">
+                                <div class="block">
+                                        <i class="fas fa-charging-station"></i>
                                 </div>
+                                <h3><a href="{% url 'project_management' %}">Energy Management</a></h3>
+                                <p>Your home/business energy usage and GHG emissions can be minimized with the ...</p>
+                                <a href="{% url 'project_management' %}" class="read-more">Read More</a>
                             </div>
                         </div>
-                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="single-service-style-three">
+                            <div class="text-block">
+                                <div class="block">
+                                        <i class="fas fa-bolt"></i>
+                                </div>
+                                <h3><a href="{% url 'hvac' %}">Electrical installation</a></h3>
+                                <p>You need people you can rely on when it comes to electrical installations. We have ...</p>
+                                <a href="{% url 'hvac' %}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="single-service-style-three">
+                            <div class="text-block">
+                                <div class="block">
+                                        <i class="fas fa-tools"></i>
+                                </div>
+                                <h3><a href="{% url 'maintenance_service' %}">Maintenance Retrofit</a></h3>
+                                <p>We're committed to increasing the production of renewable energy and ensuring ...</p>
+                                <a href="{% url 'maintenance_service' %}" class="read-more">Read More</a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section id="call-to-action">
-    <div class="container-fluid padding wow fadeIn">
-        <div class="row">
-                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
-                <h3 class="col-lg-3 col-md-4 col-xs-12">
-                <a href="{% url 'contact_us' %}">Get in Touch
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                </h3>
-        </div>
-    </div>
-</section>
+    </section>
 {% endblock %}

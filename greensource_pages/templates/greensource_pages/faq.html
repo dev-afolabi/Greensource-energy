@@ -1,11 +1,11 @@
 {% extends 'base_layout.html' %}
 {% load static %}
-{% block title %}{{ block.super }} Faq{% endblock %}
+{% block title %}Frequently Asked Questions {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <p>Frequently Asked Questions</p>
         </div>
     </div>
 </div>
@@ -13,9 +13,6 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
             <a href="{% url 'index' %}">Home</a>
-        </li>
-        <li class="breadcrumb-item">
-            <a href="#">Pages</a>
         </li>
         <li class="breadcrumb-item active">FAQ</li>
     </ol>

@@ -1,14 +1,12 @@
 {% extends 'base_layout.html' %}
-{% block nav-pricing %}
-menu-active
-{% endblock %}
+{% block nav-service %} active {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} Solar panel pricing{% endblock %}
+{% block title %}Pricing And Services {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>SOLAR INSTALLATION PRICING</h1>
+            <p>Pricing Plan</p>
         </div>
     </div>
 </div>
@@ -18,27 +16,26 @@ menu-active
             <a href="{% url 'index' %}">Home</a>
         </li>
         <li class="breadcrumb-item">
-            <a href="#">Pages</a>
+            <a href="{% url 'services' %}">Services</a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">Pricing</li>
     </ol>
 </nav>
-
-<body>
 <section>
     <div class="container-fluid padding">
+        <h3 class="pricing-header">MINI PACKAGE</h3>
         <div class="pricing-table">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>mini-kit</h6>
+                    <h6>mini 1</h6>
                     <div class="prices">
-                        N176, 000
+                        N262, 000
                         <span>
-                            <strong>200w</strong> Module
+                            <strong>360w</strong> Module
                             <br />
-                            <strong>1kva</strong> Inverter
+                            <strong>1kw</strong> Inverter
                             <br />
-                            <strong>60ah</strong> Battery
+                            <strong>100ah</strong> Battery
                             <br />
                             <strong>30amp</strong> Controller</span>
                     </div>
@@ -57,22 +54,22 @@ menu-active
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>mini-kit +</h6>
+                    <h6>mini 2</h6>
                     <div class="prices">
-                        N242, 000
+                        N342, 000
                         <span>
-                            <strong>300w</strong> Module
+                            <strong>540w</strong> Module
                             <br />
-                            <strong>1kva</strong> Inverter
+                            <strong>1kw</strong> Inverter
                             <br />
-                            <strong>100ah</strong> Battery
+                            <strong>150ah</strong> Battery
                             <br />
-                            <strong>30amp</strong> Controller</span>
+                            <strong>40amp</strong> Controller</span>
                     </div>
                     <ul>
                         <p>load capacity</p>
                         <li>
-                            <strong>1</strong> TV</li>
+                            <strong>1</strong> Mini TV</li>
                         <li>
                             <strong>1</strong> Fan &nbsp;Laptop</li>
                         <li>
@@ -84,13 +81,13 @@ menu-active
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>regular</h6>
+                    <h6>mini 3</h6>
                     <div class="prices">
-                        N368,500
+                        N460,000
                         <span>
-                            <strong>600w</strong> Module
+                            <strong>900w</strong> Module
                             <br />
-                            <strong>1.5kva</strong> Inverter
+                            <strong>2kw</strong> Inverter
                             <br />
                             <strong>200ah</strong> Battery
                             <br />
@@ -111,15 +108,15 @@ menu-active
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>regular +</h6>
+                    <h6>mini 4</h6>
                     <div class="prices">
-                        N480, 500
+                        N595, 000
                         <span>
-                            <strong>750w</strong> Module
+                            <strong>1.08kw</strong> Module
                             <br />
-                            <strong>2.5kva</strong> Inverter
+                            <strong>2kw</strong> Inverter
                             <br />
-                            <strong>200ah</strong> battery
+                            <strong>300ah</strong> battery
                             <br />
                             <strong>50amp</strong> controller</span>
                     </div>
@@ -136,42 +133,46 @@ menu-active
                     </ul>
                 </div>
             </div>
+        </div>
+        <h3 class="pricing-header"> STANDARD PACKAGE</h3>
+        <div class="pricing-table">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>standard</h6>
+                    <h6>standard 1</h6>
                     <div class="prices">
-                        N646, 500
+                        N850, 000
                         <span>
-                            <strong>900w</strong> Module
+                            <strong>1.5kw</strong> Module
                             <br />
-                            <strong>2kva</strong> Inverter
+                            <strong>1.5kva</strong> Inverter
                             <br />
-                            <strong>300ah</strong> Battery
+                            <strong>400ah</strong> Battery
                             <br />
                             <strong>50amp</strong> Controller</span>
                     </div>
                     <ul>
-                        <p>load capacity</p>
-                        <li>
-                            <strong>2</strong> TV</li>
-                        <li>
-                            <strong></strong> Fans &nbsp; Laptops</li>
-                        <li>
-                            <strong>All</strong> Light points</li>
-                        <li>
-                            <strong></strong> Decoder/Home theater</li>
-                    </ul>
+                            <p>load capacity</p>
+                            <li>
+                                <strong>2</strong> TV &nbsp;
+                                <strong></strong> Fans &nbsp; Laptops</li>
+                            <li>
+                                <strong>1</strong> Fridge/Freezer</li>
+                            <li>
+                                <strong>All</strong> Light points</li>
+                            <li>
+                                <strong></strong> Decoder/Home theater</li>
+                        </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>standard +</h6>
+                    <h6>standard 2</h6>
                     <div class="prices">
-                        N735, 300
+                        N960, 000
                         <span>
-                            <strong>1.2kw</strong> Module
+                            <strong>1.8kw</strong> Module
                             <br />
-                            <strong>2.5kva</strong> Inverter
+                            <strong>2.0kva</strong> Inverter
                             <br />
                             <strong>400ah</strong> Battery
                             <br />
@@ -193,15 +194,15 @@ menu-active
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>compact</h6>
+                    <h6>standard 3</h6>
                     <div class="prices">
-                        N975, 450
+                        N1, 200, 000
                         <span>
-                            <strong>1.5kw</strong> Module
+                            <strong>2.1kw</strong> Module
                             <br />
-                            <strong>3kva</strong> Inverter
+                            <strong>2.5kva</strong> Inverter
                             <br />
-                            <strong>400ah</strong> Battery
+                            <strong>600ah</strong> Battery
                             <br />
                             <strong>80amp</strong> Controller</span>
                     </div>
@@ -220,15 +221,15 @@ menu-active
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>compact +</h6>
+                    <h6>standard 4</h6>
                     <div class="prices">
-                        N1, 335, 000
+                        N1, 450, 000
                         <span>
-                            <strong>2kw</strong> Module
+                            <strong>2.4kw</strong> Module
                             <br />
                             <strong>3kva</strong> Inverter
                             <br />
-                            <strong>600ah</strong> Battery
+                            <strong>800ah</strong> Battery
                             <br />
                             <strong>80amp</strong> Controller</span>
                     </div>
@@ -247,14 +248,16 @@ menu-active
                             <strong></strong> Decoder/Home theater</li>
                     </ul>
                 </div>
-            </div>
+        </div>
+        <h3 class="pricing-header">PREMIUM PACKAGE</h3>
+        <div class="pricing-table">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>advance</h6>
+                    <h6>premium 1</h6>
                     <div class="prices">
-                        N2, 000, 000
+                        N2, 271, 000
                         <span>
-                            <strong>3kw</strong> Module
+                            <strong>3.5kw</strong> Module
                             <br />
                             <strong>3.5kw</strong> Inverter
                             <br />
@@ -281,9 +284,9 @@ menu-active
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>advance +</h6>
+                    <h6>premium 2</h6>
                     <div class="prices">
-                        N3, 480, 500
+                        N3, 580, 500
                         <span>
                             <strong>5kw</strong> Module
                             <br />
@@ -312,7 +315,7 @@ menu-active
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>premium</h6>
+                    <h6>premium 3</h6>
                     <div class="prices">
                         N3, 950, 000
                         <span>
@@ -343,7 +346,7 @@ menu-active
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="table">
-                    <h6>premium +</h6>
+                    <h6>premium 4</h6>
                     <div class="prices">
                         N4, 550, 000
                         <span>
@@ -373,23 +376,9 @@ menu-active
                 </div>
             </div>
             <p>NB: On request, we will carryout load analysis on your facility to create custom-fit design, if the above designs does not meet your energy demands. <br />
-                All designs above are created from popular load analysis request from our customers over-time</p>
+                All designs above are created from popular load analysis request from customers over-time</p>
     
         </div>
     </div>
 </section>
-<section id="call-to-action">
-    <div class="container-fluid padding wow fadeIn">
-        <div class="row">
-                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
-                <h3 class="col-lg-3 col-md-4 col-xs-12">
-                <a href="{% url 'contact_us' %}">Get in Touch
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                </h3>
-        </div>
-    </div>
-</section>
-
-</body>
 {% endblock %}

@@ -1,18 +1,19 @@
 {% extends 'base_layout.html' %}
+{% block nav-about %} active {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} Gallery{% endblock %}
+{% block title %}Media Gallery {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>SOLAR ENERGY GALLERY</h1>
+            <p>Media Gallery</p>
         </div>
     </div>
 </div>
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'about' %}">About</a></li>
         <li class="breadcrumb-item active" aria-current="page">Gallery</li>
     </ol>
 </nav>

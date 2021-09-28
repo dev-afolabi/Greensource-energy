@@ -1,15 +1,13 @@
 {% extends 'base_layout.html' %}
-{% block nav-service %}
-menu-active
-{% endblock %}
+{% block nav-service %} active {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} Service Details{% endblock %}
+{% block title %}Solar Energy Services Details {{ block.super }}{% endblock %}
 {% block content %}
 
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>SOLAR ENERGY DETAILS</h1>
+            <h1>Service Details</p>
         </div>
     </div>
 </div>
@@ -36,13 +34,6 @@ menu-active
         </ul>
         <div class="services-details col-lg-8 col-md-7 col-xs-12">
             <img src="{% static 'images/simulation.gif' %}" />
-            <!-- <h4>Green, Sustainable, Fits the bill !</h4>
-            <p class="policy">
-                With our exclusive tailored design for our individual customers, we are committed to providing sustainable and secure
-                energy by harnessing the abundant power of the SUN. Our mission is to provide creative, seamless, secure, and sustainable
-                solar energy through end-to-end customer relationships and strategic partnerships. We create a custom-fit system for
-                you that provides a good return on your investment and long-term savings.
-            <p> -->
         </div>
     </div>
     <section>
@@ -76,5 +67,4 @@ menu-active
         </div>
     </section>
 </div>
-
 {% endblock %}

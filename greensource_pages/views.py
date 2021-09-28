@@ -1,9 +1,10 @@
-from django.shortcuts import render
-from .models import Galllery, Images
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Images, Testimonial, Solar
 
 # Create your views here.
 def index(request):
-    return render(request,"greensource_pages/index.html")
+    index = Testimonial.objects.all()
+    return render(request,"greensource_pages/index.html", {'index': index})
 
 def about(request):
     return render(request,"greensource_pages/about.html")
@@ -33,7 +34,7 @@ def energy_management(request):
     return render(request,"greensource_pages/energy-management.html")
 
 def maintenance_service(request):
-    return render(request,"greensource_pages/maintenance-service.html")
+    return render(request,"greensource_pages/maintenance-service.html") 
 
 def hvac(request):
     return render(request,"greensource_pages/hvac.html")
@@ -41,19 +42,13 @@ def hvac(request):
 def project_management(request):
     return render(request,"greensource_pages/project-management.html")
 
-def projects(request):
-    projects = Galllery.objects.all().order_by('-date')
-    return render(request,"greensource_pages/projects.html", {'projects': projects})
-
 def image(request):
-    images = Images.objects.all().order_by('-date')
+    images = Images.objects.all()
     return render(request,"greensource_pages/gallery.html", {'images': images})
 
-def design_plans(request):
-    return render(request,"greensource_pages/design-plans.html") 
-
 def testimonial(request):
-    return render(request,"greensource_pages/testimonial.html")
+    testimonial = Testimonial.objects.all()
+    return render(request,"greensource_pages/testimonial.html", {'testimonial': testimonial})
 
 def terms_of_use(request):
     return render(request,"greensource_pages/terms-of-use.html")
@@ -61,31 +56,21 @@ def terms_of_use(request):
 def privacy(request):
     return render(request,"greensource_pages/privacy.html")
 
-def Company(request):
-    return render(request,"greensource_pages/company-profile.html")
-
-def mission(request):
-    return render(request,"greensource_pages/mission.html")
-
 def faq(request):
     return render(request,"greensource_pages/faq.html")
 
 def our_team(request):
     return render(request,"greensource_pages/our-team.html")
 
-def training(request):
-    return render(request,"greensource_pages/training.html")
-
-def product_details(request):
-    return render(request,"greensource_pages/product-details.html")
-
-def cart(request):
-    return render(request,"greensource_pages/cart.html")
-
 def pricing(request):
     return render(request,"greensource_pages/pricing.html")
 
+def projects(request):
+    solar = Solar.objects.all()
+    return render(request,"greensource_pages/projects.html", {'obj': solar})
 
-
+def project_details(request,slug):
+    solar = get_object_or_404(Solar,slug=slug)
+    return render(request,'greensource_pages/project-details.html', {'obj':solar})
 
 

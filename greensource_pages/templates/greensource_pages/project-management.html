@@ -1,14 +1,12 @@
 {% extends 'base_layout.html' %}
-{% block nav-service %}
-menu-active
-{% endblock %}
+{% block nav-service %} active {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }}solar energy management{% endblock %}
+{% block title %}Solar PV Power Management {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>SOLAR ENERGY MANAGEMENT</h1>
+            <p>Energy Management</p>
         </div>
     </div>
 </div>
@@ -45,7 +43,7 @@ menu-active
 <div class="container padding">
     <div class="row details">
         <div>
-            <p> Your company's energy usage and GHG emissions can be minimized with the aid of energy management techniques and systems.
+            <p> Your home/business energy usage and GHG emissions can be minimized with the aid of energy management techniques and systems.
                 An energy audit is the first step in creating a detailed energy management plan. It gives you a good picture of your
                 buildings' and/or manufacturing processes' energy consumption trends, as well as a list of technically feasible energy-saving
                 options. We promote and endorse energy monitoring systems that are both efficient and cost-effective in maximizing
@@ -74,16 +72,4 @@ menu-active
         </div>
     </div>
 </div>
-<section id="call-to-action">
-    <div class="container-fluid padding wow fadeIn">
-        <div class="row">
-                <p class="col-lg-9 col-md-8 col-xs-12 cta-text">Need an optimal solar system for your home/business? &nbsp Fill our form to get a CallBack.</p>
-                <h3 class="col-lg-3 col-md-4 col-xs-12">
-                <a href="{% url 'contact_us' %}">Get in Touch
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                </h3>
-        </div>
-    </div>
-</section>
 {% endblock %}

@@ -1,15 +1,13 @@
 {% extends 'base_layout.html' %}
-{% block nav-news %}
-menu-active
-{% endblock %}
+{% block nav-news %} active {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} Greensource energy solar news{% endblock %}
+{% block title %}Solar Blog {{ block.super }}{% endblock %}
 {% block content %}
 
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>SOLAR ENERGY NEWS</h1>
+            <p>Latest News</p>
         </div>
     </div>
 </div>

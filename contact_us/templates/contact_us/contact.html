@@ -1,15 +1,13 @@
 {% extends 'base_layout.html' %}
 {% load crispy_forms_tags %}
-{% block nav-contact %}
-menu-active
-{% endblock %}
+{% block nav-contact %} active {% endblock %}
 {% load static %}
-{% block title %}{{ block.super }} Contact Us{% endblock %}
+{% block title %}Contact Us and Help Page {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding text-center">
         <div class="col-12 animated fadeIn">
-            <h1>GET IN TOUCH</h1>
+            <p>Get In Touch</p>
         </div>
     </div>
 </div>
@@ -20,24 +18,32 @@ menu-active
     </ol>
 </nav>
 <div class="container padding">
-    <div class="address row padding text-center">
-        <div class="add col-xs-12 col-md-12 col-lg-6">
-            <h4>You have any Question? Feel free to Contact us</h4>
-            <p><i class="fas fa-map-marker-alt"></i>1, Heritage street by anobi noah mowe-ofada Ogun state.</p>
-            <p>
+    <div class="address row padding">
+            <div class="add col-lg-4 col-md-6 col-xs-12">
+            <i class="fas fa-map-marker-alt"></i>
+            <h6>Location</h6>
+            <p>1, Heritage street by anobi noah mowe-ofada Ogun state.</p>
+        </div>
+        <div class="add col-lg-4 col-md-6 col-xs-12">
                 <i class="far fa-envelope"></i>
+                <h6>Email Us Now</h6>
+            <p>
                 <a href='ma&#105;lto&#58;hel%6C%&#54;F&#64;gr&#37;6&#53;e%&#54;&#69;&#115;%6F&#117;r%&#54;3e&#37;&#54;&#69;ergy&#46;co%6D'>hell&#111;&#64;&#103;reens&#111;ur&#99;energy&#46;com</a>
             </p>
-            <p><i class="fas fa-phone"></i>(234)802-944-2697 <br /> (234)807 6068 609</p>
         </div>
-                <div class="map col-lg-6 col-xs-12 col-md-9">
-                    <embed aysnc src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.741452898637!2d3.433366268485239!3d6.84608399012105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc7b12aa0619b%3A0x668d6d2407416eeb!2sGREENSOURCE+ENGINEERING+CONSULT!5e0!3m2!1sen!2sng!4v1554279134001!5m2!1sen!2sng" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></embed>
-                </div> 
+        <div class="add col-lg-4 col-md-6 col-xs-12">
+                <i class="fas fa-phone"></i>
+                <h6>Contact Number</h6>
+            <p>(234)802 944 2697 <br /> (234)807 6068 609</p>
+        </div>           
     </div>
 </div>
-<div class="container padding">
-    <div class="content text-center">
-        <div id="contact-form" class="col-xs-12 col-md-12 col-lg-9">
+<div class="container-fluid padding">
+        <div class="row contact col-lg-6 col-md-9 col-xs-12">
+            <h4>You have any Question? Feel free to Contact us</h4>
+        </div>
+    <div class="content row padding">
+        <div id="contact-form" class="col-xs-12 col-md-9 col-lg-6">
                 <form action="" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
@@ -57,14 +63,17 @@ menu-active
                             {{ form.city|as_crispy_field }}
                         </div>
                         <div class="form-group col-md-6 mb-0">
-                            {{ form.state|as_crispy_field }}
+                            {{ form.service|as_crispy_field }}
                         </div>
                         {{ form.message }}
                     </div>
                     <button type="submit" name="submit" class="btn">Send Message</button>
                 </form>
-                <p>*We do not rent or sell our customers information to any third parties! Refer to our <a href="{% url 'privacy' %}"><strong>Privacy Policy</strong></a> for more details*</p>
-            </div>
+        </div>
+        <div class="map col-lg-6 col-xs-12 col-md-9">
+            <embed aysnc src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.741452898637!2d3.433366268485239!3d6.84608399012105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc7b12aa0619b%3A0x668d6d2407416eeb!2sGREENSOURCE+ENGINEERING+CONSULT!5e0!3m2!1sen!2sng!4v1554279134001!5m2!1sen!2sng" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></embed>
+        </div>
+        <p>*We do not rent or sell our customers information to any third parties! Refer to our <a href="{% url 'privacy' %}"><strong>Privacy Policy</strong></a> for more details*</p>
     </div>  
 </div>
 {% endblock %}
