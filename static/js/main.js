@@ -1,4 +1,4 @@
- /*-1-----------------------------------*/
+/*-1-----------------------------------*/
  $(document).on('click','.member-1',function(){
     $('.detail-box-1').toggleClass('show-details-1')
     $('.detail-box-2').removeClass('show-details-2')
@@ -83,10 +83,12 @@ $(document).ready(function () {
     $('.carousel').carousel({
         interval: 15000,
     });
-    $('#bridgeSlide').owlCarousel({
+    
+    $('.service-style-one').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 30,
         nav: false,
+        dots: true,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         items: 1,
@@ -118,9 +120,8 @@ $(document).ready(function () {
     });
     $('#pricing').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 30,
         nav: false,
-        width: 1200,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         items: 1,
@@ -152,7 +153,7 @@ $(document).ready(function () {
     });
     $('#mission').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 30,
         nav: false,
         width: 1200,
         animateOut: 'fadeOut',
@@ -181,7 +182,7 @@ $(document).ready(function () {
     });
     $('#team-one').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 30,
         nav: false,
         width: 1200,
         animateOut: 'fadeOut',
@@ -204,9 +205,6 @@ $(document).ready(function () {
                 items: 2
             },
             992: {
-                items: 3
-            },
-            1200: {
                 items: 3
             }
         }
@@ -289,7 +287,6 @@ $(document).ready(function () {
 
 
 });
-
 
 
 $(function() {
@@ -378,7 +375,8 @@ $(function() {
       }; 
       siteMenuClone();
   
-  });
+});
+
 
 
 
