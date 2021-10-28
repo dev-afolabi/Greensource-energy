@@ -231,17 +231,11 @@ $(document).ready(function () {
             }
         }
     });
-    if ($('.brand-carousel-one').length) {
-        $('.brand-carousel-one').owlCarousel({
+    $('#pro-img').owlCarousel({
             loop: true,
             margin: 10,
             nav: false,
-            navText: [
-                '<i class="fa fa-long-arrow-left"></i>',
-                '<i class="fa fa-long-arrow-right"></i>'
-            ],
             dots: true,
-            autoWidth: false,
             autoplay: true,
             smartSpeed: 700,
             animateOut: 'fadeOut',
@@ -273,7 +267,6 @@ $(document).ready(function () {
                 }
             }
         });
-    }
     $(document).ready(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 80) {
