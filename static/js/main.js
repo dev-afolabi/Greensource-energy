@@ -84,7 +84,7 @@ $(document).ready(function () {
         interval: 15000,
     });
     
-    $('.service-style-one').owlCarousel({
+    $('#services').owlCarousel({
         loop: true,
         margin: 30,
         nav: false,
@@ -256,11 +256,11 @@ $(document).ready(function () {
                 576: {
                     items: 2
                 },
+                768: {
+                    items: 2
+                },
                 991: {
                     items: 3
-                },
-                1000: {
-                    items: 4
                 },
                 1200: {
                     items: 4
