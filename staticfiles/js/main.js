@@ -84,7 +84,7 @@ $(document).ready(function () {
         interval: 15000,
     });
     
-    $('.service-style-one').owlCarousel({
+    $('#services').owlCarousel({
         loop: true,
         margin: 30,
         nav: false,
@@ -231,17 +231,11 @@ $(document).ready(function () {
             }
         }
     });
-    if ($('.brand-carousel-one').length) {
-        $('.brand-carousel-one').owlCarousel({
+    $('#project').owlCarousel({
             loop: true,
             margin: 10,
             nav: false,
-            navText: [
-                '<i class="fa fa-long-arrow-left"></i>',
-                '<i class="fa fa-long-arrow-right"></i>'
-            ],
             dots: true,
-            autoWidth: false,
             autoplay: true,
             smartSpeed: 700,
             animateOut: 'fadeOut',
@@ -262,18 +256,17 @@ $(document).ready(function () {
                 576: {
                     items: 2
                 },
+                768: {
+                    items: 2
+                },
                 991: {
                     items: 3
-                },
-                1000: {
-                    items: 4
                 },
                 1200: {
                     items: 4
                 }
             }
         });
-    }
     $(document).ready(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 80) {

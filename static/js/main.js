@@ -231,7 +231,7 @@ $(document).ready(function () {
             }
         }
     });
-    $('#pro-img').owlCarousel({
+    $('#project').owlCarousel({
             loop: true,
             margin: 10,
             nav: false,

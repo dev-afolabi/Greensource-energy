@@ -46,46 +46,45 @@
             <p>Tags: <span> {{ obj.tags }}</span></p>
         </div>
     </div>
-
-    <div class="container-fluid padding">
-        <div class="brand-carousel-wrapper padding">
-            <div class="pro-details row">
-                <div class="owl-theme owl-carousel" id="pro-img">
-                    <div class="item">
-                        <a href="{{ obj.image1.url }}">
-                            <img src="{{ obj.image1.url }}" alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="{{ obj.image2.url }}">
-                            <img src="{{ obj.image2.url }}" alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="{{ obj.image3.url }}">
-                            <img src="{{ obj.image3.url }}" alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="{{ obj.image4.url }}">
-                            <img src="{{ obj.image4.url }}" alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="{{ obj.image5.url }}">
-                            <img src="{{ obj.image5.url }}" alt="img" />
-                        </a>
-                    </div>
-                </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row pro-details padding">
+        <div class="owl-theme owl-carousel" id="project">
+            <div class="item">
+                <a href="{{ obj.image1.url }}">
+                    <img src="{{ obj.image1.url }}" alt="img" />
+                </a>
+            </div>
+            <div class="item">
+                <a href="{{ obj.image2.url }}">
+                    <img src="{{ obj.image2.url }}" alt="img" />
+                </a>
+            </div>
+            <div class="item">
+                <a href="{{ obj.image3.url }}">
+                    <img src="{{ obj.image3.url }}" alt="img" />
+                </a>
+            </div>
+            <div class="item">
+                <a href="{{ obj.image4.url }}">
+                    <img src="{{ obj.image4.url }}" alt="img" />
+                </a>
+            </div>
+            <div class="item">
+                <a href="{{ obj.image5.url }}">
+                    <img src="{{ obj.image5.url }}" alt="img" />
+                </a>
             </div>
         </div>
     </div>
-    <div class="container padding">    
-    <div class="tech-details col-12">
-    <p>
-        {{ obj.body }}
-    </p>
-    </div>
+</div>
+<div class="container padding">
+    <div class="row tech-details padding">
+        <div class="col-12">
+            <p>
+                {{ obj.body }}
+            </p>
+        </div>
     </div>
 </div>
 {% endblock %}
