@@ -2823,6 +2823,7 @@ nav .pagination a:hover{
 		font-size: 15px;
 	}
 	.testimonials-style-three-carousel-wrapper{
+		margin-top: 30px;
 		width: 100%;
 		height: 95%;
 	}
@@ -2831,7 +2832,7 @@ nav .pagination a:hover{
 		font-size: 16px;
 	}
 	.testimony .title-block .sec-title p{
-		margin-top: -100px;
+		margin-top: 30px;
 		font-size: 35px;
 	}
 	.testimony .title-block .sec-title a{
@@ -2929,12 +2930,14 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.portfolio .image-block > img {
-		height: 50vh;
+	.portfolio .image-block img{
+		width: 100%;
+		height: 45vh;
 	}
 	.pro-details img{
 		width: 50%;
 		height: 40vh;
+		padding: 10px;
 	}
 	.folio img{
 		width: 100%;
@@ -3195,9 +3198,12 @@ nav .pagination a:hover{
 		width: 90%;
 		font-size: 15px;
 	}
+	.testimony{
+		margin-bottom: 70px;
+	}
 	.testimonials-style-three-carousel-wrapper{
 		margin-top: 40px;
-		width: 70%;
+		width: 80%;
 		height: 95%;
 	}
 	.testimonials-style-three-carousel-wrapper p{
@@ -3355,7 +3361,8 @@ nav .pagination a:hover{
 	}
 	.pro-details img{
 		width: 50%;
-		height: 40vh;
+		height: 50vh;
+		padding: 20px;
 	}
 	.folio img{
 		width: 100%;
@@ -3363,6 +3370,10 @@ nav .pagination a:hover{
 	}
 	.tech-details p{
 		width: 100%;
+	}
+	.portfolio .image-block img{
+		width: 100%;
+		height: 45vh;
 	}
 }
 /*--------------------------------------------------------------
@@ -3750,6 +3761,7 @@ nav .pagination a:hover{
 	.pro-details img{
 		width: 50%;
 		height: 40vh;
+		padding: 30px;
 	}
 	.folio img{
 		width: 100%;
@@ -4174,7 +4186,8 @@ nav .pagination a:hover{
 	}
 	.pro-details img{
 		width: 50%;
-		height: 40vh;
+		height: 53vh;
+		padding: 50px;
 	}
 	.folio img{
 		width: 100%;
@@ -4623,7 +4636,7 @@ nav .pagination a:hover{
 	}
 	.pro-details img{
 		width: 50%;
-		height: 40vh;
+		height: 50vh;
 	}
 	.folio img{
 		width: 100%;
@@ -5113,6 +5126,7 @@ nav .pagination a:hover{
 	.pro-details img{
 		width: 50%;
 		height: 40vh;
+		padding: 20px;
 	}
 	.folio img{
 		width: 100%;

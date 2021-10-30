@@ -238,11 +238,10 @@ $(document).ready(function () {
             dots: true,
             autoplay: true,
             smartSpeed: 700,
+            width: 1200,
             animateOut: 'fadeOut',
             animateIn: 'fadeIn',
             items: 1,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true,
             responsive: {
                 320: {
                     items: 1
