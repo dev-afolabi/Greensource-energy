@@ -1738,17 +1738,18 @@ nav .breadcrumb li a:hover{
 .table h6{
 	text-transform: uppercase;
 	font-family: 'Play', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 550;
 	color: #006420;
 }
 .table ul{
 	margin: 0;
-	padding: 0;
+	margin-left: 15px;
+	padding: 0 5px;
 }
 .table ul p{
 	text-transform: uppercase;
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: 550;
 	margin-bottom: 0px;
 	margin-top: 10px;
@@ -1756,10 +1757,10 @@ nav .breadcrumb li a:hover{
 	font-family: 'Play', sans-serif;
 }
 .table ul li{
-	list-style: none;
+	list-style-type: none;
 	font-size: 15px;
-	text-align: justify center;
 	color:#1b1b1b;
+	text-align: center;
 }
 .prices{
 	color: #001f3f;
