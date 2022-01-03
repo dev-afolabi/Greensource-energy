@@ -40,7 +40,8 @@ html body.offcanvas-menu:before {
 	color: #fff; 
 }
 .site-navbar-wrap .site-navbar-top {
-	font-size: 15px;
+	font-size: 16.8px;
+	padding: 0 20px;
 }
 .site-navbar-wrap .site-navbar-top a:hover{
 	color: #2dc977; 
