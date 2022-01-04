@@ -1,0 +1,90 @@
+{% extends 'base_layout.html' %}
+{% block nav-projects %} active {% endblock %}
+{% load static %}
+{% block title %}Solar Project Detail {{ block.super }}{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <p>Project Details</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'projects' %}">Projects</a>
+        </li>
+        <li class="breadcrumb-item active">Project-Details</li>
+    </ol>
+</nav>
+<div class=" container-fluid padding page-header">
+    <h1>Powering A Sustainable Future One Project At A Time</h1>
+</div>
+<div class="container padding">
+    <div class="row project-details padding">
+        <div class="folio col-12">
+            <img src="{{ obj.image.url }}" alt="img" />
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="client-details row padding">
+        <div class="project-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Client: <span> {{ obj.name }}</span></p>
+        </div>
+        <div class="project-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Project: <span> {{ obj.title }}</span></p>
+        </div>
+        <div class="project-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Location: <span> {{ obj.content }}</span></p>
+        </div>
+        <div class="project-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Tags: <span> {{ obj.tags }}</span></p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row pro-details padding">
+        <div class="owl-theme owl-carousel" id="project">
+            <div class="item">
+                <a href="{{ obj.image1.url }}">
+                    <img src="{{ obj.image1.url }}" alt="img" />
+                </a>
+            </div>
+            <div class="item">
+                <a href="{{ obj.image2.url }}">
+                    <img src="{{ obj.image2.url }}" alt="img" />
+                </a>
+            </div>
+            <div class="item">
+                <a href="{{ obj.image3.url }}">
+                    <img src="{{ obj.image3.url }}" alt="img" />
+                </a>
+            </div>
+            <div class="item">
+                <a href="{{ obj.image4.url }}">
+                    <img src="{{ obj.image4.url }}" alt="img" />
+                </a>
+            </div>
+            <div class="item">
+                <a href="{{ obj.image5.url }}">
+                    <img src="{{ obj.image5.url }}" alt="img" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container padding">
+    <div class="row tech-details padding">
+        <div class="col-12">
+            <p>
+                {{ obj.body }}
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

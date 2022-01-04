@@ -1,0 +1,74 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %} active {% endblock %}
+{% load static %}
+{% block title %}Solar Water Pump Installation {{ block.super }}{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <p>Solar Water Pump</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+        <li class="breadcrumb-item active">Solar-water-pump</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="light row padding">
+        <ul class="list-group col-lg-4">
+            <li class="list-group-item"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Inverter Installation</a></li>
+            <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
+            <li class="list-group-item  list-group-item-success"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
+            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Solar Storage</a></li>
+            <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Energy Management</a></li>
+            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> Electrical Installation</a></li>
+            <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Upgrade / Maintenance</a></li>
+        </ul>
+        <div class="col-lg-8">
+            <img src="{% static 'images/solar-p.webp' %}" alt="solar pumping machine" />
+        </div>
+    </div>
+</div>
+<div class="container padding">
+        <div class="row details">
+            <div>
+                <p>
+                    Since it lowers the cost of burning fossil fuels and provides energy efficiency, solar submersible and surface pumps are
+                    increasingly becoming a common way to get water from wells and boreholes. We design and build for a variety of purposes,
+                    including residential, industrial, and, most importantly, agricultural. Our solar pumps use the sun's energy to generate
+                    electricity, allowing us to pump water from wells. We are dedicated to developing an environmentally sustainable infrastructure
+                    that can provide renewable energy at a fair cost while reducing the environmental effects of fossil fuels and lowering
+                    the cost of increasing fuel prices. Our design and installation is cost-effective in maintaining normal living conditions
+                    as it's guaranteed to provide you with water every day, rain or shine. It can be used for domestic purposes (domestic
+                    use), commercial purposes (community boreholes, manufacturing production that needs water), agricultural activities (irrigation,
+                    fishery activities, poultry, and other farm work), and agricultural activities (irrigation, fishery activities, poultry,
+                    and other farm work). Our systems have been proven to follow the highest safety requirements, as well as being highly
+                    effective and simple to use. Our services are high-quality and cost-effective.
+                </p>
+            </div>
+        </div>
+</div>
+<div class="container-fluid padding">
+        <div class="row base">
+            <div class="order-list col-lg-5 col-md-6 col-xs-12">
+                <h4>Our Street lighting service includes:</h4>
+                <ol>
+                    <li>Design</li>
+                    <li>Installation</li>
+                    <li>Operation</li>
+                    <li>Troubleshooting</li>
+                </ol>
+            </div>
+            <div class="order-list col-lg-5 col-md-6 col-xs-12">
+                <img src="{% static 'images/solar-pump.webp' %}" alt="solar panel with water pump" />
+            </div>
+        </div>
+</div>
+{% endblock %}

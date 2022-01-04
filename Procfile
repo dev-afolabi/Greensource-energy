@@ -1,0 +1,1 @@
+web: gunicorn greensourceconsult.wsgi --log-file -

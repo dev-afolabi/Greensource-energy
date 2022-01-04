@@ -1,0 +1,45 @@
+{% extends 'base_layout.html' %}
+{% block nav-projects %} active {% endblock %}
+{% load static %}
+{% block title %}All Solar Projects {{ block.super }}{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <p>Recent Projects</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Projects</li>
+    </ol>
+</nav>
+<div class=" container-fluid padding page-header">
+    <h1>We believe in acting responsibly & sustainably in our operations</h1>
+</div>
+<div class="container-fluid padding">
+    <div class="row projects">
+        {% if obj %}
+        {% for solar in obj %}
+        <div class="portfolio col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <a href="{{ solar.get_absolute_url }}">
+                <div class="image-block">
+                    <img src="{{ solar.image.url }}" alt="alt img" />
+                    <div class="overlay">
+                        <div class="caption">{{ solar.title }}</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+
+        {% else %}
+        <p>There are no recent projects</p>
+        {%  endif %}
+    </div>
+</div>
+{% endblock %}

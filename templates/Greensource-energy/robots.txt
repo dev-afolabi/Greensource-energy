@@ -1,0 +1,4 @@
+user-agent: *
+Disallow: /success/
+Noindex: /success/
+Disallow: /greensource-webenergy/

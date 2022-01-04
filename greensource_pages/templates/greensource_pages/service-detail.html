@@ -1,0 +1,70 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %} active {% endblock %}
+{% load static %}
+{% block title %}Solar Energy Services Details {{ block.super }}{% endblock %}
+{% block content %}
+
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>Service Details</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+        <li class="breadcrumb-item active">Service-Details</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="light row padding">
+        <ul class="list-group col-lg-4 col-md-5 col-xs-12">
+            <li class="list-group-item list-group-item-success"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Inverter Installation</a></li>
+            <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
+            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Solar Storage</a></li>
+            <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Solar Energy Mgt</a></li>
+            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> Electrical Installation</a></li>
+            <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Upgrade / Maintenancee</a></li>
+        </ul>
+        <div class="services-details col-lg-8 col-md-7 col-xs-12">
+            <img src="{% static 'images/simulation.gif' %}" />
+        </div>
+    </div>
+    <section>
+        <div class="row padding">
+                <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                    <div id="circle">
+                    </div>
+                        <h5>Energy saving</h5>
+                        <p>On installation you get to save money through controlled energy monitoring and consumption.</p>
+                    </div>
+                    <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                            <h5>Unique designs</h5>
+                            <p>Our unique set of custom designs are tailored to meet your energy needs irrespective of energy consumption.</p>
+                        </div>
+            <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                <h5>Long term savings</h5>
+                <p>With the initial cost of acquiring a solar system, you will recover the money invested within 5yrs</p>
+            </div>
+            <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                    <h5>Client satisfaction</h5>
+                    <p>With great partnership & effective communication, Our goal is to deliver quality service every step of the way.</p>
+            </div>
+            <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                    <h5>Sustainable/Durable</h5>
+                    <p>Low maintenance, reliability and sustainability are the hallmark of our cutting edge solar energy system. </p>
+                </div>
+            <div class="radial col-lg-4 col-sm-6 col-xs-12">
+                <h5>Clean energy</h5>
+                <p>Solar energy technologies produces clean energy with zero carbon emission improving living standard.</p>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

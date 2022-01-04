@@ -1,0 +1,79 @@
+{% extends 'base_layout.html' %}
+{% load crispy_forms_tags %}
+{% block nav-contact %} active {% endblock %}
+{% load static %}
+{% block title %}Contact Us and Help Page {{ block.super }}{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding text-center">
+        <div class="col-12 animated fadeIn">
+            <p>Get In Touch</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item active">Contact Us</li>
+    </ol>
+</nav>
+<div class="container padding">
+    <div class="address row padding">
+            <div class="add col-lg-4 col-md-6 col-xs-12">
+            <i class="fas fa-map-marker-alt"></i>
+            <h6>Location</h6>
+            <p>1, Heritage street by anobi noah mowe-ofada Ogun state.</p>
+        </div>
+        <div class="add col-lg-4 col-md-6 col-xs-12">
+                <i class="far fa-envelope"></i>
+                <h6>Email Us Now</h6>
+            <p>
+                <a href="&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#103;&#114;&#101;&#101;&#110;&#115;&#111;&#117;&#114;&#099;&#101;&#110;&#101;&#114;&#103;&#121;&#046;&#099;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#103;&#114;&#101;&#101;&#110;&#115;&#111;&#117;&#114;&#099;&#101;&#110;&#101;&#114;&#103;&#121;&#046;&#099;&#111;&#109;</a>
+            </p>
+        </div>
+        <div class="add col-lg-4 col-md-6 col-xs-12">
+                <i class="fas fa-phone"></i>
+                <h6>Contact Number</h6>
+            <p>(234)913 2909 546 <br /> (234)807 6068 609</p>
+        </div>           
+    </div>
+</div>
+<div class="container-fluid padding">
+        <div class="row contact col-lg-6 col-md-9 col-xs-12">
+            <h4>You have any Question? Feel free to Contact us</h4>
+        </div>
+    <div class="content row padding">
+        <div id="contact-form" class="col-xs-12 col-md-9 col-lg-6">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.first_name|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.last_name|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.from_email|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.phone|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.city|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.service|as_crispy_field }}
+                        </div>
+                        {{ form.message }}
+                    </div>
+                    <button type="submit" name="submit" class="btn">Send Message</button>
+                </form>
+        </div>
+        <div class="map col-lg-6 col-xs-12 col-md-9">
+            <embed aysnc src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.741452898637!2d3.433366268485239!3d6.84608399012105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc7b12aa0619b%3A0x668d6d2407416eeb!2sGREENSOURCE+ENGINEERING+CONSULT!5e0!3m2!1sen!2sng!4v1554279134001!5m2!1sen!2sng" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></embed>
+        </div>
+        <p>*We do not rent or sell our customers information to any third parties! Refer to our <a href="{% url 'privacy' %}"><strong>Privacy Policy</strong></a> for more details*</p>
+    </div>  
+</div>
+{% endblock %}

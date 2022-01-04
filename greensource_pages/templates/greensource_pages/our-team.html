@@ -1,0 +1,244 @@
+{% extends 'base_layout.html' %}
+{% block nav-about %} active {% endblock %} 
+{% load static %}
+{% block title %}Our Team {{ block.super }}{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <p>Our Team</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'about' %}">About</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Our-Team</li>
+    </ol>
+</nav>
+<section id="team">
+    <div class="team-box-container">
+        <div class="member-box member-1">
+            <div class="member-img"> 
+                <img src="{% static 'images/' %}" alt="CEO">
+            </div>
+            <div class="member-name">
+                <h3>OLUMIDE JOSEPH</h3>
+                <h5>MD/CEO</h5>
+            </div>
+        </div>
+        <div class="member-box member-2">  
+            <div class="member-img">
+                <img src="{% static 'images/onifade.webp' %}" alt="Business Advisor">
+            </div>
+            <div class="member-name">
+                <h3>DOLAPO ONIFADE</h3>
+                <h5>Business Advisor</h5>
+            </div>
+        </div>
+        <div class="member-box member-3">
+            <div class="member-img">
+                <img src="{% static 'images/' %}" alt="Lead Engineer">
+            </div>
+            <div class="member-name">
+                <h3>TOLA ADEYEMI</h3>
+                <h5>Lead Engineer</h5>
+            </div>
+        </div>
+        <div class="member-box member-5">
+            <div class="member-img">
+                <img src="{% static 'images/yussuf.webp' %}" alt="Support Engineer">
+            </div>
+            <div class="member-name">
+                <h3>Yussuf Adebayo</h3>
+                <h5>Support Engineer</h5>
+            </div>
+        </div>
+        <div class="member-box member-4">
+            <div class="member-img">
+            <img src="{% static 'images/afolabi.webp' %}" alt="Web Developer">
+            </div>
+            <div class="member-name">
+                <h3>Afolabi Ahmed</h3>
+                <h5>Devops/Tech</h5>
+            </div>
+        </div>
+        <!-- <div class="member-box member-6">
+            <div class="member-img">
+                <img src="images/t6-a.jpg">
+            </div>
+            <div class="member-name">
+                <h3>Iyanu Oluwa</h3>
+                <h5>PV Engineer</h5>
+            </div>
+        </div> -->
+        <div class="detail-box-1">
+            <div class="member-detail-box">  
+                <div class="detail-box-img">
+                    <img src="{% static 'images/' %}" alt="CEO">
+                </div>
+                <div class="detail-box-text"> 
+                    <a href="javascript:void(0);" class="cancel">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <h4 class="detail-name">Olumide Omogbule</h4>
+                    <div class="member-social-links">
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </div>
+                    <h5 class="position">Position: MD/CEO</h5>
+                    <p>Olumide Omogbule is a graduate of Environmental Engneering from Obafemi Awolowo University lle-Ife.
+                       He oversees the operations and implementation of company strategy. He has over 5 years of experience in
+                       the renewable energy industry and 2 years of experience in Facility Management.
+                    </p>
+                    <a href="#" class="view-work-btn">View Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="detail-box-2">
+            <div class="member-detail-box">
+                <div class="detail-box-img">
+                    <img src="{% static 'images/onifade.webp' %}">
+                </div>
+                <div class="detail-box-text">
+                    <a href="javascript:void(0);" class="cancel">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <h4 class="detail-name">Dolapo Onifade</h4>
+                    <div class="member-social-links">
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </div>
+                    <h5 class="position">Position: Marketing/Business Lead</h5>
+                    <p>Dolapo Onifade is an undergraduate student of the University of Lagos pursuing a degree in European
+                        languages and Intergrated studies. She has a deep knowledge in sales, content creation and promotion, 
+                        marketing campaign development. She is a certified digital marketer.
+                    </p>
+                    <a href="#" class="view-work-btn">View Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="detail-box-3">
+            <div class="member-detail-box">
+                <div class="detail-box-img">
+                    <img src="{% static 'images/' %}">
+                </div>
+                <div class="detail-box-text">
+                    <a href="javascript:void(0);" class="cancel">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <h4 class="detail-name">Tola Adeyemi</h4>
+                    <div class="member-social-links">
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </div>
+                    <h5 class="position">Position: Lead Engineer</h5>
+                    <p>Tola Adeyemi is a graduate of Petroleum Engineering from the University of Ibadan. He is a renewable energy
+                        enthusiast with over 3 years of experience as a certified solar PV instructor and Engineer, passionate
+                        about alternative form of energy. He has coordinated a high number of solar projects within Nigeria 
+                    </p>
+                    <a href="#" class="view-work-btn">View Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="detail-box-5">
+            <div class="member-detail-box">
+                <div class="detail-box-img">
+                    <img src="{% static 'images/yussuf.webp' %}" alt="PV Engineer">
+                </div>
+                <div class="detail-box-text">
+                    <a href="javascript:void(0);" class="cancel">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <h4 class="detail-name">Yussuf Adebayo</h4>
+                    <div class="member-social-links">
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </div>
+                    <h5 class="position">Position: Support Engineer</h5>
+                    <p>Yussuf Adebayo is a graduate of Educational Management from the University of Ilorin. He s also an
+                        associate member of the assocation of accountacy bodies in west Africa (ABWA). An Instructor on solar energy 
+                        systems and a certified PV Designer and Installer with over 3 years of experience.  
+                    </p>
+                    <a href="#" class="view-work-btn">View Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="detail-box-4">
+            <div class="member-detail-box">
+                <div class="detail-box-img">
+                    <img src="{% static 'images/afolabi.webp'  %}">
+                </div>
+                <div class="detail-box-text">
+                    <a href="javascript:void(0);" class="cancel">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <h4 class="detail-name">Afolabi Ahmed</h4>
+                    <div class="member-social-links">
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </div>
+                    <h5 class="position">Position: Devops/FullStack</h5>
+                    <p>The man who pulls all the strings in making all your ideas come to live! If he says, its possible - it's
+                        possible. He's very dependable, energetic, humourous and passionate.  A certified fullstack developer of Decagon Institute. Loves leading projects with
+                        full stack development skills on the side. Share your ideas with him and he will make it happen.
+                    </p>
+                    <a href="#" class="view-work-btn">View Profile</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="detail-box-6">
+            <div class="member-detail-box">
+                <div class="detail-box-img">
+                    <img src="{% static 'images/engineer.png'  %}">
+                </div>
+                <div class="detail-box-text">
+                    <a href="javascript:void(0);" class="cancel">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <h4 class="detail-name">Iyanu Oluwa</h4>
+                    <div class="member-social-links">
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </div>
+                    <h5 class="position">Position: PV Engineer</h5>
+                    <p>The guy who pulls all the strings in making all your ideas come to live! If he says, its possible - it's
+                        possible. He's very dependable, energetic, humourous and passionate. A certified fullstack developer of Decagon Institute. Loves leading projects with
+                        full stack development skills on the side. Share your ideas with him and he will make it happen.
+                    </p>
+                    <a href="#" class="view-work-btn">View Profile</a>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+{% endblock %}

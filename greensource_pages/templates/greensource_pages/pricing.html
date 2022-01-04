@@ -1,0 +1,366 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %} active {% endblock %}
+{% load static %}
+{% block title %}Pricing And Services {{ block.super }}{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <p>Pricing Plan</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'services' %}">Services</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+    </ol>
+</nav>
+<section>
+    <div class="container-fluid padding">
+        <h3 class="pricing-header">MINI PACKAGE</h3>
+        <div class="pricing-table">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 0.36kwp</h6>
+                    <div class="prices">
+                        N270, 000
+                        <span>
+                            <strong>2* 180w</strong> Mono Panels
+                            <br />
+                            <strong>1* 40amp</strong> Controller
+                            <br />
+                            <strong>1* 150ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 1kw</strong> Field-effect Inverter
+                        </span>
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            A 24/32 inches television</li>
+                        <li>
+                            A ceiling/standing Fan</li>
+                        <li>
+                            A satelite decoder</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 0.54kwp</h6>
+                    <div class="prices">
+                        N342, 000
+                        <span>
+                            <strong>3* 180w </strong> Mono Panels
+                            <br />
+                            <strong>1* 40amp</strong> Controller
+                            <br />
+                            <strong>1* 200ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 1.5kw</strong> Field-effect Inverter
+                        </span>
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            One(1) 32 inches television</li>
+                        <li>
+                            A ceiling/standing Fan</li>
+                        <li>
+                            A home theatre/satelite decoder</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 0.72kwp</h6>
+                    <div class="prices">
+                        N460, 000
+                        <span>
+                            <strong>4* 180w </strong> Mono Panels
+                            <br />
+                            <strong>1* 50amp</strong> Controller
+                            <br />
+                            <strong>1* 200ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 2kw</strong> Field-effect Inverter
+                        </span>
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            One(1) 43 inches television</li>
+                        <li>
+                             Two (2) ceiling/standing Fan</li>
+                        <li>
+                            A home theatre/satelite decoder</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 1.08kwp</h6>
+                    <div class="prices">
+                        N590, 000
+                        <span>
+                            <strong>6* 180w </strong> Mono Panels
+                            <br />
+                            <strong>1* 50amp</strong> Controller
+                            <br />
+                            <strong>2* 150ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 2kw</strong> Field-effect Inverter
+                        </span>
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            One(1) 43 inches television</li>
+                        <li>
+                            Two (2) ceiling/standing Fan</li>
+                        <li>
+                            A home theatre/satelite decoder</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3 class="pricing-header"> STANDARD PACKAGE</h3>
+        <div class="pricing-table">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 1.44kwp</h6>
+                    <div class="prices">
+                        N850, 000
+                        <span>
+                            <strong>8* 180w</strong> Mono Panels
+                            <br />
+                            <strong>1* 50amp</strong> Controller
+                            <br />
+                            <strong>2* 200ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 1.5kw</strong> Transformer Inverter
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                            <li>
+                                All lighting (LEDs recommended)</li>
+                            <li>
+                                2 TVs, A Laptop, A Freezer</li>
+                            <li>
+                                Three (3) ceiling Fan</li>
+                            <li>
+                                A home theatre/satelite decoder</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 1.8kwp</h6>
+                    <div class="prices">
+                        N960, 000
+                        <span>
+                            <strong>10* 180w</strong> Mono Panels
+                            <br />
+                            <strong>2* 60amp</strong> Controller
+                            <br />
+                            <strong>2* 200ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 2kw</strong> Transformer Inverter
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            2 TVs, A Laptop, A Freezer</li>
+                        <li>
+                            4 Fans, A washing machine</li>
+                        <li>
+                            A home theatre/satelite decoder</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 2.7kwp</h6>
+                    <div class="prices">
+                        N1, 200, 000
+                        <span>
+                            <strong>15* 180w</strong> Mono Panels
+                            <br />
+                            <strong>2* 80amp</strong> Controller
+                            <br />
+                            <strong>3* 200ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 3kw</strong> Transformer Inverter
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            3 TVs, A Freezer, 2 Laptops</li>
+                        <li>
+                            4 Fans, A washing machine</li>
+                        <li>
+                            A home theatre/satelite decoder</li>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 3.24kwp</h6>
+                    <div class="prices">
+                        N1, 750, 000
+                        <span>
+                            <strong>18* 180w</strong> Mono Panels
+                            <br />
+                            <strong>2* 80amp</strong> Controller
+                            <br />
+                            <strong>4* 200ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 3.5kw</strong> Transformer Inverter
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            3 TVs, A Freezer, 2 Laptops</li>
+                        <li>
+                            4 Fans, A wash/pump machine</li>
+                        <li>
+                            A home theatre/satelite decoder</li>
+                    </ul>
+                </div>
+        </div>
+        <h3 class="pricing-header">PREMIUM PACKAGE</h3>
+        <div class="pricing-table">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 3.5kwp</h6>
+                    <div class="prices">
+                        N2, 271, 000
+                        <span>
+                            <strong>10* 350w</strong> Mono Panels
+                            <br />
+                            <strong>2* 80amp</strong> Controller
+                            <br />
+                            <strong>8* 200ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 5kw</strong> Transformer Inverter
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            3 TVs, A Freezer, 2 Laptops</li>
+                        <li>
+                            4 Fans, A wash/pump machine</li>
+                        <li>
+                            A home theatre/satelite decoder</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 5.25kwp</h6>
+                    <div class="prices">
+                        N3, 580, 500
+                        <span>
+                            <strong>15* 350w</strong> Mono Panels
+                            <br />
+                            <strong>2* 80amp</strong> Controller
+                            <br />
+                            <strong>12* 800ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 5kw</strong> Transformer Inverter
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            3 TVs, 2 Freezers/Wash machine</li>
+                        <li>
+                            1 1Hp smart AC, A pump machine</li>
+                        <li>
+                            A home theatre/satelite decoder</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 7kwp</h6>
+                    <div class="prices">
+                        N3, 950, 000
+                        <span>
+                            <strong>20* 350w</strong> Mono Panels
+                            <br />
+                            <strong>2* 80amp</strong> Controller
+                            <br />
+                            <strong>12* 1000ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 5kw</strong> Transformer Inverter
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            3 TVs, 2 Freezer/Wash machine</li>
+                        <li>
+                            2 1Hp smart AC, A pump machine</li>
+                        <li>
+                            A home theatre/satelite decoder</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="table">
+                    <h6>gs 8.75KWp</h6>
+                    <div class="prices">
+                        N4, 550, 000
+                        <span>
+                            <strong>25* 350w</strong> Mono Panels
+                            <br />
+                            <strong>2* 80amp</strong> Controller
+                            <br />
+                            <strong>12* 1200ah</strong> Gel Battery
+                            <br />
+                            <strong>1* 5kw</strong> Transformer Inverter
+                    </div>
+                    <ul>
+                        <p>load capacity</p>
+                        <li>
+                            All lighting (LEDs recommended)</li>
+                        <li>
+                            3 TVs, 2 Freezers/Wash machine</li>
+                        <li>
+                            3 1Hp smart AC, A pressure pump</li>
+                        <li>
+                            A home theatre/satelite decoder</li>
+                    </ul>
+                </div>
+            </div>
+            <p>NB: On request, we will carryout load analysis on your facility to create custom-fit design, if the above designs does not meet your energy demands. <br />
+                Prices are subject to changes based on current economic realities and Inflation.</p>
+    
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %} active {% endblock %}
+{% load static %}
+{% block title %}Inverter Installation {{ block.super }}{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <h1>Inverter Installation</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+        <li class="breadcrumb-item active">Inveter Installation</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="light row padding">
+        <ul class="list-group col-lg-4">
+            <li class="list-group-item"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
+            <li class="list-group-item list-group-item-success"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Inverter Installation</a></li>
+            <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
+            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Solar Storage</a></li>
+            <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Solar Energy Mgt</a></li>
+            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> Electrical Installation</a></li>
+            <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Upgrade / Maintenance</a></li>
+        </ul>
+        <div class="col-lg-8">
+            <img src="{% static 'images/Inverter.webp' %}" alt="inverter image" />
+        </div>
+    </div>
+</div>
+<div class="container padding">
+        <div class="row details">
+            <div>
+                <p>
+                    We render inverter installation services for clients who like this option in a unique way with our wll trained professionals
+                    who are experienced in the the design and installation of inverter for residential and commercial purposes. We believe that
+                    total customer satisfaction is achieved when a good quality product supported by a responsive after sales support and maintenance
+                    service. We boast of well trained reliable engineers to give the necessary support for operations of all our inverter systems.our
+                    services start from site inspection, load /energy analysis, installation, operations and maintenance. We work very close
+                    with our customers to dermine the type and capacity of inverter needed taking into consideration the load the inverter will
+                    be powering, usage condition, gadget/appliance priority and budget. We recommend usage of our inverters as adviced by our
+                    engineers to ensure you get the most out of your inverter and keep them running optimally while preserving battery life.
+                </p>
+            </div>
+        </div>
+</div>
+<div class="container-fluid padding">
+        <div class="row base">
+            <div class="order-list col-lg-5 col-md-6 col-xs-12">
+                <h4>Our Inverter service includes:</h4>
+                <ol>
+                        <li>Operations</li>
+                        <li>Maintenance</li>
+                        <li>Installation</li>
+                        <li>Troubleshooting</li>
+                        <li>Technical support</li>
+                </ol>
+            </div>
+            <div class="order-list col-lg-5 col-md-6 col-xs-12">
+                <img src="{% static 'images/inverter2.webp' %}" alt="solar panel installation" />
+            </div>
+        </div>
+</div>
+{% endblock %}

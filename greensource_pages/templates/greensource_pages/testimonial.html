@@ -1,0 +1,49 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+{% block title %}Testimonial {{ block.super }}{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <p>Testimonials</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#">Pages</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Testimonial</li>
+    </ol>
+</nav>
+<div class="container">
+    <div class="row testimonials">
+        {% if testimonial %}
+        {% for testimonial in testimonial %}
+        <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="single-testimonial-style-one">
+                    <div class="image-block">
+                        <div class="inner-block">
+                            <img src="{{ testimonial.image.url }}" alt="Awesome Image" />
+                        </div>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="text-block">
+                        <h6>{{ testimonial.title }}</h6>
+                        <span>{{ testimonial.name }}</span>
+                        <p>{{ testimonial.body }}</p>
+                    </div>
+                </div>
+        </div>
+        {% endfor %}
+
+        {% else %}
+        <p>There are no recent testimonial</p>
+        {%  endif %}
+    </div>
+</div>
+{% endblock %}

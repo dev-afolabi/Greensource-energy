@@ -1,0 +1,75 @@
+{% extends 'base_layout.html' %}
+{% block nav-service %} active {% endblock %}
+{% load static %}
+{% block title %}Electrical Installation Services {{ block.super }}{% endblock %}
+{% block content %}
+<div class="container-fluid padding">
+    <div class="header row padding">
+        <div class="col-12 animated fadeIn">
+            <p>Electrical Installation</p>
+        </div>
+    </div>
+</div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'services' %}">Services</a>
+        </li>
+        <li class="breadcrumb-item active">Electrical Installation</li>
+    </ol>
+</nav>
+<div class="container-fluid padding">
+    <div class="light row padding">
+        <ul class="list-group col-lg-4">
+            <li class="list-group-item"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
+            <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Inverter Installation</a></li>
+            <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
+            <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
+            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Solar Storage</a></li>
+            <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Solar Energy Mgt</a></li>
+            <li class="list-group-item list-group-item-success"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> Electrical Installation</a></li>
+            <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Upgrade / Maintenance</a></li>
+        </ul>
+        <div class="col-lg-8">
+            <img src="{% static 'images/ceiling-lamp.webp' %}" alt="inverter" />
+        </div>
+    </div>
+</div>
+<div class="container padding">
+    <div class="row details">
+        <div>
+            <p>
+                 You need people you can rely on when it comes to electrical installations. We have extensive experience at Greensource Energy
+                and are ready to work with you on your next project to offer a reliable, professional electrical installation.
+                <br/> We offer a wide range of electrical installation services, and our engineers adhere to the highest industry standards. we
+                are skilled in working at design level, through to commissioning, with the requirements of installing new as well as upgrading
+                existing light for Residential / Commercial buildings. We also give preventive maintenance services to our customers on a
+                regular basis. Within a property, our engineers do a series of checks and testing, offering recommendations and eliminating
+                any unnecessary downtime.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container padding">
+    <div class="row base">
+        <div class="order-list col-lg-5 col-md-6 col-xs-12">
+            <h4>Our Electrical service includes:</h4>
+            <ol>
+                <li>Security lighting</li>
+                <li>Complete light fitting</li>
+                <li>Wiring and re-wiring service</li>
+                <li>LV / MV design and installation</li>
+                <li>Lighting and socket point addition</li>
+            </ol>
+        </div>
+        <div class="order-list col-lg-5 col-md-6 col-xs-12">
+            <img src="{% static 'images/electrical.webp' %}" alt="solar system components" />
+        </div>
+    </div>
+</div>
+{% endblock %}
