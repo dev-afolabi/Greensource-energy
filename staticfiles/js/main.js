@@ -104,10 +104,10 @@ $(document).ready(function () {
             480: {
                 items: 1
             },
-            577: {
+            576: {
                 items: 2
             },
-            767: {
+            768: {
                 items: 2
             },
             992: {
@@ -153,6 +153,35 @@ $(document).ready(function () {
     });
     $('#mission').owlCarousel({
         loop: true,
+        margin: 10,
+        nav: false,
+        width: 1200,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        items: 1,
+        responsive: {
+            320: {
+                items: 1
+            },
+            375: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            }
+        }
+    });
+    $('#core').owlCarousel({
+        loop: true,
         margin: 30,
         nav: false,
         width: 1200,
@@ -177,6 +206,9 @@ $(document).ready(function () {
             },
             992: {
                 items: 3
+            },
+            1200: {
+                items: 4
             }
         }
     });
@@ -285,7 +317,7 @@ $(document).ready(function () {
                 items: 1
             },
             480: {
-                items: 3
+                items: 2
             },
             600: {
                 items: 3
@@ -401,3 +433,6 @@ $(function() {
       siteMenuClone();
   
 });
+
+
+

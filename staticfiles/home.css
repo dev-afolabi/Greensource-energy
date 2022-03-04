@@ -339,7 +339,8 @@ html body.offcanvas-menu:before {
 .site-mobile-menu .site-nav-wrap .arrow-collapse.collapsed:before {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%); }
+	transform: translate(-50%, -50%); 
+}
 .site-mobile-menu .site-nav-wrap > li {
 	display: block;
 	position: relative;
@@ -475,7 +476,7 @@ html body.offcanvas-menu:before {
 }
 .carousel-caption h3{
 	margin-top: 20px;
-	font-size: 18px;
+	font-size: 19px;
 	color: #cdcdcd;
 	font-weight: 500;
 	width: 60%;
@@ -489,7 +490,7 @@ html body.offcanvas-menu:before {
 	width: 165px;
 	margin-left: 5px;
 	padding: 15px 15px;
-	border: 2px solid #7f8284;
+	border: 2px solid #007654;
 	border-radius: 100px;
 	animation-delay: 2s;
 }
@@ -538,6 +539,7 @@ html body.offcanvas-menu:before {
 	right: 15px;
 	cursor: pointer;
 	display: none;
+	z-index: 99;
 }
 .back-to-top:hover{
 	color:#fafafa;
@@ -545,7 +547,7 @@ html body.offcanvas-menu:before {
 	transition: .4s;
 }
 /*--------------------------------------------------------------
-# WHY CHOOSE US
+# BACKGROUND ATTACHMENT
 --------------------------------------------------------------*/
 .choose{
 	margin-top: 50px;
@@ -606,7 +608,52 @@ nav .breadcrumb li a:hover{
 	text-decoration:none;
 }
 /*--------------------------------------------------------------
-# WHY CHOOSE US
+# works
+--------------------------------------------------------------*/
+.works{
+	top: 0;
+	margin: 10px 10px;
+	padding: 5px 15px;
+	justify-content: center;
+	align-items: center;
+}
+.sub-work{
+	max-width: 1200px;
+	margin-top: 20px;
+	display: block;
+	margin-left: 5%;
+	margin-right: auto;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	background: #fff;
+	padding: 30px 20px;
+	border-bottom-style: unset;
+	border-top-style: unset;
+	box-shadow: 3px 5px 5px;
+	
+}
+.sub-work i{
+	font-size: 32px;
+	margin-top: 50px;
+	color: #006420;
+}
+.sub-work h4{
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 20px;
+	text-align: center;
+	color: #001f3f;
+}
+.sub-work p{
+	margin-top: 25px;
+	width: 100%;
+	padding: 0px 25px;
+	font-size: 16px;
+	text-align: justify;
+}
+/*--------------------------------------------------------------
+# HOMEPAGE COUNTER
 --------------------------------------------------------------*/
 .colum{
 	margin-top: 0px;
@@ -645,6 +692,18 @@ nav .breadcrumb li a:hover{
 	font-size: 25px;
 	margin-left: 5px;
 	font-weight: 700;
+}
+/*--------------------------------------------------------------
+# WHY CHOOSE US
+--------------------------------------------------------------*/
+.choose{
+	margin-bottom: 100px;
+}
+.why-choose{
+	font-size: 17px;
+	padding-top: 5px;
+	line-height: 35px;
+	text-align: justify;
 }
 .choose1{
 	background: #6a9e97;
@@ -757,6 +816,7 @@ nav .breadcrumb li a:hover{
 --------------------------------------------------------------*/
 .service-two h5{
 	margin-top: 100px;
+	padding-left: 15px;
 	font-family: 'Play', sans-serif;
 	font-size: 17px;
 	font-weight: 600;
@@ -772,7 +832,7 @@ nav .breadcrumb li a:hover{
 	font-size: 22px;
 	text-transform: capitalize;	
 	margin-top: 0px;
-	padding-left: 5px;
+	padding-left: 30px;
 	color: #1b1b1b; 
 }
 /*--------------------------------------------------------------
@@ -876,66 +936,6 @@ nav .breadcrumb li a:hover{
 	margin-bottom: 30px;
 }  
 /*--------------------------------------------------------------
-# ABOUT US HOMEPAGE
---------------------------------------------------------------*/
-.about img{
-	margin-top: 50px;
-	width: 100%;
-	height: 390px;
-	margin-left:auto;
-	margin-right:auto;
-}
-.abt-info .active{
-	margin-top: 50px;
-	font-size: 16px;
-	padding: 5px 25px;
-	margin-bottom: 30px;
-	text-align: justify;
-	line-height: 28px;
-}
-.abt-info a{
-	font-size: 15px;
-	font-weight: bold;
-	text-decoration: none;
-	border: 2px solid #006420;
-	border-radius: 100px;
-	padding: 10px 30px;
-	color: #006420;
-	width: 100%;
-	margin-left: 30px;
-	background: transparent;
-}
-.abt-info a:hover{
-	background: #006420;
-	color: #fff;
-	transition: .5s;
-	transition-delay: .1s;
-}
-.xtravite{
-	margin-top: 50px;
-}
-.xvite{
-	display: block;
-	margin-top: 0px;
-}
-.xvite p{
-	font-size: 17px;
-	color: #555;
-	margin-left: 35px;
-	font-weight: bold;
-}
-.xvite i{
-	display: flex;
-	float: left;
-	clear: both;
-	font-size: 15px;
-	color: #006420;
-	background: #fff;
-	border-radius: 100%;
-	padding: 5px 5px;
-	margin-right: 10px;
-}
-/*--------------------------------------------------------------
 # ABOUT US
 --------------------------------------------------------------*/
 .page-header{
@@ -955,17 +955,35 @@ nav .breadcrumb li a:hover{
 }
 .about-us img{
 	width: auto;
-	height: 385px;
+	height: 390px;
 	padding: 15px 25px;
 	float: right;
 	clear: both;
 }
 .about-us p{
-	font-size: 16px;
-	padding: 15px 5px;
+	font-size: 17px;
+	padding: 15px 30px;
 	text-align: justify;
-	line-height: 32px;
+	line-height: 35px;
 	width: 100%;
+}
+.about-us a{
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	border: 2px solid #006420;
+	border-radius: 15px;
+	padding: 20px 40px;
+	color: #006420;
+	width: 100%;
+	margin-left: 30px;
+	background: transparent;
+}
+.about-us a:hover{
+	background: #006420;
+	color: #fff;
+	transition: .5s;
+	transition-delay: .1s;
 }
 .about-us .inner-box{
 	display: block;
@@ -994,101 +1012,44 @@ nav .breadcrumb li a:hover{
 	letter-spacing: .5px;
 	line-height: 1.5em;
 }
-.card-cover{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	grid-gap: 15px;
-	margin-top: 0 auto;
-	padding: 10px 0px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-.card-cover .card{
-	position: relative;
-	width: 300px;
-	height: 350px;
-	margin: 0 auto;
-	background: #fff;
-	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
-	border-bottom-left-radius: 15%;
-	border-top-right-radius: 15%;
-}
-.card-cover .card .face{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
+/*--------------------------------------------------------------
+# MISSION
+--------------------------------------------------------------*/
+.mission{
+	margin: 10px 0px;
+	padding: 10px 10px;
 	justify-content: center;
-	align-items: center;
-	border-bottom-left-radius: 15%;
-	border-top-right-radius: 15%;
 }
-.card-cover .card .face.face1{
-	box-sizing: border-box;
-	padding: 20px;
+.values{
+	padding:20px 20px;
+	background:#fff;
+	margin: 10px 5px;
+	display: block;
+	height: 320px;
+	border-bottom-style: groove;
+	border-top-style: groove;
+	box-shadow: 3px 5px 5px;
 }
-.card-cover .card .face.face1 h2{
-	margin: 0;
-	padding: 0;
+.values h4{
+	font-size: 18px;
+	font-weight:600;
+	margin-top: 50px;
+	margin-left: 0px;
+	margin-right: auto;	
+	width: 180px;
+	color:#006420;
 }
-.card-cover .card .face.face1 p{
-	font-size: 15px;
+.values p{
+	margin-top: 25px;
+	padding: 0px 25px;
+	font-size: 16px;
 	text-align: justify;
-	padding: 10px 0px;
 }
-.card-cover .card .face.face1 li{
-	font-size: 15px;
-	line-height: 30px;
-}
-.card-cover .card .face.face2{
-	background: #111;
-	transition: 0.5s;
-}
-.card-cover .card:nth-child(1) .face.face2{
-	background-image: url("images/bbb.webp");
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.card-cover .card:nth-child(2) .face.face2{
-	background-image: url("images/bbb.webp");
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.card-cover .card:nth-child(3) .face.face2{
-	background-image: url("images/bbb.webp");
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.card-cover .card:hover .face.face2{
-	height: 60px;
-}
-.card-cover .card .face.face2:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(255,255,255, 0.1);
-}
-.card-cover .card .face.face2 h2{
-	margin: 0;
-	padding: 0;
-	font-size: 30px;
-	color: #cdcdcd;
-	transition: 0.5s;
-	font-weight: 550;
-	text-transform: uppercase;
-	text-shadow: 10px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.card-cover .card:hover .face.face2 h2{
-	font-size: 1em;
+.values .create{
+	margin-top: 40px;
+	padding: 0px 20px;
+	font-size: 16px;
+	list-style-type: square;
 }
 /*--------------------------------------------------------------
 # OUR BENEFITS
@@ -1369,6 +1330,15 @@ nav .breadcrumb li a:hover{
 /*--------------------------------------------------------------
 # TEAM SECTION TWO
 --------------------------------------------------------------*/
+.team-heading{
+	margin-top: 100px ;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 549;
+	padding-left: 50px;
+	padding-right: 50px;
+}
 #team{
     display: flex;
     flex-direction: column;
@@ -1376,7 +1346,7 @@ nav .breadcrumb li a:hover{
     align-items: center;
     width: 100%;
 	padding: 20px;
-	margin-top: 80px;
+	margin-top: 10px;
 }
 .member-box{
     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
@@ -1639,6 +1609,7 @@ nav .breadcrumb li a:hover{
 	color: #fff; 
 	text-align: center;
 	bottom: 0;
+	font-size: 18px;
 	padding-top: 1.5rem;
 }
 .footer-20192 .cta {
@@ -3025,10 +2996,9 @@ nav .pagination a:hover{
 		line-height: 25px;
 		padding: 0;
 	}
-	.about a{
-		width: 100%;
-		margin-left: 20px;
-		margin-right: auto;
+	.about-us a{
+		margin: 0;
+		padding: 15px 20px;
 	}
 	.about-us p{
 		width: 100%;
@@ -3278,7 +3248,7 @@ nav .pagination a:hover{
 	} 
 	.blog .media img{
 		width:120px;
-		height:90px;
+		height: 90px;
 	}
 	.blog .media-body a{
 		font-size:18px;
@@ -3333,6 +3303,22 @@ nav .pagination a:hover{
 		font-size:16px;
 		width: 100%;
 	}
+	.works{
+		margin-top: 0px;
+		display: flex;
+	}
+	.choose{
+		margin-bottom: 0px;
+	}
+	.why-choose{
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.why-choose p{
+		margin-top: -25px;
+	}
 	.people-one{
 		display: block;
 		margin-left: auto;
@@ -3342,18 +3328,18 @@ nav .pagination a:hover{
 	.choose1{
 		left: -25%;
 		width: 70%;
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 	.choose2{
 		left: 15%;
 		width: 70%;
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 	.choose3{
 		left: -25%;
 		width: 135%;
 		height: 150px;
-		margin-top: 215px;
+		margin-top: 185px;
 	}
 	.pricing-table .table{
 		width: 100%;	
@@ -3376,6 +3362,10 @@ nav .pagination a:hover{
 	.portfolio .image-block img{
 		width: 100%;
 		height: 45vh;
+	}
+	.articles .card-body a h5{
+		width: 100%;
+		font-size: 17px;
 	}
 }
 /*--------------------------------------------------------------
@@ -3514,6 +3504,9 @@ nav .pagination a:hover{
 		font-size: 15px;
 		margin-left: 0px;
 	}
+	.values{
+		width: 100%;
+	}
 	.benefits-body{
 		padding: 20px 15px;
 		width: 48%;
@@ -3553,6 +3546,7 @@ nav .pagination a:hover{
 	}
 	.articles .card-body a h5{
 		width: 100%;
+		font-size: 17px;
 	}
 	.blog .news{
 		display: block;
@@ -3721,6 +3715,11 @@ nav .pagination a:hover{
 		display: block;
 		width: 100%;
 	}
+	.single-service-style-three .text-block p{
+		padding: 2px;
+		width: 100%;
+		text-align: justify;
+	}
 	.people-one{
 		margin-left: auto;
 		margin-right: 8%;
@@ -3771,6 +3770,12 @@ nav .pagination a:hover{
 	}
 	.tech-details p{
 		width: 100%;
+	}
+	.brand-carousel-one img{
+		width: 100%;
+	}
+	.sub-work p{
+		text-align: center;
 	}
 }
 /*--------------------------------------------------------------
@@ -3898,6 +3903,12 @@ nav .pagination a:hover{
 		padding: 0;
 		line-height: 35px;
 	}
+	.values{
+		width: 75%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.benefits-body{
 		padding: 20px 5px;
 		width: 47.5%;
@@ -3975,7 +3986,7 @@ nav .pagination a:hover{
 	}
 	.articles .card-body a h5{
 		width: 120%;
-		font-size: 13px;
+		font-size: 17px;
 		margin-top: 10px;
 	}
 	.blog .news{
@@ -4198,6 +4209,13 @@ nav .pagination a:hover{
 	.tech-details p{
 		width: 100%;
 	}
+	.works .sub-work{
+		width: 70%;
+		display: block;
+		padding: 20px;
+		margin-left: 17%;
+		margin-right: 10%;
+	}
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		480px
@@ -4244,7 +4262,7 @@ nav .pagination a:hover{
 		font-size: 15px;
 	}
 	.header p{
-		margin-top: 200px;
+		margin-top: 170px;
 		font-size: 22px;
 	}
 	.service{
@@ -4310,6 +4328,12 @@ nav .pagination a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.values{
+		width: 85%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.benefits-body{
 		width: 60%;
 		padding: 10px;
@@ -4336,12 +4360,16 @@ nav .pagination a:hover{
 		font-size: 20px;
 		line-height: 25px;
 	}
+	.team-heading{
+		padding: 0px 15px;
+		text-align: justify;
+	}
 	.team-area{
 		width: 100%;
 	}
 	.single-team{
-		width: 85%;
-		height: 50vh;
+		width: 90%;
+		height: 45vh;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -4380,7 +4408,7 @@ nav .pagination a:hover{
 		margin-right: auto;
 	}
 	.articles .news img{
-		width: 70%;
+		width: 90%;
 		height: 37vh;
 	}
 	.articles .news p{
@@ -4392,6 +4420,7 @@ nav .pagination a:hover{
 	}
 	.articles .card-body a h5{
 		width: 100%;
+		font-size: 17px;
 	}
 	.blog .news{
 		display: block;
@@ -4636,17 +4665,25 @@ nav .pagination a:hover{
 		width: 85%;
 		height: 55vh;
 	}
-	.pro-details img{
+	.pro-details img {
 		width: 50%;
 		height: 50vh;
 	}
-	.folio img{
+	.folio img {
 		width: 100%;
 		height: 50vh;
 	}
-	.tech-details p{
+	.tech-details p {
 		width: 100%;
 	}
+	.works .sub-work{
+		width: 80%;
+		display: block;
+		padding: 20px;
+		margin-left: 12%;
+		margin-right: 10%;
+	}
+	
 }
 /*--------------------------------------------------------------
 # MEDIA SCREENS / BREAK POINTS		375px
@@ -4754,6 +4791,12 @@ nav .pagination a:hover{
 	.service h5{
 		margin-top: 0px;
 		font-size: 15px;
+	}
+	.values{
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.benefits-body{
 		width: 70%;
@@ -5136,6 +5179,22 @@ nav .pagination a:hover{
 	}
 	.tech-details p{
 		width: 100%;
+	}
+	.brand-carousel-one img{
+		width: 85%;
+	}
+	.values{
+		left: 20;
+	}
+	.works .sub-work{
+		width: 100%;
+		display: block;
+		padding: 20px;
+		margin-left: 7%;
+		margin-right: 10%;
+	}
+	.works .sub-work p{
+		margin-left: -15px;
 	}
 }
 /*--------------------------------------------------------------
@@ -5598,12 +5657,23 @@ nav .pagination a:hover{
 		font-size: 14px;
 		text-align: justify;
 	}
-	.card-cover .card{
+	.values{
+		margin: 0;
+		padding: 30px 30px;
+		margin-left: 30px;
+	}
+	.values p{
+		margin-left: -30px;
+		text-align: justify;
+	}
+	.values h4{
+		margin-left: -30px;
+	}
+	.works .sub-work{
+		width: 100%;
 		display: block;
-		margin-left: auto;
+		margin-left: 15px;
 		margin-right: auto;
-		width: 90%;
-		height: 55vh;
 	}
 }
 @media(max-width:1200px){
