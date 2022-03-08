@@ -515,7 +515,7 @@ html body.offcanvas-menu:before {
 	text-align: center
 }
 .header{
-	background-image: url('images/foot.webp');
+	background-image: url('images/header-img.webp');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -608,7 +608,7 @@ nav .breadcrumb li a:hover{
 	text-decoration:none;
 }
 /*--------------------------------------------------------------
-# works
+# WORKS
 --------------------------------------------------------------*/
 .works{
 	top: 0;
@@ -617,40 +617,54 @@ nav .breadcrumb li a:hover{
 	justify-content: center;
 	align-items: center;
 }
-.sub-work{
-	max-width: 1200px;
-	margin-top: 20px;
-	display: block;
-	margin-left: 5%;
-	margin-right: auto;
-	justify-content: center;
-	text-align: center;
-	flex-wrap: wrap;
-	background: #fff;
-	padding: 30px 20px;
-	border-bottom-style: unset;
-	border-top-style: unset;
-	box-shadow: 3px 5px 5px;
-	
+.client-portfolio{
+	margin-top: 30px;
 }
-.sub-work i{
-	font-size: 32px;
-	margin-top: 50px;
-	color: #006420;
-}
-.sub-work h4{
-	font-size: 20px;
-	font-weight: 600;
-	margin-top: 20px;
+.client-portfolio h4{
+	margin-top: 40px;
 	text-align: center;
+	font-size: 25px;
 	color: #001f3f;
 }
-.sub-work p{
+.client-portfolio hr{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-top: 4px solid #006420; 
+	border-radius: 15px;
+	width: 10%;
+}
+.client-portfolio p{
 	margin-top: 25px;
 	width: 100%;
 	padding: 0px 25px;
-	font-size: 16px;
-	text-align: justify;
+	font-size: 17px;
+	text-align: center;
+}
+.diamond-image{
+	transform: rotate(-45deg);
+	width: 160px;
+	height: 160px;
+	margin: 18px;
+	border-radius: 10px;
+	border: 4px solid #006420;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.pic{
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 400px;
+	transform: rotate(45deg);
+	width: 180px;
+	height: 180px;
+	margin: -58px;
+}
+.pic img{
+	margin-top: -38px;
+	font-size: 25px;
 }
 /*--------------------------------------------------------------
 # HOMEPAGE COUNTER
@@ -694,21 +708,51 @@ nav .breadcrumb li a:hover{
 	font-weight: 700;
 }
 /*--------------------------------------------------------------
-# WHY CHOOSE US
+# SOLAR STORY
 --------------------------------------------------------------*/
-.choose{
-	margin-bottom: 100px;
+.home-page{
+	margin-top: 50px;
 }
-.why-choose{
-	font-size: 17px;
-	padding-top: 5px;
+.home-page .why-choose p{
+	font-size: 18px;
+	padding: 5px;
 	line-height: 35px;
 	text-align: justify;
+	max-width: 1200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*--------------------------------------------------------------
+# WHY CHOOSE US
+--------------------------------------------------------------*/
+.choosing ul{
+	margin-top: 30px;
+	margin-left: -5%;
+}
+.choosing ul li{
+	font-size: 17px;
+	padding: 7px;
+	line-height: 35px;
+	text-align: justify;
+	list-style-type: none;
+	width: 100%;
+}
+.choosing i{
+	display: flex;
+	float: left;
+	clear: both;
+	font-size: 15px;
+	color: #006420;
+	background: #fff;
+	border-radius: 100%;
+	padding: 5px 5px;
+	margin-right: 10px;
 }
 .choose1{
 	background: #6a9e97;
 	padding: 10px 15px;
-	margin-top: 50px;
+	margin-top: 30px;
 	width: 40%;
 	left: 10%;
 	height: 160px;
@@ -733,7 +777,7 @@ nav .breadcrumb li a:hover{
 	position: relative;
 }
 .choose2{
-	margin-top: 50px;
+	margin-top: 30px;
 	background: #879db3;
 	padding: 10px 15px;
 	width: 40%;
@@ -1015,42 +1059,103 @@ nav .breadcrumb li a:hover{
 /*--------------------------------------------------------------
 # MISSION
 --------------------------------------------------------------*/
-.mission{
-	margin: 10px 0px;
-	padding: 10px 10px;
+.card-cover{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 15px;
+	margin-top: 0 auto;
+	padding: 10px 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.card-cover .card{
+	position: relative;
+	width: 300px;
+	height: 350px;
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+	border-bottom-left-radius: 15%;
+	border-top-right-radius: 15%;
+}
+.card-cover .card .face{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
 	justify-content: center;
+	align-items: center;
+	border-bottom-left-radius: 15%;
+	border-top-right-radius: 15%;
 }
-.values{
-	padding:20px 20px;
-	background:#fff;
-	margin: 10px 5px;
-	display: block;
-	height: 320px;
-	border-bottom-style: groove;
-	border-top-style: groove;
-	box-shadow: 3px 5px 5px;
+.card-cover .card .face.face1{
+	box-sizing: border-box;
+	padding: 20px;
 }
-.values h4{
-	font-size: 18px;
-	font-weight:600;
-	margin-top: 50px;
-	margin-left: 0px;
-	margin-right: auto;	
-	width: 180px;
-	color:#006420;
+.card-cover .card .face.face1 h2{
+	margin: 0;
+	padding: 0;
 }
-.values p{
-	margin-top: 25px;
-	padding: 0px 25px;
-	font-size: 16px;
+.card-cover .card .face.face1 p{
+	font-size: 15px;
 	text-align: justify;
+	padding: 10px 0px;
 }
-.values .create{
-	margin-top: 40px;
-	padding: 0px 20px;
-	font-size: 16px;
-	list-style-type: square;
+.card-cover .card .face.face1 li{
+	font-size: 15px;
+	line-height: 30px;
 }
+.card-cover .card .face.face2{
+	background: #111;
+	transition: 0.5s;
+}
+.card-cover .card:nth-child(1) .face.face2{
+	background-image: url("images/.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card-cover .card:nth-child(2) .face.face2{
+	background-image: url("images/.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card-cover .card:nth-child(3) .face.face2{
+	background-image: url("images/.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card-cover .card:hover .face.face2{
+	height: 60px;
+}
+.card-cover .card .face.face2:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255, 0.1);
+}
+.card-cover .card .face.face2 h2{
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	color: #cdcdcd;
+	transition: 0.5s;
+	font-weight: 550;
+	text-transform: uppercase;
+	text-shadow: 10px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card-cover .card:hover .face.face2 h2{
+	font-size: 1em;
+}
+
 /*--------------------------------------------------------------
 # OUR BENEFITS
 --------------------------------------------------------------*/
@@ -1081,52 +1186,146 @@ nav .breadcrumb li a:hover{
 	color:#006420;
 }
 /*--------------------------------------------------------------
+# HOMEPAGE PRICING / PRICING PAGE
+--------------------------------------------------------------*/
+.pricing{
+	padding: 0 5px;
+	margin-top: 50px;
+}
+.pricing p{
+	font-size: 16px;
+	font-weight: 550;
+	padding-left: 5px;
+}
+.pricing a{
+	margin: 15px 0px; 
+	padding: 10px 30px;
+	border: 2px solid #001f3f;
+	border-radius: 10px;
+	color: #001f3f; 
+	font-size: 15px; 
+	font-weight: 550;
+}
+.pricing a:hover{
+	text-decoration: none;
+	background: #001f3f;
+	color: #fff;
+	transition: all ease 0.3s;
+}
+.pricing-header{
+	margin-top: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Play', sans-serif;
+	font-size: 30px;
+}
+.pricing-table{
+	max-width: 1200px;
+	margin-top: 20px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.pricing-table p{
+	font-size: 16px;
+	margin-top: 30px;
+	font-weight: 550;
+}
+.table{
+	background: none;
+	padding: 40px 0px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 2px 2px 2px #006420;	
+	border: 1.5px solid #001f3f;
+	border-radius: 5px;
+}
+.table:hover{
+	transform:scale(1.05);
+	text-decoration: none;
+	box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.5);
+	transition: all ease 0.3s;
+}	
+.table h6{
+	text-transform: uppercase;
+	font-family: 'Play', sans-serif;
+	font-size: 16px;
+	font-weight: 550;
+	color: #006420;
+}
+.table ul{
+	margin: 0;
+	margin-left: 15px;
+	padding: 0 5px;
+}
+.table ul p{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 550;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	color: #006420;
+	font-family: 'Play', sans-serif;
+}
+.table ul li{
+	list-style-type: none;
+	font-size: 15px;
+	color:#1b1b1b;
+	text-align: center;
+}
+.prices{
+	color: #001f3f;
+	font-size: 24px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.prices span{
+	color: #1b1b1b;
+	display: block;
+	font-size: 15px;
+	margin-top: 20px;
+	font-weight: normal;
+	text-transform: capitalize;
+}
+/*--------------------------------------------------------------
 # HOW WE WORK
 --------------------------------------------------------------*/
 .work-mode{
-	background: url('images/work-mode.webp') center center no-repeat fixed;
-	background-position: center;
-	background-size: cover;
-	background-repeat: none;
 	margin-top: 50px;
+	background: url(images/work-mode.webp);
+	background-position: top left;
 }
 .working{
 	padding: 45px 50px;
-	border: 1px solid #fff;	
-}
-.working h5{
-	font-size: 35px;
-	font-family: 'Big Shoulders Text', cursive;
-	color: #fff;
-	margin-top: 30px;
-	text-align: right;
-}
-.working h6{
-	font-weight: bold;
-	font-family: 'Play', sans-serif;
-	font-size: 18px;
-	margin-top: 20px;
-	color: #2dc997;
-}
-.working p{
-	color:#cdcdcd;
-	font-size: 16px;
-	padding: 15px 5px;
-	margin-top: -10px;
-	text-align: justify;
-}
-.subscript{
-	text-transform: uppercase;
-	font-family: 'Play', sans-serif;
-	font-size: 20px;
-	color: #b43d3d;
-	font-weight:500;
+	border: 3px solid #fff;	
 }
 .working i{
-	position: absolute;
-	color:#318aa5;
-	font-size: 30px;
-	margin-top: -25px;
+	font-size: 32px;
+	margin-top: 50px;
+	color: #b43d3d;
+	margin-left: 50%;
+}
+.working h4{
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 20px;
+	text-align: center;
+	color: #2dc977;
+	font-family: 'Big Shoulders Text', cursive;
+}
+.working p{
+	margin-top: 25px;
+	width: 100%;
+	padding: 0px 25px;
+	font-size: 16px;
+	text-align: justify;
+	color: #fff;
 }
 /*--------------------------------------------------------------
 # PROJECTS
@@ -1560,12 +1759,20 @@ nav .breadcrumb li a:hover{
 .footer-20192 .links li p{
 	color: #666873;
 }
+.footer-20192 .links li p span{
+	color: #666873;
+	font-size: 22px;
+}
 .footer-20192 .links li p:hover {
 	color: #fff; 
 	text-decoration: none;
 }
 .footer-20192 .links li a {
 	color: #666873; 
+}
+.footer-20192 .links li span a {
+	color: #666873; 
+	font-size: 22px;
 }
 .footer-20192 .links li a:hover {
 	color: #fff; 
@@ -1639,114 +1846,6 @@ nav .breadcrumb li a:hover{
 .site-section{
 	border-bottom: 1.5px solid rgba(255, 255, 255, 0.4);
 	padding-bottom: 4.5rem;
-}
-/*--------------------------------------------------------------
-# HOMEPAGE PRICING / PRICING PAGE
---------------------------------------------------------------*/
-.pricing{
-	padding: 0 5px;
-	margin-top: 50px;
-}
-.pricing p{
-	font-size: 16px;
-	font-weight: 550;
-	padding-left: 5px;
-}
-.pricing a{
-	margin: 15px 0px; 
-	padding: 10px 30px;
-	border: 2px solid #001f3f;
-	border-radius: 10px;
-	color: #001f3f; 
-	font-size: 15px; 
-	font-weight: 550;
-}
-.pricing a:hover{
-	text-decoration: none;
-	background: #001f3f;
-	color: #fff;
-	transition: all ease 0.3s;
-}
-.pricing-header{
-	margin-top: 70px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	justify-content: center;
-	text-align: center;
-	font-family: 'Play', sans-serif;
-	font-size: 30px;
-}
-.pricing-table{
-	max-width: 1200px;
-	margin-top: 20px;
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	justify-content: center;
-	text-align: center;
-	flex-wrap: wrap;
-}
-.pricing-table p{
-	font-size: 16px;
-	margin-top: 30px;
-	font-weight: 550;
-}
-.table{
-	background: none;
-	padding: 40px 0px;
-	position: relative;
-	overflow: hidden;
-	box-shadow: 2px 2px 2px #006420;	
-	border: 1.5px solid #001f3f;
-	border-radius: 5px;
-}
-.table:hover{
-	transform:scale(1.05);
-	text-decoration: none;
-	box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.5);
-	transition: all ease 0.3s;
-}	
-.table h6{
-	text-transform: uppercase;
-	font-family: 'Play', sans-serif;
-	font-size: 16px;
-	font-weight: 550;
-	color: #006420;
-}
-.table ul{
-	margin: 0;
-	margin-left: 15px;
-	padding: 0 5px;
-}
-.table ul p{
-	text-transform: uppercase;
-	font-size: 16px;
-	font-weight: 550;
-	margin-bottom: 0px;
-	margin-top: 10px;
-	color: #006420;
-	font-family: 'Play', sans-serif;
-}
-.table ul li{
-	list-style-type: none;
-	font-size: 15px;
-	color:#1b1b1b;
-	text-align: center;
-}
-.prices{
-	color: #001f3f;
-	font-size: 24px;
-	margin-bottom: 20px;
-	font-weight: 600;
-}
-.prices span{
-	color: #1b1b1b;
-	display: block;
-	font-size: 15px;
-	margin-top: 20px;
-	font-weight: normal;
-	text-transform: capitalize;
 }
 /*--------------------------------------------------------------
 # FREQUENTLY ASKED QUESTIONS
@@ -2769,7 +2868,11 @@ nav .pagination a:hover{
 		font-size: 20px;
 	}
 	.card-cover .card{
-		width: 95%;
+		width: 30%;
+		height: 50vh;
+		display: block;
+		margin-left: auto;
+		margin-right:auto;
 	}
 	.working p{
 		font-size: 15px;
@@ -3021,14 +3124,6 @@ nav .pagination a:hover{
 	.about-us .inner-box h3{
 		font-size: 14px;
 	}
-	.xvite p{
-		font-size: 13px;
-		margin-left: 0px;
-	}
-	.xvite i{
-		font-size: 15px;
-		margin-left: 0px;
-	}
 	.benefits-body{
 		padding: 20px 5px;
 		width: 30%;
@@ -3088,7 +3183,11 @@ nav .pagination a:hover{
 		font-size: 17px;
 	}
 	.card-cover .card{
-		margin-bottom: 40px;
+		width: 30%;
+		height: 50vh;
+		display: block;
+		margin-left: auto;
+		margin-right:auto;
 	}
 	.details h4{
 		font-size: 35px;
@@ -3443,8 +3542,9 @@ nav .pagination a:hover{
 		font-size: 15px;
 	}
 	.card-cover .card{
-		width: 100%;
+		width: 47%;
 		height: 55vh;
+		display: block;
 		margin-left: auto;
 		margin-right:auto;
 	}
@@ -3495,14 +3595,6 @@ nav .pagination a:hover{
 	}
 	.about-us .inner-box h3{
 		font-size: 11px;
-	}
-	.xvite p{
-		font-size: 13px;
-		margin-left: 0px;
-	}
-	.xvite i{
-		font-size: 15px;
-		margin-left: 0px;
 	}
 	.values{
 		width: 100%;
@@ -3811,6 +3903,12 @@ nav .pagination a:hover{
 	.header h2{
 		font-size: 15px;
 	}
+	.choosing ul{
+		margin-left: -35px;
+	}
+	.choosing ul li{
+		width: 100%;
+	}
 	.service{
 		margin-top: 50px;
 	}
@@ -3884,14 +3982,6 @@ nav .pagination a:hover{
 	}
 	.about-us .inner-box h3{
 		font-size: 14px;
-	}
-	.xvite p{
-		font-size: 13px;
-		margin-left: 0px;
-	}
-	.xvite i{
-		font-size: 15px;
-		margin-left: 0px;
 	}
 	.project-details{
 		padding: 0;
@@ -4054,11 +4144,6 @@ nav .pagination a:hover{
 		width: 100%;
 		font-size: 15px;
 	}
-	.card-cover .card{
-		width: 70%;
-		margin-left: auto;
-		margin-right:auto;
-	}
 	.testimonials-style-three-carousel-wrapper{
 		width: 95%;
 		height: 90%;
@@ -4194,8 +4279,8 @@ nav .pagination a:hover{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 65%;
-		height: 55vh;
+		width: 50%;
+		height: 60vh;
 	}
 	.pro-details img{
 		width: 50%;
@@ -4314,14 +4399,6 @@ nav .pagination a:hover{
 	}
 	.about-us .inner-box h3{
 		font-size: 10px;
-	}
-	.xvite p{
-		font-size: 13px;
-		margin-left: 0px;
-	}
-	.xvite i{
-		font-size: 15px;
-		margin-left: 0px;
 	}
 	#bridgeSlide {
 		display: block;
@@ -4662,7 +4739,7 @@ nav .pagination a:hover{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 85%;
+		width: 60%;
 		height: 55vh;
 	}
 	.pro-details img {
@@ -4772,14 +4849,6 @@ nav .pagination a:hover{
 	}
 	.about-us .inner-box h3{
 		font-size: 10px;
-	}
-	.xvite p{
-		font-size: 13px;
-		margin-left: 0px;
-	}
-	.xvite i{
-		font-size: 15px;
-		margin-left: 0px;
 	}
 	.service{
 		margin-top: 50px;
@@ -5165,7 +5234,7 @@ nav .pagination a:hover{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 85%;
+		width: 70%;
 		height: 55vh;
 	}
 	.pro-details img{
@@ -5241,6 +5310,10 @@ nav .pagination a:hover{
 	.colum{
 		margin-top: 0px;
 	}
+	.home-page .why-choose p{
+		margin: 0px;
+		width: 100%;
+	}
 	.header p{
 		margin-top: 200px;
 		font-size: 18px;
@@ -5283,14 +5356,6 @@ nav .pagination a:hover{
 	}
 	.about-us .inner-box h3{
 		font-size: 10px;
-	}
-	.xvite p{
-		font-size: 13px;
-		margin-left: 0px;
-	}
-	.xvite i{
-		font-size: 15px;
-		margin-left: 0px;
 	}
 	.choose-body h4{
 		font-size: 15px;
@@ -5664,7 +5729,7 @@ nav .pagination a:hover{
 	}
 	.values p{
 		margin-left: -30px;
-		text-align: justify;
+		text-align: center;
 	}
 	.values h4{
 		margin-left: -30px;

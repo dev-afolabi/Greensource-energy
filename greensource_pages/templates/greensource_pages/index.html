@@ -82,29 +82,38 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
     </div>
 </div>
 <section>
+    <div class="home-page col-12 padding">
+            <div class="why-choose">
+                <p>
+                    Whether you are a home owner, business or nonprofits, electricity costs can make up a large portion of your monthly expenses.
+                    Solar will reduce your utility bills, saving you alot of money. With the rising cost of electicity due
+                    to increase in tariff and fuel cost, harnessing the power of the sun is now more needed than ever.
+                    <br/>
+                    <strong>Solar Modules:</strong> Produce electicity even on cloudy days, usually around 20% - 30%.
+                    <br/>
+                    <strong>Low Maintenance:</strong> This is because there are no moving parts (mechanical) in the solar system.
+                </p>
+            </div>
+    </div>
+</section>
+<section>
     <div class="container-fluid padding">
         <div class="service-two col-12">
             <h5>
-                <i class="fas fa-long-arrow-alt-right"></i>Why Choose</h5>
-            <p>Solar Home Systems</p>
+                <i class="fas fa-long-arrow-alt-right"></i>Why Choose Us</h5>
+            <p>Choosing a Solar  Installer is hard</p>
         </div>
     </div>
     <div class="container padding">
-        <div class="row bg padding">
-            <div class="choose col-lg-6 col-md-12 col-xs-12">
-                <div class="why-choose">
-                    <p>
-                        Whether you are a home owner, business or nonprofits, electricity costs can make up a large portion of your monthly expenses.
-                        Solar will reduce your utility bills, saving you alot of money. With the rising cost of electicity
-                        due to increase in tariff and fuel cost, harnessing the power of the sun is now more needed than
-                        ever.
-                        <br/>
-                        <strong>Solar Modules:</strong> Produce electicity even on cloudy days, usually around 20% - 30%.
-                        <br/>
-                        <strong>Low Maintenance:</strong> This is because there are no moving parts (mechanical) in the solar system.
-                    </p>
-                </div>
-            </div>
+        <div class="row bg">
+                <div class="choosing col-lg-6 col-md-12 col-xs-12">
+                        <ul>
+                            <li><i class="fas fa-check"></i>There are complexities that not many solar installers know about</li>
+                            <li><i class="fas fa-check"></i>We specialize in Design, Installation, Operation and Maintenance</li>
+                            <li><i class="fas fa-check"></i>Feeling overwhelmed with different choice of product, we will guide you</li>
+                            <li><i class="fas fa-check"></i>Want to deal with with one person from start to finish? We are the right plug</li>
+                        </ul>
+                    </div>
             <div class="people-one col-lg-6 col-md-6 col-xs-12">
                 <div class="choose1">
                     <img src="{% static 'images/bio-energy.png' %}" alt="img" />
@@ -123,40 +132,52 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
     </div>
 </section>
 <section>
-    <div class="container-fluid-bg padding">
+    <div class="container-fluid padding">
         <div class="service-two col-12">
             <h5>
                 <i class="fas fa-long-arrow-alt-right"></i>OUR CORE</h5>
-            <p>Focal Point of our Work</p>
+            <p>our business portfolio</p>
         </div>
-        <div class="row works owl-carousel owl-theme padding" id="core">
-            <div class="item">
-                <div class="sub-work">
-                    <i class="fas fa-line-chart"></i>
-                    <h4>Analysis</h4>
-                    <p>we carry out load analysis to dertermine the best solar option that fits individual clients</p>
+        <div class="row works padding">
+            <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
+                <div class="diamond-image">
+                    <div class="pic">
+                        <img src="{% static 'images/blue-gray.webp' %}" alt="img" />
+                    </div>
                 </div>
+                <h4>Residential</h4>
+                <hr />
+                <p>we believe a home should be a place of comfort designed to suit different needs.</p>
             </div>
-            <div class="item">
-                <div class="sub-work">
-                    <i class="fas fa-cogs"></i>
-                    <h4>Engineering</h4>
-                    <p>We believe standard engineering procedure ensure quality assurance during installations</p>
+            <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
+                <div class="diamond-image">
+                    <div class="pic">
+                        <img src="{% static 'images/bookcase.jpg' %}" alt="img" />
+                    </div>
                 </div>
+                <h4>Commercial</h4>
+                <hr />
+                <p>We provide alternative source of energy for commercial purpose to ensure sustainability.</p>
             </div>
-            <div class="item">
-                <div class="sub-work">
-                    <i class="fas fa-puzzle-piece"></i>
-                    <h4>Operations</h4>
-                    <p>Standard operations procedure are designed to ensure our solar systems performs optimally</p>
+            <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
+                <div class="diamond-image">
+                    <div class="pic">
+                        <img src="{% static 'images/corn-plant.jpg' %}" alt="img" />
+                    </div>
                 </div>
+                <h4>Agriculture</h4>
+                <hr />
+                <p>We provide power for agricultural purpose including lighting, irrigation, livestock farmimg.</p>
             </div>
-            <div class="item">
-                <div class="sub-work">
-                    <i class="fas fa-tools"></i>
-                    <h4>Maintenance</h4>
-                    <p>Planned Maintenance and retrofit makes the life span of any system last longer than expected</p>
+            <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
+                <div class="diamond-image">
+                    <div class="pic">
+                        <img src="{% static 'images/institution.jpg' %}" alt="img" />
+                    </div>
                 </div>
+                <h4>Institutions</h4>
+                <hr />
+                <p>We consult/design solar energy systems for schools, hospitals and other Institutions.</p>
             </div>
         </div>
 </section>
@@ -293,141 +314,6 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                         </h3>
                         <p>We're committed to increasing the production of renewable energy and ensuring ...</p>
                         <a href="{% url 'maintenance_service' %}" class="read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="container-fluid padding">
-        <div class="service-two col-12">
-            <h5>
-                <i class="fas fa-long-arrow-alt-right"></i>Our Pricing</h5>
-            <p>Select a design that suits your needs</p>
-        </div>
-        <div class="pricing row  col-12">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <p>Our designs and prices are best suited to give our customers great value </p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <a href="{% url 'pricing' %}">View All</a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid padding">
-        <div class="pricing-table">
-            <div class="row owl-carousel owl-theme" id="pricing">
-                <div class="item">
-                    <div class="table">
-                        <h6>gs 0.32kwp</h6>
-                        <div class="prices">
-                            N290, 000
-                            <span>
-                                <strong>2* 180w</strong> Mono Panels
-                                <br />
-                                <strong>1* 30amp</strong> Controller
-                                <br />
-                                <strong>1* 150ah</strong> GEL Battery
-                                <br />
-                                <strong>1* 1kw</strong> Inverter
-                            </span>
-                        </div>
-                        <ul>
-                            <p>load capacity</p>
-                            <li>
-                                All lighting (LED recommended)</li>
-                            <li>
-                                24 inch LED Tv</li>
-                            <li>
-                                A ceiling/Standing Fan</li>
-                            <li>
-                                A satelite decoder</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="table">
-                        <h6>gs 0.54kwp</h6>
-                        <div class="prices">
-                            N375, 000
-                            <span>
-                                <strong>3* 180w </strong> Mono Panels
-                                <br />
-                                <strong>1* 40amp</strong> Controller
-                                <br />
-                                <strong>1* 200ah</strong> GEL Battery
-                                <br />
-                                <strong>1* 1.5kw</strong> Inverter
-                            </span>
-                        </div>
-                        <ul>
-                            <p>load capacity</p>
-                            <li>
-                                All lighting (LED recommended)</li>
-                            <li>
-                                32 inch LED Tv</li>
-                            <li>
-                                A ceiling/Standing Fan</li>
-                            <li>
-                                A home theatre/Decoder</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="table">
-                        <h6>gs 0.72kwp</h6>
-                        <div class="prices">
-                            N485, 000
-                            <span>
-                                <strong>4* 180w </strong> Mono Panels
-                                <br />
-                                <strong>1* 50amp</strong> Controller
-                                <br />
-                                <strong>1* 200ah</strong> GEL Battery
-                                <br />
-                                <strong>1* 2kw</strong> Inverter
-                            </span>
-                        </div>
-                        <ul>
-                            <p>load capacity</p>
-                            <li>
-                                All lighting (LED recommended)</li>
-                            <li>
-                                42 inch LED Tv</li>
-                            <li>
-                                2 ceiling/standing Fan</li>
-                            <li>
-                                A Home theatre/Decoder</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="table">
-                        <h6>gs 1.08kwp</h6>
-                        <div class="prices">
-                            N630, 000
-                            <span>
-                                <strong>6* 180w </strong> Mono Panels
-                                <br />
-                                <strong>1* 50amp</strong> Controller
-                                <br />
-                                <strong>2* 150ah</strong> GEL Battery
-                                <br />
-                                <strong>1* 2kw</strong> Inverter
-                            </span>
-                        </div>
-                        <ul>
-                            <p>load capacity</p>
-                            <li>
-                                All lighting (LED recommended)</li>
-                            <li>
-                                43 inch LED Tv</li>
-                            <li>
-                                2 ceiling/standing Fan</li>
-                            <li>
-                                A home theatre/satelite decoder</li>
-                        </ul>
                     </div>
                 </div>
             </div>
