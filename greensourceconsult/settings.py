@@ -33,7 +33,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['127.0.0.1', 'www.greensourcenergy.com', 'greensourceconsult.herokuapp.com', '54.196.108.20']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.greensourcenergy.com', 'greensourceconsult.herokuapp.com', '54.196.108.20', 'greensourcenergy.com']
 
 
 # Application definition
