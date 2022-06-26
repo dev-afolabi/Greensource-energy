@@ -74,6 +74,8 @@ $(document).ready(function () {
         delay: 10,
         time: 2500
     });
+
+    var lightbox = new SimpleLightbox('.featured-project a', {});
    
     var lightbox = new SimpleLightbox('.pro-details a', {});
 
@@ -92,8 +94,6 @@ $(document).ready(function () {
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         items: 1,
-        autoplay: true,
-        smartSpeed: 700,
         responsive: {
             320: {
                 items: 1
@@ -182,7 +182,7 @@ $(document).ready(function () {
     });
     $('#core').owlCarousel({
         loop: true,
-        margin: 30,
+        margin: 10,
         nav: false,
         width: 1200,
         animateOut: 'fadeOut',
@@ -214,7 +214,7 @@ $(document).ready(function () {
     });
     $('#team-one').owlCarousel({
         loop: true,
-        margin: 30,
+        margin: 10,
         nav: false,
         width: 1200,
         animateOut: 'fadeOut',
@@ -297,6 +297,42 @@ $(document).ready(function () {
                     items: 4
                 }
             }
+    });
+    $('#featured-project').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        width: 1200,
+        autoplay: true,
+        smartSpeed: 700,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        items: 1,
+        responsive: {
+            320: {
+                items: 1
+            },
+            375: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        }
     });
     $('.brand-carousel-one').owlCarousel({
         loop: true,
@@ -433,6 +469,3 @@ $(function() {
       siteMenuClone();
   
 });
-
-
-
