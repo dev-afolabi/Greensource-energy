@@ -28,12 +28,12 @@ load_dotenv(dotenv_path)
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SECRET_KEY")
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['127.0.0.1' , '.greensourcenergy.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.greensourcenergy.com', 'greensourceconsult.herokuapp.com', '54.196.108.20']
 
 
 # Application definition
