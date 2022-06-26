@@ -21,54 +21,28 @@
         <li class="breadcrumb-item active">Energy Management</li>
     </ol>
 </nav>
-<div class="container-fluid padding">
-    <div class="light row padding">
-        <ul class="list-group col-lg-4">
-            <li class="list-group-item"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
-            <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
-            <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
-            <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Inverter Installation</a></li>
-            <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
-            <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
-            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Solar Storage</a></li>
-            <li class="list-group-item list-group-item-success"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Solar Energy Mgt</a></li>
-            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> Electrical Installation</a></li>
-            <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Upgrade / Maintenance</a></li>
-        </ul>
-        <div class="cut col-lg-8">
-            <img src="{% static 'images/energy-mgt.webp' %}" />
-        </div>
-    </div>
-</div>
-<div class="container padding">
-    <div class="row details">
-        <div>
+<div class="container-fluid padding"> 
+        <div class="service-list row padding">
+        <div class="col">
+            <img src="{% static 'images/energy-mgt.webp' %}" alt="rooftop mounted solar panels" />
             <p> Your home/business energy usage and GHG emissions can be minimized with the aid of energy management techniques and systems.
-                An energy audit is the first step in creating a detailed energy management plan. It gives you a good picture of your
-                buildings' and/or manufacturing processes' energy consumption trends, as well as a list of technically feasible energy-saving
-                options. We promote and endorse energy monitoring systems that are both efficient and cost-effective in maximizing
-                and enhancing energy use. Clients who want to reduce their energy usage and carbon footprint will benefit from our
-                direct insight into possible energy savings.We also assist clients in keeping track of their bills and efficiently
-                saving money over time through energy conservation, energy efficient lighting, and energy efficient appliances, among
-                other things. For residential, commercial, and industrial applications, our management services include continual
-                improvements in energy efficiency and cost savings.</p>
-        </div>
-    </div>
-</div>
-<div class="container padding">
-    <div class="row base">
-        <div class="order-list col-lg-5 col-md-6 col-xs-12">
-            <h4>Our audit/management service includes:</h4>
-            <ol>
-                <li>Load Sheddding</li>
-                <li>Energy Conservation</li>
-                <li>Energy Efficient lighting</li>
-                <li>Analysis of electrical consumption</li>
-                <li>Installation of energy management device</li>
-            </ol>
-        </div>
-        <div class="order-list col-lg-5 col-md-6 col-xs-12">
-            <img src="{% static 'images/bulb.webp' %}" />
+                    An energy audit is the first step in creating a detailed energy management plan. It gives you a good picture of your
+                    buildings' and/or manufacturing processes' energy consumption trends, as well as a list of technically feasible energy-saving
+                    options. We promote and endorse energy monitoring systems that are both efficient and cost-effective in maximizing
+                    and enhancing energy use. Clients who want to reduce their energy usage and carbon footprint will benefit from our
+                    direct insight into possible energy savings.We also assist clients in keeping track of their bills and efficiently
+                    saving money over time through energy conservation, energy efficient lighting, and energy efficient appliances, among
+                    other things. For residential, commercial, and industrial applications, our management services include continual
+                    improvements in energy efficiency and cost savings.
+                </p>
+                <h4>Our audit/management service includes:</h4>
+                <ul>
+                    <li>Load Sheddding</li>
+                    <li>Energy Conservation</li>
+                    <li>Energy Efficient lighting</li>
+                    <li>Analysis of electrical consumption</li>
+                    <li>Installation of energy management device</li>
+                </ul>
         </div>
     </div>
 </div>

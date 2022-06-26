@@ -6,7 +6,6 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^about$', views.about, name='about'),
     url(r'^services$', views.services, name='services'),
-    url(r'^services/details$', views.service_detail, name='service_detail'),
     url(r'^services/details/solar-lighting$', views.electrical_design, name='electrical_design'),
     url(r'^services/details/residential-solar$', views.solar_design, name='solar_design'),
     url(r'^services/details/commercial-solar$', views.commercial_solar, name='commercial_solar'),

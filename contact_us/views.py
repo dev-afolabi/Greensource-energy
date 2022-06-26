@@ -14,7 +14,7 @@ def contact_us(request):
             last_name = form.cleaned_data['last_name']
             from_email = form.cleaned_data['from_email']
             phone = form.cleaned_data['phone']
-            city = form.cleaned_data['city']
+            city = form.cleaned_data['location']
             state = form.cleaned_data['services']
             message = form.cleaned_data['message']
             full_name = first_name+" "+last_name

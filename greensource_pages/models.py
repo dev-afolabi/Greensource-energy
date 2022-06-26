@@ -56,3 +56,16 @@ class Solar(models.Model):
         
     def get_absolute_url(self):
         return reverse('project_details',kwargs={'slug':self.slug})
+
+
+class Featured(models.Model):
+    title = models.CharField(max_length=100)
+    date = models.DateField(auto_now_add=True)
+    pics = models.ImageField(blank=True)
+    
+    class Meta:
+        ordering = ['-date']
+        get_latest_by = 'date'
+
+    def __str__(self):
+        return self.title

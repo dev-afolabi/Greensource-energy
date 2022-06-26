@@ -22,56 +22,29 @@
     </ol>
 </nav>
 <div class="container-fluid padding">
-    <div class="light row padding">
-        <ul class="list-group col-lg-4">
-            <li class="list-group-item"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
-            <li class="list-group-item list-group-item-success"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
-            <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
-            <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Inverter Installation</a></li>
-            <li class="list-group-item"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
-            <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
-            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Solar Storage</a></li>
-            <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> Solar Energy Mgt</a></li>
-            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> Electrical Installation</a></li>
-            <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Upgrade / Maintenance</a></li>
-        </ul>
-        <div class="col-lg-8">
+    <div class="service-list row padding">
+        <div class="col">
             <img src="{% static 'images/residential-solar.webp' %}" alt="rooftop mounted solar panels" />
-        </div>
-    </div>
-</div>
-<div class="container padding">
-    <div class="row details">
-        <div>
             <p>
                 Solar panels for home solar energy systems are designed, installed, and maintained by us. We believe that a home should be
-                a calming environment, so we assist you in deciding the best system for your needs, ensuring that your property is powered
-                efficiently at all times. At Greensource Energy, we are committed to assisting homeowners in choosing a solar system
-                that is both economical and environmentally friendly. Our team will oversee each component's design process, allowing
-                customers to determine exactly what capability will meet their needs from generation to consumption. We've given designs
-                to homes with an average capacity of 2kW when mounted on their roofs over time. From start to finish, our business is
-                concentrated on delivering dependable service at reasonable prices. We are dedicated to delivering the best customer
-                experience in terms of product performance as well as pricing choices, ensuring that you can fully tailor your system
-                to meet or exceed all of your objectives.
+                a calming environment, so we assist you in deciding the best system for your needs, ensuring that your property
+                is powered efficiently at all times. At Greensource Energy, we are committed to assisting homeowners in choosing
+                a solar system that is both economical and environmentally friendly. Our team will oversee each component's
+                design process, allowing customers to determine exactly what capability will meet their needs from generation
+                to consumption. We've given designs to homes with an average capacity of 2kW when mounted on their roofs
+                over time. From start to finish, our business is concentrated on delivering dependable service at reasonable
+                prices. We are dedicated to delivering the best customer experience in terms of product performance as well
+                as pricing choices, ensuring that you can fully tailor your system to meet or exceed all of your objectives.
             </p>
-        </div>
-    </div>
-</div>
-<div class="container-fluid padding">
-    <div class="row base">
-        <div class="order-list col-lg-5 col-md-5 col-xs-12">
             <h4>Our residential solar energy system services includes:</h4>
-            <ol>
+            <ul>
                 <li>Design</li>
                 <li>Installation</li>
                 <li>Operations</li>
                 <li>Grid Tied System</li>
                 <li>Technical support</li>
-            </ol>
+            </ul>
         </div>
-        <div class="order-list col-lg-5 col-md-7 col-xs-12">
-            <img src="{% static 'images/blue-gray.webp' %}" alt="residential building" />
-        </div>
-    </div> 
+    </div>
 </div>
 {% endblock %}

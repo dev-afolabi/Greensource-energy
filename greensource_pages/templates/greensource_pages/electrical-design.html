@@ -18,57 +18,31 @@
     </ol>
 </nav>
 <div class="container-fluid padding">
-    <div class="light row padding">
-        <ul class="list-group col-lg-4">
-            <li class="list-group-item"><a href="{% url 'services' %}"><i class="fas fa-caret-right"></i> All Services</a></li>
-            <li class="list-group-item"><a href="{% url 'solar_design' %}"><i class="fas fa-caret-right"></i> Residential Solar</a></li>
-            <li class="list-group-item"><a href="{% url 'commercial_solar' %}"><i class="fas fa-caret-right"></i> Commercial Solar</a></li>
-            <li class="list-group-item"><a href="{% url 'off_grid_solar' %}"><i class="fas fa-caret-right"></i> Inverter Installation</a></li>
-            <li class="list-group-item list-group-item-success"><a href="{% url 'electrical_design' %}"><i class="fas fa-caret-right"></i> Solar Lighting</a></li>
-            <li class="list-group-item"><a href="{% url 'solar_water_pump' %}"><i class="fas fa-caret-right"></i> Solar Water Pump</a></li>
-            <li class="list-group-item"><a href="{% url 'energy_management' %}"><i class="fas fa-caret-right"></i> Solar Storage</a></li>
-            <li class="list-group-item"><a href="{% url 'project_management' %}"><i class="fas fa-caret-right"></i> solar Energy Mgt</a></li>
-            <li class="list-group-item"><a href="{% url 'hvac' %}"><i class="fas fa-caret-right"></i> Electrical Installation</a></li>
-            <li class="list-group-item"><a href="{% url 'maintenance_service' %}"><i class="fas fa-caret-right"></i> Upgrade / Maintenance</a></li>
-        </ul>
-        <div class="col-lg-8">
+    <div class="service-list row padding">
+        <div class="col">
             <img src="{% static 'images/solar-light.webp' %}" alt="solar street light" />
+            <p>
+                We design and install solar lights for houses, offices, neighborhoods, and markets to better serve our customers while also
+                growing our renewable energy output and decreasing our carbon footprint. Our design and specifications are
+                based on the needs of our customers, as well as a personalized lighting system to suit their unique objectives.
+                Our solar lights are made of high-quality PVC/PVC Composite materials that have superior longevity over the
+                course of their useful lives. Our solar lights are made entirely of LED BULBS, which provide brighter illumination
+                at night. They are also energy efficient, robust, and designed to provide optimum illumination at night.
+                We will enhance the aesthetics and efficiency of your environment. Our mission is to light up your room in
+                the most efficient and high-quality way possible with our LED installations, which use low-voltage power
+                to create beautiful, pollution-free lighting. All of our project installations come with a one-year warranty
+                and an amazing price. Our team is available whenever you need us and during our working hours. The most significant
+                aspect is the consistency of our work and the happiness of our customers.
+            </p>
+            <h4>Our Solar lighting service includes:</h4>
+            <ul>
+                <li>Street light</li>
+                <li>Traffic light</li>
+                <li>Security light</li>
+                <li>Component Replacement</li>
+                <li>Lighting systems upgrade</li>
+            </ul>
         </div>
     </div>
-</div>
-<div class="container padding">
-        <div class="row details">
-            <div>
-                <p>
-                     We design and install solar lights for houses, offices, neighborhoods, and markets to better serve our customers while also
-                    growing our renewable energy output and decreasing our carbon footprint. Our design and specifications are based on the needs
-                    of our customers, as well as a personalized lighting system to suit their unique objectives. Our solar lights are made of
-                    high-quality PVC/PVC Composite materials that have superior longevity over the course of their useful lives. Our solar lights
-                    are made entirely of LED BULBS, which provide brighter illumination at night. They are also energy efficient, robust, and
-                    designed to provide optimum illumination at night. We will enhance the aesthetics and efficiency of your environment. Our
-                    mission is to light up your room in the most efficient and high-quality way possible with our LED installations, which use
-                    low-voltage power to create beautiful, pollution-free lighting. All of our project installations come with a one-year warranty
-                    and an amazing price. Our team is available whenever you need us and during our working hours. The most significant aspect
-                    is the consistency of our work and the happiness of our customers.
-                </p>
-            </div>
-        </div>
-</div>
-<div class="container-fluid padding">
-        <div class="row base">
-            <div class="order-list col-lg-5 col-md-6 col-xs-12">
-                <h4>Our Solar lighting service includes:</h4>
-                <ol>
-                    <li>Street light</li>
-                    <li>Traffic light</li>
-                    <li>Security light</li>
-                    <li>Component Replacement</li>
-                    <li>Lighting systems upgrade</li>
-                </ol>
-            </div>
-            <div class="order-list col-lg-5 col-md-6 col-xs-12">
-                <img src="{% static 'images/street-light.webp' %}" alt="solar-street-lighting"/>
-            </div>
-        </div>
 </div>
 {% endblock %}

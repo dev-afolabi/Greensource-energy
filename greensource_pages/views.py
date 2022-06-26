@@ -1,9 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Images, Testimonial, Solar
+from .models import Images, Solar, Testimonial, Featured
 
 # Create your views here.
 def index(request):
-    index = Testimonial.objects.all()
+    index = Featured.objects.all()
     return render(request,"greensource_pages/index.html", {'index': index})
 
 def about(request):
@@ -11,9 +11,6 @@ def about(request):
 
 def services(request):
     return render(request,"greensource_pages/services.html")
-
-def service_detail(request):
-    return render(request,"greensource_pages/service-detail.html")
 
 def electrical_design(request):
     return render(request,"greensource_pages/electrical-design.html")
@@ -42,6 +39,14 @@ def hvac(request):
 def project_management(request):
     return render(request,"greensource_pages/project-management.html")
 
+def projects(request):
+    solar = Solar.objects.all()
+    return render(request,"greensource_pages/projects.html", {'obj': solar})
+
+def project_details(request,slug):
+    solar = get_object_or_404(Solar,slug=slug)
+    return render(request,'greensource_pages/project-details.html', {'obj': solar})
+
 def image(request):
     images = Images.objects.all()
     return render(request,"greensource_pages/gallery.html", {'images': images})
@@ -49,7 +54,7 @@ def image(request):
 def testimonial(request):
     testimonial = Testimonial.objects.all()
     return render(request,"greensource_pages/testimonial.html", {'testimonial': testimonial})
-
+    
 def terms_of_use(request):
     return render(request,"greensource_pages/terms-of-use.html")
 
@@ -58,19 +63,12 @@ def privacy(request):
 
 def faq(request):
     return render(request,"greensource_pages/faq.html")
-
+ 
 def our_team(request):
     return render(request,"greensource_pages/our-team.html")
 
 def pricing(request):
     return render(request,"greensource_pages/pricing.html")
 
-def projects(request):
-    solar = Solar.objects.all()
-    return render(request,"greensource_pages/projects.html", {'obj': solar})
-
-def project_details(request,slug):
-    solar = get_object_or_404(Solar,slug=slug)
-    return render(request,'greensource_pages/project-details.html', {'obj':solar})
 
 
