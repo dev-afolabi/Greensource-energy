@@ -31,7 +31,7 @@ load_dotenv(dotenv_path)
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
+DEBUG = os.getenv("DEBUG", 'True').lower() in ('true', '1', 't','True')
 
 ALLOWED_HOSTS = ['127.0.0.1', 'www.greensourcenergy.com', 'greensourceconsult.herokuapp.com', '54.196.108.20', 'greensourcenergy.com']
 
