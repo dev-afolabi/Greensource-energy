@@ -1,12 +1,12 @@
 {% extends 'base_layout.html' %}
 {% block nav-service %} active {% endblock %}
 {% load static %}
-{% block title %}Upgrade And Maintain Your Existing Solar System {{ block.super }}{% endblock %}
+{% block title %}Solar System Optimization and Maintenance {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <p>Upgrade / Maintenance</p>
+            <p>System Optimization Maintenance</p>
         </div>
     </div>
 </div>
@@ -21,50 +21,27 @@
         <li class="breadcrumb-item active">Maintenance</li>
     </ol>
 </nav>
-<div class="container-fluid padding">
+<div class="container padding">
     <div class="service-list row padding">
         <div class="col">
             <img src="{% static 'images/maintenance.webp' %}" />
-            <p>We're committed to increasing the production of renewable energy and ensuring its long-term viability, hence
-                our solar energy system is designed to expand its energy capacity as load demand rises. We have a team of
-                qualified solar energy technicians on hand to attend to any upgrade and or maintenance of solar systems.
-                Maintenance is needed for dependable and long-term energy output, as well as to ensure your system's optimal
-                efficiency. Preventive and corrective maintenance are two forms of maintenance that we plan for our customers.
-                We advice that all installations be subject maintenance to ensure that they last as long as possible and
-                that they are running at peak performance. Cleaning solar panels, removing spent/burnt wires, cleaning batteries
-                and replacing battery fluid for tubular batteries, air pressure cleaning of electrical components, and ensuring
-                all cables are firmly fastened to their terminals are only a few of the maintenance tasks we conduct.
+            <p>Solar Energy Systems should and must be maintained even though they are fairly passive in thier operations i.e they don't
+            have any known mechanical part. They need be proactively managed to enhance thier production output, ensure effectiveness
+            and efficiency and optimize your energy investment overtime. Our commitmment and dedication to ensure your solar power investment
+            in the long term has yields its result is the reason we are in business and we intend to be readily available every step
+            of tour investment journey. wheather its our installation or a third party installation we will manage your solar system
+            and ensure they are optimized for performamce production. We would carry out repairs where when needed and ensure your system
+            lives out its useful years.
             </p>
+            <h4>Our Maintenance Services includes:</h4>
+            <ul>
+                 <li>Component repairs</li>
+                <li>Landscape Maintenance</li>
+                <li>System troubleshooting</li>
+                <li>Module cleaning and Inspections</li>
+                <li>Scheduled preventive maintenance</li> 
+            </ul>
         </div>
-    </div>
-    <div class="service-extras row padding">
-            <div class="extra col-lg-5 col-sm-6">
-                <h4>Upgrade</h4>
-                <p>our scope of work includes</p>
-                <ul>
-                    <li>Retrofitting</li>
-                    <li>Inverter Upgrade</li>
-                    <li>Electrical isolation</li>
-                    <li>Module wattage Addition</li>
-                    <li>Complete system Upgrade</li>
-                    <li>Storage Capacity increase</li>
-                    <li>Controller capacity increase</li>
-                </ul>
-            </div>
-            <div class="extra col-lg-5 col-sm-6">
-                <h4>Maintenance</h4>
-                <p>our scope of work includes</p>
-                <ul>
-                    <li>Module Cleaning</li>
-                    <li>Re-Installation</li>
-                    <li>Inverter servicing</li>
-                    <li>System Modification</li>
-                    <li>component Replacement</li>
-                    <li>Distribution board inspection</li>
-                    <li>Electrical system troubleshooting</li>
-                </ul>
-            </div>
-        </div>
-        
+    </div>       
 </div>
 {% endblock %}

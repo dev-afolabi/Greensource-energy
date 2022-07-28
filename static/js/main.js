@@ -88,9 +88,9 @@ $(document).ready(function () {
     
     $('#services').owlCarousel({
         loop: true,
-        margin: 30,
+        margin: 10,
         nav: false,
-        dots: true,
+        width: 1200,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         items: 1,
@@ -117,16 +117,15 @@ $(document).ready(function () {
                 items: 3
             }
         }
-    });
+    });    
     $('#pricing').owlCarousel({
         loop: true,
-        margin: 30,
+        margin: 10,
         nav: false,
+        width: 1280,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         items: 1,
-        autoplay: false,
-        smartSpeed: 700,
         responsive: {
             320: {
                 items: 1
@@ -151,7 +150,7 @@ $(document).ready(function () {
             }
         }
     });
-    $('#mission').owlCarousel({
+    $('#vision').owlCarousel({
         loop: true,
         margin: 10,
         nav: false,
@@ -245,7 +244,7 @@ $(document).ready(function () {
         loop: true,
         margin: 0,
         nav: false,
-        dots: false,
+        dots: true,
         autoWidth: false,
         autoplay: true,
         smartSpeed: 1000,
@@ -342,14 +341,14 @@ $(document).ready(function () {
             '<i class="fa fa-long-arrow-left"></i>',
             '<i class="fa fa-long-arrow-right"></i>'
         ],
-        dots: false,
+        dots: true,
         autoWidth: false,
         autoplay: true,
         smartSpeed: 700,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         responsive: {
-            0: {
+            320: {
                 items: 1
             },
             480: {
@@ -382,6 +381,7 @@ $(document).ready(function () {
     $('.collapse').collapse();
 
 });
+
 
 $(function() {
 

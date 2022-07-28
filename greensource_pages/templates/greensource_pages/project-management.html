@@ -1,12 +1,12 @@
 {% extends 'base_layout.html' %}
 {% block nav-service %} active {% endblock %}
 {% load static %}
-{% block title %}Solar PV Power Management {{ block.super }}{% endblock %}
+{% block title %}Solar Project Operations {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <p>Energy Management</p>
+            <p>Project Development</p>
         </div>
     </div>
 </div>
@@ -18,30 +18,28 @@
         <li class="breadcrumb-item">
             <a href="{% url 'services' %}">Services</a>
         </li>
-        <li class="breadcrumb-item active">Energy Management</li>
+        <li class="breadcrumb-item active">Project Development</li>
     </ol>
 </nav>
-<div class="container-fluid padding"> 
+<div class="container padding"> 
         <div class="service-list row padding">
         <div class="col">
-            <img src="{% static 'images/energy-mgt.webp' %}" alt="rooftop mounted solar panels" />
-            <p> Your home/business energy usage and GHG emissions can be minimized with the aid of energy management techniques and systems.
-                    An energy audit is the first step in creating a detailed energy management plan. It gives you a good picture of your
-                    buildings' and/or manufacturing processes' energy consumption trends, as well as a list of technically feasible energy-saving
-                    options. We promote and endorse energy monitoring systems that are both efficient and cost-effective in maximizing
-                    and enhancing energy use. Clients who want to reduce their energy usage and carbon footprint will benefit from our
-                    direct insight into possible energy savings.We also assist clients in keeping track of their bills and efficiently
-                    saving money over time through energy conservation, energy efficient lighting, and energy efficient appliances, among
-                    other things. For residential, commercial, and industrial applications, our management services include continual
-                    improvements in energy efficiency and cost savings.
-                </p>
-                <h4>Our audit/management service includes:</h4>
+            <img src="{% static 'images/project-handling.jpg' %}" alt="rooftop mounted solar panels" />
+            <p> 
+                 Greensource Energy offer Project development, operations and management services for individuals seeking to invest funds
+                in other areas through cost reduction from solar power systems, Business seeking to save money on their energy system, Property
+                owners looking to increase the value of their portfolios for Sale, Resale value and Rental purposes. We will assist you in
+                weighing your options, putting the best plan into action, delivering the outcomes with continuous management to consistently
+                produce positive outcomes. Our goal is to ensure your system is delivered within time-line, without quality compromise and
+                budget. We pay attention to every details to ensure we use the best resource and manpower to bring your project to life while
+                adhering to best management practices in Engineering and Construction.
+            </p>
+                <h4>Our Project Services include:</h4>
                 <ul>
-                    <li>Load Sheddding</li>
-                    <li>Energy Conservation</li>
-                    <li>Energy Efficient lighting</li>
-                    <li>Analysis of electrical consumption</li>
-                    <li>Installation of energy management device</li>
+                    <li>Commercial Solar</li>
+                    <li>Residential Solar</li>
+                    <li>Third party Projects</li>
+                    <li>Electrical Installation</li>
                 </ul>
         </div>
     </div>
