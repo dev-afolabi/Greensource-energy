@@ -1,10 +1,7 @@
 <ifModule mod_gzip.c>
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.greensourcenergy\.com$
-RewriteRule ^/?$ "http\:\/\/greensourcenergy\.com\/" [R=301,L]
 mod_gzip_on Yes
 mod_gzip_dechunk Yes
-mod_gzip_item_include file .(html?
+mod_gzip_item_include file \.(html?
 |txt|css|js|django|pl)$
 mod_gzip_item_include handler ^cgi-script$
 mod_gzip_item_include mime ^text/.*
@@ -15,3 +12,6 @@ mod_gzip_item_exclude rspheader ^Content-
 Encoding:.gzip.*
 </ifModule>
 
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^greensourcenergy.com$
+RewriteRule ^(.*)$ https://greensourcenergy.com/$1 [R=301,L]

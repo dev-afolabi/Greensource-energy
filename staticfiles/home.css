@@ -508,9 +508,9 @@ html body.offcanvas-menu:before {
 .carousel-caption h2 span {
 	color: #02d977;
 }
-.carousel-caption h3 {
+.carousel-caption p {
 	margin-top: 20px;
-	font-size: 22px;
+	font-size: 20px;
 	color: #fff;
 	font-weight: 500;
 	width: 70%;
@@ -538,51 +538,17 @@ html body.offcanvas-menu:before {
 .carousel a {
 	margin-top: 0px;
 }
-.wallbox{
-	background: rgba(0, 0, 0, 0.9);
-	background-size: cover;
-	border-bottom-left-radius: 15%;
-	border-top-right-radius: 15%;
-	padding: 30px 20px;
-	margin-top: -180px;
-	margin-right: 1%;
-	text-align: center;
-	float: right;
-	clear: both;
-	position: relative;
-	z-index: 2;
-}
-.wallbox img{
-	width: 70px;
-	height: 70px;
-	margin: 0;
-}
-.wallbox span{
-	color: #cedae2;
-	font-weight: 600;
-	font-size: 25px;
-	margin-top: 25px;
-	line-height: 1em;
-}
-.wallbox h3{
-	margin: 0;
-	color: #05ad7e;
-	font-weight: 600;
-	font-size: 18px;
-	letter-spacing: .5px;
-	line-height: 1.5em;
-}
 @media only screen and (max-width: 991px) {
 	.carousel-inner .carousel-caption h1 {
-		font-size: 24px;
+		font-size: 26px;
 		width: 110%;
 	}
 	.carousel-caption h2 {
-		font-size: 24px;
+		font-size: 26px;
 		width: 100%;
 	}
-	.carousel-caption h3 {
-		font-size: 16px;
+	.carousel-caption p {
+		font-size: 17.5px;
 		width: 100%;
 		text-align: left;
 		margin-top: 20px;
@@ -608,13 +574,13 @@ html body.offcanvas-menu:before {
 		font-size: 22px;
 		width: 100%;
 	}
-	.carousel-caption h3 {
+	.carousel-caption p {
 		font-size: 16px;
 		width: 100%;
 	}
 	.carousel-caption .btn {
-		width: 125px;
-		font-size: 15px;
+		width: 140px;
+		font-size: 16px;
 		padding: 10px 7px;
 	}
 }
@@ -633,13 +599,13 @@ html body.offcanvas-menu:before {
 		font-size: 20px;
 		width: 100%;
 	}
-	.carousel-caption h3 {
+	.carousel-caption p {
 		font-size: 16px;
 		width: 100%;
 	}
 	.carousel-caption .btn {
-		width: 120px;
-		font-size: 14px;
+		width: 140px;
+		font-size: 15px;
 		padding: 10px 6px;
 	}
 }
@@ -658,9 +624,9 @@ html body.offcanvas-menu:before {
 		font-size: 18px;
 		width: 110%;
 	}
-	.carousel-caption h3 {
+	.carousel-caption p {
 		font-size: 15px;
-		width: 100%;
+		width: 105%;
 	}
 	.carousel-caption .btn {
 		width: 122px;
@@ -678,21 +644,21 @@ html body.offcanvas-menu:before {
 	}
 	.carousel-inner .carousel-caption h1{
 		margin-top: 25px;
-		font-size: 17px;
+		font-size: 18px;
 		width: 110%;
 	}
 	.carousel-caption h2{
 		margin-top: 25px;
-		font-size: 17px;
-		width: 115%;
+		font-size: 18px;
+		width: 110%;
 	}
-	.carousel-caption h3{
-		width: 100%;
-		font-size: 13px;
+	.carousel-caption p{
+		width: 105%;
+		font-size: 15px;
 		margin-top: 15px;
 	}
 	.carousel-caption .btn{
-		font-size: 12px;
+		font-size: 13px;
 		width: 110px;
 		padding: 7px 0px;
 		display: inline-block;
@@ -715,7 +681,7 @@ html body.offcanvas-menu:before {
 		font-size: 14px;
 		width: 115%;
 	}
-	.carousel-caption h3{
+	.carousel-caption p{
 		width: 100%;
 		font-size: 13px;
 		margin-top: 20px;
@@ -1151,7 +1117,7 @@ nav .breadcrumb li a:hover{
 /*--------------------------------------------------------------
 # HEADER
 --------------------------------------------------------------*/
-.header p{
+.header h1{
 	margin-top: 190px;
 	font-size: 25px;
 	color: #fff;
@@ -1218,14 +1184,14 @@ nav .breadcrumb li a:hover{
 .back-to-top{
 	position: fixed;
 	font-size: 17px;
-	margin-top: 0px;
+	margin-bottom: 90px;
 	background: transparent;
 	border-radius: 100%;
 	border: 1px solid #24a560;
 	color: #24a560;
 	padding: 10px 15px;
 	bottom: 5px;
-	right: 15px;
+	right: 28px;
 	cursor: pointer;
 	display: none;
 	z-index: 99;
@@ -1296,17 +1262,17 @@ nav .breadcrumb li a:hover{
 	font-size: 25px;
 }
 /*--------------------------------------------------------------
-# WHY CHOOSE US
+# SOLAR FAQ
 --------------------------------------------------------------*/
 .solar-home-system{
-	background: url(images/video-bg.jpg);
+	background: url(images/video-bg.webp);
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-bottom: 50px;
 }
-.solar-home-system h4{
-	margin-top: 150px;
+.solar-home-system p{
+	margin-top: 130px;
 	color: #fff;
 	font-size: 50px;
 	font-weight: bold;
@@ -1340,7 +1306,7 @@ nav .breadcrumb li a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.solar-home-system h4{
+	.solar-home-system p{
 		font-size: 40px;
 	}
 }
@@ -1352,8 +1318,8 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 575px) {
-	.solar-home-system h4{
-		margin-top: 0px;
+	.solar-home-system p{
+		margin-top: 30px;
 		font-size: 35px;
 	}
 }
@@ -1363,13 +1329,13 @@ nav .breadcrumb li a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.solar-home-system h4{
-		margin-top: 30px;
+	.solar-home-system p{
+		margin-top: 50px;
 		font-size: 32px;
 	}
 }
 @media only screen and (max-width: 375px) {
-	.solar-home-system h4{
+	.solar-home-system p{
 		font-size: 28px;
 	}
 }
@@ -1754,7 +1720,7 @@ nav .breadcrumb li a:hover{
 		font-size: 14px;
 	}
 	.about-us ul i{
-		margin-left: -40px;
+		margin-left: -10px;
 	}
 	.about-us h5{
 		margin-left: 0px;
@@ -1782,7 +1748,7 @@ nav .breadcrumb li a:hover{
 		font-size: 14px;
 	}
 	.about-us ul i{
-		margin-left: -40px;
+		margin-left: -10px;
 	}
 	.about-us h5{
 		margin-left: 0px;
@@ -1794,7 +1760,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 	}
 	.about-us ul i{
-		margin-left: -40px;
+		margin-left: 0px;
 	}
 	.about-us h5{
 		margin-left: 0px;
@@ -2084,7 +2050,7 @@ nav .breadcrumb li a:hover{
 }
 @media only screen and (max-width: 991px) {
 	.pricing-table .table{
-		width: 100%;	
+		width: 90%;	
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -2092,7 +2058,7 @@ nav .breadcrumb li a:hover{
 }
 @media only screen and (max-width: 767px) {
 	.pricing{
-		width: 120%;
+		padding: 0;
 	}
 	.pricing-table .table{
 		width: 100%;
@@ -2137,7 +2103,7 @@ nav .breadcrumb li a:hover{
 }
 @media only screen and (max-width: 320px) {
 	.pricing-table .table{
-		width: 100%;	
+		width: 90%;	
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -2258,7 +2224,7 @@ nav .breadcrumb li a:hover{
 }
 @media only screen and (max-width: 1199px) {
 	.featured-project img{
-		width: 30%;
+		width: 35%;
 		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
@@ -2275,7 +2241,8 @@ nav .breadcrumb li a:hover{
 }
 @media only screen and (max-width: 575px) {
 	.featured-project img{
-		width: 70%;
+		width: 75%;
+		height: 350px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -2284,6 +2251,7 @@ nav .breadcrumb li a:hover{
 @media only screen and (max-width: 480px) {
 	.featured-project img{
 		width: 80%;
+		height: 300px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -2292,6 +2260,7 @@ nav .breadcrumb li a:hover{
 @media only screen and (max-width: 375px) {
 	.featured-project img{
 		width: 90%;
+		height: 320px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -2300,6 +2269,7 @@ nav .breadcrumb li a:hover{
 @media only screen and (max-width: 320px) {
 	.featured-project img{
 		width: 100%;
+		height: 300px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -2332,7 +2302,7 @@ nav .breadcrumb li a:hover{
 .portfolio .image-block > img {
 	margin: 0;
 	width: 100%;
-	height: 55vh;
+	height: 350px;
 }
 .portfolio .image-block .overlay {
 	position: absolute;
@@ -2370,59 +2340,90 @@ nav .breadcrumb li a:hover{
 	background: rgba(31, 31, 37, 0.9);
 }
 @media only screen and (max-width: 1199px) {
-	.portfolio .image-block img{
+	.portfolio .image-block > img{
 		width: 100%;
-		height: 45vh;
+		height: 300px;
 	}
 }
 @media only screen and (max-width: 991px) {
-	.portfolio .image-block img{
+	.portfolio .image-block > img{
 		width: 100%;
-		height: 40vh;
+		height: 250px;
 	}
 }
 @media only screen and (max-width: 767px) {
-	.portfolio .image-block{
+	.portfolio .image-block > img{
 		width: 100%;
-		height: 110%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		height: 280px;
+		padding: 0;
 	}
 }
 @media only screen and (max-width: 575px) {
-	.portfolio .image-block{
+	.portfolio .image-block > img{
 		width: 70%;
-		height: 100%;
+		height: 320px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.portfolio .image-block:before {
+		width: 70%;
+		left: 15%;
+	}
+	.portfolio:hover .image-block .overlay .caption{
+		width: 70%;
+		left: 15%;
+	}
 }
-
 @media only screen and (max-width: 480px) {
-	.portfolio .image-block{
-	width: 80%;
-	height: 100%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	.portfolio .image-block > img{
+		width: 85%;
+		height: 300px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.portfolio .image-block:before {
+		width: 85%;
+		left: 7.7%;
+	}
+	.portfolio:hover .image-block .overlay .caption{
+		width: 85%;
+		left: 7.7%;
 	}
 }
 @media only screen and (max-width: 375px) {
-	.portfolio .image-block{
-		width: 95%;
+	.portfolio .image-block img{
+		width: 90%;
+		height: 300px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.portfolio .image-block:before {
+		width: 90%;
+		left: 5.3%;
+	}
+	.portfolio:hover .image-block .overlay .caption{
+		width: 90%;
+		left: 5.3%;
+	}
 }
 @media only screen and (max-width: 320px) {
-	.portfolio .image-block{
+	.portfolio .image-block img{
 		width: 100%;
+		height: 300px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.portfolio .image-block:before {
+		width: 100%;
+		left: 0;
+	}
+	.portfolio:hover .image-block .overlay .caption{
+		width: 100%;
+		left: 0;
 	}
 }
 /*--------------------------------------------------------------
@@ -2496,6 +2497,7 @@ nav .breadcrumb li a:hover{
 }
 @media only screen and (max-width: 991px) {
 	.pro-details img{
+		width: 95%;
 		padding: 0px 5px;
 		height: 200px;
 	}
@@ -3183,6 +3185,9 @@ nav .breadcrumb li a:hover{
 .footer-20192 .cta h2, .footer-20192 .cta h3 {
 	line-height: 1.5; 
 }
+.footer-20192 .cta h2 {
+	font-size: 28px;
+}
 .footer-20192 .cta h3 {
 	font-size: 20px;
 }
@@ -3202,6 +3207,26 @@ nav .breadcrumb li a:hover{
 .site-section{
 	border-bottom: 1.5px solid rgba(255, 255, 255, 0.4);
 	padding-bottom: 4.5rem;
+}
+@media only screen and (max-width: 991px) {
+	.footer-20192 .links li span a {
+		width: 100%;
+		font-size: 18px;
+	}
+	.footer-20192 .links li p span{
+	    width: 100%;
+		font-size: 17px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.footer-20192 .links li span a {
+		width: 100%;
+		font-size: 17px;
+	}
+	.footer-20192 .links li p span{
+	    width: 100%;
+		font-size: 17px;
+	}
 }
 /*--------------------------------------------------------------
 # FREQUENTLY ASKED QUESTIONS
@@ -3615,7 +3640,7 @@ nav .breadcrumb li a:hover{
 	font-size: 18px;
 	padding: 15px 25px;
 	border: 2px solid #006420;
-	border-radius: 100px;
+	border-radius: 15px;
 	color:#006420;	
 	transition:.3s;
 }
@@ -4484,7 +4509,7 @@ nav .breadcrumb li a:hover{
 		margin-right: auto;
 	}
 	.articles .news img{
-		width: 90%;
+		width: 95%;
 		height: 40vh;
 		margin-left: 0px;
 	}
@@ -4505,7 +4530,7 @@ nav .breadcrumb li a:hover{
 @media only screen and (max-width: 575px) {
 	.articles .news{
 		display: block;
-		width: 70%;
+		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -4553,11 +4578,11 @@ nav .breadcrumb li a:hover{
 	.articles .news{
 		display: block;
 		width: 100%;
-		margin-left: 10%;
+		margin-left: 0px;
 		margin-right: auto;
 	}
 	.articles .news img{
-		width: 100%;
+		width: 90%;
 		height: 37vh;
 	}
 	.articles .news p{
@@ -4840,11 +4865,11 @@ nav .breadcrumb li a:hover{
 		margin-left: 100px;
 	}
 	.blog .side-bar{
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
-		justify-content:center;
-		width:70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+		width: 70%;
 	}
 }
 @media only screen and (max-width: 575px) {
@@ -4893,7 +4918,7 @@ nav .breadcrumb li a:hover{
 	}
 	.blog .card img{
 		height: 250px;
-		width: 70%;
+		width: 80%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -5602,11 +5627,11 @@ nav .pagination a:hover{
 --------------------------------------------------------------*/
 .video-block-style-one {
 	margin-top: 0px;
-	background: url(images/video-bg.jpg) center top no-repeat fixed;
+	background: url(images/video-bg.webp) center top no-repeat fixed;
 	background-size: cover;
 	padding: 120px 0;
 }
-.video-block-style-one h3 {
+.video-block-style-one p {
 	margin: 0;
 	font-size: 50px;
 	color: #fff;

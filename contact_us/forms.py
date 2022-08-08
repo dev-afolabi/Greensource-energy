@@ -23,4 +23,4 @@ class ContactForm(forms.Form):
     phone= forms.CharField(widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Phone'}),label='',max_length=50,required=True)
     city = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control','placeholder':'Location'}),label='',max_length=150,required=True)
     service = forms.ChoiceField(widget=forms.Select(attrs={'class':'form-control','placeholder':'Service'}),label='',choices=CHOICES,required=True)
-    message = forms.CharField(widget=forms.Textarea(attrs={'class':'form-control','placeholder':'List your electrical applainces e.g TV, Fan, Printer etc.', 'rows':8}),label='',required=True)
+    message = forms.CharField(widget=forms.Textarea(attrs={'class':'form-control','placeholder':'Type your message', 'rows':8}),label='',required=True)

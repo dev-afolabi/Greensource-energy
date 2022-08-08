@@ -1,6 +1,6 @@
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 from .forms import ContactForm
 
 # Create your views here.
@@ -14,13 +14,13 @@ def contact_us(request):
             last_name = form.cleaned_data['last_name']
             from_email = form.cleaned_data['from_email']
             phone = form.cleaned_data['phone']
-            city = form.cleaned_data['location']
-            state = form.cleaned_data['services']
+            city = form.cleaned_data['city']
+            service = form.cleaned_data['service']
             message = form.cleaned_data['message']
             full_name = first_name+" "+last_name
 
             subject = "message from "+first_name+" "+last_name
-            content = "You have a message from "+full_name+ " \n\n Phone number: "+phone+ "\n Email: "+from_email+"\n city: "+city+" \n state: "+state+" \n\n" + message
+            content = "You have a message from "+full_name+ " \n\n Phone number: "+phone+ "\n Email: "+from_email+"\n city: "+city+" \n service: "+service+" \n\n" +message
                         
 
 
