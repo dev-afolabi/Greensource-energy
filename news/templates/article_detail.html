@@ -30,7 +30,7 @@
                     <small class="text-muted"><i class="fas fa-user"></i> Admin &nbsp; &nbsp;<i class="far fa-comments"></i> {{ count }}</small>
                     <h5 class="card-title">{{post.short_description}}</h5>
                     <p class="card-text">
-                        {{ post.body }}
+                        {{ post.body|linebreaks }}
                     </p>
                 </div>
                 <div class="link">
