@@ -1,7 +1,7 @@
 from django.forms import Textarea,TextInput
 from django.db import models
 from django.contrib import admin
-from .models import Category,Post,Comment
+from .models import Category,Post, Comment
 
 # Register your models here.
 class MyModelAdmin(admin.ModelAdmin):

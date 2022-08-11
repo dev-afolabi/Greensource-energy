@@ -1,6 +1,5 @@
 from django.db import models
 from django.urls import reverse
-from ckeditor.fields import RichTextField
 
 # Create your models here.
 class Category(models.Model):
@@ -14,7 +13,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100)
     short_description = models.CharField(max_length=300)
     slug = models.SlugField(unique=True)
-    body = RichTextField()
+    body = models.TextField()
     thumb = models.ImageField(blank=True, )
     date = models.DateField(auto_now_add=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
