@@ -8,7 +8,7 @@
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>Greensource Blog Details</h1>
+            <h1>Greensource Blog Post</h1>
         </div>
     </div>
 </div>
@@ -17,7 +17,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
         <li class="breadcrumb-item"><a href="{% url 'article_list' %}">News</a></li>
-        <li class="breadcrumb-item active">Blog-Details</li>
+        <li class="breadcrumb-item active">Blog-Post</li>
     </ol>
 </nav>
 <section>
@@ -28,9 +28,8 @@
                 <p> | &nbsp; {{ post.date|date:"F d" }} &nbsp;.</p>
                 <div class="card-body">
                     <small class="text-muted"><i class="fas fa-user"></i> Admin &nbsp; &nbsp;<i class="far fa-comments"></i> {{ count }}</small>
-                    <h5 class="card-title">{{post.short_description}}</h5>
                     <p class="card-text">
-                        {{ post.body|linebreaks }}
+                        {{ post.body|safe }}
                     </p>
                 </div>
                 <div class="link">
