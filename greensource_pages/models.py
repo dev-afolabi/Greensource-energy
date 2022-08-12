@@ -1,6 +1,5 @@
 from django.db import models
 from django.urls import reverse
-from ckeditor.fields import RichTextField
 
 # Create your models here.
     
@@ -45,7 +44,7 @@ class Solar(models.Model):
     image3 = models.ImageField(blank=True)
     image4 = models.ImageField(blank=True)
     image5 = models.ImageField(blank=True)
-    body = RichTextField()
+    body = models.TextField()
 
 
     class Meta:
