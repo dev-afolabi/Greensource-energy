@@ -14,4 +14,4 @@ Encoding:.gzip.*
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^greensourcenergy.com$
-RewriteRule ^(.*)$ https://greensourcenergy.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://www.greensourcenergy.com/$1 [R=301,L]

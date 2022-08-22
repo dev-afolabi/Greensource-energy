@@ -31,6 +31,9 @@
                 <a href="javascript:location='mailto:\u0065\u006e\u0071\u0075\u0069\u0072\u0079\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d';void 0">
                     <script type="text/javascript">document.write('\u0065\u006e\u0071\u0075\u0069\u0072\u0079\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d')</script>
                 </a>
+                <a href="javascript:location='mailto:\u0073\u0075\u0070\u0070\u006f\u0072\u0074\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d';void 0">
+                    <script type="text/javascript">document.write('\u0073\u0075\u0070\u0070\u006f\u0072\u0074\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d')</script>
+                </a>
             </p>
         </div>
         <div class="add col-lg-4 col-md-6 col-xs-12">
@@ -46,36 +49,41 @@
         </div>
     <div class="content row padding">
         <div id="contact-form" class="col-xs-12 col-md-9 col-lg-6">
-                <form action="" method="POST">
-                    {% csrf_token %}
-                    <div class="form-row">
-                        <div class="form-group col-md-6 mb-0">
-                            {{ form.first_name|as_crispy_field }}
-                        </div>
-                        <div class="form-group col-md-6 mb-0">
-                            {{ form.last_name|as_crispy_field }}
-                        </div>
-                        <div class="form-group col-md-6 mb-0">
-                            {{ form.from_email|as_crispy_field }}
-                        </div>
-                        <div class="form-group col-md-6 mb-0">
-                            {{ form.phone|as_crispy_field }}
-                        </div>
-                        <div class="form-group col-md-6 mb-0">
-                            {{ form.city|as_crispy_field }}
-                        </div>
-                        <div class="form-group col-md-6 mb-0">
-                            {{ form.service|as_crispy_field }}
-                        </div>
-                        {{ form.message }}
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="form-group col-md-6 mb-0">
+                        {{ form.first_name|as_crispy_field }}
                     </div>
-                    <button type="submit" name="submit" class="btn">SUBMIT</button>
-                </form>
+                    <div class="form-group col-md-6 mb-0">
+                        {{ form.last_name|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-6 mb-0">
+                        {{ form.from_email|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-6 mb-0">
+                        {{ form.phone|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-6 mb-0">
+                        {{ form.city|as_crispy_field }}
+                    </div>
+                    <div class="form-group col-md-6 mb-0">
+                        {{ form.service|as_crispy_field }}
+                    </div>
+                    {{ form.message }}
+                </div>
+                <button type="submit" name="submit" class="btn">SUBMIT</button>
+            </form>
         </div>
-        <div class="map col-lg-6 col-xs-12 col-md-9">
-            <embed aysnc src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.741452898637!2d3.433366268485239!3d6.84608399012105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc7b12aa0619b%3A0x668d6d2407416eeb!2sGREENSOURCE+ENGINEERING+CONSULT!5e0!3m2!1sen!2sng!4v1554279134001!5m2!1sen!2sng" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></embed>
-        </div>
-        <p>*We do not rent or sell our customers information to any third parties! Refer to our <a href="{% url 'privacy' %}"><strong>Privacy Policy</strong></a> for more details*</p>
-    </div>  
+   
+    <div class="map col-lg-6 col-xs-12 col-md-9">
+        <embed aysnc src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.741452898637!2d3.433366268485239!3d6.84608399012105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc7b12aa0619b%3A0x668d6d2407416eeb!2sGREENSOURCE+ENGINEERING+CONSULT!5e0!3m2!1sen!2sng!4v1554279134001!5m2!1sen!2sng"
+            width="800" height="450" frameborder="0" style="border:0" allowfullscreen></embed>
+    </div>
+    <p>*We do not rent or sell our customers information to any third parties! Refer to our
+        <a href="{% url 'privacy' %}">
+            <strong>Privacy Policy</strong>
+        </a> for more details*</p>
+    </div>
 </div>
 {% endblock %}
