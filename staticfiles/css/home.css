@@ -748,20 +748,12 @@ nav .breadcrumb li a:hover{
 	line-height: 30px;
 	font-family: 'Big Shoulders Text', cursive;
 }
-.colum-body img{
-	width: 100px;
-	height: 100px;
+.colum-body svg{
 	line-height: 30px;
 	margin-top: -25px;
 	margin-right: 15px;
 	float: left;
 	clear: both;
-}
-.colum-body .sign{
-	color:#006420;
-	font-size: 25px;
-	margin-left: 5px;
-	font-weight: 700;
 }
 @media only screen and (max-width: 991px) {
 	.colum{
@@ -778,7 +770,7 @@ nav .breadcrumb li a:hover{
 	.colum-body h6{
 		font-size: 15px;
 	}
-	.colum-body img{
+	.colum-body svg{
 		width: 80px;
 		height: 80px;
 	}
@@ -836,9 +828,6 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 		font-size: 15px;
 	}
-	.tag-box{
-		width: 50%;
-	}
 }
 @media only screen and (max-width: 375px) {
 	.colum{
@@ -854,9 +843,6 @@ nav .breadcrumb li a:hover{
 @media only screen and (max-width: 320px) {
 	.colum{
 		margin-top: 0px;
-	}
-	.tag-box{
-		width: 50px;
 	}
 }
 /*--------------------------------------------------------------
@@ -1112,16 +1098,16 @@ nav .breadcrumb li a:hover{
 	color: #cdcdcd;
 	font-weight: 600;
 	text-align: center;
-	text-transform: capitalize;
-	letter-spacing: 1.7px;
-	font-family:'Big Shoulders Display';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Teko', sans-serif;
 }
 .header{
 	background-image: url('/static/images/header-img.webp');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height: 350px;
+	height: 300px;
 	width: auto;
 	animation-delay: 1s;
 }
@@ -1129,45 +1115,38 @@ nav .breadcrumb li a:hover{
 	.header h1{
 		font-size: 25px;
 	}
-	.header h2{
-		font-size: 16px;
-	}
 }
 @media only screen and (max-width: 991px) {
-	.header{
-		height: 40vh;
-	}
 	.header h1{
-		font-size: 22px;
+		font-size: 35px;
 	}
-	.header h2{
-		font-size: 16px;
+}
+@media only screen and (max-width: 767px) {
+	.header h1{
+		font-size: 32px;
 	}
 }
 @media only screen and (max-width: 575px) {
 	.header h1{
-		font-size: 22px;
-	}
-	.header h2{
-		font-size: 15px;
+		font-size: 30px;
 	}
 }
 @media only screen and (max-width: 480px) {
-	.header p{
+	.header h1{
 		margin-top: 170px;
-		font-size: 22px;
+		font-size: 28px;
 	}
 }
 @media only screen and (max-width: 375px) {
-	.header p{
+	.header h1{
 		margin-top: 200px;
-		font-size: 18px;
+		font-size: 26px;
 	}	
 }
 @media only screen and (max-width: 320px) {
-	.header p{
+	.header h1{
 		margin-top: 200px;
-		font-size: 18px;
+		font-size: 24px;
 	}
 }
 /*--------------------------------------------------------------
@@ -1823,7 +1802,7 @@ nav .breadcrumb li a:hover{
 	color: #006420;
 	text-align: center;
 	font-weight: bold;
-	font-family: 'Big Shoulders Text', cursive;
+	font-family: 'Big Shoulders Display', cursive;
 }
 .vision p{
 	margin-top: 25px;
@@ -1884,15 +1863,14 @@ nav .breadcrumb li a:hover{
 	margin-top: 5px;
 	color: #006420;
 }
+
 .benefits .radial p{
 	font-size: 17px;
 	margin-top: 10px;
 	color:#444;
 	text-align: justify;
 }
-.benefits img{
-	width: 60px;
-	height: 60px;
+.benefits svg{
 	margin-top: 40px;
 }
 @media only screen and (max-width: 991px) {
@@ -2000,7 +1978,7 @@ nav .breadcrumb li a:hover{
 	box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.5);
 	transition: all ease 0.3s;
 }	
-.table h6{
+.table h3{
 	text-transform: uppercase;
 	font-family: 'Play', sans-serif;
 	font-size: 19px;
@@ -2009,11 +1987,11 @@ nav .breadcrumb li a:hover{
 	background-color: #1b1b1b;
 	padding: 25px 0;
 }
-.table h5{
+.table h4{
 	margin: 0;
 	font-size: 16px;
 	color: #006420;
-	font-weight: 550;
+	font-weight: 600;
 	text-transform: uppercase;
 	font-family: 'Play', sans-serif;
 }
@@ -2137,14 +2115,15 @@ nav .breadcrumb li a:hover{
 	margin-top: 30px;
 	color: #b43d3d;
 	margin-left: 50%;
+	font-family: 'Teko', sans-serif;
 }
 .working h4{
-	font-size: 20px;
+	font-size: 28px;
 	font-weight: 600;
 	margin-top: 20px;
 	text-align: center;
 	color: #2dc977;
-	font-family: 'Big Shoulders Text', cursive;
+	font-family: 'Big Shoulders Display', cursive;
 }
 .working p{
 	margin-top: 25px;
@@ -2820,18 +2799,18 @@ nav .breadcrumb li a:hover{
     background-color: #ffffff;
     z-index: 2;
 }
-.member-name h3,
-.member-name h5{
+.member-name span,
+.member-name p{
     color: #1b1b1b;
     margin: 0px;
     letter-spacing: 0.3px;
 }
-.member-name h5{
+.member-name p{
 	font-weight: 560;
 	font-size: 13px;
 	color: #006420;
 }
-.member-name h3{
+.member-name span{
     text-transform: uppercase;
 	font-weight: 600;
 	font-size: 15px;

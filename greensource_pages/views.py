@@ -61,5 +61,8 @@ def our_team(request):
 def pricing(request):
     return render(request,"greensource_pages/pricing.html")
 
+def structured_data(request):
+    return render(request,"greensource_pages/subpages/structured-data.html")
+
 
 

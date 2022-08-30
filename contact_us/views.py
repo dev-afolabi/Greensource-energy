@@ -11,16 +11,16 @@ def contact_us(request):
         form = ContactForm(request.POST or None)
         if form.is_valid():
             first_name = form.cleaned_data['first_name']
-            last_name = form.cleaned_data['last_name']
             from_email = form.cleaned_data['from_email']
             phone = form.cleaned_data['phone']
             city = form.cleaned_data['city']
+            price_code = form.cleaned_data['price_code']
             service = form.cleaned_data['service']
             message = form.cleaned_data['message']
-            full_name = first_name+" "+last_name
+            full_name = first_name
 
-            subject = "message from "+first_name+" "+last_name
-            content = "You have a message from "+full_name+ " \n\n Phone number: "+phone+ "\n Email: "+from_email+"\n city: "+city+" \n service: "+service+" \n\n" +message
+            subject = "message from "+first_name
+            content = "You have a message from "+full_name+ " \n\n Phone number: "+phone+ "\n Email: "+from_email+"\n city: "+city+ "\n Code: "+price_code+ "\n service: "+service+" \n\n" +message
                         
 
 
