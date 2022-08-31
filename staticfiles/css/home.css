@@ -2701,7 +2701,8 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 	}
 	.single-team{
-		width: 85%;
+		max-width: 100%;
+		min-width: 80%;
 		height: 350px;
 		display: block;
 		margin-left: auto;

@@ -33,7 +33,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}" />
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}" />
     <link  rel="stylesheet" href='https://fonts.googleapis.com/css?family=Poppins|Play|Big+Shoulders+Display|Teko' />
-    {% include 'greensource_pages/subpages/structured_data.html' %}
 </head>
 <body>
 <div class="site-mobile-menu site-navbar-target">
@@ -268,30 +267,21 @@
     <script src="{% static 'js/main.js' %}" async ></script>
     <script src="https://cdn.ampproject.org/v0.js" async ></script>
     <script src="https://www.googletagmanager.com/gtag/js?id=UA-40167744-1"  async ></script>
-    <script>
-        var test = document.createElement("div")
-        test.className = "hidden d-none"
-        document.head.appendChild(test)
-        var cssLoaded = window.getComputedStyle(test).display === "none"
-        document.head.removeChild(test)
-        if (!cssLoaded) {
-            var link = document.createElement("link");
-            link.type = "text/css";
-            link.rel = "stylesheet";
-            link.href = "{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}";
-            document.head.appendChild(link); async
-        }
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments) };
-        gtag('js', new Date());
-
-        gtag('config', 'UA-179025578-1');
-    </script>
     <script src="https://cdn.ampproject.org/v0.js" async></script>
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-d345b131-b6f1-43d5-a769-8f4636f16c8f"></div>
+    <script>
+    var test = document.createElement("div")
+    test.className = "hidden d-none"
+    document.head.appendChild(test)
+    var cssLoaded = window.getComputedStyle(test).display === "none"
+    document.head.removeChild(test)
+    if (!cssLoaded) {
+        var link = document.createElement("link");
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.href = "{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}";
+        document.head.appendChild(link); async
+    }
+    </script>
 </body>
 </html>
 

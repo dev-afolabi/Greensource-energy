@@ -736,17 +736,12 @@ nav .breadcrumb li a:hover{
 	padding: 20px 10px;
 	display: block;
 }
-.colum-body h6{
-	font-size: 18px;
+.colum-body p{
+	font-size: 17px;
 	font-weight: 550;
 	color:#666;
 	margin-top: 25px;
-}
-.colum-body span{
-	color:#1b1b1b;
-	font-size: 22px;
-	line-height: 30px;
-	font-family: 'Big Shoulders Text', cursive;
+	margin-left: -5px;
 }
 .colum-body svg{
 	line-height: 30px;
@@ -767,7 +762,7 @@ nav .breadcrumb li a:hover{
 		margin-right: auto;
 		width: 30%;
 	}
-	.colum-body h6{
+	.colum-body p{
 		font-size: 15px;
 	}
 	.colum-body svg{
@@ -789,13 +784,8 @@ nav .breadcrumb li a:hover{
 		margin-left: auto;
 		margin-right:auto;
 	}
-	.colum-body h4{
-		font-size: 16px;
-	}
 	.colum-body p{
-		font-size: 15px;
-		width:100%;
-		justify-content: center;
+		font-size: 16px;
 	}
 }
 @media only screen and (max-width: 575px) {
@@ -820,11 +810,7 @@ nav .breadcrumb li a:hover{
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
-	.colum-body .counter-up{
-		width: 120%;
-		font-size: 13px;
-	}
-	.colum-body h6{
+	.colum-body p{
 		width: 100%;
 		font-size: 15px;
 	}
@@ -1155,14 +1141,14 @@ nav .breadcrumb li a:hover{
 .back-to-top{
 	position: fixed;
 	font-size: 17px;
-	margin-bottom: 90px;
+	margin-bottom: 80px;
 	background: transparent;
 	border-radius: 100%;
 	border: 1px solid #24a560;
 	color: #24a560;
 	padding: 10px 15px;
 	bottom: 5px;
-	right: 28px;
+	right: 10px;
 	cursor: pointer;
 	display: none;
 	z-index: 99;
@@ -5648,7 +5634,6 @@ nav .pagination a:hover{
 	line-height: 100px;
 	color: #002c42;
 	position: relative;
-	
 }
 @keyframes zoom-in-zoom-out {
 	0% {
@@ -5681,37 +5666,30 @@ nav .pagination a:hover{
 @media only screen and (max-width: 991px) {
 	.video-block-style-one h3 {
 		font-size: 37px;
-		
 	}
 }
 @media only screen and (max-width: 767px) {
 	.video-block-style-one h3 {
 		font-size: 35px;
-		
 	}
 }
 @media only screen and (max-width: 575px) {
 	.video-block-style-one h3 {
-		font-size: 32px;
-		
+		font-size: 32px;	
 	}
 }
 @media only screen and (max-width: 480px) {
 	.video-block-style-one h3 {
-		font-size: 30px;
-		
+		font-size: 30px;	
 	}
 }
 @media only screen and (max-width: 375px) {
 	.video-block-style-one h3 {
 		font-size: 28px;
-		
 	}
 }
 @media only screen and (max-width: 320px) {
 	.video-block-style-one h3 {
 		font-size: 28px;
-		
 	}
 }
-  
