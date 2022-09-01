@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="{% static 'css/home.css' %}" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="{% static 'css/allcss.css' %}" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />     
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" media="print" onload="this.media='all'" />
     <link href="{% static 'icomoon/style.css' %}" rel="stylesheet" media="print" onload="this.media='all'" />
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}" />
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}" />
@@ -55,7 +55,7 @@
                         <a href="javascript:location='mailto:\u0065\u006e\u0071\u0075\u0069\u0072\u0079\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d';void 0"
                             class="d-flex align-items-center mr-4">
                             <span class="icon-envelope mr-2"></span>
-                            <span class="d-none d-md-inline-block"><script type="text/javascript">document.write('\u0065\u006e\u0071\u0075\u0069\u0072\u0079\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d')</script></span>
+                            <span class="d-none d-md-inline-block"><script async type="text/javascript">document.write('\u0065\u006e\u0071\u0075\u0069\u0072\u0079\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d')</script></span>
                         </a>
                         <a href="#" class="d-flex align-items-center mr-auto">
                             <span class="icon-phone mr-2"></span>
@@ -218,7 +218,7 @@
                         <li>
                             <span>
                                 <a href="javascript:location='mailto:\u0065\u006e\u0071\u0075\u0069\u0072\u0079\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d';void 0">
-                                    <script type="text/javascript">document.write('\u0065\u006e\u0071\u0075\u0069\u0072\u0079\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d')</script>
+                                    <script async type="text/javascript">document.write('\u0065\u006e\u0071\u0075\u0069\u0072\u0079\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d')</script>
                                 </a>
                             </span>
                         </li>
@@ -260,20 +260,19 @@
         <small>&copy; Copyright &copy; 2021 All Rights Reserved | Greensource Energy</small>
     </p>
 </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/static/js/jquery-3.3.1.min.js"><\/script>')</script></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" async ></script>
+    <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script async>window.jQuery || document.write('<script src="/static/js/jquery-3.3.1.min.js"><\/script>')</script></script>
+    <script  async src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script async>window.jQuery || document.write('<script src="/static/js/popper.min.js"><\/script>')</script></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
     <script async>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="/static/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"><\/script>')}</script>
-    <script src="{% static 'js/output.min.js' %}" async ></script>
-    <script src="{% static 'js/main.js' %}" async ></script>
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-40167744-1"  async ></script>
+    <script async src="{% static 'js/output.min.js' %}"></script>
+    <script async src="{% static 'js/main.js' %}"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40167744-1"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
-    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-    <script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script async>
     var test = document.createElement("div")
     test.className = "hidden d-none"
     document.head.appendChild(test)
@@ -284,12 +283,69 @@
         link.type = "text/css";
         link.rel = "stylesheet";
         link.href = "{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}";
-        document.head.appendChild(link); async
+        document.head.appendChild(link);
     }
+    </script>
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '680910845861426');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=680910845861426&ev=PageView&noscript=1"
     /></noscript>
+    <script type="application/ld+json">
+              {
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                "name": "Greensource Energy Consult",
+                "image": "https://greensourcenergy.com/static/images/structured-data.webp",
+                "@id": "",
+                "url": "https://greensourcenergy.com",
+                "telephone": "09132909546 08076068609",
+                "priceRange": "Flexible",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Anobi Noah, Arogun Bustop",
+                  "addressLocality": "Mowe Ofada",
+                  "postalCode": "110115",
+                  "addressCountry": "NG"
+                },
+                "openingHoursSpecification": [{
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ],
+                  "opens": "09:00",
+                  "closes": "17:00"
+                },{
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Saturday",
+                  "opens": "10:00",
+                  "closes": "14:00"
+                }],
+                "sameAs": [
+                  "https://www.facebook.com/greensourcenergy",
+                  "https://www.twitter.com/greenn_energy",
+                  "https://www.instagram.com/greensourcenergy",
+                  "https://www.linkedin.com/company/greensource-energy"
+                ] 
+              }
+    </script>
 </body>
 </html>
 

@@ -456,50 +456,6 @@ $(function() {
           });
       }; 
       siteMenuClone();
-  
-});
-$(function() {
-type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Greensource Energy Consult",
-    "image": "https://greensourcenergy.com/static/images/structured-data.webp",
-    "@id": "",
-    "url": "https://greensourcenergy.com",
-    "telephone": "09132909546 08076068609",
-    "priceRange": "Flexible",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Anobi Noah, Arogun Bustop",
-      "addressLocality": "Mowe Ofada",
-      "postalCode": "110115",
-      "addressCountry": "NG"
-    },
-    "openingHoursSpecification": [{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "17:00"
-    },{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "10:00",
-      "closes": "14:00"
-    }],
-    "sameAs": [
-      "https://www.facebook.com/greensourcenergy",
-      "https://www.twitter.com/greenn_energy",
-      "https://www.instagram.com/greensourcenergy",
-      "https://www.linkedin.com/company/greensource-energy"
-    ] 
-  }
 });
 $(function() {
     (function (w, d, s, l, i) {
@@ -547,17 +503,5 @@ s.onload = function () {
 var x = document.getElementsByTagName('script')[0];
 x.parentNode.insertBefore(s, x);
 });
-!function (f, b, e, v, n, t, s) {
-    if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-    };
-    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-    n.queue = []; t = b.createElement(e); t.async = !0;
-    t.src = v; s = b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t, s)
-}(window, document, 'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '680910845861426');
-fbq('track', 'PageView');
+
 
