@@ -1,10 +1,4 @@
-window.onload = function()
-{
-    document.getElementById('css').removeAttribute('disabled');
-    document.getElementById('allcss').removeAttribute('disabled');
-    document.getElementById('icomoon').removeAttribute('disabled');
-}               
- $(document).on('click','.member-1',function(){
+    $(document).on('click','.member-1',function(){
     $('.detail-box-1').toggleClass('show-details-1')
     $('.detail-box-2').removeClass('show-details-2')
     $('.detail-box-3').removeClass('show-details-3')
