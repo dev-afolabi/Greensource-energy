@@ -464,6 +464,110 @@ $(function() {
       siteMenuClone();
   
 });
-
-
-  
+$(function() {
+type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Greensource Energy Consult",
+    "image": "https://greensourcenergy.com/static/images/structured-data.webp",
+    "@id": "",
+    "url": "https://greensourcenergy.com",
+    "telephone": "09132909546 08076068609",
+    "priceRange": "Flexible",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Anobi Noah, Arogun Bustop",
+      "addressLocality": "Mowe Ofada",
+      "postalCode": "110115",
+      "addressCountry": "NG"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00"
+    },{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:00",
+      "closes": "14:00"
+    }],
+    "sameAs": [
+      "https://www.facebook.com/greensourcenergy",
+      "https://www.twitter.com/greenn_energy",
+      "https://www.instagram.com/greensourcenergy",
+      "https://www.linkedin.com/company/greensource-energy"
+    ] 
+  }
+});
+$(function() {
+    (function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W2SS447');
+});
+$(function() {
+var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?28293';
+var s = document.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = url;
+var options = {
+    "enabled": true,
+    "chatButtonSetting": {
+        "backgroundColor": "#007654",
+        "ctaText": "",
+        "borderRadius": "45",
+        "marginLeft": "0",
+        "marginBottom": "10",
+        "marginRight": "10",
+        "position": "right"
+    },
+    "brandSetting": {
+        "brandName": "OLUJOSEPH",
+        "brandSubTitle": "Solar PV Designer",
+        "brandImg": "https://greensourcenergy.com/static/images/ceo.webp",
+        "welcomeText": "Hi there!\nNeed a custom solar solution for your Home or Business? We would design one for you !\n",
+        "messageText": "{{page_title}}Hello, I have a question about {{page_link}}{{page_link}}",
+        "backgroundColor": "#007654",
+        "ctaText": "Chat me Up",
+        "borderRadius": "45",
+        "autoShow": false,
+        "phoneNumber": "2349132909546"
+    }
+};
+s.onload = function () {
+    CreateWhatsappChatWidget(options);
+};
+var x = document.getElementsByTagName('script')[0];
+x.parentNode.insertBefore(s, x);
+});
+$(function () {
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '680910845861426');
+    fbq('track', 'PageView');
+});
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=680910845861426&ev=PageView&noscript=1"
+/></noscript>
