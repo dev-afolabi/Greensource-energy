@@ -61,11 +61,9 @@ html body.offcanvas-menu:before {
 	top: -7px;
 	position: relative; 
 }
-.site-navbar .site-logo img {
+.site-navbar .site-logo amp-img {
 	margin: 0;
 	padding: 0;
-	max-width: 240px;
-	height: 50px;
 }
 .site-navbar .site-navigation .site-menu {
 	margin-bottom: 0; 
@@ -269,7 +267,7 @@ html body.offcanvas-menu:before {
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a {
 	display: inline-block;
 }
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a img {
+.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a amp-img {
 	max-width: 70px; 
 }
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a:hover {
@@ -446,7 +444,7 @@ html body.offcanvas-menu:before {
 	}
 }
 @media only screen and (max-width: 375px) {
-	.site-navbar .site-logo img {
+	.site-navbar .site-logo amp-img {
 		max-width: 200px;
 		height: 40px;
 	}
@@ -455,7 +453,7 @@ html body.offcanvas-menu:before {
 	}
 }
 @media only screen and (max-width: 320px) {
-	.site-navbar .site-logo img {
+	.site-navbar .site-logo amp-img {
 		max-width: 180px;
 		height: 40px;
 	}
@@ -475,7 +473,6 @@ html body.offcanvas-menu:before {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
 	width: 100%;
 	z-index: 1;
 }
@@ -1020,7 +1017,7 @@ nav .breadcrumb li a:hover{
 /*--------------------------------------------------------------
 # SECTION HEADINGS THREE
 --------------------------------------------------------------*/
-.service-three h5{
+.service-three h4{
 	margin-top: 70px;
 	font-family: 'Play', sans-serif;
 	font-size: 32px;
@@ -1028,7 +1025,7 @@ nav .breadcrumb li a:hover{
 	color: #006420;
 	text-transform: capitalize;
 }
-.service-three h5 i{
+.service-three h4 i{
 	font-size: 22px;
 	margin-right: 15px;
 	color: #001f3f;
@@ -1044,7 +1041,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		margin-top: 0px;
 	}
-	.service-three h5{
+	.service-three h4{
 		font-size: 20px;
 	}
 }
@@ -1053,7 +1050,7 @@ nav .breadcrumb li a:hover{
 		font-size: 17px;
 		margin-top: 0px;
 	}
-	.service-three h5{
+	.service-three h4{
 		font-size: 22px;
 	}
 }
@@ -1062,7 +1059,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		margin-top: 0px;
 	}
-	.service-three h5{
+	.service-three h4{
 		font-size: 18px;
 	}
 }
@@ -1071,7 +1068,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		margin-top: 0px;
 	}
-	.service-three h5{
+	.service-three h4{
 		font-size: 18px;
 	}
 }
@@ -1081,15 +1078,15 @@ nav .breadcrumb li a:hover{
 .header h1{
 	margin-top: 250px;
 	font-size: 48px;
-	color: #cdcdcd;
+	color: #f1f1f1;
 	font-weight: 600;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 1px;
 	font-family: 'Teko', sans-serif;
 }
 .header{
-	background-image: url('/static/images/header-img.webp');
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/images/header-img.webp');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1172,10 +1169,10 @@ nav .breadcrumb li a:hover{
 	margin-top: 70px;
 	margin-bottom: 50px;
 }
-.client-portfolio h4{
+.client-portfolio h3{
 	margin-top: 40px;
 	text-align: center;
-	font-size: 25px;
+	font-size: 22px;
 	color: #001f3f;
 }
 .client-portfolio hr{
@@ -1206,17 +1203,10 @@ nav .breadcrumb li a:hover{
 }
 .pic{
 	display: block;
-	margin: 0 auto;
-	margin-top: 100px;
+	margin-left: -60px;
+	margin-top: 35px;
 	width: 400px;
 	transform: rotate(45deg);
-	width: 180px;
-	height: 180px;
-	margin: -58px;
-}
-.pic img{
-	margin-top: -38px;
-	font-size: 25px;
 }
 /*--------------------------------------------------------------
 # SOLAR FAQ
@@ -1371,7 +1361,7 @@ nav .breadcrumb li a:hover{
 }
 .single-service-style-three .text-block p {
 	margin: 0;
-	color: #7f8284;
+	color: #000;
 	margin-top: 25px;
 	width: 72%;
 	margin-left: auto;
@@ -1964,7 +1954,7 @@ nav .breadcrumb li a:hover{
 	box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.5);
 	transition: all ease 0.3s;
 }	
-.table h3{
+.table h5{
 	text-transform: uppercase;
 	font-family: 'Play', sans-serif;
 	font-size: 19px;
@@ -1973,7 +1963,7 @@ nav .breadcrumb li a:hover{
 	background-color: #1b1b1b;
 	padding: 25px 0;
 }
-.table h4{
+.table h6{
 	margin: 0;
 	font-size: 16px;
 	color: #006420;
@@ -2190,13 +2180,11 @@ nav .breadcrumb li a:hover{
 	width: 100%;
 
 }
-.featured-project img{
-	width: 300px;
-	height: 300px;
+.featured-project amp-img{
 	margin: 10px 10px;
 }
 @media only screen and (max-width: 1199px) {
-	.featured-project img{
+	.featured-project amp-img{
 		width: 35%;
 		display: inline-block;
 		margin-left: auto;
@@ -2204,7 +2192,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 767px) {
-	.featured-project img{
+	.featured-project amp-img{
 		width: 45%;
 		height: 250px;
 		display: inline-block;
@@ -2213,7 +2201,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 575px) {
-	.featured-project img{
+	.featured-project amp-img{
 		width: 75%;
 		height: 350px;
 		display: block;
@@ -2222,7 +2210,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 480px) {
-	.featured-project img{
+	.featured-project amp-img{
 		width: 80%;
 		height: 300px;
 		display: block;
@@ -2231,7 +2219,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 375px) {
-	.featured-project img{
+	.featured-project amp-img{
 		width: 90%;
 		height: 320px;
 		display: block;
@@ -2240,7 +2228,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 320px) {
-	.featured-project img{
+	.featured-project amp-img{
 		width: 100%;
 		height: 300px;
 		display: block;
@@ -2272,7 +2260,7 @@ nav .breadcrumb li a:hover{
 	z-index: 1;
 	transition: .5s ease;
 }
-.portfolio .image-block > img {
+.portfolio .image-block > amp-img {
 	margin: 0;
 	width: 100%;
 	height: 350px;
@@ -2313,26 +2301,26 @@ nav .breadcrumb li a:hover{
 	background: rgba(31, 31, 37, 0.9);
 }
 @media only screen and (max-width: 1199px) {
-	.portfolio .image-block > img{
+	.portfolio .image-block > amp-img{
 		width: 100%;
 		height: 300px;
 	}
 }
 @media only screen and (max-width: 991px) {
-	.portfolio .image-block > img{
+	.portfolio .image-block > amp-img{
 		width: 100%;
 		height: 250px;
 	}
 }
 @media only screen and (max-width: 767px) {
-	.portfolio .image-block > img{
+	.portfolio .image-block > amp-img{
 		width: 100%;
 		height: 280px;
 		padding: 0;
 	}
 }
 @media only screen and (max-width: 575px) {
-	.portfolio .image-block > img{
+	.portfolio .image-block > amp-img{
 		width: 70%;
 		height: 320px;
 		display: block;
@@ -2349,7 +2337,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 480px) {
-	.portfolio .image-block > img{
+	.portfolio .image-block > amp-img{
 		width: 85%;
 		height: 300px;
 		display: block;
@@ -2366,7 +2354,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 375px) {
-	.portfolio .image-block img{
+	.portfolio .image-block > amp-img{
 		width: 90%;
 		height: 300px;
 		display: block;
@@ -2383,7 +2371,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 320px) {
-	.portfolio .image-block img{
+	.portfolio .image-block > amp-img{
 		width: 100%;
 		height: 300px;
 		display: block;
@@ -2467,14 +2455,20 @@ nav .breadcrumb li a:hover{
 	.tech-details p{
 		width: 100%;
 	}
+	.pro-details amp-img{
+		padding: 0px 5px;
+		height: 220px;
+	}
 }
 @media only screen and (max-width: 991px) {
-	.pro-details img{
+	.pro-details amp-img{
 		width: 95%;
 		padding: 0px 5px;
-		height: 200px;
+		height: 220px;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.folio img{
+	.folio amp-img{
 		width: 100%;
 		height: 75vh;
 	}
@@ -2483,14 +2477,14 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 767px) {
-	.pro-details img{
+	.pro-details amp-img{
 		padding: 0px 10px;
-		height: 200px;
+		height: 220px;
 	}
-	.folio img{
+	.folio amp-img{
 		display: block;
 		width: 105%;
-		height: 50vh;
+		height: 60vh;
 	}
 	.tech-details p{
 		width: 100%;
@@ -2518,11 +2512,15 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 		line-height: 35px;
 	}
-	.pro-details img{
-		padding: 0px 50px;
-		height: 200px;
+	.pro-details amp-img{
+		padding: 0;
+		width: 85%;
+		height: 220px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.folio img{
+	.folio amp-img{
 		padding: 0;
 		width: 85%;
 		height: 50vh;
@@ -2532,24 +2530,29 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 480px) {
-	.pro-details img {
-		padding: 0px 50px;
+	.pro-details amp-img {
+		width: 90%;
+		padding: 0;
 		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.folio img {
+	.folio amp-img {
 		width: 90%;
 		height: 50vh;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.tech-details p {
 		width: 100%;
 	}
 }
 @media only screen and (max-width: 375px) {
-	.pro-details img {
+	.pro-details amp-img {
 		padding: 0px 20px;
 		height: 200px;
 	}
-	.folio img {
+	.folio amp-img {
 		width: 100%;
 		height: 45vh;
 	}
@@ -2558,11 +2561,11 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 320px) {
-	.pro-details img {
+	.pro-details amp-img {
 		height: 200px;
 		padding: 0px 20px;
 	}
-	.folio img {
+	.folio amp-img {
 		width: 100%;
 		height: 45vh;
 	}
@@ -3075,8 +3078,9 @@ nav .breadcrumb li a:hover{
 	position: relative; 
 }
 .footer-20192 h3 {
+	color: #2dc997;
 	font-size: 16px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	margin-top: 0;
 	line-height: 1.5; 
 }
@@ -3086,22 +3090,22 @@ nav .breadcrumb li a:hover{
 	display: block;
 }
 .footer-20192 .links li p{
-	color: #666873;
+	color: #cdcdcd;
 }
 .footer-20192 .links li p span{
 	color: #fff;
-	font-size: 22px;
+	font-size: 20px;
 }
 .footer-20192 .links li p:hover {
 	color: #fff; 
 	text-decoration: none;
 }
 .footer-20192 .links li a {
-	color: #666873; 
+	color: #cdcdcd; 
 }
 .footer-20192 .links li span a {
 	color: #2dc997; 
-	font-size: 22px;
+	font-size: 20px;
 }
 .footer-20192 .links li a:hover {
 	color: #fff; 
@@ -3135,11 +3139,9 @@ nav .breadcrumb li a:hover{
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%); 
 }
-.footer-20192 .footer-logo img{
+.footer-20192 .footer-logo amp-img{
 	margin: 0;
 	padding-bottom: 20px;
-	max-width: 240px;
-	height: 100px;
 } 
 .footer-20192 .copyright {
 	color: #fff; 
@@ -3152,7 +3154,7 @@ nav .breadcrumb li a:hover{
 	-webkit-box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
 	box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
 	padding: 20px;
-	background-color: #24a560;
+	background-color: #007654;
 	top: -150px;
 	position: relative;
 }
@@ -3164,12 +3166,13 @@ nav .breadcrumb li a:hover{
 }
 .footer-20192 .cta h3 {
 	font-size: 20px;
+	color: #000
 }
 .footer-20192 .cta a {
 	-webkit-transition: .3s all ease;
 	-o-transition: .3s all ease;
 	transition: .3s all ease; 
-	background: #b11c1c;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4))#b11c1c;
 	font-weight: 600;
 	font-family: 'Play', sans-serif;
 	font-size: 20px;
@@ -3184,6 +3187,10 @@ nav .breadcrumb li a:hover{
 	padding-bottom: 4.5rem;
 }
 @media only screen and (max-width: 1199px) {
+	.footer-20192 .footer-logo amp-img{
+		max-width: 180px;
+		height: 100px;
+	} 
 	.footer-20192 .links li span a {
 		width: 100%;
 		font-size: 18px;
@@ -3194,6 +3201,10 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 991px) {
+	.footer-20192 .footer-logo amp-img{
+		max-width: 180px;
+		height: 100px;
+	} 
 	.footer-20192 .links li span a {
 		width: 100%;
 		font-size: 18px;
@@ -3204,6 +3215,10 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 767px) {
+	.footer-20192 .footer-logo amp-img{
+		max-width: 180px;
+		height: 100px;
+	} 
 	.footer-20192 .links li span a {
 		width: 100%;
 		font-size: 17px;
@@ -3212,6 +3227,18 @@ nav .breadcrumb li a:hover{
 	    width: 100%;
 		font-size: 17px;
 	}
+}
+@media only screen and (max-width: 575px) {
+	.footer-20192 .footer-logo amp-img{
+	max-width: 180px;
+	height: 100px;
+	margin-bottom: 30px;
+	} 
+}
+@media only screen and (max-width: 320px) {
+	.footer-20192 .footer-logo amp-img{
+	max-width: 160px;
+	} 
 }
 /*--------------------------------------------------------------
 # FREQUENTLY ASKED QUESTIONS
@@ -3906,33 +3933,33 @@ nav .breadcrumb li a:hover{
 	margin-left: auto;
 	margin-right: auto;
 }
-.brand-carousel-one img{
+.brand-carousel-one amp-img{
 	width: 100%;
 	padding: 0px 20px;
 }
 .brand-carousel-one .owl-nav {
 	padding: 10px;
 }
-@media only screen and (max-width: 767px) {
-	.brand-carousel-one img{
-		width: 100%;
-}
 @media only screen and (max-width: 575px) {
-	.brand-carousel-one img{
-		width: 70%;
+	.brand-carousel-one amp-img{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 }
 @media only screen and (max-width: 375px) {
-	.brand-carousel-one img{
-		width: 60%;
+	.brand-carousel-one amp-img{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 }
 @media only screen and (max-width: 320px) {
-	.brand-carousel-one img{
-		width: 10%;
-		height: 20%;
+	.brand-carousel-one amp-img{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
-}
 }
 /*--------------------------------------------------------------
 # HOMPAGE TESTIMONIAL
@@ -4023,10 +4050,8 @@ nav .breadcrumb li a:hover{
   height: 100px;
   border-radius: 100%;
 }
-.single-testimonial-style-three .client-block .image-block > img {
+.single-testimonial-style-three .client-block .image-block > amp-img {
   margin: 0;
-  width: 100%;
-  height: 100%;
 }
 .single-testimonial-style-three .client-block .text-block {
   padding-left: 20px;
@@ -4072,7 +4097,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		padding: 20px 15px;
 	}
-	.single-testimonial-style-three .client-block .image-block > img {
+	.single-testimonial-style-three .client-block .image-block > amp-img {
 		width: 100%;
 		height: 100%;
 	}
@@ -4099,7 +4124,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		padding: 20px 15px;
 	}
-	.single-testimonial-style-three .client-block .image-block > img {
+	.single-testimonial-style-three .client-block .image-block > amp-img {
 		width: 100%;
 		height: 100%;
 	}
@@ -4122,7 +4147,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		padding: 15px 15px;
 	}
-	.single-testimonial-style-three .client-block .image-block > img {
+	.single-testimonial-style-three .client-block .image-block > amp-img {
 		width: 100%;
 		height: 100%;
 	}
@@ -4145,7 +4170,7 @@ nav .breadcrumb li a:hover{
 		font-size: 15px;
 		padding: 15px 15px;
 	}
-	.single-testimonial-style-three .client-block .image-block > img {
+	.single-testimonial-style-three .client-block .image-block > amp-img {
 		width: 100%;
 		height: 100%;
 	}
@@ -4174,7 +4199,7 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 		font-size: 14px;
 	}
-	.single-testimonial-style-three .client-block .image-block > img {
+	.single-testimonial-style-three .client-block .image-block > amp-img {
 		width: 100%;
 		height: 100%;
 	}
@@ -4202,7 +4227,7 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 		font-size: 15px;
 	}
-	.single-testimonial-style-three .client-block .image-block > img {
+	.single-testimonial-style-three .client-block .image-block > amp-img {
 		width: 100%;
 		height: 100%;
 	}
@@ -4225,8 +4250,9 @@ nav .breadcrumb li a:hover{
 }
 @media only screen and (max-width: 320px) {
 	.testimonials-style-three-carousel-wrapper{
-		width: 100%;
+		width: 110%;
 		padding: 20px 20px;
+		margin-left: -10px;
 	}
 	.testimonials-style-three-carousel-wrapper p{
 		width: 100%;
@@ -4246,7 +4272,7 @@ nav .breadcrumb li a:hover{
 		width:100%;
 		font-size: 15px;
 	}
-	.single-testimonial-style-three .client-block .image-block > img {
+	.single-testimonial-style-three .client-block .image-block > amp-img {
 		width: 100%;
 		height: 100%;
 	}
@@ -4425,10 +4451,6 @@ nav .breadcrumb li a:hover{
 	margin-top: 50px;
 	justify-content:center;
 }
-.articles .news img{
-	width: 95%;
-	height: 220px;
-}
 .articles .news p{
 	font-size: 15px;
 	margin-top: 20px;
@@ -4466,7 +4488,7 @@ nav .breadcrumb li a:hover{
 	text-decoration: none;
 }
 @media only screen and (max-width: 1199px) {
-	.articles .news img{
+	.articles .news amp-img{
 		width: 100%;
 	}
 	.articles .news p{
@@ -4493,7 +4515,7 @@ nav .breadcrumb li a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.articles .news img{
+	.articles .news amp-img{
 		width: 95%;
 		height: 40vh;
 		margin-left: 0px;
@@ -4519,7 +4541,7 @@ nav .breadcrumb li a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.articles .news img{
+	.articles .news amp-img{
 		width: 80%;
 		height: 40vh;
 	}
@@ -4543,7 +4565,7 @@ nav .breadcrumb li a:hover{
 		margin-left: 10%;
 		margin-right: auto;
 	}
-	.articles .news img{
+	.articles .news amp-img{
 		width: 90%;
 		height: 37vh;
 	}
@@ -4566,7 +4588,7 @@ nav .breadcrumb li a:hover{
 		margin-left: 0px;
 		margin-right: auto;
 	}
-	.articles .news img{
+	.articles .news amp-img{
 		width: 90%;
 		height: 37vh;
 	}
@@ -4588,7 +4610,7 @@ nav .breadcrumb li a:hover{
 		margin-left: 5%;
 		margin-right: auto;
 	}
-	.articles .news img{
+	.articles .news amp-img{
 		width: 95%;
 		height: 37vh;
 	}
@@ -4614,12 +4636,10 @@ nav .breadcrumb li a:hover{
 	margin-top: 25px;
 	margin-bottom: 50px;
 }
-.blog .news .cad img{
+.blog .news .cad amp-img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
-	height: 220px;
 } 
 .blog .news .cad p{
 	font-size: 15px;
@@ -4659,11 +4679,12 @@ nav .breadcrumb li a:hover{
 	margin-left: auto;
 	margin-top: 75px;
 	margin-bottom: 50px;
+	width: 300px;
 	border: .5px solid #cdcdcd;
 }
-.blog .card img{
+.blog .card amp-img{
 	width: 100%;
-	height:400px;
+	height: 400px;
 }
 .blog .card p{
 	margin-left: 20px;
@@ -4730,7 +4751,6 @@ nav .breadcrumb li a:hover{
 	justify-content:center;
 	float: right;
 }
-
 .blog .side-bar h5 {
 	margin-top:40px;
 	margin-bottom:-30px
@@ -4754,7 +4774,7 @@ nav .breadcrumb li a:hover{
 	margin: 20px 0px;
 	line-height: 23px;
 }
-.blog .media img{
+.blog .media amp-img{
 	width: 70px;
 	height: 65px;
 }
@@ -4786,12 +4806,12 @@ nav .breadcrumb li a:hover{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.blog .news .cad img{
+	.blog .news .cad amp-img{
 		width: 90%;
 		height: 200px;
 		margin-left: 0px;
 	} 
-	.blog .media img{
+	.blog .media amp-img{
 		width:120px;
 		height: 90px;
 	}
@@ -4816,12 +4836,12 @@ nav .breadcrumb li a:hover{
 	.blog .news .cad small{
 		margin-left: 0px;
 	}
-	.blog .news .cad img{
+	.blog .news .cad amp-img{
 		height: 200px;
 		width: 80%;
 		margin-left: 0px;
 	}
-	.blog .media img{
+	.blog .media amp-img{
 		width: 120px;
 		height: 90px;
 	}
@@ -4838,9 +4858,9 @@ nav .breadcrumb li a:hover{
 		width: 12%;
 		margin-left: 120px;
 	}
-	.blog .card img{
-		height: 300px;
-		width: 70%;
+	.blog .card amp-img{
+		height: 350px;
+		width: 85%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -4875,7 +4895,7 @@ nav .breadcrumb li a:hover{
 	.blog .news .cad small{
 		margin-left: 0px;
 	}
-	.blog .news .cad img{
+	.blog .news .cad amp-img{
 		height: 200px;
 		width: 70%;
 		margin-left: 0px;
@@ -4887,10 +4907,6 @@ nav .breadcrumb li a:hover{
 		width: 110%;
 		font-size: 15px;
 	}
-	.blog .news .cad img{
-		height: 220px;
-		width: 100%;
-	}
 	.blog .card .title{
 		font-size: 15px;
 		padding: 10px 5px;
@@ -4901,9 +4917,9 @@ nav .breadcrumb li a:hover{
 		font-size: 15px;
 		margin-left: 80px;
 	}
-	.blog .card img{
-		height: 250px;
-		width: 80%;
+	.blog .card amp-img{
+		height: 350px;
+		width: 90%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -4932,13 +4948,13 @@ nav .breadcrumb li a:hover{
 	.blog .news .cad small{
 		margin-left: 0px;
 	}
-	.blog .news .cad img{
+	.blog .news .cad amp-img{
 		height: 220px;
 		width: 100%;
 	}
-	.blog .card img{
-		height: 250px;
-		width: 100%;
+	.blog .card amp-img{
+		height: 300px;
+		width: 90%;
 	}
 	.blog .card .title{
 		font-size: 15px;
@@ -4969,13 +4985,13 @@ nav .breadcrumb li a:hover{
 	.blog .news .cad small{
 		margin-left: 0px;
 	}
-	.blog .news .cad img{
+	.blog .news .cad amp-img{
 		height: 220px;
 		width: 100%;
 	}
-	.blog .card img{
-		height:200px;
-		width:100%;
+	.blog .card amp-img{
+		height: 250px;
+		width: 100%;
 	}
 	.blog .card .title{
 		font-size: 15px;
@@ -5010,11 +5026,11 @@ nav .breadcrumb li a:hover{
 	.blog .news .cad small{
 		margin-left: 0px;
 	}
-	.blog .news .cad img{
+	.blog .news .cad amp-img{
 		height: 220px;
 		width: 100%;
 	}
-	.blog .card img{
+	.blog .card amp-img{
 		height: 200px;
 		width: 100%;
 	}
