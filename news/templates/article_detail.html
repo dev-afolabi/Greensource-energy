@@ -24,7 +24,7 @@
     <div class="container-fluid padding">
         <div class="blog row">
             <div class="card col-xs-12 col-md-11 col-lg-7">
-                <img src="{{ post.thumb.url }}" class="card-img-top" alt="blog image" />
+                <amp-img src="{{ post.thumb.url }}" class="card-img-top" alt="blog image" width="400" height="400" layout="responsive"></amp-img>
                 <p> | &nbsp; {{ post.date|date:"F d" }} &nbsp;.</p>
                 <div class="card-body">
                     <small class="text-muted"><i class="fas fa-user"></i> Admin &nbsp; &nbsp;<i class="far fa-comments"></i> {{ count }}</small>

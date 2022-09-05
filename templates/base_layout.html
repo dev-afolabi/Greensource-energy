@@ -1,9 +1,9 @@
 ﻿{% load static %}
 <!DOCTYPE html>
-<html lang="en" xml:lang="en">
+<html ⚡ lang="en" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=5" />
     <meta name="audience" content="all" />
     <meta name="robots" content="index, follow" />
     <meta http-equiv = "content-language" content = "en">
@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}" />
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}" />
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}" />
-    <link  rel="stylesheet" href='https://fonts.googleapis.com/css?family=Poppins|Play|Big+Shoulders+Display|Teko' />
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Play|Big+Shoulders+Display|Teko&display=swap" rel="stylesheet" />
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1, end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1, end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1, end) 0s 1 normal both;animation:-amp-start 8s steps(1, end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href="https://greensourcenergy.com/" />
@@ -80,7 +80,7 @@
                 <div class="col-2">
                     <div class="site-logo">
                         <a href="{% url 'index' %}">
-                            <img src="{% static 'images/greensourcelogo3.webp' %}" alt="company logo" />
+                            <amp-img src="{% static 'images/greensourcelogo3.webp' %}" alt="company logo" width="240" height="50" noloading></amp-img>
                         </a>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
             <div class="cta d-block d-md-flex align-items-center px-5">
                 <div>
                     <h2 class="mb-0">Need a capable hand for your solar solution?</h2>
-                    <h3 class="text-dark">We will take care of it !</h3>
+                    <h3><strong>We will take care of it !</strong></h3>
                 </div>
                 <div class="ml-auto">
                     <a href="{% url 'contact_us' %}" class="btn btn-dark rounded-0 py-3 px-7">Get a Free Quote</a>
@@ -155,7 +155,7 @@
             <div class="row">
                 <div class="col-sm">
                     <a href="{% url 'index' %}" class="footer-logo">
-                        <img src="{% static 'images/greensource2.webp' %}" alt="company logo" />
+                        <amp-img src="{% static 'images/greensource2.webp' %}" alt="company logo" max-width="250" height="100" noloading></amp-img>
                     </a>
                 </div>
                 <div class="col-sm">
@@ -261,7 +261,7 @@
     </p>
 </footer>
     <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script async>window.jQuery || document.write('<script src="/static/js/jquery-3.3.1.min.js"><\/script>')</script></script>
+    <script async>window.jQuery || document.write('<script src="/static/js/jquery-3.6.1.min.js"><\/script>')</script></script>
     <script  async src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script async>window.jQuery || document.write('<script src="/static/js/popper.min.js"><\/script>')</script></script>
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>

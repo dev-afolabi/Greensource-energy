@@ -26,7 +26,7 @@
                 {% if post_list %}
                 {% for post in post_list %}
                 <div class="cad col-lg-5 col-md-6">
-                    <img src="{{post.thumb.url}}" class="card-img-top" alt="blog image" />
+                    <amp-img src="{{post.thumb.url}}" class="card-img-top" alt="blog image" width="300" height="220"></amp-img>
                     <p> | &nbsp; {{ post.date|date:"F d" }} &nbsp;.</p>
                     <div class="card-body">
                         <small class="text-muted"><i class="fas fa-user"></i> Admin &nbsp; &nbsp;<i class="far fa-comments"></i> {{ post.comments.count }}</small>

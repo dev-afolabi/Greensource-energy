@@ -18,7 +18,7 @@
     <ul class="list-unstyled">
         {% for post in posts %}
         <li class="media">
-            <img src="{{ post.thumb.url }}" class="mr-3" alt="..." />
+            <amp-img src="{{ post.thumb.url }}" class="mr-3" alt="blog img" width="70px" height="65px" layout="responsive"></amp-img>
             <div class="media-body">
                 <p><a href="{{ post.get_absolute_url }}">{{post.title}}</a><br /> <span class="green"><i class="far fa-calendar-alt"></i> {{ post.date|date:"M d, Y" }}</span></p>
             </div>

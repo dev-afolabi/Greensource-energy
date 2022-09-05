@@ -8,7 +8,7 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{% static 'images/homepage1.webp' %}" alt="off-grid solar panels">
+                <amp-img src="{% static 'images/homepage1.webp' %}" alt="off-grid solar panels" wdith="" height="100vh"></amp-img>
                 <div class="carousel-caption">
                     <h1 class="animated zoomIn">Let the
                         <span>sun</span> work for you</h1>
@@ -22,7 +22,7 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="{% static 'images/homepage2.webp' %}" alt="array of ground mounted solar panels ">
+                <img src="{% static 'images/homepage2.webp' %}" alt="array of ground mounted solar panels" />
                 <div class="carousel-caption">
                     <h2 class="animated zoomIn">Cost effective
                         <span>Solar </span>Solution</h2>
@@ -332,40 +332,44 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
             <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
                 <div class="diamond-image">
                     <div class="pic">
-                        <img src="{% static 'images/blue-gray.webp' %}" alt="residential building" />
+                        <amp-img src="{% static 'images/blue-gray.webp' %}" alt="residential building" width="250px"
+                        height="210px"></amp-img>
                     </div>
                 </div>
-                <h4>Residential</h4>
+                <h3>Residential Solar</h3>
                 <hr />
                 <p>we believe a home should be a place of comfort designed to suit different needs.</p>
             </div>
             <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
                 <div class="diamond-image">
                     <div class="pic">
-                        <img src="{% static 'images/bookcase.webp' %}" alt="commercial building" />
+                        <amp-img src="{% static 'images/bookcase.webp' %}" alt="commercial building" width="250px"
+                        height="210px"></amp-img>
                     </div>
                 </div>
-                <h4>Commercial</h4>
+                <h3>Commercial Solar</h3>
                 <hr />
                 <p>We provide provide solar for commercial purpose to ensure business continuity.</p>
             </div>
             <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
                 <div class="diamond-image">
                     <div class="pic">
-                        <img src="{% static 'images/corn-plant.webp' %}" alt="Farm image" />
+                        <amp-img src="{% static 'images/corn-plant.webp' %}" alt="Farm image" width="250px"
+                        height="210px"></amp-img>
                     </div>
                 </div>
-                <h4>Agriculture</h4>
+                <h3>Agriculture Solar</h3>
                 <hr />
                 <p>We provide power for agricultural purpose including lighting, irrigation, livestock farmimg.</p>
             </div>
             <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
                 <div class="diamond-image">
                     <div class="pic">
-                        <img src="{% static 'images/institution.webp' %}" alt="School building" />
+                        <amp-img src="{% static 'images/institution.webp' %}" alt="School building" width="250px"
+                        height="210px"></amp-img>
                     </div>
                 </div>
-                <h4>Institutions</h4>
+                <h3>Institutions Solar</h3>
                 <hr />
                 <p>We consult/design solar energy systems for schools, hospitals and other Institutions.</p>
             </div>
@@ -380,8 +384,8 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
             </div>
             <div class="faq col-lg-6 col-md-6 col-xs-12">
                 <div class="service-three col-12">
-                    <h5>
-                        <i class="fas fa-long-arrow-alt-right"></i>Frequently Asked Questions</h5>
+                    <h4>
+                        <i class="fas fa-long-arrow-alt-right"></i>Frequently Asked Questions</h4>
                     <p>Knowledge base</p>
                 </div>
                 <div id="accordion" class="container padding">
@@ -389,11 +393,11 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header" id="headingTen">
-                                    <h5 class="mb-0">
+                                    <p class="mb-0">
                                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
                                             Can I afford to go Solar?
                                         </button>
-                                    </h5>
+                                    </p>
                                 </div>
                                 <div id="collapseTen" class="collapse show" aria-labelledby="headingTen" data-parent="#accordion">
                                     <div class="card-body">
@@ -403,11 +407,11 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingOne">
-                                    <h5 class="mb-0">
+                                    <p class="mb-0">
                                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             Is my roof suitable for solar panels?
                                         </button>
-                                    </h5>
+                                    </p>
                                 </div>
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
@@ -418,11 +422,11 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingEleven">
-                                    <h5 class="mb-0">
+                                    <p class="mb-0">
                                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
                                             What size of solar energy system should i get?
                                         </button>
-                                    </h5>
+                                    </p>
                                 </div>
                                 <div id="collapseEleven" class="collapse show" aria-labelledby="headingEleven" data-parent="#accordion">
                                     <div class="card-body">
@@ -433,11 +437,11 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingNine">
-                                    <h5 class="mb-0">
+                                    <p class="mb-0">
                                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
                                             How do i choose a solar installer?
                                         </button>
-                                    </h5>
+                                    </p>
                                 </div>
                                 <div id="collapseNine" class="collapse show" aria-labelledby="headingNine" data-parent="#accordion">
                                     <div class="card-body">
@@ -494,7 +498,7 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                                     power in my shop. I would highly recommend GS team to anyone going solar.</p>
                                 <div class="client-block">
                                     <div class="image-block">
-                                        <img src="{% static 'images/mum.webp' %}" alt="Awesome Image" />
+                                        <amp-img src="{% static 'images/mum.webp' %}" alt="Awesome Image" width="100" height="100" layout="responsive"></amp-img>
                                     </div>
                                     <div class="text-block">
                                         <h6>Bola Omogbule</h6>
@@ -509,7 +513,7 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                                     Willgladly recommend their services.</p>
                                 <div class="client-block">
                                     <div class="image-block">
-                                        <img src="{% static 'images/Hycienth.webp' %}" alt="Awesome Image" />
+                                        <amp-img src="{% static 'images/Hycienth.webp' %}" alt="Awesome Image" width="100" height="100" layout="responsive"></amp-img>
                                     </div>
                                     <div class="text-block">
                                         <h6>Hycienth Okonweze</h6>
@@ -523,7 +527,7 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                                     for the past 6 months without any issues. Will gladly recommend thier services.</p>
                                 <div class="client-block">
                                     <div class="image-block">
-                                        <img src="{% static 'images/b02.webp' %}" alt="Awesome Image" />
+                                        <amp-img src="{% static 'images/b02.webp' %}" alt="Awesome Image" width="100" height="100" layout="responsive"></amp-img>
                                     </div>
                                     <div class="text-block">
                                         <h6>Oluwadusin Ajayi</h6>
@@ -646,7 +650,7 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
             <div class="featured-project col-12">
                 {% for featured in index %}
                 <a href="{{ featured.pics.url }}">
-                    <img src="{{ featured.pics.url }}" alt="awesome image">
+                    <amp-img src="{{ featured.pics.url }}" alt="awesome image" width="300" height="300"></amp-img>
                 </a>
                 {% endfor %}
 
@@ -667,7 +671,7 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
         <div class="pricing-table owl-carousel owl-theme" id="pricing">
             <div class="item">
                 <div class="table">
-                    <h3>300wp - solar</h3>
+                    <h5>300wp - solar</h5>
                     <div class="prices">
                         N342, 000
                         <span>
@@ -680,13 +684,13 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                             <strong>1 KVA</strong> Inverter
                         </span>
                     </div>
-                    <h4>solar capacity</h4>
+                    <h6>solar capacity</h6>
                     <p>All lighting (led recommended), A LED TV, A Standing Fan, Laptop, A satelite decoder</p>
                 </div>
             </div>
             <div class="item">
                 <div class="table">
-                    <h3>540wp - solar</h3>
+                    <h5>540wp - solar</h5>
                     <div class="prices">
                         N385, 000
                         <span>
@@ -699,13 +703,13 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                             <strong>1.5 KVA</strong> Inverter
                         </span>
                     </div>
-                    <h4>solar capacity</h4>
+                    <h6>solar capacity</h6>
                     <p>All lighting (led recommended), A LED TV, Standing Fan, Decoder, Home theatre</p>
                 </div>
             </div>
             <div class="item">
                 <div class="table">
-                    <h3>720wp - solar</h3>
+                    <h5>720wp - solar</h5>
                     <div class="prices">
                         N485, 000
                         <span>
@@ -718,13 +722,13 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                             <strong>2 KVA</strong> Inverter
                         </span>
                     </div>
-                    <h4>solar capacity</h4>
+                    <h6>solar capacity</h6>
                     <p>All lighting (led recommended), A LED TV, 2 ceiling Fan, A home theatre/satelite decoder</P>
                 </div>
             </div>
             <div class="item">
                 <div class="table">
-                    <h3>1.08kwp - solar</h3>
+                    <h5>1.08kwp - solar</h5>
                     <div class="prices">
                         N630, 000
                         <span>
@@ -737,7 +741,7 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                             <strong>2.5 KVA</strong> Inverter
                         </span>
                     </div>
-                    <h4>solar capacity</h4>
+                    <h6>solar capacity</h6>
                     <p>All lighting (led recommended), A LED/LCD TV, 2 ceiling Fan, A home theatre/satelite decoder</p>
                 </div>
             </div>
@@ -757,7 +761,7 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
         <div class="articles row padding">
             {% for post in posts %}
             <div class="news col-xs-12 col-md-4 col-lg-3">
-                <img src="{{ post.thumb.url }}" class="card-img-top" alt="awesome image">
+                <amp-img src="{{ post.thumb.url }}" class="card-img-top" alt="awesome image" width="300" height="220" ></amp-img>
                 <p>| &nbsp; {{ post.date|date:"F d" }} &nbsp;.</p>
                 <div class="card-body">
                     <a href="{{ post.get_absolute_url }}">
@@ -779,22 +783,28 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
         <div class="brand-carousel-wrapper">
             <div class="brand-carousel-one owl-theme owl-carousel">
                 <div class="item">
-                    <img src="{% static 'images/brand-1-1.webp' %}" alt="sona logo" />
+                    <amp-img src="{% static 'images/brand-1-1.webp' %}" alt="sona logo" width = "200"
+                    height = "100" noloading></amp-img>
                 </div>
                 <div class="item">
-                    <img src="{% static 'images/brand-1-2.webp' %}" alt="energy talent logo" />
+                    <amp-img src="{% static 'images/brand-1-2.webp' %}" alt="energy talent logo" width = "200"
+                    height = "100" noloading></amp-img>
                 </div>
                 <div class="item">
-                    <img src="{% static 'images/brand-1-3.webp' %}" alt="schneider logo" />
+                    <amp-img src="{% static 'images/brand-1-3.webp' %}" alt="schneider logo" width = "200"
+                    height = "100" noloading></amp-img>
                 </div>
                 <div class="item">
-                    <img src="{% static 'images/brand-1-4.webp' %}" alt="amaron logo" />
+                    <amp-img src="{% static 'images/brand-1-4.webp' %}" alt="amaron logo" width = "200"
+                    height = "100" noloading></amp-img>
                 </div>
                 <div class="item">
-                    <img src="{% static 'images/brand-1-5.webp' %}" alt="felicity logo" />
+                    <amp-img src="{% static 'images/brand-1-5.webp' %}" alt="felicity logo" width = "200"
+                    height = "100" noloading></amp-img>
                 </div>
                 <div class="item">
-                    <img src="{% static 'images/brand-1-6.webp' %}" alt="abb logo" />
+                    <amp-img src="{% static 'images/brand-1-6.webp' %}" alt="abb logo" width = "200"
+                    height = "100" noloading></amp-img>
                 </div>
             </div>
         </div>
