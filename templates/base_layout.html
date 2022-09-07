@@ -9,7 +9,7 @@
     <meta http-equiv = "content-language" content = "en">
     <meta name="revisit-after" content="2 days" />
     <meta name="description" content="Need a cost effective and reliable Solar Home System for your Home or Business? We will design / install a custom system that fits your energy requirement!"/>
-    <meta name="keywords" content="solar street light installer in mowe-ofada ibafo obafemi owode Ogun, solar street light installer in lagos,  solar, solar panel installer in ibafo mowe-ofada obafemi owode, solar panel maintenance, solar panels design solar Photovoltaic, solar energy, solar, solar inverter, solar home systems, solar energy, solar energy websites, solar panel price in nigeria, solar battery, solar street light, 
+    <meta name="keywords" content="solar street light installer in mowe-ofada ibafo obafemi owode Ogun, solar street light installer in lagos,  solar, solar panel installer in ibafo mowe-ofada obafemi owode, solar panel maintenance, solar panels design solar Photovoltaic, PV maintenance, PV storage, solar energy, solar, solar inverter, solar home systems, solar energy websites, solar street light, 
     solar home system installer in mowe-ofada, Inverter installer near me, solar lighting system, renewable energy, solar company in mowe-ofada Ogun state, solar company in mowe-ibafo Ogun state, solar company in Ofada Ogun state, green energy, energy sources, alternative energy"/>
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="greensourcenergy.com" />
@@ -26,16 +26,19 @@
     <title>{% block title %}- Greensource Energy {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/home.css' %}" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="{% static 'css/allcss.css' %}" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="print" onload="this.media='all'" />     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" media="print" onload="this.media='all'" />
     <link href="{% static 'icomoon/style.css' %}" rel="stylesheet" media="print" onload="this.media='all'" />
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}" />
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}" />
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Play|Big+Shoulders+Display|Teko&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Play|Big+Shoulders+Display|Teko&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1, end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1, end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1, end) 0s 1 normal both;animation:-amp-start 8s steps(1, end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href="https://greensourcenergy.com/" />
+    <link rel="preload" fetchpriority="high" as="image" href="/static/images/greensourcelogo3.webp" type="image/webp" />
+    <link rel="preload" fetchpriority="low" as="image" href="/static/images/homepage2.webp" type="image/webp" />
+    <link rel="preload" fetchpriority="low" as="image" href="/static/images/video-bg.webp" type="image/webp" />
 </head>
 <body>
 <div class="site-mobile-menu site-navbar-target">
@@ -53,17 +56,17 @@
                 <div class="col-8">
                     <div class="d-flex mr-auto">
                         <a href="javascript:location='mailto:\u0065\u006e\u0071\u0075\u0069\u0072\u0079\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d';void 0"
-                            class="d-flex align-items-center mr-4">
+                            class="d-flex align-items-center mr-4" aria-label="email link">
                             <span class="icon-envelope mr-2"></span>
                             <span class="d-none d-md-inline-block"><script async type="text/javascript">document.write('\u0065\u006e\u0071\u0075\u0069\u0072\u0079\u0040\u0067\u0072\u0065\u0065\u006e\u0073\u006f\u0075\u0072\u0063\u0065\u006e\u0065\u0072\u0067\u0079\u002e\u0063\u006f\u006d')</script></span>
                         </a>
-                        <a href="#" class="d-flex align-items-center mr-auto">
+                        <a href="#" class="d-flex align-items-center mr-auto" aria-label="contact number">
                             <span class="icon-phone mr-2"></span>
                             <span class="d-none d-md-inline-block">0913 290 9546</span>
                         </a>
                     </div>
                 </div>
-                <div class="socio col-4 text-right">
+                <div class="socio col-4 text-right" aria-label="work hours">
                     <div class="mr-auto">
                         <a href="#" class="mr-auto">
                                 <span class="icon-clock-o mr-2"></span>
@@ -79,7 +82,7 @@
             <div class="row align-items-center">
                 <div class="col-2">
                     <div class="site-logo">
-                        <a href="{% url 'index' %}">
+                        <a href="{% url 'index' %}" aria-label="header logo">
                             <amp-img src="{% static 'images/greensourcelogo3.webp' %}" alt="company logo" width="240" height="50" noloading></amp-img>
                         </a>
                     </div>
@@ -88,7 +91,7 @@
                     <nav class="site-navigation text-right" role="navigation">
                         <div class="container">
                             <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
-                                <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+                                <a href="#" class="site-menu-toggle js-menu-toggle text-white" aria-label="menu-icon toggle bar">
                                     <span class="icon-menu h3"></span>
                                 </a>
                             </div>
@@ -154,7 +157,7 @@
             </div>
             <div class="row">
                 <div class="col-sm">
-                    <a href="{% url 'index' %}" class="footer-logo">
+                    <a href="{% url 'index' %}" class="footer-logo" aria-label="footer logo">
                         <amp-img src="{% static 'images/greensource2.webp' %}" alt="company logo" max-width="250" height="100" noloading></amp-img>
                     </a>
                 </div>
@@ -229,22 +232,22 @@
                     <h3>Follow us</h3>
                     <ul class="list-unstyled social">
                         <li>
-                            <a href="https://www.twitter.com/greenn_energy">
+                            <a href="https://www.twitter.com/greenn_energy" aria-label="twitter icon link">
                                 <span class="icon-twitter"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/greensourcenergy/">
+                            <a href="https://www.facebook.com/greensourcenergy/" aria-label="facebook icon link">
                                 <span class="icon-facebook"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/company/greensource-energy">
+                            <a href="https://www.linkedin.com/company/greensource-energy" aria-label="linkedin icon link">
                                 <span class="icon-linkedin"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/greensourcenergy">
+                            <a href="https://www.instagram.com/greensourcenergy" aria-label="instagram icon link">
                                 <span class="icon-instagram"></span>
                             </a>
                         </li>
@@ -253,7 +256,7 @@
             </div>
         </div>
     </div>
-    <a href="#" class="back-to-top">
+    <a href="#" class="back-to-top" aria-label="roll back up button">
         <i class="fa fa-arrow-up"></i>
     </a>
     <p class="copyright">
@@ -266,8 +269,8 @@
     <script async>window.jQuery || document.write('<script src="/static/js/popper.min.js"><\/script>')</script></script>
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
     <script async>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="/static/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"><\/script>')}</script>
-    <script async src="{% static 'js/output.min.js' %}"></script>
-    <script async src="{% static 'js/main.js' %}"></script>
+    <script defer src="{% static 'js/output.min.js' %}"></script>
+    <script defer src="{% static 'js/main.js' %}"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40167744-1"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>

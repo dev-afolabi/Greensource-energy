@@ -1,26 +1,26 @@
-html body {
-	padding: 0px;
-	margin: 0px;
-	background:rgb(235, 235, 235, 0.8);
-	background-position: center;
-	background-size: cover;
-	font-family: 'Poppins', sans-serif;
-	font-size: 15px;
+html body{
+	padding:0px;
+	margin:0px;
+	background:(235, 235, 235, 0.8);
+	background-position:center;
+	background-size:cover;
+	font-family:'Poppins', sans-serif;
+	font-size:15px;
 }
-html body:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    opacity: 0;
-    visibility: hidden;
-	z-index: 1; 
+html body:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0, 0, 0, 0.5);
+    -webkit-transition:.3s all ease;
+    -o-transition:.3s all ease;
+    transition:.3s all ease;
+    opacity:0;
+    visibility:hidden;
+	z-index:1; 
 }
 html body.offcanvas-menu:before {
     opacity: 1;
@@ -525,6 +525,7 @@ html body.offcanvas-menu:before {
 	font-size: 16px;	
 	width: auto;
 	font-family: 'Play', sans-serif;
+
 	margin-left: 5px;
 	padding: 20px 15px;
 	border: 2px solid #fff;
@@ -871,8 +872,8 @@ nav .breadcrumb li a:hover{
 /*--------------------------------------------------------------
 # SECTION HEADINGS
 --------------------------------------------------------------*/
-.service h5{
-	margin-top: 150px;
+.service .head{
+	margin-top: 100px;
 	font-family: 'Play', sans-serif;
 	font-size: 24px;
 	font-weight: 600;
@@ -894,7 +895,7 @@ nav .breadcrumb li a:hover{
 	margin-top: 0px; 
 }
 @media only screen and (max-width: 1199px) {
-	.service h5{
+	.service .head{
 		font-size: 16px;
 	}
 	.service p{
@@ -905,7 +906,7 @@ nav .breadcrumb li a:hover{
 	.service{
 		margin-top: 50px;
 	}
-	.service h5{
+	.service .head{
 		margin-top: 0px;
 		font-size: 16px;
 	}
@@ -917,7 +918,7 @@ nav .breadcrumb li a:hover{
 	.service{
 		margin-top: 50px;
 	}
-	.service h5{
+	.service .head{
 		margin-top: 0px;
 		font-size: 16px;
 	}
@@ -933,7 +934,7 @@ nav .breadcrumb li a:hover{
 		margin-top: 0px;
 		font-size: 18px;
 	}
-	.service h5{
+	.service .head{
 		margin-top: 0px;
 		font-size: 15px;
 	}
@@ -946,7 +947,7 @@ nav .breadcrumb li a:hover{
 		font-size: 17px;
 		margin-top: 0px;
 	}
-	.service h5{
+	.service .head{
 		margin-top: 0px;
 		font-size: 15px;
 	}
@@ -959,7 +960,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		margin-top: 0px;
 	}
-	.service h5{
+	.service .head{
 		margin-top: 0px;
 		font-size: 17px;
 	}
@@ -972,7 +973,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		margin-top: 0px;
 	}
-	.service h5{
+	.service .head{
 		margin-top: 0px;
 		font-size: 15px;
 	}
@@ -980,7 +981,7 @@ nav .breadcrumb li a:hover{
 /*--------------------------------------------------------------
 # SECTION HEADINGS TWO
 --------------------------------------------------------------*/
-.service-two h5{
+.service-two .head{
 	margin-top: 100px;
 	padding-left: 15px;
 	font-family: 'Play', sans-serif;
@@ -989,7 +990,7 @@ nav .breadcrumb li a:hover{
 	color: #006420;
 	text-transform: capitalize;
 }
-.service-two h5 i{
+.service-two .head i{
 	padding-left: 5px;
 	font-size: 20px;
 	margin-right: 15px;
@@ -1009,7 +1010,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		margin-top: 0px;
 	}
-	.service-two h5{
+	.service-two .head{
 		margin-top: 0px;
 		font-size: 17px;
 	}
@@ -1017,7 +1018,7 @@ nav .breadcrumb li a:hover{
 /*--------------------------------------------------------------
 # SECTION HEADINGS THREE
 --------------------------------------------------------------*/
-.service-three h4{
+.service-three .head{
 	margin-top: 70px;
 	font-family: 'Play', sans-serif;
 	font-size: 32px;
@@ -1025,7 +1026,7 @@ nav .breadcrumb li a:hover{
 	color: #006420;
 	text-transform: capitalize;
 }
-.service-three h4 i{
+.service-three .head i{
 	font-size: 22px;
 	margin-right: 15px;
 	color: #001f3f;
@@ -1041,7 +1042,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		margin-top: 0px;
 	}
-	.service-three h4{
+	.service-three .head{
 		font-size: 20px;
 	}
 }
@@ -1050,7 +1051,7 @@ nav .breadcrumb li a:hover{
 		font-size: 17px;
 		margin-top: 0px;
 	}
-	.service-three h4{
+	.service-three .head{
 		font-size: 22px;
 	}
 }
@@ -1059,7 +1060,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		margin-top: 0px;
 	}
-	.service-three h4{
+	.service-three .head{
 		font-size: 18px;
 	}
 }
@@ -1068,7 +1069,7 @@ nav .breadcrumb li a:hover{
 		font-size: 16px;
 		margin-top: 0px;
 	}
-	.service-three h4{
+	.service-three .head{
 		font-size: 18px;
 	}
 }
@@ -1486,340 +1487,342 @@ nav .breadcrumb li a:hover{
 # ABOUT US
 --------------------------------------------------------------*/
 .about-us{
-	margin-top: 50px;
+	margin-top:50px;
 }
 .about-us img{
-	width: 500px;
-	height: 400px;
-	padding: 0px 5px;
-	float: right;
-	clear: both;
+	width:500px;
+	height:400px;
+	padding:0px 5px;
+	float:right;
+	clear:both;
 }
 .about-us p{
-	font-size: 17px;
-	padding: 0px 5px;
-	text-align: justify;
-	line-height: 35px;
-	width: 100%;
+	font-size:17px;
+	padding:0px 5px;
+	text-align:justify;
+	line-height:35px;
+	width:100%;
 }
-.about-us h5{
-	margin-top: 20px;
-	margin-left: 30px;
-	font-size: 28px;
-	color: #082842;
+.about-us h3{
+	margin-top:20px;
+	margin-left:30px;
+	font-size:28px;
+	color:#082842;
+	font-weight:600;
 }
 .about-us ul{
-	margin-top: 10px;
+	margin-top:10px;
 }
 .about-us ul li{
-	font-size: 15px;
-	line-height: 40px;
-	list-style-type: none;
-	text-align: justify;
+	font-size:15px;
+	line-height:40px;
+	list-style-type:none;
+	text-align:justify;
 }
 .about-us ul i{
-	font-size: 12px;
-	color: #fff;
-	background: #001f3f;
-	padding: 10px;
-	margin-right: 15px;
-	border-radius: 100%;
-	float: left;
+	font-size:12px;
+	color:#fff;
+	background:#001f3f;
+	padding:10px;
+	margin-right:15px;
+	border-radius:100%;
+	float:left;
+	clear:both;
 }
-.about-us .bubbled-text-block {
-	position: absolute;
-	top: 205px;
-	right: -20px;
-	-webkit-transform: translateX(50%);
-			transform: translateX(50%);
-	width: 170px;
-	height: 170px;
-	border-radius: 50%;
-	background: #d3d3d3;
-	text-align: center;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: -webkit-box;
-	display: flex;
-	--webkit-box-align: center;
-	align-items: center;
-	--webkit-box-pack: center;
-	justify-content: center;
-	z-index: 10;
+.about-us .bubbled-text-block{
+	position:absolute;
+	top:205px;
+	right:-20px;
+	-webkit-transform:translateX(50%);
+			transform:translateX(50%);
+	width:170px;
+	height:170px;
+	border-radius:50%;
+	background:#d3d3d3;
+	text-align:center;
+	display:-moz-flex;
+	display:-ms-flex;
+	display:-o-flex;
+	display:-webkit-box;
+	display:flex;
+	--webkit-box-align:center;
+	align-items:center;
+	--webkit-box-pack:center;
+	justify-content:center;
+	z-index:10;
 }
-.about-us .bubbled-text-block {
-    -webkit-transform: translateX(-35%);
-            transform: translateX(-35%);
+.about-us .bubbled-text-block{
+    -webkit-transform:translateX(-35%);
+            transform:translateX(-35%);
 }
-
-.about-us .bubbled-text-block .inner-box {
-  display: block;
-  width: 100%;
+.about-us .bubbled-text-block .inner-box{
+	display:block;
+	width:100%;
 }
-.about-us .bubbled-text-block:before {
-  content: '';
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #d3d3d3;
-  position: absolute;
-  right: 25px;
-  bottom: 0;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
+.about-us .bubbled-text-block:before{
+  content:'';
+  width:0;
+  height:0;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-top:10px solid #d3d3d3;
+  position:absolute;
+  right:25px;
+  bottom:0;
+  -webkit-transform:rotate(-30deg);
+          transform:rotate(-30deg);
+  -webkit-transform-origin:bottom left;
+          transform-origin:bottom left;
 }
-.about-us .bubbled-text-block span {
-  color: #006420;
-  font-weight: 600;
-  font-size: 25px;
-  text-transform: uppercase;
-  letter-spacing: .02em;
-  line-height: 1em;
+.about-us .bubbled-text-block span{
+  color:#006420;
+  font-weight:600;
+  font-size:25px;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+  line-height:1em;
+  margin-top:25px;
 }
-.about-us .bubbled-text-block h3 {
-  margin-top: 10px;
-  color: #002c42;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1em;
+.about-us .bubbled-text-block p{
+  margin-top:10px;
+  color:#002c42;
+  font-weight:600;
+  font-size:18px;
+  line-height:1em;
+  text-align:center;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991px){
 	.about-us a{
-		margin: 0;
-		padding: 15px 20px;
+		margin:0;
+		padding:15px 20px;
 	}
 	.about-us p{
-		width: 100%;
-		font-size: 16px;
+		width:100%;
+		font-size:16px;
 	}
 	.about-us img{
-		width: 57%;
-		height: 100%;
+		width:57%;
+		height:100%;
 	}
-	.about-us .bubbled-text-block {
-		width: 155px;
-		height: 150px;
-		margin-top: -65px;
+	.about-us .bubbled-text-block{
+		width:155px;
+		height:150px;
+		margin-top:-65px;
 	}
-	.about-us .bubbled-text-block span {
-		font-size: 22px;
+	.about-us .bubbled-text-block span{
+		font-size:22px;
 	}
-	.about-us .bubbled-text-block h3 {
-		font-size: 16px;
+	.about-us .bubbled-text-block p{
+		font-size:16px;
 	}
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px){
 	.about-us a{
-		margin: 0;
-		font-size: 15px;
-		padding: 12px 18px;
+		margin:0;
+		font-size:15px;
+		padding:12px 18px;
 	}
 	.about-us p{
-		width: 100%;
-		font-size: 15px;
+		width:100%;
+		font-size:15px;
 	}
 	.about-us img{
-		width: 60%;
-		height: 100%;
+		width:60%;
+		height:100%;
 	}
-	.about-us .bubbled-text-block {
-		width: 140px;
-		height: 140px;
-		margin-top: -68px;
+	.about-us .bubbled-text-block{
+		width:140px;
+		height:140px;
+		margin-top:-68px;
 	}
-	.about-us .bubbled-text-block span {
-		font-size: 22px;
+	.about-us .bubbled-text-block span{
+		font-size:22px;
 	}
-	.about-us .bubbled-text-block h3 {
-		font-size: 16px;
+	.about-us .bubbled-text-block p{
+		font-size:16px;
 	}
 	.about-us h5{
-		margin-left: 0px;
+		margin-left:0px;
 	}
 	.about-us ul{
-		margin-left: -30px;
+		margin-left:-30px;
 	}
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575px){
+	.about-us p{
+		width:100%;
+		font-size:15px;
+	}
+	.about-us img{
+		width:100%;
+		height:100%;
+		margin-top:20px;
+	}
+	.about-us .bubbled-text-block{
+		width:130px;
+		height:130px;
+		margin-top:-15px;
+		margin-right:20px;
+	}
+	.about-us .bubbled-text-block span{
+		font-size:20px;
+	}
+	.about-us .bubbled-text-block p{
+		font-size:14px;
+	}
+	.about-us ul i{
+		margin-left:-10px;
+	}
+	.about-us h5{
+		margin-left:0px;
+	}
+}
+@media only screen and (max-width: 480px){
 	.about-us p{
 		width: 100%;
 		font-size: 15px;
 	}
+	.about-us h3{
+		margin-top:30px;
+		font-size:22px;
+	}
 	.about-us img{
-		width: 100%;
-		height: 100%;
-		margin-top: 20px;
+		width:100%;
+		height:100%;
+		margin-top:20px;
 	}
-	.about-us .bubbled-text-block {
-		width: 130px;
-		height: 130px;
-		margin-top: -15px;
-		margin-right: 20px;
+	.about-us .bubbled-text-block{
+		width:120px;
+		height:120px;
+		margin-top:-20px;
 	}
-	.about-us .bubbled-text-block span {
-		font-size: 20px;
+	.about-us .bubbled-text-block span{
+		font-size:20px;
 	}
-	.about-us .bubbled-text-block h3 {
-		font-size: 14px;
+	.about-us .bubbled-text-block p{
+		font-size:14px;
 	}
 	.about-us ul i{
-		margin-left: -10px;
+		margin-left:-10px;
 	}
 	.about-us h5{
-		margin-left: 0px;
+		margin-left:0px;
 	}
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 375px){
 	.about-us p{
-		width: 100%;
-		font-size: 15px;
-	}
-	.about-us img{
-		width: 100%;
-		height: 100%;
-		margin-top: 20px;
-	}
-	.about-us .bubbled-text-block {
-		width: 120px;
-		height: 120px;
-		margin-top: -20px;
-	}
-	.about-us .bubbled-text-block span {
-		font-size: 20px;
-	}
-	.about-us .bubbled-text-block h3 {
-		font-size: 14px;
+		width:100%;
+		font-size:16px;
 	}
 	.about-us ul i{
-		margin-left: -10px;
+		margin-left:0px;
 	}
 	.about-us h5{
-		margin-left: 0px;
-	}
-}
-@media only screen and (max-width: 375px) {
-	.about-us p{
-		width: 100%;
-		font-size: 16px;
-	}
-	.about-us ul i{
-		margin-left: 0px;
-	}
-	.about-us h5{
-		margin-left: 0px;
-	}
-	.about-us h5{
-		font-size: 27px;
+		font-size:27px;
 	}
 	.about-us img{
-		width: 100%;
-		height: 100%;
-		margin-top: 20px;
-		padding-bottom: 20px;
+		width:100%;
+		height:100%;
+		margin-top:20px;
+		padding-bottom:20px;
 	}
-	.about-us .bubbled-text-block {
-		width: 120px;
-		height: 120px;
-		margin-top: -60px;
+	.about-us .bubbled-text-block{
+		width:120px;
+		height:120px;
+		margin-top:-60px;
 	}
-	.about-us .bubbled-text-block span {
-		font-size: 20px;
+	.about-us .bubbled-text-block span{
+		font-size:20px;
 	}
-	.about-us .bubbled-text-block h3 {
-		font-size: 14px;
+	.about-us .bubbled-text-block p{
+		font-size:14px;
 	}
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px){
 	.about-us p{
-		width: 100%;
-		font-size: 15px;
-	}
-	.about-us h5{
-		font-size: 27px;
+		width:100%;
+		font-size:15px;
 	}
 	.about-us img{
-		width: 100%;
-		height: 100%;
-		margin-top: 20px;
-		padding-bottom: 60px;
+		width:100%;
+		height:100%;
+		margin-top:20px;
+		padding-bottom:60px;
 	}
-	.about-us .bubbled-text-block {
-		width: 115px;
-		height: 115px;
-		margin-top: -50px;
+	.about-us .bubbled-text-block{
+		width:115px;
+		height:115px;
+		margin-top:-50px;
 	}
-	.about-us .bubbled-text-block span {
-		font-size: 20px;
+	.about-us .bubbled-text-block span{
+		font-size:20px;
 	}
-	.about-us .bubbled-text-block h3 {
-		font-size: 14px;
+	.about-us .bubbled-text-block p{
+		font-size:14px;
 	}
 }
 /*--------------------------------------------------------------
 # MISSION
 --------------------------------------------------------------*/
 .mission{
-	margin-top: 50px;
+	margin-top:50px;
 }
 .vision{
-	padding: 15px 5px;
-	background: #fafafa;
-	border: 3px solid #082842;
-	margin: 20px;
-	height: 300px;
+	padding:15px 5px;
+	background:#fafafa;
+	border:3px solid #082842;
+	margin:20px;
+	height:300px;
 }
-.vision h4{
-	font-size: 25px;
-	margin-top: 50px;
-	color: #006420;
-	text-align: center;
-	font-weight: bold;
-	font-family: 'Big Shoulders Display', cursive;
+.vision span{
+	font-size:25px;
+	margin-top:35px;
+	color:#006420;
+	display:block;
+	text-align:center;
+	font-weight:bold;
+	font-family:'Big Shoulders Display', cursive;
 }
 .vision p{
-	margin-top: 25px;
-	line-height: 30px;
-	padding: 0px 5px;
-	font-size: 16px;
-	text-align: center;
+	margin-top:15px;
+	line-height:30px;
+	padding:0px 5px;
+	font-size:16px;
+	text-align:center;
 }
 .vision li{
-	margin-top: 25px;
-	line-height: 5px;
-	font-size: 16px;
-	margin-left: 15px;
+	margin-top:25px;
+	line-height:5px;
+	font-size:16px;
+	margin-left:15px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px){
 	.vision{
-		width: 100%;
-		display: inline-block;
-		margin-left: auto;
-		margin-right: auto;
+		width:100%;
+		display:inline-block;
+		margin-left:auto;
+		margin-right:auto;
 	}
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575px){
 	.vision{
-		width: 65%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		width:65%;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
 	}
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px){
 	.vision{
-		width: 80%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		width:80%;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
 	}
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px){
 	.vision{
-		width: 90%;
+		width:90%;
 	}
 }
 /*--------------------------------------------------------------
@@ -2078,106 +2081,106 @@ nav .breadcrumb li a:hover{
 # HOW WE WORK
 --------------------------------------------------------------*/
 .work-mode{
-	margin-top: 50px;
-	background: url('/static/images/work-mode.webp');
-	background-position: top left;
+	margin-top:50px;
+	background:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('/static/images/work-mode.webp');
+	background-position:top left;
 }
 .working{
-	padding: 45px 50px;
-	border: 3px solid #fff;	
+	padding:45px 50px;
+	border:3px solid #fff;	
 }
-.working h5{
-	font-size: 42px;
-	margin-top: 30px;
-	color: #b43d3d;
-	margin-left: 50%;
-	font-family: 'Teko', sans-serif;
+.working span{
+	font-size:42px;
+	margin-top:30px;
+	color:#b43d3d;
+	margin-left:50%;
+	font-family:'Teko', sans-serif;
 }
 .working h4{
-	font-size: 28px;
-	font-weight: 600;
-	margin-top: 20px;
-	text-align: center;
-	color: #2dc977;
-	font-family: 'Big Shoulders Display', cursive;
+	font-size:28px;
+	font-weight:600;
+	margin-top:20px;
+	text-align:center;
+	color:#2dc977;
+	font-family:'Big Shoulders Display', cursive;
 }
 .working p{
-	margin-top: 25px;
-	width: 100%;
-	padding: 0px 25px;
-	font-size: 16px;
-	text-align: justify;
-	color: #fff;
+	margin-top:25px;
+	width:100%;
+	padding:0px 15px;
+	font-size:16px;
+	text-align:justify;
+	color:#fff;
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1199px){
 	.working p{
-		font-size: 15px;
+		font-size:15px;
 	}
 	.working h4{
-		font-size: 22px;
+		font-size:22px;
 	}
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991px){
 	.working p{
-		font-size: 15px;
-		width: 100%;
+		font-size:15px;
+		width:100%;
 	}
 	.working h4{
-		font-size: 25px;
+		font-size:25px;
 	}
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px){
 	.work-mode .working{
-		width: 50%;
+		width:50%;
 	}
 	.working p{
-		font-size: 15px;
+		font-size:15px;
 	}
 	.working h4{
-		font-size: 20px;
+		font-size:20px;
 	}
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575px){
 	.work-mode .working{
-		width: 100%;
+		width:100%;
 	}
 	.working p{
-		font-size: 15px;
-		width: 70%;
-		display: block;
-		margin-left: auto;
+		font-size:15px;
+		width:70%;
+		display:block;
+		margin-left:auto;
 		margin-right: auto;
 	}
 	.working h4{
-		font-size: 20px;	
+		font-size:20px;	
 	}
 	.working h6{
-		font-size: 20px;
+		font-size:20px;
 	}
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px){
 	.working p{
-		font-size: 15px;
-		width: 100%;
+		font-size:15px;
+		width:100%;
 	}
-	.working h5{
-		font-size: 20px;
-		line-height: 25px;
+	.working span{
+		font-size:20px;
+		line-height:25px;
 	}
 }
 /*--------------------------------------------------------------
 # FEATURED PROJECT
 --------------------------------------------------------------*/
 .hp-project{
-	margin-top: 30px;
-	background: #fafafa;
-	padding-bottom: 50px;
+	margin-top:50px;
+	background:#fafafa;
+	padding-bottom:50px;
 }
 .featured-project{
-	padding: 10px 30px;
-	text-align: center;
-	margin-top: 20px;
-	width: 100%;
+	padding:10px 30px;
+	text-align:center;
+	margin-top:20px;
+	width:100%;
 
 }
 .featured-project amp-img{
@@ -2635,7 +2638,7 @@ nav .breadcrumb li a:hover{
 	transform: translateY(60px);
 	transition: .5s;
 }
-.single-team .team-text h5{
+.single-team .team-text span{
 	text-transform: capitalize;
 	font-weight: 700;
 	font-size: 24px;
@@ -4000,7 +4003,7 @@ nav .breadcrumb li a:hover{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/static/images/testimonial.webp');
 	background-size: cover;
 }
-.single-testimonial-style-three h3, .single-testimonial-style-three p {
+.single-testimonial-style-three h6, .single-testimonial-style-three p {
   margin: 0;
 }
 .single-testimonial-style-three i {
@@ -4195,7 +4198,7 @@ nav .breadcrumb li a:hover{
 		width: 100%; 
 		padding: 20px 20px;
 	}
-	.single-testimonial-style-three h3, .single-testimonial-style-three p {
+	.single-testimonial-style-three h6, .single-testimonial-style-three p {
 		width: 100%;
 		font-size: 14px;
 	}
@@ -4219,11 +4222,11 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 		font-size: 25px;
 	}
-	.single-testimonial-style-three h3, .single-testimonial-style-three p {
+	.single-testimonial-style-three h6, .single-testimonial-style-three p {
 		width: 100%;
 		font-size: 15px;
 	}
-	.single-testimonial-style-three h3, .single-testimonial-style-three span {
+	.single-testimonial-style-three h6, .single-testimonial-style-three span {
 		width: 100%;
 		font-size: 15px;
 	}
@@ -4239,7 +4242,7 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 		font-size: 14px;
 	}
-	.testimony .title-block .sec-title h2{
+	.testimony .title-block .sec-title p{
 		font-size: 22px;
 	}
 	.testimony .title-block .sec-title a{
