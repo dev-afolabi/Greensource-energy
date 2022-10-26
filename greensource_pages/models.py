@@ -57,7 +57,6 @@ class Solar(models.Model):
     def get_absolute_url(self):
         return reverse('project_details',kwargs={'slug':self.slug})
 
-
 class Featured(models.Model):
     title = models.CharField(max_length=100)
     date = models.DateField(auto_now_add=True)
@@ -71,7 +70,6 @@ class Featured(models.Model):
         return self.title
 
 class Landingpage(models.Model):
-    title = models.CharField(max_length = 200)
     date = models.DateField(auto_now_add=True)
     name = models.CharField(max_length = 200)
 
@@ -79,7 +77,6 @@ class Landingpage(models.Model):
         ordering = ['-date']
         get_latest_by = 'date'
 
-    def __str__(self):
-        return self.title
+
 
 
