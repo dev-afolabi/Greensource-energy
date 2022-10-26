@@ -519,23 +519,23 @@ html body.offcanvas-menu:before {
 	padding-left: 10px;
 }
 .carousel-caption .btn {
-	background: transparent;
+	background: #b11c1c;
 	color: #fff;
 	font-weight: bold;
 	font-size: 16px;	
 	width: auto;
 	font-family: 'Play', sans-serif;
-
 	margin-left: 5px;
 	padding: 20px 15px;
-	border: 2px solid #fff;
-	border-radius: 15px;
+	border: outset;
+	border-radius: 5px;
 	animation-delay: 2s;
 	letter-spacing: 1.5px;
 }
 .carousel-caption .button .btn:hover {
-	background: #006420;
-	color:#fff;
+	background: #fff;
+	color:#b11c1c;
+	border: outset;
 }
 .carousel a {
 	margin-top: 0px;
@@ -881,6 +881,15 @@ nav .breadcrumb li a:hover{
 	text-align: center;
 	text-transform: capitalize;
 }
+.service .red-head{
+	margin-top: 100px;
+	font-family: 'Play', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	color: #ff0000;
+	text-align: center;
+	text-transform: capitalize;
+}
 .service hr{
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -895,9 +904,6 @@ nav .breadcrumb li a:hover{
 	margin-top: 0px; 
 }
 @media only screen and (max-width: 1199px) {
-	.service .head{
-		font-size: 16px;
-	}
 	.service p{
 		font-size: 20px;
 	}
@@ -908,7 +914,6 @@ nav .breadcrumb li a:hover{
 	}
 	.service .head{
 		margin-top: 0px;
-		font-size: 16px;
 	}
 	.service p{
 		font-size: 20px;
@@ -920,7 +925,6 @@ nav .breadcrumb li a:hover{
 	}
 	.service .head{
 		margin-top: 0px;
-		font-size: 16px;
 	}
 	.service p{
 		font-size: 20px;
@@ -936,7 +940,6 @@ nav .breadcrumb li a:hover{
 	}
 	.service .head{
 		margin-top: 0px;
-		font-size: 15px;
 	}
 }
 @media only screen and (max-width: 480px) {
@@ -949,7 +952,6 @@ nav .breadcrumb li a:hover{
 	}
 	.service .head{
 		margin-top: 0px;
-		font-size: 15px;
 	}
 }
 @media only screen and (max-width: 375px) {
@@ -962,7 +964,6 @@ nav .breadcrumb li a:hover{
 	}
 	.service .head{
 		margin-top: 0px;
-		font-size: 17px;
 	}
 }
 @media only screen and (max-width: 320px) {
@@ -975,7 +976,6 @@ nav .breadcrumb li a:hover{
 	}
 	.service .head{
 		margin-top: 0px;
-		font-size: 15px;
 	}
 }
 /*--------------------------------------------------------------
@@ -1305,13 +1305,15 @@ nav .breadcrumb li a:hover{
 }
 .single-service-style-three {
 	position: relative;
+	border: outset;
+	box-shadow: #001f3f;
 }
 .single-service-style-three:before {
 	position: absolute;
 	display: inline-block;
 	left: 0;
 	bottom: 0px;
-	height: 2px;
+	height: 3px;
 	width: 100%;
 	background-color: #006420;
 	content: "";
@@ -1325,7 +1327,7 @@ nav .breadcrumb li a:hover{
 	z-index: 10;
 }
 .single-service-style-three .text-block {
-	background: #fff;
+	background: transparent;
 	padding: 0 30px;
 	text-align: center;
 	padding-top: 60px;
@@ -1879,23 +1881,6 @@ nav .breadcrumb li a:hover{
 /*--------------------------------------------------------------
 # HOMEPAGE PRICING / PRICING PAGE
 --------------------------------------------------------------*/
-.landing-page p{
-	margin-top: 100px;
-	font-size: 16px;
-	padding: 0px 20px;
-	max-width: 1200px;
-	line-height: 33px;
-	text-align: justify;
-}
-.landing-page i{
-	font-size: 14px;
-	color: #fff;
-	background: #001f3f;
-	padding: 10px;
-	margin-right: 15px;
-	border-radius: 100%;
-	float: left;
-}
 .pricing{
 	padding: 0 5px;
 	margin-top: 50px;
@@ -1942,6 +1927,14 @@ nav .breadcrumb li a:hover{
 	justify-content: center;
 	text-align: center;
 }
+.pricing-table p{
+	font-size: 25px;
+	margin-top: 50px;
+	color: #006420;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Play', sans-serif;
+}
 .table{
 	background: none;
 	padding: 0px 0px;
@@ -1961,10 +1954,17 @@ nav .breadcrumb li a:hover{
 	text-transform: uppercase;
 	font-family: 'Play', sans-serif;
 	font-size: 19px;
-	font-weight: 550;
-	color: #2dc997;
+	font-weight: 590;
+	color:red;
 	background-color: #1b1b1b;
 	padding: 25px 0;
+}
+.table span{
+	text-transform: uppercase;
+	font-family: 'Play', sans-serif;
+	font-size: 19px;
+	font-weight: 600;
+	padding: 10px 0;
 }
 .table h6{
 	margin: 0;
@@ -2173,6 +2173,8 @@ nav .breadcrumb li a:hover{
 --------------------------------------------------------------*/
 .hp-project{
 	margin-top:50px;
+	justify-content: center;
+	align-items:center;
 	background:#fafafa;
 	padding-bottom:50px;
 }
@@ -2184,7 +2186,7 @@ nav .breadcrumb li a:hover{
 
 }
 .featured-project amp-img{
-	margin: 10px 10px;
+	margin:10px 10px;
 }
 @media only screen and (max-width: 1199px) {
 	.featured-project amp-img{
@@ -3175,7 +3177,7 @@ nav .breadcrumb li a:hover{
 	-webkit-transition: .3s all ease;
 	-o-transition: .3s all ease;
 	transition: .3s all ease; 
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4))#b11c1c;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4))#ff0000;
 	font-weight: 600;
 	font-family: 'Play', sans-serif;
 	font-size: 20px;
@@ -3424,6 +3426,7 @@ nav .breadcrumb li a:hover{
 	margin-top: 150px;
 	font-size: 35px;
 	width: 90%;
+	padding-left: 35px;
 }
 .content .map embed{
 	margin-top: 30px;
@@ -3475,6 +3478,62 @@ nav .breadcrumb li a:hover{
 	background: #001f3f; 
 	color: #cdcdcd; 
 	transition: .3s;
+}
+#contact-form .form-row p{
+	font-size: 18px;
+	text-align: left;
+	padding-left: 10px;
+	color: #555;
+}
+#contact-form .form-row span{
+	font-size: 18px;
+	text-align: left;
+	padding-left: 10px;
+	color: #555;
+	margin-top: 15px;
+}
+#contact-form .form-check input{
+	height: 35px;
+	width: 35px;
+}
+#contact-form .form-check label{
+	font-size: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 45px;
+	color: #555;
+}
+#contact-form .form-row .form-check-label{
+	color: red;
+	font-weight: bold;
+}
+#contact-form .form-check{
+	margin-top: 0px;
+	display: inline-block;
+}
+#contact-form input[type=checkbox] {
+	border: 1.9px solid #555;
+	padding: 0.5em;
+	-webkit-appearance: none;
+}
+input[type=checkbox]:checked {
+	background: url(/static/images/bbb.webp) no-repeat center center;
+	background-size: 12px 12px;
+}
+input[type=checkbox]:focus {
+	outline-color: transparent;
+}
+#contact-form input[type=radio] {
+	border: 1.9px solid #555;
+	padding: 0.5em;
+	-webkit-appearance: none;
+}
+input[type=radio]:checked {
+	background: url(/static/images/bbb.webp) no-repeat center center;
+  	background-size: 12px 12px;
+}
+input[type=radio]:focus {
+	outline-color: transparent;
 }
 .content p{
 	font-size: 15px;
@@ -5711,4 +5770,102 @@ nav .pagination a:hover{
 	.video-block-style-one h3 {
 		font-size: 28px;
 	}
+}
+/*--------------------------------------------------------------
+# LANDING PAGE
+--------------------------------------------------------------*/
+.landing-page .description{
+	margin-top: 50px;
+	font-size: 20px;
+	padding: 0px 20px;
+	max-width: 1200px;
+	text-align: center;
+}
+.landing-page .description span{
+	color:#ff0000;
+	font-size: 35px;
+	letter-spacing: 1px;
+}
+.landing-page .promo{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/images/work-mode.webp');
+	font-size: 40px;
+	color:#02d977;
+	text-align: center;
+	margin-top: 100px;
+	height: 400px;
+	width: 60%;
+	padding: 100px 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.landingpage-header{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/images/header-img.webp');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	top: 0;
+	height: 250px;
+	width: auto;
+	animation-delay: 1s;
+	position: relative;
+}
+.landing-logo{
+	position: absolute;
+	margin-top: -220px;
+}
+.landing-page p{
+	font-size: 25px;
+	text-align: center;
+	margin-top: 20px;
+}
+.landing-page span{
+	font-size: 30px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	color: #b11c1c;
+	text-transform: uppercase;
+	font-family: 'Teko', sans-serif;
+}
+.regular-prices{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: #ff0000;
+}
+.regular-prices .title{
+	margin-top: 30px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000;
+} 
+.regular-prices p{
+	text-align: center;
+	font-size: 20px;
+}
+.delivery-terms{
+	margin-top: 100px;
+}
+.delivery-terms{
+	font-size: 17px;
+	text-align: center;
+	width: 90%;
+	line-height: 25px;
+	margin-top: 30px;
+}
+.footer{
+	position: relative;
+	color: #fff;
+	margin-top: 150px;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+	background-color: #141d2a; 
+}
+.footer .copyright {
+	color: #fff; 
+	text-align: center;
+	bottom: 0;
+	font-size: 20px;
+	padding-top: 1rem;
 }

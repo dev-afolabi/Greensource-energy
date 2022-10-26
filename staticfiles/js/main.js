@@ -324,6 +324,41 @@ $(document).ready(function () {
             }
         }
     });
+    $('#landing-page').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        smartSpeed: 700,
+        width: 1200,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        items: 1,
+        responsive: {
+            320: {
+                items: 1
+            },
+            375: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            991: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        }
+    });
     $('.brand-carousel-one').owlCarousel({
         loop: true,
         margin: 10,
