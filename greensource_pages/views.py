@@ -64,8 +64,8 @@ def our_team(request):
 
 def pricing(request):
     template = {
-        "landingpage" : Landingpage.objects.all(),
         "featured" : Featured.objects.all(),
+        "landingpage" : Landingpage.objects.all(),
     }
     if request.method == 'GET':
         form = OrderForm()
