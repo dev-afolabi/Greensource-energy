@@ -91,7 +91,7 @@ def pricing(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('success')
-    return render(request, 'greensource_pages/pricing.html', {'form':form, 'template': template})
+    return render(request, 'greensource_pages/pricing.html', {'form':form, 'template':template})
 
 def success(request):
     return render(request, "contact_us/success.html")
