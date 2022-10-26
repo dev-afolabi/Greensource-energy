@@ -1,68 +1,114 @@
-{% extends 'base_layout.html' %}
-{% block nav-service %} active {% endblock %}
 {% load static %}
-{% block title %}Pricing And Services {{ block.super }}{% endblock %}
-{% block content %}
-<div class="container-fluid padding">
-    <div class="header row padding">
-        <div class="col-12 animated fadeIn">
-            <h1>Switch to Solar and Save</h1>
+<!DOCTYPE html>
+<html ⚡ lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=5" />
+    <meta name="audience" content="all" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv = "content-language" content = "en">
+    <meta name="revisit-after" content="2 days" />
+    <meta name="description" content="Need a cost effective and reliable Solar Home System for your Home or Business? We will design / install a custom system that fits your energy requirement!"/>
+    <meta name="keywords" content="solar company, solar energy, solar providers near me, solar installers near me, renewable energy, solar companies near me, solar solutions, solar panel companies, solar power companies, top solar companies, solar panel companies near me, affordable solar, go green solar, solar installation company, solar energy solutions, solar panel distributor, Solar business, solar panel suppliers, solar pv system, solar module, best solar panels, best portable solar panels, off grid solar installers near me, residential solar installers near me, solar panel cost near me, home solar companies near me, clean solar panels, solar energy questions, solar energy advantages" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="greensourcenergy.com" />
+    <meta name="twitter:creator" content="@greenn_energy" />
+    <meta name="twitter:title" content="Solar Energy for Home and Business" />
+    <meta name="twitter:description" content="Need a cost effective and reliable Solar Home System for your Home or Business? We will design / install a custom system that fits your energy requirement!" />
+    <meta name="twitter:image:src" content="greensourcenergy.com/static/images/homepage2.webp" />
+    <meta property="og:title" content="Harness the sun to power Homes and Businesses - Greensource Energy" />
+    <meta property="og:url" content="https://greensourcenergy.com" />
+    <meta property="og:site_name" content="Greensource Energy" />
+    <meta property="og:image" content="https://greensourcenergy.com/static/images/greensource2.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Need a cost effective and reliable Solar Home System for your Home or Business? We will design / install a custom system that fits your energy requirement!"/>
+    <title>{% block title %}Greensource  Landingpage {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="{% static 'css/allcss.css' %}" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="print" onload="this.media='all'" />     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" media="print" onload="this.media='all'" />
+    <link href="{% static 'icomoon/style.css' %}" rel="stylesheet" media="print" onload="this.media='all'" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Play|Big+Shoulders+Display|Teko&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1, end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1, end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1, end) 0s 1 normal both;animation:-amp-start 8s steps(1, end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="canonical" href="https://greensourcenergy.com/" />
+    <link rel="preload" fetchpriority="high" as="image" href="/static/images/greensourcelogo3.webp" type="image/webp" />
+    <link rel="preload" fetchpriority="low" as="image" href="/static/images/homepage2.webp" type="image/webp" />
+    <link rel="preload" fetchpriority="low" as="image" href="/static/images/video-bg.webp" type="image/webp" />
+</head>
+{% block content %} 
+{% load crispy_forms_tags %}
+<body>
+    <div class="container-fluid padding">
+        <div class="header row padding">
+            <div class="col-12 animated fadeIn">
+                <h1>Reliable Solar Home Solution</h1>
+            </div>
         </div>
     </div>
-</div>
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-            <a href="{% url 'index' %}">Home</a>
-        </li>
-        <li class="breadcrumb-item">
-            <a href="{% url 'services' %}">Services</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">Pricing</li>
-    </ol>
-</nav>
-<section>
     <div class="container padding">
-        <div class="row landing-page padding">
-            <p>
-                 Our installation comes with
-                <strong>one year</strong> after sales technical support and aims to give optimum satisfaction and
-                <strong>cost effective solution</strong> without compromising quality. On request, we will carryout load analysis on your facility
-                to create custom-fit design, if the above designs does not meet your energy demands. Also our pricing package comes with
-                installation kits, installation cost, logistics to site within Lagos. For site location outside Lagos, logistics is charged
-                separately. Lastly we source our solar component from
-                <strong>trusted and reliable suppliers</strong>, hence the one year warranty period incase of any default except for man-made cause
-                of defects or natural cause.
-            </p>
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="landing-logo">
+                    <a href="{% url 'pricing' %}" aria-label="header logo">
+                        <amp-img src="{% static 'images/greensourcelogo3.webp' %}" alt="company logo" width="240" height="50" noloading></amp-img>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+            <div class="container-fluid padding">
+                <div class="hp-project row  padding">
+                    <div class="featured-project col-12">
+                        {% for featured in template.featured %}
+                        <a href="{{ featured.pics.url }}" aria-label="featured project images">
+                            <amp-img src="{{ featured.pics.url }}" alt="awesome image" width="300" height="300"></amp-img>
+                        </a>
+                        {% endfor %}
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <div class="container padding">
+        <div class="row col padding">
+            <div class="landing-page">
+                <p class="description">This Solar hybrid system Home Solution gives optimum satisfaction, illuminates your home, Powers all critical
+                    home appliances. The solar systems can be used for  Residential and Commercial applications.<br/> 
+                    {% for landingpage in template.landingpage %}
+                    <span><strong>{{ landingpage.name }}</strong></span>
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+        <div class="row padding">
+            <div class="regular-prices col padding">
+                <p class="title">REGULAR PRICE>>></p>
+                <p>
+                    <strong>LITE</strong> - N450,000<br/>
+                    <strong>ACCESS</strong> - N575,000<br/>
+                    <strong>BETA</strong> - N650,000<br/>
+                    <strong>NOVA</strong> - N780,000
+                </p>
+                <p>SPECIAL OFFER: Get the LITE package for <strong>405,000</strong> instead of <strong>N450,000</strong> <br/>OR 
+                        Get the BETA package for <strong>N585,000</strong> instead of <strong>N650,000</strong>
+                </p>
+            </div>
         </div>
     </div>
     <div class="container-fluid padding">
-        <h5 class="pricing-header">MINI SOLAR</h5>
+        <h5 class="pricing-header">OUR PACKAGES</h5>
         <div class="pricing-table row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <p>Price - N405, 000</p>
                 <div class="table">
-                    <h5>0.36kwp - solar</h5>
+                    <h5>Lite</h5>
+                    <span>Description</span>
                     <div class="prices">
-                        N342, 000
-                        <span>
-                            <strong>300 W</strong> Mono Panels
-                            <br />
-                            <strong>30 AMPS</strong> Controller
-                            <br />
-                            <strong>150 AH</strong> Solar Battery
-                            <br />
-                            <strong>1 kVA</strong> Inverter
-                        </span>
-                    </div>
-                    <h6>solar capacity</h6>
-                    <p>All lighting (led recommended), A LED TV, A ceiling/standing Fan, A satelite decoder</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h5>0.54kwp - solar</h5>
-                    <div class="prices">
-                        N385, 000
                         <span>
                             <strong>540 W</strong> Mono Panels
                             <br />
@@ -74,14 +120,15 @@
                         </span>
                     </div>
                     <h6>solar capacity</h6>
-                    <p>All lighting (led recommended), 1 LED TV, Standing Fan, Home theatre/satelite decoder</p>
+                    <p>All lighting (led recommended), A LED TV, Ceiling/standing Fan, A satelite decoder</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <p>Price - N517, 500</p>
                 <div class="table">
-                    <h5>0.72kwp - solar</h5>
+                    <h5>Access</h5>
+                    <span>Description</span>
                     <div class="prices">
-                        N485, 000
                         <span>
                             <strong>720 W</strong> Mono Panels
                             <br />
@@ -89,187 +136,188 @@
                             <br />
                             <strong>200 AH</strong> Solar Battery
                             <br />
-                            <strong>2 KVA</strong> Inverter
-                        </span>
-                    </div>
-                    <h6>solar capacity</h6>
-                    <p>All lighting (led recommended), A LED TV, 2 ceiling Fan, A home theatre/satelite decoder</P>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h5>1.08kwp - solar</h5>
-                    <div class="prices">
-                        N630, 000
-                        <span>
-                            <strong>1.08 KW</strong> Mono Panels
-                            <br />
-                            <strong>50 AMPS</strong> Controller
-                            <br />
-                            <strong>300 AH</strong> Solar Battery
-                            <br />
                             <strong>2.5 KVA</strong> Inverter
                         </span>
                     </div>
                     <h6>solar capacity</h6>
-                    <p>All lighting (led recommended), A LED/LCD TV, 2 ceiling Fan, A home theatre/satelite decoder</p>
+                    <p>All lighting (led recommended), 1 LED TV, Standing Fan, Home theatre/satelite decoder</p>
                 </div>
             </div>
-        </div>
-        <h5 class="pricing-header"> STANDARD SOLAR</h5>
-        <div class="pricing-table row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <p>Price - N585, 000</p>
                 <div class="table">
-                    <h5>1.6kwp - solar</h5>
+                    <h5>Beta</h5>
+                    <span>Description</span>
                     <div class="prices">
-                        N1, 125, 000
                         <span>
-                            <strong>1600 W</strong> Mono Panels
+                            <strong>1.2 KW</strong> Mono Panels
                             <br />
                             <strong>60 AMPS</strong> Controller
                             <br />
-                            <strong>400 AH</strong> Solar Battery
+                            <strong>300 AH</strong> Solar Battery
                             <br />
                             <strong>3 KVA</strong> Inverter
+                        </span>
                     </div>
                     <h6>solar capacity</h6>
-                    <p>All lighting (led recommended), 2 LED/LCD TVs, 2 Laptops, 3 ceiling Fan, Freezer, A home theatre/satelite decoder</p>
+                    <p>All lighting (led recommended), A LED TV, 2 ceiling Fan, Mini Freezer, decoder, PC/Laptop</P>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <p>Price - N702, 000</p>
                 <div class="table">
-                    <h5>2kwp - solar</h5>
+                    <h5>Nova</h5>
+                    <span>Description</span>
                     <div class="prices">
-                        N1, 520, 000
                         <span>
-                            <strong>2000 W</strong> Mono Panels
+                            <strong>1.8 KW</strong> Mono Panels
                             <br />
-                            <strong>80 AMPS</strong> Controller
+                            <strong>40 AMPS</strong> MPPT Controller
                             <br />
-                            <strong>600 AH</strong> Solar Battery
+                            <strong>400 AH</strong> Solar Battery
                             <br />
                             <strong>3.5 KVA</strong> Inverter
+                        </span>
                     </div>
                     <h6>solar capacity</h6>
-                        <p>All lighting (led recommended), 2 LED/LCD TVs, Freezer, 4 Fans, Washing machine, Home theatre/satelite decoder</p>
+                    <p>All lighting (led recommended), A LED/LCD TV, 2 ceiling Fan, A Freezer, decoder, PC/Laptop</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h5>2.5kwp - solar</h5>
-                    <div class="prices">
-                        N1, 950, 000
-                        <span>
-                            <strong>2500 W</strong> Mono Panels
-                            <br />
-                            <strong>80 AMPS</strong> Controller
-                            <br />
-                            <strong>800 AH</strong> Solar Battery
-                            <br />
-                            <strong>3.5 KVA</strong> Inverter
-                    </div>
-                    <h6>Solar capacity</h6>
-                        <p>
-                            All lighting (led recommended), 3 LED/LCD TVs, Freezer, Fridge, 4 Fans, Washing machine, Home theatre/satelite decoder</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h5>3kwp - solar</h5>
-                    <div class="prices">
-                        N2, 350, 000
-                        <span>
-                            <strong>3000 W</strong> Mono Panels
-                            <br />
-                            <strong>100 AMPS</strong> MPPT Controller
-                            <br />
-                            <strong>800 AH</strong> Solar Battery
-                            <br />
-                            <strong>4.7 KVA</strong> Inverter
-                    </div>
-                    <h6>Solar capacity</h6>
-                    <p>All lighting (led recommended), 4 LED/LCD TVs, Freezer, 2 Laptops, 4 Fans, Wash/pump machine, Home theatre</p>
-                </div>
-			</div>
-        </div>
-        <h5 class="pricing-header">PREMIUM SOLAR</h5>
-        <div class="pricing-table row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h5>4kwp - solar</h5>
-                    <div class="prices">
-                        N3, 500, 000
-                        <span>
-                            <strong>4000 W</strong> Mono Panels
-                            <br />
-                            <strong>120 AMPS</strong> Controller
-                            <br />
-                            <strong>800 AH</strong> Solar Battery
-                            <br />
-                            <strong>5 KVA</strong> Inverter
-                    </div>
-                    <h6>Solar capacity</h6>
-                    <p>All lighting (led recommended), 3 TVs, 2 Freezer/Wash machine, 1.5hp smart AC, Pump machine, Home theatre</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h5>6kwp - solar</h5>
-                    <div class="prices">
-                        N4, 580, 500
-                        <span>
-                            <strong>6000 W</strong> Mono Panels
-                            <br />
-                            <strong>140 AMPS</strong> Controller
-                            <br />
-                            <strong>1000 AH</strong> Solar Battery
-                            <br />
-                            <strong>7.5 KVA</strong> Inverter
-                    </div>
-                    <h6>solar capacity</h6>
-                    <p>All lighting (led recommended), 4 TVs, 2 Freezers/Wash machine, 2 1Hp smart AC, A pump machine, Home theatre</p>
-
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h5>8kwp - solar</h5>
-                    <div class="prices">
-                        N5, 500, 000
-                        <span>
-                            <strong>7900 W</strong> Mono Panels
-                            <br />
-                            <strong>160 AMPS</strong> Controller
-                            <br />
-                            <strong>1200 AH</strong> Solar Battery
-                            <br />
-                            <strong>8 KVA</strong> Inverter
-                    </div>
-                    <h6>Solar capacity</h6>
-                        <p>All lighting (led recommended), 4 TVs, 2 Freezer/Wash machine, 3 1Hp smart AC, Pump machine, Home theatre</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="table">
-                    <h5>10KWp - solar</h5>
-                    <div class="prices">
-                        N6, 550, 000
-                        <span>
-                            <strong>10 KW</strong> Mono Panels
-                            <br />
-                            <strong>200 AMPS</strong> Controller
-                            <br />
-                            <strong>1500 AH</strong> Solar Battery
-                            <br />
-                            <strong>10 KVA</strong> Inverter
-                    </div>
-                    <h6>Solar capacity</h6>
-                    <p>All lighting (led recommended), 4 TVs, 2 Freezers/Wash machine, 4 1Hp smart AC, Pump machine, Home theatre</p>
-                </div>
-            </div>
-            <span>NB:  <br />
-                Prices are subject to changes based on current economic realities and Inflation.</span>
         </div>
     </div>
-</section>
+    <div class="container-fluid padding">
+        <div class="row contact col-lg-6 col-md-9 col-xs-12">
+            <h4>Fill The Form With Your Correct Details To Place Your Order Right Away</h4>
+        </div>
+        <div class="col-lg-12">
+            <div id="contact-form" class="col-xs-12 col-md-9 col-lg-6">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.first_name|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.last_name|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.phone|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                            {{ form.city|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-12 mb-0">
+                            {{ form.address|as_crispy_field }}
+                        </div>
+                        {{ form.message }}
+                        <span>Select a Pricing Package:</span>
+                        <div class="form-check col-md-12 mb-0">
+                            {{ form.service_option|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-12 mb-0">
+                            {{ form.agree|as_crispy_field }}
+                        </div>
+                    </div>
+                    <button type="submit" name="submit" class="btn"><strong>ORDER NOW</strong></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="video-block-style-one text-center">
+        <div class="container">
+            <a href="#" class="video-popup" aria-label="play icon button">
+                <i class="fa fa-play"></i>
+            </a>
+            <p>We are Building the Future
+                <br> and Restoring the Past</p>
+        </div>
+    </section>
+    <section>
+        <div class="container padding">
+            <div class="service col-12">
+                <p class="head">service delivery terms</p>
+                <hr />
+            </div>
+            <P class="delivery-terms">Once your order is received, Our customer service representative will contact you within 24hrs to confirm your order and
+                scheduled a meeting with our installation team to determine when you will be available. Your job will be delivered within
+                7 days effective from the day of payments.</P>
+        </div>
+    </section>
+    <section>
+        <div class="container padding">
+            <div class="service col-12">
+                <p class="red-head">Warnings</p>
+                <hr />
+            </div>
+            <P class="delivery-terms">Please do not
+                <strong>PLACE ORDER</strong> if you do not have your money ready for the
+                <strong>LITE, ACCESS, BETA OR NOVA</strong> Packages. Most customers place order and are not available to receive thier orders.
+                This makes us loose valuable funds in millions.</P>
+        </div>
+    </section>
+    <section>
+        <div class="container padding">
+            <div class="address row padding">
+                <div class="add col-lg-4 col-md-6 col-xs-12">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h6>Location</h6>
+                    <p>Lagos Nigeria.</p>
+                </div>
+                <div class="add col-lg-4 col-md-6 col-xs-12">
+                    <i class="far fa-clock"></i>
+                    <h6>Working Hours</h6>
+                    <p>
+                        Mon - Sat | 9am - 6pm
+                    </p>
+                </div>
+                <div class="add col-lg-4 col-md-6 col-xs-12">
+                    <i class="fas fa-phone"></i>
+                    <h6>Contact Number</h6>
+                    <p>(234)913 2909 546
+                        <br /> (234)807 6068 609</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer class="footer">
+            <div class="container padding">
+                <a href="#" class="back-to-top" aria-label="roll back up button">
+                    <i class="fa fa-arrow-up"></i>
+                </a>
+                <p class="copyright">
+                    <small>&copy; Copyright &copy; 2021 All Rights Reserved | Greensource Energy</small>
+                </p>
+            </div>
+        </footer>
+    </section>
+</body>
 {% endblock %}
+<script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script async>window.jQuery || document.write('<script src="/static/js/jquery-3.6.1.min.js"><\/script>')</script></script>
+<script async src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script async>window.jQuery || document.write('<script src="/static/js/popper.min.js"><\/script>')</script></script>
+<script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script async>if (typeof ($.fn.modal) === 'undefined') { document.write('<script src="/static/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"><\/script>') }</script>
+<script defer src="{% static 'js/output.min.js' %}"></script>
+<script defer src="{% static 'js/main.js' %}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40167744-1"></script>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<script async>
+    var test = document.createElement("div")
+    test.className = "hidden d-none"
+    document.head.appendChild(test)
+    var cssLoaded = window.getComputedStyle(test).display === "none"
+    document.head.removeChild(test)
+    if (!cssLoaded) {
+        var link = document.createElement("link");
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.href = "{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}";
+        document.head.appendChild(link);
+    }
+</script>
+</html>

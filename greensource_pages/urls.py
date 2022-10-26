@@ -18,8 +18,7 @@ urlpatterns = [
     url(r'^privacy-Policy$', views.privacy, name= 'privacy'),
     url(r'^faq$', views.faq, name= 'faq'),
     url(r'^about/our-team$', views.our_team, name= 'our_team'),
-    url(r'^services/pricing$', views.pricing, name= 'pricing'),   
+    url(r'^landing-page$', views.pricing, name= 'pricing'),   
     url(r'^projects', views.projects, name='projects'),
     url(r'^project/(?P<slug>[\w-]+)/$', views.project_details, name='project_details'),
-    url(r'^structured-data$', views.structured_data, name= 'structured_data'),
 ]

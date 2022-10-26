@@ -1,5 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Images, Solar, Testimonial, Featured
+from .models import Images, Solar, Testimonial, Featured, Landingpage
+from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import render, redirect
+from .forms import OrderForm
 
 # Create your views here.
 def index(request):
@@ -59,10 +63,37 @@ def our_team(request):
     return render(request,"greensource_pages/our-team.html")
 
 def pricing(request):
-    return render(request,"greensource_pages/pricing.html")
+    template = {
+        "landingpage" : Landingpage.objects.all(),
+        "featured" : Featured.objects.all(),
+    }
+    if request.method == 'GET':
+        form = OrderForm()
+    else:
+        form = OrderForm(request.POST or None)
+        if form.is_valid():
+            first_name = form.cleaned_data['first_name']
+            last_name = form.cleaned_data['last_name']
+            phone = form.cleaned_data['phone']
+            city = form.cleaned_data['city']
+            service_option = form.cleaned_data['service_option']
+            address = form.cleaned_data['address']
+            message = form.cleaned_data['message']
+            agree = form.cleaned_data['agree']
+            full_name = first_name+" "+last_name
 
-def structured_data(request):
-    return render(request,"greensource_pages/subpages/structured-data.html")
+            subject = "message from "+first_name+" "+last_name
+            content = "You have a message from "+full_name+ "\n Phone: "+phone+ "\n city: "+city+ "\n service_option: "+service_option+ "\n address: "+address+ "\n" +message   
+           
 
+            try:
+                send_mail(subject,content,full_name,['support@greensourcenergy.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect('success')
+    return render(request, 'greensource_pages/pricing.html', {'form':form, 'template': template})
 
+def success(request):
+    return render(request, "contact_us/success.html")
 
+    

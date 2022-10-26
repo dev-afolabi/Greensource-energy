@@ -69,7 +69,7 @@
                     <div class="mr-auto">
                         <a href="#" class="mr-auto">
                                 <span class="icon-clock-o mr-2"></span>
-                                <span class="d-none d-md-inline-block">Mon - Fri | 9am - 5pm</span>
+                                <span class="d-none d-md-inline-block">Mon - Sat | 9am - 6pm</span>
                             </a>
                     </div>
                 </div>
@@ -112,16 +112,8 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="{% block nav-service %}{% endblock %} has-children">
-                                    <a href="#services">Services</a>
-                                    <ul class="dropdown arrow-top">
-                                        <li>
-                                            <a href="{% url 'services' %}">Our Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="{% url 'pricing' %}">Pricing & Packages</a>
-                                        </li>
-                                    </ul>
+                                <li class="{% block nav-service %}{% endblock %}">
+                                    <a href="{% url 'services' %}">Our Services</a>
                                 </li>
                                 <li class="{% block nav-projects %}{% endblock %}">
                                     <a href="{% url 'projects' %}">Projects</a>
@@ -250,6 +242,11 @@
                                 <span class="icon-instagram"></span>
                             </a>
                         </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCiuWyqs_1MLJKkWZzH2UQWg" aria-label="youtube icon link">
+                                <span class="icon-youtube"></span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -259,7 +256,7 @@
         <i class="fa fa-arrow-up"></i>
     </a>
     <p class="copyright">
-        <small>&copy; Copyright &copy; 2021 All Rights Reserved | Greensource Energy</small>
+        <small>&copy; Copyright &copy; 2022 All Rights Reserved | Greensource Energy</small>
     </p>
 </footer>
     <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -333,18 +330,19 @@
                     "Friday"
                   ],
                   "opens": "09:00",
-                  "closes": "17:00"
+                  "closes": "18:00"
                 },{
                   "@type": "OpeningHoursSpecification",
                   "dayOfWeek": "Saturday",
                   "opens": "10:00",
-                  "closes": "14:00"
+                  "closes": "16:00"
                 }],
                 "sameAs": [
                   "https://www.facebook.com/greensourcenergy",
                   "https://www.twitter.com/greenn_energy",
                   "https://www.instagram.com/greensourcenergy",
                   "https://www.linkedin.com/company/greensource-energy"
+                  "https://www.youtube.com/channel/UCiuWyqs_1MLJKkWZzH2UQWg"
                 ] 
               }
     </script>

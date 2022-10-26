@@ -1,5 +1,8 @@
-{% extends 'base_layout.html' %} {% block nav-home %} active {% endblock %} {% load static %} {% block title %}Solar Energy
-for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
+{% extends 'base_layout.html' %} 
+{% block nav-home %} active {% endblock %} 
+{% load static %} 
+{% block title %}Solar Energy for Homes and Businesses {{ block.super }}{% endblock %} 
+{% block content %}
 <section>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -653,101 +656,8 @@ for Homes and Businesses {{ block.super }}{% endblock %} {% block content %}
                     <amp-img src="{{ featured.pics.url }}" alt="awesome image" width="300" height="300"></amp-img>
                 </a>
                 {% endfor %}
-
                 <div class="clear"></div>
             </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="container-fluid padding">
-        <div class="service-two col-12">
-            <p class="head">
-                <i class="fas fa-long-arrow-alt-right"></i>Pricing Plans</p>
-            <p>Explore from our tailored options</p>
-        </div>
-    </div>
-    <div class="container padding">
-        <div class="pricing-table owl-carousel owl-theme" id="pricing" aria-label="pricing packages">
-            <div class="item">
-                <div class="table">
-                    <h5>300wp - solar</h5>
-                    <div class="prices">
-                        N342, 000
-                        <span>
-                            <strong>300 W</strong> Mono Panels
-                            <br />
-                            <strong>30 AMPS</strong> Controller
-                            <br />
-                            <strong>150 AH</strong> Solar Battery
-                            <br />
-                            <strong>1 KVA</strong> Inverter
-                        </span>
-                    </div>
-                    <h6>solar capacity</h6>
-                    <p>All lighting (led recommended), A LED TV, A Standing Fan, Laptop, A satelite decoder</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="table">
-                    <h5>540wp - solar</h5>
-                    <div class="prices">
-                        N385, 000
-                        <span>
-                            <strong>540 W</strong> Mono Panels
-                            <br />
-                            <strong>40 AMPS</strong> Controller
-                            <br />
-                            <strong>200 AH</strong> Solar Battery
-                            <br />
-                            <strong>1.5 KVA</strong> Inverter
-                        </span>
-                    </div>
-                    <h6>solar capacity</h6>
-                    <p>All lighting (led recommended), A LED TV, Standing Fan, Decoder, Home theatre</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="table">
-                    <h5>720wp - solar</h5>
-                    <div class="prices">
-                        N485, 000
-                        <span>
-                            <strong>720 W</strong> Mono Panels
-                            <br />
-                            <strong>50 AMPS</strong> Controller
-                            <br />
-                            <strong>200AH</strong> Solar Battery
-                            <br />
-                            <strong>2 KVA</strong> Inverter
-                        </span>
-                    </div>
-                    <h6>solar capacity</h6>
-                    <p>All lighting (led recommended), A LED TV, 2 ceiling Fan, A home theatre/satelite decoder</P>
-                </div>
-            </div>
-            <div class="item">
-                <div class="table">
-                    <h5>1.08kwp - solar</h5>
-                    <div class="prices">
-                        N630, 000
-                        <span>
-                            <strong>1.08 KW</strong> Mono Panels
-                            <br />
-                            <strong>50 AMPS</strong> Controller
-                            <br />
-                            <strong>300 AH</strong> Solar Battery
-                            <br />
-                            <strong>2.5 KVA</strong> Inverter
-                        </span>
-                    </div>
-                    <h6>solar capacity</h6>
-                    <p>All lighting (led recommended), A LED/LCD TV, 2 ceiling Fan, A home theatre/satelite decoder</p>
-                </div>
-            </div>
-        </div>
-        <div class="pricing-button">
-            <a href="{% url 'pricing' %}">View all</a>
         </div>
     </div>
 </section>
