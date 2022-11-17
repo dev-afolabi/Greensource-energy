@@ -40,7 +40,7 @@ html body.offcanvas-menu:before {
 	color: #fff; 
 }
 .site-navbar-wrap .site-navbar-top {
-	font-size: 16px;
+	font-size: 13px;
 	padding: 0 20px;
 }
 .site-navbar-wrap .site-navbar-top a:hover{
@@ -80,7 +80,7 @@ html body.offcanvas-menu:before {
 .site-navbar .site-navigation .site-menu > li > a {
 	padding: 20px 10px;
 	color: rgba(225, 225, 225);
-	font-size: 15px;
+	font-size: 14px;
 	text-decoration: none !important; 
 }
 .site-navbar .site-navigation .site-menu > li > a:hover {
@@ -474,7 +474,9 @@ html body.offcanvas-menu:before {
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
+	height: 650px;
 	z-index: 1;
+	filter: brightness(0.29);
 }
 .carousel-indicators {
 	margin-top: 0px;
@@ -507,7 +509,7 @@ html body.offcanvas-menu:before {
 }
 .carousel-caption p {
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 15px;
 	color: #fff;
 	font-weight: 500;
 	width: 70%;
@@ -550,7 +552,7 @@ html body.offcanvas-menu:before {
 		width: 100%;
 	}
 	.carousel-caption p {
-		font-size: 17.5px;
+		font-size: 15px;
 		width: 100%;
 		text-align: left;
 		margin-top: 20px;
@@ -664,18 +666,19 @@ html body.offcanvas-menu:before {
 	}
 	.carousel-inner .carousel-caption h1{
 		margin-top: 20px;
-		font-size: 14px;
+		font-size: 16px;
 		width: 100%
 	}
 	.carousel-caption h2{
 		margin-top: 20px;
-		font-size: 14px;
+		font-size: 16px;
 		width: 115%;
 	}
 	.carousel-caption p{
 		width: 100%;
 		font-size: 13px;
 		margin-top: 20px;
+		width: 115%;
 	}
 	.carousel-caption .btn{
 		font-size: 15px;
@@ -837,10 +840,10 @@ nav .breadcrumb li a:hover{
 }
 .home-page p{
 	margin-top: 5px;
-	font-size: 18px;
+	font-size: 16px;
 	padding: 5px;
 	line-height: 35px;
-	text-align: justify;
+	text-align: center;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -1186,8 +1189,8 @@ nav .breadcrumb li a:hover{
 .client-portfolio p{
 	margin-top: 25px;
 	width: 100%;
-	padding: 0px 25px;
-	font-size: 17px;
+	padding: 0px 5px;
+	font-size: 15px;
 	text-align: center;
 }
 .diamond-image{
@@ -1213,11 +1216,12 @@ nav .breadcrumb li a:hover{
 # SOLAR FAQ
 --------------------------------------------------------------*/
 .solar-home-system{
-	background: url(/static/images/video-bg.webp);
+	background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(/static/images/video-bg.webp);
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-bottom: 50px;
+	margin-top: 50px;
 }
 .solar-home-system p{
 	margin-top: 130px;
@@ -1243,7 +1247,6 @@ nav .breadcrumb li a:hover{
 	color: #fff;
 	text-decoration: none;
 }
-
 .faq{
 	background: #fff;
 	padding-bottom: 50px;
@@ -1399,6 +1402,19 @@ nav .breadcrumb li a:hover{
 .service-page-three .single-service-style-three {
 	margin-bottom: 30px;
 } 
+@media only screen and (max-width: 1199px) {
+	.single-service-style-three{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 100%;
+	}
+	.single-service-style-three .text-block p{
+		padding: 0px;
+		width: 100%;
+		text-align: center;
+	}
+}
 @media only screen and (max-width: 767px) {
 	.single-service-style-three{
 		margin-left: auto;
@@ -1407,9 +1423,9 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 	}
 	.single-service-style-three .text-block p{
-		padding: 2px;
+		padding: 0px;
 		width: 100%;
-		text-align: justify;
+		text-align: center;
 	}
 }
 @media only screen and (max-width: 575px) {
@@ -3077,40 +3093,46 @@ nav .breadcrumb li a:hover{
 	margin-top: 150px;
 	padding-top: 7rem;
 	padding-bottom: 1rem;
+	padding-left: 7rem;
+	padding-right: 7rem;
 	background-color: #141d2a; 
 }
 .footer-20192 .container {
 	position: relative; 
 }
 .footer-20192 h3 {
-	color: #2dc997;
-	font-size: 16px;
-	margin-bottom: 20px;
-	margin-top: 0;
-	line-height: 1.5; 
+	color:#cdcdcd;
+	font-size:20px;
+	margin-bottom:20px;
+	margin-top:0;
+	line-height:1.5; 
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family:'Big Shoulders Display', cursive;
 }
 .footer-20192 .links li {
-	margin-bottom: 10px;
-	line-height: 1.5;
-	display: block;
+	margin-bottom:10px;
+	line-height:2.0;
+	display:block;
+	font-size:13px;
 }
 .footer-20192 .links li p{
-	color: #cdcdcd;
+	color:#cdcdcd;
 }
 .footer-20192 .links li p span{
-	color: #fff;
-	font-size: 20px;
+	color:#cdcdcd;
+	font-size:16px;
 }
 .footer-20192 .links li p:hover {
-	color: #fff; 
-	text-decoration: none;
+	color:#fff; 
+	text-decoration:none;
 }
 .footer-20192 .links li a {
-	color: #cdcdcd; 
+	color:#cdcdcd; 
 }
 .footer-20192 .links li span a {
-	color: #2dc997; 
-	font-size: 20px;
+	color:#cdcdcd; 
+	font-size:17px;
 }
 .footer-20192 .links li a:hover {
 	color: #fff; 
@@ -3128,12 +3150,12 @@ nav .breadcrumb li a:hover{
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	background-color: #24a560;
-	color: #fff; 
+	background-color: #fff;
+	color: #001f3f; 
 }
 .footer-20192 .social li a:hover{
-	color:#001f3f;
-	background: #fff;
+	color:#fff;
+	background:#24a560;
 	text-decoration: none;
 }
 .footer-20192 .social li a > span {
@@ -3152,7 +3174,7 @@ nav .breadcrumb li a:hover{
 	color: #fff; 
 	text-align: center;
 	bottom: 0;
-	font-size: 18px;
+	font-size: 15px;
 	padding-top: 1.5rem;
 }
 .footer-20192 .cta {
@@ -3192,8 +3214,12 @@ nav .breadcrumb li a:hover{
 	padding-bottom: 4.5rem;
 }
 @media only screen and (max-width: 1199px) {
+	.footer-20192 {
+		padding-left:0;
+		padding-right:0; 
+	}
 	.footer-20192 .footer-logo amp-img{
-		max-width: 180px;
+		width: 150px;
 		height: 100px;
 	} 
 	.footer-20192 .links li span a {
@@ -3207,12 +3233,12 @@ nav .breadcrumb li a:hover{
 }
 @media only screen and (max-width: 991px) {
 	.footer-20192 .footer-logo amp-img{
-		max-width: 180px;
+		width: 150px;
 		height: 100px;
 	} 
 	.footer-20192 .links li span a {
 		width: 100%;
-		font-size: 18px;
+		font-size: 17px;
 	}
 	.footer-20192 .links li p span{
 	    width: 100%;
@@ -3543,7 +3569,7 @@ input[type=radio]:focus {
 }
 .content p strong{
 	text-decoration: underline;
-	color: #b11c1c;
+	color: #ff0000;
 }
 @media only screen and (max-width: 991px) {
 	.address .add h4{
@@ -3982,45 +4008,6 @@ input[type=radio]:focus {
 	.service-list h4{
 		margin-left: 10px;
 		width: 100%;
-	}
-}
-/*--------------------------------------------------------------
-# PARTNERS LOGO
---------------------------------------------------------------*/
-.brand-carousel-one {
-	margin-top: 20px;
-	padding: 5px;
-	max-width: 1200px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.brand-carousel-one amp-img{
-	width: 100%;
-	padding: 0px 20px;
-}
-.brand-carousel-one .owl-nav {
-	padding: 10px;
-}
-@media only screen and (max-width: 575px) {
-	.brand-carousel-one amp-img{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-}
-@media only screen and (max-width: 375px) {
-	.brand-carousel-one amp-img{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-}
-@media only screen and (max-width: 320px) {
-	.brand-carousel-one amp-img{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
 	}
 }
 /*--------------------------------------------------------------
@@ -5691,7 +5678,7 @@ nav .pagination a:hover{
 --------------------------------------------------------------*/
 .video-block-style-one {
 	margin-top: 0px;
-	background: url(/static/images/video-bg.webp) center top no-repeat fixed;
+	background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(/static/images/video-bg.webp) center top no-repeat fixed;
 	background-size: cover;
 	padding: 120px 0;
 }
@@ -5742,33 +5729,33 @@ nav .pagination a:hover{
 	animation: zoom-in-zoom-out .9s ease-out infinite;
 }
 @media only screen and (max-width: 991px) {
-	.video-block-style-one h3 {
+	.video-block-style-one p {
 		font-size: 37px;
 	}
 }
 @media only screen and (max-width: 767px) {
-	.video-block-style-one h3 {
+	.video-block-style-one p {
 		font-size: 35px;
 	}
 }
 @media only screen and (max-width: 575px) {
-	.video-block-style-one h3 {
+	.video-block-style-one p {
 		font-size: 32px;	
 	}
 }
 @media only screen and (max-width: 480px) {
-	.video-block-style-one h3 {
-		font-size: 30px;	
+	.video-block-style-one p {
+		font-size: 25px;	
 	}
 }
 @media only screen and (max-width: 375px) {
-	.video-block-style-one h3 {
-		font-size: 28px;
+	.video-block-style-one p {
+		font-size: 22px;
 	}
 }
 @media only screen and (max-width: 320px) {
-	.video-block-style-one h3 {
-		font-size: 28px;
+	.video-block-style-one p {
+		font-size: 18px;
 	}
 }
 /*--------------------------------------------------------------
@@ -5869,3 +5856,63 @@ nav .pagination a:hover{
 	font-size: 20px;
 	padding-top: 1rem;
 }
+/*--------------------------------------------------------------
+# EVIDENCE
+--------------------------------------------------------------*/
+.facts{
+	margin-top: 0px;
+	margin-bottom: 50px;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/static/images/header-img.webp');
+	padding: 120px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.facts .bubbled-text-block{
+	text-align:center;
+	display:flex;
+	align-items:center;
+}
+.facts .bubbled-text-block .inner-box{
+	display:block;
+	width:100%;
+}
+.facts .bubbled-text-block span{
+  	color:#fff;
+  	font-weight:600;
+	font-size:40px;
+  	text-transform:capitalize;
+  	line-height:1em;
+  	margin-top:25px;
+ 	font-family:'Big Shoulders Display', cursive;
+}
+.facts .bubbled-text-block p{
+  margin-top:10px;
+  color:#fff;
+  font-weight:500;
+  font-size:18px;
+  line-height:1.2em;
+  text-align:center;
+}
+@media only screen and (max-width: 991px) {
+	.facts .bubbled-text-block{
+		padding-bottom: 40px;
+		width: 100%;
+	}
+	.facts .bubbled-text-block span{
+		font-size:30px;
+  }
+	.facts .bubbled-text-block p{
+	  font-size:17px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.facts .bubbled-text-block span{
+	  	font-size:30px;
+    }
+  	.facts .bubbled-text-block p{
+		font-size:16px;
+  	}
+}
+  

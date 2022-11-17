@@ -359,42 +359,6 @@ $(document).ready(function () {
             }
         }
     });
-    $('.brand-carousel-one').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        navText: [
-            '<i class="fa fa-long-arrow-left"></i>',
-            '<i class="fa fa-long-arrow-right"></i>'
-        ],
-        dots: true,
-        autoWidth: false,
-        autoplay: true,
-        smartSpeed: 700,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        responsive: {
-            320: {
-                items: 1
-            },
-            480: {
-                items: 2
-            },
-            600: {
-                items: 3
-            },
-            991: {
-                items: 4
-            },
-            1000: {
-                items: 5
-            },
-            1200: {
-                items: 5
-            }
-        }
-    });
-    
     $(document).ready(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 80) {
