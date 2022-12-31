@@ -6,7 +6,7 @@
 <div class="container-fluid padding">
     <div class="header row padding">
         <div class="col-12 animated fadeIn">
-            <h1>Greensource Gallery</h1>
+            <h1>Our Gallery</h1>
         </div>
     </div>
 </div>
@@ -24,7 +24,7 @@
 <div class="container padding">
     <div class="gallery">
         {% for image in images %}
-        <a href="{{ image.thumb.url }}"><img src="{{ image.thumb.url }}"  alt="awesome image"></a>
+        <a href="{{ image.thumb.url }}"><amp-img src="{{ image.thumb.url }}"  alt="awesome image" width="270px" height="300px"></amp-img></a>
         {% endfor %}
         <div class="clear"></div>
     </div>
