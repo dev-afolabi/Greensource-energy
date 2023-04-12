@@ -17,14 +17,14 @@ def contact_us(request):
             service_option = form.cleaned_data['service_option']
             address = form.cleaned_data['address']
             message = form.cleaned_data['message']
-            full_name = first_name+' '+last_name
+            full_name = first_name+" "+last_name
 
             subject = "message from "+first_name+' '+last_name
             content = "You have a message from "+full_name+ "\n priority_list: "+priority_list+ "\n Phone: "+phone+ "\n service_option: "+service_option+ "\n address: "+address+ "\n" +message  
 
 
             try:
-                send_mail(subject,content,full_name,['support@greensourcenergy.com'])
+                send_mail(subject,content,first_name,['support@greensourcenergy.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('success')
