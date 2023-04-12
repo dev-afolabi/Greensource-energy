@@ -34,8 +34,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # DEBUG = os.getenv("DEBUG", 'False').lower() in ('false', '1', 'f','False')
 DEBUG = 'False'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'www.greensourcenergy.com', 'greensourceconsult.herokuapp.com', 'greensourcenergy.com',]
-
+ALLOWED_HOSTS = ['127.0.0.1', 'www.greensourcenergy.com', 'greensourceconsult.herokuapp.com', '54.196.108.20' 'greensourcenergy.com',]
+ 
 
 # Application definition
 
@@ -159,8 +159,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'mail.privateemail.com'
-EMAIL_USE_SSL = True
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-EMAIL_PORT = 465
+EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
