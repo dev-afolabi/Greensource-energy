@@ -24,7 +24,7 @@ def contact_us(request):
 
 
             try:
-                send_mail(subject,content,['support@greensourcenergy.com'])
+                send_mail(content,full_name,['support@greensourcenergy.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('success')
