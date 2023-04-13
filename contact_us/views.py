@@ -19,16 +19,16 @@ def contact_us(request):
             message = form.cleaned_data['message']
             full_name = first_name+" "+last_name
 
-            subject = "message from "+first_name+" "+last_name
+            subject = "message from "+full_name
             content = "You have a message from "+full_name+ "\n Email: "+from_email+ "\n Phone: "+phone+ "\n service_option: "+service_option+ "\n address: "+address+ "\n" +message  
 
 
             try:
-                send_mail(content,full_name,['support@greensourcenergy.com'])
+                send_mail(subject,content,full_name,['support@greensourcenergy.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('success')
     return render(request, 'contact_us/contact.html', {'form':form})
 
 def success(request):
-    return render(request, "contact_us/success.html")
+    return render(request, "contact_us/success.html") 
