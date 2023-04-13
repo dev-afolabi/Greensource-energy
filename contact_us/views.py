@@ -19,7 +19,7 @@ def contact_us(request):
             message = form.cleaned_data['message']
             full_name = first_name+" "+last_name
 
-            subject = "message from Test"
+            "message from Test"
             content = "You have a message from "+full_name+ "\n Email: "+from_email+ "\n Phone: "+phone+ "\n service_option: "+service_option+ "\n address: "+address+ "\n" +message  
 
 

@@ -4450,16 +4450,18 @@ input[type=radio]:focus {
 # 403 404 500 ERROR PAGES
 --------------------------------------------------------------*/
 .error{
-	background-image: url("/static/images/bbb.webp");
+	background-image: url('/static/images/work-mode.webp');
 	background-position: center center;
+	background-attachment: fixed;
 	background-size: cover;
 	width: auto;
-	height: 92.5vh;
+	height: 100%;
 	text-align: center;
 }
 .error h4{
-	font-size: 100px;
+	font-size: 150px;
 	font-family: 'Big Shoulders Text', cursive;
+	font-weight: bold;
 	margin-top: 200px;
 	color:#fafafa;
 }
@@ -4476,9 +4478,9 @@ input[type=radio]:focus {
 }
 .error a{
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 500;
 	border: 2px solid #006420;
-	border-radius: 100px;
+	border-radius: 20px;
 	padding: 15px 20px;
 	color:#fff;
 	background: none;
