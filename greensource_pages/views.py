@@ -75,19 +75,19 @@ def pricing(request):
             first_name = form.cleaned_data['first_name']
             last_name = form.cleaned_data['last_name']
             phone = form.cleaned_data['phone']
-            city = form.cleaned_data['city']
+            from_email = form.cleaned_data['from_email']
             service_option = form.cleaned_data['service_option']
             address = form.cleaned_data['address']
             message = form.cleaned_data['message']
             agree = form.cleaned_data['agree']
             full_name = first_name+" "+last_name
 
-            subject = "message from Test"
-            content = "You have a message from "+full_name+ "\n Phone: "+phone+ "\n city: "+city+ "\n service_option: "+service_option+ "\n address: "+address+ "\n" +message   
+            subject = "message from "+full_name
+            content = "You have a message from "+full_name+ "\n Phone: "+phone+ "\n Email: "+from_email+ "\n service_option: "+service_option+ "\n address: "+address+ "\n" +message   
            
 
             try:
-                send_mail(subject,content,full_name,['support@greensourcenergy.com'])
+                send_mail(subject,content,'support@greensourcenergy.com',['support@greensourcenergy.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('success')

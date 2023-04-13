@@ -13,7 +13,7 @@ class OrderForm(forms.Form):
     first_name = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'First Name'}),label='',max_length=50,required=True)
     last_name = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Last Name'}),label='',max_length=50,required=True)
     phone = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Whatsapp Phone'}),label='',required=True)
-    city = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'City/LGA'}),label='',required=True)
+    from_email = forms.CharField(widget=forms.EmailInput(attrs={'class':'form-control','id':'from_email', 'placeholder':'Email'}),label='')
     service_option = forms.ChoiceField(widget=forms.RadioSelect, choices=SELECT_CHOICES,label='')
     address = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Address'}),label='',max_length=150,required=True)
     agree = forms.BooleanField(initial=False,required=True, label='I AGREE WITH THE TERMS AND CONDITION OF PURCHASE')
