@@ -4456,7 +4456,7 @@ input[type=radio]:focus {
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: auto;
-	height: 750px;
+	height: 100vh;
 	text-align: center;
 }
 .error h4{
