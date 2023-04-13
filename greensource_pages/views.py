@@ -82,7 +82,7 @@ def pricing(request):
             agree = form.cleaned_data['agree']
             full_name = first_name+" "+last_name
 
-            subject = "message from "+first_name+" "+last_name
+            subject = "message from Test"
             content = "You have a message from "+full_name+ "\n Phone: "+phone+ "\n city: "+city+ "\n service_option: "+service_option+ "\n address: "+address+ "\n" +message   
            
 
