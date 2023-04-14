@@ -1216,7 +1216,7 @@ nav .breadcrumb li a:hover{
 # SOLAR FAQ
 --------------------------------------------------------------*/
 .solar-home-system{
-	background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(/static/images/video-bg.webp);
+	background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/static/images/bbb.webp');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -4480,7 +4480,7 @@ input[type=radio]:focus {
 .error a{
 	font-size: 16px;
 	font-weight: 500;
-	border: 2px solid #006420;
+	border: 2px solid #fff;
 	border-radius: 20px;
 	padding: 15px 20px;
 	color:#fff;
