@@ -17,6 +17,12 @@
         <li class="breadcrumb-item active">Contact Us</li>
     </ol>
 </nav>
+<div class="container-fluid padding">
+    <div class="row contact col-lg-9 col-md-9 col-xs-12">
+        <h4>We are excited to hear from you! Whether you have questions, inquiries, or are ready to start your solar journey!</h4> 
+        <h4>Our team at Greensource Energy Consult is here to assist you. Get in touch with us using any of the following contact methods:</h4>
+    </div>
+</div>
 <div class="container padding">
     <div class="address row padding">
             <div class="add col-lg-4 col-md-6 col-xs-12">
@@ -44,9 +50,6 @@
     </div>
 </div>
 <div class="container-fluid padding">
-        <div class="row contact col-lg-6 col-md-9 col-xs-12">
-            <h4>You have any Question? Feel free to Contact us</h4>
-        </div>
     <div class="content row padding">
         <div id="contact-form" class="col-xs-12 col-md-9 col-lg-6">
             <form action="" method="POST">
@@ -66,7 +69,7 @@
                     </div>
                     <p>Send me a price quotation for the following service:</p>
                     <div class="form-check col-md-12 mb-0">
-                        {{ form.service_option|as_crispy_field }}
+                        {{ form.options|as_crispy_field }}
                     </div>
                     <div class="form-group col-md-12 mb-0">
                         {{ form.address|as_crispy_field }}
@@ -87,3 +90,6 @@
     </div>
 </div>
 {% endblock %}
+
+
+          

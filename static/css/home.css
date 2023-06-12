@@ -489,7 +489,7 @@ html body.offcanvas-menu:before {
 	font-size: 38px;
 	font-weight: 600;
 	color:#cdcdcd;
-	width: 75%;
+	width: 80%;
 	animation-delay: 1s;
 	text-transform: capitalize;
 }
@@ -719,7 +719,7 @@ nav .breadcrumb li a:hover{
 		margin-left: 10px;	
 	}
 	.breadcrumb li a{
-		font-size: 14px;
+		font-size:14px;
 	}
 }
 /*--------------------------------------------------------------
@@ -1190,7 +1190,7 @@ nav .breadcrumb li a:hover{
 	margin-top: 25px;
 	width: 100%;
 	padding: 0px 5px;
-	font-size: 15px;
+	font-size: 14px;
 	text-align: center;
 }
 .diamond-image{
@@ -1427,6 +1427,11 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 		text-align: center;
 	}
+	.single-service-style-three .text-block h3 {
+		margin: 0;
+		font-size: 20px;
+		margin-top: 30px;
+	}
 }
 @media only screen and (max-width: 575px) {
 	.single-service-style-three{
@@ -1486,6 +1491,9 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 		font-size: 18px;
 	}
+	.page-header h2{
+		font-size: 22px;
+	}
 }
 @media only screen and (max-width: 375px) {
 	.page-header h1{
@@ -1493,12 +1501,18 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 		font-size: 15px;
 	}
+	.page-header h2{
+		font-size: 20px;
+	}
 }
 @media only screen and (max-width: 320px) {
 	.page-header h1{
 		padding: 0;
 		width: 100%;
-		font-size: 15px;
+		font-size: 18px;
+	}
+	.page-header h2{
+		font-size: 20px;
 	}
 }
 /*--------------------------------------------------------------
@@ -1520,32 +1534,6 @@ nav .breadcrumb li a:hover{
 	text-align:justify;
 	line-height:35px;
 	width:100%;
-}
-.about-us h3{
-	margin-top:20px;
-	margin-left:30px;
-	font-size:28px;
-	color:#082842;
-	font-weight:600;
-}
-.about-us ul{
-	margin-top:10px;
-}
-.about-us ul li{
-	font-size:15px;
-	line-height:40px;
-	list-style-type:none;
-	text-align:justify;
-}
-.about-us ul i{
-	font-size:12px;
-	color:#fff;
-	background:#001f3f;
-	padding:10px;
-	margin-right:15px;
-	border-radius:100%;
-	float:left;
-	clear:both;
 }
 .about-us .bubbled-text-block{
 	position:absolute;
@@ -1780,6 +1768,82 @@ nav .breadcrumb li a:hover{
 	}
 }
 /*--------------------------------------------------------------
+# WHY CHOOSE US
+--------------------------------------------------------------*/
+.why-us{
+	margin-top:100px;
+}
+.why-us h3{
+	font-size:30px;
+	color:#082842;
+	font-weight:600;
+	font-family:'Big Shoulders Display', cursive;
+	text-align: center;
+}
+.why-us ul{
+	margin-top:10px;
+}
+.why-us ul li{
+	font-size:15px;
+	line-height:40px;
+	list-style-type:none;
+	text-align:justify;
+	margin-top:10px;
+}
+.why-us ul i{
+	font-size:12px;
+	color:#fff;
+	background:#141d2a;
+	padding:5px;
+	margin-top: 10px;
+	margin-right:15px;
+	border-radius:100%;
+	float: left;
+	clear: both;
+}
+@media only screen and (max-width: 1199px){
+	.why-us ul{
+		width:100%;
+		padding:15px;
+	}
+}
+@media only screen and (max-width: 991px){
+	.why-us ul{
+		width:100%;
+		padding:15px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.why-us ul{
+		width:100%;
+		padding:15px;
+	}
+}
+@media only screen and (max-width: 575px){
+	.why-us ul{
+		width:100%;
+		padding:15px;
+	}
+}
+@media only screen and (max-width: 480px){
+	.why-us ul{
+		width:100%;
+		padding:15px;
+	}
+}
+@media only screen and (max-width: 375px){
+	.why-us ul{
+		width:100%;
+		padding:15px;
+	}
+}
+@media only screen and (max-width: 320px){
+	.why-us ul{
+		width:100%;
+		padding:15px;
+	}
+}
+/*--------------------------------------------------------------
 # MISSION
 --------------------------------------------------------------*/
 .mission{
@@ -1794,7 +1858,7 @@ nav .breadcrumb li a:hover{
 }
 .vision span{
 	font-size:25px;
-	margin-top:35px;
+	margin-top:20px;
 	color:#006420;
 	display:block;
 	text-align:center;
@@ -1802,24 +1866,46 @@ nav .breadcrumb li a:hover{
 	font-family:'Big Shoulders Display', cursive;
 }
 .vision p{
-	margin-top:15px;
-	line-height:30px;
+	margin-top:8px;
+	line-height:22px;
 	padding:0px 5px;
-	font-size:16px;
+	font-size:14px;
 	text-align:center;
 }
 .vision li{
-	margin-top:25px;
+	margin-top:18px;
 	line-height:5px;
-	font-size:16px;
+	font-size:14px;
 	margin-left:15px;
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 1199px){
+	.vision span{
+		margin-top:15px;
+	}
+	.vision p{
+		width:105%;
+	}
 	.vision{
 		width:100%;
 		display:inline-block;
 		margin-left:auto;
 		margin-right:auto;
+		padding:5px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.vision span{
+		margin-top:5px;
+	}
+	.vision p{
+		width:105%;
+	}
+	.vision{
+		width:100%;
+		display:inline-block;
+		margin-left:auto;
+		margin-right:auto;
+		padding:5px;
 	}
 }
 @media only screen and (max-width: 575px){
@@ -1841,6 +1927,11 @@ nav .breadcrumb li a:hover{
 @media only screen and (max-width: 375px){
 	.vision{
 		width:90%;
+	}
+}
+@media only screen and (max-width: 320px){
+	.vision{
+		width:100%;
 	}
 }
 /*--------------------------------------------------------------
@@ -2124,7 +2215,7 @@ nav .breadcrumb li a:hover{
 	margin-top:25px;
 	width:100%;
 	padding:0px 15px;
-	font-size:16px;
+	font-size:14px;
 	text-align:justify;
 	color:#fff;
 }
@@ -3404,7 +3495,8 @@ nav .breadcrumb li a:hover{
 # CONTACT US
 --------------------------------------------------------------*/
 .address{ 
-	margin-top:100px; 
+	margin-top:50px; 
+	margin-bottom: 50px;
 	text-align: center;
 }
 .add h6{
@@ -3441,15 +3533,17 @@ nav .breadcrumb li a:hover{
 	border-radius: 5px;
 }
 .content{
-	margin-top: 0px;
+	margin-top:0px;
+}
+.contact{
+	margin-bottom: 0px; 
+	margin-top: 100px;
 }
 .contact h4{
-	font-family: 'play', sans-serif;
-	margin-bottom: 0px; 
-	margin-top: 150px;
-	font-size: 35px;
-	width: 90%;
-	padding-left: 35px;
+	font-family:'play', sans-serif;
+	font-size:20px;
+	padding-left:20px;
+	line-height:30px;
 }
 .content .map embed{
 	margin-top: 30px;
@@ -3579,6 +3673,7 @@ input[type=radio]:focus {
 	}
 	.contact h4{
 		margin-left: 30px;
+		font-size:24px;
 	}
 	.content #contact-form{
 		display: block;
@@ -3619,6 +3714,10 @@ input[type=radio]:focus {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.contact h4{
+		width:100%;
+		font-size:22px;
+	}
 }
 @media only screen and (max-width: 575px) {
 	.content .map embed{
@@ -3628,8 +3727,16 @@ input[type=radio]:focus {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.contact h4{
+		width:100%;
+		font-size:20px;
+	}
 }
 @media only screen and (max-width: 480px) {
+	.contact h4{
+		width:100%;
+		font-size:22px;
+	}
 	.address p{
 		font-size: 15px;
 	}
@@ -3669,6 +3776,10 @@ input[type=radio]:focus {
 	}
 }
 @media only screen and (max-width: 375px) {
+	.contact h4{
+		width:100%;
+		font-size:20px;
+	}
 	.address iframe{
 		width: 100%;
 	}
@@ -3679,27 +3790,31 @@ input[type=radio]:focus {
 		font-size: 15px;		
 	}
 	.address h4{
-		font-size: 20px;
-		width: 82%;
+		font-size:20px;
+		width:82%;
 	}
 	.address i{
-		font-size: 20px;
+		font-size:20px;
 	}
 	#contact-form input{
-		width: 100%;
+		width:100%;
 	}
 	#contact-form textarea{
-		width: 100%;
+		width:100%;
 	}
 	.content .map embed{
-		height: 300px;
-		width: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		height:300px;
+		width:100%;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
 	}
 }
 @media only screen and (max-width: 320px) {
+	.contact h4{
+		width:100%;
+		font-size: 18px;
+	}
 	.content .map embed{
 		width: 100%;
 		height: 300px;
@@ -3820,33 +3935,23 @@ input[type=radio]:focus {
 # SERVICE PAGES
 --------------------------------------------------------------*/
 .service-list{
-	margin-top: 120px;
+	margin-top: 100px;
 }
 .service-list img{
-	width: 50%;
-	height: 60%;
+	width: auto;
 	padding: 0px 15px;
-	justify-content: center;
-	float: left;
-	clear: both;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
 }
 .service-list p{
 	font-size: 17px;
 	text-align: justify;
 	width: 100%;
 	line-height: 40px;
-	padding: 0px 20px;
-}
-.service-list p span{
-	font-size: 17px;
-	font-weight: bold;
-}
-.service-list h4{
-	margin-top: 50px;
-	font-size: 20px;
-	color: #111;
-	font-weight: 560;
-	margin-left: 10px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:25px;
 }
 .service-list ul{
 	margin-top: 0px;
@@ -3858,23 +3963,6 @@ input[type=radio]:focus {
 	line-height: 35px;
 	text-align: justify;
 	margin-left: 20px;
-}
-.service-extras{
-	margin-top: 50px;
-}
-.extra{
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-	background: #cdcdd3;
-	padding: 50px 10px;
-}
-.extra h4{
-	font-weight: bold;
-}
-.extra ul li{
-	line-height: 35px;
-	font-size: 16px;
 }
 @media only screen and (max-width: 1199px) {
 	.service-list img{

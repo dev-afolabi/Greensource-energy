@@ -1216,7 +1216,7 @@ nav .breadcrumb li a:hover{
 # SOLAR FAQ
 --------------------------------------------------------------*/
 .solar-home-system{
-	background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(/static/images/video-bg.webp);
+	background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('/static/images/bbb.webp');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -3515,7 +3515,7 @@ nav .breadcrumb li a:hover{
 	color: #555;
 	margin-top: 15px;
 }
-#contact-form .form-check input{
+/* #contact-form .form-check input{
 	height: 35px;
 	width: 35px;
 }
@@ -3557,7 +3557,7 @@ input[type=radio]:checked {
 }
 input[type=radio]:focus {
 	outline-color: transparent;
-}
+} */
 .content p{
 	font-size: 15px;
 	margin-top: 30px;
