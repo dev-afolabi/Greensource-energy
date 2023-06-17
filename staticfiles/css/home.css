@@ -3938,7 +3938,8 @@ input[type=radio]:focus {
 	margin-top: 100px;
 }
 .service-list img{
-	width: auto;
+	width:100%;
+	height:550px;
 	padding: 0px 15px;
 	display:block;
 	margin-left:auto;
@@ -3979,41 +3980,38 @@ input[type=radio]:focus {
 }
 @media only screen and (max-width: 991px) {
 	.service-list img{
-		width: 95%;
-		height: auto; 
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
+		width:95%;
+		height:auto; 
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
 	}
 	.service-list p{
-		margin-top: 50px;
-		padding: 10px 30px;
-		font-size: 15px;
+		margin-top:50px;
+		padding:10px 30px;
+		font-size:15px;
 	}
-	.service-list h4{
-		width: 100%;
-		font-size: 18px;
+	.service-list ul li {
+		font-size:15px;
+		text-align:left;
 	}
 }
 @media only screen and (max-width: 767px) {
 	.service-list img{
-		width: 100%;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
+		width:100%;
+		height:auto;
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
 	}
 	.service-list p{
-		margin-top: 40px;
-		width: 100%;
-		font-size: 15px;
+		margin-top:40px;
+		width:100%;
+		font-size:15px;
 	}
-	.service-list h4{
-		margin-left: 10px;
-		width: 100%;
-	}
-	.service-list li{
-		margin: 0;
+	.service-list ul li {
+		font-size:15px;
+		text-align:left;
 	}
 }
 @media only screen and (max-width: 575px) {
@@ -4029,12 +4027,9 @@ input[type=radio]:focus {
 		line-height: 30px;
 		font-size: 15px;
 	}
-	.service-list h4{
-		margin-left: 10px;
-		width: 100%;
-	}
-	.service-list li{
-		margin: 0;
+	.service-list ul li {
+		font-size:15px;
+		text-align: left;
 	}
 }
 @media only screen and (max-width: 480px) {
@@ -4048,14 +4043,11 @@ input[type=radio]:focus {
 	.service-list p{
 		padding: 10px 20px;
 		line-height: 30px;
-		font-size: 15.5px;
+		font-size: 15px;
 	}
-	.service-list h4{
-		margin-left: 10px;
-		width: 100%;
-	}
-	.service-list li{
-		margin: 0;
+	.service-list ul li {
+		font-size:15px;
+		text-align: left;
 	}
 }
 @media only screen and (max-width: 375px) {
@@ -4069,37 +4061,41 @@ input[type=radio]:focus {
 	.service-list p{
 		padding: 10px 20px;
 		line-height: 33px;
-		font-size: 15.5px;
+		font-size: 15px;
 	}
-	.service-list h4{
-		margin-left: 10px;
-		width: 100%;
+	.service-list ul li {
+		font-size:15px;
+		text-align: left;
 	}
 }
 @media only screen and (max-width: 320px) {
+	.service-list{
+		padding: 0 10px;
+	}
 	.service-list img{
-		width: 105%;
-		padding: 5px;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
+		width:105%;
+		padding:5px;
+		height:auto;
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
 	}
 	.service-list p{
 		padding: 5px 5px;
 		line-height: 33px;
-		font-size: 15.5px;
+		font-size: 15px;
 	}
-	.service-list h4{
-		margin-left: 10px;
-		width: 100%;
+	.service-list ul li {
+		font-size:15px;
+		margin-left:-10px;
+		text-align: left;
 	}
 }
 /*--------------------------------------------------------------
 # HOMPAGE TESTIMONIAL
 --------------------------------------------------------------*/
 .testimony{
-	margin-top: 50px;
+	margin-top:50px;
 }
 .testimony .title-block .sec-title p{
 	margin-top: 0px;
