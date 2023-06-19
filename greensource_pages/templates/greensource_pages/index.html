@@ -265,49 +265,21 @@
                 <div class="col-lg-6">
                     <div class="testimonials-style-three-carousel-wrapper">
                         <div class="owl-theme owl-carousel testimonials-style-three-carousel" id="testimonial" aria-label="testimonial buttons">
+                            {% for testimonial in template.testimonial %}
                             <div class="single-testimonial-style-three">
                                 <i class="fas fa-quote-right"></i>
-                                <p>It's been a year now and my shop as been a center of attraction to customers due to uninterrupted
-                                    power in my shop. I would highly recommend GS team to anyone going solar.</p>
+                                <p>{{ testimonial.body|linebreaks }}</p>
                                 <div class="client-block">
                                     <div class="image-block">
-                                        <amp-img src="{% static 'images/mum.webp' %}" alt="Awesome Image" width="100" height="100" layout="responsive"></amp-img>
+                                        <amp-img src="{{ testimonial.image.url }}" alt="Awesome Image" width="100" height="100" layout="responsive"></amp-img>
                                     </div>
                                     <div class="text-block">
-                                        <h6>Bola Omogbule</h6>
-                                        <span>Store Owner</span>
+                                        <h6>{{ testimonial.title }}</h6>
+                                        <span>{{ testimonial.name }}</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="single-testimonial-style-three">
-                                <i class="fas fa-quote-right"></i>
-                                <p>Excellent workmanship and very professional team. My solar home system
-                                    has significantly reduced my utility bills which I now channel to more productive use.
-                                </p>
-                                <div class="client-block">
-                                    <div class="image-block">
-                                        <amp-img src="{% static 'images/Hycienth.webp' %}" alt="Awesome Image" width="100" height="100" layout="responsive"></amp-img>
-                                    </div>
-                                    <div class="text-block">
-                                        <h6>Hycienth Okonweze</h6>
-                                        <span>Shoresand Farms</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-style-three">
-                                <i class="fas fa-quote-right"></i>
-                                <p>My Inverter System convieniently powers all my appliances/gadgets. its been working optimaally
-                                    for the past 6 months without any issues. Will gladly recommend thier services.</p>
-                                <div class="client-block">
-                                    <div class="image-block">
-                                        <amp-img src="{% static 'images/b02.webp' %}" alt="Awesome Image" width="100" height="100" layout="responsive"></amp-img>
-                                    </div>
-                                    <div class="text-block">
-                                        <h6>Oluwadusin Ajayi</h6>
-                                        <span>Entrepreneur</span>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -421,9 +393,9 @@
                 <p>Some of our site installations</p>
             </div>
             <div class="featured-project col-12">
-                {% for featured in index %}
+                {% for featured in template.index %}
                 <a href="{{ featured.pics.url }}" aria-label="featured project images">
-                    <amp-img src="{{ featured.pics.url }}" alt="awesome image" width="300" height="300"></amp-img>
+                    <amp-img src="{{ featured.pics.url }}" alt="awesome image"  width="300" height="300"></amp-img>
                 </a>
                 {% endfor %}
                 <div class="clear"></div>

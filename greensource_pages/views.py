@@ -7,8 +7,11 @@ from .forms import OrderForm
 
 # Create your views here.
 def index(request):
-    index = Featured.objects.all()
-    return render(request,"greensource_pages/index.html", {'index': index})
+    template = {
+        "index" : Featured.objects.all(),
+        "testimonial" : Testimonial.objects.all()[:3],
+    }
+    return render(request,"greensource_pages/index.html", {'template':template})
 
 def about(request):
     return render(request,"greensource_pages/about.html")
