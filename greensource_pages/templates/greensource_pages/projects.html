@@ -1,7 +1,7 @@
 {% extends 'base_layout.html' %}
 {% block nav-projects %} active {% endblock %}
 {% load static %}
-{% block title %}All Solar Projects {{ block.super }}{% endblock %}
+{% block title %}Solar Projects {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container-fluid padding">
     <div class="header row padding">
@@ -36,7 +36,6 @@
             </a>
         </div>
         {% endfor %}
-
         {% else %}
         <p>There are no recent projects</p>
         {%  endif %}
