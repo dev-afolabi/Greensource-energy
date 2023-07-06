@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Images, Solar, Testimonial, Featured, Landingpage
+from .models import Images, Solar, Testimonial, Landingpage
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
@@ -8,7 +8,7 @@ from .forms import OrderForm
 # Create your views here.
 def index(request):
     template = {
-        "index" : Featured.objects.all(),
+        "solar" : Solar.objects.all()[:4],
         "testimonial" : Testimonial.objects.all()[:3],
     }
     return render(request,"greensource_pages/index.html", {'template':template})

@@ -75,13 +75,13 @@
     <div class="container padding">
         <div class="home-page padding">
             <p>
-                Welcome to Greensource Energy Consult, your trusted partner in harnessing the power of the sun! We are a leading solar company committed
-                to delivering sustainable energy solutions that transform the way we power our world. With cutting-edge technology and
-                a passion for a greener future, we're here to make solar energy accessible, reliable, and cost-effective for everyone.
-                <br/><br/>At Greensource Energy Consult, we understand the urgent need to transition to clean and renewable energy sources. Our team of experienced
-                professionals is dedicated to helping individuals, businesses, and communities embrace the immense benefits of solar
-                power. Whether you're looking to reduce your carbon footprint, save on energy bills, or become energy independent, we
-                have the expertise and solutions to make it happen.
+                 Tired of the constant electricity crisisand the hefty bills that come with it? Look no further, because Greensource Energy
+                is here to brighten up your world! We understand the fustration and inconvenience that power outages and skyrocketing electricity
+                costs can bring, we are here to provide you with an efficient and sustainable solution - solar power.
+                <br/>
+                <br/>At Greensource Energy, we believe in harnessing the power of the sun to transform your energy consumption experience. By
+                making the switch to solar energy, you not only contribute to a greener environment but also gain control over your energy
+                production and costs. It's a win-win situation for you and your immediate environment.
             </p>
         </div>
     </div>
@@ -92,46 +92,46 @@
             <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
                 <div class="diamond-image">
                     <div class="pic">
-                        <amp-img src="{% static 'images/innovation.jpeg' %}" alt="residential building" width="250px"
+                        <amp-img src="{% static 'images/independent-power.jpeg' %}" alt="residential building" width="250px"
                         height="210px"></amp-img>
                     </div>
                 </div>
-                <h3>Expertise-Innovation</h3>
+                <h3>Independent Power</h3>
                 <hr />
-                <p>We constantly explore new technologies and embrace innovation to provide cutting-edge solutions.</p>
+                <p>With solar panels installed on your rooftop or property, you tab into a relaiable and independent power source that operates silently and without any harmful emissions</p>
             </div>
             <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
                 <div class="diamond-image">
                     <div class="pic">
-                        <amp-img src="{% static 'images/customer-centric.jpeg' %}" alt="commercial building" width="250px"
+                        <amp-img src="{% static 'images/low-maintenance.jpeg' %}" alt="commercial building" width="250px"
                         height="210px"></amp-img>
                     </div>
                 </div>
-                <h3>Customer-Centric</h3>
+                <h3>Low Maintenance</h3>
                 <hr />
-                <p> Our team works closely with you to design customized solar solutions that maximize energy efficiency & savings.</p>
+                <p>Solar panels require minimal maintenance and have a long lifespan. Regular cleaning and inspections are sufficent to keep them operating sufficiently with 20-25years warranty.</p>
             </div>
             <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
                 <div class="diamond-image">
                     <div class="pic">
-                        <amp-img src="{% static 'images/quality.jpeg' %}" alt="Farm image" width="250px"
+                        <amp-img src="{% static 'images/eco-friendly.jpeg' %}" alt="Farm image" width="250px"
                         height="210px"></amp-img>
                     </div>
                 </div>
-                <h3>Quality and Reliability</h3>
+                <h3>Eco Friendly</h3>
                 <hr />
-                <p>We are committed to using the best equipment. Our installations are built to ensure long-term performance and reliability..</p>
+                <p>Solar energy is renewable, sustainable and produces zero greenhouse gas emissions. By choose solar energy, you contribute to a cleaner and greener future.</p>
             </div>
             <div class="client-portfolio col-lg-3 col-md-6 col-xs-12">
                 <div class="diamond-image">
                     <div class="pic">
-                        <amp-img src="{% static 'images/services.jpeg' %}" alt="School building" width="250px"
+                        <amp-img src="{% static 'images/cost-saving.jpeg' %}" alt="School building" width="250px"
                         height="210px"></amp-img>
                     </div>
                 </div>
-                <h3>sustainability</h3>
+                <h3>Significant Savings</h3>
                 <hr />
-                <p> Our core values revolve around sustainability; reducing carbon emissions, improving air quality & preserving our planet.</p>
+                <p>Rising electricity/utility bills can put strain on your budget. By going solar, you can significantly reduce or even eliminate your monthly electricity expenses.</p>
             </div>
         </div>
 </section>
@@ -380,9 +380,9 @@
                 <p>Some of our site installations</p>
             </div>
             <div class="featured-project col-12">
-                {% for featured in template.index %}
-                <a href="{{ featured.pics.url }}" aria-label="featured project images">
-                    <amp-img src="{{ featured.pics.url }}" alt="awesome image"  width="300" height="300"></amp-img>
+                {% for solar in template.solar %}
+                <a href="{{ solar.image.url }}" aria-label="featured project images">
+                    <amp-img src="{{ solar.image.url }}" alt="awesome image"  width="300" height="300"></amp-img>
                 </a>
                 {% endfor %}
                 <div class="clear"></div>
