@@ -1205,7 +1205,7 @@ nav .breadcrumb li a:hover{
 	width: 100%;
 	padding: 0px 5px;
 	font-size: 14px;
-	text-align: center;
+	text-align:center;
 }
 .diamond-image{
 	transform: rotate(-45deg);
@@ -2387,9 +2387,9 @@ nav .breadcrumb li a:hover{
 	z-index: 1;
 	transition: .5s ease;
 }
-.portfolio .image-block > amp-img{
+.portfolio .image-block >img{
 	margin: 0;
-	width: 100%;
+	width: 350px;
 	height: 350px;
 }
 .portfolio .image-block .overlay{
@@ -2428,26 +2428,26 @@ nav .breadcrumb li a:hover{
 	background: rgba(31, 31, 37, 0.9);
 }
 @media only screen and (max-width: 1199px){
-	.portfolio .image-block > amp-img{
+	.portfolio .image-block > img{
 		width: 100%;
 		height: 300px;
 	}
 }
 @media only screen and (max-width: 991px){
-	.portfolio .image-block > amp-img{
+	.portfolio .image-block > img{
 		width: 100%;
 		height: 240px;
 	}
 }
 @media only screen and (max-width: 767px) {
-	.portfolio .image-block > amp-img{
+	.portfolio .image-block > img{
 		width: 100%;
 		height: 230px;
 		padding: 0;
 	}
 }
 @media only screen and (max-width: 575px) {
-	.portfolio .image-block > amp-img{
+	.portfolio .image-block > img{
 		width: 70%;
 		height: 320px;
 		display: block;
@@ -2464,7 +2464,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 480px) {
-	.portfolio .image-block > amp-img{
+	.portfolio .image-block > img{
 		width: 85%;
 		height: 300px;
 		display: block;
@@ -2481,7 +2481,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 375px) {
-	.portfolio .image-block > amp-img{
+	.portfolio .image-block > img{
 		width: 90%;
 		height: 300px;
 		display: block;
@@ -2498,7 +2498,7 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 320px) {
-	.portfolio .image-block > amp-img{
+	.portfolio .image-block > img{
 		width: 100%;
 		height: 300px;
 		display: block;
@@ -2571,7 +2571,7 @@ nav .breadcrumb li a:hover{
 }
 .pro-details img{
 	width: 300px;
-	height: 250px;
+	height: 300px;
 	padding-bottom: 25px;
 }
 @media only screen and (max-width: 1199px) {
@@ -2582,16 +2582,16 @@ nav .breadcrumb li a:hover{
 	.tech-details p{
 		width: 100%;
 	}
-	.pro-details amp-img{
+	.pro-details img{
 		padding: 0px 5px;
-		height: 220px;
+		height: 280px;
 	}
 }
 @media only screen and (max-width: 991px) {
-	.pro-details amp-img{
+	.pro-details img{
 		width: 95%;
 		padding: 0px 5px;
-		height: 220px;
+		height: 250px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -2604,9 +2604,9 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 767px) {
-	.pro-details amp-img{
+	.pro-details img{
 		padding: 0px 10px;
-		height: 220px;
+		height: 250px;
 	}
 	.folio amp-img{
 		display: block;
@@ -2639,10 +2639,10 @@ nav .breadcrumb li a:hover{
 		width: 100%;
 		line-height: 35px;
 	}
-	.pro-details amp-img{
-		padding: 0;
-		width: 85%;
-		height: 220px;
+	.pro-details img{
+		padding:0 50px;
+		width: 80%;
+		height: 320px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -2657,12 +2657,11 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 480px) {
-	.pro-details amp-img {
+	.pro-details img {
 		width: 90%;
-		padding: 0;
-		height: 200px;
-		margin-left: auto;
-		margin-right: auto;
+		padding:0 20px;
+		height: 300px;
+		
 	}
 	.folio amp-img {
 		width: 90%;
@@ -2675,9 +2674,10 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 375px) {
-	.pro-details amp-img {
+	.pro-details img {
+		width:95%;
 		padding: 0px 20px;
-		height: 200px;
+		height: 250px;
 	}
 	.folio amp-img {
 		width: 100%;
@@ -2688,7 +2688,8 @@ nav .breadcrumb li a:hover{
 	}
 }
 @media only screen and (max-width: 320px) {
-	.pro-details amp-img {
+	.pro-details img {
+		width:90%;
 		height: 200px;
 		padding: 0px 20px;
 	}
@@ -5973,6 +5974,7 @@ nav .pagination a:hover{
 	display:block;
 	width:95%;
 	z-index:2;
+	border:0.5px;
 	border-style:groove;
 }
 .facts .bubbled-text-block span{
